@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " NN",
+    "FNN",
+    " NN"
+  ],
+
+  "key":
+  {
+    "N":
+    {
+      "item": "minecraft:quartz"
+    },
+    "F":
+    {
+      "item": "am:lime_en_fer",
+      "data": "32,767"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:brique_de_marbre",
+    "count": 1
+  }
+}

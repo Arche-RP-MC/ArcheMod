@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all" : "am:blocks/stone_andesite_smooth"
+  }
+}

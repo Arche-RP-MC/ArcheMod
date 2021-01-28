@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " G ",
+    "BMB",
+    " L "
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:maille"
+    },
+    "M":
+    {
+      "item": "am:marteau_en_acier"
+    },
+    "G":
+    {
+      "item": "am:pinces"
+    },
+    "L":
+    {
+      "item": "am:laniere"
+    }
+
+  },
+
+  "result":
+  {
+    "item": "am:aventail",
+    "count": 1
+  }
+}

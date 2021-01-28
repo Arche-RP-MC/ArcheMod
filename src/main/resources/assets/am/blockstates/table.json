@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "am:table"
+    },
+    "facing=north": {
+      "model": "am:table"
+    },
+    "facing=east": {
+      "model": "am:table",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "am:table",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "am:table",
+      "y": 270
+    }
+  }
+}

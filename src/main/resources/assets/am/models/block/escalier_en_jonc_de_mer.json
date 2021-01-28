@@ -1,0 +1,8 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "am:blocks/jonc_de_mer",
+    "top": "am:blocks/jonc_de_mer",
+    "side": "am:blocks/jonc_de_mer"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "PVL",
+    " A ",
+    " E "
+  ],
+
+  "key":
+  {
+    "P":
+    {
+      "item": "am:pince"
+    },
+    "V":
+    {
+      "item": "minecraft:glass"
+    },
+    "L":
+    {
+      "item": "am:lime_en_fer"
+    },
+    "A":
+    {
+      "item": "am:plaque_de_bronze"
+    },
+    "E":
+    {
+      "item": "am:etoffe"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:peigne_en_bronze",
+    "count": 1
+  }
+}

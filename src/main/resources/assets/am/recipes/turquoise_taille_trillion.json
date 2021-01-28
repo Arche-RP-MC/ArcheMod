@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " P ",
+    " G ",
+    "LEO"
+  ],
+
+  "key":
+  {
+    "E":
+    {
+      "item": "am:etoffe"
+    },
+    "O":
+    {
+      "item": "am:loupe"
+    },
+    "G":
+    {
+      "item": "am:grosse_geode_turquoise"
+    },
+    "P":
+    {
+      "item": "am:pinces"
+    },
+    "L":
+    {
+      "item": "am:lime_en_fer"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:turquoise_taille_trillion",
+    "count": 1
+  }
+}

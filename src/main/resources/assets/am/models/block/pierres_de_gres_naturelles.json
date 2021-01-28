@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "am:blocks/pierres_de_gres_naturelles"
+  }
+}

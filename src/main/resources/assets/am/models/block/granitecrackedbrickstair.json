@@ -1,0 +1,8 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "am:blocks/stonebrick_granite_cracked",
+    "top": "am:blocks/stonebrick_granite_cracked",
+    "side": "am:blocks/stonebrick_granite_cracked"
+  }
+}

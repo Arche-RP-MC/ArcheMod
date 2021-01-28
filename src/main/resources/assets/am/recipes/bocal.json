@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "PL ",
+    " F ",
+    "   "
+  ],
+
+  "key":{
+    "P":
+    {
+      "item": "am:pince"
+    },
+    "F":
+    {
+      "item": "am:fiole"
+    },
+    "L":
+    {
+      "item": "am:canne_de_verrier"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:bocal",
+    "count": 2
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    " LF",
+    " N "
+  ],
+
+  "key":
+  {
+    "N":
+    {
+      "item": "am:barre_or"
+    },
+    "F":
+    {
+      "item": "am:lime_en_acier"
+    },
+    "L":
+    {
+      "item": "am:pince"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:bracelet_en_or",
+    "count": 1
+  }
+}

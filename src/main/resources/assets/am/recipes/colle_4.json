@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "LLL",
+    "CLL",
+    "LLL"
+  ],
+
+  "key":
+  {
+    "C":
+    {
+      "item": "minecraft:water_bucket"
+    },
+    "L":
+    {
+      "item": "am:lin"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:colle",
+    "count": 4
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "M  ",
+    " A ",
+    "   "
+  ],
+
+  "key":
+  {
+    "M":
+    {
+      "item": "am:marteau_en_fer"
+    },
+    "A":
+    {
+      "item": "am:ardoise_brute"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:tuile_ardoise",
+    "count": 4
+  }
+}

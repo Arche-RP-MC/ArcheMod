@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "  M",
+    " PF",
+    "   "
+  ],
+
+  "key":
+  {
+    "M":
+    {
+      "item": "am:marteau_en_bronze"
+    },
+    "P":
+    {
+      "item": "am:pinces"
+    },
+    "F":
+    {
+      "item": "am:tete_dague_bronze"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:tete_serpe_bronze",
+    "count": 1
+  }
+}

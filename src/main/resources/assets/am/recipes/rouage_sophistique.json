@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "TPL",
+    "PRP",
+    " P "
+  ],
+
+  "key":
+  {
+    "T":
+    {
+      "item": "am:trousse_d_ingenieur_en_fer"
+    },
+    "P":
+    {
+      "item": "am:pepite_acier"
+    },
+    "L":
+    {
+      "item": "am:loupe"
+    },
+    "R":
+    {
+      "item": "am:rouage"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:rouage_sophistique",
+    "count": 1
+  }
+}

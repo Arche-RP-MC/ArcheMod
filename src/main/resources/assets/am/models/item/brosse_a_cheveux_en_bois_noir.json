@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "am:items/brosse_a_cheveux_en_bois_noir"
+  }
+}

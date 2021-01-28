@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "HCH",
+    "HHH"
+  ],
+
+  "key":
+  {
+    "H":
+    {
+      "item": "am:lot_de_papiers"
+    },
+    "C":
+    {
+      "item": "am:colle"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:enveloppe",
+    "count": 5
+  }
+}

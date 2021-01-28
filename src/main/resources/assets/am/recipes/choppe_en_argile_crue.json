@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "CL ",
+    "FLL"
+  ],
+
+  "key":
+  {
+    "F":
+    {
+      "item": "minecraft:water_bucket"
+    },
+    "C":
+    {
+      "item": "am:spatule"
+    },
+    "L":
+    {
+      "item": "minecraft:clay_ball"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:choppe_en_argile_crue",
+    "count": 2
+  }
+}

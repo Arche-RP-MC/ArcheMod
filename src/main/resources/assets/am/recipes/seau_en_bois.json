@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "CLM",
+    "P P",
+    "PPP"
+  ],
+
+  "key":
+  {
+    "M":
+    {
+      "item": "am:marteau_en_fer"
+    },
+    "L":
+    {
+      "item": "am:laniere_de_cuir"
+    },
+    "P":
+    {
+      "item": "am:planche"
+    },
+    "C":
+    {
+      "item": "am:clous"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:seau_en_bois",
+    "count": 1
+  }
+}

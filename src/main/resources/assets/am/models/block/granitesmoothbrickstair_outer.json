@@ -1,0 +1,8 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "am:blocks/stonebrick_granite",
+    "top": "am:blocks/stonebrick_granite",
+    "side": "am:blocks/stonebrick_granite"
+  }
+}

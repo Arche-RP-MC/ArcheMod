@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " C ",
+    "LLL",
+    "LLL"
+  ],
+
+  "key":
+  {
+    "C":
+    {
+      "item": "am:ciseaux_de_couture"
+    },
+    "L":
+    {
+      "item": "am:etoffe"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:couverture",
+    "count": 1
+  }
+}

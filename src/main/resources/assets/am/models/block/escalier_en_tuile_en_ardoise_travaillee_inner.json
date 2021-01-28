@@ -1,0 +1,9 @@
+
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "am:blocks/tuile_en_ardoise_travaillee",
+    "top": "am:blocks/tuile_en_ardoise_travaillee",
+    "side": "am:blocks/tuile_en_ardoise_travaillee"
+  }
+}

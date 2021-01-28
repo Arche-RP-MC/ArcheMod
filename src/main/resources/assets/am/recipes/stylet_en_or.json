@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "  M",
+    " B ",
+    "T L"
+  ],
+
+  "key":
+  {
+    "M":
+    {
+      "item": "am:manche"
+    },
+    "B":
+    {
+      "item": "am:bobine_de_fil"
+    },
+    "T":
+    {
+      "item": "am:tete_de_plume_en_or"
+    },
+    "L":
+    {
+      "item": "am:loupe"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:stylet_en_or",
+    "count": 1
+  }
+}

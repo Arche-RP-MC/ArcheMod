@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "am:showcase"
+    }
+  ],
+  "result": {
+    "item": "am:showcase_center",
+    "count": 1
+  }
+}

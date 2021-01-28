@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "am:items/palette_de_peinture"
+  }
+}

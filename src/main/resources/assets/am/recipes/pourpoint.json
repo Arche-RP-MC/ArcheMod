@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "BTB",
+    "EVE",
+    "A C"
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:bobine_de_fil"
+    },
+    "E":
+    {
+      "item": "am:etoffe"
+    },
+    "V":
+    {
+      "item": "am:veste"
+    },
+    "T":
+    {
+      "item": "am:cuir_tanne"
+    },
+    "A":
+    {
+      "item": "am:aiguille"
+    },
+    "C":
+    {
+      "item": "am:ciseaux_de_couture"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:pourpoint",
+    "count": 1
+  }
+}

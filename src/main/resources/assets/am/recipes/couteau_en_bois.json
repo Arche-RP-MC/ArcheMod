@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    " H ",
+    "G  "
+  ],
+
+  "key":
+  {
+    "H":
+    {
+      "item": "minecraft:stick"
+    },
+    "G":
+    {
+      "item": "archemod:ironchisel"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:couteau_en_bois",
+    "count": 1
+  }
+}

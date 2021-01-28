@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " P ",
+    "TRL",
+    " P "
+  ],
+
+  "key":
+  {
+    "P":
+    {
+      "item": "am:plaque_de_bronze"
+    },
+    "T":
+    {
+      "item": "am:trousse_d_ingenieur_en_fer"
+    },
+    "R":
+    {
+      "item": "am:rouage"
+    },
+    "L":
+    {
+      "item": "am:loupe"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:serrure_bronze",
+    "count": 1
+  }
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "modid": "archemod",
+    "name": "ArcheMod",
+    "description": "A mod for the roleplay server Arche",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "",
+    "updateUrl": "",
+    "authorList": [
+      "ThibautGravey"
+    ],
+    "credits": "",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": []
+  }
+]

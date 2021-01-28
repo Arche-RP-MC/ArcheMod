@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "ABF",
+    "BLB",
+    "FBA"
+  ],
+
+  "key":
+  {
+    "A":
+    {
+      "item": "minecraft:clay_ball"
+    },
+    "B":
+    {
+      "item": "am:brique_de_pierre"
+    },
+    "F":
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    "L":
+    {
+      "item": "am:lime_en_fer"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:roue_en_pierre",
+    "count": 1
+  }
+}

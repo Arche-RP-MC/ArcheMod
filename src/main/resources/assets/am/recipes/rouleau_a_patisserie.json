@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "M H",
+    "CPC",
+    "H L"
+  ],
+
+  "key":
+  {
+    "M":
+    {
+      "item": "am:marteau_en_fer"
+    },
+    "H":
+    {
+      "item": "am:manche"
+    },
+    "C":
+    {
+      "item": "am:clous"
+    },
+    "P":
+    {
+      "item": "am:planche"
+    },
+    "L":
+    {
+      "item": "am:lime_en_fer"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:rouleau_a_patisserie",
+    "count": 1
+  }
+}

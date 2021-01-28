@@ -1,0 +1,354 @@
+{
+  "__comment": "Designed by Gauchiste with Cubik Studio - https://cubik.studio",
+  "elements": [
+    {
+      "__comment": "Box2",
+      "from": [
+        0,
+        6,
+        0
+      ],
+      "to": [
+        16,
+        7,
+        16
+      ],
+      "rotation": {
+        "origin": [
+          0,
+          6,
+          0
+        ],
+        "axis": "x",
+        "angle": 22.5
+      },
+      "faces": {
+        "down": {
+          "uv": [
+            8,
+            9.5,
+            12,
+            13.5
+          ],
+          "texture": "#texture"
+        },
+        "up": {
+          "uv": [
+            8,
+            1.5,
+            12,
+            5.5
+          ],
+          "texture": "#texture"
+        }
+      }
+    },
+    {
+      "__comment": "PlaneX3",
+      "from": [
+        1,
+        0,
+        0.5
+      ],
+      "to": [
+        15,
+        6,
+        0.501
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            5.5,
+            3.5,
+            7
+          ],
+          "texture": "#texture"
+        },
+        "south": {
+          "uv": [
+            7,
+            11,
+            14,
+            14
+          ],
+          "texture": "#texture"
+        }
+      }
+    },
+    {
+      "__comment": "PlaneZ5",
+      "from": [
+        1,
+        0,
+        0.5
+      ],
+      "to": [
+        1.001,
+        6,
+        14.5
+      ],
+      "faces": {
+        "west": {
+          "uv": [
+            0,
+            0,
+            3.5,
+            1.5
+          ],
+          "texture": "#texture"
+        },
+        "east": {
+          "uv": [
+            3.5,
+            0,
+            7,
+            1.5
+          ],
+          "texture": "#texture"
+        }
+      }
+    },
+    {
+      "__comment": "PlaneZ8",
+      "from": [
+        15,
+        0,
+        0.5
+      ],
+      "to": [
+        15.001,
+        6,
+        14.5
+      ],
+      "faces": {
+        "south": {
+          "uv": [
+            0,
+            10,
+            0.000999451,
+            16
+          ],
+          "texture": "#texture"
+        },
+        "west": {
+          "uv": [
+            7,
+            0,
+            3.5,
+            1.5
+          ],
+          "texture": "#texture"
+        },
+        "east": {
+          "uv": [
+            3.5,
+            0,
+            0,
+            1.5
+          ],
+          "texture": "#texture"
+        }
+      }
+    },
+    {
+      "__comment": "Box2",
+      "from": [
+        0,
+        6,
+        0
+      ],
+      "to": [
+        16,
+        9,
+        16
+      ],
+      "rotation": {
+        "origin": [
+          0,
+          6,
+          0
+        ],
+        "axis": "x",
+        "angle": 22.5
+      },
+      "faces": {
+        "down": {
+          "uv": [
+            12,
+            1.5,
+            16,
+            5.5
+          ],
+          "texture": "#texture"
+        },
+        "up": {
+          "uv": [
+            12,
+            1.5,
+            16,
+            5.5
+          ],
+          "texture": "#texture"
+        },
+        "north": {
+          "uv": [
+            12,
+            7,
+            8,
+            7.75
+          ],
+          "texture": "#texture"
+        },
+        "south": {
+          "uv": [
+            8,
+            7,
+            12,
+            7.75
+          ],
+          "texture": "#texture"
+        },
+        "east": {
+          "uv": [
+            4,
+            7,
+            8,
+            7.75
+          ],
+          "texture": "#texture"
+        }
+      }
+    },
+    {
+      "__comment": "PlaneY6",
+      "from": [
+        1,
+        0,
+        0.5
+      ],
+      "to": [
+        15,
+        0.001,
+        14.5
+      ],
+      "faces": {
+        "down": {
+          "uv": [
+            8.5,
+            10,
+            11.5,
+            13
+          ],
+          "texture": "#texture"
+        }
+      }
+    }
+  ],
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [
+        75,
+        45,
+        0
+      ],
+      "translation": [
+        0,
+        2.5,
+        0
+      ],
+      "scale": [
+        0.375,
+        0.375,
+        0.375
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        75,
+        45,
+        0
+      ],
+      "translation": [
+        0,
+        2.5,
+        0
+      ],
+      "scale": [
+        0.375,
+        0.375,
+        0.375
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        20,
+        14,
+        -5
+      ],
+      "translation": [
+        -4.172,
+        8.3484,
+        4.8695
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        20,
+        14,
+        -5
+      ],
+      "translation": [
+        -4.172,
+        8.3484,
+        4.8695
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "gui": {
+      "rotation": [
+        30,
+        225,
+        0
+      ],
+      "scale": [
+        0.625,
+        0.625,
+        0.625
+      ]
+    },
+    "ground": {
+      "translation": [
+        0,
+        2,
+        0
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        111,
+        0,
+        -180
+      ],
+      "translation": [
+        0,
+        0,
+        -4.173
+      ]
+    }
+  }
+}

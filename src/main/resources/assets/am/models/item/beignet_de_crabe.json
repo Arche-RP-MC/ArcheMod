@@ -1,0 +1,7 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "am:items/beignet_de_crabe"
+    }
+}
+

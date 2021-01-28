@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "FNN",
+    " PG"
+  ],
+
+  "key":
+  {
+    "N":
+    {
+      "item": "am:poils"
+    },
+    "G":
+    {
+      "item": "am:gouache_noire"
+    },
+    "P":
+    {
+      "item": "am:planche"
+    },
+    "F":
+    {
+      "item": "am:lime_en_bronze"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:brosse_a_cheveux_en_bois_noir",
+    "count": 1
+  }
+}

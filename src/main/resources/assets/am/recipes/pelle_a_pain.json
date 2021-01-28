@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "FPC",
+    " B ",
+    "MBL"
+  ],
+
+  "key":
+  {
+    "F":
+    {
+      "item": "am:bobine_de_laine"
+    },
+    "P":
+    {
+      "item": "am:planche"
+    },
+    "C":
+    {
+      "item": "am:clous"
+    },
+    "B":
+    {
+      "item": "minecraft:stick"
+    },
+    "M":
+    {
+      "item": "am:marteau_en_fer"
+    },
+    "L":
+    {
+      "item": "am:lime_en_fer"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:pelle_a_pain",
+    "count": 1
+  }
+}

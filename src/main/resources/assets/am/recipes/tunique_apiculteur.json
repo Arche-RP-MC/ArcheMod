@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "AWB",
+    " P ",
+    " C "
+  ],
+
+  "key":
+  {
+    "W":
+    {
+      "item": "am:cire"
+    },
+    "A":
+    {
+      "item": "am:aiguille"
+    },
+    "P":
+    {
+      "item": "am:tunique"
+    },
+    "B":
+    {
+      "item": "am:bobine_de_laine"
+    },
+    "C":
+    {
+      "item": "am:ciseaux_de_couture"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:tunique_apiculteur",
+    "count": 1
+  }
+}

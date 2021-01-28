@@ -1,0 +1,8 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "am:blocks/concrete_pink_side",
+    "top": "am:blocks/concrete_pink_side",
+    "side": "am:blocks/concrete_pink_side"
+  }
+}

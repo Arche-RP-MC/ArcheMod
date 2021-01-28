@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " NN",
+    "FNN",
+    " NN"
+  ],
+
+  "key":
+  {
+    "N":
+    {
+      "item": "am:caillou_de_gres_rouge"
+    },
+    "F":
+    {
+      "item": "am:lime_en_bronze"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:brique_de_gres_rouge",
+    "count": 1
+  }
+}

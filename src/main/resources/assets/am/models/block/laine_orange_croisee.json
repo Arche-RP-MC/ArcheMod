@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "am:blocks/laine_orange_croisee"
+  }
+}

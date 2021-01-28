@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "age=0": {
+            "model": "am:agriculture/vigne_blanche_stage0"
+        },
+        "age=1": {
+            "model": "am:agriculture/vigne_blanche_stage1"
+        },
+       
+       
+    }
+}

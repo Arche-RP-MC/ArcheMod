@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " MP",
+    "LP ",
+    "P  "
+  ],
+
+  "key":{
+    "P":
+    {
+      "item": "am:pepite_fer"
+    },
+    "M":
+    {
+      "item": "am:marteau_en_acier"
+    },
+    "L":
+    {
+      "item": "am:pinces"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:barre_fer",
+    "count": 1
+  }
+}

@@ -1,0 +1,9 @@
+
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "am:blocks/planche_bouleau_vernie",
+    "top": "am:blocks/planche_bouleau_vernie",
+    "side": "am:blocks/planche_bouleau_vernie"
+  }
+}

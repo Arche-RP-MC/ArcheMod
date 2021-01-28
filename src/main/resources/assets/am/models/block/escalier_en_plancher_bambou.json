@@ -1,0 +1,8 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "am:blocks/plancher_bambou",
+    "top": "am:blocks/plancher_bambou",
+    "side": "am:blocks/plancher_bambou"
+  }
+}

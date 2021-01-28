@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "  M",
+    "P P",
+    "FPS"
+  ],
+
+  "key":
+  {
+    "F":
+    {
+      "item": "am:lime_en_acier"
+    },
+    "S":
+    {
+      "item": "am:clous"
+    },
+    "M":
+    {
+      "item": "am:maillet"
+    },
+    "P":
+    {
+      "item": "am:planche"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:boite",
+    "count": 1
+  }
+}

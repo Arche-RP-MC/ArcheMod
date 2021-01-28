@@ -1,0 +1,7 @@
+{
+    "parent": "am:block/door_top_rh",
+    "textures": {
+        "bottom": "am:blocks/volet_renforce_lower",
+        "top": "am:blocks/volet_renforce_upper"
+    }
+}

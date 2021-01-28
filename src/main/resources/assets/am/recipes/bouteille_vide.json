@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    " LF",
+    " N "
+  ],
+
+  "key":
+  {
+    "N":
+    {
+      "item": "am:bocal"
+    },
+    "F":
+    {
+      "item": "am:canne_de_verrier"
+    },
+    "L":
+    {
+      "item": "am:pince"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:bouteille_vide",
+    "count": 1
+  }
+}

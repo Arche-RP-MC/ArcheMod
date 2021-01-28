@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "  C",
+    "LL ",
+    "P  "
+  ],
+
+  "key":
+  {
+    "P":
+    {
+      "item": "am:ciseaux_de_couture"
+    },
+    "C":
+    {
+      "item": "am:cire"
+    },
+    "L":
+    {
+      "item": "am:etoffe"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:chapeau_apiculteur",
+    "count": 1
+  }
+}

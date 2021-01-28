@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "M  ",
+    "PLC",
+    "H  "
+  ],
+
+  "key":
+  {
+    "M":
+    {
+      "item": "am:marteau_en_fer"
+    },
+    "P":
+    {
+      "item": "am:pinces"
+    },
+    "L":
+    {
+      "item": "am:tete_couteau_fer"
+    },
+    "C":
+    {
+      "item": "am:clous"
+    },
+    "H":
+    {
+      "item": "am:manche"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:rasoir",
+    "count": 1
+  }
+}

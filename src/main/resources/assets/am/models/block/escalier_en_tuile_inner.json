@@ -1,0 +1,8 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "am:blocks/tuile",
+    "top": "am:blocks/tuile",
+    "side": "am:blocks/tuile"
+  }
+}

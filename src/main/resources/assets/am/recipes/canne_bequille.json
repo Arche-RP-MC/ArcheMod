@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " P ",
+    "FN ",
+    " N "
+  ],
+
+  "key":
+  {
+    "N":
+    {
+      "item": "minecraft:stick"
+    },
+    "P":
+    {
+      "item": "am:planche"
+    },
+    "F":
+    {
+      "item": "am:lime_en_bronze"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:canne_bequille",
+    "count": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    " L ",
+    " N "
+  ],
+
+  "key":
+  {
+    "N":
+    {
+      "item": "am:papier_ecrit"
+    },
+    "L":
+    {
+      "item": "am:bouteille_vide"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:bouteille_a_message",
+    "count": 1
+  }
+}

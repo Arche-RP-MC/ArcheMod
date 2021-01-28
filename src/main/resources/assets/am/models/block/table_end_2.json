@@ -1,0 +1,9 @@
+{
+  "parent": "am:custom/table_end_2",
+  "textures": {
+    "all": "am:blocks/planks_oak",
+    "particle": "am:blocks/planks_oak",
+    "0": "am:blocks/planks_oak",
+    "texture": "am:blocks/planks_oak"
+  }
+}

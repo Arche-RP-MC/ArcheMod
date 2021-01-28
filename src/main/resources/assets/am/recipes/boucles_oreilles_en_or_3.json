@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    " L ",
+    "FNF"
+  ],
+
+  "key":
+  {
+    "F":
+    {
+      "item": "am:pepite_or"
+    },
+    "N":
+    {
+      "item": "am:pinces"
+    },
+    "L":
+    {
+      "item": "am:lime_en_acier"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:boucles_oreilles_en_or",
+    "count": 1
+  }
+}

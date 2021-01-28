@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " P ",
+    "ALA",
+    " M "
+  ],
+
+  "key":
+  {
+    "M":
+    {
+      "item": "am:mortier_pilon"
+    },
+    "P":
+    {
+      "item": "am:huile_essentielle"
+    },
+    "A":
+    {
+      "item": "minecraft:clay_ball"
+    },
+    "L":
+    {
+      "item": "minecraft:bone"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:emplatre",
+    "count": 1
+  }
+}

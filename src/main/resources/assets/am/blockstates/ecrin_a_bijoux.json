@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "am:ecrin_a_bijoux"
+    },
+    "facing=north": {
+      "model": "am:ecrin_a_bijoux"
+    },
+    "facing=east": {
+      "model": "am:ecrin_a_bijoux",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "am:ecrin_a_bijoux",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "am:ecrin_a_bijoux",
+      "y": 270
+    }
+  }
+}

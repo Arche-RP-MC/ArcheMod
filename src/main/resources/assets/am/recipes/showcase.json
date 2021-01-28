@@ -1,0 +1,52 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "FVS",
+    "CEM",
+    "COL"
+  ],
+
+  "key":
+  {
+    "F":
+    {
+      "item": "am:pepite_fer"
+    },
+    "V":
+    {
+      "item": "minecraft:glass_pane"
+    },
+    "C":
+    {
+      "item": "am:clous"
+    },
+    "S":
+    {
+      "item": "am:scie_en_fer"
+    },
+    "E":
+    {
+      "item": "am:etoffe"
+    },
+    "M":
+    {
+      "item": "am:marteau_en_fer"
+    },
+    "L":
+    {
+      "item": "am:lime_en_fer"
+    },
+    "O":
+    {
+      "item": "minecraft:chest"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:showcase",
+    "count": 1
+  }
+}

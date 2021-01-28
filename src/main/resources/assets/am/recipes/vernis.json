@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "CSE",
+    " B "
+  ],
+
+  "key":
+  {
+    "C":
+    {
+      "item": "am:colle"
+    },
+    "S":
+    {
+      "item": "am:seve"
+    },
+    "E":
+    {
+      "item": "am:seau_d_eau_en_bois"
+    },
+    "B":
+    {
+      "item": "am:bocal"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:vernis",
+    "count": 1
+  }
+}

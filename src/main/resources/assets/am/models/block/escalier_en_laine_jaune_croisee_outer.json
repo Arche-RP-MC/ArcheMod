@@ -1,0 +1,8 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "am:blocks/laine_jaune_croisee",
+    "top": "am:blocks/laine_jaune_croisee",
+    "side": "am:blocks/laine_jaune_croisee"
+  }
+}

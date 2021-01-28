@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "HD ",
+    "MCG"
+  ],
+
+  "key":
+  {
+    "H":
+    {
+      "item": "am:tete_dague_bronze"
+    },
+    "C":
+    {
+      "item": "am:pince"
+    },
+    "M":
+    {
+      "item": "am:manche"
+    },
+    "D":
+    {
+      "item": "am:clous"
+    },
+    "G":
+    {
+      "item": "am:marteau_en_acier"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:dague",
+    "count": 1
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "am:items/Part_de_tarte_aux_fruits_rouges"
+  }
+}

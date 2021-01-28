@@ -1,0 +1,8 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "am:blocks/stone_granite_smooth_mossy",
+    "top": "am:blocks/stone_granite_smooth_mossy",
+    "side": "am:blocks/stone_granite_smooth_mossy"
+  }
+}

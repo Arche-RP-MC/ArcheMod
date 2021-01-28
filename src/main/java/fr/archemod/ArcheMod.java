@@ -1,0 +1,85 @@
+package fr.archemod;
+
+import fr.archemod.chat.GuiChatListener;
+import fr.archemod.chat.capabilities.description.Description;
+import fr.archemod.chat.capabilities.description.DescriptionStorage;
+import fr.archemod.chat.capabilities.description.IDescription;
+import fr.archemod.chat.capabilities.indicator.ArcheChat;
+import fr.archemod.chat.capabilities.indicator.ArcheChatStorage;
+import fr.archemod.chat.capabilities.indicator.IArcheChat;
+import fr.archemod.chat.network.indicator.PacketArcheChat;
+import fr.archemod.proxy.CommonProxy;
+import fr.archemod.util.ArcheCreativeTabs;
+import fr.archemod.util.Reference;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.capabilities.CapabilityManager;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.SidedProxy;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.network.NetworkRegistry;
+import net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper;
+import net.minecraftforge.fml.relauncher.Side;
+
+@Mod(
+        modid = Reference.MOD_ID,
+        name = Reference.MOD_NAME,
+        version = Reference.VERSION
+)
+public class ArcheMod {
+
+    public static SimpleNetworkWrapper networkArcheMod;
+    /** This is used to keep track of GUIs that we make*/
+    public static int modGuiIndex = 0;
+
+    /** Set our custom inventory Gui index to the next available Gui index */
+    public static final int GUI_ITEM_INV = modGuiIndex++;
+
+    public static CreativeTabs archeCreativeTabs = new ArcheCreativeTabs("arche_creative_tabs");
+
+    /**
+     * This is the instance of your mod as created by Forge. It will never be null.
+     */
+    @Mod.Instance(Reference.MOD_ID)
+    public static ArcheMod INSTANCE;
+
+    @SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.COMMON_PROXY_CLASS)
+    public static CommonProxy proxy;
+
+    /**
+     * This is the first initialization event. Register tile entities here.
+     * The registry events below will have fired prior to entry to this method.
+     */
+    @Mod.EventHandler
+    public void preinit(FMLPreInitializationEvent event) {
+        MinecraftForge.EVENT_BUS.register(GuiChatListener.class);
+
+        CapabilityManager.INSTANCE.register(IArcheChat.class, new ArcheChatStorage(), ArcheChat::new);
+        CapabilityManager.INSTANCE.register(IDescription.class, new DescriptionStorage(), Description::new);
+
+        networkArcheMod = NetworkRegistry.INSTANCE.newSimpleChannel(Reference.MOD_ID);
+
+        networkArcheMod.registerMessage(PacketArcheChat.ServerHandler.class, PacketArcheChat.class, 5, Side.SERVER);
+        networkArcheMod.registerMessage(PacketArcheChat.ClientHandler.class, PacketArcheChat.class, 6, Side.CLIENT);
+        //networkDescription.registerMessage(PacketDescription.ServerHandler.class, PacketDescription.class, 4, Side.SERVER);
+        //networkDescription.registerMessage(PacketDescription.ClientHandler.class, PacketDescription.class, 5, Side.CLIENT);
+    }
+
+    /**
+     * This is the second initialization event. Register custom recipes
+     */
+    @Mod.EventHandler
+    public void init(FMLInitializationEvent event) {
+
+    }
+
+    /**
+     * This is the final initialization event. Register actions from other mods here
+     */
+    @Mod.EventHandler
+    public void postinit(FMLPostInitializationEvent event) {
+
+    }
+}

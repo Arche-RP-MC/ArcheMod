@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "am:table"
+    }
+  ],
+  "result": {
+    "item": "am:table_middle",
+    "count": 1
+  }
+}

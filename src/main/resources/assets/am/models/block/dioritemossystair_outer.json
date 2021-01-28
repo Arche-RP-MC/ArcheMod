@@ -1,0 +1,8 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "am:blocks/stonebrick_diorite_mossy",
+    "top": "am:blocks/stonebrick_diorite_mossy",
+    "side": "am:blocks/stonebrick_diorite_mossy"
+  }
+}

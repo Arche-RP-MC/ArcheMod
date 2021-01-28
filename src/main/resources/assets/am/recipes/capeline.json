@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "FNG",
+    "NNN",
+    "   "
+  ],
+
+  "key":
+  {
+    "N":
+    {
+      "item": "am:etoffe"
+    },
+    "G":
+    {
+      "item": "am:cuir"
+    },
+    "F":
+    {
+      "item": "am:ciseaux_de_couture"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:capeline",
+    "count": 1
+  }
+}

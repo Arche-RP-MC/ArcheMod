@@ -1,0 +1,8 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "am:blocks/tuile_en_ardoise_taillee",
+    "top": "am:blocks/tuile_en_ardoise_taillee",
+    "side": "am:blocks/tuile_en_ardoise_taillee"
+  }
+}

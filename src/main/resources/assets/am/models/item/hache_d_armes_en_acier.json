@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures" : {
+    "layer0": "am:items/hache_d_armes_en_acier"
+  }
+}

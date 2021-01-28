@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " F ",
+    "LNL",
+    "MCM"
+  ],
+
+  "key":
+  {
+    "C":
+    {
+      "item": "am:clous"
+    },
+    "F":
+    {
+      "item": "am:fourrure_mouchetee"
+    },
+    "N":
+    {
+      "item": "am:ciseaux_de_couture"
+    },
+    "L":
+    {
+      "item": "am:laniere"
+    },
+    "M":
+    {
+      "item": "am:cuir_tanne"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:bottes_fourrees",
+    "count": 1
+  }
+}

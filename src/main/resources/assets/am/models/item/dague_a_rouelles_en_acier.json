@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "am:items/dague_a_rouelles_en_acier"
+  }
+}

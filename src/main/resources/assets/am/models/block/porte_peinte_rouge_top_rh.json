@@ -1,0 +1,8 @@
+
+{
+    "parent": "am:block/door_top_rh",
+    "textures": {
+        "bottom": "am:blocks/porte_peinte_rouge_lower",
+        "top": "am:blocks/porte_peinte_rouge_upper"
+    }
+}

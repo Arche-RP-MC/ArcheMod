@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " F ",
+    "HLK",
+    " C "
+  ],
+
+  "key":
+  {
+    "C":
+    {
+      "item": "minecraft:water_bucket"
+    },
+     "K":
+    {
+      "item": "am:plantes_sechees"
+    },
+    "F":
+    {
+      "item": "am:cire"
+    },
+    "H":
+    {
+      "item": "am:huile_essentielle"
+    },
+    "L":
+    {
+      "item": "minecraft:coal"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:encens",
+    "count": 2
+  }
+}

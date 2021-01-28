@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "E  ",
+    " P ",
+    "  S"
+  ],
+
+  "key":
+  {
+    "E":
+    {
+      "item": "am:etoffe"
+    },
+    "P":
+    {
+      "item": "am:perle_naturelle"
+    },
+    "S":
+    {
+      "item": "am:seau_d_eau_en_bois"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:perle",
+    "count": 1
+  }
+}

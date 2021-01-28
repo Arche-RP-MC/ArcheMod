@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "  L",
+    "CLF",
+    "   "
+  ],
+
+  "key":
+  {
+    "F":
+    {
+      "item": "minecraft:water_bucket"
+    },
+    "C":
+    {
+      "item": "am:spatule"
+    },
+    "L":
+    {
+      "item": "minecraft:clay_ball"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:cheval_en_glaise",
+    "count": 1
+  }
+}

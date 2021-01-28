@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " P ",
+    " G ",
+    "LEO"
+  ],
+
+  "key":
+  {
+    "E":
+    {
+      "item": "am:etoffe"
+    },
+    "O":
+    {
+      "item": "am:loupe"
+    },
+    "G":
+    {
+      "item": "am:grosse_geode_rubis"
+    },
+    "P":
+    {
+      "item": "am:pinces"
+    },
+    "L":
+    {
+      "item": "am:lime_en_fer"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:rubis_taille_trillion",
+    "count": 1
+  }
+}

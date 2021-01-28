@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "CLF",
+    "   "
+  ],
+
+  "key":
+  {
+    "F":
+    {
+      "item": "am:gouache_blanche"
+    },
+    "C":
+    {
+      "item": "am:lime_en_fer"
+    },
+    "L":
+    {
+      "item": "minecraft:stick"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:cavalier_blanc",
+    "count": 1
+  }
+}

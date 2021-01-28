@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "am:blocks/carrelage_damier_poli_rose"
+  }
+}

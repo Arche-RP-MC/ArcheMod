@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "HD ",
+    "MCG"
+  ],
+
+  "key":
+  {
+    "H":
+    {
+      "item": "am:tete_couteau_or"
+    },
+    "C":
+    {
+      "item": "am:pince"
+    },
+    "M":
+    {
+      "item": "am:manche"
+    },
+    "D":
+    {
+      "item": "am:clous"
+    },
+    "G":
+    {
+      "item": "am:marteau_en_bronze"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:couteau_en_or",
+    "count": 1
+  }
+}

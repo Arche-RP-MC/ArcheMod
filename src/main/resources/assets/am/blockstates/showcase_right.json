@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "am:showcase_right"
+    },
+    "facing=north": {
+      "model": "am:showcase_right"
+    },
+    "facing=east": {
+      "model": "am:showcase_right",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "am:showcase_right",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "am:showcase_right",
+      "y": 270
+    }
+  }
+}

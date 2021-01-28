@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "B V",
+    "LPT",
+    "V B"
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:barre_en_cuivre"
+    },
+    "V":
+    {
+      "item": "minecraft:glass"
+    },
+    "T":
+    {
+      "item": "am:trousse_d_ingenieur_en_fer"
+    },
+    "P":
+    {
+      "item": "am:pepite_cuivre"
+    },
+    "L":
+    {
+      "item": "am:loupe"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:sablier_en_cuivre",
+    "count": 1
+  }
+}

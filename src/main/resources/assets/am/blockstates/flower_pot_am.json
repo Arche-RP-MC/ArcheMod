@@ -1,0 +1,27 @@
+{
+    "variants": {
+        "contents=empty,legacy_data=0":            { "model": "minecraft:flower_pot" },
+        "contents=rose,legacy_data=0":             { "model": "minecraft:flower_pot_rose" },
+        "contents=blue_orchid,legacy_data=0":      { "model": "minecraft:flower_pot_orchid" },
+        "contents=allium,legacy_data=0":           { "model": "minecraft:flower_pot_allium" },
+        "contents=houstonia,legacy_data=0":        { "model": "minecraft:flower_pot_houstonia" },
+        "contents=red_tulip,legacy_data=0":        { "model": "minecraft:flower_pot_tulip_red" },
+        "contents=orange_tulip,legacy_data=0":     { "model": "minecraft:flower_pot_tulip_orange" },
+        "contents=white_tulip,legacy_data=0":      { "model": "minecraft:flower_pot_tulip_white" },
+        "contents=oxeye_daisy,legacy_data=0":      { "model": "minecraft:flower_pot_daisy" },
+        "contents=pink_tulip,legacy_data=0":       { "model": "minecraft:flower_pot_tulip_pink" },
+        "contents=dandelion,legacy_data=0":        { "model": "minecraft:flower_pot_dandelion" },
+        "contents=oak_sapling,legacy_data=0":      { "model": "minecraft:flower_pot_oak" },
+        "contents=spruce_sapling,legacy_data=0":   { "model": "minecraft:flower_pot_spruce" },
+        "contents=birch_sapling,legacy_data=0":    { "model": "minecraft:flower_pot_birch" },
+        "contents=jungle_sapling,legacy_data=0":   { "model": "minecraft:flower_pot_jungle" },
+        "contents=acacia_sapling,legacy_data=0":   { "model": "minecraft:flower_pot_acacia" },
+        "contents=dark_oak_sapling,legacy_data=0": { "model": "minecraft:flower_pot_dark_oak" },
+        "contents=mushroom_red,legacy_data=0":     { "model": "minecraft:flower_pot_mushroom_red" },
+        "contents=mushroom_brown,legacy_data=0":   { "model": "minecraft:flower_pot_mushroom_brown" },
+        "contents=dead_bush,legacy_data=0":        { "model": "minecraft:flower_pot_dead_bush" },
+        "contents=fern,legacy_data=0":             { "model": "minecraft:flower_pot_fern" },
+        "contents=cactus,legacy_data=0":           { "model": "minecraft:flower_pot_cactus" },
+        "contents=basilic,legacy_data=0":          { "model": "am:flower_pot_basilic"}
+    }
+}

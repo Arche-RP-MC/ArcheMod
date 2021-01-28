@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "L L",
+    "LPL",
+    "   "
+  ],
+
+  "key":{
+    "P":
+    {
+      "item": "am:bobine_en_bois"
+    },
+    "L":
+    {
+      "item": "am:fil_de_chanvre"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:bobine_de_chanvre",
+    "count": 1
+  }
+}

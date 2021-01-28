@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "L  ",
+    "CE ",
+    "   "
+  ],
+
+  "key":
+  {
+    "C":
+    {
+      "item": "am:verre_en_fusion"
+    },
+    "E":
+    {
+      "item": "am:ciseaux_de_couture"
+    },
+    "L":
+    {
+      "item": "am:laniere"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:collier_en_cuir_et_perle_de_verre",
+    "count": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "GHG",
+    "HGH"
+  ],
+
+  "key":
+  {
+    "H":
+    {
+      "item": "minecraft:red_flower"
+    },
+    "G":
+    {
+      "item": "am:fibre_vegetale"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:couronne_de_fleurs",
+    "count": 2
+  }
+}

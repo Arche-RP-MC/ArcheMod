@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "JJJ",
+    "GHC"
+  ],
+
+  "key":
+  {
+    "H":
+    {
+      "item": "am:cristal_de_sel"
+    },
+    "J":
+    {
+      "item": "am:cuir"
+    },
+    "C":
+    {
+      "item": "am:huile_de_tannage"
+    },
+    "G":
+    {
+      "item": "am:couteau_en_bronze"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:cuir_tanne",
+    "count": 3
+  }
+}

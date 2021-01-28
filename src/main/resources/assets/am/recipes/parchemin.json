@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "BCB",
+    "KCS",
+    "BCB"
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "minecraft:stick"
+    },
+    "K":
+    {
+      "item": "am:couteau"
+    },
+    "S":
+    {
+      "item": "am:seau_d_eau_en_bois"
+    },
+    "C":
+    {
+      "item": "am:cuir_tanne"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:parchemin",
+    "count": 3
+  }
+}

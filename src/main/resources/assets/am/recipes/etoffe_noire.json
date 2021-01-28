@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "HHH",
+    "HGH",
+    "HHH"
+  ],
+
+  "key":
+  {
+    "H":
+    {
+      "item": "am:etoffe"
+    },
+    "G":
+    {
+      "item": "minecraft:dye",
+      "data": "0"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:etoffe_noire",
+    "count": 8
+  }
+}

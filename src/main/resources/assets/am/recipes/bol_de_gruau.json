@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " S ",
+    "FFF",
+    "BBB"
+  ],
+
+  "key":
+  {
+    "S":
+    {
+      "item": "minecraft:water_bucket"
+    },
+    "F":
+    {
+      "item": "am:farine"
+    },
+    "B":
+    {
+      "item": "minecraft:bowl"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:bol_de_gruau",
+    "count": 3
+  }
+}

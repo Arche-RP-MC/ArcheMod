@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "CLL",
+    " LK"
+  ],
+
+  "key":
+  {
+    "C":
+    {
+      "item": "am:ciseaux_de_couture"
+    },
+    "K":
+    {
+      "item": "am:laine_brute"
+    },
+    "L":
+    {
+      "item": "am:etoffe"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:coiffe_rembouree",
+    "count": 1
+  }
+}

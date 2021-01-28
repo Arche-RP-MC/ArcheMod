@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " MP",
+    "LP ",
+    "P  "
+  ],
+
+  "key":{
+    "P":
+    {
+      "item": "am:pepite_plomb"
+    },
+    "M":
+    {
+      "item": "am:marteau_en_fer"
+    },
+    "L":
+    {
+      "item": "am:pinces"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:barre_plomb",
+    "count": 1
+  }
+}

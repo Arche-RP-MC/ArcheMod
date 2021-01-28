@@ -1,0 +1,8 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "am:blocks/laine_verte_claire_croisee",
+    "top": "am:blocks/laine_verte_claire_croisee",
+    "side": "am:blocks/laine_verte_claire_croisee"
+  }
+}

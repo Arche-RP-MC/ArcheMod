@@ -1,0 +1,10 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "am:wool_colored_magenta"
+  },
+  "variants": {
+    "normal": [{"model": "am:wool_colored_magenta"}],
+    "inventory": [{"model": "am:wool_colored_magenta"}]
+  }
+}

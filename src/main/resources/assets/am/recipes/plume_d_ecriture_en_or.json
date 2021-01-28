@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " A ",
+    "BCP",
+    " L"
+  ],
+
+  "key":
+  {
+    "L":
+    {
+      "item": "am:pepite_or"
+    },
+    "A":
+    {
+      "item": "minecraft:feather"
+    },
+    "P":
+    {
+      "item": "am:pinces"
+    },
+    "C":
+    {
+      "item": "am:clous"
+    },
+    "B":
+    {
+      "item": "am:bobine_de_fil"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:plume_d_ecriture_en_or",
+    "count": 1
+  }
+}

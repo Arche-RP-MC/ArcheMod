@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "am:chaise_chene"
+    },
+    "facing=south": {
+      "model": "am:chaise_chene",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "am:chaise_chene",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "am:chaise_chene",
+      "y": 270
+    }
+  }
+}

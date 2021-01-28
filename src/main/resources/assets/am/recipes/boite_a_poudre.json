@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    " P ",
+    "FP "
+  ],
+
+  "key":
+  {
+    "F":
+    {
+      "item": "am:lime_en_bronze"
+    },
+    "P":
+    {
+      "item": "am:planche"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:boite_a_poudre",
+    "count": 1
+  }
+}

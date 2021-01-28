@@ -1,0 +1,6 @@
+{
+    "parent": "am:block/trapdoor_top",
+    "textures": {
+        "texture": "am:blocks/trappe_travaillee_en_chene_noir"
+    }
+}

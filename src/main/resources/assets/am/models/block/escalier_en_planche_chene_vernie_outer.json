@@ -1,0 +1,7 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "am:blocks/planche_chene_vernie",
+    "top": "am:blocks/planche_chene_vernie",
+    "side": "am:blocks/planche_chene_vernie"
+  

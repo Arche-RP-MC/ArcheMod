@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "variant=default": { "model": "am:wool_colored_magenta" },
+        "normal": { "model": "am:wool_colored_magenta" }
+    }
+}

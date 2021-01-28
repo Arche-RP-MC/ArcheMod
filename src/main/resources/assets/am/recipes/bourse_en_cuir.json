@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "AFC",
+    "T T",
+    " T "
+  ],
+
+  "key":
+  {
+    "A":
+    {
+      "item": "am:aiguille"
+    },
+    "F":
+    {
+      "item": "minecraft:string"
+    },
+    "C":
+    {
+      "item": "am:ciseaux_de_couture"
+    },
+    "T":
+    {
+      "item": "am:cuir_tanne"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:bourse_en_cuir",
+    "count": 1
+  }
+}

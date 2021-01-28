@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "L  ",
+    "CEF",
+    "   "
+  ],
+
+  "key":
+  {
+    "C":
+    {
+      "item": "am:pince"
+    },
+    "E":
+    {
+      "item": "am:lime_en_bronze"
+    },
+    "F":
+    {
+      "item": "am:loupe"
+    },
+    "L":
+    {
+      "item": "am:barre_argent"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:collier_en_argent",
+    "count": 1
+  }
+}

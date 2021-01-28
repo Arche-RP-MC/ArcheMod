@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " L ",
+    " G ",
+    "EPO"
+  ],
+
+  "key":
+  {
+    "E":
+    {
+      "item": "am:etoffe"
+    },
+    "O":
+    {
+      "item": "am:loupe"
+    },
+    "G":
+    {
+      "item": "am:grosse_geode_turquoise"
+    },
+    "P":
+    {
+      "item": "am:pinces"
+    },
+    "L":
+    {
+      "item": "am:lime_en_fer"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:turquoise_taille_coeur",
+    "count": 1
+  }
+}

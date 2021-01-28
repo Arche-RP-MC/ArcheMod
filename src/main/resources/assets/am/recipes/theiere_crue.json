@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "ES ",
+    "AAA",
+    "AA "
+  ],
+
+  "key":
+  {
+    "E":
+    {
+      "item": "am:seau_d_eau_en_bois"
+    },
+    "S":
+    {
+      "item": "am:spatule"
+    },
+    "A":
+    {
+      "item": "minecraft:clay_ball"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:theiere_crue",
+    "count": 1
+  }
+}

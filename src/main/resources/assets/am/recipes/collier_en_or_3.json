@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "L  ",
+    "CEF",
+    "   "
+  ],
+
+  "key":
+  {
+    "C":
+    {
+      "item": "am:pince"
+    },
+    "E":
+    {
+      "item": "am:lime_en_acier"
+    },
+    "F":
+    {
+      "item": "am:loupe"
+    },
+    "L":
+    {
+      "item": "am:barre_or"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:collier_en_or",
+    "count": 1
+  }
+}

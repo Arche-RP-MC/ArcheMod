@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "CLL",
+    "F  "
+  ],
+
+  "key":
+  {
+    "F":
+    {
+      "item": "am:pince"
+    },
+    "C":
+    {
+      "item": "am:canne_de_verrier"
+    },
+    "K":
+    {
+      "item": "am:flacon"
+    },
+    "L":
+    {
+      "item": "am:verre_en_fusion"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:etui_en_verre",
+    "count": 1
+  }
+}

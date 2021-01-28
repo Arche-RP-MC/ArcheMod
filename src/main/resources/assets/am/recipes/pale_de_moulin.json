@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "PEP",
+    "ERE",
+    "PEP"
+  ],
+
+  "key":
+  {
+    "P":
+    {
+      "item": "am:planche"
+    },
+    "R":
+    {
+      "item": "am:rouage_sophistique"
+    },
+    "E":
+    {
+      "item": "am:etoffe"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:pale_de_moulin",
+    "count": 1
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " PP",
+    " PP",
+    " CM"
+  ],
+
+  "key":
+  {
+    "C":
+    {
+      "item": "am:pinces"
+    },
+    "P":
+    {
+      "item": "am:pepite_acier"
+    },
+    "M":
+    {
+      "item": "am:marteau_en_fer"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:plaque_d_acier",
+    "count": 1
+  }
+}

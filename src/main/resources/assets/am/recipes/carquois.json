@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " C ",
+    "GN ",
+    "G  "
+  ],
+
+  "key":
+  {
+    "N":
+    {
+      "item": "am:laniere"
+    },
+    "P":
+    {
+      "item": "am:ciseaux_de_couture"
+    },
+    "G":
+    {
+      "item": "minecraft:leather"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:carquois",
+    "count": 1
+  }
+}

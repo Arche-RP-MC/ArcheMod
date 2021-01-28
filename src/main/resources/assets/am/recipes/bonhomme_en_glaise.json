@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " F ",
+    " P ",
+    " AA"
+  ],
+
+  "key":
+  {
+    "F":
+    {
+      "item": "am:spatule"
+    },
+    "A":
+    {
+      "item": "minecraft:clay_ball"
+    },
+    "P":
+    {
+      "item": "minecraft:water_bucket"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:bonhomme_en_glaise",
+    "count": 1
+  }
+}

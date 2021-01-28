@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "CL ",
+    "FLL"
+  ],
+
+  "key":
+  {
+    "F":
+    {
+      "item": "am:pince"
+    },
+    "C":
+    {
+      "item": "am:canne_de_verrier"
+    },
+    "L":
+    {
+      "item": "am:verre_en_fusion"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:choppe_en_verre",
+    "count": 2
+  }
+}

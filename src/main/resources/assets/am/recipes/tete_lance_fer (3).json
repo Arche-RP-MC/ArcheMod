@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " M ",
+    " CP",
+    " F "
+  ],
+
+  "key":
+  {
+    "M":
+    {
+      "item": "am:marteau_en_acier"
+    },
+    "P":
+    {
+      "item": "am:pinces"
+    },
+    "C":
+    {
+      "item": "am:tete_couteau_fer"
+    },
+    "F":
+    {
+      "item": "am:tete_masse_fer"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:tete_lance_fer",
+    "count": 1
+  }
+}

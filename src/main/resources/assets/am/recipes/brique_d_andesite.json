@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " NN",
+    "FNN",
+    " NN"
+  ],
+
+  "key":
+  {
+    "N":
+    {
+      "item": "am:caillou_d_andesite"
+    },
+    "F":
+    {
+      "item": "am:lime_en_bronze"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:brique_d_andesite",
+    "count": 1
+  }
+}

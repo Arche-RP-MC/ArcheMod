@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "BEB",
+    "LEL",
+    "A C"
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:bobine_de_fil"
+    },
+    "E":
+    {
+      "item": "am:etoffe"
+    },
+    "L":
+    {
+      "item": "am:laniere_en_cuir"
+    },
+    "A":
+    {
+      "item": "am:aiguille"
+    },
+    "C":
+    {
+      "item": "am:ciseaux_de_couture"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:poupee",
+    "count": 1
+  }
+}

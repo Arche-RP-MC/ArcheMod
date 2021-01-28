@@ -1,0 +1,6 @@
+{
+  "parent": "block/fence_post",
+  "textures": {
+    "texture": "am:blocks/stone_andesite_smooth"
+  }
+}

@@ -1,0 +1,54 @@
+{
+    "variants": {
+        "size=0": {
+            "model": "am:baril_eau"
+        },
+        "size=1": {
+            "model": "am:baril_eau"
+        },
+        "size=2": {
+            "model": "am:baril_eau"
+        },
+        "size=3": {
+            "model": "am:baril_eau"
+        },
+        "size=4": {
+            "model": "am:baril_eau"
+        },
+        "size=5": {
+            "model": "am:baril_eau"
+        },
+        "size=6": {
+            "model": "am:baril_eau"
+        },
+        "size=7": {
+            "model": "am:baril_eau"
+        },
+        "size=8": {
+            "model": "am:baril_eau"
+        },
+        "size=9": {
+            "model": "am:baril_eau"
+        },
+        "size=10": {
+            "model": "am:baril_eau"
+        },
+        "size=11": {
+            "model": "am:baril_eau"
+        },
+        "size=12": {
+            "model": "am:baril_eau"
+        },
+        "size=13": {
+            "model": "am:baril_eau"
+        },
+        "size=14": {
+            "model": "am:baril_eau"
+        },
+        "size=15": {
+            "model": "am:baril_eau"
+        }  
+    }
+}
+
+

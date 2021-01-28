@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " LM",
+    "PBP",
+    "   "
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:barre_cuivre"
+    },
+    "P":
+    {
+      "item": "am:plaque_de_cuivre"
+    },
+    "L":
+    {
+      "item": "am:lime_en_bronze"
+    },
+    "M":
+    {
+      "item": "am:loupe"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:balance_en_cuivre",
+    "count": 1
+  }
+}

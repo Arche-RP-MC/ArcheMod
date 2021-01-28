@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " F ",
+    "FLF",
+    "FFF"
+  ],
+
+  "key":
+  {
+    "F":
+    {
+      "item": "am:fibre_vegetale"
+    },
+    "L":
+    {
+      "item": "am:laniere_de_cuir"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:panier_en_osier",
+    "count": 1
+  }
+}

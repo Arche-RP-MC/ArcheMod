@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " L ",
+    "OGP",
+    " E "
+  ],
+
+  "key":
+  {
+    "E":
+    {
+      "item": "am:etoffe"
+    },
+    "O":
+    {
+      "item": "am:loupe"
+    },
+    "G":
+    {
+      "item": "am:geode_jade"
+    },
+    "P":
+    {
+      "item": "am:pinces"
+    },
+    "L":
+    {
+      "item": "am:lime_en_fer"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:jade_taille_asscher",
+    "count": 1
+  }
+}

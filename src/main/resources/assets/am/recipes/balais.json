@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "MBB",
+    "   "
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:planche"
+    },
+    "M":
+    {
+      "item": "minecraft:wheat"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:balais",
+    "count": 1
+  }
+}

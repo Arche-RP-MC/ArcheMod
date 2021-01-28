@@ -1,0 +1,33 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "am:blocks/ecrin_a_bijoux_cote",
+		"1": "am:blocks/ecrin_a_bijoux_dessous",
+		"2": "am:blocks/ecrin_a_bijoux_dessus",
+		"3": "am:blocks/ecrin_a_bijoux_devant",
+		"particle": "am:blocks/ecrin_a_bijoux_cote"
+	},
+	"elements": [
+		{
+			"from": [4, 0, 6],
+			"to": [12, 6, 14],
+			"rotation": {"angle": 0, "axis": "y", "origin": [10, 10, 11]},
+			"faces": {
+				"north": {"uv": [1, 6, 15, 16], "texture": "#3"},
+				"east": {"uv": [1, 6, 15, 16], "texture": "#0"},
+				"south": {"uv": [1, 6, 15, 16], "texture": "#0"},
+				"west": {"uv": [1, 6, 15, 16], "texture": "#0"},
+				"up": {"uv": [1, 1, 15, 15], "texture": "#2"},
+				"down": {"uv": [1, 1, 15, 15], "texture": "#1"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [65, 0, 0],
+			"translation": [-1.75, 2.5, 2.25],
+			"scale": [0.8, 0.8, 0.8]
+		}
+	}
+}

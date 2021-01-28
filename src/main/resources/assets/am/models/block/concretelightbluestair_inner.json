@@ -1,0 +1,8 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "am:blocks/concrete_light_blue_side",
+    "top": "am:blocks/concrete_light_blue_side",
+    "side": "am:blocks/concrete_light_blue_side"
+  }
+}

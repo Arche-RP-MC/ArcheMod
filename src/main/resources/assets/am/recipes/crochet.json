@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "HC ",
+    "DG "
+  ],
+
+  "key":
+  {
+    "H":
+    {
+      "item": "am:barre_etain"
+    },
+    "C":
+    {
+      "item": "am:pince"
+    },
+    "D":
+    {
+      "item": "am:clous"
+    },
+    "G":
+    {
+      "item": "am:marteau_en_acier"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:crochet",
+    "count": 3
+  }
+}

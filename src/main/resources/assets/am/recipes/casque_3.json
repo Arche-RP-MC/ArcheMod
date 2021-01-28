@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " C ",
+    "GN ",
+    "   "
+  ],
+
+  "key":
+  {
+    "N":
+    {
+      "item": "am:plaque_de_fer"
+    },
+    "P":
+    {
+      "item": "am:marteau_en_acier"
+    },
+    "G":
+    {
+      "item": "am:pince"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:casque",
+    "count": 1
+  }
+}

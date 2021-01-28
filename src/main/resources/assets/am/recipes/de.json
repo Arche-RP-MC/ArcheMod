@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    " HJ",
+    "G  "
+  ],
+
+  "key":
+  {
+    "H":
+    {
+      "item": "am:planche"
+    },
+    "J":
+    {
+      "item": "am:gouache_noire"
+    },
+    "G":
+    {
+      "item": "archemod:ironchisel"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:de",
+    "count": 4
+  }
+}

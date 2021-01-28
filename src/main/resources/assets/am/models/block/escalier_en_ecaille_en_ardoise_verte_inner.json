@@ -1,0 +1,8 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "am:blocks/ecaille_en_ardoise_verte",
+    "top": "am:blocks/ecaille_en_ardoise_verte",
+    "side": "am:blocks/ecaille_en_ardoise_verte"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "  B",
+    "MBC",
+    "P  "
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "minecraft:stick"
+    },
+    "M":
+    {
+      "item": "am:marteau_en_fer"
+    },
+    "C":
+    {
+      "item": "am:clous"
+    },
+    "P":
+    {
+      "item": "am:planche"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:rame",
+    "count": 1
+  }
+}

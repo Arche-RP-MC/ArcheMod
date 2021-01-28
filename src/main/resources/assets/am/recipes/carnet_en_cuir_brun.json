@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "L G",
+    "PPP"
+  ],
+
+  "key":
+  {
+    "G":
+    {
+      "item": "minecraft:dye",
+      "data": "3"
+    },
+    "P":
+    {
+      "item": "am:lot_de_papiers"
+    },
+    "L":
+    {
+      "item": "am:cuir_tanne"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:carnet_en_cuir_brun",
+    "count": 1
+  }
+}

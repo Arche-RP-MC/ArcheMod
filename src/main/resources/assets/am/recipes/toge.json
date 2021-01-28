@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "BCB",
+    " R ",
+    "A X"
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:bobine_de_fil"
+    },
+    "C":
+    {
+      "item": "am:cape"
+    },
+    "R":
+    {
+      "item": "am:robe"
+    },
+    "X":
+    {
+      "item": "am:ciseaux_de_couture"
+    },
+    "A":
+    {
+      "item": "am:aiguille"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:toge",
+    "count": 1
+  }
+}

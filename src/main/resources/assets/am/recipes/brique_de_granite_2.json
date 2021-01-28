@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " NN",
+    "FNN",
+    " NN"
+  ],
+
+  "key":
+  {
+    "N":
+    {
+      "item": "am:caillou_de_granite"
+    },
+    "F":
+    {
+      "item": "am:lime_en_fer"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:brique_de_granite",
+    "count": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "HHH",
+    "HHH",
+    "GHH"
+  ],
+
+  "key":
+  {
+    "H":
+    {
+      "item": "am:bobine_de_lin"
+    },
+    "G":
+    {
+      "item": "am:ciseaux_de_couture"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:etoffe",
+    "count": 4
+  }
+}

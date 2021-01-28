@@ -1,0 +1,50 @@
+{
+    "variants": {
+        "normal": {
+            "model": "am:jaune_ground_lantern_off"
+        },
+        "orientation=0,position=bottom": {
+            "model": "am:jaune_ground_lantern_off"
+        },
+        "orientation=1,position=bottom": {
+            "model": "am:jaune_ground_lantern_off",
+            "y": 90
+        },
+        "orientation=2,position=bottom": {
+            "model": "am:jaune_ground_lantern_off_1",
+            "y": 90
+        },
+        "orientation=3,position=bottom": {
+            "model": "am:jaune_ground_lantern_off_1"
+        },
+        "orientation=0,position=wall": {
+            "model": "am:jaune_wall_lantern_off",
+            "y": 90
+        },
+        "orientation=1,position=wall": {
+            "model": "am:jaune_wall_lantern_off",
+            "y": 180
+        },
+        "orientation=2,position=wall": {
+            "model": "am:jaune_wall_lantern_off",
+            "y": 270
+        },
+        "orientation=3,position=wall": {
+            "model": "am:jaune_wall_lantern_off"
+        },
+        "orientation=0,position=top": {
+            "model": "am:jaune_lantern_off"
+        },
+        "orientation=1,position=top": {
+            "model": "am:jaune_lantern_off",
+            "y": 90
+        },
+        "orientation=2,position=top": {
+            "model": "am:jaune_lantern_off_1",
+            "y": 90
+        },
+        "orientation=3,position=top": {
+            "model": "am:jaune_lantern_off_1"
+        }
+    }
+}

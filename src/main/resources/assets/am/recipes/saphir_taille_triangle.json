@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "PLO",
+    " GE",
+    "   "
+  ],
+
+  "key":
+  {
+    "E":
+    {
+      "item": "am:etoffe"
+    },
+    "O":
+    {
+      "item": "am:loupe"
+    },
+    "G":
+    {
+      "item": "am:petite_geode_saphir"
+    },
+    "P":
+    {
+      "item": "am:pinces"
+    },
+    "L":
+    {
+      "item": "am:lime_en_fer"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:saphir_taille_triangle",
+    "count": 1
+  }
+}

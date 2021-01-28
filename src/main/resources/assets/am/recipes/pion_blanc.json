@@ -1,0 +1,48 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "ETV",
+    " B ",
+    "SML"
+  ],
+
+  "key":
+  {
+    "E":
+    {
+      "item": "am:etoffe"
+    },
+    "T":
+    {
+      "item": "minecraft:dye"
+    },
+    "V":
+    {
+      "item": "am:vernis"
+    },
+    "S":
+    {
+      "item": "am:scie_en_fer"
+    },
+    "M":
+    {
+      "item": "am:marteau_en_fer"
+    },
+    "B":
+    {
+      "item": "minecraft:log"
+    },
+    "L":
+    {
+      "item": "minecraft:lime_en_fer"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:pion_blanc",
+    "count": 6
+  }
+}

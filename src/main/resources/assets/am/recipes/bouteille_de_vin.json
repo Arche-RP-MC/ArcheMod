@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "B B",
+    " F ",
+    " B "
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:bouteille_vide"
+    },
+    "F":
+    {
+      "item": "am:fut_de_vin"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:bouteille_de_vin",
+    "count": 3
+  }
+}

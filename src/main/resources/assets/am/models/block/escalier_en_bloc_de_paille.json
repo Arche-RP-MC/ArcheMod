@@ -1,0 +1,8 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "am:blocks/bloc_de_paille",
+    "top": "am:blocks/bloc_de_paille",
+    "side": "am:blocks/bloc_de_paille"
+  }
+}

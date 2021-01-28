@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "CCG",
+    "  H"
+  ],
+
+  "key":
+  {
+    "C":
+    {
+      "item": "am:plaque_d_or"
+    },
+    "H":
+    {
+      "item": "am:loupe"
+    },
+    "G":
+    {
+      "item": "am:lime_en_fer"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:couronne",
+    "count": 1
+  }
+}

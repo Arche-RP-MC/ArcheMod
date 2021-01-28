@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " H ",
+    " H ",
+    "GH "
+  ],
+
+  "key":
+  {
+    "H":
+    {
+      "item": "am:planche"
+    },
+    "G":
+    {
+      "item": "archemod:ironchisel"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:epee_longue_en_bois",
+    "count": 1
+  }
+}
