@@ -23,19 +23,8 @@ public class TileEntityFishCase extends TileEntityLockableLoot {
     public void readFromNBT(NBTTagCompound compound) {
         super.readFromNBT(compound);
         this.stacks = NonNullList.<ItemStack>withSize(this.getSizeInventory(), ItemStack.EMPTY);
-
-        long actualDate = new Date().getTime() + time;
-
-        /*
-        if(compound.hasKey("time") && compound.getLong("time") == actualDate){
-            stacks.add(new ItemStack(Item.getByNameOrId("bucket")));
-        }
-*/
-
         if (!this.checkLootAndRead(compound))
             ItemStackHelper.loadAllItems(compound, this.stacks);
-
-
     }
 
     @Override
@@ -43,11 +32,13 @@ public class TileEntityFishCase extends TileEntityLockableLoot {
         super.writeToNBT(compound);
         if (!this.checkLootAndWrite(compound))
             ItemStackHelper.saveAllItems(compound, this.stacks);
-        /*
+
+        long date = new Date().getTime();
         if(!compound.hasKey("time")){
-            compound.setLong("time", new Date().getTime());
+            compound.setLong("time", date);
+            this.setDate(date);
         }
-        */
+
         return compound;
     }
 
