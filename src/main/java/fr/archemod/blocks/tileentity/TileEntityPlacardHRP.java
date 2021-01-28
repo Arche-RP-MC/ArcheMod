@@ -15,6 +15,7 @@ import net.minecraft.util.NonNullList;
 
 public class TileEntityPlacardHRP extends TileEntityLockableLoot {
 
+    //test
     private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(9, ItemStack.EMPTY);
     @Override
     public int getSizeInventory() {
