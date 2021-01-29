@@ -1,3 +1,6 @@
 {
-  "parent": "am:block/tache_de_vomi"
+  "parent": "am:block/tache_de_vomi",
+  "textures": {
+    "layer0": "am:items/tache_de_vomi"
+  }
 }

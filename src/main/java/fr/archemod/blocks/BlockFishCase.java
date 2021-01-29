@@ -19,6 +19,7 @@ import net.minecraft.util.EnumBlockRenderType;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.text.TextComponentString;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
@@ -67,6 +68,16 @@ public class BlockFishCase extends BlockBase implements ITileEntityProvider {
         {
             playerIn.openGui(ArcheMod.INSTANCE, 6, worldIn, pos.getX(), pos.getY(), pos.getZ());
 
+            TileEntity tile = worldIn.getTileEntity(pos);
+
+            if(tile instanceof TileEntityFishCase){
+                long date = ((TileEntityFishCase)tile).getDate();
+                long dateAfter = date + 5 * 1000L;
+                if(date >= dateAfter){
+                    playerIn.sendMessage(new TextComponentString("TEST"));
+                }
+            }
+
             return true;
         }
     }
@@ -80,8 +91,8 @@ public class BlockFishCase extends BlockBase implements ITileEntityProvider {
         {
             if(stack.hasDisplayName())
             {
-                Reference.LOGGER.debug("Inventory logged");
                 ((TileEntityFishCase)tile).setCustomName(stack.getDisplayName());
+                Reference.LOGGER.info(((TileEntityFishCase) tile).getDate());
             }
         }
     }

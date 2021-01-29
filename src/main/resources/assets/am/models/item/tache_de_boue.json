@@ -1,3 +1,6 @@
 {
-  "parent": "am:block/tache_de_boue"
+  "parent": "am:block/tache_de_boue",
+  "textures": {
+    "layer0": "am:items/tache_de_boue"
+  }
 }

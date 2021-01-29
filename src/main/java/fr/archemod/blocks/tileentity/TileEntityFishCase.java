@@ -25,6 +25,9 @@ public class TileEntityFishCase extends TileEntityLockableLoot {
         this.stacks = NonNullList.<ItemStack>withSize(this.getSizeInventory(), ItemStack.EMPTY);
         if (!this.checkLootAndRead(compound))
             ItemStackHelper.loadAllItems(compound, this.stacks);
+
+        if(compound.hasKey("time"))
+            this.setDate(compound.getLong("time"));
     }
 
     @Override
@@ -126,6 +129,10 @@ public class TileEntityFishCase extends TileEntityLockableLoot {
 
     public void setDate(long time){
         this.time = time;
+    }
+
+    public long getDate(){
+        return time;
     }
 
 }

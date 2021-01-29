@@ -1,5 +1,5 @@
 {
-	"credit": "Made with Blockbench",
+	"parent": "block/thin_block",
 	"texture_size": [32, 32],
 	"textures": {
 		"1": "am:blocks/tache_d_urine"
@@ -9,12 +9,12 @@
 			"from": [0, 0, 0],
 			"to": [16, 0.1, 16],
 			"faces": {
-				"north": {"uv": [0, 0, 16, 16], "texture": "#1"},
-				"east": {"uv": [0, 0, 16, 16], "texture": "#1"},
-				"south": {"uv": [0, 0, 16, 16], "texture": "#1"},
-				"west": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"north": {"uv": [2, 1.5, 10, 2], "texture": "#1"},
+				"east": {"uv": [2, 1.5, 10, 2], "texture": "#1"},
+				"south": {"uv": [2, 1.5, 10, 2], "texture": "#1"},
+				"west": {"uv": [2, 1.5, 10, 2], "texture": "#1"},
 				"up": {"uv": [0, 0, 16, 16], "texture": "#1"},
-				"down": {"uv": [0, 0, 16, 16], "texture": "#1"}
+				"down": {"uv": [2, 1.5, 10, 2], "texture": "#1"}
 			}
 		}
 	]

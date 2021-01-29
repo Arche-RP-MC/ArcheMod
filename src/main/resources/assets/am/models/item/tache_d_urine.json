@@ -1,3 +1,6 @@
 {
-  "parent": "am:block/tache_d_urine"
+  "parent": "am:block/tache_d_urine",
+  "textures": {
+    "layer0": "am:items/tache_d_urine"
+  }
 }
