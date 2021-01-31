@@ -75,7 +75,7 @@ public class TileEntityFishCase extends TileEntityLockableLoot {
 
     @Override
     public int getInventoryStackLimit() {
-        return 0;
+        return 64;
     }
 
 
@@ -148,11 +148,12 @@ public class TileEntityFishCase extends TileEntityLockableLoot {
     }
 
     public void addItem(ItemStack stack){
-
-        this.stacks.set(stacks.size() + 1, stack);
-
-        if (stack.getCount() > this.getInventoryStackLimit()) {
-            stack.setCount(this.getInventoryStackLimit());
+        for(int i = 0; i < this.stacks.size(); i++){
+            if(this.stacks.get(i).isEmpty()){
+                this.stacks.set(i, stack);
+                this.getUpdateTag();
+                break;
+            }
         }
     }
 
