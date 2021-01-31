@@ -11,6 +11,7 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.InventoryHelper;
+import net.minecraft.inventory.ItemStackHelper;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
@@ -70,13 +71,13 @@ public class BlockFishCase extends BlockBase implements ITileEntityProvider {
 
             TileEntity tile = worldIn.getTileEntity(pos);
 
-            if(tile instanceof TileEntityFishCase){
-                long date = ((TileEntityFishCase)tile).getDate();
-                long dateAfter = date + 5 * 1000L;
-                if(date >= dateAfter){
-                    playerIn.sendMessage(new TextComponentString("TEST"));
-                }
+            long date = Long.parseLong(tile.getTileData().getString("time"));
+            long dateAfter = date + 5 * 1000L;
+            if(dateAfter >= date){
+                ArcheMod.LOGGER.debug("Give item");
+                ((TileEntityFishCase)tile).addItem(new ItemStack(Item.getByNameOrId("bucket")));
             }
+
 
             return true;
         }
@@ -89,10 +90,13 @@ public class BlockFishCase extends BlockBase implements ITileEntityProvider {
         TileEntity tile = worldIn.getTileEntity(pos);
         if(tile instanceof TileEntityFishCase)
         {
+
+            tile.serializeNBT();
+            //ArcheMod.LOGGER.info(tile.getTileData().getString("time"));
             if(stack.hasDisplayName())
             {
                 ((TileEntityFishCase)tile).setCustomName(stack.getDisplayName());
-                Reference.LOGGER.info(((TileEntityFishCase) tile).getDate());
+
             }
         }
     }

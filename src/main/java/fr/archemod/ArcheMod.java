@@ -22,6 +22,8 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper;
 import net.minecraftforge.fml.relauncher.Side;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 @Mod(
         modid = Reference.MOD_ID,
@@ -48,12 +50,18 @@ public class ArcheMod {
     @SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.COMMON_PROXY_CLASS)
     public static CommonProxy proxy;
 
+    public static Logger LOGGER ;
+
+
     /**
      * This is the first initialization event. Register tile entities here.
      * The registry events below will have fired prior to entry to this method.
      */
     @Mod.EventHandler
-    public void preinit(FMLPreInitializationEvent event) {
+    public void preInit(FMLPreInitializationEvent event) {
+
+        LOGGER = event.getModLog();
+
         MinecraftForge.EVENT_BUS.register(GuiChatListener.class);
 
         CapabilityManager.INSTANCE.register(IArcheChat.class, new ArcheChatStorage(), ArcheChat::new);
@@ -65,6 +73,7 @@ public class ArcheMod {
         networkArcheMod.registerMessage(PacketArcheChat.ClientHandler.class, PacketArcheChat.class, 6, Side.CLIENT);
         //networkDescription.registerMessage(PacketDescription.ServerHandler.class, PacketDescription.class, 4, Side.SERVER);
         //networkDescription.registerMessage(PacketDescription.ClientHandler.class, PacketDescription.class, 5, Side.CLIENT);
+
     }
 
     /**

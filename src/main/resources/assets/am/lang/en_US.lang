@@ -913,6 +913,10 @@ tile.lanterne_jaune.name=Lanterne jaune allumée
 tile.lanterne_jaune_off.name=Lanterne éteinte
 
 tile.tache_de_sang.name=Tâche de sang
+tile.tache_de_vomi.name=Tâche de vomi
+tile.tache_d_urine.name=Tâche d'urine
+tile.tache_de_boue.name=Tâche de boue
+tile.tache_d_eau.name=Tâche d'eau
 tile.flower_pot_am.name=Pôt de Fleur Arche
 tile.baril_vide.name=Baril vide
 tile.baril_eau.name=Baril d'eau

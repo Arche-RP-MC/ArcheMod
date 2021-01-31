@@ -1,5 +1,6 @@
 package fr.archemod.blocks.tileentity;
 
+import fr.archemod.ArcheMod;
 import fr.archemod.blocks.container.ContainerFishCase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
@@ -27,7 +28,7 @@ public class TileEntityFishCase extends TileEntityLockableLoot {
             ItemStackHelper.loadAllItems(compound, this.stacks);
 
         if(compound.hasKey("time"))
-            this.setDate(compound.getLong("time"));
+            this.time = Long.parseLong(compound.getString("time"));
     }
 
     @Override
@@ -36,13 +37,22 @@ public class TileEntityFishCase extends TileEntityLockableLoot {
         if (!this.checkLootAndWrite(compound))
             ItemStackHelper.saveAllItems(compound, this.stacks);
 
+        return compound;
+    }
+
+    @Override
+    public NBTTagCompound serializeNBT(){
+
+        NBTTagCompound tag = getTileData();
+
         long date = new Date().getTime();
-        if(!compound.hasKey("time")){
-            compound.setLong("time", date);
-            this.setDate(date);
+        if(!tag.hasKey("time")){
+            ArcheMod.LOGGER.debug("[TILE SERIALIZE....]" + date);
+            tag.setString("time", String.valueOf(date));
+            this.time = Long.parseLong(tag.getString("time"));
         }
 
-        return compound;
+        return tag;
     }
 
     @Override
@@ -107,6 +117,8 @@ public class TileEntityFishCase extends TileEntityLockableLoot {
         }
     }
 
+
+
     @Override
     public boolean isItemValidForSlot(int index, ItemStack stack) {
         return true;
@@ -124,7 +136,7 @@ public class TileEntityFishCase extends TileEntityLockableLoot {
 
     @Override
     public String getName() {
-        return "Casier a poisson";
+        return "Casier à poisson";
     }
 
     public void setDate(long time){
@@ -133,6 +145,15 @@ public class TileEntityFishCase extends TileEntityLockableLoot {
 
     public long getDate(){
         return time;
+    }
+
+    public void addItem(ItemStack stack){
+
+        this.stacks.set(stacks.size() + 1, stack);
+
+        if (stack.getCount() > this.getInventoryStackLimit()) {
+            stack.setCount(this.getInventoryStackLimit());
+        }
     }
 
 }

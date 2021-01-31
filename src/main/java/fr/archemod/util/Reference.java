@@ -11,5 +11,4 @@ public class Reference {
     public static final String CLIENT_PROXY_CLASS = "fr.archemod.proxy.ClientProxy";
     public static final String COMMON_PROXY_CLASS = "fr.archemod.proxy.CommonProxy";
 
-    public static final Logger LOGGER = LogManager.getLogger();
 }
