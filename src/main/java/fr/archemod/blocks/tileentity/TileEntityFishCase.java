@@ -147,9 +147,21 @@ public class TileEntityFishCase extends TileEntityLockableLoot {
         return time;
     }
 
-    public void addItem(ItemStack stack){
+    public void addItem(ItemStack stack, int size){
+
         for(int i = 0; i < this.stacks.size(); i++){
             if(this.stacks.get(i).isEmpty()){
+
+                ItemStack itemStack = this.stacks.get(i);
+
+                if(itemStack == stack){
+                    itemStack.setCount(itemStack.getCount() + size);
+                    this.stacks.set(i, itemStack);
+                    this.getUpdateTag();
+                    break;
+                }
+
+                stack.setCount(size);
                 this.stacks.set(i, stack);
                 this.getUpdateTag();
                 break;
