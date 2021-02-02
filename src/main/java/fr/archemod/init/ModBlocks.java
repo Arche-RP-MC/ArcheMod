@@ -26,6 +26,8 @@ public class ModBlocks {
 
     public static final Block BLOC_DE_PIERRE_PRECIEUSE = new PierrePrecieuseOre("bloc_de_pierre_precieuse",Material.IRON);
     public static final Block PLACARD_HRP = new PlacardHRP("placard_hrp", Material.WOOD, 0.5F, 0.5F, SoundType.WOOD);
+    public static final Block SIGN_HRP = new PanneauHRP("sign_hrp", Material.WOOD);
+
 
     public static final Block SHOWCASE = new Showcase("showcase",Material.WOOD);
     public static final Block SHOWCASE_CENTER = new Showcase("showcase_center",Material.WOOD);

@@ -1,3 +1,6 @@
+#HRP
+hrp.usage=/hrp <type>
+
 #CREATVE TABS
 itemGroup.arche_creative_tabs=ArcheMod
 
@@ -920,4 +923,6 @@ tile.tache_d_eau.name=Tâche d'eau
 tile.flower_pot_am.name=Pôt de Fleur Arche
 tile.baril_vide.name=Baril vide
 tile.baril_eau.name=Baril d'eau
-tile.ecrin_a_bijoux.name=Ecrin a Bijoux
+
+
+tile.hrpsign.name=tile..name=hrpsigntile.ecrin_a_bijoux.name=Ecrin a Bijoux

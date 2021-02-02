@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "couronne_or",
-		"particle": "couronne_or"
+		"0": "am:items/couronne_or",
+		"particle": "am:items/couronne_or"
 	},
 	"elements": [
 		{

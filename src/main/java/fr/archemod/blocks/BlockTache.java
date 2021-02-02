@@ -81,12 +81,6 @@ public class BlockTache extends BlockBase{
     }
 
     @Override
-    public Item getItemDropped(IBlockState state, Random rand, int fortune)
-    {
-        return Item.getItemFromBlock(ModBlocks.PLACARD_HRP);
-    }
-
-    @Override
     public int quantityDropped(Random random)
     {
         return 1;

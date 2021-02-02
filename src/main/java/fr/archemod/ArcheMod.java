@@ -8,6 +8,7 @@ import fr.archemod.chat.capabilities.indicator.ArcheChat;
 import fr.archemod.chat.capabilities.indicator.ArcheChatStorage;
 import fr.archemod.chat.capabilities.indicator.IArcheChat;
 import fr.archemod.chat.network.indicator.PacketArcheChat;
+import fr.archemod.cmd.HRPCommand;
 import fr.archemod.proxy.CommonProxy;
 import fr.archemod.util.ArcheCreativeTabs;
 import fr.archemod.util.Reference;
@@ -19,6 +20,7 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper;
 import net.minecraftforge.fml.relauncher.Side;
@@ -74,6 +76,13 @@ public class ArcheMod {
         //networkDescription.registerMessage(PacketDescription.ServerHandler.class, PacketDescription.class, 4, Side.SERVER);
         //networkDescription.registerMessage(PacketDescription.ClientHandler.class, PacketDescription.class, 5, Side.CLIENT);
 
+    }
+
+    @Mod.EventHandler
+    public void init(FMLServerStartingEvent event)
+    {
+        LOGGER.info("initalise FMLServerStartingEvent :" + Reference.MOD_NAME);
+        event.registerServerCommand(new HRPCommand());
     }
 
     /**

@@ -2,13 +2,13 @@ package fr.archemod.init;
 
 
 import fr.archemod.items.*;
+import fr.archemod.items.epuisette.Epuisette;
 import fr.archemod.items.food.Bol;
 import fr.archemod.items.food.BouteilleDeVin;
 import fr.archemod.items.food.FoodBase;
 import fr.archemod.items.tools.ToolAxe;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemAxe;
-import net.minecraft.item.ItemBlock;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -108,7 +108,7 @@ public class ModItems {
     public static final Item LOUPE = new OutilsEnFer("loupe");
     public static final Item AIGUILLE = new OutilsEnFer("aiguille");
     public static final Item CISEAUX_A_BOIS = new OutilsEnFer("ciseaux_a_bois");
-    public static final Item EPUISETTE = new OutilsEnFer("epuisette");
+    public static final Item EPUISETTE = new Epuisette("epuisette");
     public static final Item FILET = new OutilsEnFer("filet");
     public static final Item FOURCHE_EN_ACIER = new OutilsEnAcier("fourche_en_acier");
     public static final Item FOURCHE_EN_BRONZE = new OutilsEnBronze("fourche_en_bronze");
