@@ -327,8 +327,6 @@ public class ModItems {
     public static final Item HALLEBARDE_EN_ACIER = new ToolSword("hallebarde_en_acier",Item.ToolMaterial.IRON);
 
 
-
-
     //SECOND PART
     public static final Item COUTEAU_EN_OR = new ItemBase("couteau_en_or");
     public static final Item COUTEAU_EN_ARGENT = new ItemBase("couteau_en_argent");
