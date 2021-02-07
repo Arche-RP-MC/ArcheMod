@@ -1,10 +1,10 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"1": "blocks/iron_block",
+		"1": "blocks/red_sandstone_bottom",
 		"3": "blocks/hardened_clay_stained_red",
 		"4": "blocks/hardened_clay_stained_cyan",
-		"particle": "blocks/iron_block"
+		"particle": "blocks/red_sandstone_bottom"
 	},
 	"elements": [
 		{

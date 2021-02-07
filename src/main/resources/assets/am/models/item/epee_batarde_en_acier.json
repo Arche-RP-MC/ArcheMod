@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"1": "blocks/hardened_clay_stained_red",
-		"3": "blocks/iron_block",
+		"3": "blocks/cauldron_inner",
 		"particle": "blocks/hardened_clay_stained_red"
 	},
 	"elements": [
