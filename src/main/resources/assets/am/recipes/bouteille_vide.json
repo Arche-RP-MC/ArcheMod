@@ -16,11 +16,13 @@
     },
     "F":
     {
-      "item": "am:canne_de_verrier"
+      "item": "am:canne_de_verrier",
+      "data": 32767
     },
     "L":
     {
-      "item": "am:pince"
+      "item": "am:pinces",
+      "data": 32767
     }
   },
 

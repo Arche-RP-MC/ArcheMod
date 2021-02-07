@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " P ",
+    "LGL",
+    "LGL"
+  ],
+
+  "key":
+  {
+    "L":
+    {
+      "item": "am:paille"
+    },
+    "G":
+    {
+      "item": "minecraft:stick"
+    },
+    "P":
+    {
+      "item": "am:fourche_en_fer",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:ballot_de_chaume",
+    "count": 1
+  }
+}

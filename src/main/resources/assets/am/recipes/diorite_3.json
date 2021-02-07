@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " L ",
+    "BB ",
+    "BB "
+  ],
+
+  "key":
+  {
+    "L":
+    {
+      "item": "am:marteau_burin_en_acier",
+      "data": 32767
+    },
+    "I":
+    {
+      "item": "am:brique_de_diorite"
+    }
+  },
+
+  "result":
+  {
+    "item": "minecraft:stone",
+    "data": 3,
+    "count": 1
+  }
+}

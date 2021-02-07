@@ -8,15 +8,16 @@
     "   "
   ],
 
-  "key":{
+  "key":
+  {
     "P":
     {
       "item": "am:planche"
     },
-
     "L":
     {
-      "item": "am:lime_en_fer"
+      "item": "am:lime_en_fer",
+      "data": 32767
     }
   },
 

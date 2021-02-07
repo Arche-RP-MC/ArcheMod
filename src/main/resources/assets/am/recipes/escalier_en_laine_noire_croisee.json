@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    " PT",
+    "   "
+  ],
+
+  "key":
+  {
+    "P":
+    {
+        "item": "am:ciseaux_de_couture",
+        "data": 32767
+    },
+    "T":
+    {
+      "item": "am:laine_noire_croisee"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:escalier_en_laine_noire_croisee",
+    "count": 1
+  }
+}

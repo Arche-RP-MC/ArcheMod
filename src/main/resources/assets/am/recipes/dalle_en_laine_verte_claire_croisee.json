@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    " PT",
+    "   "
+  ],
+
+  "key":
+  {
+    "P":
+    {
+        "item": "am:ciseaux_de_couture",
+        "data": 32767
+    },
+    "T":
+    {
+      "item": "am:laine_verte_claire_croisee"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:dalle_en_laine_verte_claire_croisee",
+    "count": 2
+  }
+}

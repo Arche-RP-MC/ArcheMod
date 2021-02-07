@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    " FL",
+    "   "
+  ],
+
+  "key":
+  {
+    "F":
+    {
+      "item": "minecraft:log",
+      "data": 2
+    },
+    "L":
+    {
+      "item": "am:scie_en_fer",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:planche_bouleau",
+    "count": 4
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "J  ",
+    "MJ ",
+    "I G"
+  ],
+
+  "key":
+  {
+    "J":
+    {
+      "item": "am:tete_couteau_fer"
+    },
+    "M":
+    {
+      "item": "am:clous"
+    },
+    "I":
+    {
+      "item": "am:pinces",
+      "data": 32767
+    },
+    "G":
+    {
+      "item": "am:marteau_en_bronze",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "minecraft:shears",
+    "count": 1
+  }
+}

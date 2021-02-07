@@ -16,7 +16,8 @@
     },
     "C":
     {
-      "item": "am:lime_en_bronze"
+      "item": "am:lime_en_bronze",
+      "data": 32767
     },
     "L":
     {

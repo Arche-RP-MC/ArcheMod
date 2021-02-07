@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " H ",
+    "PTF",
+    "   "
+  ],
+
+  "key":
+  {
+    "H":
+    {
+      "item": "am:marteau_en_bronze",
+      "data": 32767
+    },
+    "T":
+    {
+      "item": "am:barre_fer"
+    },
+    "F":
+    {
+      "item": "am:laniere_de_cuir"
+    },
+    "P":
+    {
+        "item": "am:pinces",
+        "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:canne_de_verrier",
+    "count": 1
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "GTB",
+    "VBC",
+    "B P"
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:planche"
+    },
+    "C":
+    {
+      "item": "am:bobine_de_chanvre"
+    },
+    "V":
+    {
+      "item": "am:vernis"
+    },
+    "P":
+    {
+      "item": "am:pepite_fer"
+    },
+    "T":
+    {
+      "item": "am:ciseaux_a_bois",
+      "data": 32767
+    },
+    "G":
+    {
+      "item": "am:maillet",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "minecraft:fishing_rod",
+    "count": 1
+  }
+}

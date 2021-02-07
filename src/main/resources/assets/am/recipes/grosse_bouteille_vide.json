@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " L ",
+    "YNY",
+    " F "
+  ],
+
+  "key":
+  {
+    "N":
+    {
+      "item": "am:bouteille_vide"
+    },
+    "Y":
+    {
+      "item": "am:verre_en_fusion"
+    },
+    "F":
+    {
+      "item": "am:canne_de_verrier",
+      "data": 32767
+    },
+    "L":
+    {
+      "item": "am:pinces",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:grosse_bouteille_vide",
+    "count": 1
+  }
+}

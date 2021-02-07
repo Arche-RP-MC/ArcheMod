@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "  E",
+    "FGG",
+    "PBB"
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:sable"
+    },
+    "G":
+    {
+      "item": "minecraft:gravel"
+    },
+    "E":
+    {
+      "item": "minecraft:water_bucket"
+    },
+    "F":
+    {
+      "item": "am:mortier_pilon",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "minecraft:wool",
+    "data": 15,
+    "count": 3
+  }
+}

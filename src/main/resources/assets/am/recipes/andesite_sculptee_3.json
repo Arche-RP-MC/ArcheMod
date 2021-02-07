@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped", 
+  "pattern": 
+ [ 
+ "   ", 
+ "AB ", 
+ "   " 
+ ], 
+
+
+ "key": 
+ { 
+ "A": 
+ { 
+"item": "am:marteau_burin_en_acier",
+ "data": 32767 
+},
+ "B": 
+ { 
+ "item": "am:andesite_polie"
+}
+},
+
+
+ "result": 
+ { 
+ "item": "resultat", 
+ "count": 1
+}
+}

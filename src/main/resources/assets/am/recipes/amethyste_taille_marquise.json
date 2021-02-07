@@ -16,7 +16,8 @@
     },
     "O":
     {
-      "item": "am:loupe"
+      "item": "am:loupe",
+      "data": 32767
     },
     "G":
     {
@@ -24,11 +25,14 @@
     },
     "P":
     {
-      "item": "am:pinces"
+      "item": "am:pinces",
+      "data": 32767
+
     },
     "L":
     {
-      "item": "am:lime_en_fer"
+      "item": "am:lime_en_fer",
+      "data": 32767
     }
   },
 

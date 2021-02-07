@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "T  ",
+    "HB "
+  ],
+
+  "key":
+  {
+    "T":
+    {
+      "item": "minecraft:bone"
+    },
+    "H":
+    {
+      "item": "am:lime_en_bronze",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:pointe_de_fleche",
+    "count": 1
+  }
+}

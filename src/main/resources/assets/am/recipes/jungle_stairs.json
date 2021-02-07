@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "G F",
+    " B ",
+    "BB "
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:planche_acajou"
+    },
+    "G":
+    {
+      "item": "am:maillet",
+      "data": 32767
+    },
+    "F":
+    {
+      "item": "am:clous"
+    }
+  },
+
+  "result":
+  {
+    "item": "minecraft:jungle_stairs",
+    "count": 1
+  }
+}

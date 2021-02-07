@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "JHG",
+    "B B",
+    " B "
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:plaque_de_fer"
+    },
+    "H":
+    {
+      "item": "am:barre_fer"
+    },
+    "J":
+    {
+      "item": "am:pinces",
+      "data": 32767
+    },
+    "G":
+    {
+      "item": "am:marteau_en_bronze",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "minecraft:bucket",
+    "count": 1
+  }
+}

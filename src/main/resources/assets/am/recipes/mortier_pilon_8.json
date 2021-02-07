@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "  M",
+    " RP",
+    " F "
+  ],
+
+  "key":
+  {
+    "M":
+    {
+      "item": "am:marteau_en_acier",
+      "data": 32767
+    },
+    "P":
+    {
+      "item": "am:burin_en_fer",
+      "data": 32767
+
+    },
+    "F":
+    {
+      "item": "am:bol_en_argile"
+    },
+    "R":
+    {
+      "item": "minecraft:brick"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:mortier_pilon",
+    "count": 1
+  }
+}

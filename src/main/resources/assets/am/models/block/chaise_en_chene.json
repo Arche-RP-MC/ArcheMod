@@ -1,0 +1,6 @@
+{
+  "parent": "am:block/chair",
+  "textures": {
+    "0": "am:blocks/chaise_en_chene"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "V  ",
+    "T  "
+  ],
+
+  "key":
+  {
+    "V":
+    {
+      "item": "am:trappe_en_chene_noir"
+    },
+    "T":
+    {
+      "item": "am:ciseaux_a_bois",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:trappe_travaillee_en_chene_noir",
+    "count": 1
+  }
+}

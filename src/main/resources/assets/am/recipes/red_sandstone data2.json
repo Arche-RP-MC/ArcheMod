@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    " TP",
+    " T "
+  ],
+
+  "key":
+  {
+    "T":
+    {
+      "item": "minecraft:red_sandstone",
+      "data": 0
+    },
+    "R":
+    {
+        "item": "etoffe"
+    }
+  },
+
+  "result":
+  {
+    "item": "minecraft:red_sandstone",
+    "data": 2,
+    "count": 2
+  }
+}

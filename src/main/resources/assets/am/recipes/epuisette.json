@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " T ",
+    " HG",
+    "   "
+  ],
+
+  "key":
+  {
+    "H":
+    {
+      "item": "am:long_baton"
+    },
+    "T":
+    {
+      "item": "am:filet"
+    },
+    "G":
+    {
+      "item": "am:ciseaux_a_bois",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:epuisette",
+    "count": 1
+  }
+}

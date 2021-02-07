@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    " B ",
+    "   "
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:planche_sapin"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:planche",
+    "count": 1
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    " P ",
+    "TTT"
+  ],
+
+  "key":
+  {
+    "P":
+    {
+        "item": "am:ciseaux_de_couture",
+        "data": 32767
+    },
+    "T":
+    {
+      "item": "am:fibre_vegetale"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:dalle_en_jonc_de_mer",
+    "count": 2
+  }
+}

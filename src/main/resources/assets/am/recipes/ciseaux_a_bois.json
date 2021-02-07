@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "GBT",
+    " H "
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:burin_fer"
+    },
+    "T":
+    {
+      "item": "am:clous"
+    },
+    "H":
+    {
+      "item": "am:pepite_fer"
+    },
+    "G":
+    {
+      "item": "am:marteau_en_bronze",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:ciseaux_a_bois",
+    "count": 1
+  }
+}

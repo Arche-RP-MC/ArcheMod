@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "GHH",
+    "BT "
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:cuir_tanne"
+    },
+    "T":
+    {
+      "item": "am:laniere_de_cuir"
+    },
+    "H":
+    {
+      "item": "am:barre_bronze"
+    },
+    "G":
+    {
+      "item": "am:pinces"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:trousse_d_ingenieur_en_bronze",
+    "count": 1
+  }
+}

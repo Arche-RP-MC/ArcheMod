@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped", 
+  "pattern": 
+ [ 
+ "BBB", 
+ "BBB", 
+ "A C" 
+ ], 
+
+
+ "key": 
+ { 
+ "A": 
+ { 
+      "item": "am:pinces",
+      "data": 32767
+
+},
+ "B": 
+ { 
+ "item": "am:lingot_acier" 
+},
+ "C": 
+ { 
+"item": "am:marteau_en_fer",
+ "data": 32767 
+}
+},
+ "result": 
+ { 
+ "item": "am:bloc_d_acier", 
+ "count": 1
+}
+}

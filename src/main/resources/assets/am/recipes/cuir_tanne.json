@@ -3,16 +3,16 @@
 
   "pattern":
   [
-    "   ",
+    "GHC",
     "JJJ",
-    "GHC"
+    "   "
   ],
 
   "key":
   {
     "H":
     {
-      "item": "am:cristal_de_sel"
+      "item": "minecraft:item_frame"
     },
     "J":
     {
@@ -20,7 +20,7 @@
     },
     "C":
     {
-      "item": "am:huile_de_tannage"
+      "item": "am:ecorce"
     },
     "G":
     {

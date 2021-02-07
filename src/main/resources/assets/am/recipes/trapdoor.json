@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "GTM",
+    "VVH",
+    "   "
+  ],
+
+  "key":
+  {
+    "V":
+    {
+      "item": "am:planche_chene"
+    },
+    "H":
+    {
+      "item": "am:pepite_fer"
+    },
+    "M":
+    {
+      "item": "am:clous"
+    },
+    "T":
+    {
+      "item": "am:ciseaux_a_bois",
+      "data": 32767
+    },
+    "G":
+    {
+      "item": "am:maillet",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "minecraft:trapdoor",
+    "count": 1
+  }
+}

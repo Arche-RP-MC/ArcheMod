@@ -3,32 +3,29 @@
 
   "pattern":
   [
-    "   ",
-    "HD ",
-    "MCG"
+    " G ",
+    " HT",
+    " B "
   ],
 
   "key":
   {
+    "B":
+    {
+      "item": "am:manche"
+    },
+    "T":
+    {
+      "item": "am:clous"
+    },
     "H":
     {
       "item": "am:tete_couteau_fer"
     },
-    "C":
-    {
-      "item": "am:pince"
-    },
-    "M":
-    {
-      "item": "am:manche"
-    },
-    "D":
-    {
-      "item": "am:clous"
-    },
     "G":
     {
-      "item": "am:marteau_en_bronze"
+      "item": "am:marteau_en_bronze",
+      "data": 32767
     }
   },
 

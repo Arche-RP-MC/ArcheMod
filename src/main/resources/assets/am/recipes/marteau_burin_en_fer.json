@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped", 
+  "pattern": 
+ [ 
+ "   ", 
+ "CA ", 
+ "   " 
+ ], 
+
+
+ "key": 
+ { 
+ "A": 
+ { 
+  "item": "am:burin_en_fer",
+  "data": 32767
+ },
+ "C": 
+ { 
+"item": "am:marteau_en_fer",
+ "data": 32767 
+}
+},
+ "result": 
+ { 
+ "item": "am:marteau_burin_en_fer", 
+ "count": 1
+}
+}

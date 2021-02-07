@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "JJJ",
+    "JJJ",
+    "I G"
+  ],
+
+  "key":
+  {
+    "J":
+    {
+      "item": "am:barre_fer"
+    },
+    "I":
+    {
+      "item": "am:pinces",
+      "data": 32767
+    },
+    "G":
+    {
+      "item": "am:marteau_en_acier",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "minecraft:iron_bars",
+    "count": 2
+  }
+}

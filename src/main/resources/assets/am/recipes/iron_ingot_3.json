@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "JJJ",
+    "JJJ",
+    "IBG"
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:moule"
+    },
+    "J":
+    {
+      "item": "am:pepite_fer"
+    },
+    "I":
+    {
+      "item": "am:pinces",
+      "data": 32767
+    },
+    "G":
+    {
+      "item": "am:marteau_en_acier",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "minecraft:iron_ingot",
+    "count": 1
+  }
+}

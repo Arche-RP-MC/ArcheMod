@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    " PT",
+    "   "
+  ],
+
+  "key":
+  {
+    "T":
+    {
+      "item": "am:ecaille_en_ardoise"
+    },
+    "P":
+    {
+        "item": "am:marteau_burin_en_bronze",
+        "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:escalier_en_ecaille_en_ardoise",
+    "count": 1
+  }
+}

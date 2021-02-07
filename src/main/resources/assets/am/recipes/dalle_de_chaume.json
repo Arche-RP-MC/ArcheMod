@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " P ",
+    "LGL",
+    "   "
+  ],
+
+  "key":
+  {
+    "L":
+    {
+      "item": "am:paille"
+    },
+    "G":
+    {
+      "item": "minecraft:stick"
+    },
+    "P":
+    {
+      "item": "am:fourche_en_bronze",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:dalle_en_chaume",
+    "count": 1
+  }
+}

@@ -12,7 +12,9 @@
   {
     "F":
     {
-      "item": "am:pince"
+      "item": "am:pinces",
+      "data": 32767
+
     },
     "C":
     {
@@ -20,11 +22,13 @@
     },
     "K":
     {
-      "item": "am:lime_en_bronze"
+      "item": "am:lime_en_bronze",
+      "data": 32767
     },
     "L":
     {
-      "item": "am:loupe"
+      "item": "am:loupe",
+      "data": 32767
     }
   },
 

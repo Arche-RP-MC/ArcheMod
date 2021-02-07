@@ -1,6 +1,3 @@
 {
-    "parent": "am:block/tache_de_sang",
-    "textures": {
-        "layer0": "am:items/tache_de_sang"
-    }
+    "parent": "am:block/tache_de_sang_height2"
 }

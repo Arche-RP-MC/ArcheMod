@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "GT ",
+    "V  ",
+    "   "
+  ],
+
+  "key":
+  {
+    "V":
+    {
+      "item": "am:trappe_en_bouleau"
+    },
+    "T":
+    {
+      "item": "am:ciseaux_a_bois",
+      "data": 32767
+    },
+    "G":
+    {
+      "item": "am:maillet",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:trappe_ajouree_en_bouleau",
+    "count": 1
+  }
+}

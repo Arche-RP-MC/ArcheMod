@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " GI",
+    "BLB",
+    "BBB"
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "minecraft:concrete_powder",
+      "data": 3
+    },
+    "L":
+    {
+      "item": "minecraft:water_bucket"
+    },
+    "I":
+    {
+      "item": "minecraft:stick"
+    },
+    "G":
+    {
+      "item": "am:mortier",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "minecraft:concrete",
+    "data": 3,
+    "count": 5
+  }
+}

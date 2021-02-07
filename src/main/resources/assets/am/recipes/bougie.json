@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    " J ",
+    "PPP"
+  ],
+
+  "key":
+  {
+    "J":
+    {
+      "item": "am:bobine_de_chanvre"
+    },
+    "P":
+    {
+        "item": "am:cire"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:bougie",
+    "count": 3
+  }
+}

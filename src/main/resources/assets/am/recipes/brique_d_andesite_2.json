@@ -3,9 +3,9 @@
 
   "pattern":
   [
-    " NN",
+    "   ",
     "FNN",
-    " NN"
+    "   "
   ],
 
   "key":
@@ -16,13 +16,14 @@
     },
     "F":
     {
-      "item": "am:lime_en_fer"
+      "item": "am:lime_en_fer",
+      "data": 32767
     }
   },
 
   "result":
   {
-    "item": "am:brique_d_andesite",
+    "item": "am:brique_andesite",
     "count": 1
   }
 }

@@ -20,7 +20,8 @@
     },
     "S":
     {
-      "item": "am:scie_en_fer"
+      "item": "am:scie_en_fer",
+      "data": 32767
     },
     "T":
     {
@@ -28,7 +29,8 @@
     },
     "M":
     {
-      "item": "am:marteau_en_fer"
+      "item": "am:marteau_en_fer",
+      "data": 32767
     }
   },
 

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    " G ",
+    "BB "
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:spatule",
+      "data": 32767
+    },
+    "G":
+    {
+      "item": "minecraft:clay_ball"
+    }
+  },
+
+  "result":
+  {
+    "item": "minecraft:flower_pot",
+    "count": 1
+  }
+}

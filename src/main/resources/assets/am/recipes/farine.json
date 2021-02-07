@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "NNN",
+    "NFN",
+    "   "
+  ],
+
+  "key":
+  {
+    "N":
+    {
+      "item": "minecraft:wheat"
+    },
+    "F":
+    {
+      "item": "am:mortier",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:farine",
+    "count": 3
+  }
+}

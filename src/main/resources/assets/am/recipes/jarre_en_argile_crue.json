@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "N N",
+    "NFN",
+    " N "
+  ],
+
+  "key":
+  {
+    "N":
+    {
+      "item": "minecraft:clay_ball"
+    },
+    "F":
+    {
+      "item": "am:spatule",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:jarre_en_argile_crue",
+    "count": 1
+  }
+}

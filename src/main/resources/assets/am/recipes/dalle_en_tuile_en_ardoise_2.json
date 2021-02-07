@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    " PT",
+    "   "
+  ],
+
+  "key":
+  {
+    "T":
+    {
+      "item": "am:tuile_en_ardoise"
+    },
+    "P":
+    {
+        "item": "am:marteau_burin_en_fer",
+        "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:dalle_en_tuile_en_ardoise",
+    "count": 2
+  }
+}

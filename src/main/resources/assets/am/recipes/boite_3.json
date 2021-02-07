@@ -12,7 +12,8 @@
   {
     "F":
     {
-      "item": "am:lime_en_acier"
+      "item": "am:lime_en_acier",
+      "data": 32767
     },
     "S":
     {
@@ -20,7 +21,8 @@
     },
     "M":
     {
-      "item": "am:maillet"
+      "item": "am:maillet",
+      "data": 32767
     },
     "P":
     {

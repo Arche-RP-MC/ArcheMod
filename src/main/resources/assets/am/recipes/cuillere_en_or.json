@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " G ",
+    " H ",
+    "   "
+  ],
+
+  "key":
+  {
+    "H":
+    {
+      "item": "am:barre_or"
+    },
+    "G":
+    {
+      "item": "am:pinces",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:cuillere_en_or",
+    "count": 2
+  }
+}

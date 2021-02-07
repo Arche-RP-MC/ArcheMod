@@ -20,7 +20,9 @@
     },
     "P":
     {
-      "item": "am:pinces"
+      "item": "am:pinces",
+      "data": 32767
+
     },
     "C":
     {

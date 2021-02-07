@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "PPP",
+    " L "
+  ],
+
+  "key":
+  {
+    "L":
+    {
+      "item": "am:cuir_tanne"
+    },
+    "P":
+    {
+      "item": "am:lot_de_papiers"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:grimoire",
+    "count": 1
+  }
+}

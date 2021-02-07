@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "RFG",
+    "LLL"
+  ],
+
+  "key":
+  {
+    "F":
+    {
+      "item": "am:levure"
+    },
+    "R":
+    {
+      "item": "am:sucre"
+    },
+    "G":
+    {
+      "item": "minecraft:egg"
+    },
+    "L":
+    {
+      "item": "am:farine"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:pate_diverse",
+    "count": 1
+  }
+}

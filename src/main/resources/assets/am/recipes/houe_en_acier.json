@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " G ",
+    " HT",
+    " B "
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:manche"
+    },
+    "T":
+    {
+      "item": "am:clous"
+    },
+    "H":
+    {
+      "item": "am:tete_houe_acier"
+    },
+    "G":
+    {
+      "item": "am:marteau_en_bronze",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:houe_en_acier",
+    "count": 1
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "  P",
+    "TTT",
+    "TTT"
+  ],
+
+  "key":
+  {
+    "T":
+    {
+      "item": "am:caillou"
+    },
+    "P":
+    {
+        "item": "am:marteau_burin_en_bronze",
+        "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "minecraft:cobblestone_wall",
+    "count": 2
+  }
+}

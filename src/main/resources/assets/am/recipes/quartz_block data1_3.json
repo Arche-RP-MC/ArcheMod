@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "TTP",
+    "   "
+  ],
+
+  "key":
+  {
+    "T":
+    {
+        "item": "minecraft:quartz_block",
+        "data": 0
+    },
+    "P":
+    {
+        "item": "am:marteau_burin_en_acier",
+        "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "minecraft:quartz_block",
+    "data": 1,
+    "count": 2
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "H  ",
+    " B "
+  ],
+
+  "key":
+  {
+    "H":
+    {
+      "item": "am:planche"
+    },
+    "G":
+    {
+      "item": "am:ciseaux_a_bois",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:palette_de_peinture",
+    "count": 1
+  }
+}

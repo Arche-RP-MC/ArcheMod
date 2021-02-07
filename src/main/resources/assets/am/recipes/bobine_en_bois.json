@@ -8,14 +8,16 @@
     "   "
   ],
 
-  "key":{
+  "key":
+  {
     "P":
     {
       "item": "am:planche"
     },
     "L":
     {
-      "item": "am:lime_en_bronze"
+      "item": "am:lime_en_bronze",
+      "data": 32767
     }
   },
 

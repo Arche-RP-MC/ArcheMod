@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "GTP",
+    "VVV",
+    " B "
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "minecraft:stick"
+    },
+    "V":
+    {
+      "item": "am:planche"
+    },
+    "P":
+    {
+      "item": "am:clous"
+    },
+    "T":
+    {
+      "item": "am:ciseaux_a_bois",
+      "data": 32767
+    },
+    "G":
+    {
+      "item": "am:maillet",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "minecraft:sign",
+    "count": 1
+  }
+}

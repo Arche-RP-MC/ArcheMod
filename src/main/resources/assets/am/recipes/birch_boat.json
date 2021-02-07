@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "G L",
+    "PFP",
+    "BPB"
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:planche_bouleau"
+    },
+    "L":
+    {
+      "item": "am:vernis"
+    },
+    "G":
+    {
+      "item": "am:maillet",
+      "data": 32767
+    },
+    "P":
+    {
+      "item": "minecraft:log",
+      "data": 2
+    },
+    "F":
+    {
+      "item": "am:clous"
+    }
+  },
+
+  "result":
+  {
+    "item": "minecraft:birch_boat",
+    "count": 1
+  }
+}

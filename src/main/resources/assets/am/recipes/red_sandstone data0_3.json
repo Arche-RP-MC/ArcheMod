@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "TTP",
+    "TT "
+  ],
+
+  "key":
+  {
+    "T":
+    {
+      "item": "am:brique_de_gres_rouge"
+    },
+    "P":
+    {
+        "item": "am:marteau_burin_en_acier",
+        "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "minecraft:red_sandstone",
+    "data": 0,
+    "count": 1
+  }
+}

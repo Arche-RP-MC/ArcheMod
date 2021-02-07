@@ -3,7 +3,7 @@
     "modid": "archemod",
     "name": "ArcheMod",
     "description": "A mod for the roleplay server Arche",
-    "version": "${version}",
+    "version": "3.4",
     "mcversion": "${mcversion}",
     "url": "",
     "updateUrl": "",

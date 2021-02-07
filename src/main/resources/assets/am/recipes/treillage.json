@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "HP ",
+    "TT ",
+    "TT "
+  ],
+
+  "key":
+  {
+    "H":
+    {
+      "item": "am:clous"
+    },
+    "T":
+    {
+      "item": "minecraft:stick"
+    },
+    "P":
+    {
+        "item": "am:maillet"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:treillage",
+    "count": 1
+  }
+}

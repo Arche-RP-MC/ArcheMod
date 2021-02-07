@@ -24,7 +24,8 @@
     },
     "L":
     {
-      "item": "am:loupe"
+      "item": "am:loupe",
+      "data": 32767
     }
   },
 

@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " BG",
+    " J ",
+    "   "
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:pepite_fer"
+    },
+    "J":
+    {
+      "item": "minecraft:flint"
+    },
+    "G":
+    {
+      "item": "am:marteau_en_bronze",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "minecraft:flint_and_steel",
+    "count": 1
+  }
+}

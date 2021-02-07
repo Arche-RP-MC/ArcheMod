@@ -24,7 +24,8 @@
     },
     "X":
     {
-      "item": "am:ciseaux_de_couture"
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
     },
     "A":
     {

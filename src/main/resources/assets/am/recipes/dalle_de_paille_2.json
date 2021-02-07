@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " P ",
+    "LL ",
+    "   "
+  ],
+
+  "key":
+  {
+    "L":
+    {
+      "item": "am:paille"
+    },
+    "P":
+    {
+      "item": "am:fourche_en_fer",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:dalle_en_paille",
+    "count": 1
+  }
+}

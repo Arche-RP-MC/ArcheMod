@@ -12,7 +12,8 @@
   {
     "M":
     {
-      "item": "am:mortier_pilon"
+      "item": "am:mortier_pilon",
+      "data": 32767
     },
     "P":
     {

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "T  ",
+    "V  ",
+    "   "
+  ],
+
+  "key":
+  {
+    "V":
+    {
+      "item": "am:trappe_en_sapin"
+    },
+    "T":
+    {
+      "item": "am:ciseaux_a_bois",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:trappe_ajouree_en_sapin",
+    "count": 1
+  }
+}

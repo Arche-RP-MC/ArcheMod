@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "G L",
+    "BFB",
+    "BPB"
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:planche_chene_noir"
+    },
+    "L":
+    {
+      "item": "am:vernis"
+    },
+    "G":
+    {
+      "item": "am:maillet",
+      "data": 32767
+    },
+    "P":
+    {
+      "item": "minecraft:log2",
+      "data": 1
+    },
+    "F":
+    {
+      "item": "am:clous"
+    }
+  },
+
+  "result":
+  {
+    "item": "minecraft:dark_oak_boat",
+    "count": 1
+  }
+}

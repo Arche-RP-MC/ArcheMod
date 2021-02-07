@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "TBL",
+    " FB",
+    " B "
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:planche"
+    },
+    "L":
+    {
+      "item": "am:vernis"
+    },
+    "T":
+    {
+      "item": "am:ciseaux_a_bois",
+      "data": 32767
+    },
+    "F":
+    {
+      "item": "am:tripes"
+    }
+  },
+
+  "result":
+  {
+    "item": "minecraft:bow",
+    "count": 1
+  }
+}

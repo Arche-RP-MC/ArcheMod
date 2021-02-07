@@ -23,8 +23,9 @@
       "item": "minecraft:iron_ingot"
     },
     "L":
-    {
-      "item": "am:lime_en_fer"
+     {
+      "item": "am:lime_en_fer",
+      "data": 32767
     }
   },
 

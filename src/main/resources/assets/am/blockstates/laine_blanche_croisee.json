@@ -1,15 +1,6 @@
-{   "parent": "block/thin_block",
-  "elements": [
-    {   "from": [ 0, 0, 0 ],
-      "to": [ 16, 1, 16 ],
-      "faces": {
-        "down":  { "uv": [ 0,  0, 16, 16 ], "texture": "placard_hrp", "cullface": "down" },
-        "up":    { "uv": [ 0,  0, 16, 16 ], "texture": "placard_hrp" },
-        "north": { "uv": [ 0, 15, 16, 16 ], "texture": "placard_hrp", "cullface": "north" },
-        "south": { "uv": [ 0, 15, 16, 16 ], "texture": "placard_hrp", "cullface": "south" },
-        "west":  { "uv": [ 0, 15, 16, 16 ], "texture": "placard_hrp", "cullface": "west" },
-        "east":  { "uv": [ 0, 15, 16, 16 ], "texture": "placard_hrp", "cullface": "east" }
-      }
-    }
-  ]
-}
+{
+  "variants": { 
+  "normal": {
+    "model": "am:laine_blanche_croisee"
+  }
+}}

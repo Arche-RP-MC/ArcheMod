@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "TTP",
+    "   "
+  ],
+
+  "key":
+  {
+    "T":
+    {
+      "item": "minecraft:sandstone",
+      "data": 0
+    },
+    "P":
+    {
+        "item": "am:marteau_burin_en_bronze",
+        "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "minecraft:sandstone",
+    "data": 1,
+    "count": 2
+  }
+}

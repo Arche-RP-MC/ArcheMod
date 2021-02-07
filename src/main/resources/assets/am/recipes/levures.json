@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "FLL",
+    " K "
+  ],
+
+  "key":
+  {
+    "F":
+    {
+      "item": "minecraft:water_bucket"
+    },
+    "K":
+    {
+      "item": "am:flacon"
+    },
+    "L":
+    {
+      "item": "am:farine"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:levure",
+    "count": 3
+  }
+}

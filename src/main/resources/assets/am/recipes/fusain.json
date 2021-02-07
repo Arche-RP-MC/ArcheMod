@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " L ",
+    "PF ",
+    " F "
+  ],
+
+  "key":
+  {
+    "P":
+    {
+      "item": "am:cire"
+    },
+    "F":
+    {
+      "item": "minecraft:coal"
+    },
+    "L":
+    {
+      "item": "am:mortier_pilon",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:fusain",
+    "count": 2
+  }
+}

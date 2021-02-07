@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    " PT",
+    "   "
+  ],
+
+  "key":
+  {
+    "T":
+    {
+      "item": "am:marbrage_sol_gres"
+    },
+    "P":
+    {
+        "item": "am:marteau_burin_en_bronze",
+        "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:dalle_en_marbrage_sol_gres",
+    "count": 2
+  }
+}

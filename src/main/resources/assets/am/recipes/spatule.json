@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "HD ",
+    "G  "
+  ],
+
+  "key":
+  {
+    "H":
+    {
+      "item": "am:barre_fer"
+    },
+    "C":
+    {
+      "item": "am:pinces",
+      "data": 32767
+
+    },
+    "G":
+    {
+      "item": "am:marteau_en_bronze",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:spatule",
+    "count": 1
+  }
+}

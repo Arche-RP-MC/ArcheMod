@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    " PT",
+    "   "
+  ],
+
+  "key":
+  {
+    "T":
+    {
+      "item": "minecraft:red_sandstone",
+      "data": 0
+    },
+    "P":
+    {
+        "item": "am:marteau_burin_en_acier",
+        "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "minecraft:stone_slab2",
+    "count": 2
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    " PT",
+    "   "
+  ],
+
+  "key":
+  {
+    "T":
+    {
+      "item": "am:marbrage_sol_gres"
+    },
+    "P":
+    {
+        "item": "am:marteau_burin_en_acier",
+        "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:escalier_en_marbrage_sol_gres",
+    "count": 1
+  }
+}

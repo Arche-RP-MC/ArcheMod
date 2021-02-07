@@ -8,14 +8,17 @@
     "   "
   ],
 
-  "key":{
+  "key":
+  {
     "P":
     {
       "item": "am:bobine_en_bois"
     },
     "G":
     {
-      "item": "am:pinces"
+      "item": "am:pinces",
+      "data": 32767
+
     },
     "L":
     {

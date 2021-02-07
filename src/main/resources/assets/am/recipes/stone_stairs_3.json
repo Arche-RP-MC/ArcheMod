@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "T P",
+    "TT ",
+    "TTT"
+  ],
+
+  "key":
+  {
+    "T":
+    {
+      "item": "am:caillou"
+    },
+    "P":
+    {
+        "item": "am:marteau_burin_en_acier",
+        "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "minecraft:stone_stairs",
+    "count": 1
+  }
+}

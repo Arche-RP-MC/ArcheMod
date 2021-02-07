@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "THH",
+    "GHH",
+    "AHH"
+  ],
+
+  "key":
+  {
+    "H":
+    {
+      "item": "am:planche"
+    },
+    "A":
+    {
+      "item": "minecraft:dye",
+      "data": 5
+    },
+    "T":
+    {
+      "item": "am:clous"
+    },
+    "G":
+    {
+      "item": "am:ciseaux_a_bois",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:porte_peinte_violet",
+    "count": 1
+  }
+}

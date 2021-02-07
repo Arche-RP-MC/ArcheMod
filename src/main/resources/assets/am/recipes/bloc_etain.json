@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped", 
+  "pattern": 
+ [ 
+ "BBB", 
+ "BBB", 
+ "A C" 
+ ], 
+
+
+ "key": 
+ { 
+ "A": 
+ { 
+      "item": "am:pinces",
+      "data": 32767
+
+},
+ "B": 
+ { 
+ "item": "am:lingot_etain" 
+},
+ "C": 
+ { 
+"item": "am:marteau_en_bronze",
+ "data": 32767 
+}
+},
+ "result": 
+ { 
+ "item": "am:bloc_etain", 
+ "count": 1
+}
+}
+

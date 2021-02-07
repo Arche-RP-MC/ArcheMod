@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "GTP",
+    "BB ",
+    "BB "
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:planche_acacia"
+    },
+    "P":
+    {
+      "item": "am:clous"
+    },
+    "T":
+    {
+      "item": "am:ciseaux_a_bois",
+      "data": 32767
+    },
+    "G":
+    {
+      "item": "am:maillet",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "minecraft:planks",
+    "data": 4,
+    "count": 1
+  }
+}

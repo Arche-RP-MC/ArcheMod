@@ -3,24 +3,25 @@
 
   "pattern":
   [
-    " F ",
-    " P ",
-    " AA"
+    " L ",
+    "CLF",
+    "   "
   ],
 
   "key":
   {
     "F":
     {
-      "item": "am:spatule"
+      "item": "minecraft:water_bucket"
     },
-    "A":
+    "C":
+    {
+      "item": "am:spatule",
+      "data": 32767 
+    },
+    "L":
     {
       "item": "minecraft:clay_ball"
-    },
-    "P":
-    {
-      "item": "minecraft:water_bucket"
     }
   },
 

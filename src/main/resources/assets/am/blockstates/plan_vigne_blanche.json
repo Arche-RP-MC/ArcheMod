@@ -4,9 +4,25 @@
             "model": "am:agriculture/vigne_blanche_stage0"
         },
         "age=1": {
+            "model": "am:agriculture/vigne_blanche_stage0"
+        },
+        "age=2": {
+            "model": "am:agriculture/vigne_blanche_stage0"
+        },
+        "age=3": {
+            "model": "am:agriculture/vigne_blanche_stage0"
+        },
+        "age=4": {
             "model": "am:agriculture/vigne_blanche_stage1"
         },
-       
-       
+        "age=5": {
+            "model": "am:agriculture/vigne_blanche_stage1"
+        },
+        "age=6": {
+            "model": "am:agriculture/vigne_blanche_stage1"
+        },
+        "age=7": {
+            "model": "am:agriculture/vigne_blanche_stage1"
+        }
     }
 }

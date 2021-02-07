@@ -1,0 +1,59 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "PGL",
+    " BI",
+    "HMR"
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:verre_en_fusion"
+    },
+    "L":
+    {
+      "item": "am:pinceau",
+      "data": 32767
+    },
+    "P":
+    {
+      "item": "am:pinces",
+      "data": 32767
+    },
+    "I":
+    {
+      "item": "minecraft:dye", 
+      "data": 15
+    },
+    "R":
+    {
+      "item": "minecraft:dye",
+      "data": 6
+    },
+    "M":
+    {
+      "item": "minecraft:dye",
+      "data": 10
+    },
+    "H":
+    {
+      "item": "minecraft:stained_hardened_clay",
+      "data": 0
+    },
+    "G":
+    {
+      "item": "am:spatule",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "minecraft:lime_glazed_terracotta",
+    "count": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "JJ ",
+    "JJ ",
+    "I G"
+  ],
+
+  "key":
+  {
+    "J":
+    {
+      "item": "am:plaque_de_fer"
+    },
+    "I":
+    {
+      "item": "am:pinces",
+      "data": 32767
+    },
+    "G":
+    {
+      "item": "am:marteau_en_fer",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:trappe_en_fer",
+    "count": 1
+  }
+}

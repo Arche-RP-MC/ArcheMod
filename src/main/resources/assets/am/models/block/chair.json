@@ -1,5 +1,4 @@
 {
-  "__comment": "Saucisse",
   "parent": "block/block",
   "textures": {
     "texture": "#0",

@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "MMN",
+    "LLC",
+    "GG "
+  ],
+
+  "key":
+  {
+    "C":
+    {
+      "item": "am:clous"
+    },
+    "G":
+    {
+      "item": "am:barre_acier"
+    },
+    "N":
+    {
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
+    },
+    "L":
+    {
+      "item": "am:laniere_de_cuir"
+    },
+    "M":
+    {
+      "item": "am:cuir_tanne"
+    }
+  },
+
+  "result":
+  {
+    "item": "minecraft:saddle",
+    "count": 1
+  }
+}

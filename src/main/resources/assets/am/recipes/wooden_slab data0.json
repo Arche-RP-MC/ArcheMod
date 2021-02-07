@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "GF ",
+    "BB "
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:planche_chene"
+    },
+    "G":
+    {
+      "item": "am:maillet",
+      "data": 32767
+    },
+    "F":
+    {
+      "item": "am:clous"
+    }
+  },
+
+  "result":
+  {
+    "item": "minecraft:wooden_slab",
+    "data": 0,
+    "count": 1
+  }
+}

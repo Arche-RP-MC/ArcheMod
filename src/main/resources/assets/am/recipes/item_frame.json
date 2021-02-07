@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "GT ",
+    "VBP",
+    "   "
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:planche"
+    },
+    "V":
+    {
+      "item": "am:vernis"
+    },
+    "P":
+    {
+      "item": "am:pepite_bronze"
+    },
+    "T":
+    {
+      "item": "am:ciseaux_a_bois",
+      "data": 32767
+    },
+    "G":
+    {
+      "item": "am:maillet",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "minecraft:item_frame",
+    "count": 1
+  }
+}

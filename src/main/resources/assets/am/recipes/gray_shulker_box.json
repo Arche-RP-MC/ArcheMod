@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "IGF",
+    "BLB",
+    "BBB"
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:planche"
+    },
+    "L":
+    {
+      "item": "am:barre_fer"
+    },
+    "F":
+    {
+      "item": "am:clous"
+    },
+    "I":
+    {
+      "item": "minecraft:dye",
+      "data": 8
+    },
+    "G":
+    {
+      "item": "am:maillet",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "minecraft:gray_shulker_box",
+    "count": 1
+  }
+}

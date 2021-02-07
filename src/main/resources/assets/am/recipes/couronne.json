@@ -16,11 +16,13 @@
     },
     "H":
     {
-      "item": "am:loupe"
+      "item": "am:loupe",
+      "data": 32767
     },
     "G":
     {
-      "item": "am:lime_en_fer"
+      "item": "am:lime_en_fer",
+      "data": 32767
     }
   },
 

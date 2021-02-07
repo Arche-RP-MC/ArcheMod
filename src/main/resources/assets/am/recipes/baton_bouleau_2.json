@@ -8,14 +8,16 @@
     "P  "
   ],
 
-  "key":{
+  "key":
+  {
     "P":
     {
       "item": "am:planche_bouleau"
     },
     "L":
     {
-      "item": "am:scie_en_fer"
+      "item": "am:scie_en_fer",
+      "data": 32767
     }
   },
 

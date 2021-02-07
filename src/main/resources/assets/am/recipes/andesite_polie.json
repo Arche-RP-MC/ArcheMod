@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "BLB",
+    "   "
+  ],
+
+  "key":
+  {
+    "L":
+    {
+      "item": "am:etoffe"
+    },
+    "I":
+    {
+        "item": "minecraft:stone",
+        "data": 5
+    }
+  },
+
+  "result":
+  {
+    "item": "minecraft:stone",
+    "data": 6,
+    "count": 2
+  }
+}

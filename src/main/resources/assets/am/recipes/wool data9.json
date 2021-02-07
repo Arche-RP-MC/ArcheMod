@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "BGB",
+    "BFB",
+    "BBB"
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:laine_brute"
+    },
+    "G":
+    {
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
+    },
+    "F":
+    {
+      "item": "minecraft:dye",
+      "data": 6
+    }
+  },
+
+  "result":
+  {
+    "item": "minecraft:wool",
+    "data": 9,
+    "count": 3
+  }
+}

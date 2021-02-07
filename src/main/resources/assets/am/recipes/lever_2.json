@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " B ",
+    " F ",
+    " G "
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:trousse_d_ingenieur_en_fer",
+      "data": 32767
+    },
+    "F":
+    {
+      "item": "minecraft:stick"
+    },
+    "G":
+    {
+      "item": "am:rouage"
+    }
+  },
+
+  "result":
+  {
+    "item": "minecraft:lever",
+    "count": 1
+  }
+}

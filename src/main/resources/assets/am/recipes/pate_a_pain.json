@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "LLL",
+    " F "
+  ],
+
+  "key":
+  {
+    "F":
+    {
+      "item": "minecraft:water_bucket"
+    },
+    "L":
+    {
+      "item": "am:farine"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:pate_a_pain",
+    "count": 3
+  }
+}

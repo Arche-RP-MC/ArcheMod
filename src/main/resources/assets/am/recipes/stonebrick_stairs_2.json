@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "  P",
+    " T ",
+    "   "
+  ],
+
+  "key":
+  {
+    "T":
+    {
+      "item": "minecraft:stonebrick",
+      "data": 0
+    },
+    "P":
+    {
+        "item": "am:marteau_burin_en_fer",
+        "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "minecraft:stonebrick_stairs",
+    "count": 1
+  }
+}

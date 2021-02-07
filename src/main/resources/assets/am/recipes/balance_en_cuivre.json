@@ -20,11 +20,12 @@
     },
     "L":
     {
-      "item": "am:lime_en_fer"
+      "item": "am:lime"
     },
     "M":
     {
-      "item": "am:loupe"
+      "item": "am:loupe",
+      "data": 32767
     }
   },
 

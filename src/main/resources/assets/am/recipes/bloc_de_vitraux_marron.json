@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " P ",
+    "HT ",
+    "HT "
+  ],
+
+  "key":
+  {
+    "H":
+    {
+      "item": "minecraft:stained_glass",
+      "data": 12
+    },
+    "T":
+    {
+      "item": "am:barre_plomb"
+    },
+    "P":
+    {
+        "item": "am:pinces",
+        "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:bloc_de_vitraux_marron",
+    "count": 1
+  }
+}

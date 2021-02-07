@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    " FN",
+    "   "
+  ],
+
+  "key":
+  {
+    "N":
+    {
+      "item": "am:huitre"
+    },
+    "F":
+    {
+      "item": "am:couteau_en_acier",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:huitre_ouverte",
+    "count": 1
+  }
+}

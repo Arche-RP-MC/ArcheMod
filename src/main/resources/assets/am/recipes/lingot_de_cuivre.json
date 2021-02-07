@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "TTT",
+    "TTT",
+    "HB "
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:moule"
+    },
+    "T":
+    {
+      "item": "am:pepite_cuivre"
+    },
+    "H":
+    {
+      "item": "am:pinces",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:lingot_de_cuivre",
+    "count": 1
+  }
+}

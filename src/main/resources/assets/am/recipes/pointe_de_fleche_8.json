@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "TT ",
+    "HB "
+  ],
+
+  "key":
+  {
+    "T":
+    {
+      "item": "am:pepite_acier"
+    },
+    "H":
+    {
+      "item": "am:marteau_en_fer",
+      "data": 32767
+    },
+    "B":
+    {
+      "item": "am:pinces",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:pointe_de_fleche",
+    "count": 7
+  }
+}

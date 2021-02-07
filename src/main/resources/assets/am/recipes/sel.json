@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "FFF",
+    "FFF",
+    " R "
+  ],
+
+  "key":
+  {
+    "F":
+    {
+      "item": "am:cristal_de_sel"
+    },
+    "R":
+    {
+      "item": "am:mortier_pilon",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:sel",
+    "count": 6
+  }
+}

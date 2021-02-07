@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    " PT",
+    "   "
+  ],
+
+  "key":
+  {
+    "P":
+    {
+        "item": "am:ciseaux_a_bois",
+        "data": 32767
+    },
+    "T":
+    {
+      "item": "am:plancher_bambou"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:dalle_en_plancher_bambou",
+    "count": 2
+  }
+}
