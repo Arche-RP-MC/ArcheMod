@@ -309,6 +309,36 @@ public class ModItems {
     public static final Item HACHE_D_ARMES_EN_FER = new ItemBase("hache_d_armes_en_fer");
     public static final Item SABRE_EN_BOIS = new ItemBase("sabre_en_bois");
     public static final Item FOUET = new ItemBase("fouet");
+    public static final Item SABRE_EN_FER = new ToolSword("sabre_en_fer",Item.ToolMaterial.IRON);
+    public static final Item SABRE_EN_BRONZE = new ToolSword("sabre_en_bronze",Item.ToolMaterial.IRON);
+    public static final Item SABRE_EN_ACIER = new ToolSword("sabre_en_acier",Item.ToolMaterial.IRON);
+    public static final Item RAPIERE_EN_FER = new ToolSword("rapiere_en_fer",Item.ToolMaterial.IRON);
+    public static final Item RAPIERE_EN_BRONZE = new ToolSword("rapiere_en_bronze",Item.ToolMaterial.IRON);
+    public static final Item RAPIERE_EN_ACIER = new ToolSword("rapiere_en_acier",Item.ToolMaterial.IRON);
+    public static final Item ARAKH_EN_FER = new ToolSword("arakh_en_fer",Item.ToolMaterial.IRON);
+    public static final Item ARAKH_EN_BRONZE = new ToolSword("arakh_en_bronze",Item.ToolMaterial.IRON);
+    public static final Item ARAKH_EN_ACIER = new ToolSword("arakh_en_acier",Item.ToolMaterial.IRON);
+    public static final Item DAGUE_EN_FER = new ToolSword("dague_en_fer",Item.ToolMaterial.IRON);
+    public static final Item DAGUE_EN_BRONZE = new ToolSword("dague_en_bronze",Item.ToolMaterial.IRON);
+    public static final Item DAGUE_EN_ACIER = new ToolSword("dague_en_acier",Item.ToolMaterial.IRON);
+    public static final Item LANCE_EN_FER = new ToolSword("lance_en_fer",Item.ToolMaterial.IRON);
+    public static final Item LANCE_EN_BRONZE = new ToolSword("lance_en_bronze",Item.ToolMaterial.IRON);
+    public static final Item LANCE_EN_ACIER = new ToolSword("lance_en_acier",Item.ToolMaterial.IRON);
+    public static final Item EPEE_BATARDE_EN_FER = new ToolSword("epee_batarde_en_fer",Item.ToolMaterial.IRON);
+    public static final Item EPEE_BATARDE_EN_BRONZE = new ToolSword("epee_batarde_en_bronze",Item.ToolMaterial.IRON);
+    public static final Item EPEE_BATARDE_EN_ACIER = new ToolSword("epee_batarde_en_acier",Item.ToolMaterial.IRON);
+    public static final Item EPEE_DEUX_MAINS_EN_FER = new ToolSword("epee_deux_mains_en_fer",Item.ToolMaterial.IRON);
+    public static final Item EPEE_DEUX_MAINS_EN_BRONZE = new ToolSword("epee_deux_mains_en_bronze",Item.ToolMaterial.IRON);
+    public static final Item EPEE_DEUX_MAINS_EN_ACIER = new ToolSword("epee_deux_mains_en_acier",Item.ToolMaterial.IRON);
+    public static final Item FLAMEBERGE_EN_FER = new ToolSword("flamberge_en_fer",Item.ToolMaterial.IRON);
+    public static final Item FLAMEBERGE_EN_BRONZE = new ToolSword("flamberge_en_bronze",Item.ToolMaterial.IRON);
+    public static final Item FLAMEBERGE_EN_ACIER = new ToolSword("flamberge_en_acier",Item.ToolMaterial.IRON);
+    public static final Item HALLEBARDE_EN_FER = new ToolSword("hallebarde_en_fer",Item.ToolMaterial.IRON);
+    public static final Item HALLEBARDE_EN_BRONZE = new ToolSword("hallebarde_en_bronze",Item.ToolMaterial.IRON);
+    public static final Item HALLEBARDE_EN_ACIER = new ToolSword("hallebarde_en_acier",Item.ToolMaterial.IRON);
+
+
+ 
 
     //SECOND PART
     public static final Item COUTEAU_EN_OR = new ItemBase("couteau_en_or");
