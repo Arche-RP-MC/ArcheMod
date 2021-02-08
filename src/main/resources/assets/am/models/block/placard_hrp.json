@@ -1,6 +1,22 @@
 {
-    "parent": "block/cube_all",
+    "parent": "block/thin_block",
+    "texture_size": [32, 32],
     "textures": {
-        "all": "am:blocks/placard_hrp"
-    }
+        "0": "am:blocks/placard_hrp",
+        "particle": "am:blocks/placard_hrp"
+    },
+    "elements": [
+        {
+            "from": [0, 0, 0],
+            "to": [16, 1, 16],
+            "faces": {
+                "north": {"uv": [2, 1.5, 10, 2], "texture": "#0"},
+                "east": {"uv": [2, 1.5, 10, 2], "texture": "#0"},
+                "south": {"uv": [2, 1.5, 10, 2], "texture": "#0"},
+                "west": {"uv": [2, 1.5, 10, 2], "texture": "#0"},
+                "up": {"uv": [0, 0, 16, 16], "texture": "#0"},
+                "down": {"uv": [2, 1.5, 10, 2], "texture": "#0"}
+            }
+        }
+    ]
 }
