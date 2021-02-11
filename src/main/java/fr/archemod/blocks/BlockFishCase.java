@@ -79,7 +79,7 @@ public class BlockFishCase extends BlockBase implements ITileEntityProvider {
             long dateAfter = date + 10 * 3600000L;
 
 
-            if(dateAfter == (date + 10 * 3600000L)){
+            if(dateAfter >= date){
 
                 int nombreAleatoire = 1 + (int)(Math.random() * (ItemList.values().length - 1));
                 tile.serializeNBT();

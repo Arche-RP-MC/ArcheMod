@@ -123,11 +123,11 @@ public class ModItems {
     public static final Item TROUSSE_D_INGENIEUR_EN_ACIER = new OutilsEnAcier("trousse_d_ingenieur_en_acier");
     public static final Item TROUSSE_D_INGENIEUR_EN_BRONZE = new OutilsEnBronze("trousse_d_ingenieur_en_bronze");
     public static final Item TROUSSE_D_INGENIEUR_EN_FER = new OutilsEnFer("trousse_d_ingenieur_en_fer");
-    public static final Item SCIE_BRONZE = new OutilsEnBronze("scie_bronze");
-    public static final Item SCIE_FER = new OutilsEnFer("scie_fer");
-    public static final Item SCIE_ACIER = new OutilsEnAcier("scie_acier");
-    public static final Item COUTEAU_BRONZE = new OutilsEnBronze("couteau_bronze");
-    public static final Item COUTEAU_ACIER = new OutilsEnAcier("couteau_acier");
+    public static final Item SCIE_EN_BRONZE = new OutilsEnBronze("scie_en_bronze");
+    public static final Item SCIE_EN_FER = new OutilsEnFer("scie_en_fer");
+    public static final Item SCIE_EN_ACIER = new OutilsEnAcier("scie_en_acier");
+    public static final Item COUTEAU_EN_BRONZE = new OutilsEnBronze("couteau_en_bronze");
+    public static final Item COUTEAU_EN_ACIER = new OutilsEnAcier("couteau_en_acier");
     public static final Item CISEAUX_DE_COUTURE = new OutilsEnFer("ciseaux_de_couture");
     public static final Item BALAI = new OutilsEnBronze("balai");
     public static final Item CANNE_DE_VERRIER = new OutilsEnFer("canne_de_verrier");
@@ -209,7 +209,6 @@ public class ModItems {
     public static final Item GROS_RAVIOLI = new FoodBase("gros_ravioli",1,0.2F,false);
     public static final Item GROSEILLE = new FoodBase("groseille",1,0.2F,false);
     public static final Item GROSEILLE_A_MACRO = new FoodBase("groseille_a_macro",1,0.2F,false);
-    public static final Item GROSSE_VIANDE = new FoodBase("grosse_viande",1,0.2F,false);
     public static final Item HARICOT_BLANC = new FoodBase("haricot_blanc",2,0.2F,false);
     public static final Item HARICOT_ROUGE = new FoodBase("haricot_rouge",3,0.2F,false);
     public static final Item HARICOT_VERT = new FoodBase("haricot_vert",2,0.2F,false);
@@ -239,7 +238,7 @@ public class ModItems {
     public static final Item PART_DE_TOURTE = new FoodBase("part_de_tourte",4,0.2F,false);
     public static final Item PATISSERIE = new FoodBase("patisserie",2,0.2F,false);
     public static final Item PATISSERIE_A_LA_PATE_D_AMANDE = new FoodBase("patisserie_a_la_pate_d_amande",4,0.2F,false);
-    public static final Item PATISSERIE_COLOREES = new FoodBase("patisserie_colorees",4,0.2F,false);
+    public static final Item PATISSERIES_COLOREES = new FoodBase("patisseries_colorees",4,0.2F,false);
     public static final Item PECHE = new FoodBase("peche",1,0.2F,false);
     public static final Item PETIT_PAIN = new FoodBase("petit_pain",3,0.2F,false);
     public static final Item PETITE_VIANDE_CUITE = new FoodBase("petite_viande_cuite",3,0.2F,false);
@@ -278,6 +277,7 @@ public class ModItems {
     public static final Item VIANDE_DE_GIBIER_CUITE = new FoodBase("viande_de_gibier_cuite",4,0.2F,false);
     public static final Item VIANDE_DE_RAT_CUITE = new FoodBase("viande_de_rat_cuite",2,0.2F,false);
     public static final Item VIANDE_DE_VOLAILLE_CUITE = new FoodBase("viande_de_volaille_cuite",3,0.2F,false);
+    public static final Item GROSSE_VIANDE_CUITE = new FoodBase("grosse_viande_cuite",3,0.2F,false);
     public static final Item ASPERGE = new FoodBase("asperge",2,0.2F,false);
 
 
@@ -521,7 +521,7 @@ public class ModItems {
     public static final Item CORNALINE_TAILLE_TRIANGLE = new ItemBase("cornaline_taille_triangle");
     public static final Item CORNALINE_TAILLE_TRILLION = new ItemBase("cornaline_taille_trillion");
     public static final Item CORNE_DE_BRUME = new ItemBase("corne_de_brume");
-    public static final Item COURONNE = new ItemBase("couronne");
+    public static final Item COURONNE_EN_OR = new ItemBase("couronne_en_or");
     public static final Item COURONNE_DE_FLEURS = new ItemBase("couronne_de_fleurs");
     public static final Item COUVERTURE = new ItemBase("couverture");
     public static final Item CRABE = new ItemBase("crabe");

@@ -52,6 +52,11 @@ public class BlockLantern extends BlockBase implements ITileEntityProvider {
         this.burning = burning;
     }
 
+    @Override
+    public boolean isTranslucent(IBlockState state){
+        return true;
+    }
+
     public void updateTick(World worldIn, BlockPos pos, IBlockState state, Random rand) {
         super.updateTick(worldIn, pos, state, rand);
     }

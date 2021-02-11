@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "am:items/Tranche_de_pasteque"
+    "layer0": "am:items/tranche_de_pasteque"
   }
 }
