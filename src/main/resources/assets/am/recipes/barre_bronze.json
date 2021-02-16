@@ -9,20 +9,17 @@
   ],
 
   "key":
-   {
     "P":
     {
       "item": "am:pepite_bronze"
     },
     "M":
     {
-      "item": "am:marteau_en_bronze",
-      "data": 32767
+      "item": "am:marteau_en_bronze"
     },
     "L":
     {
-      "item": "am:pinces",
-      "data": 32767
+      "item": "am:pince"
     }
   },
 

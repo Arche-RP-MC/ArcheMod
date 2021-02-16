@@ -3,9 +3,9 @@
 
   "pattern":
   [
-    "   ",
+    " NN",
     "FNN",
-    "   "
+    " NN"
   ],
 
   "key":
@@ -17,7 +17,7 @@
     "F":
     {
       "item": "am:lime_en_fer",
-      "data": 32767
+      "data": "32,767"
     }
   },
 

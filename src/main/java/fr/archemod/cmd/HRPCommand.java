@@ -1,6 +1,7 @@
 package fr.archemod.cmd;
 
 import fr.archemod.init.ModBlocks;
+import fr.archemod.init.ModItems;
 import net.minecraft.command.CommandBase;
 import net.minecraft.command.CommandException;
 import net.minecraft.command.ICommand;
@@ -46,6 +47,10 @@ public class HRPCommand extends CommandBase {
 
             if(args[0].equalsIgnoreCase("c")){
                 player.addItemStackToInventory(new ItemStack(ModBlocks.PLACARD_HRP));
+                return;
+            }
+            if(args[0].equalsIgnoreCase("sign")){
+                player.addItemStackToInventory(new ItemStack(ModItems.sign_hrp));
                 return;
             }
 

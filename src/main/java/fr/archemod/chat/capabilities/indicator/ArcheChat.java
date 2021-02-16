@@ -2,6 +2,7 @@ package fr.archemod.chat.capabilities.indicator;
 
 import fr.archemod.ArcheMod;
 import fr.archemod.chat.network.indicator.PacketArcheChat;
+import fr.archemod.network.ArcheNetwork;
 import net.minecraft.entity.player.EntityPlayer;
 
 public class ArcheChat implements IArcheChat{
@@ -30,7 +31,7 @@ public class ArcheChat implements IArcheChat{
     {
         PacketArcheChat packet = new PacketArcheChat(this);
         if(player.world.isRemote){
-            ArcheMod.networkArcheMod.sendToServer(packet);
+            ArcheNetwork.NETWORK.sendToServer(packet);
         }
     }
 }

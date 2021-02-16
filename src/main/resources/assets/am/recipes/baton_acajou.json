@@ -8,16 +8,14 @@
     "P  "
   ],
 
-  "key":
-  {
+  "key":{
     "P":
     {
       "item": "am:planche_acajou"
     },
     "L":
     {
-      "item": "am:scie_en_bronze",
-      "data": 32767
+      "item": "am:scie_en_bronze"
     }
   },
 

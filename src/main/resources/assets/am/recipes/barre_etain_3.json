@@ -8,21 +8,18 @@
     "P  "
   ],
 
-  "key":
-  {
+  "key":{
     "P":
     {
       "item": "am:pepite_etain"
     },
     "M":
     {
-      "item": "am:marteau_en_acier",
-      "data": 32767
+      "item": "am:marteau_en_acier"
     },
     "L":
     {
-      "item": "am:pinces",
-      "data": 32767
+      "item": "am:pinces"
     }
   },
 

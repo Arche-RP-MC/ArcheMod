@@ -12,14 +12,11 @@
   {
     "M":
     {
-      "item": "am:marteau_en_bronze",
-      "data": 32767
+      "item": "am:marteau_en_bronze"
     },
     "P":
     {
-      "item": "am:pinces",
-      "data": 32767
-
+      "item": "am:pinces"
     },
     "T":
     {

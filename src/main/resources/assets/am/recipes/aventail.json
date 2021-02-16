@@ -16,18 +16,15 @@
     },
     "M":
     {
-      "item": "am:marteau_en_bronze",
-      "data": 32767
+      "item": "am:marteau_en_bronze"
     },
     "G":
     {
-      "item": "am:pinces",
-      "data": 32767
-
+      "item": "am:pinces"
     },
     "L":
     {
-      "item": "am:laniere_de_cuir"
+      "item": "am:laniere"
     }
 
   },

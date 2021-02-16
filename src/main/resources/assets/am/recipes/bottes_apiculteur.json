@@ -3,7 +3,7 @@
 
   "pattern":
   [
-    "  ",
+    "   ",
     "LNL",
     "FMF"
   ],
@@ -16,8 +16,7 @@
     },
     "N":
     {
-      "item": "am:ciseaux_de_couture",
-      "data": 32767
+      "item": "am:ciseaux_de_couture"
     },
     "L":
     {

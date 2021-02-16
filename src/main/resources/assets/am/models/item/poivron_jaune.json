@@ -1,6 +1,6 @@
 {
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "am:blocks/poivron_jaune"
-    }
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "am:items/poivron_jaune"
+  }
 }
