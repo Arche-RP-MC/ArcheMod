@@ -3,6 +3,8 @@ package fr.archemod.init;
 import fr.archemod.ArcheMod;
 import fr.archemod.blocks.*;
 import fr.archemod.blocks.agriculture.BlockPlanLin;
+import fr.archemod.blocks.signhrp.BlockWallSignHrp;
+import fr.archemod.blocks.signhrp.SignStandingSign;
 import fr.archemod.items.agriculture.ItemGraine;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
@@ -28,8 +30,9 @@ public class ModBlocks {
 
     public static final Block BLOC_DE_PIERRE_PRECIEUSE = new PierrePrecieuseOre("bloc_de_pierre_precieuse",Material.IRON);
     public static final Block PLACARD_HRP = new PlacardHRP("placard_hrp", Material.WOOD, 0.5F, 0.5F, SoundType.WOOD);
-    public static final Block SIGN_HRP = new PanneauHRP("sign_hrp", Material.WOOD);
 
+    public static final Block standing_sign_hrp = new SignStandingSign();
+    public static final Block wall_sign_hrp = new BlockWallSignHrp();
 
     public static final Block SHOWCASE = new Showcase("showcase",Material.WOOD);
     public static final Block SHOWCASE_CENTER = new Showcase("showcase_center",Material.WOOD);
@@ -401,6 +404,13 @@ public class ModBlocks {
 
     //CONTENEUR \!/ Il faut recréer Block, TileEntity, Container, Inventory, GUI, Registry dans util.handlers.RegistryHandler et gérer le GUIid du Block (onBlockActivated) dans le switch case du GUIHandler
     public static final Block ECRIN_A_BIJOUX = new BlockEcrinABijoux("ecrin_a_bijoux", Material.WOOD, 1.5F, 1.5F, SoundType.WOOD);
+
+    //Minerai
+    public static final Block BLOC_MINERAI_ARGENT = new BlockBase("bloc_minerai_argent", Material.ROCK, 5F, 5F, SoundType.STONE);
+    public static final Block BLOC_MINERAI_FER = new BlockBase("bloc_minerai_fer", Material.ROCK, 5F, 5F, SoundType.STONE);
+    public static final Block BLOC_MINERAI_ETAIN = new BlockBase("bloc_minerai_etain", Material.ROCK, 5F, 5F, SoundType.STONE);
+    public static final Block BLOC_MINERAI_PLOMB = new BlockBase("bloc_meinerai_plomb", Material.ROCK, 5F, 5F, SoundType.STONE);
+
 
 
     public static final Block CHAISE_CHENE = new BlocChaise("chaise_chene", Material.WOOD, SoundType.WOOD);

@@ -1,12 +1,14 @@
 package fr.archemod.util.handlers;
 
 import fr.archemod.ArcheMod;
+import fr.archemod.blocks.render.SignHrpRender;
 import fr.archemod.blocks.tileentity.*;
 import fr.archemod.chat.capabilities.description.DescriptionCapability;
 import fr.archemod.chat.capabilities.indicator.ArcheChatCapability;
 import fr.archemod.gui.GuiHandler;
 import fr.archemod.init.ModBlocks;
 import fr.archemod.init.ModItems;
+import fr.archemod.network.ArcheNetwork;
 import fr.archemod.util.IHasModel;
 import fr.archemod.util.Reference;
 import net.minecraft.block.Block;
@@ -17,6 +19,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.AttachCapabilitiesEvent;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.fml.client.registry.ClientRegistry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
@@ -60,10 +63,14 @@ public class RegistryHandler {
         GameRegistry.registerTileEntity(TileEntityEcrinABijoux.class, new ResourceLocation(Reference.MOD_ID,"TileEntityEcrinABijoux"));
         GameRegistry.registerTileEntity(TileEntityLightBlock.class, new ResourceLocation(Reference.MOD_ID,"TileEntityLightBlock"));
         GameRegistry.registerTileEntity(TileEntityFishCase.class, new ResourceLocation(Reference.MOD_ID, "TileEntityFishCase"));
+        GameRegistry.registerTileEntity(TileEntitySignHrp.class, new ResourceLocation(Reference.MOD_ID, ".TileEntitySignHrp"));
+        ClientRegistry.bindTileEntitySpecialRenderer(TileEntitySignHrp.class,new SignHrpRender());
         GameRegistry.registerTileEntity(TileEntityHrpSign.class, new ResourceLocation(Reference.MOD_ID, "TileEntityHrpSign"));
 
         ModBlocks.init();
         ModBlocks.register();
+
+
     }
 
     @SubscribeEvent

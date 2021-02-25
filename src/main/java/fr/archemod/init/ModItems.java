@@ -1,6 +1,7 @@
 package fr.archemod.init;
 
 
+import fr.archemod.blocks.itemblock.ItemSignHrp;
 import fr.archemod.items.*;
 import fr.archemod.items.epuisette.Epuisette;
 import fr.archemod.items.food.Bol;
@@ -18,6 +19,7 @@ public class ModItems {
 
     public static final List<Item> ITEMS = new ArrayList<>();
 
+    public static final Item sign_hrp = new ItemSignHrp();
     //ITEMS
     public static final Item BOBINE_DE_FIL = new ItemBase("bobine_de_fil");
     public static final Item CENDRES = new ItemBase("cendres");
@@ -325,6 +327,7 @@ public class ModItems {
     public static final Item HALLEBARDE_EN_FER = new ToolSword("hallebarde_en_fer",Item.ToolMaterial.IRON);
     public static final Item HALLEBARDE_EN_BRONZE = new ToolSword("hallebarde_en_bronze",Item.ToolMaterial.IRON);
     public static final Item HALLEBARDE_EN_ACIER = new ToolSword("hallebarde_en_acier",Item.ToolMaterial.IRON);
+    public static final Item BATON_DE_COMBAT = new ToolSword("baton_de_combat",Item.ToolMaterial.IRON);
 
 
     //SECOND PART

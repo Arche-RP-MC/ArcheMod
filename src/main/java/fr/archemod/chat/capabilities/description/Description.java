@@ -2,6 +2,7 @@ package fr.archemod.chat.capabilities.description;
 
 import fr.archemod.ArcheMod;
 import fr.archemod.chat.network.description.PacketDescription;
+import fr.archemod.network.ArcheNetwork;
 import net.minecraft.entity.player.EntityPlayer;
 
 public class Description implements IDescription {
@@ -31,7 +32,7 @@ public class Description implements IDescription {
         PacketDescription packet = new PacketDescription(this);
         if(player.world.isRemote)
         {
-            ArcheMod.networkArcheMod.sendToServer(packet);
+            ArcheNetwork.NETWORK.sendToServer(packet);
         }
     }
 }

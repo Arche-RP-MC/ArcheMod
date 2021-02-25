@@ -67,8 +67,13 @@ public class HRPCommand extends CommandBase {
             if(args[0].equalsIgnoreCase("urine")){
                 player.addItemStackToInventory(new ItemStack(ModBlocks.TACHE_D_URINE));
                 return;
+
             }
 
+            if(args[0].equalsIgnoreCase("sang")){
+                player.addItemStackToInventory(new ItemStack(ModBlocks.TACHE_DE_SANG));
+                return;
+            }
         }
     }
 

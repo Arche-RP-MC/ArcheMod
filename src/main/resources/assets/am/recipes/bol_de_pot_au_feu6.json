@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:crafting_shaped", 
+  "pattern": 
+ [ 
+ "BED", 
+ "BAD", 
+ "CCC" 
+ ], 
+
+
+ "key": 
+ { 
+ "A": 
+ { 
+ "item": "am:lambeau_de_viande_crue"
+ 
+},
+ "B": 
+ { 
+ "item": "am:poireau"
+ 
+},
+ "C": 
+ { 
+ "item": "am:bol"
+}
+},
+"D": 
+ { 
+ "item": "minecraft:Carrot"
+
+},
+"E": 
+ { 
+ "item": "am:oignon"
+
+},
+ "result": 
+ { 
+ "item": "am:bol_de_pot_au_feu",
+ "count": 3
+}
+}

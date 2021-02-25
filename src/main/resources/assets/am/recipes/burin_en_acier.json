@@ -4,7 +4,7 @@
   "pattern":
   [
     " G ",
-    " HT",
+    "FHT",
     " B "
   ],
 
@@ -26,12 +26,16 @@
     {
       "item": "am:marteau_en_bronze",
       "data": 32767
+    },
+    "F":
+    {
+      "item": "am:marteau_en_acier"
     }
   },
 
   "result":
   {
-    "item": "am:burin_en_acier",
+    "item": "am:marteau_burin_en_acier",
     "count": 1
   }
 }

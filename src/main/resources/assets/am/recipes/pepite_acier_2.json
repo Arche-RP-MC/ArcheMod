@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "HHH",
+    "HFH",
+    "HHH"
+  ],
+
+  "key":
+  {
+    "H":
+    {
+      "item": "am:pepite_etain"
+    },
+    "F":
+    {
+      "item": "minecraft:coal",
+      "data": 1
+    }
+  },
+
+  "result":
+  {
+    "item": "am:pepite_acier",
+    "count": 8
+
+  }
+}

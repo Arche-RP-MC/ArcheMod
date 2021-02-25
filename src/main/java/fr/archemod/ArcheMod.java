@@ -1,5 +1,6 @@
 package fr.archemod;
 
+import fr.archemod.blocks.tileentity.TileEntitySignHrp;
 import fr.archemod.chat.GuiChatListener;
 import fr.archemod.chat.capabilities.description.Description;
 import fr.archemod.chat.capabilities.description.DescriptionStorage;
@@ -9,10 +10,12 @@ import fr.archemod.chat.capabilities.indicator.ArcheChatStorage;
 import fr.archemod.chat.capabilities.indicator.IArcheChat;
 import fr.archemod.chat.network.indicator.PacketArcheChat;
 import fr.archemod.cmd.HRPCommand;
+import fr.archemod.network.ArcheNetwork;
 import fr.archemod.proxy.CommonProxy;
 import fr.archemod.util.ArcheCreativeTabs;
 import fr.archemod.util.Reference;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.capabilities.CapabilityManager;
 import net.minecraftforge.fml.common.Mod;
@@ -23,6 +26,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -34,7 +38,7 @@ import org.apache.logging.log4j.Logger;
 )
 public class ArcheMod {
 
-    public static SimpleNetworkWrapper networkArcheMod;
+
     /** This is used to keep track of GUIs that we make*/
     public static int modGuiIndex = 0;
 
@@ -62,6 +66,8 @@ public class ArcheMod {
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
 
+        ArcheNetwork.init();
+
         LOGGER = event.getModLog();
 
         MinecraftForge.EVENT_BUS.register(GuiChatListener.class);
@@ -69,10 +75,9 @@ public class ArcheMod {
         CapabilityManager.INSTANCE.register(IArcheChat.class, new ArcheChatStorage(), ArcheChat::new);
         CapabilityManager.INSTANCE.register(IDescription.class, new DescriptionStorage(), Description::new);
 
-        networkArcheMod = NetworkRegistry.INSTANCE.newSimpleChannel(Reference.MOD_ID);
+        ArcheNetwork.NETWORK.registerMessage(PacketArcheChat.ServerHandler.class, PacketArcheChat.class, 5, Side.SERVER);
+        ArcheNetwork.NETWORK.registerMessage(PacketArcheChat.ClientHandler.class, PacketArcheChat.class, 6, Side.CLIENT);
 
-        networkArcheMod.registerMessage(PacketArcheChat.ServerHandler.class, PacketArcheChat.class, 5, Side.SERVER);
-        networkArcheMod.registerMessage(PacketArcheChat.ClientHandler.class, PacketArcheChat.class, 6, Side.CLIENT);
         //networkDescription.registerMessage(PacketDescription.ServerHandler.class, PacketDescription.class, 4, Side.SERVER);
         //networkDescription.registerMessage(PacketDescription.ClientHandler.class, PacketDescription.class, 5, Side.CLIENT);
 
@@ -83,6 +88,10 @@ public class ArcheMod {
     {
         LOGGER.info("initalise FMLServerStartingEvent :" + Reference.MOD_NAME);
         event.registerServerCommand(new HRPCommand());
+
+
+
+
     }
 
     /**
@@ -90,6 +99,7 @@ public class ArcheMod {
      */
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
+        ArcheNetwork.init();
 
     }
 
@@ -100,4 +110,8 @@ public class ArcheMod {
     public void postinit(FMLPostInitializationEvent event) {
 
     }
+    public static Logger getLogger() {
+        return LOGGER;
+    }
 }
+
