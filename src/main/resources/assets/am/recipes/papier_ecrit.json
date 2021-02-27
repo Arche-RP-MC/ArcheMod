@@ -12,7 +12,8 @@
   {
     "E":
     {
-      "item": "am:encrier_et_plume"
+      "item": "am:encrier_et_plume",
+      "data": 32767
     },
     "P":
     {

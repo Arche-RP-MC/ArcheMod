@@ -1,4 +1,4 @@
-package fr.archemod.blocks;
+/*package fr.archemod.blocks;
 
 import fr.archemod.init.ModBlocks;
 import net.minecraft.block.BlockSlab;
@@ -129,4 +129,4 @@ public abstract class BlockDalleWoolColoredMagenta extends BlockSlab {
 
 	}
 
-}
+}*/

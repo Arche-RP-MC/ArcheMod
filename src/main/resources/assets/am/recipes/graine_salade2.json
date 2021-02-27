@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    " A ",
+    " M "
+  ],
+
+  "key":
+  {
+    "M":
+    {
+      "item": "am:mortier_pilon_en_bois",
+      "data": 32767
+    },
+    "P":
+    {
+      "item": "am:salade"
+    }
+    
+  },
+
+  "result":
+  {
+    "item": "graine_salade",
+    "data": 0,
+    "count": 2
+  }
+}

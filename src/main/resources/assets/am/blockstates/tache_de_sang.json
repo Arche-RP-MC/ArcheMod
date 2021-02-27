@@ -1,27 +1,6 @@
 {
     "variants": {
-        "layers=1": {
-            "model": "am:tache_de_sang_height2"
-        },
-        "layers=2": {
-            "model": "am:tache_de_sang_height4"
-        },
-        "layers=3": {
-            "model": "am:tache_de_sang_height6"
-        },
-        "layers=4": {
-            "model": "am:tache_de_sang_height8"
-        },
-        "layers=5": {
-            "model": "am:tache_de_sang_height10"
-        },
-        "layers=6": {
-            "model": "am:tache_de_sang_height12"
-        },
-        "layers=7": {
-            "model": "am:tache_de_sang_height14"
-        },
-        "layers=8": {
+        "normal": {
             "model": "am:tache_de_sang"
         }
     }

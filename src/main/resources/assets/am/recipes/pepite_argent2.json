@@ -11,11 +11,12 @@
    "data": 32767
   },
   "B": {
-   "item": "am:minerai_fer"
-  },
-  "result": {
-   "item": "am:pepite_fer",
-   "count": 2
+   "item": "am:bloc_minerai_argent"
   }
+ },
+ "result":
+ {
+  "item": "am:pepite_argent",
+  "count": 2
  }
 }

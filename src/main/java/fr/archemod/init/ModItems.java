@@ -7,6 +7,7 @@ import fr.archemod.items.epuisette.Epuisette;
 import fr.archemod.items.food.Bol;
 import fr.archemod.items.food.BouteilleDeVin;
 import fr.archemod.items.food.FoodBase;
+import fr.archemod.items.huitre.Huitre;
 import fr.archemod.items.tools.ToolAxe;
 import fr.archemod.items.tools.ToolSword;
 import net.minecraft.item.Item;
@@ -109,7 +110,6 @@ public class ModItems {
     public static final Item PINCES = new OutilsEnFer("pinces");
     public static final Item COUTEAU_EN_FER = new ItemBase("couteau_en_fer");
     public static final Item LOUPE = new OutilsEnFer("loupe");
-    public static final Item AIGUILLE = new OutilsEnFer("aiguille");
     public static final Item CISEAUX_A_BOIS = new OutilsEnFer("ciseaux_a_bois");
     public static final Item EPUISETTE = new Epuisette("epuisette");
     public static final Item FILET = new OutilsEnFer("filet");
@@ -233,10 +233,10 @@ public class ModItems {
     public static final Item PAIN_AU_CHOUX = new FoodBase("pain_au_choux",6,0.2F,false);
     public static final Item PAIN_NOIR = new FoodBase("pain_noir",4,0.2F,false);
     public static final Item PART_DE_GATEAU = new FoodBase("part_de_gateau",2,0.2F,false);
-    public static final Item PART_DE_TARTE = new FoodBase("part_de_tarte",3,0.2F,false);
-    public static final Item PART_DE_TARTE_AU_CITRON = new FoodBase("part_de_tarte_au_citron",3,0.2F,false);
-    public static final Item PART_DE_TARTE_AUX_FRUITS_ROUGES = new FoodBase("part_de_tarte_aux_fruits_rouges",3,0.2F,false);
-    public static final Item PART_DE_TARTE_AUX_MYRTILLES = new FoodBase("part_de_tarte_aux_myrtilles",3,0.2F,false);
+    //public static final Item PART_DE_TARTE = new FoodBase("part_de_tarte",3,0.2F,false);
+    //public static final Item PART_DE_TARTE_AU_CITRON = new FoodBase("part_de_tarte_au_citron",3,0.2F,false);
+    //public static final Item PART_DE_TARTE_AUX_FRUITS_ROUGES = new FoodBase("part_de_tarte_aux_fruits_rouges",3,0.2F,false);
+    //public static final Item PART_DE_TARTE_AUX_MYRTILLES = new FoodBase("part_de_tarte_aux_myrtilles",3,0.2F,false);
     public static final Item PART_DE_TOURTE = new FoodBase("part_de_tourte",4,0.2F,false);
     public static final Item PATISSERIE = new FoodBase("patisserie",2,0.2F,false);
     public static final Item PATISSERIE_A_LA_PATE_D_AMANDE = new FoodBase("patisserie_a_la_pate_d_amande",4,0.2F,false);
@@ -281,7 +281,7 @@ public class ModItems {
     public static final Item VIANDE_DE_VOLAILLE_CUITE = new FoodBase("viande_de_volaille_cuite",3,0.2F,false);
     public static final Item GROSSE_VIANDE_CUITE = new FoodBase("grosse_viande_cuite",3,0.2F,false);
     public static final Item ASPERGE = new FoodBase("asperge",2,0.2F,false);
-
+    public static final Item HUITRE_OUVERTE = new FoodBase("huitre_ouverte",2,0.2F,false);
 
 
 
@@ -291,46 +291,33 @@ public class ModItems {
     public static final Item DAGUE_A_ROUELLES = new ItemBase("dague_a_rouelles");
     public static final Item DAGUE_A_ROUELLES_EN_ACIER = new ItemBase("dague_a_rouelles_en_acier");
     public static final Item DAGUE_EN_BOIS = new ItemBase("dague_en_bois");
-    public static final Item FAUCHARD_EN_ACIER = new ItemBase("fauchard_en_acier");
-    public static final Item FAUCHARD_EN_BRONZE = new ItemBase("fauchard_en_bronze");
-    public static final Item FAUCHARD_EN_FER = new ItemBase("fauchard_en_fer");
-    public static final Item FLAMBERGE = new ItemBase("flamberge");
     public static final Item GOURDIN_EN_BOIS = new ItemBase("gourdin_en_bois");
-    public static final Item HACHE_D_ARMES_EN_BRONZE = new ItemBase("hache_d_armes_en_bronze");
     public static final Item HACHE_D_ARMES_EN_FER = new ItemBase("hache_d_armes_en_fer");
     public static final Item SABRE_EN_BOIS = new ItemBase("sabre_en_bois");
     public static final Item FOUET = new ItemBase("fouet");
     public static final Item SABRE_EN_FER = new ToolSword("sabre_en_fer",Item.ToolMaterial.IRON);
-    public static final Item SABRE_EN_BRONZE = new ToolSword("sabre_en_bronze",Item.ToolMaterial.IRON);
     public static final Item SABRE_EN_ACIER = new ToolSword("sabre_en_acier",Item.ToolMaterial.IRON);
     public static final Item RAPIERE_EN_FER = new ToolSword("rapiere_en_fer",Item.ToolMaterial.IRON);
-    public static final Item RAPIERE_EN_BRONZE = new ToolSword("rapiere_en_bronze",Item.ToolMaterial.IRON);
     public static final Item RAPIERE_EN_ACIER = new ToolSword("rapiere_en_acier",Item.ToolMaterial.IRON);
     public static final Item ARAKH_EN_FER = new ToolSword("arakh_en_fer",Item.ToolMaterial.IRON);
-    public static final Item ARAKH_EN_BRONZE = new ToolSword("arakh_en_bronze",Item.ToolMaterial.IRON);
     public static final Item ARAKH_EN_ACIER = new ToolSword("arakh_en_acier",Item.ToolMaterial.IRON);
     public static final Item DAGUE_EN_FER = new ToolSword("dague_en_fer",Item.ToolMaterial.IRON);
-    public static final Item DAGUE_EN_BRONZE = new ToolSword("dague_en_bronze",Item.ToolMaterial.IRON);
     public static final Item DAGUE_EN_ACIER = new ToolSword("dague_en_acier",Item.ToolMaterial.IRON);
     public static final Item LANCE_EN_FER = new ToolSword("lance_en_fer",Item.ToolMaterial.IRON);
-    public static final Item LANCE_EN_BRONZE = new ToolSword("lance_en_bronze",Item.ToolMaterial.IRON);
     public static final Item LANCE_EN_ACIER = new ToolSword("lance_en_acier",Item.ToolMaterial.IRON);
     public static final Item EPEE_BATARDE_EN_FER = new ToolSword("epee_batarde_en_fer",Item.ToolMaterial.IRON);
-    public static final Item EPEE_BATARDE_EN_BRONZE = new ToolSword("epee_batarde_en_bronze",Item.ToolMaterial.IRON);
     public static final Item EPEE_BATARDE_EN_ACIER = new ToolSword("epee_batarde_en_acier",Item.ToolMaterial.IRON);
     public static final Item EPEE_DEUX_MAINS_EN_FER = new ToolSword("epee_deux_mains_en_fer",Item.ToolMaterial.IRON);
-    public static final Item EPEE_DEUX_MAINS_EN_BRONZE = new ToolSword("epee_deux_mains_en_bronze",Item.ToolMaterial.IRON);
     public static final Item EPEE_DEUX_MAINS_EN_ACIER = new ToolSword("epee_deux_mains_en_acier",Item.ToolMaterial.IRON);
     public static final Item FLAMEBERGE_EN_FER = new ToolSword("flamberge_en_fer",Item.ToolMaterial.IRON);
-    public static final Item FLAMEBERGE_EN_BRONZE = new ToolSword("flamberge_en_bronze",Item.ToolMaterial.IRON);
     public static final Item FLAMEBERGE_EN_ACIER = new ToolSword("flamberge_en_acier",Item.ToolMaterial.IRON);
     public static final Item HALLEBARDE_EN_FER = new ToolSword("hallebarde_en_fer",Item.ToolMaterial.IRON);
-    public static final Item HALLEBARDE_EN_BRONZE = new ToolSword("hallebarde_en_bronze",Item.ToolMaterial.IRON);
     public static final Item HALLEBARDE_EN_ACIER = new ToolSword("hallebarde_en_acier",Item.ToolMaterial.IRON);
     public static final Item BATON_DE_COMBAT = new ToolSword("baton_de_combat",Item.ToolMaterial.IRON);
-
+    //public static final Item BATON_DE_MARCHE = new ToolSword("baton_de_marche",Item.ToolMaterial.IRON);
 
     //SECOND PART
+    public static final Item AIGUILLE = new ItemBase("aiguille");
     public static final Item COUTEAU_EN_OR = new ItemBase("couteau_en_or");
     public static final Item COUTEAU_EN_ARGENT = new ItemBase("couteau_en_argent");
     public static final Item COUTEAU_EN_BOIS = new ItemBase("couteau_en_bois");
@@ -524,7 +511,7 @@ public class ModItems {
     public static final Item CORNALINE_TAILLE_TRIANGLE = new ItemBase("cornaline_taille_triangle");
     public static final Item CORNALINE_TAILLE_TRILLION = new ItemBase("cornaline_taille_trillion");
     public static final Item CORNE_DE_BRUME = new ItemBase("corne_de_brume");
-    public static final Item COURONNE_EN_OR = new ItemBase("couronne_en_or");
+    //public static final Item COURONNE_EN_OR = new ItemBase("couronne_en_or");
     public static final Item COURONNE_DE_FLEURS = new ItemBase("couronne_de_fleurs");
     public static final Item COUVERTURE = new ItemBase("couverture");
     public static final Item CRABE = new ItemBase("crabe");
@@ -590,7 +577,6 @@ public class ModItems {
     public static final Item ENCRIER_EN_VERRE = new Consommables("encrier_en_verre");
     public static final Item ENCRIER_ET_PLUME = new Consommables("encrier_et_plume");
     public static final Item ENTRAVES = new ItemBase("entraves");
-    public static final Item ENVELLOPPE = new ItemBase("envelloppe");
     public static final Item ENVELOPPE = new ItemBase("enveloppe");
     public static final Item EPEE_LONGUE_EN_BOIS = new ItemBase("epee_longue_en_bois");
     public static final Item ETOFFE_BLEUE = new ItemBase("etoffe_bleue");
@@ -613,7 +599,6 @@ public class ModItems {
     public static final Item FEUILLES_SECHEES = new ItemBase("feuilles_sechees");
     public static final Item FEUILLE_DE_THE = new ItemBase("feuille_de_the");
     public static final Item FEUILLE_DE_VERVEINE = new ItemBase("feuille_de_verveine");
-    public static final Item FIBRE_VEGETALE_2 = new ItemBase("fibre_vegetale_2");
     public static final Item FIL_DE_CHANVRE = new ItemBase("fil_de_chanvre");
     public static final Item FIOLE = new ItemBase("fiole");
     public static final Item FLACON = new ItemBase("flacon");
@@ -671,7 +656,7 @@ public class ModItems {
     public static final Item MOULT_DE_RAISIN = new ItemBase("moult_de_raisin");
     public static final Item LAMBEAU_DE_VIANDE_CRUE = new ItemBase("lambeau_de_viande_crue");
     public static final Item GROSSE_VIANDE_CRUE = new ItemBase("grosse_viande_crue");
-
+    public static final Item CHANVRE = new ItemBase("chanvre");
 
 
     public static Item GRAINE_ORANGE;
@@ -703,6 +688,8 @@ public class ModItems {
     public static Item GRAINE_ENDIVE;
     public static Item GRAINE_RIZ;
 
+
+    //Item 2
     public static final Item GRAMMA_LORETO = new ItemBase("gramma_loreto");
     public static final Item GRAND_HEAUME = new ItemBase("grand_heaume");
     public static final Item GRAND_MIROIR = new ItemBase("grand_miroir");
@@ -732,8 +719,7 @@ public class ModItems {
     public static final Item HIPPOCAMPE = new ItemBase("hippocampe");
     public static final Item HOMARD = new ItemBase("homard");
     public static final Item HUILE_DE_TANNAGE = new Consommables("huile_de_tannage");
-    public static final Item HUITRE = new ItemBase("huitre");
-    public static final Item HUITRE_OUVERTE = new ItemBase("huitre_ouverte");
+    public static final Item HUITRE = new Huitre("huitre");
     public static final Item INSECTE_EN_BOCAL = new ItemBase("insecte_en_bocal");
     public static final Item JADE_TAILLE_ASSCHER = new ItemBase("jade_taille_asscher");
     public static final Item JADE_TAILLE_BAGUETTE = new ItemBase("jade_taille_baguette");
@@ -1018,14 +1004,11 @@ public class ModItems {
     public static final Item TETE_COUTEAU_FER = new ItemBase("tete_couteau_fer");
     public static final Item TETE_COUTEAU_OR = new ItemBase("tete_couteau_or");
     public static final Item TETE_DAGUE_ACIER = new ItemBase("tete_dague_acier");
-    public static final Item TETE_DAGUE_BRONZE = new ItemBase("tete_dague_bronze");
     public static final Item TETE_DAGUE_FER = new ItemBase("tete_dague_fer");
     public static final Item TETE_DAGUE_OR = new ItemBase("tete_dague_or");
     public static final Item TETE_EPEE_ACIER = new ItemBase("tete_epee_acier");
-    public static final Item TETE_EPEE_BRONZE = new ItemBase("tete_epee_bronze");
     public static final Item TETE_EPEE_FER = new ItemBase("tete_epee_fer");
     public static final Item TETE_EPEE_LONGUE_ACIER = new ItemBase("tete_epee_longue_acier");
-    public static final Item TETE_EPEE_LONGUE_BRONZE = new ItemBase("tete_epee_longue_bronze");
     public static final Item TETE_EPEE_LONGUE_FER = new ItemBase("tete_epee_longue_fer");
     public static final Item TETE_EPEE_LONGUE_OR = new ItemBase("tete_epee_longue_or");
     public static final Item TETE_EPEE_OR = new ItemBase("tete_epee_or");
@@ -1034,19 +1017,16 @@ public class ModItems {
     public static final Item TETE_FAUX_FER = new ItemBase("tete_faux_fer");
     public static final Item TETE_FAUX_OR = new ItemBase("tete_faux_or");
     public static final Item TETE_HACHE_ACIER = new ItemBase("tete_hache_acier");
-    public static final Item TETE_HACHE_ARMES_ACIER = new ItemBase("tete_hache_armes_acier");
-    public static final Item TETE_HACHE_ARMES_BRONZE  = new ItemBase("tete_hache_armes_bronze ");
+    public static final Item TETE_HACHE_ARMES_ACIER = new ItemBase("tete_hache_armes_acier");;
     public static final Item TETE_HACHE_ARMES_FER = new ItemBase("tete_hache_armes_fer");
     public static final Item TETE_HACHE_ARMES_OR = new ItemBase("tete_hache_armes_or");
     public static final Item TETE_HACHE_BRONZE = new ItemBase("tete_hache_bronze");
-    public static final Item TETE_HACHE_DE_GUERRE_EN_BRONZE = new ItemBase("tete_hache_de_guerre_en_bronze");
     public static final Item TETE_HACHE_FER = new ItemBase("tete_hache_fer");
     public static final Item TETE_HACHE_OR = new ItemBase("tete_hache_or");
     public static final Item TETE_HACHOIR_ACIER = new ItemBase("tete_hachoir_acier");
     public static final Item TETE_HACHOIR_BRONZE = new ItemBase("tete_hachoir_bronze");
     public static final Item TETE_HACHOIR_FER = new ItemBase("tete_hachoir_fer");
     public static final Item TETE_HALLEBARDE_ACIER = new ItemBase("tete_hallebarde_acier");
-    public static final Item TETE_HALLEBARDE_BRONZE = new ItemBase("tete_hallebarde_bronze");
     public static final Item TETE_HALLEBARDE_FER = new ItemBase("tete_hallebarde_fer");
     public static final Item TETE_HALLEBARDE_OR = new ItemBase("tete_hallebarde_or");
     public static final Item TETE_HOUE_ACIER = new ItemBase("tete_houe_acier");
@@ -1054,7 +1034,6 @@ public class ModItems {
     public static final Item TETE_HOUE_FER = new ItemBase("tete_houe_fer");
     public static final Item TETE_HOUE_OR = new ItemBase("tete_houe_or");
     public static final Item TETE_LANCE_ACIER = new ItemBase("tete_lance_acier");
-    public static final Item TETE_LANCE_BRONZE = new ItemBase("tete_lance_bronze");
     public static final Item TETE_LANCE_FER = new ItemBase("tete_lance_fer");
     public static final Item TETE_LANCE_OR = new ItemBase("tete_lance_or");
     public static final Item TETE_LIME_ACIER = new ItemBase("tete_lime_acier");
@@ -1062,7 +1041,6 @@ public class ModItems {
     public static final Item TETE_LIME_FER = new ItemBase("tete_lime_fer");
     public static final Item TETE_MARTEAU_BRONZE = new ItemBase("tete_marteau_bronze");
     public static final Item TETE_MARTEAU_DE_GUERRE_ACIER = new ItemBase("tete_marteau_de_guerre_acier");
-    public static final Item TETE_MARTEAU_DE_GUERRE_BRONZE = new ItemBase("tete_marteau_de_guerre_bronze");
     public static final Item TETE_MARTEAU_DE_GUERRE_FER = new ItemBase("tete_marteau_de_guerre_fer");
     public static final Item TETE_MARTEAU_FER = new ItemBase("tete_marteau_fer");
     public static final Item TETE_MARTEAU_GUERRE_OR = new ItemBase("tete_marteau_guerre_or");
@@ -1080,7 +1058,6 @@ public class ModItems {
     public static final Item TETE_PIOCHE_FER = new ItemBase("tete_pioche_fer");
     public static final Item TETE_PIOCHE_OR = new ItemBase("tete_pioche_or");
     public static final Item TETE_SABRE_ACIER = new ItemBase("tete_sabre_acier");
-    public static final Item TETE_SABRE_BRONZE = new ItemBase("tete_sabre_bronze");
     public static final Item TETE_SABRE_FER = new ItemBase("tete_sabre_fer");
     public static final Item TETE_SABRE_OR = new ItemBase("tete_sabre_or");
     public static final Item TETE_SCIE_ACIER = new ItemBase("tete_scie_acier");
@@ -1148,6 +1125,6 @@ public class ModItems {
     public static final Item POT_DE_CONFITURE_DE_MYRTILLES = new Consommables("pot_de_confiture_de_myrtilles");
 
     public static final Item ORGE = new ItemBase("orge");
-public static final  Item CHOU = new ItemBase("chou");
+
 
 }

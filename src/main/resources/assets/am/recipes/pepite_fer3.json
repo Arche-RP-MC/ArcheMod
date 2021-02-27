@@ -1,0 +1,22 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "pattern": [
+  "   ",
+  "AB ",
+  "   "
+ ],
+ "key": {
+  "A": {
+   "item": "am:marteau_en_acier",
+   "data": 32767
+  },
+  "B": {
+   "item": "am:bloc_minerai_fer"
+  }
+ },
+  "result":
+  {
+   "item": "am:pepite_fer",
+   "count": 2
+  }
+ }

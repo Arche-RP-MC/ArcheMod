@@ -64,7 +64,7 @@ public class BlockBaril extends BlockBase {
     }
 
     public enum BarilType {
-        EAU, VIDE;
+       HYDROMEL, BIERE_ROUSSE, RHUM, VIN_ROUGE, VIN_BLANC, BIERE_BRUNE, BIERRE_BLONDE, LAIT, EAU, VIDE;
     }
 
     public IBlockState getStateForPlacement(World worldIn, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer) {
@@ -100,6 +100,36 @@ public class BlockBaril extends BlockBase {
                             playerIn.inventory.addItemStackToInventory(new ItemStack(Items.BUCKET));
                             break;
                         }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.VERRE_A_PIED) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_EAU.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(15)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack((Item)ModItems.VERRE_A_PIED));
+                            break;
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.CHOPPE_EN_ARGILE) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_EAU.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(15)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack((Item)ModItems.CHOPPE_EN_ARGILE));
+                            break;
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.CHOPPE_EN_VERRE) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_EAU.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(15)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack((Item)ModItems.CHOPPE_EN_VERRE));
+                            break;
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.BOUTEILLE_VIDE) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_EAU.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(15)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack((Item)ModItems.BOUTEILLE_VIDE));
+                            break;
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.GROSSE_BOUTEILLE_VIDE) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_EAU.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(15)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack((Item)ModItems.GROSSE_BOUTEILLE_VIDE));
+                            break;
+                        }
                         break;
                     case EAU:
                         if (playerIn.getHeldItemMainhand().getItem() == ModItems.BOCAL) {
@@ -117,6 +147,32 @@ public class BlockBaril extends BlockBase {
                             playerIn.getHeldItemMainhand().shrink(1);
                             playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.SEAU_D_EAU_EN_BOIS));
                         }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.BOCAL) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_EAU.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 1)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.BOCAL_D_EAU));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.BOCAL) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_EAU.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 1)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.BOCAL_D_EAU));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.BOCAL) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_EAU.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 1)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.BOCAL_D_EAU));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.BOCAL) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_EAU.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 1)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.BOCAL_D_EAU));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.BOCAL) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_EAU.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 1)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.BOCAL_D_EAU));
+                        }
+
                         break;
                 }
                 if (((Integer)worldIn.getBlockState (pos).getValue((IProperty)SIZE)).intValue() == 0)

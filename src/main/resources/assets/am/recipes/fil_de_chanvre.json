@@ -5,7 +5,7 @@
   [
     "CTT",
     "TTT",
-    "TT "
+    "TTT "
   ],
 
   "key":
@@ -17,7 +17,7 @@
     },
     "T":
     {
-      "item": "am:bobine_de_chanvre"
+      "item": "am:chanvre"
     }
   },
 

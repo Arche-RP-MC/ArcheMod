@@ -11,11 +11,11 @@
    "data": 32767
   },
   "B": {
-   "item": "am:minerai_plomb"
-  },
+   "item": "am:bloc_minerai_plomb"
+  }
+ },
   "result": {
    "item": "am:pepite_plomb",
    "count": 2
   }
  }
-}

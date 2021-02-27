@@ -11,11 +11,11 @@
    "data": 32767
   },
   "B": {
-   "item": "am:minerai_etain"
-  },
+   "item": "am:bloc_minerai_etain"
+  }
+ },
   "result": {
    "item": "am:pepite_etain",
    "count": 2
   }
  }
-}

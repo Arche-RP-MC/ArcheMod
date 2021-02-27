@@ -8,7 +8,7 @@ public class OutilsEnFer extends ItemBase{
         super(name);
         setNoRepair();
         setMaxStackSize(1);
-        setMaxDamage(191);
+        setMaxDamage(386);
     }
 
     @Override

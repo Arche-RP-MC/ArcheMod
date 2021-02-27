@@ -74,6 +74,10 @@ public class HRPCommand extends CommandBase {
                 player.addItemStackToInventory(new ItemStack(ModBlocks.TACHE_DE_SANG));
                 return;
             }
+            if(args[0].equalsIgnoreCase("sign")){
+                player.addItemStackToInventory(new ItemStack(ModBlocks.standing_sign_hrp));
+                return;
+            }
         }
     }
 

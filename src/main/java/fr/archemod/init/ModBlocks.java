@@ -246,9 +246,117 @@ public class ModBlocks {
     public static final Block ESCALIER_EN_TUILE_EN_ARDOISE_TRAVAILLEE = new BlockEscalier("escalier_en_tuile_en_ardoise_travaillee",5F,5F, SoundType.STONE, Block.getStateById(35));
 
     //DALLES \!/ block de base, dalle et double dalle + méthode init & register en bas de ce code.
-    public static final Block WOOL_COLORED_MAGENTA = new BlockBase("wool_colored_magenta",Material.CLOTH,2F,2F,SoundType.CLOTH);
-    public static BlockDalleWoolColoredMagenta.Half WOOL_COLORED_MAGENTA_HALF_SLAB;
-    public static BlockDalleWoolColoredMagenta.Double WOOL_COLORED_MAGENTA_DOUBLE_SLAB;
+    /*public static final Block WOOLMAGENTA = new BlockBase("wool_colored_magenta",Material.CLOTH,2F,2F,SoundType.CLOTH);
+
+
+
+    public static BlockDalleWoolColoredMagenta.Half ANDESITECRACKEDBRICKSLAB;
+    public static BlockDalleWoolColoredMagenta.Half ANDESITMOSSYBRICKSLAB ;
+    public static BlockDalleWoolColoredMagenta.Half ANDESITSMOOTH2SLAB ;
+    public static BlockDalleWoolColoredMagenta.Half ANDESITSMOOTHMOSSYSLAB ;
+    public static BlockDalleWoolColoredMagenta.Half ANDESITSMOOTHSLAB ;
+    public static BlockDalleWoolColoredMagenta.Half CONCRETEBLACKSLAB ;
+    public static BlockDalleWoolColoredMagenta.Half CONCRETEBLUESLAB ;
+    public static BlockDalleWoolColoredMagenta.Half CONCRETEBROWNSLAB ;
+    public static BlockDalleWoolColoredMagenta.Half CONCRETECYANSLAB ;
+    public static BlockDalleWoolColoredMagenta.Half CONCRETEGRAYSLAB ;
+    public static BlockDalleWoolColoredMagenta.Half CONCRETEGREENSLAB ;
+    public static BlockDalleWoolColoredMagenta.Half CONCRETELIGHTBLUESLAB ;
+    public static BlockDalleWoolColoredMagenta.Half CONCRETELIMESLAB ;
+    public static BlockDalleWoolColoredMagenta.Half CONCRETEMAGENTASLAB ;
+    public static BlockDalleWoolColoredMagenta.Half CONCRETEORANGESLAB ;
+    public static BlockDalleWoolColoredMagenta.Half CONCRETEPINKSLAB ;
+    public static BlockDalleWoolColoredMagenta.Half CONCRETEPURPLESLAB ;
+    public static BlockDalleWoolColoredMagenta.Half CONCRETEREDSLAB ;
+    public static BlockDalleWoolColoredMagenta.Half CONCRETESILVERSLAB ;
+    public static BlockDalleWoolColoredMagenta.Half CONCRETEYELLOWSLAB ;
+    public static BlockDalleWoolColoredMagenta.Half DIORITECRACKEDBRICKSLAB ;
+    public static BlockDalleWoolColoredMagenta.Half DIORITEMOSSYSLAB ;
+    public static BlockDalleWoolColoredMagenta.Half DIORITESMOOTH2SLAB ;
+    public static BlockDalleWoolColoredMagenta.Half DIORITESMOOTHBRICKSLAB ;
+    public static BlockDalleWoolColoredMagenta.Half DIORITESMOOTHMOSSYSLAB ;
+    public static BlockDalleWoolColoredMagenta.Half GRANITECRACKEDBRICKSLAB ;
+    public static BlockDalleWoolColoredMagenta.Half GRANITEMOSSYSLAB ;
+    public static BlockDalleWoolColoredMagenta.Half GRANITESMOOTH2SLAB ;
+    public static BlockDalleWoolColoredMagenta.Half GRANITESMOOTHBRICKSLAB ;
+    public static BlockDalleWoolColoredMagenta.Half GRANITESMOOTHMOSSYSLAB ;
+    public static BlockDalleWoolColoredMagenta.Half HIDDENPLANKBIGOAKSLAB ;
+    public static BlockDalleWoolColoredMagenta.Half HIDDENPLANKBIRCHSLAB ;
+    public static BlockDalleWoolColoredMagenta.Half HIDDENPLANKJUNGLESLAB ;
+    public static BlockDalleWoolColoredMagenta.Half HIDDENPLANKOAKSLAB ;
+    public static BlockDalleWoolColoredMagenta.Half HIDDENPLANKSACACIASLAB ;
+    public static BlockDalleWoolColoredMagenta.Half HIDDENPLANKSPRUCESLAB ;
+    public static BlockDalleWoolColoredMagenta.Half WOOLBLACKSLAB ;
+    public static BlockDalleWoolColoredMagenta.Half WOOLBLUESLAB ;
+    public static BlockDalleWoolColoredMagenta.Half WOOLBROWNSLAB ;
+    public static BlockDalleWoolColoredMagenta.Half WOOLCYANSLAB ;
+    public static BlockDalleWoolColoredMagenta.Half WOOLGRAYSLAB ;
+    public static BlockDalleWoolColoredMagenta.Half WOOLGREENSLAB ;
+    public static BlockDalleWoolColoredMagenta.Half WOOLLIGHTBLUESLAB ;
+    public static BlockDalleWoolColoredMagenta.Half WOOLLIMESLAB ;
+    public static BlockDalleWoolColoredMagenta.Half WOOL_COLORED_MAGENTA_HALF_SLAB ;
+    public static BlockDalleWoolColoredMagenta.Half WOOLORANGESLAB ;
+    public static BlockDalleWoolColoredMagenta.Half WOOLREDSLAB ;
+    public static BlockDalleWoolColoredMagenta.Half WOOLSILVERSLAB ;
+    public static BlockDalleWoolColoredMagenta.Half WOOLWHITESLAB ;
+    public static BlockDalleWoolColoredMagenta.Half WOOLYELLOWSLAB ;
+    public static BlockDalleWoolColoredMagenta.Half WOOLPINKSLAB ;
+    public static BlockDalleWoolColoredMagenta.Half WOOLPURPLESLAB ;
+
+    public static BlockDalleWoolColoredMagenta.Double ANDESITECRACKEDBRICK_DOUBLE_SLAB;
+    public static BlockDalleWoolColoredMagenta.Double ANDESITMOSSYBRICK_DOUBLE_SLAB ;
+    public static BlockDalleWoolColoredMagenta.Double ANDESITSMOOTH2_DOUBLE_SLAB ;
+    public static BlockDalleWoolColoredMagenta.Double ANDESITSMOOTHMOSSY_DOUBLE_SLAB ;
+    public static BlockDalleWoolColoredMagenta.Double ANDESITSMOOTH_DOUBLE_SLAB ;
+    public static BlockDalleWoolColoredMagenta.Double CONCRETEBLACK_DOUBLE_SLAB ;
+    public static BlockDalleWoolColoredMagenta.Double CONCRETEBLUE_DOUBLE_SLAB ;
+    public static BlockDalleWoolColoredMagenta.Double CONCRETEBROWN_DOUBLE_SLAB ;
+    public static BlockDalleWoolColoredMagenta.Double CONCRETECYAN_DOUBLE_SLAB ;
+    public static BlockDalleWoolColoredMagenta.Double CONCRETEGRAY_DOUBLE_SLAB ;
+    public static BlockDalleWoolColoredMagenta.Double CONCRETEGREEN_DOUBLE_SLAB ;
+    public static BlockDalleWoolColoredMagenta.Double CONCRETELIGHTBLUE_DOUBLE_SLAB ;
+    public static BlockDalleWoolColoredMagenta.Double CONCRETELIME_DOUBLE_SLAB ;
+    public static BlockDalleWoolColoredMagenta.Double CONCRETEMAGENTA_DOUBLE_SLAB ;
+    public static BlockDalleWoolColoredMagenta.Double CONCRETEORANGE_DOUBLE_SLAB ;
+    public static BlockDalleWoolColoredMagenta.Double CONCRETEPINK_DOUBLE_SLAB ;
+    public static BlockDalleWoolColoredMagenta.Double CONCRETEPURPLE_DOUBLE_SLAB ;
+    public static BlockDalleWoolColoredMagenta.Double CONCRETERED_DOUBLE_SLAB ;
+    public static BlockDalleWoolColoredMagenta.Double CONCRETESILVER_DOUBLE_SLAB ;
+    public static BlockDalleWoolColoredMagenta.Double CONCRETEYELLOW_DOUBLE_SLAB ;
+    public static BlockDalleWoolColoredMagenta.Double DIORITECRACKEDBRICK_DOUBLE_SLAB ;
+    public static BlockDalleWoolColoredMagenta.Double DIORITEMOSSY_DOUBLE_SLAB ;
+    public static BlockDalleWoolColoredMagenta.Double DIORITESMOOTH2_DOUBLE_SLAB ;
+    public static BlockDalleWoolColoredMagenta.Double DIORITESMOOTHBRICK_DOUBLE_SLAB ;
+    public static BlockDalleWoolColoredMagenta.Double DIORITESMOOTHMOSSY_DOUBLE_SLAB ;
+    public static BlockDalleWoolColoredMagenta.Double GRANITECRACKEDBRICK_DOUBLE_SLAB ;
+    public static BlockDalleWoolColoredMagenta.Double GRANITEMOSSY_DOUBLE_SLAB ;
+    public static BlockDalleWoolColoredMagenta.Double GRANITESMOOTH2_DOUBLE_SLAB ;
+    public static BlockDalleWoolColoredMagenta.Double GRANITESMOOTHBRICK_DOUBLE_SLAB ;
+    public static BlockDalleWoolColoredMagenta.Double GRANITESMOOTHMOSSY_DOUBLE_SLAB ;
+    public static BlockDalleWoolColoredMagenta.Double HIDDENPLANKBIGOAK_DOUBLE_SLAB ;
+    public static BlockDalleWoolColoredMagenta.Double HIDDENPLANKBIRCH_DOUBLE_SLAB ;
+    public static BlockDalleWoolColoredMagenta.Double HIDDENPLANKJUNGLE_DOUBLE_SLAB ;
+    public static BlockDalleWoolColoredMagenta.Double HIDDENPLANKOAK_DOUBLE_SLAB ;
+    public static BlockDalleWoolColoredMagenta.Double HIDDENPLANKSACACIA_DOUBLE_SLAB ;
+    public static BlockDalleWoolColoredMagenta.Double HIDDENPLANKSPRUCE_DOUBLE_SLAB ;
+    public static BlockDalleWoolColoredMagenta.Double WOOLBLACK_DOUBLE_SLAB ;
+    public static BlockDalleWoolColoredMagenta.Double WOOLBLUE_DOUBLE_SLAB ;
+    public static BlockDalleWoolColoredMagenta.Double WOOLBROWN_DOUBLE_SLAB ;
+    public static BlockDalleWoolColoredMagenta.Double WOOLCYAN_DOUBLE_SLAB ;
+    public static BlockDalleWoolColoredMagenta.Double WOOLGRAY_DOUBLE_SLAB ;
+    public static BlockDalleWoolColoredMagenta.Double WOOLGREEN_DOUBLE_SLAB ;
+    public static BlockDalleWoolColoredMagenta.Double WOOLLIGHTBLUE_DOUBLE_SLAB ;
+    public static BlockDalleWoolColoredMagenta.Double WOOLLIME_DOUBLE_SLAB ;
+    public static BlockDalleWoolColoredMagenta.Double WOOLMAGENTA_DOUBLE_SLAB ;
+    public static BlockDalleWoolColoredMagenta.Double WOOLORANGE_DOUBLE_SLAB ;
+    public static BlockDalleWoolColoredMagenta.Double WOOLRED_DOUBLE_SLAB ;
+    public static BlockDalleWoolColoredMagenta.Double WOOLSILVER_DOUBLE_SLAB ;
+    public static BlockDalleWoolColoredMagenta.Double WOOLWHITE_DOUBLE_SLAB ;
+    public static BlockDalleWoolColoredMagenta.Double WOOLYELLOW_DOUBLE_SLAB ;
+    public static BlockDalleWoolColoredMagenta.Double WOOLPINK_DOUBLE_SLAB ;
+    public static BlockDalleWoolColoredMagenta.Double WOOLPURPLE_DOUBLE_SLAB ;*/
+
+
 
     //PLANTES
     public static final Block BASILIC = new BlockPlante("basilic");
@@ -354,7 +462,24 @@ public class ModBlocks {
 
     //MUR \!/ Créer le block de même composition avant
     public static final Block ANDESITE = new BlockBase("andesite", Material.ROCK, 5F, 5F, SoundType.STONE);
-    public static final Block ANDESITE_WALL = new BlockMur("andesite_wall", Material.ROCK, 5F, 5F, SoundType.STONE);
+    public static final Block ANDESITEWALL  = new BlockMur("andesite_wall", Material.ROCK, 5F, 5F, SoundType.STONE);
+    public static final Block DIORITE = new BlockBase("diorite", Material.ROCK, 5F, 5F, SoundType.STONE);
+    public static final Block DIORITEWALL  = new BlockMur("diorite_wall", Material.ROCK, 5F, 5F, SoundType.STONE);
+    public static final Block GRANITE = new BlockBase("granite", Material.ROCK, 5F, 5F, SoundType.STONE);
+    public static final Block GRANITEWALL  = new BlockMur("granite_wall", Material.ROCK, 5F, 5F, SoundType.STONE);
+    public static final Block ACACIA = new BlockBase("acacia", Material.WOOD, 5F, 5F, SoundType.WOOD);
+    public static final Block WALLLEGACACIA  = new BlockMur("acacia_wall", Material.WOOD, 5F, 5F, SoundType.WOOD);
+    public static final Block BIGOAK = new BlockBase("bigoak", Material.WOOD, 5F, 5F, SoundType.WOOD);
+    public static final Block WALLLEGBIGOAK  = new BlockMur("bigoak_wall", Material.WOOD, 5F, 5F, SoundType.WOOD);
+    public static final Block BIRCH = new BlockBase("birch", Material.WOOD, 5F, 5F, SoundType.WOOD);
+    public static final Block WALLLEGBIRCH  = new BlockMur("birch_wall", Material.WOOD, 5F, 5F, SoundType.WOOD);
+    public static final Block JUNGLE = new BlockBase("jungle", Material.WOOD, 5F, 5F, SoundType.WOOD);
+    public static final Block WALLLEGJUNGLE  = new BlockMur("jungle_wall", Material.WOOD, 5F, 5F, SoundType.WOOD);
+    public static final Block OAK = new BlockBase("oak", Material.WOOD, 5F, 5F, SoundType.WOOD);
+    public static final Block WALLLEGOAK  = new BlockMur("oak_wall", Material.WOOD, 5F, 5F, SoundType.WOOD);
+    public static final Block SPRUCE = new BlockBase("spruce", Material.WOOD, 5F, 5F, SoundType.WOOD);
+    public static final Block WALLLEGSPRUCE  = new BlockMur("spruce_wall", Material.WOOD, 5F, 5F, SoundType.WOOD);
+
 
     //TÄCHES
     public static final Block TACHE_DE_SANG = new BlockTache("tache_de_sang", Material.WOOD,0.5F,5F,SoundType.WOOD);
@@ -380,7 +505,7 @@ public class ModBlocks {
     public static final Block PLAN_VIGNE_NOIRE = new BlockPlanLin("plan_vigne_noire",ModItems.GRAINE_RAISIN_ROUGE, ModItems.RAISIN_NOIR);
     public static final Block PLAN_VIGNE_BLANCHE = new BlockPlanLin("plan_vigne_blanche",ModItems.GRAINE_RAISIN_BLANC, ModItems.RAISIN_BLANC);
     public static final Block PLAN_EPINARD = new BlockPlanLin("plan_epinard",ModItems.GRAINE_EPINARD, ModItems.EPINARD);
-    public static final Block PLAN_CHOU = new BlockPlanLin("plan_chou",ModItems.GRAINE_CHOU, ModItems.CHOU);
+    public static final Block PLAN_CHOU = new BlockPlanLin("plan_chou",ModItems.GRAINE_CHOU, ModItems.CHOU_VERT);
     public static final Block PLAN_THE = new BlockPlanLin("plan_the",ModItems.GRAINE_DE_THE, ModItems.FEUILLE_DE_THE);
     public static final Block PLAN_SALADE = new BlockPlanLin("plan_salade",ModItems.GRAINE_SALADE, ModItems.SALADE);
     public static final Block PLAN_ARTICHAUT = new BlockPlanLin("plan_artichaut",ModItems.GRAINE_ARTICHAUT, ModItems.ARTICHAUT);
@@ -388,7 +513,7 @@ public class ModBlocks {
     public static final Block PLAN_ASPERGE = new BlockPlanLin("plan_asperge",ModItems.GRAINE_ASPERGE, ModItems.ASPERGE);
     public static final Block PLAN_ENDIVE = new BlockPlanLin("plan_endive",ModItems.GRAINE_ENDIVE, ModItems.ENDIVE);
     public static final Block PLAN_RIZ = new BlockPlanLin("plan_riz",ModItems.GRAINE_RIZ, ModItems.RIZ);
-
+    public static final Block PLAN_CHANVRE = new BlockPlanLin("plan_chanvre",ModItems.GRAINE_CHANVRE, ModItems.CHANVRE);
 
 
     //LUMINEUX
@@ -405,23 +530,27 @@ public class ModBlocks {
     //CONTENEUR \!/ Il faut recréer Block, TileEntity, Container, Inventory, GUI, Registry dans util.handlers.RegistryHandler et gérer le GUIid du Block (onBlockActivated) dans le switch case du GUIHandler
     public static final Block ECRIN_A_BIJOUX = new BlockEcrinABijoux("ecrin_a_bijoux", Material.WOOD, 1.5F, 1.5F, SoundType.WOOD);
 
+
     //Minerai
     public static final Block BLOC_MINERAI_ARGENT = new BlockBase("bloc_minerai_argent", Material.ROCK, 5F, 5F, SoundType.STONE);
     public static final Block BLOC_MINERAI_FER = new BlockBase("bloc_minerai_fer", Material.ROCK, 5F, 5F, SoundType.STONE);
     public static final Block BLOC_MINERAI_ETAIN = new BlockBase("bloc_minerai_etain", Material.ROCK, 5F, 5F, SoundType.STONE);
-    public static final Block BLOC_MINERAI_PLOMB = new BlockBase("bloc_meinerai_plomb", Material.ROCK, 5F, 5F, SoundType.STONE);
+    public static final Block BLOC_MINERAI_PLOMB = new BlockBase("bloc_minerai_plomb", Material.ROCK, 5F, 5F, SoundType.STONE);
+    public static final Block BLOC_MINERAI_CUIVRE = new BlockBase("bloc_minerai_cuivre", Material.ROCK, 5F, 5F, SoundType.STONE);
 
 
-
-    public static final Block CHAISE_CHENE = new BlocChaise("chaise_chene", Material.WOOD, SoundType.WOOD);
+    /*public static final Block CHAISE_CHENE = new BlocChaise("chaise_chene", Material.WOOD, SoundType.WOOD);
 
     /**
      * Init the blocks
      */
     public static void init(){
-        WOOL_COLORED_MAGENTA_HALF_SLAB = new BlockDalleWoolColoredMagenta.Half("wool_colored_magenta_half_slab",1F,1F, Material.CLOTH, SoundType.CLOTH);
-        WOOL_COLORED_MAGENTA_DOUBLE_SLAB = new BlockDalleWoolColoredMagenta.Double("wool_colored_magenta_double_slab",1F,1F, Material.CLOTH, SoundType.CLOTH);
+        //dalles
+       /* WOOL_COLORED_MAGENTA_HALF_SLAB = new BlockDalleWoolColoredMagenta.Half("wool_colored_magenta_half_slab",1F,1F, Material.CLOTH, SoundType.CLOTH);
+        WOOLMAGENTA_DOUBLE_SLAB = new BlockDalleWoolColoredMagenta.Double("wool_colored_magenta_double_slab",1F,1F, Material.CLOTH, SoundType.CLOTH);
+*/
 
+        //cultures
         ModItems.GRAINE_LIN = new ItemGraine("graine_lin",ModBlocks.PLAN_DE_LIN, Blocks.FARMLAND);
         ModItems.GRAINE_CELERI = new ItemGraine("GRAINE_CELERI",ModBlocks.PLAN_CELERI, Blocks.FARMLAND);
         ModItems.GRAINE_FENOUIL = new ItemGraine("GRAINE_FENOUIL",ModBlocks.PLAN_FENOUIL, Blocks.FARMLAND);
@@ -452,8 +581,15 @@ public class ModBlocks {
      * Register the blocks
      */
     public static void register(){
-        registerBlock(WOOL_COLORED_MAGENTA_HALF_SLAB, new ItemSlab(WOOL_COLORED_MAGENTA_HALF_SLAB,WOOL_COLORED_MAGENTA_HALF_SLAB,WOOL_COLORED_MAGENTA_DOUBLE_SLAB));
-        ForgeRegistries.BLOCKS.register(WOOL_COLORED_MAGENTA_DOUBLE_SLAB);
+
+        //dalles
+       /* registerBlock(WOOL_COLORED_MAGENTA_HALF_SLAB, new ItemSlab(WOOL_COLORED_MAGENTA_HALF_SLAB,WOOL_COLORED_MAGENTA_HALF_SLAB,WOOLMAGENTA_DOUBLE_SLAB));
+        ForgeRegistries.BLOCKS.register(WOOLMAGENTA_DOUBLE_SLAB);
+*/
+
+
+
+        //cultures
         registerItem(ModItems.GRAINE_LIN);
         registerItem(ModItems.GRAINE_CELERI);
         registerItem(ModItems.GRAINE_FENOUIL);
@@ -478,7 +614,7 @@ public class ModBlocks {
         registerItem(ModItems.GRAINE_ENDIVE);
         registerItem(ModItems.GRAINE_RIZ);
 
-        registerB(ModBlocks.CHAISE_CHENE, new ItemBlock(ModBlocks.CHAISE_CHENE));
+        //registerB(ModBlocks.CHAISE_CHENE, new ItemBlock(ModBlocks.CHAISE_CHENE));
     }
 
     public static void registerBlock(Block block){

@@ -1,6 +1,7 @@
 {
  "type": "minecraft:crafting_shaped",
- "pattern": [
+ "pattern":
+ [
   "   ",
   "AB ",
   "   "
@@ -11,11 +12,12 @@
    "data": 32767
   },
   "B": {
-   "item": "am:minerai_d_argent"
-  },
-  "result": {
+   "item": "am:bloc_minerai_d_argent"
+  }
+ },
+  "result":
+  {
    "item": "am:pepite_argent",
    "count": 2
   }
  }
-}

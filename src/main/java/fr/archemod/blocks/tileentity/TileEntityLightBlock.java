@@ -106,7 +106,7 @@ public class TileEntityLightBlock extends TileEntity implements ITickable {
                             return;
                         long timer = (((new Date()).getTime() - date_begin.getTime()));
 
-                        if (timer >= 432000000L) {
+                        if (timer >= 864000000L) {
                             worldIn.setBlockState(pos, ModBlocks.LANTERNE_JAUNE_ETEINTE.getDefaultState().withProperty((IProperty)ORIENTATION, state.getValue((IProperty)ORIENTATION)).withProperty((IProperty)POSITION, state.getValue((IProperty)POSITION)));
                             ((TileEntityLightBlock)worldIn.getTileEntity(pos)).setDate(new Date());
                         }

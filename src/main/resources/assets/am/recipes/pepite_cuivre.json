@@ -11,11 +11,11 @@
    "data": 32767
   },
   "B": {
-   "item": "am:minerai_cuivre"
-  },
+   "item": "am:bloc_minerai_cuivre"
+  }
+ },
   "result": {
    "item": "am:pepite_cuivre",
    "count": 2
   }
  }
-}

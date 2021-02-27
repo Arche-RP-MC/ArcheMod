@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    " A ",
+    " M "
+  ],
+
+  "key":
+  {
+    "M":
+    {
+      "item": "am:mortier_pilon_en_pierre",
+      "data": 32767
+    },
+    "P":
+    {
+      "item": "am:orange"
+    }
+    
+  },
+
+  "result":
+  {
+    "item": "graine_orange",
+    "data": 0,
+    "count": 2
+  }
+}

@@ -4,7 +4,7 @@
   "pattern":
   [
     "   ",
-    " PE",
+    " EP",
     "   "
   ],
 
@@ -12,11 +12,12 @@
   {
     "E":
     {
-      "item": "am:encrier_et_plume"
+      "item": "minecraft:paper"
     },
     "P":
     {
-      "item": "am:fusain"
+      "item": "am:fusain",
+      "data": 32767
     }
   },
 

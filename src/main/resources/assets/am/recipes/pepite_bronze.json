@@ -4,8 +4,8 @@
   "pattern":
   [
     "   ",
-    " F ",
-    " HF"
+    "FHF",
+    "   "
   ],
 
   "key":
@@ -23,6 +23,6 @@
   "result":
   {
     "item": "am:pepite_bronze",
-    "count": 3
+    "count": 2
   }
 }
