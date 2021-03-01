@@ -6,7 +6,9 @@ import fr.archemod.blocks.agriculture.BlockPlanLin;
 import fr.archemod.blocks.signhrp.BlockWallSignHrp;
 import fr.archemod.blocks.signhrp.SignStandingSign;
 import fr.archemod.items.agriculture.ItemGraine;
+import fr.archemod.blocks.signhrp.SigneHrp;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockSign;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
@@ -15,7 +17,6 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemSlab;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -33,6 +34,7 @@ public class ModBlocks {
 
     public static final Block standing_sign_hrp = new SignStandingSign();
     public static final Block wall_sign_hrp = new BlockWallSignHrp();
+
 
     public static final Block SHOWCASE = new Showcase("showcase",Material.WOOD);
     public static final Block SHOWCASE_CENTER = new Showcase("showcase_center",Material.WOOD);
@@ -502,8 +504,7 @@ public class ModBlocks {
     public static final Block PLAN_RADIS = new BlockPlanLin("plan_radis",ModItems.GRAINE_RADIS, ModItems.RADIS);
     public static final Block PLAN_SALSIFI = new BlockPlanLin("plan_salsifi",ModItems.GRAINE_SALSIFI, ModItems.SALSIFI);
     public static final Block PLAN_TOMATE = new BlockPlanLin("plan_tomate",ModItems.GRAINE_TOMATE, ModItems.TOMATE);
-    public static final Block PLAN_VIGNE_NOIRE = new BlockPlanLin("plan_vigne_noire",ModItems.GRAINE_RAISIN_ROUGE, ModItems.RAISIN_NOIR);
-    public static final Block PLAN_VIGNE_BLANCHE = new BlockPlanLin("plan_vigne_blanche",ModItems.GRAINE_RAISIN_BLANC, ModItems.RAISIN_BLANC);
+    public static final Block PLAN_VIGNE_NOIRE = new BlockPlanLin("plan_vigne_noire",ModItems.GRAINE_VIGNE_NOIRE, ModItems.RAISIN_NOIR);
     public static final Block PLAN_EPINARD = new BlockPlanLin("plan_epinard",ModItems.GRAINE_EPINARD, ModItems.EPINARD);
     public static final Block PLAN_CHOU = new BlockPlanLin("plan_chou",ModItems.GRAINE_CHOU, ModItems.CHOU_VERT);
     public static final Block PLAN_THE = new BlockPlanLin("plan_the",ModItems.GRAINE_DE_THE, ModItems.FEUILLE_DE_THE);
@@ -514,6 +515,7 @@ public class ModBlocks {
     public static final Block PLAN_ENDIVE = new BlockPlanLin("plan_endive",ModItems.GRAINE_ENDIVE, ModItems.ENDIVE);
     public static final Block PLAN_RIZ = new BlockPlanLin("plan_riz",ModItems.GRAINE_RIZ, ModItems.RIZ);
     public static final Block PLAN_CHANVRE = new BlockPlanLin("plan_chanvre",ModItems.GRAINE_CHANVRE, ModItems.CHANVRE);
+
 
 
     //LUMINEUX
@@ -531,6 +533,7 @@ public class ModBlocks {
     public static final Block ECRIN_A_BIJOUX = new BlockEcrinABijoux("ecrin_a_bijoux", Material.WOOD, 1.5F, 1.5F, SoundType.WOOD);
 
 
+
     //Minerai
     public static final Block BLOC_MINERAI_ARGENT = new BlockBase("bloc_minerai_argent", Material.ROCK, 5F, 5F, SoundType.STONE);
     public static final Block BLOC_MINERAI_FER = new BlockBase("bloc_minerai_fer", Material.ROCK, 5F, 5F, SoundType.STONE);
@@ -540,6 +543,9 @@ public class ModBlocks {
 
 
     /*public static final Block CHAISE_CHENE = new BlocChaise("chaise_chene", Material.WOOD, SoundType.WOOD);
+
+
+
 
     /**
      * Init the blocks
@@ -564,23 +570,17 @@ public class ModBlocks {
         ModItems.GRAINE_RADIS = new ItemGraine("GRAINE_RADIS",ModBlocks.PLAN_RADIS, Blocks.FARMLAND);
         ModItems.GRAINE_SALSIFI = new ItemGraine("GRAINE_SALSIFI",ModBlocks.PLAN_SALSIFI, Blocks.FARMLAND);
         ModItems.GRAINE_TOMATE = new ItemGraine("GRAINE_TOMATE",ModBlocks.PLAN_TOMATE, Blocks.FARMLAND);
-        ModItems.GRAINE_RAISIN_ROUGE = new ItemGraine("GRAINE_RAISIN_ROUGE",ModBlocks.PLAN_VIGNE_NOIRE, Blocks.FARMLAND);
-        ModItems.GRAINE_RAISIN_BLANC = new ItemGraine("GRAINE_RAISIN_BLANC",ModBlocks.PLAN_VIGNE_BLANCHE, Blocks.FARMLAND);
+        ModItems.GRAINE_VIGNE_NOIRE = new ItemGraine("GRAINE_VIGNE_NOIRE",ModBlocks.PLAN_VIGNE_NOIRE, Blocks.FARMLAND);
         ModItems.GRAINE_CHOU = new ItemGraine("GRAINE_CHOU",ModBlocks.PLAN_CHOU, Blocks.FARMLAND);
         ModItems.GRAINE_EPINARD = new ItemGraine("GRAINE_EPINARD",ModBlocks.PLAN_EPINARD, Blocks.FARMLAND);
         ModItems.GRAINE_DE_THE = new ItemGraine("GRAINE_THE",ModBlocks.PLAN_THE, Blocks.FARMLAND);
-        ModItems.GRAINE_SALADE = new ItemGraine("GRAINE_SALADE",ModBlocks.PLAN_SALADE, Blocks.FARMLAND);
-        ModItems.GRAINE_ARTICHAUT = new ItemGraine("GRAINE_ARTICHAUT",ModBlocks.PLAN_ARTICHAUT, Blocks.FARMLAND);
-        ModItems.GRAINE_BROCOLIS = new ItemGraine("GRAINE_BROCOLIS",ModBlocks.PLAN_BROCOLIS, Blocks.FARMLAND);
-        ModItems.GRAINE_ASPERGE = new ItemGraine("GRAINE_ASPERGE",ModBlocks.PLAN_ASPERGE, Blocks.FARMLAND);
-        ModItems.GRAINE_ENDIVE = new ItemGraine("GRAINE_ENDIVE",ModBlocks.PLAN_ENDIVE, Blocks.FARMLAND);
-        ModItems.GRAINE_RIZ = new ItemGraine("GRAINE_RIZ",ModBlocks.PLAN_RIZ, Blocks.FARMLAND);
     }
 
     /**
      * Register the blocks
      */
     public static void register(){
+
 
         //dalles
        /* registerBlock(WOOL_COLORED_MAGENTA_HALF_SLAB, new ItemSlab(WOOL_COLORED_MAGENTA_HALF_SLAB,WOOL_COLORED_MAGENTA_HALF_SLAB,WOOLMAGENTA_DOUBLE_SLAB));
@@ -590,6 +590,10 @@ public class ModBlocks {
 
 
         //cultures
+
+
+        /*registerBlock(WOOL_COLORED_MAGENTA_HALF_SLAB, new ItemSlab(WOOL_COLORED_MAGENTA_HALF_SLAB,WOOL_COLORED_MAGENTA_HALF_SLAB,WOOL_COLORED_MAGENTA_DOUBLE_SLAB));
+        ForgeRegistries.BLOCKS.register(WOOL_COLORED_MAGENTA_DOUBLE_SLAB);*/
         registerItem(ModItems.GRAINE_LIN);
         registerItem(ModItems.GRAINE_CELERI);
         registerItem(ModItems.GRAINE_FENOUIL);
@@ -603,8 +607,8 @@ public class ModBlocks {
         registerItem(ModItems.GRAINE_RADIS);
         registerItem(ModItems.GRAINE_SALSIFI);
         registerItem(ModItems.GRAINE_TOMATE);
-        registerItem(ModItems.GRAINE_RAISIN_ROUGE);
-        registerItem(ModItems.GRAINE_RAISIN_BLANC);
+        registerItem(ModItems.GRAINE_VIGNE_NOIRE);
+        registerItem(ModItems.GRAINE_VIGNE_BLANCHE);
         registerItem(ModItems.GRAINE_CHOU);
         registerItem(ModItems.GRAINE_EPINARD);
         registerItem(ModItems.GRAINE_SALADE);
@@ -615,6 +619,11 @@ public class ModBlocks {
         registerItem(ModItems.GRAINE_RIZ);
 
         //registerB(ModBlocks.CHAISE_CHENE, new ItemBlock(ModBlocks.CHAISE_CHENE));
+
+        registerItem(ModItems.GRAINE_DE_THE);
+
+
+
     }
 
     public static void registerBlock(Block block){

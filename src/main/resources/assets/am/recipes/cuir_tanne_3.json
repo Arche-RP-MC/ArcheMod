@@ -3,24 +3,20 @@
 
   "pattern":
   [
-    "GHC",
-    "JJJ",
-    "   "
+    "   ",
+    "HJJ",
+    "G  "
   ],
 
   "key":
   {
     "H":
     {
-      "item": "minecraft:item_frame"
+      "item": "am:cristal_de_sel"
     },
     "J":
     {
       "item": "am:cuir"
-    },
-    "C":
-    {
-      "item": "am:ecorce"
     },
     "G":
     {
@@ -31,6 +27,6 @@
   "result":
   {
     "item": "am:cuir_tanne",
-    "count": 3
+    "count": 2
   }
 }

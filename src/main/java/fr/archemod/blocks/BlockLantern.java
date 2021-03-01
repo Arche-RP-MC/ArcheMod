@@ -50,17 +50,6 @@ public class BlockLantern extends BlockBase implements ITileEntityProvider {
         }
 
         this.burning = burning;
-        this.setLightOpacity(0);
-    }
-
-
-    public boolean isTranslucent(IBlockState state){
-        return true;
-    }
-
-
-    public boolean isOpaqueCube(IBlockState state) {
-        return false;
     }
 
     public void updateTick(World worldIn, BlockPos pos, IBlockState state, Random rand) {
@@ -124,7 +113,9 @@ public class BlockLantern extends BlockBase implements ITileEntityProvider {
         return NULL_AABB;
     }
 
-
+    public boolean isOpaqueCube(IBlockState state) {
+        return false;
+    }
 
     public boolean isFullCube(IBlockState state) {
         return false;

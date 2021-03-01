@@ -16,12 +16,11 @@
     },
     "N":
     {
-      "item": "am:ciseaux_de_couture",
-      "data": 32767
+      "item": "am:ciseaux_de_couture"
     },
     "L":
     {
-      "item": "am:laniere_de_cuir"
+      "item": "am:laniere"
     },
     "M":
     {

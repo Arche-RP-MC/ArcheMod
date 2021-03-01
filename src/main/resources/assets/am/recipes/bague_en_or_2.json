@@ -16,13 +16,11 @@
     },
     "M":
     {
-      "item": "am:lime_en_fer",
-      "data": 32767
+      "item": "am:lime_en_fer"
     },
     "G":
     {
-      "item": "am:pinces",
-      "data": 32767
+      "item": "am:pinces"
     }
   },
 

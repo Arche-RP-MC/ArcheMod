@@ -12,12 +12,16 @@
   {
     "E":
     {
+<<<<<<< HEAD:src/main/resources/assets/am/recipes/onyx_taille_radiant.json
       "item": "am:etoffe"
     },
     "O":
     {
       "item": "am:loupe",
       "data": 32767
+=======
+      "item": "am:marteau_en_bronze"
+>>>>>>> 61129680a90e562f94fed2c01906d51533861de4:src/main/resources/assets/am/recipes/tete_hallebarde_bronze.json
     },
     "G":
     {
@@ -25,9 +29,7 @@
     },
     "P":
     {
-      "item": "am:pinces",
-      "data": 32767
-
+      "item": "am:pinces"
     },
     "L":
      {

@@ -1,3 +1,10 @@
 {
+<<<<<<< HEAD
     "parent": "am:block/tache_de_sang"
+=======
+    "parent": "am:block/tache_de_sang",
+    "textures": {
+        "layer0": "am:items/tache_de_sang"
+    }
+>>>>>>> 61129680a90e562f94fed2c01906d51533861de4
 }

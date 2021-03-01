@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " M ",
+    " CP",
+    " F "
+  ],
+
+  "key":
+  {
+    "M":
+    {
+      "item": "am:marteau_en_bronze"
+    },
+    "P":
+    {
+      "item": "am:pinces"
+    },
+    "C":
+    {
+      "item": "am:tete_couteau_bronze"
+    },
+    "F":
+    {
+      "item": "am:tete_masse_bronze"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:tete_lance_bronze",
+    "count": 1
+  }
+}

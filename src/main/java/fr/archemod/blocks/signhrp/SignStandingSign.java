@@ -1,10 +1,18 @@
 package fr.archemod.blocks.signhrp;
 
 import net.minecraft.block.Block;
+import fr.archemod.ArcheMod;
+import fr.archemod.init.ModBlocks;
+import fr.archemod.init.ModItems;
+import fr.archemod.util.IHasModel;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockSign;
 import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyInteger;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
 import net.minecraft.util.Mirror;
 import net.minecraft.util.Rotation;
 import net.minecraft.util.math.BlockPos;

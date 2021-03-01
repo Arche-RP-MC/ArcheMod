@@ -2,6 +2,7 @@ package fr.archemod.network;
 
 import fr.archemod.network.client.MessageUpdateSign;
 import fr.archemod.network.server.GuiOpensignPaket;
+import fr.archemod.util.Reference;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper;
 import net.minecraftforge.fml.relauncher.Side;

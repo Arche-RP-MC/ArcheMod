@@ -47,7 +47,7 @@ public class TileEntityFishCase extends TileEntityLockableLoot {
 
         long date = new Date().getTime();
         if(!tag.hasKey("time")){
-            ArcheMod.LOGGER.debug("[TILE SERIALIZE....]" + date);
+            ArcheMod.logger.debug("[TILE SERIALIZE....]" + date);
             tag.setString("time", String.valueOf(date));
             this.time = Long.parseLong(tag.getString("time"));
         }

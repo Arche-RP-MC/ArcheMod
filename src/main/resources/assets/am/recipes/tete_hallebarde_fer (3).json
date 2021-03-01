@@ -12,14 +12,11 @@
   {
     "M":
     {
-      "item": "am:marteau_en_acier",
-      "data": 32767
+      "item": "am:marteau_en_acier"
     },
     "P":
     {
-      "item": "am:pinces",
-      "data": 32767
-
+      "item": "am:pinces"
     },
     "L":
     {

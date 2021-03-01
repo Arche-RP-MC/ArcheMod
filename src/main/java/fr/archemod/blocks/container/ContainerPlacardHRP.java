@@ -2,6 +2,7 @@ package fr.archemod.blocks.container;
 
 import fr.archemod.blocks.tileentity.TileEntityHrpSign;
 import fr.archemod.blocks.tileentity.TileEntityPlacardHRP;
+import fr.archemod.blocks.tileentity.TileEntitySignHrp;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.IInventory;

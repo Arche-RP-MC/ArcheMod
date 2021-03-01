@@ -12,16 +12,24 @@
   {
     "B":
     {
+<<<<<<< HEAD:src/main/resources/assets/am/recipes/lingot_acier_3.json
       "item": "am:moule"
     },
     "J":
     {
       "item": "am:pepite_acier"
+=======
+      "item": "am:marteau_en_acier"
+>>>>>>> 61129680a90e562f94fed2c01906d51533861de4:src/main/resources/assets/am/recipes/tete_dague_bronze (2).json
     },
     "I":
     {
+<<<<<<< HEAD:src/main/resources/assets/am/recipes/lingot_acier_3.json
       "item": "am:pinces",
       "data": 32767
+=======
+      "item": "am:pinces"
+>>>>>>> 61129680a90e562f94fed2c01906d51533861de4:src/main/resources/assets/am/recipes/tete_dague_bronze (2).json
     },
     "G":
     {

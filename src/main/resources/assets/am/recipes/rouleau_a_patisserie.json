@@ -12,8 +12,7 @@
   {
     "M":
     {
-      "item": "am:marteau_en_fer",
-      "data": 32767
+      "item": "am:marteau_en_fer"
     },
     "H":
     {
@@ -28,9 +27,8 @@
       "item": "am:planche"
     },
     "L":
-     {
-      "item": "am:lime_en_fer",
-      "data": 32767
+    {
+      "item": "am:lime_en_fer"
     }
   },
 

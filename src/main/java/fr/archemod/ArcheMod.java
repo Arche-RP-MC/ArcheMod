@@ -1,3 +1,4 @@
+
 package fr.archemod;
 
 import fr.archemod.blocks.tileentity.TileEntitySignHrp;
@@ -8,6 +9,7 @@ import fr.archemod.chat.capabilities.description.IDescription;
 import fr.archemod.chat.capabilities.indicator.ArcheChat;
 import fr.archemod.chat.capabilities.indicator.ArcheChatStorage;
 import fr.archemod.chat.capabilities.indicator.IArcheChat;
+import fr.archemod.chat.network.description.PacketDescription;
 import fr.archemod.chat.network.indicator.PacketArcheChat;
 import fr.archemod.cmd.HRPCommand;
 import fr.archemod.network.ArcheNetwork;
@@ -56,7 +58,7 @@ public class ArcheMod {
     @SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.COMMON_PROXY_CLASS)
     public static CommonProxy proxy;
 
-    public static Logger LOGGER ;
+    public static Logger logger ;
 
 
     /**
@@ -68,25 +70,25 @@ public class ArcheMod {
 
         ArcheNetwork.init();
 
-        LOGGER = event.getModLog();
+        logger = event.getModLog();
 
         MinecraftForge.EVENT_BUS.register(GuiChatListener.class);
 
         CapabilityManager.INSTANCE.register(IArcheChat.class, new ArcheChatStorage(), ArcheChat::new);
         CapabilityManager.INSTANCE.register(IDescription.class, new DescriptionStorage(), Description::new);
 
+
         ArcheNetwork.NETWORK.registerMessage(PacketArcheChat.ServerHandler.class, PacketArcheChat.class, 5, Side.SERVER);
         ArcheNetwork.NETWORK.registerMessage(PacketArcheChat.ClientHandler.class, PacketArcheChat.class, 6, Side.CLIENT);
-
-        //networkDescription.registerMessage(PacketDescription.ServerHandler.class, PacketDescription.class, 4, Side.SERVER);
-        //networkDescription.registerMessage(PacketDescription.ClientHandler.class, PacketDescription.class, 5, Side.CLIENT);
+        ArcheNetwork.NETWORK.registerMessage(PacketDescription.ServerHandler.class, PacketDescription.class, 4, Side.SERVER);
+        ArcheNetwork.NETWORK.registerMessage(PacketDescription.ClientHandler.class, PacketDescription.class, 5, Side.CLIENT);
 
     }
 
     @Mod.EventHandler
     public void init(FMLServerStartingEvent event)
     {
-        LOGGER.info("initalise FMLServerStartingEvent :" + Reference.MOD_NAME);
+        logger.info("initalise FMLServerStartingEvent :" + Reference.MOD_NAME);
         event.registerServerCommand(new HRPCommand());
 
 
@@ -111,7 +113,6 @@ public class ArcheMod {
 
     }
     public static Logger getLogger() {
-        return LOGGER;
+        return logger;
     }
 }
-

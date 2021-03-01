@@ -24,13 +24,11 @@
     },
     "S":
     {
-      "item": "am:scie_en_fer",
-      "data": 32767
+      "item": "am:scie_en_fer"
     },
     "M":
     {
-      "item": "am:marteau_en_fer",
-      "data": 32767
+      "item": "am:marteau_en_fer"
     },
     "B":
     {

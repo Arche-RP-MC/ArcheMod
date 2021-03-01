@@ -16,8 +16,12 @@
     },
     "O":
     {
+<<<<<<< HEAD:src/main/resources/assets/am/recipes/rubis_taille_radiant.json
       "item": "am:loupe",
       "data": 32767
+=======
+      "item": "am:pince"
+>>>>>>> 61129680a90e562f94fed2c01906d51533861de4:src/main/resources/assets/am/recipes/dague_3.json
     },
     "G":
     {
@@ -29,10 +33,16 @@
       "data": 32767
 
     },
+<<<<<<< HEAD:src/main/resources/assets/am/recipes/rubis_taille_radiant.json
     "L":
      {
       "item": "am:lime_en_fer",
       "data": 32767
+=======
+    "G":
+    {
+      "item": "am:marteau_en_acier"
+>>>>>>> 61129680a90e562f94fed2c01906d51533861de4:src/main/resources/assets/am/recipes/dague_3.json
     }
   },
 

@@ -8,21 +8,18 @@
     "P  "
   ],
 
-  "key":
-  {
+  "key":{
     "P":
     {
       "item": "am:pepite_fer"
     },
     "M":
     {
-      "item": "am:marteau_en_fer",
-      "data": 32767
+      "item": "am:marteau_en_fer"
     },
     "L":
     {
-      "item": "am:pinces",
-      "data": 32767
+      "item": "am:pinces"
     }
   },
 

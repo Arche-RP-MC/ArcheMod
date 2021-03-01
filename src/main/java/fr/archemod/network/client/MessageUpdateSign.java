@@ -25,7 +25,10 @@ public class MessageUpdateSign implements IMessage {
     public MessageUpdateSign() {
     }
 
+
     public MessageUpdateSign(TileEntitySignHrp TileEntitySignHrp) {
+
+
         this.pos = TileEntitySignHrp.getPos();
         this.text = TileEntitySignHrp.signText;
 
