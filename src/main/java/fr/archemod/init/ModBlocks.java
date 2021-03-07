@@ -528,6 +528,14 @@ public class ModBlocks {
     //BARIL \!/ Ajouter les interactions avec d'autres objets et liquides dans la classe directement en suivant l'exemple de l'eau
     public static final Block BARIL_VIDE = new BlockBaril("baril_vide", Material.WOOD, 1.5F, 1.5f, SoundType.WOOD, BlockBaril.BarilType.VIDE);
     public static final Block BARIL_EAU = new BlockBaril("baril_eau", Material.WOOD, 1.5F, 1.5f, SoundType.WOOD, BlockBaril.BarilType.EAU);
+    public static final Block BARIL_LAIT = new BlockBaril("baril_lait", Material.WOOD, 1.5F, 1.5f, SoundType.WOOD, BlockBaril.BarilType.LAIT);
+    public static final Block BARIL_BIERRE_BLONDE = new BlockBaril("baril_bierre_blonde", Material.WOOD, 1.5F, 1.5f, SoundType.WOOD, BlockBaril.BarilType.BIERRE_BLONDE);
+    public static final Block BARIL_BIERE_BRUNE = new BlockBaril("baril_biere_brune", Material.WOOD, 1.5F, 1.5f, SoundType.WOOD, BlockBaril.BarilType.BIERE_BRUNE);
+    public static final Block BARIL_BIERE_ROUSSE = new BlockBaril("baril_biere_rousse", Material.WOOD, 1.5F, 1.5f, SoundType.WOOD, BlockBaril.BarilType.BIERE_ROUSSE);
+    public static final Block BARIL_VIN_BLANC = new BlockBaril("baril_vin_blanc", Material.WOOD, 1.5F, 1.5f, SoundType.WOOD, BlockBaril.BarilType.VIN_BLANC);
+    public static final Block BARIL_VIN_ROUGE = new BlockBaril("baril_vin_rouge", Material.WOOD, 1.5F, 1.5f, SoundType.WOOD, BlockBaril.BarilType.VIN_ROUGE);
+    public static final Block BARIL_RHUM = new BlockBaril("baril_rhum", Material.WOOD, 1.5F, 1.5f, SoundType.WOOD, BlockBaril.BarilType.RHUM);
+    public static final Block BARIL_HYDROMEL = new BlockBaril("baril_hydromel", Material.WOOD, 1.5F, 1.5f, SoundType.WOOD, BlockBaril.BarilType.HYDROMEL);
 
     //CONTENEUR \!/ Il faut recréer Block, TileEntity, Container, Inventory, GUI, Registry dans util.handlers.RegistryHandler et gérer le GUIid du Block (onBlockActivated) dans le switch case du GUIHandler
     public static final Block ECRIN_A_BIJOUX = new BlockEcrinABijoux("ecrin_a_bijoux", Material.WOOD, 1.5F, 1.5F, SoundType.WOOD);

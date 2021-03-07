@@ -89,48 +89,118 @@ public class BlockBaril extends BlockBase {
                 switch (this.content) {
                     case VIDE:
                         if (playerIn.getHeldItemMainhand().getItem() == ModItems.SEAU_D_EAU_EN_BOIS) {
-                            worldIn.setBlockState(pos, ModBlocks.BARIL_EAU.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(15)));
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_EAU.getDefaultState().withProperty((IProperty) SIZE, Integer.valueOf(15)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack((Item) ModItems.SEAU_EN_BOIS));
+                            break;
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == Items.WATER_BUCKET) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_EAU.getDefaultState().withProperty((IProperty) SIZE, Integer.valueOf(15)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(Items.BUCKET));
+
+                            break;
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.SEAU_DE_LAIT_EN_BOIS) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_LAIT.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(15)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack((Item)ModItems.SEAU_EN_BOIS));
+                        break;
+                        }
+                         if (playerIn.getHeldItemMainhand().getItem() == Items.MILK_BUCKET) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_LAIT.getDefaultState().withProperty((IProperty) SIZE, Integer.valueOf(15)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(Items.BUCKET));
+                    }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.SEAU_DE_BIERRE_BLONDE_EN_BOIS) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_BIERRE_BLONDE.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(15)));
                             playerIn.getHeldItemMainhand().shrink(1);
                             playerIn.inventory.addItemStackToInventory(new ItemStack((Item)ModItems.SEAU_EN_BOIS));
                             break;
                         }
-                        if (playerIn.getHeldItemMainhand().getItem() == Items.WATER_BUCKET) {
-                            worldIn.setBlockState(pos, ModBlocks.BARIL_EAU.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(15)));
+
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.SEAU_DE_BIERRE_BLONDE) {
+                        worldIn.setBlockState(pos, ModBlocks.BARIL_BIERRE_BLONDE.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(15)));
+                        playerIn.getHeldItemMainhand().shrink(1);
+                        playerIn.inventory.addItemStackToInventory(new ItemStack(Items.BUCKET));
+                        break;
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.SEAU_DE_BIERE_ROUSSE_EN_BOIS) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_BIERE_ROUSSE.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(15)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack((Item)ModItems.SEAU_EN_BOIS));
+                            break;
+                        }
+
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.SEAU_DE_BIERE_ROUSSE) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_BIERE_ROUSSE.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(15)));
                             playerIn.getHeldItemMainhand().shrink(1);
                             playerIn.inventory.addItemStackToInventory(new ItemStack(Items.BUCKET));
                             break;
                         }
-                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.VERRE_A_PIED) {
-                            worldIn.setBlockState(pos, ModBlocks.BARIL_EAU.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(15)));
+
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.SEAU_DE_VIN_BLANC_EN_BOIS) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_VIN_BLANC.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(15)));
                             playerIn.getHeldItemMainhand().shrink(1);
-                            playerIn.inventory.addItemStackToInventory(new ItemStack((Item)ModItems.VERRE_A_PIED));
+                            playerIn.inventory.addItemStackToInventory(new ItemStack((Item)ModItems.SEAU_EN_BOIS));
                             break;
                         }
-                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.CHOPPE_EN_ARGILE) {
-                            worldIn.setBlockState(pos, ModBlocks.BARIL_EAU.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(15)));
+
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.SEAU_DE_VIN_BLANC) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_VIN_BLANC.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(15)));
                             playerIn.getHeldItemMainhand().shrink(1);
-                            playerIn.inventory.addItemStackToInventory(new ItemStack((Item)ModItems.CHOPPE_EN_ARGILE));
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(Items.BUCKET));
                             break;
                         }
-                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.CHOPPE_EN_VERRE) {
-                            worldIn.setBlockState(pos, ModBlocks.BARIL_EAU.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(15)));
+
+
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.SEAU_DE_VIN_ROUGE_EN_BOIS) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_VIN_ROUGE.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(15)));
                             playerIn.getHeldItemMainhand().shrink(1);
-                            playerIn.inventory.addItemStackToInventory(new ItemStack((Item)ModItems.CHOPPE_EN_VERRE));
+                            playerIn.inventory.addItemStackToInventory(new ItemStack((Item)ModItems.SEAU_EN_BOIS));
                             break;
                         }
-                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.BOUTEILLE_VIDE) {
-                            worldIn.setBlockState(pos, ModBlocks.BARIL_EAU.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(15)));
+
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.SEAU_DE_VIN_ROUGE) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_VIN_ROUGE.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(15)));
                             playerIn.getHeldItemMainhand().shrink(1);
-                            playerIn.inventory.addItemStackToInventory(new ItemStack((Item)ModItems.BOUTEILLE_VIDE));
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(Items.BUCKET));
+
                             break;
                         }
-                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.GROSSE_BOUTEILLE_VIDE) {
-                            worldIn.setBlockState(pos, ModBlocks.BARIL_EAU.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(15)));
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.SEAU_DE_RHUM_EN_BOIS) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_RHUM.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(15)));
                             playerIn.getHeldItemMainhand().shrink(1);
-                            playerIn.inventory.addItemStackToInventory(new ItemStack((Item)ModItems.GROSSE_BOUTEILLE_VIDE));
+                            playerIn.inventory.addItemStackToInventory(new ItemStack((Item)ModItems.SEAU_EN_BOIS));
                             break;
                         }
+
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.SEAU_DE_RHUM) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_RHUM.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(15)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(Items.BUCKET));
+
+                            break;
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.SEAU_DE_HYDROMEL_EN_BOIS) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_HYDROMEL.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(15)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack((Item)ModItems.SEAU_EN_BOIS));
+                            break;
+                        }
+
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.SEAU_DE_HYDROMEL) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_HYDROMEL.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(15)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(Items.BUCKET));
+
+                            break;
+                        }
+
                         break;
+
+
+
                     case EAU:
                         if (playerIn.getHeldItemMainhand().getItem() == ModItems.BOCAL) {
                             worldIn.setBlockState(pos, ModBlocks.BARIL_EAU.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 1)));
@@ -138,41 +208,388 @@ public class BlockBaril extends BlockBase {
                             playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.BOCAL_D_EAU));
                         }
                         if (playerIn.getHeldItemMainhand().getItem() == Items.BUCKET) {
-                            worldIn.setBlockState(pos, ModBlocks.BARIL_VIDE.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(0)));
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_EAU.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(0)));
                             playerIn.getHeldItemMainhand().shrink(1);
                             playerIn.inventory.addItemStackToInventory(new ItemStack(Items.WATER_BUCKET));
                         }
                         if (playerIn.getHeldItemMainhand().getItem() == ModItems.SEAU_EN_BOIS) {
-                            worldIn.setBlockState(pos, ModBlocks.BARIL_VIDE.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 1)));
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_EAU.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 1)));
                             playerIn.getHeldItemMainhand().shrink(1);
                             playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.SEAU_D_EAU_EN_BOIS));
                         }
-                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.BOCAL) {
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.VERRE_A_PIED) {
                             worldIn.setBlockState(pos, ModBlocks.BARIL_EAU.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 1)));
                             playerIn.getHeldItemMainhand().shrink(1);
-                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.BOCAL_D_EAU));
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.VERRE_A_PIED_EAU));
                         }
-                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.BOCAL) {
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.CHOPPE_EN_VERRE) {
                             worldIn.setBlockState(pos, ModBlocks.BARIL_EAU.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 1)));
                             playerIn.getHeldItemMainhand().shrink(1);
-                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.BOCAL_D_EAU));
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.CHOPPE_EN_VERRE_EAU));
                         }
-                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.BOCAL) {
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.CHOPPE_EN_ARGILE) {
                             worldIn.setBlockState(pos, ModBlocks.BARIL_EAU.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 1)));
                             playerIn.getHeldItemMainhand().shrink(1);
-                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.BOCAL_D_EAU));
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.CHOPPE_EN_ARGILE_EAU));
                         }
-                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.BOCAL) {
-                            worldIn.setBlockState(pos, ModBlocks.BARIL_EAU.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 1)));
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.BOUTEILLE_VIDE) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_EAU.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 5)));
                             playerIn.getHeldItemMainhand().shrink(1);
-                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.BOCAL_D_EAU));
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.BOUTEILLE_D_EAU));
                         }
-                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.BOCAL) {
-                            worldIn.setBlockState(pos, ModBlocks.BARIL_EAU.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 1)));
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.GROSSE_BOUTEILLE_VIDE) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_EAU.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 7)));
                             playerIn.getHeldItemMainhand().shrink(1);
-                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.BOCAL_D_EAU));
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.GROSSE_BOUTEILLE_D_EAU));
                         }
 
+                        break;
+
+                    case LAIT:
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.BOCAL) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_LAIT.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 1)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.BOCAL_DE_LAIT));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == Items.BUCKET) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_LAIT.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(0)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(Items.MILK_BUCKET));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.SEAU_EN_BOIS) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_LAIT.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 1)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.SEAU_DE_LAIT_EN_BOIS));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.VERRE_A_PIED) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_LAIT.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 1)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.VERRE_A_PIED_LAIT));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.CHOPPE_EN_VERRE) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_LAIT.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 1)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.CHOPPE_EN_VERRE_LAIT));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.CHOPPE_EN_ARGILE) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_LAIT.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 1)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.CHOPPE_EN_ARGILE_LAIT));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.BOUTEILLE_VIDE) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_LAIT.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 5)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.BOUTEILLE_DE_LAIT));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.GROSSE_BOUTEILLE_VIDE) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_LAIT.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 7)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.GROSSE_BOUTEILLE_DE_LAIT));
+                        }
+
+                        break;
+
+                    case BIERRE_BLONDE:
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.BOCAL) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_BIERRE_BLONDE.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 1)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.BOCAL_DE_BIERRE_BLONDE));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == Items.BUCKET) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_BIERRE_BLONDE.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(0)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.SEAU_DE_BIERRE_BLONDE));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.SEAU_EN_BOIS) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_BIERRE_BLONDE.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 1)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.SEAU_DE_BIERRE_BLONDE_EN_BOIS));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.VERRE_A_PIED) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_BIERRE_BLONDE.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 1)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.VERRE_A_PIED_BIERRE_BLONDE));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.CHOPPE_EN_VERRE) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_BIERRE_BLONDE.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 1)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.CHOPPE_EN_VERRE_BIERRE_BLONDE));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.CHOPPE_EN_ARGILE) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_BIERRE_BLONDE.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 1)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.CHOPPE_EN_ARGILE_BIERRE_BLONDE));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.BOUTEILLE_VIDE) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_BIERRE_BLONDE.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 5)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.BOUTEILLE_DE_BIERRE_BLONDE));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.GROSSE_BOUTEILLE_VIDE) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_BIERRE_BLONDE.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 7)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.GROSSE_BOUTEILLE_DE_BIERRE_BLONDE));
+                        }
+                        break;
+
+                    case BIERE_BRUNE:
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.BOCAL) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_BIERE_BRUNE.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 1)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.BOCAL_DE_BIERE_BRUNE));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == Items.BUCKET) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_BIERE_BRUNE.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(0)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.SEAU_DE_BIERE_BRUNE));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.SEAU_EN_BOIS) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_BIERE_BRUNE.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 1)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.SEAU_DE_BIERE_BRUNE_EN_BOIS));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.VERRE_A_PIED) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_BIERE_BRUNE.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 1)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.VERRE_A_PIED_BIERE_BRUNE));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.CHOPPE_EN_VERRE) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_BIERE_BRUNE.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 1)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.CHOPPE_EN_VERRE_BIERE_BRUNE));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.CHOPPE_EN_ARGILE) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_BIERE_BRUNE.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 1)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.CHOPPE_EN_ARGILE_BIERE_BRUNE));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.BOUTEILLE_VIDE) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_BIERE_BRUNE.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 5)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.BOUTEILLE_DE_BIERE_BRUNE));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.GROSSE_BOUTEILLE_VIDE) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_BIERE_BRUNE.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 7)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.GROSSE_BOUTEILLE_DE_BIERE_BRUNE));
+                        }
+                        break;
+
+
+                    case BIERE_ROUSSE:
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.BOCAL) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_BIERE_ROUSSE.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 1)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.BOCAL_DE_BIERE_ROUSSE));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == Items.BUCKET) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_BIERE_ROUSSE.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(0)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.SEAU_DE_BIERE_ROUSSE));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.SEAU_EN_BOIS) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_BIERE_ROUSSE.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 1)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.SEAU_DE_BIERE_ROUSSE_EN_BOIS));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.VERRE_A_PIED) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_BIERE_ROUSSE.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 1)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.VERRE_A_PIED_BIERE_ROUSSE));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.CHOPPE_EN_VERRE) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_BIERE_ROUSSE.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 1)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.CHOPPE_EN_VERRE_BIERE_ROUSSE));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.CHOPPE_EN_ARGILE) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_BIERE_ROUSSE.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 1)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.CHOPPE_EN_ARGILE_BIERE_ROUSSE));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.BOUTEILLE_VIDE) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_BIERE_ROUSSE.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 5)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.BOUTEILLE_DE_BIERE_ROUSSE));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.GROSSE_BOUTEILLE_VIDE) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_BIERE_ROUSSE.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 7)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.GROSSE_BOUTEILLE_DE_BIERE_ROUSSE));
+                        }
+                        break;
+
+                    case VIN_BLANC:
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.BOCAL) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_VIN_BLANC.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 1)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.BOCAL_DE_VIN_BLANC));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == Items.BUCKET) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_VIN_BLANC.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(0)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.SEAU_DE_VIN_BLANC));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.SEAU_EN_BOIS) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_VIN_BLANC.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 1)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.SEAU_DE_VIN_BLANC_EN_BOIS));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.VERRE_A_PIED) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_VIN_BLANC.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 1)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.VERRE_A_PIED_VIN_BLANC));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.CHOPPE_EN_VERRE) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_VIN_BLANC.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 1)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.CHOPPE_EN_VERRE_VIN_BLANC));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.CHOPPE_EN_ARGILE) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_VIN_BLANC.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 1)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.CHOPPE_EN_ARGILE_VIN_BLANC));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.BOUTEILLE_VIDE) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_VIN_BLANC.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 5)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.BOUTEILLE_DE_VIN_BLANC));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.GROSSE_BOUTEILLE_VIDE) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_VIN_BLANC.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 7)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.GROSSE_BOUTEILLE_DE_VIN_BLANC));
+                        }
+                        break;
+                    case VIN_ROUGE:
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.BOCAL) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_VIN_ROUGE.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 1)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.BOCAL_DE_VIN_ROUGE));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == Items.BUCKET) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_VIN_ROUGE.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(0)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.SEAU_DE_VIN_ROUGE));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.SEAU_EN_BOIS) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_VIN_ROUGE.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 1)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.SEAU_DE_VIN_ROUGE_EN_BOIS));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.VERRE_A_PIED) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_VIN_ROUGE.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 1)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.VERRE_A_PIED_VIN_ROUGE));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.CHOPPE_EN_VERRE) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_VIN_ROUGE.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 1)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.CHOPPE_EN_VERRE_VIN_ROUGE));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.CHOPPE_EN_ARGILE) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_VIN_ROUGE.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 1)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.CHOPPE_EN_ARGILE_VIN_ROUGE));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.BOUTEILLE_VIDE) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_VIN_ROUGE.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 5)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.BOUTEILLE_DE_VIN_ROUGE));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.GROSSE_BOUTEILLE_VIDE) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_VIN_ROUGE.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 7)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.GROSSE_BOUTEILLE_DE_VIN_ROUGE));
+                        }
+                        break;
+
+
+
+                    case RHUM:
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.BOCAL) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_RHUM.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 1)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.BOCAL_DE_RHUM));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == Items.BUCKET) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_RHUM.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(0)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.SEAU_DE_RHUM));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.SEAU_EN_BOIS) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_RHUM.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 1)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.SEAU_DE_RHUM_EN_BOIS));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.VERRE_A_PIED) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_RHUM.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 1)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.VERRE_A_PIED_RHUM));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.CHOPPE_EN_VERRE) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_RHUM.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 1)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.CHOPPE_EN_VERRE_RHUM));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.CHOPPE_EN_ARGILE) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_RHUM.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 1)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.CHOPPE_EN_ARGILE_RHUM));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.BOUTEILLE_VIDE) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_RHUM.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 5)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.BOUTEILLE_DE_RHUM));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.GROSSE_BOUTEILLE_VIDE) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_RHUM.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 7)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.GROSSE_BOUTEILLE_DE_RHUM));
+                        }
+                        break;
+
+                    case HYDROMEL:
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.BOCAL) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_HYDROMEL.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 1)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.BOCAL_DE_HYDROMEL));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == Items.BUCKET) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_HYDROMEL.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(0)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.SEAU_DE_HYDROMEL));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.SEAU_EN_BOIS) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_HYDROMEL.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 1)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.SEAU_DE_HYDROMEL_EN_BOIS));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.VERRE_A_PIED) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_HYDROMEL.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 1)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.VERRE_A_PIED_HYDROMEL));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.CHOPPE_EN_VERRE) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_HYDROMEL.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 1)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.CHOPPE_EN_VERRE_HYDROMEL));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.CHOPPE_EN_ARGILE) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_HYDROMEL.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 1)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.CHOPPE_EN_ARGILE_HYDROMEL));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.BOUTEILLE_VIDE) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_HYDROMEL.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 5)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.BOUTEILLE_DE_HYDROMEL));
+                        }
+                        if (playerIn.getHeldItemMainhand().getItem() == ModItems.GROSSE_BOUTEILLE_VIDE) {
+                            worldIn.setBlockState(pos, ModBlocks.BARIL_HYDROMEL.getDefaultState().withProperty((IProperty)SIZE, Integer.valueOf(((Integer)state.getValue((IProperty)SIZE)).intValue() - 7)));
+                            playerIn.getHeldItemMainhand().shrink(1);
+                            playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.GROSSE_BOUTEILLE_DE_HYDROMEL));
+                        }
                         break;
                 }
                 if (((Integer)worldIn.getBlockState (pos).getValue((IProperty)SIZE)).intValue() == 0)

@@ -1,0 +1,52 @@
+{
+    "variants": {
+        "size=0": {
+            "model": "am:baril_biere_brune"
+        },
+        "size=1": {
+            "model": "am:baril_biere_brune"
+        },
+        "size=2": {
+            "model": "am:baril_biere_brune"
+        },
+        "size=3": {
+            "model": "am:baril_biere_brune"
+        },
+        "size=4": {
+            "model": "am:baril_biere_brune"
+        },
+        "size=5": {
+            "model": "am:baril_biere_brune"
+        },
+        "size=6": {
+            "model": "am:baril_biere_brune"
+        },
+        "size=7": {
+            "model": "am:baril_biere_brune"
+        },
+        "size=8": {
+            "model": "am:baril_biere_brune"
+        },
+        "size=9": {
+            "model": "am:baril_biere_brune"
+        },
+        "size=10": {
+            "model": "am:baril_biere_brune"
+        },
+        "size=11": {
+            "model": "am:baril_biere_brune"
+        },
+        "size=12": {
+            "model": "am:baril_biere_brune"
+        },
+        "size=13": {
+            "model": "am:baril_biere_brune"
+        },
+        "size=14": {
+            "model": "am:baril_biere_brune"
+        },
+        "size=15": {
+            "model": "am:baril_biere_brune"
+        }
+    }
+}

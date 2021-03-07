@@ -1,0 +1,53 @@
+{
+    "variants": {
+        "size=0": {
+            "model": "am:baril_hydromel"
+        },
+        "size=1": {
+            "model": "am:baril_hydromel"
+        },
+        "size=2": {
+            "model": "am:baril_hydromel"
+        },
+        "size=3": {
+            "model": "am:baril_hydromel"
+        },
+        "size=4": {
+            "model": "am:baril_hydromel"
+        },
+        "size=5": {
+            "model": "am:baril_hydromel"
+        },
+        "size=6": {
+            "model": "am:baril_hydromel"
+        },
+        "size=7": {
+            "model": "am:baril_hydromel"
+        },
+        "size=8": {
+            "model": "am:baril_hydromel"
+        },
+        "size=9": {
+            "model": "am:baril_hydromel"
+        },
+        "size=10": {
+            "model": "am:baril_hydromel"
+        },
+        "size=11": {
+            "model": "am:baril_hydromel"
+        },
+        "size=12": {
+            "model": "am:baril_hydromel"
+        },
+        "size=13": {
+            "model": "am:baril_hydromel"
+        },
+        "size=14": {
+            "model": "am:baril_hydromel"
+        },
+        "size=15": {
+            "model": "am:baril_hydromel"
+        }
+    }
+}
+
