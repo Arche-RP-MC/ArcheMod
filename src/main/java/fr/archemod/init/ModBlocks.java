@@ -158,6 +158,8 @@ public class ModBlocks {
     public static final Block TUILE_EN_ARDOISE = new BlockBase("tuile_en_ardoise", Material.ROCK, 5F, 5F, SoundType.STONE);
     public static final Block TUILE_EN_ARDOISE_TAILLEE = new BlockBase("tuile_en_ardoise_taillee", Material.ROCK, 5F, 5F, SoundType.STONE);
     public static final Block TUILE_EN_ARDOISE_TRAVAILLEE = new BlockBase("tuile_en_ardoise_travaillee", Material.ROCK, 5F, 5F, SoundType.STONE);
+    public static final Block BARIL = new BlockBase("baril", Material.ROCK, 5F, 5F, SoundType.STONE);
+
 
     //ESCALIER
     public static final Block WOOL_COLORED_MAGENTA_STAIRS = new BlockEscalier("wool_colored_magenta_stairs",3F,3F, SoundType.CLOTH, Block.getStateById(35));

@@ -24,6 +24,8 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 /**
  * This is a special class that listens to registry events, to allow creation of mod blocks and items at the proper time.
@@ -53,6 +55,15 @@ public class RegistryHandler {
     /**
      * Listen for the register event for creating custom blocks
      */
+
+    @SideOnly(Side.CLIENT)
+    public static void initTESR() {
+        ClientRegistry.bindTileEntitySpecialRenderer(TileEntitySignHrp.class,new SignHrpRender());
+
+    }
+
+
+
     @SubscribeEvent
     public static void onBlockRegister(RegistryEvent.Register<Block> event) {
         event.getRegistry().registerAll(ModBlocks.BLOCKS.toArray(new Block[0]));
@@ -64,7 +75,6 @@ public class RegistryHandler {
         GameRegistry.registerTileEntity(TileEntityLightBlock.class, new ResourceLocation(Reference.MOD_ID,"TileEntityLightBlock"));
         GameRegistry.registerTileEntity(TileEntityFishCase.class, new ResourceLocation(Reference.MOD_ID, "TileEntityFishCase"));
         GameRegistry.registerTileEntity(TileEntitySignHrp.class, new ResourceLocation(Reference.MOD_ID, ".TileEntitySignHrp"));
-        ClientRegistry.bindTileEntitySpecialRenderer(TileEntitySignHrp.class,new SignHrpRender());
         GameRegistry.registerTileEntity(TileEntityHrpSign.class, new ResourceLocation(Reference.MOD_ID, "TileEntityHrpSign"));
 
         ModBlocks.init();
