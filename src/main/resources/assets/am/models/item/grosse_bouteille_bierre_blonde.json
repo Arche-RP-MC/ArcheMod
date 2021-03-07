@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "am:items/grosse_bouteille_bierre_blonde"
+  }
+}

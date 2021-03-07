@@ -1,0 +1,6 @@
+f{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "am:items/bocal_de_vin_blanc"
+  }
+}
