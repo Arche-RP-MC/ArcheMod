@@ -1,9 +1,6 @@
 package fr.archemod.blocks.signhrp;
 
 
-
-import fr.archemod.blocks.tileentity.TileEntitySignHrp;
-import fr.archemod.init.ModItems;
 import fr.archemod.ArcheMod;
 import fr.archemod.blocks.tileentity.TileEntitySignHrp;
 import fr.archemod.init.ModBlocks;
@@ -13,8 +10,6 @@ import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.BlockFaceShape;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.Item;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;

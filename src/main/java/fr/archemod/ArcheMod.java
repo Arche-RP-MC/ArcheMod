@@ -1,4 +1,3 @@
-
 package fr.archemod;
 
 import fr.archemod.blocks.tileentity.TileEntitySignHrp;
@@ -9,7 +8,6 @@ import fr.archemod.chat.capabilities.description.IDescription;
 import fr.archemod.chat.capabilities.indicator.ArcheChat;
 import fr.archemod.chat.capabilities.indicator.ArcheChatStorage;
 import fr.archemod.chat.capabilities.indicator.IArcheChat;
-import fr.archemod.chat.network.description.PacketDescription;
 import fr.archemod.chat.network.indicator.PacketArcheChat;
 import fr.archemod.cmd.HRPCommand;
 import fr.archemod.network.ArcheNetwork;
@@ -32,7 +30,6 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
 @Mod(
         modid = Reference.MOD_ID,
         name = Reference.MOD_NAME,
@@ -46,15 +43,12 @@ public class ArcheMod {
 
     /** Set our custom inventory Gui index to the next available Gui index */
     public static final int GUI_ITEM_INV = modGuiIndex++;
-
     public static CreativeTabs archeCreativeTabs = new ArcheCreativeTabs("arche_creative_tabs");
-
     /**
      * This is the instance of your mod as created by Forge. It will never be null.
      */
     @Mod.Instance(Reference.MOD_ID)
     public static ArcheMod INSTANCE;
-
     @SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.COMMON_PROXY_CLASS)
     public static CommonProxy proxy;
 
@@ -80,11 +74,10 @@ public class ArcheMod {
 
         ArcheNetwork.NETWORK.registerMessage(PacketArcheChat.ServerHandler.class, PacketArcheChat.class, 5, Side.SERVER);
         ArcheNetwork.NETWORK.registerMessage(PacketArcheChat.ClientHandler.class, PacketArcheChat.class, 6, Side.CLIENT);
-        ArcheNetwork.NETWORK.registerMessage(PacketDescription.ServerHandler.class, PacketDescription.class, 4, Side.SERVER);
-        ArcheNetwork.NETWORK.registerMessage(PacketDescription.ClientHandler.class, PacketDescription.class, 5, Side.CLIENT);
+        //networkDescription.registerMessage(PacketDescription.ServerHandler.class, PacketDescription.class, 4, Side.SERVER);
+        //networkDescription.registerMessage(PacketDescription.ClientHandler.class, PacketDescription.class, 5, Side.CLIENT);
 
     }
-
     @Mod.EventHandler
     public void init(FMLServerStartingEvent event)
     {

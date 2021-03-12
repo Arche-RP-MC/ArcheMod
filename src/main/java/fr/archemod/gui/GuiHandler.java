@@ -1,13 +1,7 @@
 package fr.archemod.gui;
 
-import fr.archemod.blocks.container.ContainerEcrinABijoux;
-import fr.archemod.blocks.container.ContainerFishCase;
-import fr.archemod.blocks.container.ContainerPlacardHRP;
-import fr.archemod.blocks.container.ContainerTable;
-import fr.archemod.blocks.tileentity.TileEntityEcrinABijoux;
-import fr.archemod.blocks.tileentity.TileEntityFishCase;
-import fr.archemod.blocks.tileentity.TileEntityPlacardHRP;
-import fr.archemod.blocks.tileentity.TileEntityTable;
+import fr.archemod.blocks.container.*;
+import fr.archemod.blocks.tileentity.*;
 import fr.archemod.fiche.container.ContainerFichePersonnage;
 import fr.archemod.fiche.gui.GuiFichePersonnage;
 import fr.archemod.fiche.inventory.InventoryFichePersonnage;
@@ -45,7 +39,7 @@ public class GuiHandler implements IGuiHandler {
                 TileEntity tile = world.getTileEntity(new BlockPos(x,y,z));
                 if(tile instanceof TileEntityPlacardHRP){
                     return new ContainerPlacardHRP(player.inventory,(TileEntityPlacardHRP)tile);
-                 } else {
+                } else {
                     return null;
                 }
             case 3: //Table
@@ -64,6 +58,14 @@ public class GuiHandler implements IGuiHandler {
                 TileEntity fishCase = world.getTileEntity(new BlockPos(x, y, z));
                 if(fishCase instanceof TileEntityFishCase){
                     return new ContainerFishCase(player.inventory, (TileEntityFishCase) fishCase);
+                } else {
+                    return null;
+                }
+
+            case 7:
+                TileEntity tileBaril = world.getTileEntity(new BlockPos(x, y, z));
+                if(tileBaril instanceof TileEntityBaril){
+                    return new ContainerBaril(player.inventory, (TileEntityBaril) tileBaril);
                 } else {
                     return null;
                 }
@@ -116,8 +118,17 @@ public class GuiHandler implements IGuiHandler {
                 } else {
                     return null;
                 }
+            case 7:
+                TileEntity tileBaril = world.getTileEntity(new BlockPos(x, y, z));
+                if(tileBaril instanceof TileEntityBaril){
+                    return new GuiBaril( (TileEntityBaril) tileBaril, player.inventory,player);
+                } else {
+                    return null;
+                }
         }
-        return null;
-    }
+        return null; }
+
+
+
 
 }

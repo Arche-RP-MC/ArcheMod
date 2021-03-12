@@ -28,6 +28,7 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 import javax.annotation.Nullable;
+import java.util.Date;
 import java.util.Objects;
 import java.util.Random;
 
@@ -82,7 +83,7 @@ public class BlockFishCase extends BlockBase implements ITileEntityProvider {
             if(dateAfter == (date + 10 * 3600000L)){
 
                 int nombreAleatoire = 1 + (int)(Math.random() * (ItemList.values().length - 1));
-                tile.serializeNBT();
+                ((TileEntityFishCase)tile).setDate(new Date().getTime());
 
                 ItemList itemList = ItemList.values()[nombreAleatoire];
 
@@ -105,7 +106,8 @@ public class BlockFishCase extends BlockBase implements ITileEntityProvider {
         if(tile instanceof TileEntityFishCase)
         {
 
-            tile.serializeNBT();
+            ((TileEntityFishCase)tile).setDate(new Date().getTime());
+
             //ArcheMod.LOGGER.info(tile.getTileData().getString("time"));
             if(stack.hasDisplayName())
             {

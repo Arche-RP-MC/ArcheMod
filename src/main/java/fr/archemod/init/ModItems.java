@@ -21,6 +21,9 @@ public class ModItems {
     public static final List<Item> ITEMS = new ArrayList<Item>();
 
     public static final Item sign_hrp = new ItemSignHrp();
+    public static final Item fishing_rod_reinforced = new FishingRodReinforced("fishing_rod_reinforced");
+    public static final Item filet_de_poisson = new FoodBase("filet_de_poisson", 1, 1.0F, true);
+
     //ITEMS
 
     public static final Item BOBINE_DE_FIL = new ItemBase("bobine_de_fil");
@@ -112,10 +115,8 @@ public class ModItems {
     public static final Item COUTEAU_EN_FER = new ItemBase("couteau_en_fer");
     public static final Item LOUPE = new OutilsEnFer("loupe");
     public static final Item CISEAUX_A_BOIS = new OutilsEnFer("ciseaux_a_bois");
-    public static final Item EPUISETTE = new Epuisette("epuisette");
+    public static final Item EPUISETTE = new Epuisette("epuisette", Item.ToolMaterial.WOOD);
     public static final Item FILET = new OutilsEnFer("filet");
-    public static final Item FOURCHE_EN_ACIER = new OutilsEnAcier("fourche_en_acier");
-    public static final Item FOURCHE_EN_BRONZE = new OutilsEnBronze("fourche_en_bronze");
     public static final Item FOURCHE_EN_FER = new OutilsEnFer("fourche_en_fer");
     public static final Item HACHOIR = new OutilsEnFer("hachoir");
     public static final Item MAILLET = new OutilsEnFer("maillet");
@@ -126,9 +127,9 @@ public class ModItems {
     public static final Item TROUSSE_D_INGENIEUR_EN_ACIER = new OutilsEnAcier("trousse_d_ingenieur_en_acier");
     public static final Item TROUSSE_D_INGENIEUR_EN_BRONZE = new OutilsEnBronze("trousse_d_ingenieur_en_bronze");
     public static final Item TROUSSE_D_INGENIEUR_EN_FER = new OutilsEnFer("trousse_d_ingenieur_en_fer");
-    public static final Item SCIE_BRONZE = new OutilsEnBronze("scie_bronze");
-    public static final Item SCIE_FER = new OutilsEnFer("scie_fer");
-    public static final Item SCIE_ACIER = new OutilsEnAcier("scie_acier");
+    public static final Item SCIE_EN_BRONZE = new OutilsEnBronze("scie_en_bronze");
+    public static final Item SCIE_EN_FER = new OutilsEnFer("scie_en_fer");
+    public static final Item SCIE_EN_ACIER = new OutilsEnAcier("scie_en_acier");
     public static final Item COUTEAU_BRONZE = new OutilsEnBronze("couteau_bronze");
     public static final Item COUTEAU_ACIER = new OutilsEnAcier("couteau_acier");
     public static final Item CISEAUX_DE_COUTURE = new OutilsEnFer("ciseaux_de_couture");
@@ -187,7 +188,6 @@ public class ModItems {
     public static final Item GAUFFRE = new FoodBase("gauffre",1,0.2F,false);
     public static final Item GROSEILLE = new FoodBase("groseille",1,0.2F,false);
     public static final Item GROSEILLE_A_MACRO = new FoodBase("groseille_a_macro",1,0.2F,false);
-    public static final Item GROSSE_VIANDE = new FoodBase("grosse_viande",1,0.2F,false);
     public static final Item JAMBON_SEC = new FoodBase("jambon_sec",1,0.2F,false);
     public static final Item KIWI = new FoodBase("kiwi",1,0.2F,false);
     public static final Item LAMBEAU_DE_VIANDE_SECHEE = new FoodBase("lambeau_de_viande_sechee",1,0.2F,false);
@@ -199,7 +199,7 @@ public class ModItems {
     public static final Item PAIN_NOIR = new FoodBase("pain_noir",1,0.2F,false);
     public static final Item PATISSERIE = new FoodBase("patisserie",1,0.2F,false);
     public static final Item PATISSERIE_A_LA_PATE_D_AMANDE = new FoodBase("patisserie_a_la_pate_d_amande",1,0.2F,false);
-    public static final Item PATISSERIE_COLOREES = new FoodBase("patisserie_colorees",1,0.2F,false);
+    public static final Item PATISSERIES_COLOREES = new FoodBase("patisseries_colorees",1,0.2F,false);
     public static final Item PETIT_PAIN = new FoodBase("petit_pain",1,0.2F,false);
     public static final Item PETITE_VIANDE_CUITE = new FoodBase("petite_viande_cuite",1,0.2F,false);
     public static final Item PETITE_VIANDE_DE_GIBIER_CUITE = new FoodBase("petite_viande_de_gibier_cuite",1,0.2F,false);
@@ -263,13 +263,11 @@ public class ModItems {
     public static final Item OLIVES = new FoodBase("olives",1,0.2F,false);
     public static final Item ORANGE = new FoodBase("orange",1,0.2F,false);
     public static final Item PART_DE_GATEAU = new FoodBase("part_de_gateau",2,0.2F,false);
-    //public static final Item PART_DE_TARTE = new FoodBase("part_de_tarte",3,0.2F,false);
-    //public static final Item PART_DE_TARTE_AU_CITRON = new FoodBase("part_de_tarte_au_citron",3,0.2F,false);
-    //public static final Item PART_DE_TARTE_AUX_FRUITS_ROUGES = new FoodBase("part_de_tarte_aux_fruits_rouges",3,0.2F,false);
-    //public static final Item PART_DE_TARTE_AUX_MYRTILLES = new FoodBase("part_de_tarte_aux_myrtilles",3,0.2F,false);
+    public static final Item PART_DE_TARTE = new FoodBase("part_de_tarte",3,0.2F,false);
+    public static final Item PART_DE_TARTE_AU_CITRON = new FoodBase("part_de_tarte_au_citron",3,0.2F,false);
+    public static final Item PART_DE_TARTE_AUX_FRUITS_ROUGES = new FoodBase("part_de_tarte_aux_fruits_rouges",3,0.2F,false);
+    public static final Item PART_DE_TARTE_AUX_MYRTILLES = new FoodBase("part_de_tarte_aux_myrtilles",3,0.2F,false);
     public static final Item PART_DE_TOURTE = new FoodBase("part_de_tourte",4,0.2F,false);
-    public static final Item PATISSERIES_COLOREES = new FoodBase("patisseries_colorees",4,0.2F,false);
-    public static final Item PART_DE_TARTE = new FoodBase("part_de_tarte",1,0.2F,false);
     public static final Item PECHE = new FoodBase("peche",1,0.2F,false);
     public static final Item PIMENT = new FoodBase("piment",1,0.2F,false);
     public static final Item POIRE = new FoodBase("poire",1,0.2F,false);
@@ -1135,7 +1133,7 @@ public class ModItems {
 
     //seaux et verres
 
-    public static final Item SEAU_D_EAU_EN_BOIS = new ItemBase("seau_d_eau_en_bois");
+    /*public static final Item SEAU_D_EAU_EN_BOIS = new ItemBase("seau_d_eau_en_bois");
     public static final Item SEAU_EN_BOIS = new ItemBase("seau_en_bois");
     public static final Item VERRE_A_PIED_EAU = new ItemBase("verre_a_pied_eau");
     public static final Item CHOPPE_EN_VERRE_EAU = new ItemBase("choppe_en_verre_eau");
@@ -1213,7 +1211,7 @@ public class ModItems {
     public static final Item CHOPPE_EN_ARGILE_HYDROMEL = new ItemBase("choppe_en_argile_hydromel");
     public static final Item GROSSE_BOUTEILLE_DE_HYDROMEL = new ItemBase("grosse_bouteille_hydromel");
     public static final Item BOUTEILLE_DE_HYDROMEL= new ItemBase("bouteille_de_hydromel");
-    public static final Item BOCAL_DE_HYDROMEL = new ItemBase("bocal_de_hydromel");
+    public static final Item BOCAL_DE_HYDROMEL = new ItemBase("bocal_de_hydromel");*/
 
 
 }

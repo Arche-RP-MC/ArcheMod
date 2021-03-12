@@ -37,23 +37,18 @@ public class TileEntityFishCase extends TileEntityLockableLoot {
         if (!this.checkLootAndWrite(compound))
             ItemStackHelper.saveAllItems(compound, this.stacks);
 
+        long date = new Date().getTime();
+        if(!compound.hasKey("time")){
+            ArcheMod.logger.debug("[TILE SERIALIZE....]" + date);
+            compound.setString("time", String.valueOf(date));
+            this.time = Long.parseLong(compound.getString("time"));
+        }
+
         return compound;
     }
 
-    @Override
-    public NBTTagCompound serializeNBT(){
 
-        NBTTagCompound tag = getTileData();
 
-        long date = new Date().getTime();
-        if(!tag.hasKey("time")){
-            ArcheMod.logger.debug("[TILE SERIALIZE....]" + date);
-            tag.setString("time", String.valueOf(date));
-            this.time = Long.parseLong(tag.getString("time"));
-        }
-
-        return tag;
-    }
 
     @Override
     protected NonNullList<ItemStack> getItems() {
@@ -141,6 +136,7 @@ public class TileEntityFishCase extends TileEntityLockableLoot {
 
     public void setDate(long time){
         this.time = time;
+        markDirty();
     }
 
     public long getDate(){

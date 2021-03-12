@@ -129,4 +129,6 @@ public abstract class BlockDalleWoolColoredMagenta extends BlockSlab {
 
 	}
 
-}*/
+}
+
+ */

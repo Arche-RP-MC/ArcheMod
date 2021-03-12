@@ -3,6 +3,7 @@ package fr.archemod.init;
 import fr.archemod.ArcheMod;
 import fr.archemod.blocks.*;
 import fr.archemod.blocks.agriculture.BlockPlanLin;
+import fr.archemod.blocks.baril.LiquideType;
 import fr.archemod.blocks.signhrp.BlockWallSignHrp;
 import fr.archemod.blocks.signhrp.SignStandingSign;
 import fr.archemod.items.agriculture.ItemGraine;
@@ -251,9 +252,6 @@ public class ModBlocks {
 
     //DALLES \!/ block de base, dalle et double dalle + méthode init & register en bas de ce code.
     /*public static final Block WOOLMAGENTA = new BlockBase("wool_colored_magenta",Material.CLOTH,2F,2F,SoundType.CLOTH);
-
-
-
     public static BlockDalleWoolColoredMagenta.Half ANDESITECRACKEDBRICKSLAB;
     public static BlockDalleWoolColoredMagenta.Half ANDESITMOSSYBRICKSLAB ;
     public static BlockDalleWoolColoredMagenta.Half ANDESITSMOOTH2SLAB ;
@@ -306,7 +304,6 @@ public class ModBlocks {
     public static BlockDalleWoolColoredMagenta.Half WOOLYELLOWSLAB ;
     public static BlockDalleWoolColoredMagenta.Half WOOLPINKSLAB ;
     public static BlockDalleWoolColoredMagenta.Half WOOLPURPLESLAB ;
-
     public static BlockDalleWoolColoredMagenta.Double ANDESITECRACKEDBRICK_DOUBLE_SLAB;
     public static BlockDalleWoolColoredMagenta.Double ANDESITMOSSYBRICK_DOUBLE_SLAB ;
     public static BlockDalleWoolColoredMagenta.Double ANDESITSMOOTH2_DOUBLE_SLAB ;
@@ -528,16 +525,8 @@ public class ModBlocks {
     public static final Block FLOWER_POT = new BlockFlowerPot("flower_pot_am");
 
     //BARIL \!/ Ajouter les interactions avec d'autres objets et liquides dans la classe directement en suivant l'exemple de l'eau
-    public static final Block BARIL_VIDE = new BlockBaril("baril_vide", Material.WOOD, 1.5F, 1.5f, SoundType.WOOD, BlockBaril.BarilType.VIDE);
-    public static final Block BARIL_EAU = new BlockBaril("baril_eau", Material.WOOD, 1.5F, 1.5f, SoundType.WOOD, BlockBaril.BarilType.EAU);
-    public static final Block BARIL_LAIT = new BlockBaril("baril_lait", Material.WOOD, 1.5F, 1.5f, SoundType.WOOD, BlockBaril.BarilType.LAIT);
-    public static final Block BARIL_BIERRE_BLONDE = new BlockBaril("baril_bierre_blonde", Material.WOOD, 1.5F, 1.5f, SoundType.WOOD, BlockBaril.BarilType.BIERRE_BLONDE);
-    public static final Block BARIL_BIERE_BRUNE = new BlockBaril("baril_biere_brune", Material.WOOD, 1.5F, 1.5f, SoundType.WOOD, BlockBaril.BarilType.BIERE_BRUNE);
-    public static final Block BARIL_BIERE_ROUSSE = new BlockBaril("baril_biere_rousse", Material.WOOD, 1.5F, 1.5f, SoundType.WOOD, BlockBaril.BarilType.BIERE_ROUSSE);
-    public static final Block BARIL_VIN_BLANC = new BlockBaril("baril_vin_blanc", Material.WOOD, 1.5F, 1.5f, SoundType.WOOD, BlockBaril.BarilType.VIN_BLANC);
-    public static final Block BARIL_VIN_ROUGE = new BlockBaril("baril_vin_rouge", Material.WOOD, 1.5F, 1.5f, SoundType.WOOD, BlockBaril.BarilType.VIN_ROUGE);
-    public static final Block BARIL_RHUM = new BlockBaril("baril_rhum", Material.WOOD, 1.5F, 1.5f, SoundType.WOOD, BlockBaril.BarilType.RHUM);
-    public static final Block BARIL_HYDROMEL = new BlockBaril("baril_hydromel", Material.WOOD, 1.5F, 1.5f, SoundType.WOOD, BlockBaril.BarilType.HYDROMEL);
+    //public static final Block BARIL_VIDE = new BlockBaril("baril_vide", Material.WOOD, 1.5F, 1.5f, SoundType.WOOD);
+
 
     //CONTENEUR \!/ Il faut recréer Block, TileEntity, Container, Inventory, GUI, Registry dans util.handlers.RegistryHandler et gérer le GUIid du Block (onBlockActivated) dans le switch case du GUIHandler
     public static final Block ECRIN_A_BIJOUX = new BlockEcrinABijoux("ecrin_a_bijoux", Material.WOOD, 1.5F, 1.5F, SoundType.WOOD);
@@ -553,10 +542,6 @@ public class ModBlocks {
 
 
     /*public static final Block CHAISE_CHENE = new BlocChaise("chaise_chene", Material.WOOD, SoundType.WOOD);
-
-
-
-
     /**
      * Init the blocks
      */
@@ -584,6 +569,13 @@ public class ModBlocks {
         ModItems.GRAINE_CHOU = new ItemGraine("GRAINE_CHOU",ModBlocks.PLAN_CHOU, Blocks.FARMLAND);
         ModItems.GRAINE_EPINARD = new ItemGraine("GRAINE_EPINARD",ModBlocks.PLAN_EPINARD, Blocks.FARMLAND);
         ModItems.GRAINE_DE_THE = new ItemGraine("GRAINE_THE",ModBlocks.PLAN_THE, Blocks.FARMLAND);
+        ModItems.GRAINE_DE_THE = new ItemGraine("GRAINE_SALADE",ModBlocks.PLAN_SALADE, Blocks.FARMLAND);
+        ModItems.GRAINE_DE_THE = new ItemGraine("GRAINE_ARTICHAUT",ModBlocks.PLAN_ARTICHAUT, Blocks.FARMLAND);
+        ModItems.GRAINE_DE_THE = new ItemGraine("GRAINE_BROCOLIS",ModBlocks.PLAN_BROCOLIS, Blocks.FARMLAND);
+        ModItems.GRAINE_DE_THE = new ItemGraine("GRAINE_ASPERGE",ModBlocks.PLAN_ASPERGE, Blocks.FARMLAND);
+        ModItems.GRAINE_DE_THE = new ItemGraine("GRAINE_ENDIVE",ModBlocks.PLAN_ENDIVE, Blocks.FARMLAND);
+        ModItems.GRAINE_DE_THE = new ItemGraine("GRAINE_RIZ",ModBlocks.PLAN_RIZ, Blocks.FARMLAND);
+        ModItems.GRAINE_DE_THE = new ItemGraine("GRAINE_CHANVRE",ModBlocks.PLAN_CHANVRE, Blocks.FARMLAND);
     }
 
     /**
@@ -604,7 +596,7 @@ public class ModBlocks {
 
         /*registerBlock(WOOL_COLORED_MAGENTA_HALF_SLAB, new ItemSlab(WOOL_COLORED_MAGENTA_HALF_SLAB,WOOL_COLORED_MAGENTA_HALF_SLAB,WOOL_COLORED_MAGENTA_DOUBLE_SLAB));
         ForgeRegistries.BLOCKS.register(WOOL_COLORED_MAGENTA_DOUBLE_SLAB);*/
-        registerItem(ModItems.GRAINE_LIN);
+        /*registerItem(ModItems.GRAINE_LIN);
         registerItem(ModItems.GRAINE_CELERI);
         registerItem(ModItems.GRAINE_FENOUIL);
         registerItem(ModItems.GRAINE_FRAISE);
@@ -630,7 +622,7 @@ public class ModBlocks {
 
         //registerB(ModBlocks.CHAISE_CHENE, new ItemBlock(ModBlocks.CHAISE_CHENE));
 
-        registerItem(ModItems.GRAINE_DE_THE);
+        registerItem(ModItems.GRAINE_DE_THE);*/
 
 
 

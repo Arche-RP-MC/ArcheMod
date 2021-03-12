@@ -1,6 +1,5 @@
 package fr.archemod.blocks.signhrp;
 
-import net.minecraft.block.Block;
 import fr.archemod.ArcheMod;
 import fr.archemod.init.ModBlocks;
 import fr.archemod.init.ModItems;
