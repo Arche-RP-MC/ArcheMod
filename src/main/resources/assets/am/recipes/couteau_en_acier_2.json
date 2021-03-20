@@ -24,14 +24,14 @@
     },
     "G":
     {
-      "item": "am:marteau_ener",
+      "item": "am:marteau_en_fer",
       "data": 32767
     }
   },
 
   "result":
   {
-    "item": "am:couteau_en_acier",
+    "item": "am:couteau_acier",
     "count": 1
   }
 }

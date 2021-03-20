@@ -12,15 +12,18 @@
   {
     "C":
     {
-      "item": "am:pince"
+      "item": "am:pinces",
+      "data": 32767
     },
     "E":
     {
-      "item": "am:lime_en_fer"
+      "item": "am:lime_en_fer",
+      "data": 32767
     },
     "F":
     {
-      "item": "am:loupe"
+      "item": "am:loupe",
+      "data": 32767
     },
     "L":
     {

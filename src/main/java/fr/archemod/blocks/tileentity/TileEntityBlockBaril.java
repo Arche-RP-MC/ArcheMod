@@ -8,6 +8,8 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.tileentity.TileEntityLockableLoot;
 import net.minecraft.util.NonNullList;
 
+import java.util.Date;
+
 public class TileEntityBlockBaril extends TileEntity {
 
     private int quantity;
@@ -50,5 +52,20 @@ public class TileEntityBlockBaril extends TileEntity {
         compound.setInteger("quantity", quantity);
         compound.setString("type", type);
         return compound;
+    }
+
+    public NBTTagCompound getUpdateTag() {
+        NBTTagCompound nbt = new NBTTagCompound();
+        nbt.setInteger("quantity", this.getQuantity());
+        nbt.setString("type", type);
+
+        return nbt;
+    }
+
+    public void handleUpdateTag(NBTTagCompound nbt) {
+        super.handleUpdateTag(nbt);
+        this.quantity = nbt.getInteger("quantity");
+        this.type = nbt.getString("type");
+
     }
 }

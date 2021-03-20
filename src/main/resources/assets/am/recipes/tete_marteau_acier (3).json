@@ -12,15 +12,17 @@
   {
     "M":
     {
-      "item": "am:marteau_en_bronze"
+      "item": "am:marteau_en_bronze",
+      "data": 32767
     },
     "P":
     {
-      "item": "am:pinces"
+      "item": "am:pinces",
+      "data": 32767
     },
     "F":
     {
-      "item": "minecraft:iron_ingot"
+      "item": "am:lingot_acier"
     }
   },
 

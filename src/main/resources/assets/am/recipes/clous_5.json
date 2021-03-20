@@ -12,20 +12,16 @@
   {
     "J":
     {
-<<<<<<< HEAD:src/main/resources/assets/am/recipes/clous_5.json
+
       "item": "am:barre_fer"
-=======
-      "item": "am:marteau_en_fer"
->>>>>>> 61129680a90e562f94fed2c01906d51533861de4:src/main/resources/assets/am/recipes/tete_dague_bronze (3).json
+
     },
     "I":
     {
-<<<<<<< HEAD:src/main/resources/assets/am/recipes/clous_5.json
+
       "item": "am:pinces",
       "data": 32767
-=======
-      "item": "am:pinces"
->>>>>>> 61129680a90e562f94fed2c01906d51533861de4:src/main/resources/assets/am/recipes/tete_dague_bronze (3).json
+
     },
     "G":
     {

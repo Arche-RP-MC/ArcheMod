@@ -3,8 +3,8 @@
 
   "pattern":
   [
-    "   ",
-    " LF",
+    " N ",
+    "LNF",
     " N "
   ],
 
@@ -12,15 +12,17 @@
   {
     "N":
     {
-      "item": "am:bocal"
+      "item": "am:verre_en_fusion"
     },
     "F":
     {
-      "item": "am:canne_de_verrier"
+      "item": "am:canne_de_verrier",
+      "data": 32767
     },
     "L":
     {
-      "item": "am:pince"
+      "item": "am:pince",
+      "data": 32767
     }
   },
 

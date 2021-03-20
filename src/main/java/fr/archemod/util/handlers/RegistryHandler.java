@@ -1,7 +1,6 @@
 package fr.archemod.util.handlers;
 
 import fr.archemod.ArcheMod;
-import fr.archemod.blocks.render.SignHrpRender;
 import fr.archemod.blocks.tileentity.*;
 import fr.archemod.chat.capabilities.description.DescriptionCapability;
 import fr.archemod.chat.capabilities.indicator.ArcheChatCapability;
@@ -61,11 +60,8 @@ public class RegistryHandler {
     /**
      * Listen for the register event for creating custom blocks
      */
-    @SideOnly(Side.CLIENT)
-    public static void initTESR() {
-        ClientRegistry.bindTileEntitySpecialRenderer(TileEntitySignHrp.class,new SignHrpRender());
 
-    }
+
     @SubscribeEvent
     public static void onBlockRegister(RegistryEvent.Register<Block> event) {
         event.getRegistry().registerAll(ModBlocks.BLOCKS.toArray(new Block[0]));
@@ -76,10 +72,8 @@ public class RegistryHandler {
         GameRegistry.registerTileEntity(TileEntityEcrinABijoux.class, new ResourceLocation(Reference.MOD_ID,"TileEntityEcrinABijoux"));
         GameRegistry.registerTileEntity(TileEntityLightBlock.class, new ResourceLocation(Reference.MOD_ID,"TileEntityLightBlock"));
         GameRegistry.registerTileEntity(TileEntityFishCase.class, new ResourceLocation(Reference.MOD_ID, "TileEntityFishCase"));
-        GameRegistry.registerTileEntity(TileEntitySignHrp.class, new ResourceLocation(Reference.MOD_ID, ".TileEntitySignHrp"));
-
-        GameRegistry.registerTileEntity(TileEntityHrpSign.class, new ResourceLocation(Reference.MOD_ID, "TileEntityHrpSign"));
         GameRegistry.registerTileEntity(TileEntityBaril.class, new ResourceLocation(Reference.MOD_ID, "TileEntityBaril"));
+        GameRegistry.registerTileEntity(TileEntityBlockBaril.class, new ResourceLocation(Reference.MOD_ID, "TileEntityBlockBaril"));
 
         ModBlocks.init();
         ModBlocks.register();

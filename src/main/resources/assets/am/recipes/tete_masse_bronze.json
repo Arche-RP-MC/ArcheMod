@@ -12,7 +12,8 @@
   {
     "M":
     {
-      "item": "am:marteau_en_bronze"
+      "item": "am:marteau_en_bronze",
+      "data": 32767
     },
     "P":
     {

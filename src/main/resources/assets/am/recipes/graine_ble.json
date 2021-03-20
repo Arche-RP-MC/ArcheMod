@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "pattern": [
+  "   ",
+  "AB ",
+  "   "
+ ],
+ "key": {
+  "A": {
+   "item": "am:mortier_pilon_en_bois",
+   "data": 32767
+  },
+  "B": {
+   "item": "minecraft:wheat"
+  }
+ },
+ "result": {
+  "item": "minecraft:wheat_seeds",
+  "count": 20
+ }
+}

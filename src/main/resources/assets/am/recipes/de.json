@@ -20,11 +20,10 @@
     },
     "G":
     {
-<<<<<<< HEAD
-      "item": "am:marteau_burin_en_fer"
-=======
-      "item": "archemod:ironchisel"
->>>>>>> 61129680a90e562f94fed2c01906d51533861de4
+
+      "item": "am:ciseaux_a_bois",
+      "data": 32767
+
     }
   },
 

@@ -4,7 +4,7 @@
   "pattern":
   [
     "   ",
-    " A ",
+    " P ",
     " M "
   ],
 
@@ -17,15 +17,15 @@
     },
    "P":
     {
-      "item": "am:celeri"
+      "item": "am:celeri_branche"
     }
     
   },
 
   "result":
   {
-    "item": "graine_celeri",
+    "item": "am:graine_celeri",
     "data": 0,
-    "count": 2
+    "count": 6
   }
 }

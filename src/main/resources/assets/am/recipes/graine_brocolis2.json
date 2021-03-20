@@ -4,7 +4,7 @@
   "pattern":
   [
     "   ",
-    " A ",
+    " P ",
     " M "
   ],
 
@@ -17,15 +17,15 @@
     },
     "P":
     {
-      "item": "am:brocolis"
+      "item": "am:brocoli"
     }
     
   },
 
   "result":
   {
-    "item": "graine_brocolis",
+    "item": "am:graine_brocolis",
     "data": 0,
-    "count": 2
+    "count": 6
   }
 }

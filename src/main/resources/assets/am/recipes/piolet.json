@@ -3,38 +3,35 @@
 
   "pattern":
   [
-    "   ",
-    "HD ",
-    "MCG"
+    " J ",
+    "MGM",
+    "I I"
   ],
 
   "key":
   {
-    "H":
+    "J":
     {
-      "item": "am:tete_dague_bronze"
-    },
-    "C":
-    {
-      "item": "am:pince"
+      "item": "am:tete_pioche_fer"
     },
     "M":
     {
       "item": "am:manche"
     },
-    "D":
+    "I":
     {
       "item": "am:clous"
     },
     "G":
     {
-      "item": "am:marteau_en_fer"
+      "item": "am:marteau_en_bronze",
+      "data": 32767
     }
   },
 
   "result":
   {
-    "item": "am:dague",
-    "count": 1
+    "item": "am:piolet",
+    "count": 2
   }
 }

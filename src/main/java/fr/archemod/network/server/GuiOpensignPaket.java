@@ -1,7 +1,6 @@
 package fr.archemod.network.server;
 
 import fr.archemod.blocks.tileentity.TileEntitySignHrp;
-import fr.archemod.gui.GuiEditSignHrp;
 import io.netty.buffer.ByteBuf;
 import net.minecraft.client.Minecraft;
 import net.minecraft.network.PacketBuffer;
@@ -63,7 +62,6 @@ public class GuiOpensignPaket implements IMessage {
 
             tileEntity.markDirty();
 
-            Minecraft.getMinecraft().displayGuiScreen(new GuiEditSignHrp((TileEntitySignHrp) tileEntity));
 
             return null;
         }

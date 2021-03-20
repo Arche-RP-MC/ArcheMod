@@ -12,7 +12,8 @@
   {
     "H":
     {
-      "item": "am:marteau_en_fer"
+      "item": "am:marteau_en_fer",
+      "data": 32767
     },
     "T":
     {

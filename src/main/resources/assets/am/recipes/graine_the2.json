@@ -4,7 +4,7 @@
   "pattern":
   [
     "   ",
-    " A ",
+    " P ",
     " M "
   ],
 
@@ -17,15 +17,15 @@
     },
     "P":
     {
-      "item": "am:the"
+      "item": "am:feuille_de_the"
     }
     
   },
 
   "result":
   {
-    "item": "graine_the",
+    "item": "am:graine_the",
     "data": 0,
-    "count": 2
+    "count": 6
   }
 }

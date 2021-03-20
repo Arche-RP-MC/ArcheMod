@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "am:items/graine_orge_3"
+    "layer0": "am:items/graine_vigne_blanche"
   }
 }

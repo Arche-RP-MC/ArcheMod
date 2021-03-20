@@ -3,9 +3,9 @@
 
   "pattern":
   [
-    " NN",
-    "FNN",
-    " NN"
+    "   ",
+    "FN ",
+    "   "
   ],
 
   "key":

@@ -1,29 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
-    "FFF",
-    "FFF",
-    " R "
-  ],
-
-  "key":
-  {
-    "F":
-    {
-      "item": "am:cristal_de_sel"
-    },
-    "R":
-    {
-      "item": "am:mortier_pilon",
-      "data": 32767
-    }
+ "type": "minecraft:crafting_shaped",
+ "pattern": [
+  "   ",
+  "AB ",
+  "   "
+ ],
+ "key": {
+  "A": {
+   "item": "am:marteau_en_bronze",
+   "data": 32767
   },
-
-  "result":
-  {
-    "item": "am:sel",
-    "count": 6
+  "B": {
+   "item": "am:bloc_minerai_sel"
   }
-}
+ },
+  "result": {
+   "item": "am:cristal_de_sel",
+   "count": 4
+  }
+ }

@@ -13,7 +13,7 @@ buildscript {
 apply plugin: 'net.minecraftforge.gradle'
 
 group = 'fr'
-version = '3.6'
+version = '3.7'
 archivesBaseName = 'ArcheMod'
 
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8'

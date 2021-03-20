@@ -1,6 +1,7 @@
 package fr.archemod.items.epuisette;
 
 import fr.archemod.ArcheMod;
+import fr.archemod.init.ModBlocks;
 import fr.archemod.init.ModItems;
 import fr.archemod.items.ItemBase;
 import fr.archemod.items.tools.ToolSword;
@@ -48,7 +49,7 @@ public class Epuisette extends ToolSword {
 
             switch (nombreAleatoire){
                 case 1:
-                    player.dropItem(ModItems.PELUCHE_POULPE, 1);
+                    player.dropItem(ModItems.CREVETTE_GRISE, 1);
                     break;
                 case 2:
                     player.dropItem(ModItems.CREVETTE_ROSE, 1);
@@ -59,6 +60,13 @@ public class Epuisette extends ToolSword {
                 case 4:
                     player.dropItem(ModItems.ECREVISSE, 1);
                     break;
+                case 5:
+                    player.dropItem(ModItems.ECREVISSE_ORANGE, 1);
+                    break;
+                case 6:
+                    player.dropItem(ModItems.POULPE, 1);
+                    break;
+
             }
 
         }

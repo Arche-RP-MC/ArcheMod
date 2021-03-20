@@ -16,11 +16,13 @@
     },
     "F":
     {
-      "item": "am:lime_en_bronze"
+      "item": "am:lime_en_bronze",
+      "data": 32767
     },
     "L":
     {
-      "item": "am:pince"
+      "item": "am:pinces",
+      "data": 32767
     }
   },
 

@@ -11,15 +11,16 @@
   "key":{
     "P":
     {
-      "item": "am:pince"
+      "item": "am:pinces"
     },
     "F":
     {
-      "item": "am:fiole"
+      "item": "am:verre_en_fusion"
     },
     "L":
     {
-      "item": "am:canne_de_verrier"
+      "item": "am:canne_de_verrier",
+      "data": 32767
     }
   },
 

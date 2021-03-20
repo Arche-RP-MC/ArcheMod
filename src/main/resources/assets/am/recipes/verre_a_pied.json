@@ -16,12 +16,10 @@
     },
     "C":
     {
-      "item": "am:canne_de_verrier"
+      "item": "am:canne_de_verrier",
+      "data": 32767
     },
-    "I":
-    {
-      "item": "minecraft:paper"
-    },
+
     "V":
     {
       "item": "am:verre_en_fusion"

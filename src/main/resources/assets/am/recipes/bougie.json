@@ -4,15 +4,15 @@
   "pattern":
   [
     "   ",
-    " J ",
-    "PPP"
+    "PJP",
+    "   "
   ],
 
   "key":
   {
     "J":
     {
-      "item": "am:bobine_de_chanvre"
+      "item": "minecraft:string"
     },
     "P":
     {
@@ -22,7 +22,7 @@
 
   "result":
   {
-    "item": "am:bougie",
-    "count": 3
+    "item": "am:candle",
+    "count": 6
   }
 }

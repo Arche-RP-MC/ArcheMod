@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "HTC",
+    "PMX",
+    "MC "
+  ],
+
+  "key":
+  {
+    "H":
+    {
+      "item": "am:marteau_en_bronze",
+      "data": 32767
+    },
+    "T":
+    {
+      "item": "am:tete_de_hallebarde"
+    },
+    "C":
+    {
+      "item": "am:clous"
+    },
+    "P":
+    {
+      "item": "am:pinces"
+    },
+    "M":
+    {
+      "item": "am:manche"
+    },
+    "X":
+    {
+      "item": "am:tete_de_marteau"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:hache_d_armes_en_acier",
+    "count": 1
+  }
+}

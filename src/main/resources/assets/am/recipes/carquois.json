@@ -12,15 +12,16 @@
   {
     "N":
     {
-      "item": "am:laniere"
+      "item": "am:laniere_de_cuir"
     },
     "P":
     {
-      "item": "am:ciseaux_de_couture"
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
     },
     "G":
     {
-      "item": "minecraft:leather"
+      "item": "am:cuir_tanne"
     }
   },
 

@@ -12,7 +12,7 @@
   {
     "H":
     {
-      "item": "am:cristal_de_sel"
+      "item": "am:sel"
     },
     "J":
     {
@@ -20,7 +20,8 @@
     },
     "G":
     {
-      "item": "am:couteau_en_acier"
+      "item": "am:couteau_en_acier",
+      "data": 32767
     }
   },
 

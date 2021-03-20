@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " J ",
+    "MGM",
+    "I I"
+  ],
+
+  "key":
+  {
+    "J":
+    {
+      "item": "am:tete_pioche_fer"
+    },
+    "M":
+    {
+      "item": "am:manche"
+    },
+    "I":
+    {
+      "item": "am:clous"
+    },
+    "G":
+    {
+      "item": "am:marteau_en_fer",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:piolet",
+    "count": 2
+  }
+}

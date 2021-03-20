@@ -4,7 +4,7 @@
   "pattern":
   [
     "   ",
-    " A ",
+    " P ",
     " M "
   ],
 
@@ -24,8 +24,8 @@
 
   "result":
   {
-    "item": "graine_orge",
+    "item": "am:graine_orge",
     "data": 0,
-    "count": 2
+    "count": 15
   }
 }

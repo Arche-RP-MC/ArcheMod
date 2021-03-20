@@ -49,10 +49,6 @@ public class HRPCommand extends CommandBase {
                 player.addItemStackToInventory(new ItemStack(ModBlocks.PLACARD_HRP));
                 return;
             }
-            if(args[0].equalsIgnoreCase("sign")){
-                player.addItemStackToInventory(new ItemStack(ModItems.sign_hrp));
-                return;
-            }
 
             if(args[0].equalsIgnoreCase("eau")){
                 player.addItemStackToInventory(new ItemStack(ModBlocks.TACHE_EAU));
@@ -79,10 +75,7 @@ public class HRPCommand extends CommandBase {
                 player.addItemStackToInventory(new ItemStack(ModBlocks.TACHE_DE_SANG));
                 return;
             }
-            if(args[0].equalsIgnoreCase("sign")){
-                player.addItemStackToInventory(new ItemStack(ModBlocks.standing_sign_hrp));
-                return;
-            }
+
         }
     }
 

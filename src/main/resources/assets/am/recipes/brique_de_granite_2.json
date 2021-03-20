@@ -3,20 +3,21 @@
 
   "pattern":
   [
-    " NN",
-    "FNN",
-    " NN"
+    "   ",
+    "FN ",
+    "   "
   ],
 
   "key":
   {
     "N":
     {
-      "item": "am:caillou_de_granite"
+      "item": "am:caillou_granite"
     },
     "F":
     {
-      "item": "am:lime_en_fer"
+      "item": "am:lime_en_fer",
+      "data": 32767
     }
   },
 

@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "NNN",
+    "MFP",
+    "   "
+  ],
+
+  "key":
+  {
+    "M":
+    {
+      "item": "am:marteau_en_bronze",
+      "data": 32767
+    },
+    "N":
+    {
+      "item": "am:barre_fer"
+
+    },
+    "P":
+    {
+      "item": "am:clou"
+    },
+    "F":
+    {
+      "item": "am:manche"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:tete_fourche_fer",
+    "count": 1
+  }
+}

@@ -12,20 +12,15 @@
   {
     "J":
     {
-<<<<<<< HEAD:src/main/resources/assets/am/recipes/clous_8.json
       "item": "am:barre_bronze"
-=======
-      "item": "am:marteau_en_bronze"
->>>>>>> 61129680a90e562f94fed2c01906d51533861de4:src/main/resources/assets/am/recipes/tete_epee_bronze.json
+
     },
     "I":
     {
-<<<<<<< HEAD:src/main/resources/assets/am/recipes/clous_8.json
+
       "item": "am:pinces",
       "data": 32767
-=======
-      "item": "am:pinces"
->>>>>>> 61129680a90e562f94fed2c01906d51533861de4:src/main/resources/assets/am/recipes/tete_epee_bronze.json
+
     },
     "G":
     {
