@@ -1,4 +1,4 @@
-/*package fr.archemod.blocks;
+package fr.archemod.blocks;
 
 import fr.archemod.ArcheMod;
 import fr.archemod.blocks.baril.BarilType;
@@ -34,36 +34,26 @@ import java.util.Random;
 
 public class BlockBaril extends BlockBase implements ITileEntityProvider {
 
-    public static final PropertyInteger SIZE = PropertyInteger.create("size", 0, 15);
+    //public static final PropertyInteger SIZE = PropertyInteger.create("size", 0, 15);
 
 
     public BlockBaril(String name, Material material, float hardness, float resistance, SoundType soundType) {
         super(name, material, hardness, resistance, soundType);
         setTickRandomly(true);
         setCreativeTab(ArcheMod.archeCreativeTabs);
-        setDefaultState(this.blockState.getBaseState().withProperty((IProperty) SIZE, Integer.valueOf(0)));
+    }
+
+    @Override
+    public TileEntity createNewTileEntity(World worldIn, int meta) {
+        return new TileEntityBlockBaril(0, BarilType.VIDE);
     }
 
 
-    protected PropertyInteger getSizeProperty() {
-        return SIZE;
-    }
-
-    public IBlockState getStateFromMet(int meta) {
-        return getDefaultState().withProperty((IProperty) SIZE, Integer.valueOf(meta));
-    }
-
-    public int getMetaFromState(IBlockState state) {
-        return ((Integer) state.getValue((IProperty) SIZE)).intValue();
-    }
 
     public int damageDropped(IBlockState state) {
         return 0;
     }
 
-    protected BlockStateContainer createBlockState() {
-        return new BlockStateContainer(this, new IProperty[]{(IProperty) SIZE});
-    }
 
     public EnumBlockRenderType getRenderType(IBlockState state) {
         return EnumBlockRenderType.MODEL;
@@ -85,18 +75,22 @@ public class BlockBaril extends BlockBase implements ITileEntityProvider {
         if (entity instanceof TileEntityBlockBaril) {
 
             TileEntityBlockBaril blockBaril = (TileEntityBlockBaril) entity;
-            if (bariltarget.equals(BarilType.VIDE)) {
+            if (bariltarget == BarilType.VIDE) {
+
+                playerIn.sendMessage(new TextComponentString("Baril Vide"));
 
                 if (blockBaril.getQuantity() >= 15) {
+                    playerIn.sendMessage(new TextComponentString("Baril Vide mais plein (bug)"));
                     return;
                 }
 
+                playerIn.sendMessage(new TextComponentString("Baril mis a jour"));
 
                 blockBaril.setQuantity(blockBaril.getQuantity() + value);
                 blockBaril.setType(newBaril.name());
 
                 for (int i = 0; i < playerIn.inventory.getSizeInventory(); i++) {
-                    if (playerIn.inventory.getStackInSlot(i) == itemClicked) {
+                    if (playerIn.inventory.getStackInSlot(i).getItem() == itemClicked.getItem()) {
                         playerIn.replaceItemInInventory(i, itemGived);
                     }
                 }
@@ -106,13 +100,19 @@ public class BlockBaril extends BlockBase implements ITileEntityProvider {
 
             if (value <= blockBaril.getQuantity()) {
 
+                playerIn.sendMessage(new TextComponentString("Nouveau Baril"));
 
-                blockBaril.setType(BarilType.VIDE.name());
+                blockBaril.setType(newBaril.name());
                 blockBaril.setQuantity(blockBaril.getQuantity() - value);
 
+                if(blockBaril.getQuantity() == 0){
+                    blockBaril.setType(BarilType.VIDE.name());
+                }
+
                 for (int i = 0; i < playerIn.inventory.getSizeInventory(); i++) {
-                    if (playerIn.inventory.getStackInSlot(i) == itemClicked) {
+                    if (playerIn.inventory.getStackInSlot(i).getItem() == itemClicked.getItem()) {
                         playerIn.replaceItemInInventory(i, itemGived);
+
                     }
                 }
 
@@ -157,7 +157,7 @@ public class BlockBaril extends BlockBase implements ITileEntityProvider {
 
                         //           baril visé joueur  new baril     item cliqué par le joueur            item reçus                 valeur du liquide                  remplir ou vider
                         setLiquidContainer(barilTarget, BarilType.EAU, new ItemStack(Items.WATER_BUCKET), new ItemStack(Items.BUCKET), 15, worldIn, pos, playerIn, true);
-
+                        return true;
                     }
 
                     if (item.getItem() == Items.MILK_BUCKET) {
@@ -613,14 +613,9 @@ public class BlockBaril extends BlockBase implements ITileEntityProvider {
     }
 
 
-    @Nullable
-    @Override
-    public TileEntity createNewTileEntity(World worldIn, int meta) {
-        return null;
-    }
+
 }
 
 
 
 
-*/

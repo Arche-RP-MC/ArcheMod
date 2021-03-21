@@ -521,7 +521,7 @@ public class ModBlocks {
     public static final Block FLOWER_POT = new BlockFlowerPot("flower_pot_am");
 
     //BARIL \!/ Ajouter les interactions avec d'autres objets et liquides dans la classe directement en suivant l'exemple de l'eau
-    //public static final Block BARIL_VIDE = new BlockBaril("baril_vide", Material.WOOD, 1.5F, 1.5f, SoundType.WOOD);
+    public static final Block BARIL_VIDE = new BlockBaril("baril_vide", Material.WOOD, 1.5F, 1.5f, SoundType.WOOD);
 
 
     //CONTENEUR \!/ Il faut recréer Block, TileEntity, Container, Inventory, GUI, Registry dans util.handlers.RegistryHandler et gérer le GUIid du Block (onBlockActivated) dans le switch case du GUIHandler

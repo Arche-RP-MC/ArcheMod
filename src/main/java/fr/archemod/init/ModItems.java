@@ -1130,7 +1130,7 @@ public class ModItems {
 
     //seaux et verres
 
-    /*public static final Item SEAU_D_EAU_EN_BOIS = new ItemBase("seau_d_eau_en_bois");
+    public static final Item SEAU_D_EAU_EN_BOIS = new ItemBase("seau_d_eau_en_bois");
     public static final Item SEAU_EN_BOIS = new ItemBase("seau_en_bois");
     public static final Item VERRE_A_PIED_EAU = new ItemBase("verre_a_pied_eau");
     public static final Item CHOPPE_EN_VERRE_EAU = new ItemBase("choppe_en_verre_eau");
@@ -1208,7 +1208,7 @@ public class ModItems {
     public static final Item CHOPPE_EN_ARGILE_HYDROMEL = new ItemBase("choppe_en_argile_hydromel");
     public static final Item GROSSE_BOUTEILLE_DE_HYDROMEL = new ItemBase("grosse_bouteille_hydromel");
     public static final Item BOUTEILLE_DE_HYDROMEL= new ItemBase("bouteille_de_hydromel");
-    public static final Item BOCAL_DE_HYDROMEL = new ItemBase("bocal_de_hydromel");*/
+    public static final Item BOCAL_DE_HYDROMEL = new ItemBase("bocal_de_hydromel");
 
 
 }
