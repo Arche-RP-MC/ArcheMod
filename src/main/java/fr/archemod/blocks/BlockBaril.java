@@ -77,45 +77,59 @@ public class BlockBaril extends BlockBase implements ITileEntityProvider {
             TileEntityBlockBaril blockBaril = (TileEntityBlockBaril) entity;
             if (bariltarget == BarilType.VIDE) {
 
-                playerIn.sendMessage(new TextComponentString("Baril Vide"));
-
                 if (blockBaril.getQuantity() >= 15) {
-                    playerIn.sendMessage(new TextComponentString("Baril Vide mais plein (bug)"));
                     return;
                 }
 
-                playerIn.sendMessage(new TextComponentString("Baril mis a jour"));
+                if(!remplir){
+                    return;
+                }
+
 
                 blockBaril.setQuantity(blockBaril.getQuantity() + value);
                 blockBaril.setType(newBaril.name());
 
-                for (int i = 0; i < playerIn.inventory.getSizeInventory(); i++) {
-                    if (playerIn.inventory.getStackInSlot(i).getItem() == itemClicked.getItem()) {
-                        playerIn.replaceItemInInventory(i, itemGived);
-                    }
+                int countGived = playerIn.getHeldItemMainhand().getCount();
+
+                if(playerIn.getHeldItemMainhand().getCount() >= 1){
+                    countGived = countGived - 1;
                 }
-                return;
-            }
+
+                playerIn.inventory.addItemStackToInventory(itemGived);
+
+                playerIn.replaceItemInInventory(playerIn.inventory.getSlotFor(
+                        playerIn.getHeldItemMainhand()),
+                        new ItemStack(playerIn.getHeldItemMainhand().getItem(), countGived)
+                );
 
 
-            if (value <= blockBaril.getQuantity()) {
 
-                playerIn.sendMessage(new TextComponentString("Nouveau Baril"));
 
+            }else if (value <= blockBaril.getQuantity()) {
+
+                int newValue = blockBaril.getQuantity() - value;
                 blockBaril.setType(newBaril.name());
-                blockBaril.setQuantity(blockBaril.getQuantity() - value);
+                blockBaril.setQuantity(newValue);
 
-                if(blockBaril.getQuantity() == 0){
+                if(blockBaril.getQuantity() <= 0){
                     blockBaril.setType(BarilType.VIDE.name());
                 }
 
-                for (int i = 0; i < playerIn.inventory.getSizeInventory(); i++) {
-                    if (playerIn.inventory.getStackInSlot(i).getItem() == itemClicked.getItem()) {
-                        playerIn.replaceItemInInventory(i, itemGived);
 
-                    }
+
+
+                int countGived = playerIn.getHeldItemMainhand().getCount();
+
+                if(playerIn.getHeldItemMainhand().getCount() >= 1){
+                    countGived = countGived - 1;
                 }
 
+                playerIn.inventory.addItemStackToInventory(itemGived);
+
+                playerIn.replaceItemInInventory(playerIn.inventory.getSlotFor(
+                        playerIn.getHeldItemMainhand()),
+                        new ItemStack(playerIn.getHeldItemMainhand().getItem(), countGived)
+                );
 
             }
 
@@ -129,7 +143,7 @@ public class BlockBaril extends BlockBase implements ITileEntityProvider {
                     TileEntity entity = worldIn.getTileEntity(pos);
 
                     if (!(entity instanceof TileEntityBlockBaril)) {
-                        return true;
+
                     }
 
                 TileEntityBlockBaril blockBaril = (TileEntityBlockBaril) entity;
@@ -137,10 +151,10 @@ public class BlockBaril extends BlockBase implements ITileEntityProvider {
                 int size = blockBaril.getQuantity();
                 if (!worldIn.isRemote)
                     if (size > 0) {
-                        playerIn.sendMessage((new TextComponentString(this.getLocalizedName())));
+                        playerIn.sendMessage((new TextComponentString(blockBaril.getType())));
                         playerIn.sendMessage((new TextComponentString("Le fut contient encore " + size + " verres.")).setStyle((new Style()).setColor(TextFormatting.YELLOW)));
                     } else {
-                        playerIn.sendMessage((new TextComponentString("Le fut est vide")).setStyle((new Style()).setColor(TextFormatting.YELLOW)));
+                        playerIn.sendMessage((new TextComponentString("Le fût est vide")).setStyle((new Style()).setColor(TextFormatting.YELLOW)));
                     }
             } else {
                 TileEntity entity = worldIn.getTileEntity(pos);
@@ -157,110 +171,110 @@ public class BlockBaril extends BlockBase implements ITileEntityProvider {
 
                         //           baril visé joueur  new baril     item cliqué par le joueur            item reçus                 valeur du liquide                  remplir ou vider
                         setLiquidContainer(barilTarget, BarilType.EAU, new ItemStack(Items.WATER_BUCKET), new ItemStack(Items.BUCKET), 15, worldIn, pos, playerIn, true);
-                        return true;
+
                     }
 
                     if (item.getItem() == Items.MILK_BUCKET) {
 
                         setLiquidContainer(barilTarget, BarilType.LAIT, new ItemStack(Items.MILK_BUCKET), new ItemStack(Items.BUCKET), 15, worldIn, pos, playerIn, true);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.SEAU_DE_BIERE_BRUNE) {
 
                         setLiquidContainer(barilTarget, BarilType.BIERE_BRUNE, new ItemStack(ModItems.SEAU_DE_BIERE_BRUNE), new ItemStack(Items.BUCKET), 15, worldIn, pos, playerIn, true);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.SEAU_DE_BIERRE_BLONDE) {
 
                         setLiquidContainer(barilTarget, BarilType.BIERRE_BLONDE, new ItemStack(ModItems.SEAU_DE_BIERRE_BLONDE), new ItemStack(Items.BUCKET), 15, worldIn, pos, playerIn, true);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.SEAU_DE_BIERE_ROUSSE) {
 
                         setLiquidContainer(barilTarget, BarilType.BIERE_ROUSSE, new ItemStack(ModItems.SEAU_DE_BIERE_ROUSSE), new ItemStack(Items.BUCKET), 15, worldIn, pos, playerIn, true);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.SEAU_DE_VIN_BLANC) {
 
                         setLiquidContainer(barilTarget, BarilType.VIN_BLANC, new ItemStack(ModItems.SEAU_DE_VIN_BLANC), new ItemStack(Items.BUCKET), 15, worldIn, pos, playerIn, true);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.SEAU_DE_VIN_ROUGE) {
 
                         setLiquidContainer(barilTarget, BarilType.VIN_ROUGE, new ItemStack(ModItems.SEAU_DE_VIN_ROUGE), new ItemStack(Items.BUCKET), 15, worldIn, pos, playerIn, true);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.SEAU_DE_RHUM) {
 
                         setLiquidContainer(barilTarget, BarilType.RHUM, new ItemStack(ModItems.SEAU_DE_RHUM), new ItemStack(Items.BUCKET), 15, worldIn, pos, playerIn, true);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.SEAU_DE_HYDROMEL) {
 
                         setLiquidContainer(barilTarget, BarilType.HYDROMEL, new ItemStack(ModItems.SEAU_DE_HYDROMEL), new ItemStack(ModItems.SEAU_DE_HYDROMEL), 15, worldIn, pos, playerIn, true);
-                        return true;
+
                     }
 // SEAU EN BOIS
                     if (item.getItem() == ModItems.SEAU_D_EAU_EN_BOIS) {
 
                         //           baril visé joueur  new baril     item cliqué par le joueur            item reçus                 valeur du liquide                  remplir ou vider
                         setLiquidContainer(barilTarget, BarilType.EAU, new ItemStack(ModItems.SEAU_D_EAU_EN_BOIS), new ItemStack(ModItems.SEAU_EN_BOIS), 15, worldIn, pos, playerIn, true);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.SEAU_DE_LAIT_EN_BOIS) {
 
                         setLiquidContainer(barilTarget, BarilType.LAIT, new ItemStack(ModItems.SEAU_DE_LAIT_EN_BOIS), new ItemStack(ModItems.SEAU_EN_BOIS), 15, worldIn, pos, playerIn, true);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.SEAU_DE_BIERE_BRUNE_EN_BOIS) {
 
                         setLiquidContainer(barilTarget, BarilType.BIERE_BRUNE, new ItemStack(ModItems.SEAU_DE_BIERE_BRUNE_EN_BOIS), new ItemStack(ModItems.SEAU_EN_BOIS), 15, worldIn, pos, playerIn, true);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.SEAU_DE_BIERRE_BLONDE_EN_BOIS) {
 
                         setLiquidContainer(barilTarget, BarilType.BIERRE_BLONDE, new ItemStack(ModItems.SEAU_DE_BIERRE_BLONDE_EN_BOIS), new ItemStack(ModItems.SEAU_EN_BOIS), 15, worldIn, pos, playerIn, true);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.SEAU_DE_BIERE_ROUSSE_EN_BOIS) {
 
                         setLiquidContainer(barilTarget, BarilType.BIERE_ROUSSE, new ItemStack(ModItems.SEAU_DE_BIERE_ROUSSE_EN_BOIS), new ItemStack(ModItems.SEAU_EN_BOIS), 15, worldIn, pos, playerIn, true);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.SEAU_DE_VIN_BLANC_EN_BOIS) {
 
                         setLiquidContainer(barilTarget, BarilType.VIN_BLANC, new ItemStack(ModItems.SEAU_DE_VIN_BLANC_EN_BOIS), new ItemStack(ModItems.SEAU_EN_BOIS), 15, worldIn, pos, playerIn, true);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.SEAU_DE_VIN_ROUGE_EN_BOIS) {
 
                         setLiquidContainer(barilTarget, BarilType.VIN_ROUGE, new ItemStack(ModItems.SEAU_DE_VIN_ROUGE_EN_BOIS), new ItemStack(ModItems.SEAU_EN_BOIS), 15, worldIn, pos, playerIn, true);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.SEAU_DE_RHUM_EN_BOIS) {
 
                         setLiquidContainer(barilTarget, BarilType.RHUM, new ItemStack(ModItems.SEAU_DE_RHUM_EN_BOIS), new ItemStack(ModItems.SEAU_EN_BOIS), 15, worldIn, pos, playerIn, true);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.SEAU_DE_HYDROMEL_EN_BOIS) {
 
                         setLiquidContainer(barilTarget, BarilType.HYDROMEL, new ItemStack(ModItems.SEAU_DE_HYDROMEL_EN_BOIS), new ItemStack(ModItems.SEAU_EN_BOIS), 15, worldIn, pos, playerIn, true);
-                        return true;
+
                     }
 
 
@@ -269,111 +283,116 @@ public class BlockBaril extends BlockBase implements ITileEntityProvider {
 
                         //           baril visé joueur  new baril     item cliqué par le joueur            item reçus                 valeur du liquide                  remplir ou vider
                         setLiquidContainer(barilTarget,null, new ItemStack(ModItems.BOCAL), new ItemStack(ModItems.BOCAL_D_EAU), 2, worldIn, pos, playerIn, false);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.BOCAL) {
 
                         setLiquidContainer(barilTarget, BarilType.LAIT, new ItemStack(ModItems.BOCAL), new ItemStack(ModItems.BOCAL_DE_LAIT), 2, worldIn, pos, playerIn, false);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.BOCAL) {
 
                         setLiquidContainer(barilTarget, BarilType.BIERE_BRUNE, new ItemStack(ModItems.BOCAL), new ItemStack(ModItems.BOCAL_DE_BIERE_BRUNE), 2, worldIn, pos, playerIn, false);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.BOCAL) {
 
                         setLiquidContainer(barilTarget, BarilType.BIERRE_BLONDE, new ItemStack(ModItems.BOCAL), new ItemStack(ModItems.BOCAL_DE_BIERRE_BLONDE), 2, worldIn, pos, playerIn, false);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.BOCAL) {
 
                         setLiquidContainer(barilTarget, BarilType.BIERE_ROUSSE, new ItemStack(ModItems.BOCAL), new ItemStack(ModItems.BOCAL_DE_BIERE_ROUSSE), 2, worldIn, pos, playerIn, false);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.BOCAL) {
 
                         setLiquidContainer(barilTarget, BarilType.VIN_BLANC, new ItemStack(ModItems.BOCAL), new ItemStack(ModItems.BOCAL_DE_VIN_BLANC), 2, worldIn, pos, playerIn, false);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.BOCAL) {
 
                         setLiquidContainer(barilTarget, BarilType.VIN_ROUGE, new ItemStack(ModItems.BOCAL), new ItemStack(ModItems.BOCAL_DE_VIN_ROUGE), 2, worldIn, pos, playerIn, false);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.BOCAL) {
 
                         setLiquidContainer(barilTarget, BarilType.RHUM, new ItemStack(ModItems.BOCAL), new ItemStack(ModItems.BOCAL_DE_RHUM), 2, worldIn, pos, playerIn, false);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.BOCAL) {
 
                         setLiquidContainer(barilTarget, BarilType.HYDROMEL, new ItemStack(ModItems.BOCAL), new ItemStack(ModItems.BOCAL_DE_HYDROMEL), 2, worldIn, pos, playerIn, false);
-                        return true;
+
                     }
 
 // VERRE A PIED
                     if (item.getItem() == ModItems.VERRE_A_PIED) {
 
-                        //           baril visé joueur  new baril     item cliqué par le joueur            item reçus                 valeur du liquide                  remplir ou vider
-                        setLiquidContainer(barilTarget, BarilType.EAU, new ItemStack(ModItems.VERRE_A_PIED), new ItemStack(ModItems.VERRE_A_PIED_EAU), 1, worldIn, pos, playerIn, false);
-                        return true;
+                        if(barilTarget == BarilType.EAU){
+                            //           baril visé joueur  new baril     item cliqué par le joueur            item reçus                 valeur du liquide                  remplir ou vider
+                            setLiquidContainer(barilTarget, BarilType.EAU, new ItemStack(ModItems.VERRE_A_PIED), new ItemStack(ModItems.VERRE_A_PIED_EAU), 1, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+
+                        if(barilTarget == BarilType.LAIT){
+                            setLiquidContainer(barilTarget, BarilType.LAIT, new ItemStack(ModItems.VERRE_A_PIED), new ItemStack(ModItems.VERRE_A_PIED_LAIT), 1, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+
+
                     }
 
-                    if (item.getItem() == ModItems.VERRE_A_PIED) {
 
-                        setLiquidContainer(barilTarget, BarilType.LAIT, new ItemStack(ModItems.VERRE_A_PIED), new ItemStack(ModItems.VERRE_A_PIED_LAIT), 1, worldIn, pos, playerIn, false);
-                        return true;
-                    }
 
                     if (item.getItem() == ModItems.VERRE_A_PIED) {
 
                         setLiquidContainer(barilTarget, BarilType.BIERE_BRUNE, new ItemStack(ModItems.VERRE_A_PIED), new ItemStack(ModItems.VERRE_A_PIED_BIERE_BRUNE), 1, worldIn, pos, playerIn, false);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.VERRE_A_PIED) {
 
                         setLiquidContainer(barilTarget, BarilType.BIERRE_BLONDE, new ItemStack(ModItems.VERRE_A_PIED), new ItemStack(ModItems.VERRE_A_PIED_BIERRE_BLONDE), 1, worldIn, pos, playerIn, false);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.VERRE_A_PIED) {
 
                         setLiquidContainer(barilTarget, BarilType.BIERE_ROUSSE, new ItemStack(ModItems.VERRE_A_PIED), new ItemStack(ModItems.VERRE_A_PIED_BIERE_ROUSSE), 1, worldIn, pos, playerIn, false);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.VERRE_A_PIED) {
 
                         setLiquidContainer(barilTarget, BarilType.VIN_BLANC, new ItemStack(ModItems.VERRE_A_PIED), new ItemStack(ModItems.VERRE_A_PIED_VIN_BLANC), 1, worldIn, pos, playerIn, false);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.VERRE_A_PIED) {
 
                         setLiquidContainer(barilTarget, BarilType.VIN_ROUGE, new ItemStack(ModItems.VERRE_A_PIED), new ItemStack(ModItems.VERRE_A_PIED_VIN_ROUGE), 1, worldIn, pos, playerIn, false);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.VERRE_A_PIED) {
 
                         setLiquidContainer(barilTarget, BarilType.RHUM, new ItemStack(ModItems.VERRE_A_PIED), new ItemStack(ModItems.VERRE_A_PIED_RHUM), 1, worldIn, pos, playerIn, false);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.VERRE_A_PIED) {
 
                         setLiquidContainer(barilTarget, BarilType.HYDROMEL, new ItemStack(ModItems.VERRE_A_PIED), new ItemStack(ModItems.VERRE_A_PIED_HYDROMEL), 1, worldIn, pos, playerIn, false);
-                        return true;
+
                     }
 
                     // CHOPPE EN VERRE
@@ -382,55 +401,55 @@ public class BlockBaril extends BlockBase implements ITileEntityProvider {
 
                         //           baril visé joueur  new baril     item cliqué par le joueur            item reçus                 valeur du liquide                  remplir ou vider
                         setLiquidContainer(barilTarget, BarilType.EAU, new ItemStack(ModItems.CHOPPE_EN_VERRE), new ItemStack(ModItems.CHOPPE_EN_VERRE_EAU), 1, worldIn, pos, playerIn, false);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.CHOPPE_EN_VERRE) {
 
                         setLiquidContainer(barilTarget, BarilType.LAIT, new ItemStack(ModItems.CHOPPE_EN_VERRE), new ItemStack(ModItems.CHOPPE_EN_VERRE_LAIT), 1, worldIn, pos, playerIn, false);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.CHOPPE_EN_VERRE) {
 
                         setLiquidContainer(barilTarget, BarilType.BIERE_BRUNE, new ItemStack(ModItems.CHOPPE_EN_VERRE), new ItemStack(ModItems.CHOPPE_EN_VERRE_BIERE_BRUNE), 1, worldIn, pos, playerIn, false);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.CHOPPE_EN_VERRE) {
 
                         setLiquidContainer(barilTarget, BarilType.BIERRE_BLONDE, new ItemStack(ModItems.CHOPPE_EN_VERRE), new ItemStack(ModItems.CHOPPE_EN_VERRE_BIERRE_BLONDE), 1, worldIn, pos, playerIn, false);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.CHOPPE_EN_VERRE) {
 
                         setLiquidContainer(barilTarget, BarilType.BIERE_ROUSSE, new ItemStack(ModItems.CHOPPE_EN_VERRE), new ItemStack(ModItems.CHOPPE_EN_VERRE_BIERE_ROUSSE), 1, worldIn, pos, playerIn, false);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.CHOPPE_EN_VERRE) {
 
                         setLiquidContainer(barilTarget, BarilType.VIN_BLANC, new ItemStack(ModItems.CHOPPE_EN_VERRE), new ItemStack(ModItems.CHOPPE_EN_VERRE_VIN_BLANC), 1, worldIn, pos, playerIn, false);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.CHOPPE_EN_VERRE) {
 
                         setLiquidContainer(barilTarget, BarilType.VIN_ROUGE, new ItemStack(ModItems.CHOPPE_EN_VERRE), new ItemStack(ModItems.CHOPPE_EN_VERRE_VIN_ROUGE), 1, worldIn, pos, playerIn, false);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.CHOPPE_EN_VERRE) {
 
                         setLiquidContainer(barilTarget, BarilType.RHUM, new ItemStack(ModItems.CHOPPE_EN_VERRE), new ItemStack(ModItems.CHOPPE_EN_VERRE_RHUM), 1, worldIn, pos, playerIn, false);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.CHOPPE_EN_VERRE) {
 
                         setLiquidContainer(barilTarget, BarilType.HYDROMEL, new ItemStack(ModItems.CHOPPE_EN_VERRE), new ItemStack(ModItems.CHOPPE_EN_VERRE_HYDROMEL), 1, worldIn, pos, playerIn, false);
-                        return true;
+
                     }
 
                     // CHOPPE EN ARGILE
@@ -439,55 +458,55 @@ public class BlockBaril extends BlockBase implements ITileEntityProvider {
 
                         //           baril visé joueur  new baril     item cliqué par le joueur            item reçus                 valeur du liquide                  remplir ou vider
                         setLiquidContainer(barilTarget, BarilType.EAU, new ItemStack(ModItems.CHOPPE_EN_ARGILE), new ItemStack(ModItems.CHOPPE_EN_ARGILE_EAU), 1, worldIn, pos, playerIn, false);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.CHOPPE_EN_ARGILE) {
 
                         setLiquidContainer(barilTarget, BarilType.LAIT, new ItemStack(ModItems.CHOPPE_EN_ARGILE), new ItemStack(ModItems.CHOPPE_EN_ARGILE_LAIT), 1, worldIn, pos, playerIn, false);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.CHOPPE_EN_ARGILE) {
 
                         setLiquidContainer(barilTarget, BarilType.BIERE_BRUNE, new ItemStack(ModItems.CHOPPE_EN_ARGILE), new ItemStack(ModItems.CHOPPE_EN_ARGILE_BIERE_BRUNE), 1, worldIn, pos, playerIn, false);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.CHOPPE_EN_ARGILE) {
 
                         setLiquidContainer(barilTarget, BarilType.BIERRE_BLONDE, new ItemStack(ModItems.CHOPPE_EN_ARGILE), new ItemStack(ModItems.CHOPPE_EN_ARGILE_BIERRE_BLONDE), 1, worldIn, pos, playerIn, false);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.CHOPPE_EN_ARGILE) {
 
                         setLiquidContainer(barilTarget, BarilType.BIERE_ROUSSE, new ItemStack(ModItems.CHOPPE_EN_ARGILE), new ItemStack(ModItems.CHOPPE_EN_ARGILE_BIERE_ROUSSE), 1, worldIn, pos, playerIn, false);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.CHOPPE_EN_ARGILE) {
 
                         setLiquidContainer(barilTarget, BarilType.VIN_BLANC, new ItemStack(ModItems.CHOPPE_EN_ARGILE), new ItemStack(ModItems.CHOPPE_EN_ARGILE_VIN_BLANC), 1, worldIn, pos, playerIn, false);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.CHOPPE_EN_ARGILE) {
 
                         setLiquidContainer(barilTarget, BarilType.VIN_ROUGE, new ItemStack(ModItems.CHOPPE_EN_ARGILE), new ItemStack(ModItems.CHOPPE_EN_ARGILE_VIN_ROUGE), 1, worldIn, pos, playerIn, false);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.CHOPPE_EN_ARGILE) {
 
                         setLiquidContainer(barilTarget, BarilType.RHUM, new ItemStack(ModItems.CHOPPE_EN_ARGILE), new ItemStack(ModItems.CHOPPE_EN_ARGILE_RHUM), 1, worldIn, pos, playerIn, false);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.CHOPPE_EN_ARGILE) {
 
                         setLiquidContainer(barilTarget, BarilType.HYDROMEL, new ItemStack(ModItems.CHOPPE_EN_ARGILE), new ItemStack(ModItems.CHOPPE_EN_ARGILE_HYDROMEL), 1, worldIn, pos, playerIn, false);
-                        return true;
+
                     }
 
                     // BOUTEILLE EN VERRE
@@ -496,55 +515,55 @@ public class BlockBaril extends BlockBase implements ITileEntityProvider {
 
                         //           baril visé joueur  new baril     item cliqué par le joueur            item reçus                 valeur du liquide                  remplir ou vider
                         setLiquidContainer(barilTarget, BarilType.EAU, new ItemStack(ModItems.BOUTEILLE_VIDE), new ItemStack(ModItems.BOUTEILLE_D_EAU), 5, worldIn, pos, playerIn, false);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.BOUTEILLE_VIDE) {
 
                         setLiquidContainer(barilTarget, BarilType.LAIT, new ItemStack(ModItems.BOUTEILLE_VIDE), new ItemStack(ModItems.BOUTEILLE_DE_LAIT), 5, worldIn, pos, playerIn, false);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.BOUTEILLE_VIDE) {
 
                         setLiquidContainer(barilTarget, BarilType.BIERE_BRUNE, new ItemStack(ModItems.BOUTEILLE_VIDE), new ItemStack(ModItems.BOUTEILLE_DE_BIERE_BRUNE), 5, worldIn, pos, playerIn, false);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.BOUTEILLE_VIDE) {
 
                         setLiquidContainer(barilTarget, BarilType.BIERRE_BLONDE, new ItemStack(ModItems.BOUTEILLE_VIDE), new ItemStack(ModItems.BOUTEILLE_DE_BIERRE_BLONDE), 5, worldIn, pos, playerIn, false);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.BOUTEILLE_VIDE) {
 
                         setLiquidContainer(barilTarget, BarilType.BIERE_ROUSSE, new ItemStack(ModItems.BOUTEILLE_VIDE), new ItemStack(ModItems.BOUTEILLE_DE_BIERE_ROUSSE), 5, worldIn, pos, playerIn, false);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.BOUTEILLE_VIDE) {
 
                         setLiquidContainer(barilTarget, BarilType.VIN_BLANC, new ItemStack(ModItems.BOUTEILLE_VIDE), new ItemStack(ModItems.BOUTEILLE_DE_VIN_BLANC), 5, worldIn, pos, playerIn, false);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.BOUTEILLE_VIDE) {
 
                         setLiquidContainer(barilTarget, BarilType.VIN_ROUGE, new ItemStack(ModItems.BOUTEILLE_VIDE), new ItemStack(ModItems.BOUTEILLE_DE_VIN_ROUGE), 5, worldIn, pos, playerIn, false);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.BOUTEILLE_VIDE) {
 
                         setLiquidContainer(barilTarget, BarilType.RHUM, new ItemStack(ModItems.BOUTEILLE_VIDE), new ItemStack(ModItems.BOUTEILLE_DE_RHUM), 5, worldIn, pos, playerIn, false);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.BOUTEILLE_VIDE) {
 
                         setLiquidContainer(barilTarget, BarilType.HYDROMEL, new ItemStack(ModItems.BOUTEILLE_VIDE), new ItemStack(ModItems.BOUTEILLE_DE_HYDROMEL), 5, worldIn, pos, playerIn, false);
-                        return true;
+
                     }
 
                     // GROSSE BOUTEILLE EN VERRE
@@ -553,55 +572,55 @@ public class BlockBaril extends BlockBase implements ITileEntityProvider {
 
                         //           baril visé joueur  new baril     item cliqué par le joueur            item reçus                 valeur du liquide                  remplir ou vider
                         setLiquidContainer(barilTarget, BarilType.EAU, new ItemStack(ModItems.GROSSE_BOUTEILLE_VIDE), new ItemStack(ModItems.GROSSE_BOUTEILLE_D_EAU), 7, worldIn, pos, playerIn, false);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.GROSSE_BOUTEILLE_VIDE) {
 
                         setLiquidContainer(barilTarget, BarilType.LAIT, new ItemStack(ModItems.GROSSE_BOUTEILLE_VIDE), new ItemStack(ModItems.GROSSE_BOUTEILLE_DE_LAIT), 7, worldIn, pos, playerIn, false);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.GROSSE_BOUTEILLE_VIDE) {
 
                         setLiquidContainer(barilTarget, BarilType.BIERE_BRUNE, new ItemStack(ModItems.GROSSE_BOUTEILLE_VIDE), new ItemStack(ModItems.GROSSE_BOUTEILLE_DE_BIERE_BRUNE), 7, worldIn, pos, playerIn, false);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.GROSSE_BOUTEILLE_VIDE) {
 
                         setLiquidContainer(barilTarget, BarilType.BIERRE_BLONDE, new ItemStack(ModItems.GROSSE_BOUTEILLE_VIDE), new ItemStack(ModItems.GROSSE_BOUTEILLE_DE_BIERRE_BLONDE), 7, worldIn, pos, playerIn, false);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.GROSSE_BOUTEILLE_VIDE) {
 
                         setLiquidContainer(barilTarget, BarilType.BIERE_ROUSSE, new ItemStack(ModItems.GROSSE_BOUTEILLE_VIDE), new ItemStack(ModItems.GROSSE_BOUTEILLE_DE_BIERE_ROUSSE), 7, worldIn, pos, playerIn, false);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.GROSSE_BOUTEILLE_VIDE) {
 
                         setLiquidContainer(barilTarget, BarilType.VIN_BLANC, new ItemStack(ModItems.GROSSE_BOUTEILLE_VIDE), new ItemStack(ModItems.GROSSE_BOUTEILLE_DE_VIN_BLANC), 7, worldIn, pos, playerIn, false);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.GROSSE_BOUTEILLE_VIDE) {
 
                         setLiquidContainer(barilTarget, BarilType.VIN_ROUGE, new ItemStack(ModItems.GROSSE_BOUTEILLE_VIDE), new ItemStack(ModItems.GROSSE_BOUTEILLE_DE_VIN_ROUGE), 7, worldIn, pos, playerIn, false);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.GROSSE_BOUTEILLE_VIDE) {
 
                         setLiquidContainer(barilTarget, BarilType.RHUM, new ItemStack(ModItems.GROSSE_BOUTEILLE_VIDE), new ItemStack(ModItems.GROSSE_BOUTEILLE_DE_RHUM), 7, worldIn, pos, playerIn, false);
-                        return true;
+
                     }
 
                     if (item.getItem() == ModItems.GROSSE_BOUTEILLE_VIDE) {
 
                         setLiquidContainer(barilTarget, BarilType.HYDROMEL, new ItemStack(ModItems.GROSSE_BOUTEILLE_VIDE), new ItemStack(ModItems.GROSSE_BOUTEILLE_DE_HYDROMEL), 7, worldIn, pos, playerIn, false);
-                        return true;
+
                     }
 
 
@@ -609,7 +628,9 @@ public class BlockBaril extends BlockBase implements ITileEntityProvider {
 
 
             }
+
         return true;
+
     }
 
 
