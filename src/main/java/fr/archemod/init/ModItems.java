@@ -1131,82 +1131,82 @@ public class ModItems {
     public static final Item SEAU_D_EAU_EN_BOIS = new ItemBase("seau_d_eau_en_bois");
     public static final Item SEAU_EN_BOIS = new ItemBase("seau_en_bois");
     public static final Item VERRE_A_PIED_EAU = new VerrePlein("verre_a_pied_eau",0,0.2F,false);
-    public static final Item CHOPPE_EN_VERRE_EAU = new ItemBase("choppe_en_verre_eau");
-    public static final Item CHOPPE_EN_ARGILE_EAU = new ItemBase("choppe_en_argile_eau");
+    public static final Item CHOPPE_EN_VERRE_EAU = new ChoppePleine("choppe_en_verre_eau",0,0.2F,false);
+    public static final Item CHOPPE_EN_ARGILE_EAU = new ChoppeArPleine("choppe_en_argile_eau",0,0.2F,false);
     public static final Item GROSSE_BOUTEILLE_D_EAU = new GrosseBouteille("grosse_bouteille_eau",0,0.2F,false);
     public static final Item BOUTEILLE_D_EAU= new BouteilleDeVin("bouteille_d_eau",0,0.2F,false);
-    public static final Item BOCAL_D_EAU = new ItemBase("bocal_d_eau");
+    public static final Item BOCAL_D_EAU = new BocalPlein("bocal_d_eau",0,0.2F,false);
 
     public static final Item SEAU_DE_LAIT_EN_BOIS = new ItemBase("seau_de_lait_en_bois");
     public static final Item VERRE_A_PIED_LAIT = new VerrePlein("verre_a_pied_lait",0,0.2F,false);
-    public static final Item CHOPPE_EN_VERRE_LAIT = new ItemBase("choppe_en_verre_lait");
-    public static final Item CHOPPE_EN_ARGILE_LAIT = new ItemBase("choppe_en_argile_lait");
+    public static final Item CHOPPE_EN_VERRE_LAIT = new ChoppePleine("choppe_en_verre_lait",0,0.2F,false);
+    public static final Item CHOPPE_EN_ARGILE_LAIT = new ChoppeArPleine("choppe_en_argile_lait",0,0.2F,false);
     public static final Item GROSSE_BOUTEILLE_DE_LAIT = new GrosseBouteille("grosse_bouteille_lait",0,0.2F,false);
     public static final Item BOUTEILLE_DE_LAIT= new BouteilleDeVin("bouteille_d_lait",0,0.2F,false);
-    public static final Item BOCAL_DE_LAIT = new ItemBase("bocal_de_lait");
+    public static final Item BOCAL_DE_LAIT = new BocalPlein("bocal_de_lait",0,0.2F,false);
 
     public static final Item SEAU_DE_BIERRE_BLONDE = new ItemBase("seau_de_bierre_blonde");
     public static final Item SEAU_DE_BIERRE_BLONDE_EN_BOIS = new ItemBase("seau_de_bierre_blonde_en_bois");
     public static final Item VERRE_A_PIED_BIERRE_BLONDE = new VerrePlein("verre_a_pied_bierre_blonde",0,0.2F,false);
-    public static final Item CHOPPE_EN_VERRE_BIERRE_BLONDE = new ItemBase("choppe_en_verre_bierre_blonde");
-    public static final Item CHOPPE_EN_ARGILE_BIERRE_BLONDE = new ItemBase("choppe_en_argile_bierre_blonde");
+    public static final Item CHOPPE_EN_VERRE_BIERRE_BLONDE = new ChoppePleine("choppe_en_verre_bierre_blonde",0,0.2F,false);
+    public static final Item CHOPPE_EN_ARGILE_BIERRE_BLONDE = new ChoppeArPleine("choppe_en_argile_bierre_blonde",0,0.2F,false);
     public static final Item GROSSE_BOUTEILLE_DE_BIERRE_BLONDE = new GrosseBouteille("grosse_bouteille_bierre_blonde",0,0.2F,false);
     public static final Item BOUTEILLE_DE_BIERRE_BLONDE= new BouteilleDeVin("bouteille_de_bierre_blonde",0,0.2F,false);
-    public static final Item BOCAL_DE_BIERRE_BLONDE = new ItemBase("bocal_de_bierre_blonde");
+    public static final Item BOCAL_DE_BIERRE_BLONDE = new BocalPlein("bocal_de_bierre_blonde",0,0.2F,false);
 
     public static final Item SEAU_DE_BIERE_BRUNE = new ItemBase("seau_de_biere_brune");
     public static final Item SEAU_DE_BIERE_BRUNE_EN_BOIS = new ItemBase("seau_de_biere_brune_en_bois");
     public static final Item VERRE_A_PIED_BIERE_BRUNE = new VerrePlein("verre_a_pied_biere_brune",0,0.2F,false);
-    public static final Item CHOPPE_EN_VERRE_BIERE_BRUNE = new ItemBase("choppe_en_verre_biere_brune");
-    public static final Item CHOPPE_EN_ARGILE_BIERE_BRUNE = new ItemBase("choppe_en_argile_biere_brune");
+    public static final Item CHOPPE_EN_VERRE_BIERE_BRUNE = new ChoppePleine("choppe_en_verre_biere_brune",0,0.2F,false);
+    public static final Item CHOPPE_EN_ARGILE_BIERE_BRUNE = new ChoppeArPleine("choppe_en_argile_biere_brune",0,0.2F,false);
     public static final Item GROSSE_BOUTEILLE_DE_BIERE_BRUNE = new GrosseBouteille("grosse_bouteille_biere_brune",0,0.2F,false);
     public static final Item BOUTEILLE_DE_BIERE_BRUNE= new BouteilleDeVin("bouteille_de_biere_brune",0,0.2F,false);
-    public static final Item BOCAL_DE_BIERE_BRUNE = new ItemBase("bocal_de_biere_brune");
+    public static final Item BOCAL_DE_BIERE_BRUNE = new BocalPlein("bocal_de_biere_brune",0,0.2F,false);
 
     public static final Item SEAU_DE_BIERE_ROUSSE = new ItemBase("seau_de_biere_rousse");
     public static final Item SEAU_DE_BIERE_ROUSSE_EN_BOIS = new ItemBase("seau_de_biere_rousse_en_bois");
     public static final Item VERRE_A_PIED_BIERE_ROUSSE = new VerrePlein("verre_a_pied_biere_rousse",0,0.2F,false);
-    public static final Item CHOPPE_EN_VERRE_BIERE_ROUSSE = new ItemBase("choppe_en_verre_biere_rousse");
-    public static final Item CHOPPE_EN_ARGILE_BIERE_ROUSSE = new ItemBase("choppe_en_argile_biere_rousse");
+    public static final Item CHOPPE_EN_VERRE_BIERE_ROUSSE = new ChoppePleine("choppe_en_verre_biere_rousse",0,0.2F,false);
+    public static final Item CHOPPE_EN_ARGILE_BIERE_ROUSSE = new ChoppeArPleine("choppe_en_argile_biere_rousse",0,0.2F,false);
     public static final Item GROSSE_BOUTEILLE_DE_BIERE_ROUSSE = new GrosseBouteille("grosse_bouteille_biere_rousse",0,0.2F,false);
     public static final Item BOUTEILLE_DE_BIERE_ROUSSE= new BouteilleDeVin("bouteille_de_biere_rousse",0,0.2F,false);
-    public static final Item BOCAL_DE_BIERE_ROUSSE = new ItemBase("bocal_de_biere_rousse");
+    public static final Item BOCAL_DE_BIERE_ROUSSE = new BocalPlein("bocal_de_biere_rousse",0,0.2F,false);
 
     public static final Item SEAU_DE_VIN_BLANC = new ItemBase("seau_de_vin_blanc");
     public static final Item SEAU_DE_VIN_BLANC_EN_BOIS = new ItemBase("seau_de_vin_blanc_en_bois");
     public static final Item VERRE_A_PIED_VIN_BLANC = new VerrePlein("verre_a_pied_vin_blanc",0,0.2F,false);
-    public static final Item CHOPPE_EN_VERRE_VIN_BLANC = new ItemBase("choppe_en_verre_vin_blanc");
-    public static final Item CHOPPE_EN_ARGILE_VIN_BLANC = new ItemBase("choppe_en_argile_vin_blanc");
+    public static final Item CHOPPE_EN_VERRE_VIN_BLANC = new ChoppePleine("choppe_en_verre_vin_blanc",0,0.2F,false);
+    public static final Item CHOPPE_EN_ARGILE_VIN_BLANC = new ChoppeArPleine("choppe_en_argile_vin_blanc",0,0.2F,false);
     public static final Item GROSSE_BOUTEILLE_DE_VIN_BLANC = new GrosseBouteille("grosse_bouteille_vin_blanc",0,0.2F,false);
     public static final Item BOUTEILLE_DE_VIN_BLANC= new BouteilleDeVin("bouteille_de_vin_blanc",0,0.2F,false);
-    public static final Item BOCAL_DE_VIN_BLANC = new ItemBase("bocal_de_vin_blanc");
+    public static final Item BOCAL_DE_VIN_BLANC = new BocalPlein("bocal_de_vin_blanc",0,0.2F,false);
 
     public static final Item SEAU_DE_VIN_ROUGE = new ItemBase("seau_de_vin_rouge");
     public static final Item SEAU_DE_VIN_ROUGE_EN_BOIS = new ItemBase("seau_de_vin_rouge_en_bois");
     public static final Item VERRE_A_PIED_VIN_ROUGE = new VerrePlein("verre_a_pied_vin_rouge",0,0.2F,false);
-    public static final Item CHOPPE_EN_VERRE_VIN_ROUGE = new ItemBase("choppe_en_verre_vin_rouge");
-    public static final Item CHOPPE_EN_ARGILE_VIN_ROUGE = new ItemBase("choppe_en_argile_vin_rouge");
+    public static final Item CHOPPE_EN_VERRE_VIN_ROUGE = new ChoppePleine("choppe_en_verre_vin_rouge",0,0.2F,false);
+    public static final Item CHOPPE_EN_ARGILE_VIN_ROUGE = new ChoppeArPleine("choppe_en_argile_vin_rouge",0,0.2F,false);
     public static final Item GROSSE_BOUTEILLE_DE_VIN_ROUGE = new GrosseBouteille("grosse_bouteille_vin_rouge",0,0.2F,false);
     public static final Item BOUTEILLE_DE_VIN_ROUGE= new BouteilleDeVin("bouteille_de_vin_rouge",0,0.2F,false);
-    public static final Item BOCAL_DE_VIN_ROUGE = new ItemBase("bocal_de_vin_rouge");
+    public static final Item BOCAL_DE_VIN_ROUGE = new BocalPlein("bocal_de_vin_rouge",0,0.2F,false);
 
     public static final Item SEAU_DE_RHUM = new ItemBase("seau_de_rhum");
     public static final Item SEAU_DE_RHUM_EN_BOIS = new ItemBase("seau_de_rhum_en_bois");
     public static final Item VERRE_A_PIED_RHUM = new VerrePlein("verre_a_pied_rhum",0,0.2F,false);
-    public static final Item CHOPPE_EN_VERRE_RHUM = new ItemBase("choppe_en_verre_rhum");
-    public static final Item CHOPPE_EN_ARGILE_RHUM = new ItemBase("choppe_en_argile_rhum");
+    public static final Item CHOPPE_EN_VERRE_RHUM = new ChoppePleine("choppe_en_verre_rhum",0,0.2F,false);
+    public static final Item CHOPPE_EN_ARGILE_RHUM = new ChoppeArPleine("choppe_en_argile_rhum",0,0.2F,false);
     public static final Item GROSSE_BOUTEILLE_DE_RHUM = new GrosseBouteille("grosse_bouteille_rhum",0,0.2F,false);
     public static final Item BOUTEILLE_DE_RHUM= new BouteilleDeVin("bouteille_de_rhum",0,0.2F,false);
-    public static final Item BOCAL_DE_RHUM = new ItemBase("bocal_de_rhum");
+    public static final Item BOCAL_DE_RHUM = new BocalPlein("bocal_de_rhum",0,0.2F,false);
 
     public static final Item SEAU_DE_HYDROMEL = new ItemBase("seau_de_hydromel");
     public static final Item SEAU_DE_HYDROMEL_EN_BOIS = new ItemBase("seau_de_hydromel_en_bois");
     public static final Item VERRE_A_PIED_HYDROMEL = new VerrePlein("verre_a_pied_hydromel",0,0.2F,false);
-    public static final Item CHOPPE_EN_VERRE_HYDROMEL = new ItemBase("choppe_en_verre_hydromel");
-    public static final Item CHOPPE_EN_ARGILE_HYDROMEL = new ItemBase("choppe_en_argile_hydromel");
+    public static final Item CHOPPE_EN_VERRE_HYDROMEL = new ChoppePleine("choppe_en_verre_hydromel",0,0.2F,false);
+    public static final Item CHOPPE_EN_ARGILE_HYDROMEL = new ChoppeArPleine("choppe_en_argile_hydromel",0,0.2F,false);
     public static final Item GROSSE_BOUTEILLE_DE_HYDROMEL = new GrosseBouteille("grosse_bouteille_hydromel",0,0.2F,false);
     public static final Item BOUTEILLE_DE_HYDROMEL= new BouteilleDeVin("bouteille_de_hydromel",0,0.2F,false);
-    public static final Item BOCAL_DE_HYDROMEL = new ItemBase("bocal_de_hydromel");
+    public static final Item BOCAL_DE_HYDROMEL = new BocalPlein("bocal_de_hydromel",0,0.2F,false);
 
 
 }
