@@ -1136,7 +1136,7 @@ public class ModItems {
     public static final Item CHOPPE_EN_VERRE_EAU = new ItemBase("choppe_en_verre_eau");
     public static final Item CHOPPE_EN_ARGILE_EAU = new ItemBase("choppe_en_argile_eau");
     public static final Item GROSSE_BOUTEILLE_D_EAU = new ItemBase("grosse_bouteille_eau");
-    public static final Item BOUTEILLE_D_EAU= new ItemBase("bouteille_d_eau");
+    public static final Item BOUTEILLE_D_EAU= new BouteilleDeVin("bouteille_d_eau",0,0.2F,false);
     public static final Item BOCAL_D_EAU = new ItemBase("bocal_d_eau");
 
     public static final Item SEAU_DE_LAIT_EN_BOIS = new ItemBase("seau_de_lait_en_bois");
@@ -1144,7 +1144,7 @@ public class ModItems {
     public static final Item CHOPPE_EN_VERRE_LAIT = new ItemBase("choppe_en_verre_lait");
     public static final Item CHOPPE_EN_ARGILE_LAIT = new ItemBase("choppe_en_argile_lait");
     public static final Item GROSSE_BOUTEILLE_DE_LAIT = new ItemBase("grosse_bouteille_lait");
-    public static final Item BOUTEILLE_DE_LAIT= new ItemBase("bouteille_d_lait");
+    public static final Item BOUTEILLE_DE_LAIT= new BouteilleDeVin("bouteille_d_lait",0,0.2F,false);
     public static final Item BOCAL_DE_LAIT = new ItemBase("bocal_de_lait");
 
     public static final Item SEAU_DE_BIERRE_BLONDE = new ItemBase("seau_de_bierre_blonde");
@@ -1153,7 +1153,7 @@ public class ModItems {
     public static final Item CHOPPE_EN_VERRE_BIERRE_BLONDE = new ItemBase("choppe_en_verre_bierre_blonde");
     public static final Item CHOPPE_EN_ARGILE_BIERRE_BLONDE = new ItemBase("choppe_en_argile_bierre_blonde");
     public static final Item GROSSE_BOUTEILLE_DE_BIERRE_BLONDE = new ItemBase("grosse_bouteille_bierre_blonde");
-    public static final Item BOUTEILLE_DE_BIERRE_BLONDE= new ItemBase("bouteille_de_bierre_blonde");
+    public static final Item BOUTEILLE_DE_BIERRE_BLONDE= new BouteilleDeVin("bouteille_de_bierre_blonde",0,0.2F,false);
     public static final Item BOCAL_DE_BIERRE_BLONDE = new ItemBase("bocal_de_bierre_blonde");
 
     public static final Item SEAU_DE_BIERE_BRUNE = new ItemBase("seau_de_biere_brune");
@@ -1162,7 +1162,7 @@ public class ModItems {
     public static final Item CHOPPE_EN_VERRE_BIERE_BRUNE = new ItemBase("choppe_en_verre_biere_brune");
     public static final Item CHOPPE_EN_ARGILE_BIERE_BRUNE = new ItemBase("choppe_en_argile_biere_brune");
     public static final Item GROSSE_BOUTEILLE_DE_BIERE_BRUNE = new ItemBase("grosse_bouteille_biere_brune");
-    public static final Item BOUTEILLE_DE_BIERE_BRUNE= new ItemBase("bouteille_de_biere_brune");
+    public static final Item BOUTEILLE_DE_BIERE_BRUNE= new BouteilleDeVin("bouteille_de_biere_brune",0,0.2F,false);
     public static final Item BOCAL_DE_BIERE_BRUNE = new ItemBase("bocal_de_biere_brune");
 
     public static final Item SEAU_DE_BIERE_ROUSSE = new ItemBase("seau_de_biere_rousse");
@@ -1171,7 +1171,7 @@ public class ModItems {
     public static final Item CHOPPE_EN_VERRE_BIERE_ROUSSE = new ItemBase("choppe_en_verre_biere_rousse");
     public static final Item CHOPPE_EN_ARGILE_BIERE_ROUSSE = new ItemBase("choppe_en_argile_biere_rousse");
     public static final Item GROSSE_BOUTEILLE_DE_BIERE_ROUSSE = new ItemBase("grosse_bouteille_biere_rousse");
-    public static final Item BOUTEILLE_DE_BIERE_ROUSSE= new ItemBase("bouteille_de_biere_rousse");
+    public static final Item BOUTEILLE_DE_BIERE_ROUSSE= new BouteilleDeVin("bouteille_de_biere_rousse",0,0.2F,false);
     public static final Item BOCAL_DE_BIERE_ROUSSE = new ItemBase("bocal_de_biere_rousse");
 
     public static final Item SEAU_DE_VIN_BLANC = new ItemBase("seau_de_vin_blanc");
@@ -1180,7 +1180,7 @@ public class ModItems {
     public static final Item CHOPPE_EN_VERRE_VIN_BLANC = new ItemBase("choppe_en_verre_vin_blanc");
     public static final Item CHOPPE_EN_ARGILE_VIN_BLANC = new ItemBase("choppe_en_argile_vin_blanc");
     public static final Item GROSSE_BOUTEILLE_DE_VIN_BLANC = new ItemBase("grosse_bouteille_vin_blanc");
-    public static final Item BOUTEILLE_DE_VIN_BLANC= new ItemBase("bouteille_de_vin_blanc");
+    public static final Item BOUTEILLE_DE_VIN_BLANC= new BouteilleDeVin("bouteille_de_vin_blanc",0,0.2F,false);
     public static final Item BOCAL_DE_VIN_BLANC = new ItemBase("bocal_de_vin_blanc");
 
     public static final Item SEAU_DE_VIN_ROUGE = new ItemBase("seau_de_vin_rouge");
@@ -1189,7 +1189,7 @@ public class ModItems {
     public static final Item CHOPPE_EN_VERRE_VIN_ROUGE = new ItemBase("choppe_en_verre_vin_rouge");
     public static final Item CHOPPE_EN_ARGILE_VIN_ROUGE = new ItemBase("choppe_en_argile_vin_rouge");
     public static final Item GROSSE_BOUTEILLE_DE_VIN_ROUGE = new ItemBase("grosse_bouteille_vin_rouge");
-    public static final Item BOUTEILLE_DE_VIN_ROUGE= new ItemBase("bouteille_de_vin_rouge");
+    public static final Item BOUTEILLE_DE_VIN_ROUGE= new BouteilleDeVin("bouteille_de_vin_rouge",0,0.2F,false);
     public static final Item BOCAL_DE_VIN_ROUGE = new ItemBase("bocal_de_vin_rouge");
 
     public static final Item SEAU_DE_RHUM = new ItemBase("seau_de_rhum");
