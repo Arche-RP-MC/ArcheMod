@@ -35,46 +35,45 @@ public class Epuisette extends ToolSword {
     }
 
 
-
     @Override
-    public ActionResult<ItemStack> onItemRightClick(World world, EntityPlayer player, EnumHand hand) {
-        RayTraceResult raytraceresult = player.rayTrace(1, 0);
+    public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) {
+        RayTraceResult raytraceresult = playerIn.rayTrace(1, 0);
 
-        IBlockState state = world.getBlockState(raytraceresult.getBlockPos());
+        IBlockState state = worldIn.getBlockState(raytraceresult.getBlockPos());
+        if (!worldIn.isRemote && handIn == EnumHand.MAIN_HAND)
+            if (state.getBlock() == Blocks.WATER) {
 
-        if(state.getBlock() == Blocks.WATER){
+                playerIn.getHeldItem(handIn).shrink(1);
+                int nombreAleatoire = (int) (Math.random() * 5);
 
+                switch (nombreAleatoire) {
+                    case 1:
+                        playerIn.dropItem(ModItems.CREVETTE_GRISE, 1);
+                        break;
+                    case 2:
+                        playerIn.dropItem(ModItems.CREVETTE_ROSE, 1);
+                        break;
+                    case 3:
+                        playerIn.dropItem(ModItems.HIPPOCAMPE, 1);
+                        break;
+                    case 4:
+                        playerIn.dropItem(ModItems.ECREVISSE, 1);
+                        break;
+                    case 5:
+                        playerIn.dropItem(ModItems.ECREVISSE_ORANGE, 1);
+                        break;
+                    case 6:
+                        playerIn.dropItem(ModItems.POULPE, 1);
+                        break;
 
-            int nombreAleatoire = (int)(Math.random() * 5);
-
-            switch (nombreAleatoire){
-                case 1:
-                    player.dropItem(ModItems.CREVETTE_GRISE, 1);
-                    break;
-                case 2:
-                    player.dropItem(ModItems.CREVETTE_ROSE, 1);
-                    break;
-                case 3:
-                    player.dropItem(ModItems.HIPPOCAMPE, 1);
-                    break;
-                case 4:
-                    player.dropItem(ModItems.ECREVISSE, 1);
-                    break;
-                case 5:
-                    player.dropItem(ModItems.ECREVISSE_ORANGE, 1);
-                    break;
-                case 6:
-                    player.dropItem(ModItems.POULPE, 1);
-                    break;
+                }
 
             }
 
+            return new ActionResult<>(EnumActionResult.SUCCESS, playerIn.getHeldItem(handIn));
         }
 
-        return new ActionResult<>(EnumActionResult.SUCCESS, player.getHeldItem(hand));
     }
-
-}
 
 
 
