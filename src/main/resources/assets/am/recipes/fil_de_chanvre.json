@@ -3,9 +3,9 @@
 
   "pattern":
   [
-    "CTT",
-    "TTT",
-    "TTT "
+    "CT ",
+    "   ",
+    "    "
   ],
 
   "key":
@@ -17,13 +17,13 @@
     },
     "T":
     {
-      "item": "am:chanvre"
+      "item": "am:bobine_chanvre"
     }
   },
 
   "result":
   {
     "item": "am:fil_de_chanvre",
-    "count": 4
+    "count": 8
   }
 }

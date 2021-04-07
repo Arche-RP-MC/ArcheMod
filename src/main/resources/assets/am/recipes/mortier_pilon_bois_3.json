@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "  M",
+    " RP",
+    " F "
+  ],
+
+  "key":
+  {
+    "M":
+    {
+      "item": "am:marteau_en_bronze",
+      "data": 32767
+    },
+    "P":
+    {
+      "item": "am:marteau_burin_en_acier",
+      "data": 32767
+
+    },
+    "F":
+    {
+      "item": "minecraft:bowl"
+    },
+    "R":
+    {
+  "item": "minecraft:stick"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:mortier_pilon_en_bois",
+    "count": 1
+  }
+}

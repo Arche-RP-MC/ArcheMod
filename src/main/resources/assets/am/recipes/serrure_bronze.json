@@ -16,7 +16,8 @@
     },
     "T":
     {
-      "item": "am:trousse_d_ingenieur_en_fer"
+      "item": "am:trousse_d_ingenieur_en_fer",
+      "data": 32767
     },
     "R":
     {
@@ -24,7 +25,8 @@
     },
     "L":
     {
-      "item": "am:loupe"
+      "item": "am:loupe",
+      "data": 32767
     }
   },
 

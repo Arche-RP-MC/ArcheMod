@@ -28,11 +28,13 @@
     },
     "A":
     {
-      "item": "am:aiguille"
+      "item": "am:aiguille",
+      "data": 32767
     },
     "C":
     {
-      "item": "am:ciseaux_de_couture"
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
     }
   },
 

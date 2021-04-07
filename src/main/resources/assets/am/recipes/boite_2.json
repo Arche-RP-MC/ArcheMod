@@ -20,7 +20,8 @@
     },
     "M":
     {
-      "item": "am:maillet"
+      "item": "am:maillet",
+      "data": 32767
     },
     "P":
     {

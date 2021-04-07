@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    " P ",
+    " M "
+  ],
+
+  "key":
+  {
+    "P":
+    {
+        "item": "am:bougie"
+    },
+    "M":
+    {
+        "item": "am:plaque_de_bronze",
+        "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:bougie_sur_support",
+    "count": 1
+  }
+}

@@ -1,34 +1,30 @@
 {
-  "type": "minecraft:crafting_shaped", 
-  "pattern": 
- [ 
- "A00", 
- "B00", 
- "C00" 
- ], 
+ "type": "minecraft:crafting_shaped",
+ "pattern":
+ [
+  "BA ",
+  "AB ",
+  "   "
+ ],
 
 
- "key": 
- { 
- "A": 
- { 
- "item": "item1" 
- "data": 32767 
-},
- "B": 
- { 
- "item": "item4" 
- "data": 32767 
-},
- "C": 
- { 
- "item": "item3" 
- "data": 32767 
-}
-},
- "result": 
- { 
- "item": "resultat", 
- "count": 1
-}
+ "key":
+ {
+  "A":
+  {
+   "item": "minecraft:wool",
+   "data": 0
+
+  },
+  "B":
+  {
+   "item": "minecraft:wool",
+   "data": 1
+  }
+ },
+ "result":
+ {
+  "item": "am:laine_orange_croisee",
+  "count": 4
+ }
 }

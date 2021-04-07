@@ -16,7 +16,8 @@
     },
     "P":
     {
-      "item": "am:marteau_en_fer"
+      "item": "am:marteau_en_fer",
+      "data": 32767
     },
     "L":
     {
@@ -24,7 +25,8 @@
     },
     "G":
     {
-      "item": "am:pince"
+      "item": "am:pinces",
+      "data": 32767
     }
   },
 

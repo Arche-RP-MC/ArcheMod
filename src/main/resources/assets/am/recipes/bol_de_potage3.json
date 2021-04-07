@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped", 
+  "pattern": 
+ [ 
+ "   ", 
+ "PCR", 
+ "BBB" 
+ ], 
+
+
+ "key": 
+ { 
+ "C": 
+ { 
+ "item": "am:navet"
+ 
+},
+ "B": 
+ { 
+ "item": "minecraft:bowl"
+
+},
+"P": 
+ { 
+ "item": "am:salsifi"
+
+},
+"R": 
+ { 
+ "item": "am:oignon"
+}
+},
+ "result": 
+ { 
+ "item": "am:bol_de_potage",
+ "count": 3
+}
+}

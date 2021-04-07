@@ -12,7 +12,8 @@
   {
     "P":
     {
-      "item": "am:pince"
+      "item": "am:pinces",
+      "data": 32767
     },
     "V":
     {
@@ -20,7 +21,8 @@
     },
     "L":
     {
-      "item": "am:lime_en_fer"
+      "item": "am:lime_en_fer",
+      "data": 32767
     },
     "A":
     {

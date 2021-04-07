@@ -12,7 +12,7 @@
   {
     "M":
     {
-      "item": "am:mortier_pilon",
+      "item": "am:mortier_pilon_en_pierre",
       "data": 32767
     },
     "P":
@@ -21,7 +21,7 @@
     },
     "A":
     {
-      "item": "minecraft:betroot"
+      "item": "minecraft:beetroot"
     }
   },
 

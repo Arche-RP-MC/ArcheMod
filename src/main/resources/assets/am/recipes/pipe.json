@@ -12,7 +12,8 @@
   {
     "V":
     {
-      "item": "am:vernis"
+      "item": "am:vernis",
+      "data": 32767
     },
     "P":
     {
@@ -20,7 +21,8 @@
     },
     "L":
     {
-      "item": "minecraft:lime_en_fer"
+      "item": "am:lime_en_fer",
+      "data": 32767
     }
   },
 

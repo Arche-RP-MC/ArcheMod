@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "pattern": [
+  " B ",
+  " B ",
+  "A  "
+ ],
+ "key": {
+  "A": {
+   "item": "am:ciseaux_a_bois",
+   "data": 32767
+  },
+  "B": {
+   "item": "am:planche"
+  },
+  "result": {
+   "item": "am:gourdin",
+   "count": 1
+  }
+ }
+}

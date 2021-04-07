@@ -24,7 +24,8 @@
     },
     "A":
     {
-      "item": "am:aiguille"
+      "item": "am:aiguille",
+      "data": 32767
     },
     "C":
     {

@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "TTT",
+    "TCT",
+    "LPL"
+  ],
+
+  "key":
+  {
+    "T":
+    {
+      "item": "am:cuir_tanne"
+    },
+    "L":
+    {
+      "item": "am:laniere_de_cuir"
+    },
+    "P":
+    {
+      "item": "am:pepite_fer"
+    },
+    "C":
+    {
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "wearablebackpacks:backpack",
+    "count": 1
+  }
+}

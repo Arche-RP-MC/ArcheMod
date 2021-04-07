@@ -37,14 +37,14 @@
     },
     "P":
     {
-        "item": "am:compass",
+        "item": "minecraft:compass",
         "data": 32767
     }
   },
 
   "result":
   {
-    "item": "minecraft:compass",
+    "item": "minecraft:clock",
     "count": 1
   }
 }

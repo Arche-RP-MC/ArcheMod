@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped", 
+  "pattern": 
+ [ 
+ "   ", 
+ "   ", 
+ "B C" 
+ ], 
+
+
+ "key": 
+ { 
+"B": 
+ { 
+ "item": "am:beignet"
+
+},
+"C": 
+ { 
+ "item": "am:crabe"
+}
+},
+ "result": 
+ { 
+ "item": "am:beignet_de_crabe",
+ "count": 4
+}
+}

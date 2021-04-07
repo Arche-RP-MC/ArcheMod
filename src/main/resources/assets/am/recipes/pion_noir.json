@@ -20,15 +20,18 @@
     },
     "V":
     {
-      "item": "am:vernis"
+      "item": "am:vernis",
+      "data": 32767
     },
     "S":
     {
-      "item": "am:scie_en_fer"
+      "item": "am:scie_en_fer",
+      "data": 32767
     },
     "M":
     {
-      "item": "am:marteau_en_fer"
+      "item": "am:marteau_en_fer",
+      "data": 32767
     },
     "B":
     {
@@ -36,7 +39,8 @@
     },
     "L":
     {
-      "item": "minecraft:lime_en_fer"
+      "item": "am:lime_en_fer",
+      "data": 32767
     }
   },
 

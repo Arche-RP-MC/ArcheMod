@@ -13,6 +13,7 @@
     "W":
     {
       "item": "am:cire"
+    },
     "P":
     {
       "item": "minecraft:paper"
@@ -23,7 +24,8 @@
     },
     "C":
     {
-      "item": "am:caillou"
+      "item": "am:spatule",
+      "data": 32767
     }
   },
 

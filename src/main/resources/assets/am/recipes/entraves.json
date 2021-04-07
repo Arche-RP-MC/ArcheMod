@@ -16,7 +16,8 @@
     },
     "C":
     {
-      "item": "am:pince"
+      "item": "am:pinces",
+      "data": 32767
     },
     "D":
     {
@@ -24,7 +25,8 @@
     },
     "G":
     {
-      "item": "am:marteau_en_bronze"
+      "item": "am:marteau_en_bronze",
+      "data": 32767
     }
   },
 

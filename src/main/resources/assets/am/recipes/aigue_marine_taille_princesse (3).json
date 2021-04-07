@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "E L",
+    "PGO",
+    "   "
+  ],
+
+  "key":
+  {
+    "E":
+    {
+      "item": "am:etoffe"
+    },
+    "O":
+    {
+      "item": "am:loupe",
+      "data": 32767
+    },
+    "G":
+    {
+      "item": "am:geode_aigue_marine"
+    },
+    "P":
+    {
+      "item": "am:pinces",
+      "data": 32767
+
+    },
+    "L":
+     {
+      "item": "am:lime_en_bronze",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:aigue_marine_taille_princesse",
+    "count": 1
+  }
+}

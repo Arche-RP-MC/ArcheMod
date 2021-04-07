@@ -1,0 +1,27 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "pattern": [
+  "   ",
+  "SBE",
+  "FFF"
+ ],
+ "key": {
+  "F": {
+   "item": "am:farine"
+  },
+  "B": {
+   "item": "am:graisse_animale"
+  },
+  "S": {
+   "item": "minecraft:sugar"
+  },
+  "E": {
+   "item": "minecraft:egg"
+  }
+ },
+ "result": {
+  "item": "am:biscuit",
+  "count": 3
+ }
+}
+

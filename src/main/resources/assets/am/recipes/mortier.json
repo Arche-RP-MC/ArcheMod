@@ -3,37 +3,34 @@
 
   "pattern":
   [
-    "  M",
-    " RP",
-    " F "
+    " T ",
+    " FH",
+    " V "
   ],
 
   "key":
   {
-    "M":
+    "H":
     {
-      "item": "am:marteau_en_bronze",
-      "data": 32767
-    },
-    "P":
-    {
-      "item": "am:burin_en_bronze",
-      "data": 32767
-
+      "item": "minecraft:sand"
     },
     "F":
     {
-      "item": "am:jarre_en_argile"
+      "item": "minecraft:clay_ball"
     },
-    "R":
+    "T":
     {
-      "item": "am:long_baton"
+      "item": "minecraft:stick"
+    },
+    "V":
+    {
+      "item": "minecraft:water_bucket"
     }
   },
 
   "result":
   {
     "item": "am:mortier",
-    "count": 1
+    "count": 6
   }
 }

@@ -7,9 +7,13 @@ import fr.archemod.items.epuisette.Epuisette;
 import fr.archemod.items.food.*;
 import fr.archemod.items.huitre.Huitre;
 import fr.archemod.items.tools.ToolAxe;
+import fr.archemod.items.tools.ToolHoe;
 import fr.archemod.items.tools.ToolSword;
+import fr.archemod.items.tools.Toolpickaxe;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemAxe;
+import net.minecraft.item.ItemHoe;
+import net.minecraft.item.ItemPickaxe;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -100,6 +104,7 @@ public class ModItems {
     public static final Item BOUGIE = new ItemBase("candle");
 
     //OUTILS
+
 
     public static final Item LIME_EN_FER = new OutilsEnFer("lime_en_fer");
     public static final Item LIME_EN_BRONZE = new OutilsEnBronze("lime_en_bronze");
@@ -288,6 +293,10 @@ public class ModItems {
 
     //TOOLS
     public static final ItemAxe HACHE_D_ARMES_EN_ACIER = new ToolAxe("hache_d_armes_en_acier", Item.ToolMaterial.IRON);
+    public static final ItemAxe HACHE_EN_BRONZE = new ToolAxe("hache_en_bronze", Item.ToolMaterial.STONE);
+    public static final ItemPickaxe PIOCHE_EN_BRONZE = new Toolpickaxe("pioche_en_bronze", Item.ToolMaterial.STONE);
+    public static final ItemHoe HOUE_EN_BRONZE = new ToolHoe("houe_en_bronze", Item.ToolMaterial.STONE);
+    public static final ItemHoe PELLE_EN_BRONZE = new ToolHoe("pelle_en_bronze", Item.ToolMaterial.STONE);
     public static final Item DAGUE_A_ROUELLES = new ItemBase("dague_a_rouelles");
     public static final Item DAGUE_A_ROUELLES_EN_ACIER = new ItemBase("dague_a_rouelles_en_acier");
     public static final Item DAGUE_EN_BOIS = new ItemBase("dague_en_bois");
@@ -1113,7 +1122,6 @@ public class ModItems {
     public static final Item TURQUOISE_TAILLE_TRIANGLE = new ItemBase("turquoise_taille_triangle");
     public static final Item TURQUOISE_TAILLE_TRILLION = new ItemBase("turquoise_taille_trillion");
     public static final Item VERNIS = new Consommables("vernis");
-    public static final Item VERNIS_OVERLAY = new ItemBase("vernis_overlay");
     public static final Item VERRE_A_PIED = new ItemBase("verre_a_pied");
     public static final Item VERRE_EN_FUSION = new ItemBase("verre_en_fusion");
     public static final Item VER_A_SOIE = new ItemBase("ver_a_soie");

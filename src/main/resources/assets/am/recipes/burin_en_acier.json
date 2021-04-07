@@ -29,7 +29,8 @@
     },
     "F":
     {
-      "item": "am:marteau_en_acier"
+      "item": "am:marteau_en_acier",
+      "data": 32767
     }
   },
 

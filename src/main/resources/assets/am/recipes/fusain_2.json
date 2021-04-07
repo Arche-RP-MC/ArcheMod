@@ -16,7 +16,8 @@
     },
     "F":
     {
-      "item": "minecraft:charcoal"
+      "item": "minecraft:coal",
+      "data": 1
     },
     "L":
     {

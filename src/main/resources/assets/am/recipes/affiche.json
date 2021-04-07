@@ -16,7 +16,8 @@
     },
     "F":
     {
-      "item": "am:fusain"
+      "item": "am:fusain",
+      "data": 32767
     },
     "P":
     {

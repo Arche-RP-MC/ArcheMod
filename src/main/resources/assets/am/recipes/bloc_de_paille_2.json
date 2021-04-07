@@ -1,34 +1,25 @@
 {
   "type": "minecraft:crafting_shaped", 
   "pattern": 
- [ 
- "A00", 
- "B00", 
- "C00" 
+ [
+  " B ",
+  "AA ",
+  "AA "
  ], 
 
 
- "key": 
- { 
- "A": 
- { 
- "item": "item1" 
- "data": 32767 
-},
- "B": 
- { 
- "item": "item4" 
- "data": 32767 
-},
- "C": 
- { 
- "item": "item3" 
- "data": 32767 
-}
-},
- "result": 
- { 
- "item": "resultat", 
- "count": 1
-}
-}
+ "key": {
+  "A": {
+   "item": "minecraft:wheat",
+   "data": 32767
+  },
+  "B": {
+   "item": "am:fourche_en_fer",
+   "data": 32767
+  },
+  "result": {
+   "item": "resultat",
+   "count": 1
+  }
+ }
+ }

@@ -2,9 +2,9 @@
   "type": "minecraft:crafting_shaped", 
   "pattern": 
  [ 
- "A00", 
- "B00", 
- "C00" 
+ "AA ",
+ "AA ",
+ "   "
  ], 
 
 
@@ -12,23 +12,12 @@
  { 
  "A": 
  { 
- "item": "item1" 
- "data": 32767 
-},
- "B": 
- { 
- "item": "item4" 
- "data": 32767 
-},
- "C": 
- { 
- "item": "item3" 
- "data": 32767 
+ "item": "am:tuile_simple"
 }
 },
  "result": 
  { 
- "item": "resultat", 
+ "item": "am:tuile",
  "count": 1
 }
 }

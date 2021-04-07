@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped", 
+  "pattern": 
+ [ 
+ "   ", 
+ "PCR", 
+ "BBB" 
+ ], 
+
+
+ "key": 
+ { 
+ "C": 
+ { 
+ "item": "am:chou_fleur"
+ 
+},
+ "B": 
+ { 
+ "item": "minecraft:bowl"
+
+},
+"P": 
+ { 
+ "item": "minecraft:wheat"
+
+},
+"R": 
+ { 
+ "item": "am:courge"
+}
+},
+ "result": 
+ { 
+ "item": "am:bol_de_potage",
+ "count": 3
+}
+}

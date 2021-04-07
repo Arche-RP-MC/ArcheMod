@@ -12,7 +12,7 @@
  { 
  "A": 
  { 
- "item": "am:petite_viandede_gibier_crue"
+ "item": "am:petite_viande_gibier_crue"
  
 },
  "B": 
@@ -21,8 +21,8 @@
  
 },
  "C": 
- { 
- "item": "am:bol"
+ {
+  "item": "minecraft:bowl"
 }
 },
 "D": 

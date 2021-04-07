@@ -16,7 +16,8 @@
     },
     "S":
     {
-      "item": "am:spatule"
+      "item": "am:spatule",
+      "data": 32767
     },
     "A":
     {

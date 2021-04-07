@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "MRG",
+    "TTT",
+    "TTT"
+  ],
+
+  "key":
+  {
+    "M":
+    {
+      "item": "am:clous"
+    },
+    "R":
+    {
+      "item": "am:ciseaux_a_bois",
+      "data": 32767
+    },
+    "G":
+    {
+      "item": "am:barre_fer"
+    },
+    "T":
+    {
+      "item": "am:planches"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:baril_vide",
+    "count": 1
+  }
+}

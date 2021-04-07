@@ -2,33 +2,30 @@
   "type": "minecraft:crafting_shaped", 
   "pattern": 
  [ 
- "A00", 
- "B00", 
- "C00" 
+ "   ",
+ "AB ",
+ "   "
  ], 
 
 
  "key": 
  { 
  "A": 
- { 
- "item": "item1" 
- "data": 32767 
-},
- "B": 
- { 
- "item": "item4" 
- "data": 32767 
-},
- "C": 
- { 
- "item": "item3" 
- "data": 32767 
-}
+ {
+  "item": "minecraft:stone",
+  "data": 2
+ },
+ "B":
+ {
+  "item": "am:marteau_burin_en_fer",
+  "data": 32767
+ }
+
+
 },
  "result": 
  { 
- "item": "resultat", 
+ "item": "am:granite_sculptee",
  "count": 1
 }
 }

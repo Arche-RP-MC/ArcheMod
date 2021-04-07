@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:crafting_shaped", 
+  "pattern": 
+ [ 
+ " A ", 
+ "BED", 
+ "CCC" 
+ ], 
+
+
+ "key": 
+ { 
+ "A": 
+ { 
+ "item": "am:tomate"
+ 
+},
+ "B": 
+ { 
+ "item": "minecraft:carrot"
+ 
+},
+ "C": 
+ { 
+ "item": "minecraft:bowl"
+
+},
+"D": 
+ { 
+ "item": "am:crabe"
+
+},
+"E": 
+ { 
+ "item": "am:pomme_de_terre"
+}
+},
+ "result": 
+ { 
+ "item": "am:bol_de_ragout_de_crustaces",
+ "count": 3
+}
+}

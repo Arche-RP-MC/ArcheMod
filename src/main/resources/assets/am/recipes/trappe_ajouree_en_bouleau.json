@@ -3,7 +3,7 @@
 
   "pattern":
   [
-    "GT ",
+    "T  ",
     "V  ",
     "   "
   ],
@@ -17,11 +17,6 @@
     "T":
     {
       "item": "am:ciseaux_a_bois",
-      "data": 32767
-    },
-    "G":
-    {
-      "item": "am:maillet",
       "data": 32767
     }
   },

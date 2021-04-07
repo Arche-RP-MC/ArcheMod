@@ -1,37 +1,37 @@
 {
-  "type": "minecraft:crafting_shaped",
+ "type": "minecraft:crafting_shaped",
 
-  "pattern":
-  [
-    " G ",
-    " HT",
-    " B "
-  ],
+ "pattern":
+ [
+  " G ",
+  " HT",
+  " B "
+ ],
 
-  "key":
+ "key":
+ {
+  "B":
   {
-    "B":
-    {
-      "item": "am:manche"
-    },
-    "T":
-    {
-      "item": "am:clous"
-    },
-    "H":
-    {
-      "item": "am:planche"
-    },
-    "G":
-    {
-      "item": "am:ciseau_a_bois",
-      "data": 32767
-    }
+   "item": "am:manche"
   },
-
-  "result":
+  "T":
   {
-    "item": "am:sabre_en_bois",
-    "count": 1
+   "item": "am:clous"
+  },
+  "H":
+  {
+   "item": "am:planche"
+  },
+  "G":
+  {
+   "item": "am:ciseau_a_bois",
+   "data": 32767
   }
+ },
+
+ "result":
+ {
+  "item": "am:sabre_en_bois",
+  "count": 1
+ }
 }

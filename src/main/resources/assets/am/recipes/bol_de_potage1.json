@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped", 
+  "pattern": 
+ [ 
+ "   ", 
+ "PCR", 
+ "BBB" 
+ ], 
+
+
+ "key": 
+ { 
+ "C": 
+ { 
+ "item": "minecraft:carrot"
+ 
+},
+ "B": 
+ { 
+ "item": "minecraft:bowl"
+
+},
+"P": 
+ { 
+ "item": "am:pomme_de_terre"
+
+},
+"R": 
+ { 
+ "item": "am:poireau"
+}
+},
+ "result": 
+ { 
+ "item": "am:bol_de_potage",
+ "count": 3
+}
+}

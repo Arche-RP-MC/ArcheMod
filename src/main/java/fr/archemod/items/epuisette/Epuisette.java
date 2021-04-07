@@ -31,7 +31,7 @@ public class Epuisette extends ToolSword {
         super(name, material);
         setNoRepair();
         setMaxStackSize(1);
-        setMaxDamage(0);
+        setMaxDamage(64);
     }
 
 
