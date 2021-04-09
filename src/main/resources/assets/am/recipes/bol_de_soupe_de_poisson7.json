@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:crafting_shaped", 
+  "pattern": 
+ [ 
+ "   ", 
+ "BAD", 
+ "CCC" 
+ ], 
+
+
+ "key": 
+ { 
+ "A": 
+ { 
+ "item": "am:labido_jaune"
+ 
+},
+ "B": 
+ { 
+ "item": "am:poisson_chat"
+ 
+},
+ "C": 
+ { 
+ "item": "minecraft:bowl"
+
+},
+"D": 
+ { 
+ "item": "am:poisson_chirugien"
+
+}
+},
+ "result": 
+ { 
+ "item": "am:bol_de_soupe_de_poisson",
+ "count": 3
+}
+}

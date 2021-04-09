@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:crafting_shaped", 
+  "pattern": 
+ [ 
+ "   ", 
+ "BAD", 
+ "CCC" 
+ ], 
+
+
+ "key": 
+ { 
+ "A": 
+ { 
+ "item": "am:guppy"
+ 
+},
+ "B": 
+ { 
+ "item": "am:dore_jaune"
+ 
+},
+ "C": 
+ { 
+ "item": "minecraft:bowl"
+
+},
+"D": 
+ { 
+ "item": "am:croissant_a_queue_jaune"
+
+}
+},
+ "result": 
+ { 
+ "item": "am:bol_de_soupe_de_poisson",
+ "count": 3
+}
+}

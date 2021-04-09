@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:crafting_shaped", 
+  "pattern": 
+ [ 
+ "   ", 
+ "BAD", 
+ "CCC" 
+ ], 
+
+
+ "key": 
+ { 
+ "A": 
+ { 
+ "item": "am:chirugien_bleu"
+ 
+},
+ "B": 
+ { 
+ "item": "am:ange_royal"
+ 
+},
+ "C": 
+ { 
+ "item": "minecraft:bowl"
+
+},
+"D": 
+ { 
+ "item": "am:combattant_rouge"
+
+}
+},
+ "result": 
+ { 
+ "item": "am:bol_de_soupe_de_poisson",
+ "count": 3
+}
+}

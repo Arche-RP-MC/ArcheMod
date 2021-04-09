@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped", 
+  "pattern": 
+ [ 
+ "   ", 
+ " A ", 
+ " D " 
+ ], 
+
+
+ "key": 
+ { 
+ "A": 
+ { 
+ "item": "am:petite_viande_crue"
+ 
+},
+ "D":
+ {
+ "item": "minecraft:stick"
+
+}
+},
+ "result": 
+ { 
+ "item": "am:brochette_de_viande",
+ "count": 2
+}
+}

@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:crafting_shaped", 
+  "pattern": 
+ [ 
+ " S ", 
+ "FEF", 
+ " M " 
+ ], 
+
+
+ "key": 
+ { 
+ "F": 
+ { 
+ "item": "am:farine"
+ 
+},
+ "S": 
+ { 
+ "item": "am:sel"
+ 
+},
+ "M": 
+ { 
+ "item": "minecraft:water_bucket"
+
+},
+ "E": 
+ { 
+ "item": "am:viande_de_volaille_crue"
+
+}
+},
+ "result": 
+ { 
+ "item": "am:gros_ravioli",
+ "count": 3
+}
+}

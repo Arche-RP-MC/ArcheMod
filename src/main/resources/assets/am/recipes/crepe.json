@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:crafting_shaped", 
+  "pattern": 
+ [ 
+ "SLB", 
+ "EEE", 
+ "FFF" 
+ ], 
+
+
+ "key": 
+ { 
+ "F": 
+ { 
+ "item": "am:farine"
+ 
+},
+ "E": 
+ { 
+ "item": "minecraft:egg"
+ 
+},
+ "S": 
+ { 
+ "item": "minecraft:sugar"
+
+},
+"B": 
+ { 
+ "item": "am:beurre"
+
+},
+"L": 
+ { 
+ "item": "minecraft:milk_bucket"
+}
+},
+ "result": 
+ { 
+ "item": "am:crepe",
+ "count": 16
+}
+}

@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:crafting_shaped", 
+  "pattern": 
+ [ 
+ " S ", 
+ "EFE", 
+ "MMM" 
+ ], 
+
+
+ "key": 
+ { 
+ "F": 
+ { 
+ "item": "am:farine"
+ 
+},
+ "S": 
+ { 
+ "item": "am:sel"
+ 
+},
+ "M": 
+ { 
+ "item": "am:mais"
+
+},
+"E": 
+ { 
+ "item": "minecraft:egg"
+
+}
+},
+ "result": 
+ { 
+ "item": "am:galette_de_mais",
+ "count": 8
+}
+}

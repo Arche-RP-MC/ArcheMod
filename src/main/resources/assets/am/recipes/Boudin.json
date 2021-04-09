@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped", 
+  "pattern": 
+ [ 
+ "   ", 
+ " A ", 
+ " D " 
+ ], 
+
+
+ "key": 
+ { 
+ "D": 
+ { 
+ "item": "am:tripes"
+ 
+},
+ "A":
+ {
+ "item": "am:sang"
+
+}
+},
+ "result": 
+ { 
+ "item": "am:boudin",
+ "count": 3
+}
+}

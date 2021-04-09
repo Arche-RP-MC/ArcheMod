@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:crafting_shaped", 
+  "pattern": 
+ [ 
+ "   ", 
+ "BAD", 
+ "CCC" 
+ ], 
+
+
+ "key": 
+ { 
+
+ "B": 
+ { 
+ "item": "haricot_vert"
+ 
+},
+ "C": 
+ { 
+ "item": "minecraft:bowl"
+
+},
+"D": 
+ { 
+ "item": "am:brocoli"
+
+},
+"A": 
+ { 
+ "item": "am:petits_pois"
+}
+},
+ "result": 
+ { 
+ "item": "am:bol_de_soupe_de_pois",
+ "count": 3
+}
+}

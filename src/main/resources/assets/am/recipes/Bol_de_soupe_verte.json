@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:crafting_shaped", 
+  "pattern": 
+ [ 
+ "   ", 
+ "BAD", 
+ "CCC" 
+ ], 
+
+
+ "key": 
+ { 
+ "D": 
+ { 
+ "item": "am:poireau"
+ 
+},
+ "A" :
+ {
+ "item": "am:fenouil"
+
+},
+ "B": 
+ { 
+ "item": "am:artichaut"
+ 
+},
+ "C": 
+ { 
+ "item": "minecraft:bowl"
+
+}
+},
+ "result": 
+ { 
+ "item": "am:bol_de_soupe_verte",
+ "count": 3
+}
+}

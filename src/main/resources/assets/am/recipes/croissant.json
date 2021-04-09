@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:crafting_shaped", 
+  "pattern": 
+ [ 
+ "   ", 
+ "SLB", 
+ "FEF" 
+ ], 
+
+
+ "key": 
+ { 
+ "F": 
+ { 
+ "item": "am:farine"
+ 
+},
+ "E": 
+ { 
+ "item": "am:levure"
+ 
+},
+ "S": 
+ { 
+ "item": "minecraft:sugar"
+
+},
+"B": 
+ { 
+ "item": "am:beurre"
+
+},
+"L": 
+ { 
+ "item": "minecraft:water_bucket"
+}
+},
+ "result": 
+ { 
+ "item": "am:croissant",
+ "count": 12
+}
+}

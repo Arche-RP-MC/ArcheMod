@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped", 
+  "pattern": 
+ [ 
+ "   ", 
+ "BAB", 
+ "CCC" 
+ ], 
+
+
+ "key": 
+ { 
+ "A": 
+ { 
+ "item": "am:ail"
+ 
+},
+ "B": 
+ { 
+ "item": "am:tomate"
+ 
+},
+ "C": 
+ { 
+ "item": "minecraft:bowl"
+
+}
+},
+ "result": 
+ { 
+ "item": "am:bol_de_soupe_de_tomates",
+ "count": 3
+}
+}
