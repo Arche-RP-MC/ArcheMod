@@ -3,29 +3,26 @@
 
   "pattern":
   [
-    "  E",
-    "FGG",
-    "PBB"
+    "BGB",
+    "BFB",
+    "BBB"
   ],
 
   "key":
   {
     "B":
     {
-      "item": "am:sable"
+      "item": "am:etoffe"
     },
     "G":
     {
-      "item": "minecraft:gravel"
-    },
-    "E":
-    {
-      "item": "minecraft:water_bucket"
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
     },
     "F":
     {
-      "item": "am:mortier_pilon",
-      "data": 32767
+      "item": "minecraft:dye",
+      "data": 15
     }
   },
 

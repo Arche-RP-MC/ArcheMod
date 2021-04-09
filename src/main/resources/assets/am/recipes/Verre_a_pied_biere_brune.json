@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    " F ",
+    " L "
+  ],
+
+  "key":
+  {
+    "F":
+    {
+      "item": "am:bouteille_de_biere_brune",
+      "data": 32767
+    },
+    "L":
+    {
+      "item": "am:verre_a_pied"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:verre_a_pied_biere_brune",
+    "count": 1
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " O ",
+    "LGE",
+    "  P"
+  ],
+
+  "key":
+  {
+    "E":
+    {
+      "item": "am:etoffe"
+    },
+    "O":
+    {
+      "item": "am:loupe",
+      "data": 32767
+    },
+    "G":
+    {
+      "item": "am:geode_saphir"
+    },
+    "P":
+    {
+      "item": "am:pinces",
+      "data": 32767
+
+    },
+    "L":
+     {
+      "item": "am:lime_en_acier",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:saphir_taille_cabochon",
+    "count": 1
+  }
+}

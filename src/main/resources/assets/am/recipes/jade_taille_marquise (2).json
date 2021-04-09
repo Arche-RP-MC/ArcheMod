@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " L ",
+    "OGE",
+    " P "
+  ],
+
+  "key":
+  {
+    "E":
+    {
+      "item": "am:etoffe"
+    },
+    "O":
+    {
+      "item": "am:loupe",
+      "data": 32767
+    },
+    "G":
+    {
+      "item": "am:grosse_geode_jade"
+    },
+    "P":
+    {
+      "item": "am:pinces",
+      "data": 32767
+
+    },
+    "L":
+     {
+      "item": "am:lime_en_acier",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:jade_taille_marquise",
+    "count": 1
+  }
+}

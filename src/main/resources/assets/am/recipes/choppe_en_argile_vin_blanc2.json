@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    " F ",
+    " L "
+  ],
+
+  "key":
+  {
+    "F":
+    {
+      "item": "am:grosse_bouteille_vin_blanc",
+      "data": 32767
+    },
+    "L":
+    {
+      "item": "am:choppe_en_argile"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:choppe_en_argile_vin_blanc",
+    "count": 1
+  }
+}

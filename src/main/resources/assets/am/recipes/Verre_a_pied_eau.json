@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    " F ",
+    " L "
+  ],
+
+  "key":
+  {
+    "F":
+    {
+      "item": "am:bouteille_d_eau",
+      "data": 32767
+    },
+    "L":
+    {
+      "item": "am:verre_a_pied"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:verre_a_pied_eau",
+    "count": 1
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    " F ",
+    " L "
+  ],
+
+  "key":
+  {
+    "F":
+    {
+      "item": "am:grosse_bouteille_rhum",
+      "data": 32767
+    },
+    "L":
+    {
+      "item": "am:choppe_en_verre"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:choppe_en_verre_rhum",
+    "count": 1
+  }
+}

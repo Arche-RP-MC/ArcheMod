@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    " F ",
+    " L "
+  ],
+
+  "key":
+  {
+    "F":
+    {
+      "item": "am:bocal_de_vin_blanc",
+      "data": 32767
+    },
+    "L":
+    {
+      "item": "am:choppe_en_verre"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:choppe_en_verre_vin_blanc",
+    "count": 1
+  }
+}

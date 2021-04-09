@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    " F ",
+    " L "
+  ],
+
+  "key":
+  {
+    "F":
+    {
+      "item": "am:bocal_de_rhum",
+      "data": 32767
+    },
+    "L":
+    {
+      "item": "am:choppe_en_argile"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:choppe_en_argile_rhum",
+    "count": 1
+  }
+}

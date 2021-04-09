@@ -10,15 +10,14 @@
 
  "key": {
   "A": {
-   "item": "minecraft:wheat",
-   "data": 32767
+   "item": "minecraft:wheat"
   },
   "B": {
    "item": "am:fourche_en_fer",
    "data": 32767
   },
   "result": {
-   "item": "resultat",
+   "item": "bloc_de_paille",
    "count": 1
   }
  }

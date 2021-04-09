@@ -12,7 +12,7 @@
   {
     "V":
     {
-      "item": "am:planche_chene_no"
+      "item": "am:planche_chene_noir"
     },
     "H":
     {
@@ -36,7 +36,7 @@
 
   "result":
   {
-    "item": "am:trappe_en_chene_no",
+    "item": "am:trappe_en_chene_noir",
     "count": 1
   }
 }

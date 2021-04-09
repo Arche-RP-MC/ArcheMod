@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "PLO",
+    " GE",
+    "   "
+  ],
+
+  "key":
+  {
+    "E":
+    {
+      "item": "am:etoffe"
+    },
+    "O":
+    {
+      "item": "am:loupe",
+      "data": 32767
+    },
+    "G":
+    {
+      "item": "am:petite_geode_emeraude"
+    },
+    "P":
+    {
+      "item": "am:pinces",
+      "data": 32767
+
+    },
+    "L":
+     {
+      "item": "am:lime_en_acier",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:emeraude_taille_triangle",
+    "count": 1
+  }
+}

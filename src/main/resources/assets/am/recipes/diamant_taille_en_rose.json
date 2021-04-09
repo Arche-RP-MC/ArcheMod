@@ -27,9 +27,10 @@
     {
       "item": "am:pinces",
       "data": 32767
+
     },
     "L":
-    {
+     {
       "item": "am:lime_en_fer",
       "data": 32767
     }
@@ -37,7 +38,7 @@
 
   "result":
   {
-    "item": "am:diamant_taille_en_rose",
+    "item": "am:diamant_taille_rose",
     "count": 1
   }
 }

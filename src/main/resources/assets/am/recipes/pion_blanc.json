@@ -16,7 +16,8 @@
     },
     "T":
     {
-      "item": "minecraft:dye"
+      "item": "minecraft:dye",
+      "data" : 0
     },
     "V":
     {

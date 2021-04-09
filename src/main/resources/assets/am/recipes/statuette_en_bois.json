@@ -4,29 +4,21 @@
   "pattern":
   [
     "   ",
-    " B ",
-    "L E"
+    " P ",
+    "L  "
   ],
 
   "key":
   {
     "P":
     {
-      "item": "am:plaque_de_fer"
+      "item": "minecraft:log"
     },
     "L":
     {
-      "item": "am:laniere_de_cuir"
-    },
-    "M":
-    {
-      "item": "am:marteau_en_fer",
-      "data": 32767
-    },
-    "C":
-    {
-      "item": "am:clous"
+      "item": "am:ciseaux_a_bois"
     }
+
   },
 
   "result":
