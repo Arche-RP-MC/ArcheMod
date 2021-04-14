@@ -10,6 +10,7 @@ import fr.archemod.chat.capabilities.indicator.ArcheChatStorage;
 import fr.archemod.chat.capabilities.indicator.IArcheChat;
 import fr.archemod.chat.network.indicator.PacketArcheChat;
 import fr.archemod.cmd.HRPCommand;
+import fr.archemod.init.ModRecipes;
 import fr.archemod.network.ArcheNetwork;
 import fr.archemod.proxy.CommonProxy;
 import fr.archemod.util.ArcheCreativeTabs;
@@ -95,7 +96,7 @@ public class ArcheMod {
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
         ArcheNetwork.init();
-
+        ModRecipes.instance.initRecipes();
     }
 
     /**

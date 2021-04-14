@@ -102,6 +102,10 @@ public class ModItems {
     public static final Item FUT_DE_VIN = new ItemBase("fut_de_vin");
     public static final Item LANIERE_DE_CUIR = new ItemBase("laniere_de_cuir");
     public static final Item BOUGIE = new ItemBase("candle");
+    public static final Item MAILLE_DE_FER = new ItemBase("maille_de_fer");
+    public static final Item MAILLE_D_ACIER = new ItemBase("maille_d_acier");
+
+
 
     //OUTILS
 
@@ -287,7 +291,87 @@ public class ModItems {
     public static final Item HUITRE_OUVERTE = new FoodBase("huitre_ouverte",2,0.2F,false);
     public static final Item MORCEAU_DE_POULPE = new FoodBase("morceau_de_poulpe",2,0.2F,false);
 
-
+    //FOODS CRU
+    public static final Item BOL_DE_GRUAU_CRU = new ItemBase("bol_de_gruau_cru");
+    public static final Item AUBERGINE_CRU = new ItemBase("aubergine_cru");
+    public static final Item BEIGNET_CRU = new ItemBase("beignet_cru");
+    public static final Item BEIGNET_DE_CRABE_CRU = new ItemBase("beignet_de_crabe_cru");
+    public static final Item BISCUIT_CRU = new ItemBase("biscuit_cru");
+    public static final Item BISCUIT_AU_CHOCOLAT_CRU = new ItemBase("biscuit_au_chocolat_cru");
+    public static final Item BOL_DE_POT_AU_FEU_CRU = new ItemBase("bol_de_pot_au_feu_cru");
+    public static final Item BOL_DE_POTAGE_CRU = new ItemBase("bol_de_potage_cru");
+    public static final Item BOL_DE_RAGOUT_CRU = new ItemBase("bol_de_ragout_cru");
+    public static final Item BOL_DE_RAGOUT_DE_CRUSTACES_CRU = new ItemBase("bol_de_ragout_de_crustaces_cru");
+    public static final Item BOL_DE_RAGOUT_DE_PATATES_CRU = new ItemBase("bol_de_ragout_de_patates_cru");
+    public static final Item BOL_DE_RAGOUT_DE_VIANDE_CRU = new ItemBase("bol_de_ragout_de_viande_cru");
+    public static final Item BOL_DE_RIZ_CRU = new ItemBase("bol_de_riz_cru");
+    public static final Item BOL_DE_SOUPE_AVEC_CROUTONS_CRU = new ItemBase("bol_de_soupe_avec_croutons_cru");
+    public static final Item BOL_DE_SOUPE_DE_CHOUX_CRU = new ItemBase("bol_de_soupe_de_choux_cru");
+    public static final Item BOL_DE_SOUPE_DE_CITROUILLE_CRU = new ItemBase("bol_de_soupe_de_citrouille_cru");
+    public static final Item BOL_DE_SOUPE_DE_POIS_CRU = new ItemBase("bol_de_soupe_de_pois_cru");
+    public static final Item BOL_DE_SOUPE_DE_POISSON_CRU = new ItemBase("bol_de_soupe_de_poisson_cru");
+    public static final Item BOL_DE_SOUPE_DE_TOMATES_CRU = new ItemBase("bol_de_soupe_de_tomates_cru");
+    public static final Item BOL_DE_SOUPE_VERTE_CRU = new ItemBase("bol_de_soupe_verte_cru");
+    public static final Item BOUDIN_CRU = new ItemBase("boudin_cru");
+    public static final Item BRETZEL_CRU = new ItemBase("bretzel_cru");
+    public static final Item BRIOCHE_CRU = new ItemBase("brioche_cru");
+    public static final Item BROCHETTE_DE_VIANDE_CRU = new ItemBase("brochette_de_viande_cru");
+    public static final Item BROCOLI_CRU = new ItemBase("brocoli_cru");
+    public static final Item CAPRES_CRU = new ItemBase("capres_cru");
+    public static final Item CELERI_BRANCHE_CRU = new ItemBase("celeri_branche_cru");
+    public static final Item CEPES_CRU = new ItemBase("cepes_cru");
+    public static final Item CHATAIGNE_CRU = new ItemBase("chataigne_cru");
+    public static final Item CHOU_FLEUR_CRU = new ItemBase("chou_fleur_cru");
+    public static final Item COURGE_CRU = new ItemBase("courge_cru");
+    public static final Item COURGETTE_CRU = new ItemBase("courgette_cru");
+    public static final Item CREPE_CRU = new ItemBase("crepe_cru");
+    public static final Item CROISSANT_CRU = new ItemBase("croissant_cru");
+    public static final Item CUISSE_DE_GRENOUILLE__CRU = new ItemBase("cuisse_de_grenouille_cuite_cru");
+    public static final Item ENDIVE_CRU = new ItemBase("endive_cru");
+    public static final Item EPINARD_CRU = new ItemBase("epinard_cru");
+    public static final Item FENOUIL_CRU = new ItemBase("fenouil_cru");
+    public static final Item FRAISIER_CRU = new ItemBase("fraisier_cru");
+    public static final Item GALETTE_DE_MAIS_CRU = new ItemBase("galette_de_mais_cru");
+    public static final Item GAUFFRE_CRU = new ItemBase("gauffre_cru");
+    public static final Item GROS_RAVIOLI_CRU = new ItemBase("gros_ravioli_cru");
+    public static final Item HARICOT_BLANC_CRU = new ItemBase("haricot_blanc_cru");
+    public static final Item HARICOT_ROUGE_CRU = new ItemBase("haricot_rouge_cru");
+    public static final Item HARICOT_VERT_CRU = new ItemBase("haricot_vert_cru");
+    public static final Item MAIS_CRU = new ItemBase("mais_cru");
+    public static final Item NAVET_CRU = new ItemBase("navet_cru");
+    public static final Item OEUF_A_LA_COQUE_CRU = new ItemBase("oeuf_a_la_coque_cru");
+    public static final Item OEUF_A_PLAT_CRU = new ItemBase("oeuf_a_plat_cru");
+    public static final Item OEUF_DUR_CRU = new ItemBase("oeuf_dur_cru");
+    public static final Item OIGNON_CRU = new ItemBase("oignon_cru");
+    public static final Item PAIN_AU_CHOUX_CRU = new ItemBase("pain_au_choux_cru");
+    public static final Item PAIN_NOIR_CRU = new ItemBase("pain_noir_cru");
+    public static final Item PART_DE_GATEAU_CRU = new ItemBase("part_de_gateau_cru");
+    public static final Item PART_DE_TARTE_CRU = new ItemBase("part_de_tarte_cru");
+    public static final Item PART_DE_TARTE_AU_CITRON_CRU = new ItemBase("part_de_tarte_au_citron_cru");
+    public static final Item PART_DE_TARTE_AUX_FRUITS_ROUGES_CRU = new ItemBase("part_de_tarte_aux_fruits_rouges_cru");
+    public static final Item PART_DE_TARTE_AUX_MYRTILLES_CRU = new ItemBase("part_de_tarte_aux_myrtilles_cru");
+    public static final Item PART_DE_TOURTE_CRU = new ItemBase("part_de_tourte_cru");
+    public static final Item PATISSERIE_CRU = new ItemBase("patisserie_cru");
+    public static final Item PATISSERIE_A_LA_PATE_D_AMANDE_CRU = new ItemBase("patisserie_a_la_pate_d_amande_cru");
+    public static final Item PATISSERIES_COLOREES_CRU = new ItemBase("patisseries_colorees_cru");
+    public static final Item PETIT_PAIN_CRU = new ItemBase("petit_pain_cru");
+    public static final Item PETITS_POIS_CRU = new ItemBase("petits_pois_cru");
+    public static final Item POIREAU_CRU = new ItemBase("poireau_cru");
+    public static final Item POIVRON_JAUNE_FARCI_CRU = new ItemBase("poivron_jaune_farci_cru");
+    public static final Item POIVRON_JAUNE_M_CRU = new ItemBase("poivron_jaune_m_cru");
+    public static final Item POIVRON_ROUGE_FARCI_CRU = new ItemBase("poivron_rouge_farci_cru");
+    public static final Item POIVRON_ROUGE_M_CRU = new ItemBase("poivron_rouge_m_cru");
+    public static final Item POIVRON_VERT_FARCI_CRU = new ItemBase("poivron_vert_farci_cru");
+    public static final Item POIVRON_VERT_M_CRU = new ItemBase("poivron_vert_m_cru");
+    public static final Item POMME_DE_TERRE_CRU = new ItemBase("pomme_de_terre_cru");
+    public static final Item POMME_DE_TERRE_FARCIE_CRU = new ItemBase("pomme_de_terre_farcie_cru");
+    public static final Item POULET__CRU = new ItemBase("poulet_roti_cru");
+    public static final Item RELIGIEUSE_AU_CHOCOLAT_CRU = new ItemBase("religieuse_au_chocolat_cru");
+    public static final Item RIZ_CRU = new ItemBase("riz_cru");
+    public static final Item SALSIFI_CRU = new ItemBase("salsifi_cru");
+    public static final Item SAUCISSE_CRU = new ItemBase("saucisse_cru");
+    public static final Item ASPERGE_CRU = new ItemBase("asperge_cru");
+    public static final Item MORCEAU_DE_POULPE_CRU = new ItemBase("morceau_de_poulpe_cru");
 
 
 
@@ -668,6 +752,65 @@ public class ModItems {
     public static final Item MOULT_DE_RAISIN = new ItemBase("moult_de_raisin");
     public static final Item LAMBEAU_DE_VIANDE_CRUE = new ItemBase("lambeau_de_viande_crue");
     public static final Item GROSSE_VIANDE_CRUE = new ItemBase("grosse_viande_crue");
+    public static final Item TETE_COUTEAU_ARGENT = new ItemBase("tete_couteau_argent");
+    public static final Item TETE_COUTEAU_ETAIN = new ItemBase("tete_couteau_etain");
+    public static final Item TETE_COUTEAU_BRONZE = new ItemBase("tete_couteau_bronze");
+    public static final Item LINGOT_ARGENT = new ItemBase("lingot_argent");
+    public static final Item LINGOT_PLOMB = new ItemBase("lingot_plomb");
+    public static final Item LINGOT_CUIVRE = new ItemBase("lingot_cuivre");
+    public static final Item SACOCHE_EN_CUIR = new Sacoche("sacoche_en_cuir");
+    public static final Item SACOCHE_EN_CUIR_NOIR = new Sacoche("sacoche_en_cuir_noir");
+    public static final Item SACOCHE_EN_CUIR_BLEU = new Sacoche("sacoche_en_cuir_bleu");
+    public static final Item SACOCHE_EN_CUIR_MARRON = new Sacoche("sacoche_en_cuir_marron");
+    public static final Item SACOCHE_EN_CUIR_CYAN = new Sacoche("sacoche_en_cuir_cyan");
+    public static final Item SACOCHE_EN_CUIR_GRISE = new Sacoche("sacoche_en_cuir_grise");
+    public static final Item SACOCHE_EN_CUIR_BLEU_CLAIR = new Sacoche("sacoche_en_cuir_bleu_clair");
+    public static final Item SACOCHE_EN_CUIR_VERTE = new Sacoche("sacoche_en_cuir_verte");
+    public static final Item SACOCHE_EN_CUIR_MAGENTA = new Sacoche("sacoche_en_cuir_magenta");
+    public static final Item SACOCHE_EN_CUIR_ORANGE = new Sacoche("sacoche_en_cuir_orange");
+    public static final Item SACOCHE_EN_CUIR_ROSE = new Sacoche("sacoche_en_cuir_rose");
+    public static final Item SACOCHE_EN_CUIR_ROUGE = new Sacoche("sacoche_en_cuir_rouge");
+    public static final Item SACOCHE_EN_CUIR_BLANCHE = new Sacoche("sacoche_en_cuir_blanche");
+    public static final Item SACOCHE_EN_CUIR_JAUNE = new Sacoche("sacoche_en_cuir_jaune");
+    public static final Item SACOCHE_EN_CUIR_GRISE_CLAIR = new Sacoche("sacoche_en_cuir_gris_clair");
+
+    public static final Item BOURSE_NOIRE = new Bourse("bourse_noire");
+    public static final Item BOURSE_MARRON = new Bourse("bourse_marron");
+    public static final Item BOURSE_CYAN = new Bourse("bourse_cyan");
+    public static final Item BOURSE_GRISE = new Bourse("bourse_grise");
+    public static final Item BOURSE_BLEU_CLAIR = new Bourse("bourse_bleu_clair");
+    public static final Item BOURSE_VERTE = new Bourse("bourse_verte");
+    public static final Item BOURSE_MAGENTA = new Bourse("bourse_magenta");
+    public static final Item BOURSE_ORANGE = new Bourse("bourse_orange");
+    public static final Item BOURSE_VIOLETTE = new Bourse("bourse_violette");
+    public static final Item BOURSE_ROUGE = new Bourse("bourse_rouge");
+    public static final Item BOURSE_BLANCHE = new Bourse("bourse_blanche");
+    public static final Item BOURSE_GRISE_CLAIR = new Bourse("bourse_grise_clair");
+
+    public static final Item TETE_RAPIERE_ACIER = new ItemBase("tete_rapiere_acier");
+    public static final Item TETE_RAPIERE_FER = new ItemBase("tete_rapiere_fer");
+    public static final Item GARDE_RAPIERE = new ItemBase("garde_rapiere");
+    public static final Item TETE_ARACK_ACIER = new ItemBase("tete_arack_acier");
+    public static final Item TETE_ARACK_FER = new ItemBase("tete_arack_fer");
+    public static final Item TETE_EPEE_BATARDE_FER = new ItemBase("tete_eppe_batarde_fer");
+    public static final Item TETE_EPEE_BATARDE_ACIER = new ItemBase("tete_eppe_batarde_acier");
+    public static final Item TETE_EPEE_A_DEUX_MAIN_ACIER = new ItemBase("tete_eppe_a_deux_main_acier");
+    public static final Item TETE_EPEE_A_DEUX_MAIN_FER = new ItemBase("tete_eppe_a_deux_main_fer");
+    public static final Item TETE_FLAMEBERGE_ACIER = new ItemBase("tete_flameberge_acier");
+    public static final Item TETE_FLAMEBERGE_FER = new ItemBase("tete_flameberge_fer");
+
+    public static final Item FER_FONDU = new ItemBase("fer_fondu");
+    public static final Item CUIVRE_FONDU = new ItemBase("cuivre_fondu");
+    public static final Item PLOMB_FONDU = new ItemBase("plomb_fondu");
+    public static final Item ETAIN_FONDU = new ItemBase("etain_fondu");
+    public static final Item BRONZE_FONDU = new ItemBase("bronze_fondu");
+    public static final Item ACIER_FONDU = new ItemBase("acier_fondu");
+    public static final Item ARGENT_FONDU = new ItemBase("argent_fondu");
+    public static final Item OR_FONDU = new ItemBase("or_fondu");
+
+
+
+
     //public static final Item CHANVRE = new ItemBase("chanvre");
 
 
@@ -1010,7 +1153,6 @@ public class ModItems {
     public static final Item TETE_BURIN_BRONZE = new ItemBase("tete_burin_bronze");
     public static final Item TETE_BURIN_FER = new ItemBase("tete_burin_fer");
     public static final Item TETE_COUTEAU_ACIER = new ItemBase("tete_couteau_acier");
-    public static final Item TETE_COUTEAU_BRONZE = new ItemBase("tete_couteau_bronze");
     public static final Item TETE_COUTEAU_FER = new ItemBase("tete_couteau_fer");
     public static final Item TETE_COUTEAU_OR = new ItemBase("tete_couteau_or");
     public static final Item TETE_DAGUE_ACIER = new ItemBase("tete_dague_acier");

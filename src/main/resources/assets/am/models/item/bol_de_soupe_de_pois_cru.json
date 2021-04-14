@@ -1,0 +1,6 @@
+{
+"parent": "item/generated",
+"textures": {
+"layer0": "am:items/bol_de_soupe_de_pois_cru"
+}
+}

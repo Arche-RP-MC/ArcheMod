@@ -174,7 +174,7 @@ public class BlockBaril extends BlockBase implements ITileEntityProvider {
                     if(item.getItem() == Items.WATER_BUCKET){
                         if(barilTarget == BarilType.VIDE){
                             //           baril visé joueur  new baril     item cliqué par le joueur            item reçus                 valeur du liquide                  remplir ou vider
-                            setLiquidContainer(barilTarget, BarilType.VIDE, new ItemStack(Items.WATER_BUCKET), new ItemStack(Items.BUCKET), 15, worldIn, pos, playerIn, true);
+                            setLiquidContainer(barilTarget, BarilType.EAU, new ItemStack(Items.WATER_BUCKET), new ItemStack(Items.BUCKET), 15, worldIn, pos, playerIn, true);
                             return true;
                         }
                     }
@@ -182,7 +182,7 @@ public class BlockBaril extends BlockBase implements ITileEntityProvider {
                     if(item.getItem() == Items.MILK_BUCKET){
                         if(barilTarget == BarilType.VIDE){
                             //           baril visé joueur  new baril     item cliqué par le joueur            item reçus                 valeur du liquide                  remplir ou vider
-                            setLiquidContainer(barilTarget, BarilType.VIDE, new ItemStack(Items.MILK_BUCKET), new ItemStack(Items.BUCKET), 15, worldIn, pos, playerIn, true);
+                            setLiquidContainer(barilTarget, BarilType.LAIT, new ItemStack(Items.MILK_BUCKET), new ItemStack(Items.BUCKET), 15, worldIn, pos, playerIn, true);
                             return true;
                         }
                     }
@@ -190,7 +190,7 @@ public class BlockBaril extends BlockBase implements ITileEntityProvider {
                     if(item.getItem() == ModItems.SEAU_DE_BIERRE_BLONDE){
                         if(barilTarget == BarilType.VIDE){
                             //           baril visé joueur  new baril     item cliqué par le joueur            item reçus                 valeur du liquide                  remplir ou vider
-                            setLiquidContainer(barilTarget, BarilType.VIDE, new ItemStack(ModItems.SEAU_DE_BIERRE_BLONDE), new ItemStack(Items.BUCKET), 15, worldIn, pos, playerIn, true);
+                            setLiquidContainer(barilTarget, BarilType.BIERRE_BLONDE, new ItemStack(ModItems.SEAU_DE_BIERRE_BLONDE), new ItemStack(Items.BUCKET), 15, worldIn, pos, playerIn, true);
                             return true;
                         }
                     }
@@ -198,7 +198,7 @@ public class BlockBaril extends BlockBase implements ITileEntityProvider {
                     if(item.getItem() == ModItems.SEAU_DE_BIERE_BRUNE){
                         if(barilTarget == BarilType.VIDE){
                             //           baril visé joueur  new baril     item cliqué par le joueur            item reçus                 valeur du liquide                  remplir ou vider
-                            setLiquidContainer(barilTarget, BarilType.VIDE, new ItemStack(ModItems.SEAU_DE_BIERE_BRUNE), new ItemStack(Items.BUCKET), 15, worldIn, pos, playerIn, true);
+                            setLiquidContainer(barilTarget, BarilType.BIERE_BRUNE, new ItemStack(ModItems.SEAU_DE_BIERE_BRUNE), new ItemStack(Items.BUCKET), 15, worldIn, pos, playerIn, true);
                             return true;
                         }
                     }
@@ -206,7 +206,7 @@ public class BlockBaril extends BlockBase implements ITileEntityProvider {
                     if(item.getItem() == ModItems.SEAU_DE_BIERE_ROUSSE){
                         if(barilTarget == BarilType.VIDE){
                             //           baril visé joueur  new baril     item cliqué par le joueur            item reçus                 valeur du liquide                  remplir ou vider
-                            setLiquidContainer(barilTarget, BarilType.VIDE, new ItemStack(ModItems.SEAU_DE_BIERE_ROUSSE), new ItemStack(Items.BUCKET), 15, worldIn, pos, playerIn, true);
+                            setLiquidContainer(barilTarget, BarilType.BIERE_ROUSSE, new ItemStack(ModItems.SEAU_DE_BIERE_ROUSSE), new ItemStack(Items.BUCKET), 15, worldIn, pos, playerIn, true);
                             return true;
                         }
                     }
@@ -214,7 +214,7 @@ public class BlockBaril extends BlockBase implements ITileEntityProvider {
                     if(item.getItem() == ModItems.SEAU_DE_VIN_BLANC){
                         if(barilTarget == BarilType.VIDE){
                             //           baril visé joueur  new baril     item cliqué par le joueur            item reçus                 valeur du liquide                  remplir ou vider
-                            setLiquidContainer(barilTarget, BarilType.VIDE, new ItemStack(ModItems.SEAU_DE_VIN_BLANC), new ItemStack(Items.BUCKET), 15, worldIn, pos, playerIn, true);
+                            setLiquidContainer(barilTarget, BarilType.VIN_BLANC, new ItemStack(ModItems.SEAU_DE_VIN_BLANC), new ItemStack(Items.BUCKET), 15, worldIn, pos, playerIn, true);
                             return true;
                         }
                     }
@@ -222,7 +222,7 @@ public class BlockBaril extends BlockBase implements ITileEntityProvider {
                     if(item.getItem() == ModItems.SEAU_DE_VIN_ROUGE){
                         if(barilTarget == BarilType.VIDE){
                             //           baril visé joueur  new baril     item cliqué par le joueur            item reçus                 valeur du liquide                  remplir ou vider
-                            setLiquidContainer(barilTarget, BarilType.VIDE, new ItemStack(ModItems.SEAU_DE_VIN_ROUGE), new ItemStack(Items.BUCKET), 15, worldIn, pos, playerIn, true);
+                            setLiquidContainer(barilTarget, BarilType.VIN_ROUGE, new ItemStack(ModItems.SEAU_DE_VIN_ROUGE), new ItemStack(Items.BUCKET), 15, worldIn, pos, playerIn, true);
                             return true;
                         }
                     }
@@ -230,7 +230,7 @@ public class BlockBaril extends BlockBase implements ITileEntityProvider {
                     if(item.getItem() == ModItems.SEAU_DE_RHUM){
                         if(barilTarget == BarilType.VIDE){
                             //           baril visé joueur  new baril     item cliqué par le joueur            item reçus                 valeur du liquide                  remplir ou vider
-                            setLiquidContainer(barilTarget, BarilType.VIDE, new ItemStack(ModItems.SEAU_DE_RHUM), new ItemStack(Items.BUCKET), 15, worldIn, pos, playerIn, true);
+                            setLiquidContainer(barilTarget, BarilType.RHUM, new ItemStack(ModItems.SEAU_DE_RHUM), new ItemStack(Items.BUCKET), 15, worldIn, pos, playerIn, true);
                             return true;
                         }
                     }
@@ -238,7 +238,7 @@ public class BlockBaril extends BlockBase implements ITileEntityProvider {
                     if(item.getItem() == ModItems.SEAU_DE_HYDROMEL){
                         if(barilTarget == BarilType.VIDE){
                             //           baril visé joueur  new baril     item cliqué par le joueur            item reçus                 valeur du liquide                  remplir ou vider
-                            setLiquidContainer(barilTarget, BarilType.VIDE, new ItemStack(ModItems.SEAU_DE_HYDROMEL), new ItemStack(Items.BUCKET), 15, worldIn, pos, playerIn, true);
+                            setLiquidContainer(barilTarget, BarilType.HYDROMEL, new ItemStack(ModItems.SEAU_DE_HYDROMEL), new ItemStack(Items.BUCKET), 15, worldIn, pos, playerIn, true);
                             return true;
                         }
                     }
