@@ -792,10 +792,10 @@ public class ModItems {
     public static final Item GARDE_RAPIERE = new ItemBase("garde_rapiere");
     public static final Item TETE_ARACK_ACIER = new ItemBase("tete_arack_acier");
     public static final Item TETE_ARACK_FER = new ItemBase("tete_arack_fer");
-    public static final Item TETE_EPEE_BATARDE_FER = new ItemBase("tete_eppe_batarde_fer");
-    public static final Item TETE_EPEE_BATARDE_ACIER = new ItemBase("tete_eppe_batarde_acier");
-    public static final Item TETE_EPEE_A_DEUX_MAIN_ACIER = new ItemBase("tete_eppe_a_deux_main_acier");
-    public static final Item TETE_EPEE_A_DEUX_MAIN_FER = new ItemBase("tete_eppe_a_deux_main_fer");
+    public static final Item TETE_EPEE_BATARDE_FER = new ItemBase("tete_epee_batarde_fer");
+    public static final Item TETE_EPEE_BATARDE_ACIER = new ItemBase("tete_epee_batarde_acier");
+    public static final Item TETE_EPEE_A_DEUX_MAIN_ACIER = new ItemBase("tete_epee_a_deux_main_acier");
+    public static final Item TETE_EPEE_A_DEUX_MAIN_FER = new ItemBase("tete_epee_a_deux_main_fer");
     public static final Item TETE_FLAMEBERGE_ACIER = new ItemBase("tete_flameberge_acier");
     public static final Item TETE_FLAMEBERGE_FER = new ItemBase("tete_flameberge_fer");
 
@@ -807,6 +807,8 @@ public class ModItems {
     public static final Item ACIER_FONDU = new ItemBase("acier_fondu");
     public static final Item ARGENT_FONDU = new ItemBase("argent_fondu");
     public static final Item OR_FONDU = new ItemBase("or_fondu");
+
+    public static final Item Grand_Sac = new GrandSac("grand_sac");
 
 
 

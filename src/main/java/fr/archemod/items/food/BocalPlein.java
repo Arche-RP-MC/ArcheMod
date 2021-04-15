@@ -16,7 +16,7 @@ public class BocalPlein extends FoodBase {
 
     public BocalPlein(String name, int amount, float saturation, boolean isAnimalFood) {
         super(name, amount, saturation, isAnimalFood);
-        setMaxDamage(0);
+        setMaxDamage(1);
         setNoRepair();
         setMaxStackSize(1);
     }
