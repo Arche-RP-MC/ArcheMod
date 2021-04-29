@@ -12,7 +12,7 @@
  { 
  "C": 
  { 
- "item": "am:chou_fleur"
+ "item": "am:chou_fleur_cru"
  
 },
  "B": 
@@ -27,12 +27,12 @@
 },
 "R": 
  { 
- "item": "am:courge"
+ "item": "am:courge_cru"
 }
 },
  "result": 
  { 
- "item": "am:bol_de_potage",
+ "item": "am:bol_de_potage_cru",
  "count": 3
 }
 }

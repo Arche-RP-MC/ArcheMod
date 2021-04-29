@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    " PT",
+    "   "
+  ],
+
+  "key":
+  {
+    "P":
+    {
+        "item": "am:ciseaux_de_couture",
+        "data": 32767
+    },
+    "T":
+    {
+      "item": "minecraft:wool",
+      "data": 6
+    }
+  },
+
+  "result":
+  {
+    "item": "am:woolpinkstair",
+    "count": 1
+  }
+}

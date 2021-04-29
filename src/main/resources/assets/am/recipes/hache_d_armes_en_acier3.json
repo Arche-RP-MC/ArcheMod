@@ -4,7 +4,7 @@
   "pattern":
   [
     "HTC",
-    "PMX",
+    "PM ",
     "MC "
   ],
 
@@ -12,12 +12,12 @@
   {
     "H":
     {
-      "item": "am:marteau_en_acier",
+      "item": "am:marteau_en_bronze",
       "data": 32767
     },
     "T":
     {
-      "item": "am:tete_de_hallebarde"
+      "item": "am:tete_hache_armes_acier"
     },
     "C":
     {
@@ -31,10 +31,6 @@
     "M":
     {
       "item": "am:manche"
-    },
-    "X":
-    {
-      "item": "am:tete_de_marteau"
     }
   },
 

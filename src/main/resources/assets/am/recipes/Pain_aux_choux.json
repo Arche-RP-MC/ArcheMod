@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped", 
+  "pattern": 
+ [ 
+ "   ", 
+ "BAB",
+ "BAB"
+ ], 
+
+
+ "key": 
+ {
+
+  "A":
+  {
+   "item": "am:chou_vert_cru"
+
+  },
+ "B": 
+ { 
+ "item": "am:pate_a_pain"
+ 
+}
+},
+ "result": 
+ { 
+ "item": "am:pain_au_choux_cru",
+ "count": 5
+}
+}

@@ -25,4 +25,14 @@ public class ChoppePleine extends FoodBase{
     public EnumAction getItemUseAction(ItemStack stack) {
         return EnumAction.DRINK;
     }
+
+    @Override
+    public ItemStack getContainerItem(ItemStack itemStack) {
+        if(itemStack.getItemDamage()==itemStack.getMaxDamage()){
+            return ItemStack.EMPTY;
+        }
+        ItemStack itemCopy = itemStack.copy();
+        itemCopy.setItemDamage(itemCopy.getItemDamage()+1);
+        return itemCopy;
+    }
 }

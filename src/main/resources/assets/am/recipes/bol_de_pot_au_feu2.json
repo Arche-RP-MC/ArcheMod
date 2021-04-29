@@ -1,43 +1,31 @@
 {
-  "type": "minecraft:crafting_shaped", 
-  "pattern": 
- [ 
- "BED", 
- "BAD", 
- "CCC" 
- ], 
+ "type": "minecraft:crafting_shaped",
+ "pattern": [
+  "BED",
+  "BAD",
+  "CCC"
+ ],
+ "key": {
+  "A": {
+   "item": "am:viande_de_rat"
+  },
+  "B": {
+   "item": "am:poireau_cru"
+  },
+  "C": {
+   "item": "minecraft:bowl"
 
-
- "key": 
- { 
- "A": 
- { 
- "item": "am:viande_de_rat"
- 
-},
- "B": 
- { 
- "item": "am:poireau"
- 
-},
- "C": 
- {
-  "item": "minecraft:bowl"
-}
-},
-"D": 
- { 
- "item": "minecraft:Carrot"
-
-},
-"E": 
- { 
- "item": "am:oignon"
-
+ },
+ "D": {
+  "item": "minecraft:carrot"
+ },
+ "E": {
+  "item": "am:oignon"
+ }
 },
  "result": 
  { 
- "item": "am:bol_de_pot_au_feu",
+ "item": "am:bol_de_pot_au_feu_cru",
  "count": 3
 }
 }

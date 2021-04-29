@@ -23,8 +23,7 @@
 
   "result":
   {
-    "item": "minecraft:stone",
-    "data": 5,
+    "item": "am:andesite",
     "count": 1
   }
 }

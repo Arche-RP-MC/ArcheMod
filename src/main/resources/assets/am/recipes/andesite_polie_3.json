@@ -3,8 +3,8 @@
   "pattern": 
  [ 
  "ADD", 
- "BDD", 
- "C  " 
+ " DD",
+ "   "
  ], 
 
 
@@ -13,26 +13,18 @@
  "A": 
  { 
 "item": "am:lime_en_acier",
- "data": 32767 
-},
- "B": 
+ "data": 32767
+ },
+
+ "D":
  {
-      "item": "am:mortier",
-      "data": 32767
-    },
- "C": 
- { 
- "item": "am:etoffe"  
-},
- "D": 
- { 
- "item": "am:brique_d_andesite"  
-}
+  "item": "am:brique_d_andesite"
+ }
 
 },
- "result": 
- { 
- "item": "am:andesite_polie", 
- "count": 1
+"result":
+{
+"item": "am:andesite_polie",
+"count": 1
 }
 }

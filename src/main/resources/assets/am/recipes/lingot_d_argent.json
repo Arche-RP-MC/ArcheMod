@@ -16,7 +16,7 @@
     },
     "T":
     {
-      "item": "am:pepite_argent"
+      "item": "am:argent_fondu"
     },
     "H":
     {
@@ -27,7 +27,7 @@
 
   "result":
   {
-    "item": "am:lingot_d_argent",
+    "item": "am:lingot_argent",
     "count": 1
   }
 }

@@ -17,27 +17,26 @@
 },
  "B": 
  { 
- "item": "am:poireau"
+ "item": "am:poireau_cru"
  
 },
  "C": 
  {
   "item": "minecraft:bowl"
-}
+
 },
 "D": 
  { 
- "item": "minecraft:Carrot"
+ "item": "minecraft:carrot"
 
 },
-"E": 
- { 
+"E": {
  "item": "am:oignon"
-
+}
 },
  "result": 
  { 
- "item": "am:bol_de_pot_au_feu",
+ "item": "am:bol_de_pot_au_feu_cru",
  "count": 3
 }
 }

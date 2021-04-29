@@ -13,7 +13,7 @@
 
  "B": 
  { 
- "item": "haricot_vert"
+ "item": "haricot_vert_cru"
  
 },
  "C": 
@@ -23,17 +23,17 @@
 },
 "D": 
  { 
- "item": "am:brocoli"
+ "item": "am:brocoli_cru"
 
 },
 "A": 
  { 
- "item": "am:petits_pois"
+ "item": "am:petits_pois_cru"
 }
 },
  "result": 
  { 
- "item": "am:bol_de_soupe_de_pois",
+ "item": "am:bol_de_soupe_de_pois_cru",
  "count": 3
 }
 }

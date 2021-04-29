@@ -3,7 +3,7 @@
   "pattern": 
  [ 
  "ADD", 
- "BDD", 
+ " DD",
  "C  " 
  ], 
 
@@ -15,15 +15,7 @@
 "item": "am:lime_en_fer",
  "data": 32767 
 },
- "B": 
- {
-      "item": "am:mortier",
-      "data": 32767
-    },
- "C": 
- { 
- "item": "am:etoffe"  
-},
+
  "D": 
  { 
  "item": "am:brique_d_andesite"  

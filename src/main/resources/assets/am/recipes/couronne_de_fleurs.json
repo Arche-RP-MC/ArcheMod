@@ -12,7 +12,8 @@
   {
     "H":
     {
-      "item": "minecraft:red_flower"
+      "item": "minecraft:red_flower",
+      "data" : 0
     },
     "G":
     {

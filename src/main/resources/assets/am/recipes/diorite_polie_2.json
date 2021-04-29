@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped", 
+  "pattern": 
+ [ 
+ "ADD", 
+ " DD",
+ "C  " 
+ ], 
+
+
+ "key": 
+ { 
+ "A": 
+ { 
+"item": "am:lime_en_fer",
+ "data": 32767 
+},
+
+ "D": 
+ { 
+ "item": "am:brique_de_diorite"
+}
+
+},
+ "result": 
+ { 
+ "item": "am:diorite_poli",
+ "count": 1
+}
+}

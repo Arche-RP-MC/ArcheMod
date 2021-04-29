@@ -12,7 +12,7 @@
  { 
  "C": 
  { 
- "item": "am:navet"
+ "item": "am:navet_cru"
  
 },
  "B": 
@@ -22,7 +22,7 @@
 },
 "P": 
  { 
- "item": "am:salsifi"
+ "item": "am:salsifi_cru"
 
 },
 "R": 
@@ -32,7 +32,7 @@
 },
  "result": 
  { 
- "item": "am:bol_de_potage",
+ "item": "am:bol_de_potage_cru",
  "count": 3
 }
 }

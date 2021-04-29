@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "TT ",
+    "FF ",
+    "TT "
+  ],
+
+  "key":
+  {
+    "F":
+    {
+      "item": "am:mortier"
+    },
+    "T":
+    {
+      "item": "am:brique_de_granite"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:brique_granite",
+    "count": 1
+  }
+}

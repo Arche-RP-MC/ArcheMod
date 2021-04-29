@@ -5,17 +5,26 @@
   " B ",
   "  A"
  ],
- "key": {
+
+
+ "key":
+ {
   "A": {
    "item": "am:ciseaux_a_bois",
    "data": 32767
   },
-  "B": {
+
+  "B":
+
+  {
    "item": "am:planche"
-  },
-  "result": {
+  }
+ },
+
+  "result":
+  {
    "item": "am:gourdin",
    "count": 1
   }
  }
-}
+

@@ -3,7 +3,7 @@
   "pattern": 
  [ 
  "BED", 
- "BAD", 
+ "B D",
  "CCC" 
  ], 
 
@@ -28,12 +28,12 @@
 },
 "E": 
  { 
- "item": "am:courge"
+ "item": "am:courge_cru"
 }
 },
  "result": 
  { 
- "item": "am:bol_de_soupe_de_citrouille",
+ "item": "am:bol_de_soupe_de_citrouille_cru",
  "count": 3
 }
 }

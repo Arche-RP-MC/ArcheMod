@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "TT ",
+    "FFP",
+    "TTI"
+  ],
+
+  "key":
+  {
+    "F":
+    {
+      "item": "am:clous"
+    },
+    "I":
+    {
+      "item": "am:ciseaux_a_bois",
+      "data": 32767
+    },
+    "P":
+    {
+      "item": "am:marteau_en_acier",
+      "data": 32767
+    },
+    "T":
+    {
+      "item": "am:planche_acajou"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:plancher_acajou_croise",
+    "count": 1
+  }
+}

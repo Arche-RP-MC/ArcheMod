@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "G F",
+    "LLL",
+    "L L"
+  ],
+
+  "key":
+  {
+    "L":
+    {
+      "item": "am:granite"
+    },
+
+    "G":
+    {
+      "item": "am:maillet",
+      "data": 32767
+    },
+    "F":
+    {
+      "item": "am:clous"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:granite_fence",
+    "count": 5
+  }
+}

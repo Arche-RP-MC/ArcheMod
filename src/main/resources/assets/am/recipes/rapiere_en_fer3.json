@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " G ",
+    " HT",
+    " B "
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:garde_rapiere"
+    },
+    "T":
+    {
+      "item": "am:clous"
+    },
+    "H":
+    {
+      "item": "am:tete_rapiere_fer"
+    },
+    "G":
+    {
+      "item": "am:marteau_en_acier",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:rapiere_en_fer",
+    "count": 1
+  }
+}

@@ -27,13 +27,13 @@
 },
  "E": 
  { 
- "item": "am:haricot_vert"
+ "item": "am:haricot_vert_cru"
 
 }
 },
  "result": 
- { 
- "item": "am:gros_ravioli",
+ {
+  "item": "am:gros_ravioli_cru",
  "count": 3
 }
 }

@@ -23,8 +23,7 @@
 
   "result":
   {
-    "item": "minecraft:stone",
-    "data": 3,
+    "item": "am:diorite",
     "count": 1
   }
 }

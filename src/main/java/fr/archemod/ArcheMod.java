@@ -16,6 +16,7 @@ import fr.archemod.proxy.CommonProxy;
 import fr.archemod.util.ArcheCreativeTabs;
 import fr.archemod.util.Reference;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.capabilities.CapabilityManager;
@@ -109,4 +110,6 @@ public class ArcheMod {
     public static Logger getLogger() {
         return logger;
     }
+
+    public void registerItemRenderer(Item item, int meta, String id) {}
 }

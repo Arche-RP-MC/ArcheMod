@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "pattern": [
+  "   ",
+  "AB ",
+  "   "
+ ],
+ "key": {
+  "A": {
+   "item": "am:marteau_en_fer",
+   "data": 32767
+  },
+  "B": {
+   "item": "minecraft:cobblestone"
+  }
+ },
+  "result": {
+   "item": "am:caillou",
+   "count": 6
+  }
+ }

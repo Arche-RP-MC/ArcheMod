@@ -22,7 +22,7 @@
 },
  "M": 
  { 
- "item": "am:mais"
+ "item": "am:mais_cru"
 
 },
 "E": 
@@ -33,7 +33,7 @@
 },
  "result": 
  { 
- "item": "am:galette_de_mais",
+ "item": "am:galette_de_mais_cru",
  "count": 8
 }
 }

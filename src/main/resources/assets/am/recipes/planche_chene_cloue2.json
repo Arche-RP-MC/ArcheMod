@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "TTF",
+    "FFP",
+    "TT "
+  ],
+
+  "key":
+  {
+    "F":
+    {
+      "item": "am:clous"
+
+    },
+    "P":
+    {
+      "item": "am:marteau_en_bronze",
+      "data": 32767
+    },
+    "T":
+    {
+      "item": "am:planche_chene"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:plancher_chene_cloue",
+    "count": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped", 
+  "pattern": 
+ [ 
+ "   ", 
+ "DCD", 
+ " B " 
+ ], 
+
+
+ "key": 
+ {
+ "B": 
+ { 
+ "item": "am:pate_diverse"
+ 
+},
+ "C": 
+ { 
+ "item": "am:amandes"
+
+},
+"D": 
+ { 
+ "item": "minecraft:sugar"
+
+}
+},
+ "result": 
+ { 
+ "item": "am:patisserie_a_la_pate_d_amande_cru",
+ "count": 3
+}
+}

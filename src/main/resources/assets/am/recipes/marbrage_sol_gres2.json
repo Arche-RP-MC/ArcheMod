@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "PT ",
+    "FFI",
+    "TP "
+  ],
+
+  "key":
+  {
+    "F":
+    {
+      "item": "am:mortier"
+    },
+    "I":
+    {
+      "item": "am:caillou_granite"
+    },
+    "P":
+    {
+      "item": "am:caillou_de_gres"
+    },
+    "T":
+    {
+      "item": "am:caillou_de_gres_rouge"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:marbrage_sol_gres",
+    "count": 1
+  }
+}

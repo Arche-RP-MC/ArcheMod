@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "T  ",
+    "F  ",
+    "TT "
+  ],
+
+  "key":
+  {
+    "F":
+    {
+      "item": "am:mortier"
+    },
+    "T":
+    {
+      "item": "am:brique_de_diorite"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:dioritemossystair",
+    "count": 1
+  }
+}

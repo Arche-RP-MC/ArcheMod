@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all" : "am:blocks/bloc_minerai_argent"
+    "all" : "am:blocks/bloc_minerai_cuivre"
   }
 }

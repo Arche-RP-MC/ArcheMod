@@ -15,10 +15,10 @@
   "B": {
    "item": "am:fourche_en_fer",
    "data": 32767
-  },
+  }
+ },
   "result": {
    "item": "bloc_de_paille",
    "count": 1
   }
- }
  }

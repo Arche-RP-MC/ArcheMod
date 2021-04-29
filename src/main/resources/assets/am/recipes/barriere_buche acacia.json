@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "G F",
+    "LLL",
+    "L L"
+  ],
+
+  "key":
+  {
+    "L":
+    {
+      "item": "minecraft:sapling",
+      "data": 4
+    },
+
+    "G":
+    {
+      "item": "am:maillet",
+      "data": 32767
+    },
+    "F":
+    {
+      "item": "am:clous"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:logacaciafence",
+    "count": 5
+  }
+}

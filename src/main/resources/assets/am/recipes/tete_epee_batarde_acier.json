@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "MF ",
+    " F ",
+    "P  "
+  ],
+
+  "key":
+  {
+    "M":
+    {
+      "item": "am:marteau_en_fer",
+      "data": 32767
+    },
+    "P":
+    {
+      "item": "am:pinces",
+      "data": 32767
+    },
+    "F":
+    {
+      "item": "am:barre_acier"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:tete_epee_batarde_acier",
+    "count": 1
+  }
+}

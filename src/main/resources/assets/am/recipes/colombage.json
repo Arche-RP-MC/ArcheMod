@@ -25,7 +25,8 @@
     },
     "G":
     {
-      "item": "minecraft:sand"
+      "item": "minecraft:sand",
+      "data": 0
     },
     "L":
     {
@@ -36,6 +37,6 @@
   "result":
   {
     "item": "am:colombage",
-    "count": 1
+    "count": 2
   }
 }

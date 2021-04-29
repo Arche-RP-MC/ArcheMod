@@ -4,6 +4,7 @@ import fr.archemod.ArcheMod;
 import fr.archemod.blocks.*;
 import fr.archemod.blocks.agriculture.BlockPlanLin;
 import fr.archemod.blocks.baril.LiquideType;
+//import fr.archemod.blocks.bloc3D.Baril3D;
 import fr.archemod.items.agriculture.ItemGraine;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockSign;
@@ -154,7 +155,7 @@ public class ModBlocks {
     public static final Block TUILE_EN_ARDOISE = new BlockBase("tuile_en_ardoise", Material.ROCK, 5F, 5F, SoundType.STONE);
     public static final Block TUILE_EN_ARDOISE_TAILLEE = new BlockBase("tuile_en_ardoise_taillee", Material.ROCK, 5F, 5F, SoundType.STONE);
     public static final Block TUILE_EN_ARDOISE_TRAVAILLEE = new BlockBase("tuile_en_ardoise_travaillee", Material.ROCK, 5F, 5F, SoundType.STONE);
-    public static final Block BARIL = new Bloc3D("baril", Material.WOOD, SoundType.WOOD);
+
 
 
     //ESCALIER
@@ -486,30 +487,31 @@ public class ModBlocks {
 
     //PLANTATION \!/ Allez changer la graine correspondant dans init.ModItems en ItemGraine (faire ctrl+f pour la trouver) + register l'item ici, dans init() et register();
     public static final Block PLAN_DE_LIN = new BlockPlanLin("plan_de_lin",ModItems.GRAINE_LIN, ModItems.LIN);
-    public static final Block PLAN_CELERI = new BlockPlanLin("plan_celeri",ModItems.GRAINE_CELERI, ModItems.CELERI_BRANCHE);
-    public static final Block PLAN_FENOUIL = new BlockPlanLin("plan_fenouil",ModItems.GRAINE_FENOUIL, ModItems.FENOUIL);
-    public static final Block PLAN_MAIS = new BlockPlanLin("plan_mais",ModItems.GRAINE_MAIS, ModItems.MAIS);
-    public static final Block PLAN_NAVET = new BlockPlanLin("plan_navet",ModItems.GRAINE_NAVET, ModItems.NAVET);
+    public static final Block PLAN_CELERI = new BlockPlanLin("plan_celeri",ModItems.GRAINE_CELERI, ModItems.CELERI_BRANCHE_CRU);
+    public static final Block PLAN_FENOUIL = new BlockPlanLin("plan_fenouil",ModItems.GRAINE_FENOUIL, ModItems.FENOUIL_CRU);
+    public static final Block PLAN_MAIS = new BlockPlanLin("plan_mais",ModItems.GRAINE_MAIS, ModItems.MAIS_CRU);
+    public static final Block PLAN_NAVET = new BlockPlanLin("plan_navet",ModItems.GRAINE_NAVET, ModItems.NAVET_CRU);
     public static final Block PLAN_ORGE = new BlockPlanLin("plan_orge",ModItems.GRAINE_ORGE, ModItems.ORGE);
     public static final Block PLAN_FRAISE = new BlockPlanLin("plan_fraise",ModItems.GRAINE_FRAISE, ModItems.FRAISE);
     public static final Block PLAN_FRAMBOISE = new BlockPlanLin("plan_framboise",ModItems.GRAINE_FRAMBOISE, ModItems.FRAMBOISE);
     public static final Block PLAN_MYRTILLE = new BlockPlanLin("plan_myrtille",ModItems.GRAINE_MYRTILLE, ModItems.MYRTILLES);
-    public static final Block PLAN_POIREAU = new BlockPlanLin("plan_poireau",ModItems.GRAINE_POIREAU, ModItems.POIREAU);
+    public static final Block PLAN_POIREAU = new BlockPlanLin("plan_poireau",ModItems.GRAINE_POIREAU, ModItems.POIREAU_CRU);
     public static final Block PLAN_RADIS = new BlockPlanLin("plan_radis",ModItems.GRAINE_RADIS, ModItems.RADIS);
-    public static final Block PLAN_SALSIFI = new BlockPlanLin("plan_salsifi",ModItems.GRAINE_SALSIFI, ModItems.SALSIFI);
-    public static final Block PLAN_TOMATE = new BlockPlanLin("plan_tomate",ModItems.GRAINE_TOMATE, ModItems.TOMATE);
+    public static final Block PLAN_SALSIFI = new BlockPlanLin("plan_salsifi",ModItems.GRAINE_SALSIFI, ModItems.SALSIFI_CRU);
+    public static final Block PLAN_TOMATE = new BlockPlanLin("plan_tomate",ModItems.GRAINE_TOMATE, ModItems.TOMATE_CRU);
     public static final Block PLAN_VIGNE_NOIRE = new BlockPlanLin("plan_vigne_noire",ModItems.GRAINE_VIGNE_NOIRE, ModItems.RAISIN_NOIR);
     public static final Block PLAN_VIGNE_BLANCHE = new BlockPlanLin("plan_vigne_blanche",ModItems.GRAINE_VIGNE_BLANCHE, ModItems.RAISIN_BLANC);
-    public static final Block PLAN_EPINARD = new BlockPlanLin("plan_epinard",ModItems.GRAINE_EPINARD, ModItems.EPINARD);
-    public static final Block PLAN_CHOU = new BlockPlanLin("plan_chou",ModItems.GRAINE_CHOU, ModItems.CHOU_VERT);
+    public static final Block PLAN_EPINARD = new BlockPlanLin("plan_epinard",ModItems.GRAINE_EPINARD, ModItems.EPINARD_CRU);
+    public static final Block PLAN_CHOU = new BlockPlanLin("plan_chou",ModItems.GRAINE_CHOU, ModItems.CHOU_VERT_CRU);
     public static final Block PLAN_THE = new BlockPlanLin("plan_the",ModItems.GRAINE_DE_THE, ModItems.FEUILLE_DE_THE);
     public static final Block PLAN_SALADE = new BlockPlanLin("plan_salade",ModItems.GRAINE_SALADE, ModItems.SALADE);
-    public static final Block PLAN_ARTICHAUT = new BlockPlanLin("plan_artichaut",ModItems.GRAINE_ARTICHAUT, ModItems.ARTICHAUT);
-    public static final Block PLAN_BROCOLIS = new BlockPlanLin("plan_brocolis",ModItems.GRAINE_BROCOLIS, ModItems.BROCOLI);
-    public static final Block PLAN_ASPERGE = new BlockPlanLin("plan_asperge",ModItems.GRAINE_ASPERGE, ModItems.ASPERGE);
-    public static final Block PLAN_ENDIVE = new BlockPlanLin("plan_endive",ModItems.GRAINE_ENDIVE, ModItems.ENDIVE);
-    public static final Block PLAN_RIZ = new BlockPlanLin("plan_riz",ModItems.GRAINE_RIZ, ModItems.RIZ);
+    public static final Block PLAN_ARTICHAUT = new BlockPlanLin("plan_artichaut",ModItems.GRAINE_ARTICHAUT, ModItems.ARTICHAUT_CRU);
+    public static final Block PLAN_BROCOLIS = new BlockPlanLin("plan_brocolis",ModItems.GRAINE_BROCOLIS, ModItems.BROCOLI_CRU);
+    public static final Block PLAN_ASPERGE = new BlockPlanLin("plan_asperge",ModItems.GRAINE_ASPERGE, ModItems.ASPERGE_CRU);
+    public static final Block PLAN_ENDIVE = new BlockPlanLin("plan_endive",ModItems.GRAINE_ENDIVE, ModItems.ENDIVE_CRU);
+    public static final Block PLAN_RIZ = new BlockPlanLin("plan_riz",ModItems.GRAINE_RIZ, ModItems.RIZ_CRU);
     //public static final Block PLAN_CHANVRE = new BlockPlanLin("plan_chanvre",ModItems.GRAINE_CHANVRE, ModItems.CHANVRE);
+    public static final Block PLAN_BLE = new BlockPlanLin("plan_ble",ModItems.GRAINE_BLE, ModItems.BLE);
 
 
 
@@ -521,7 +523,8 @@ public class ModBlocks {
     public static final Block FLOWER_POT = new BlockFlowerPot("flower_pot_am");
 
     //BARIL \!/ Ajouter les interactions avec d'autres objets et liquides dans la classe directement en suivant l'exemple de l'eau
-    public static final Block BARIL_VIDE = new BlockBaril("baril_vide", Material.WOOD, 1.5F, 1.5f, SoundType.WOOD);
+    //public static final Block BARIL_VIDE = new Baril3D("baril_vide", 1.5F, 1.5f, SoundType.WOOD);
+    public static final Block BARIL_VIDE = new BlockBaril("baril_vide",Material.WOOD, 1.5F, 1.5f, SoundType.WOOD);
 
 
     //CONTENEUR \!/ Il faut recréer Block, TileEntity, Container, Inventory, GUI, Registry dans util.handlers.RegistryHandler et gérer le GUIid du Block (onBlockActivated) dans le switch case du GUIHandler
@@ -536,6 +539,42 @@ public class ModBlocks {
     public static final Block BLOC_MINERAI_PLOMB = new BlockBase("bloc_minerai_plomb", Material.ROCK, 5F, 5F, SoundType.STONE);
     public static final Block BLOC_MINERAI_CUIVRE = new BlockBase("bloc_minerai_cuivre", Material.ROCK, 5F, 5F, SoundType.STONE);
     public static final Block BLOC_MINERAI_SEL = new BlockBase("bloc_minerai_sel", Material.ROCK, 5F, 5F, SoundType.STONE);
+    public static final Block BLOC_MINERAI_OR = new BlockBase("bloc_minerai_or", Material.ROCK, 5F, 5F, SoundType.STONE);
+
+
+
+
+    // bloc 3d
+
+
+    public static final Block BALANCOIRE_A_OISEAU = new BlockBase2("balancoire_a_oiseau", Material.ROCK, 5F, 5F, SoundType.STONE);
+    //public static final Block BALISTE = new BlockBase2("baliste", Material.ROCK, 5F, 5F, SoundType.STONE);
+    //public static final Block BIBLIOTHEQUE = new BlockBase2("bibliotheque", Material.ROCK, 5F, 5F, SoundType.STONE);
+    public static final Block CHAISE = new BlockBase2("chaise", Material.ROCK, 5F, 5F, SoundType.STONE);
+    //public static final Block CLOCHE = new BlockBase2("cloche", Material.ROCK, 5F, 5F, SoundType.STONE);
+    //public static final Block COIN_LIT_BALDAQUIN_RIDEAU_FERMES = new BlockBase2("coin_lit_baldaquin_rideau_fermes", Material.ROCK, 5F, 5F, SoundType.STONE);
+    //public static final Block COIN_LIT_BALDAQUIN_RIDEAU_OUVERTS = new BlockBase2("coin_lit_baldaquin_rideau_ouverts", Material.ROCK, 5F, 5F, SoundType.STONE);
+    //public static final Block ETAGERE_A_ROULEAUX = new BlockBase2("etagere_a_rouleaux", Material.ROCK, 5F, 5F, SoundType.STONE);
+    //public static final Block FAUTEUIL = new BlockBase2("fauteuil", Material.ROCK, 5F, 5F, SoundType.STONE);
+    //public static final Block JEU_D_ECHEC = new BlockBase2("jeu_d_echec", Material.ROCK, 5F, 5F, SoundType.STONE);
+    //public static final Block LUSTRE_ALUME_OFF = new BlockBase2("lustre_alume_off",Material.ROCK, 5F, 5F, SoundType.STONE);
+    //public static final Block LUSTRE_ALUME = new BlockBase2("lustre_alume",Material.ROCK, 5F, 5F, SoundType.STONE);
+    //public static final Block MIROIR_DROIT = new BlockBase2("miroir_droit", Material.ROCK, 5F, 5F, SoundType.STONE);
+    //public static final Block MIROIR_ROND = new BlockBase2("miroir_rond", Material.ROCK, 5F, 5F, SoundType.STONE);
+    //public static final Block PIEGE = new BlockBase2("piege", Material.ROCK, 5F, 5F, SoundType.STONE);
+    public static final Block PIEGE_A_LOUP = new BlockBase2("piege_a_loup", Material.ROCK, 5F, 5F, SoundType.STONE);
+    //public static final Block PONT_DE_SINGE = new BlockBase2("pont_de_singe", Material.ROCK, 5F, 5F, SoundType.STONE);
+    public static final Block PORTE_MANTEAUX = new BlockBase2("porte_manteaux", Material.ROCK, 5F, 5F, SoundType.STONE);
+    //public static final Block RANGE_BOUTEILLE = new BlockBase2("range_bouteille", Material.ROCK, 5F, 5F, SoundType.STONE);
+    //public static final Block RATELIER_DROIT = new BlockBase2("ratelier_droit", Material.ROCK, 5F, 5F, SoundType.STONE);
+    //public static final Block SECHOIR_PLANTES = new BlockBase2("sechoir_plantes", Material.ROCK, 5F, 5F, SoundType.STONE);
+    //public static final Block SECHOIR_POISSON = new BlockBase2("sechoir_poisson", Material.ROCK, 5F, 5F, SoundType.STONE);
+    //public static final Block SECHOIR_SIMPLE_PAPIER = new BlockBase2("sechoir_simple_papier", Material.ROCK, 5F, 5F, SoundType.STONE);
+    //public static final Block SECHOIR_VIANDES = new BlockBase2("sechoir_viandes", Material.ROCK, 5F, 5F, SoundType.STONE);
+
+
+
+
 
 
     /*public static final Block CHAISE_CHENE = new BlocChaise("chaise_chene", Material.WOOD, SoundType.WOOD);
@@ -573,6 +612,7 @@ public class ModBlocks {
         ModItems.GRAINE_ASPERGE = new ItemGraine("GRAINE_ASPERGE",ModBlocks.PLAN_ASPERGE, Blocks.FARMLAND);
         ModItems.GRAINE_ENDIVE = new ItemGraine("GRAINE_ENDIVE",ModBlocks.PLAN_ENDIVE, Blocks.FARMLAND);
         ModItems.GRAINE_RIZ = new ItemGraine("GRAINE_RIZ",ModBlocks.PLAN_RIZ, Blocks.FARMLAND);
+        ModItems.GRAINE_BLE = new ItemGraine("GRAINE_BLE",ModBlocks.PLAN_BLE, Blocks.FARMLAND);
         //ModItems.GRAINE_CHANVRE = new ItemGraine("GRAINE_CHANVRE",ModBlocks.PLAN_CHANVRE, Blocks.FARMLAND);
     }
 
@@ -617,6 +657,7 @@ public class ModBlocks {
         registerItem(ModItems.GRAINE_ASPERGE);
         registerItem(ModItems.GRAINE_ENDIVE);
         registerItem(ModItems.GRAINE_RIZ);
+        registerItem(ModItems.GRAINE_BLE);
 
         //registerB(ModBlocks.CHAISE_CHENE, new ItemBlock(ModBlocks.CHAISE_CHENE));
 

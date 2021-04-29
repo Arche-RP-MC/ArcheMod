@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " M ",
+    "AFP",
+    "   "
+  ],
+
+  "key":
+  {
+    "M":
+    {
+      "item": "am:marteau_en_bronze",
+      "data": 32767
+    },
+    "P":
+    {
+      "item": "am:pinces",
+      "data": 32767
+    },
+    "F":
+    {
+      "item": "am:tete_marteau_acier"
+    },
+    "A":
+    {
+      "item": "am:plaque_d_acier"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:tete_hache_armes_acier",
+    "count": 1
+  }
+}

@@ -22,17 +22,17 @@
 },
 "P": 
  { 
- "item": "am:pomme_de_terre"
+ "item": "am:pomme_de_terre_cru"
 
 },
 "R": 
  { 
- "item": "am:poireau"
+ "item": "am:poireau_cru"
 }
 },
  "result": 
  { 
- "item": "am:bol_de_potage",
+ "item": "am:bol_de_potage_cru",
  "count": 3
 }
 }

@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "TTI",
+    "FFP",
+    "TT "
+  ],
+
+  "key":
+  {
+    "F":
+    {
+      "item": "am:clous"
+    },
+    "I":
+    {
+      "item": "am:cire"
+    },
+    "P":
+    {
+      "item": "am:marteau_en_bronze",
+      "data": 32767
+    },
+    "T":
+    {
+      "item": "am:planche_chene_noir"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:plancher_chene_noir_cire",
+    "count": 1
+  }
+}

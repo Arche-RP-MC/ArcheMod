@@ -23,8 +23,7 @@
 
   "result":
   {
-    "item": "minecraft:stone",
-    "data": 1,
+    "item": "am:granite",
     "count": 1
   }
 }

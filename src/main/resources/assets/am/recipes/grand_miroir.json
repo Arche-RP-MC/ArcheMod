@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "BBB",
+    "BIB",
+    "HBB"
+  ],
+
+  "key":
+  {
+    "H":
+    {
+      "item": "am:ciseaux_a_bois",
+      "data": 32767
+    },
+    "B":
+    {
+      "item": "am:planche"
+    },
+    "I":
+    {
+      "item": "am:plaque_d_etain"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:grand_miroir",
+    "count": 1
+  }
+}

@@ -12,7 +12,7 @@
  { 
 "B": 
  { 
- "item": "am:beignet"
+ "item": "am:beignet_cru"
 
 },
 "C": 
@@ -22,7 +22,7 @@
 },
  "result": 
  { 
- "item": "am:beignet_de_crabe",
+ "item": "am:beignet_de_crabe_cru",
  "count": 4
 }
 }

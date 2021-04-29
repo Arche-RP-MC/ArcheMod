@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "T  ",
+    "F P",
+    "TT "
+  ],
+
+  "key":
+  {
+    "F":
+    {
+      "item": "am:clous"
+    },
+
+    "P":
+    {
+      "item": "am:marteau_en_fer",
+      "data": 32767
+    },
+    "T":
+    {
+      "item": "am:planche_acajou"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:hiddenplanckjunglestair",
+    "count": 1
+  }
+}

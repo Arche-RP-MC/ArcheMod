@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "PT ",
+    "   "
+  ],
+
+  "key":
+  {
+    "P":
+    {
+      "item": "am:carrelage_damier_gres"
+    },
+    "T":
+    {
+      "item": "am:lime_en_fer",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:carrelage_damier_poli_gres",
+    "count": 1
+  }
+}

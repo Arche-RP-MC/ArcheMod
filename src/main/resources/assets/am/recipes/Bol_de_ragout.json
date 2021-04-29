@@ -12,7 +12,7 @@
  { 
  "A": 
  { 
- "item": "am:tomate"
+ "item": "am:tomate_cru"
  
 },
  "B": 
@@ -23,7 +23,7 @@
  "C": 
  { 
  "item": "minecraft:bowl"
-}
+
 },
 "D": 
  { 
@@ -32,12 +32,12 @@
 },
 "E": 
  { 
- "item": "am:pomme_de_terre"
+ "item": "am:pomme_de_terre_cru"
 }
 },
  "result": 
  { 
- "item": "am:bol_de_ragout",
+ "item": "am:bol_de_ragout_cru",
  "count": 3
 }
 }

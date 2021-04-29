@@ -16,7 +16,7 @@
     },
     "T":
     {
-      "item": "am:pepite_cuivre"
+      "item": "am:cuivre_fondu"
     },
     "H":
     {
@@ -27,7 +27,7 @@
 
   "result":
   {
-    "item": "am:lingot_de_cuivre",
+    "item": "am:lingot_cuivre",
     "count": 1
   }
 }

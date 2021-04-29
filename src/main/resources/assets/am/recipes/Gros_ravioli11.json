@@ -27,13 +27,13 @@
 },
  "E": 
  { 
- "item": "am:chou_fleur"
+ "item": "am:chou_fleur_cru"
 
 }
 },
  "result": 
- { 
- "item": "am:gros_ravioli",
+ {
+  "item": "am:gros_ravioli_cru",
  "count": 3
 }
 }

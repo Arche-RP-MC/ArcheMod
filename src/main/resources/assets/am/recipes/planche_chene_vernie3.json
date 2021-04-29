@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "TTI",
+    "FFP",
+    "TT "
+  ],
+
+  "key":
+  {
+    "F":
+    {
+      "item": "am:clous"
+    },
+    "I":
+    {
+      "item": "am:vernis"
+    },
+    "P":
+    {
+      "item": "am:marteau_en_acier",
+      "data": 32767
+    },
+    "T":
+    {
+      "item": "am:planche_chene"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:planche_chene_vernie",
+    "count": 1
+  }
+}

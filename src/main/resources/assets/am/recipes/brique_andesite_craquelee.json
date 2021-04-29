@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "TF ",
+    "   "
+  ],
+
+  "key":
+  {
+    "F":
+    {
+      "item": "am:marteau_en_fer",
+      "data": 32767
+    },
+    "T":
+    {
+      "item": "am:brique_andesite"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:brique_andesite_craquelee",
+    "count": 1
+  }
+}

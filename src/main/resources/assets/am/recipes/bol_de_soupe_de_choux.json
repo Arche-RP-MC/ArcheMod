@@ -12,12 +12,12 @@
  { 
  "A": 
  { 
- "item": "am:chou_fleur"
+ "item": "am:chou_fleur_cru"
  
 },
  "B": 
  { 
- "item": "am:chou_vert"
+ "item": "am:chou_vert_cru"
  
 },
  "C": 
@@ -27,13 +27,13 @@
 },
 "D": 
  { 
- "item": "am:poireau"
+ "item": "am:poireau_cru"
 
 }
 },
  "result": 
  { 
- "item": "am:bol_de_soupe_de_choux",
+ "item": "am:bol_de_soupe_de_choux_cru",
  "count": 3
 }
 }

@@ -12,7 +12,7 @@
  { 
  "A": 
  { 
- "item": "am:tomate"
+ "item": "am:tomate_cru"
  
 },
  "B": 
@@ -32,12 +32,12 @@
 },
 "E": 
  { 
- "item": "am:pomme_de_terre"
+ "item": "am:pomme_de_terre_cru"
 }
 },
  "result": 
  { 
- "item": "am:bol_de_ragout_de_crustaces",
+ "item": "am:bol_de_ragout_de_crustaces_cru",
  "count": 3
 }
 }

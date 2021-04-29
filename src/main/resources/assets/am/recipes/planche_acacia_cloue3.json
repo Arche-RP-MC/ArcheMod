@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "TTF",
+    "FFP",
+    "TT "
+  ],
+
+  "key":
+  {
+    "F":
+    {
+      "item": "am:clous"
+
+    },
+    "P":
+    {
+      "item": "am:marteau_en_acier",
+      "data": 32767
+    },
+    "T":
+    {
+      "item": "am:planche_acacia"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:plancher_acacia_cloue",
+    "count": 1
+  }
+}

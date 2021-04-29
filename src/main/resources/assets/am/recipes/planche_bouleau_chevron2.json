@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "TTI",
+    "FFP",
+    "TT "
+  ],
+
+  "key":
+  {
+    "F":
+    {
+      "item": "am:clous"
+    },
+    "I":
+    {
+      "item": "am:ciseaux_a_bois",
+      "data": 32767
+    },
+    "P":
+    {
+      "item": "am:marteau_en_bronze",
+      "data": 32767
+    },
+    "T":
+    {
+      "item": "am:planche_bouleau"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:plancher_bouleau_chevron",
+    "count": 1
+  }
+}

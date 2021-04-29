@@ -16,7 +16,7 @@
     },
     "T":
     {
-      "item": "am:pepite_plomb"
+      "item": "am:plomb_fondu"
     },
     "H":
     {
@@ -27,7 +27,7 @@
 
   "result":
   {
-    "item": "am:lingot_de_plomb",
+    "item": "am:lingot_plomb",
     "count": 1
   }
 }

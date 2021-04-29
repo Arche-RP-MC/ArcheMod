@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "FP ",
+    "   "
+  ],
+
+  "key":
+  {
+    "F":
+    {
+      "item": "am:plancher_chene_noir_cire"
+    },
+    "P":
+    {
+      "item": "am:marteau_en_acier",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:plancher_chene_noir_craquele",
+    "count": 1
+  }
+}

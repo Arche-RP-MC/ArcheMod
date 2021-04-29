@@ -27,13 +27,13 @@
 },
  "E": 
  { 
- "item": "am:pomme_de_terre"
+ "item": "am:pomme_de_terre_cru"
 
 }
 },
  "result": 
- { 
- "item": "am:gros_ravioli",
+ {
+  "item": "am:gros_ravioli_cru",
  "count": 3
 }
 }

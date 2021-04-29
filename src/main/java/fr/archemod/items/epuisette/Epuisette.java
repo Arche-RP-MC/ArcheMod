@@ -44,7 +44,7 @@ public class Epuisette extends ToolSword {
             if (state.getBlock() == Blocks.WATER) {
 
                 playerIn.getHeldItem(handIn).shrink(1);
-                int nombreAleatoire = (int) (Math.random() * 5);
+                int nombreAleatoire = (int) (Math.random() * 6);
 
                 switch (nombreAleatoire) {
                     case 1:

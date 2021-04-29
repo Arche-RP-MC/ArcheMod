@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "  M",
+    " PF",
+    "   "
+  ],
+
+  "key":
+  {
+    "M":
+    {
+      "item": "am:marteau_en_bronze",
+      "data": 32767
+    },
+    "P":
+    {
+      "item": "am:pinces",
+      "data": 32767
+    },
+    "F":
+    {
+      "item": "am:barre_etain"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:tete_couteau_etain",
+    "count": 1
+  }
+}

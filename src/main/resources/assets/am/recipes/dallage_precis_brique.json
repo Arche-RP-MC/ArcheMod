@@ -1,24 +1,28 @@
 {
- "type": "minecraft:crafting_shaped",
- "pattern":
- [
-  "AAA",
-  "AAA",
-  "AAA"
- ],
+  "type": "minecraft:crafting_shaped",
 
+  "pattern":
+  [
+    "TT ",
+    "FF ",
+    "TT "
+  ],
 
- "key":
- {
-  "A":
+  "key":
   {
-   "item": "am:brique_de_gres_rouge"
-  }
+    "F":
+    {
+      "item": "am:mortier"
+    },
+    "T":
+    {
+      "item": "am:brique_de_gres_rouge"
+    }
+  },
 
- },
- "result":
- {
-  "item": "am:dallage_precis_brique",
-  "count": 4
- }
+  "result":
+  {
+    "item": "am:dallage_precis_brique",
+    "count": 1
+  }
 }

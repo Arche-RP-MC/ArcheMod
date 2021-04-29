@@ -12,7 +12,8 @@
   {
     "H":
     {
-      "item": "minecraft:sand"
+      "item": "minecraft:sand",
+      "data": 0
     },
     "F":
     {
@@ -31,6 +32,6 @@
   "result":
   {
     "item": "am:mortier",
-    "count": 6
+    "count": 16
   }
 }

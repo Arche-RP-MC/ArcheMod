@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped", 
+  "pattern": 
+ [ 
+ "   ",
+ "EE ",
+ "CCC" 
+ ], 
+
+
+ "key": 
+ { 
+
+ "C": 
+ { 
+ "item": "minecraft:bowl"
+
+},
+
+"E": 
+ { 
+ "item": "am:riz_cru"
+}
+},
+ "result": 
+ { 
+ "item": "am:bol_de_riz_cru",
+ "count": 3
+}
+}

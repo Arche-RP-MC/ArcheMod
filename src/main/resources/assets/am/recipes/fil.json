@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "LP ",
+    "   "
+  ],
+
+  "key":
+  {
+    "L":
+    {
+      "item": "am:bobine_de_fil"
+    },
+    "P":
+    {
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "minecraft:string",
+    "count": 8
+  }
+}

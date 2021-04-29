@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " C ",
+    " LF",
+    "   "
+  ],
+
+  "key":
+  {
+    "F":
+    {
+      "item": "am:gouache_noire"
+    },
+    "C":
+    {
+      "item": "am:lime_en_acier",
+      "data": 32767
+    },
+    "L":
+    {
+      "item": "minecraft:stick"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:fou_noir",
+    "count": 1
+  }
+}

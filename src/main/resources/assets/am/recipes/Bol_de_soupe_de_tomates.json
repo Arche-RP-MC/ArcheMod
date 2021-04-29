@@ -17,7 +17,7 @@
 },
  "B": 
  { 
- "item": "am:tomate"
+ "item": "am:tomate_cru"
  
 },
  "C": 
@@ -28,7 +28,7 @@
 },
  "result": 
  { 
- "item": "am:bol_de_soupe_de_tomates",
+ "item": "am:bol_de_soupe_de_tomates_cru",
  "count": 3
 }
 }

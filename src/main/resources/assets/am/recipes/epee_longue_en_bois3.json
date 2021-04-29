@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " H ",
+    " H ",
+    "GH "
+  ],
+
+  "key":
+  {
+    "H":
+    {
+      "item": "am:planche"
+    },
+    "G":
+    {
+      "item": "am:marteau_burin_en_acier",
+      "data": 32767
+
+
+    }
+  },
+
+  "result":
+  {
+    "item": "am:epee_longue_en_bois",
+    "count": 1
+  }
+}

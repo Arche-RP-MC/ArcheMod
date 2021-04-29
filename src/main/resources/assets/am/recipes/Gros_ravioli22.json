@@ -27,13 +27,13 @@
 },
  "E": 
  { 
- "item": "am:tomate"
+ "item": "am:tomate_cru"
 
 }
 },
  "result": 
- { 
- "item": "am:gros_ravioli",
+ {
+  "item": "am:gros_ravioli_cru",
  "count": 3
 }
 }

@@ -1,0 +1,22 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "pattern": [
+  "   ",
+  "AB ",
+  "   "
+ ],
+ "key": {
+  "A": {
+   "item": "am:marteau_en_acier",
+   "data": 32767
+  },
+  "B": {
+   "item": "minecraft:red_sandstone",
+   "data" : 0
+  }
+ },
+  "result": {
+   "item": "am:caillou_de_gres_rouge",
+   "count": 6
+  }
+ }

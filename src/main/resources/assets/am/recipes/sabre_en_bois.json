@@ -14,6 +14,7 @@
   {
    "item": "am:manche"
   },
+
   "T":
   {
    "item": "am:clous"
@@ -24,7 +25,7 @@
   },
   "G":
   {
-   "item": "am:ciseau_a_bois",
+   "item": "am:ciseaux_a_bois",
    "data": 32767
   }
  },

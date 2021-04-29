@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "BBB",
+    "B B",
+    "L  "
+  ],
+
+  "key":
+  {
+    "L":
+    {
+      "item": "am:marteau_en_acier",
+      "data": 32767
+    },
+    "B":
+    {
+      "item": "am:plaque_de_fer"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:grand_heaume",
+    "count": 1
+  }
+}

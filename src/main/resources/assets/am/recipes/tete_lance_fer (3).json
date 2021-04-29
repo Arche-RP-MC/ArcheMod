@@ -5,7 +5,7 @@
   [
     " M ",
     " CP",
-    " F "
+    "   "
   ],
 
   "key":
@@ -23,10 +23,6 @@
     "C":
     {
       "item": "am:tete_couteau_fer"
-    },
-    "F":
-    {
-      "item": "am:tete_masse_fer"
     }
   },
 

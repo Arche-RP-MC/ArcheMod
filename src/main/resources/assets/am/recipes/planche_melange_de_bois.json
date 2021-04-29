@@ -1,0 +1,46 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "TV ",
+    "FFP",
+    "XY "
+  ],
+
+  "key":
+  {
+    "F":
+    {
+      "item": "am:clous"
+    },
+
+    "P":
+    {
+      "item": "am:marteau_en_fer",
+      "data": 32767
+    },
+    "X":
+    {
+      "item": "am:planche_bouleau"
+    },
+    "V":
+    {
+      "item": "am:planche_chene"
+    },
+    "Y":
+    {
+      "item": "am:planche_acajou"
+    },
+    "T":
+    {
+      "item": "am:planche_sapin"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:planche_sapin_vernie",
+    "count": 1
+  }
+}

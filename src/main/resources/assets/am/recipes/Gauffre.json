@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped", 
   "pattern": 
  [ 
- " S ", 
+ "BS ",
  "EFE", 
  "MMM" 
  ], 
@@ -37,7 +37,7 @@
 },
  "result": 
  { 
- "item": "am:gauffre",
+ "item": "am:gauffre_cru",
  "count": 16
 }
 }
