@@ -68,6 +68,11 @@ public class BouteilleDeVin extends FoodBase {
         return itemCopy;
     }
 
+    @Override
+    public boolean hasContainerItem(ItemStack itemStack){
+        return true;
+    }
+
 
 
 }

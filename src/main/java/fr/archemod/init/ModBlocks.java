@@ -5,6 +5,8 @@ import fr.archemod.blocks.*;
 import fr.archemod.blocks.agriculture.BlockPlanLin;
 import fr.archemod.blocks.baril.LiquideType;
 //import fr.archemod.blocks.bloc3D.Baril3D;
+import fr.archemod.blocks.gateau.Bleu;
+import fr.archemod.blocks.gateau.Fromage;
 import fr.archemod.items.agriculture.ItemGraine;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockSign;
@@ -572,8 +574,10 @@ public class ModBlocks {
     //public static final Block SECHOIR_SIMPLE_PAPIER = new BlockBase2("sechoir_simple_papier", Material.ROCK, 5F, 5F, SoundType.STONE);
     //public static final Block SECHOIR_VIANDES = new BlockBase2("sechoir_viandes", Material.ROCK, 5F, 5F, SoundType.STONE);
 
+//gateau
 
-
+    public static final Block BLEU_ENTIER = new Bleu("bleu_entier", 5F, 5F, SoundType.SLIME);
+    public static final Block FROMAGE_ENTIER = new Bleu("fromage_entier", 5F, 5F, SoundType.SLIME);
 
 
 
@@ -589,30 +593,30 @@ public class ModBlocks {
 
         //cultures
         ModItems.GRAINE_LIN = new ItemGraine("graine_lin",ModBlocks.PLAN_DE_LIN, Blocks.FARMLAND);
-        ModItems.GRAINE_CELERI = new ItemGraine("GRAINE_CELERI",ModBlocks.PLAN_CELERI, Blocks.FARMLAND);
-        ModItems.GRAINE_FENOUIL = new ItemGraine("GRAINE_FENOUIL",ModBlocks.PLAN_FENOUIL, Blocks.FARMLAND);
-        ModItems.GRAINE_FRAISE = new ItemGraine("GRAINE_FRAISE",ModBlocks.PLAN_FRAISE, Blocks.FARMLAND);
-        ModItems.GRAINE_FRAMBOISE = new ItemGraine("GRAINE_FRAMBOISE",ModBlocks.PLAN_FRAMBOISE, Blocks.FARMLAND);
-        ModItems.GRAINE_MAIS = new ItemGraine("GRAINE_MAIS",ModBlocks.PLAN_MAIS, Blocks.FARMLAND);
-        ModItems.GRAINE_MYRTILLE = new ItemGraine("GRAINE_MYRTILLE",ModBlocks.PLAN_MYRTILLE, Blocks.FARMLAND);
-        ModItems.GRAINE_NAVET = new ItemGraine("GRAINE_NAVET",ModBlocks.PLAN_NAVET, Blocks.FARMLAND);
-        ModItems.GRAINE_ORGE = new ItemGraine("GRAINE_ORGE",ModBlocks.PLAN_ORGE, Blocks.FARMLAND);
-        ModItems.GRAINE_POIREAU = new ItemGraine("GRAINE_POIREAU",ModBlocks.PLAN_POIREAU, Blocks.FARMLAND);
-        ModItems.GRAINE_RADIS = new ItemGraine("GRAINE_RADIS",ModBlocks.PLAN_RADIS, Blocks.FARMLAND);
-        ModItems.GRAINE_SALSIFI = new ItemGraine("GRAINE_SALSIFI",ModBlocks.PLAN_SALSIFI, Blocks.FARMLAND);
-        ModItems.GRAINE_TOMATE = new ItemGraine("GRAINE_TOMATE",ModBlocks.PLAN_TOMATE, Blocks.FARMLAND);
-        ModItems.GRAINE_VIGNE_NOIRE = new ItemGraine("GRAINE_VIGNE_NOIRE",ModBlocks.PLAN_VIGNE_NOIRE, Blocks.FARMLAND);
-        ModItems.GRAINE_VIGNE_BLANCHE = new ItemGraine("GRAINE_VIGNE_BLANCHE",ModBlocks.PLAN_VIGNE_NOIRE, Blocks.FARMLAND);
-        ModItems.GRAINE_CHOU = new ItemGraine("GRAINE_CHOU",ModBlocks.PLAN_CHOU, Blocks.FARMLAND);
-        ModItems.GRAINE_EPINARD = new ItemGraine("GRAINE_EPINARD",ModBlocks.PLAN_EPINARD, Blocks.FARMLAND);
-        ModItems.GRAINE_DE_THE = new ItemGraine("GRAINE_THE",ModBlocks.PLAN_THE, Blocks.FARMLAND);
-        ModItems.GRAINE_SALADE = new ItemGraine("GRAINE_SALADE",ModBlocks.PLAN_SALADE, Blocks.FARMLAND);
-        ModItems.GRAINE_ARTICHAUT = new ItemGraine("GRAINE_ARTICHAUT",ModBlocks.PLAN_ARTICHAUT, Blocks.FARMLAND);
-        ModItems.GRAINE_BROCOLIS = new ItemGraine("GRAINE_BROCOLIS",ModBlocks.PLAN_BROCOLIS, Blocks.FARMLAND);
-        ModItems.GRAINE_ASPERGE = new ItemGraine("GRAINE_ASPERGE",ModBlocks.PLAN_ASPERGE, Blocks.FARMLAND);
-        ModItems.GRAINE_ENDIVE = new ItemGraine("GRAINE_ENDIVE",ModBlocks.PLAN_ENDIVE, Blocks.FARMLAND);
-        ModItems.GRAINE_RIZ = new ItemGraine("GRAINE_RIZ",ModBlocks.PLAN_RIZ, Blocks.FARMLAND);
-        ModItems.GRAINE_BLE = new ItemGraine("GRAINE_BLE",ModBlocks.PLAN_BLE, Blocks.FARMLAND);
+        ModItems.GRAINE_CELERI = new ItemGraine("graine_celeri",ModBlocks.PLAN_CELERI, Blocks.FARMLAND);
+        ModItems.GRAINE_FENOUIL = new ItemGraine("graine_fenouilL",ModBlocks.PLAN_FENOUIL, Blocks.FARMLAND);
+        ModItems.GRAINE_FRAISE = new ItemGraine("graine_fraise",ModBlocks.PLAN_FRAISE, Blocks.FARMLAND);
+        ModItems.GRAINE_FRAMBOISE = new ItemGraine("graine_framboise",ModBlocks.PLAN_FRAMBOISE, Blocks.FARMLAND);
+        ModItems.GRAINE_MAIS = new ItemGraine("graine_mais",ModBlocks.PLAN_MAIS, Blocks.FARMLAND);
+        ModItems.GRAINE_MYRTILLE = new ItemGraine("graine_myrtille",ModBlocks.PLAN_MYRTILLE, Blocks.FARMLAND);
+        ModItems.GRAINE_NAVET = new ItemGraine("graine_navet",ModBlocks.PLAN_NAVET, Blocks.FARMLAND);
+        ModItems.GRAINE_ORGE = new ItemGraine("graine_orge",ModBlocks.PLAN_ORGE, Blocks.FARMLAND);
+        ModItems.GRAINE_POIREAU = new ItemGraine("graine_poireau",ModBlocks.PLAN_POIREAU, Blocks.FARMLAND);
+        ModItems.GRAINE_RADIS = new ItemGraine("graine_radis",ModBlocks.PLAN_RADIS, Blocks.FARMLAND);
+        ModItems.GRAINE_SALSIFI = new ItemGraine("graine_salsifi",ModBlocks.PLAN_SALSIFI, Blocks.FARMLAND);
+        ModItems.GRAINE_TOMATE = new ItemGraine("graine_tomate",ModBlocks.PLAN_TOMATE, Blocks.FARMLAND);
+        ModItems.GRAINE_VIGNE_NOIRE = new ItemGraine("graine_vigne_noire",ModBlocks.PLAN_VIGNE_NOIRE, Blocks.FARMLAND);
+        ModItems.GRAINE_VIGNE_BLANCHE = new ItemGraine("graine_vigne_blanche",ModBlocks.PLAN_VIGNE_BLANCHE, Blocks.FARMLAND);
+        ModItems.GRAINE_CHOU = new ItemGraine("graine_chou",ModBlocks.PLAN_CHOU, Blocks.FARMLAND);
+        ModItems.GRAINE_EPINARD = new ItemGraine("graine_epinard",ModBlocks.PLAN_EPINARD, Blocks.FARMLAND);
+        ModItems.GRAINE_DE_THE = new ItemGraine("graine_the",ModBlocks.PLAN_THE, Blocks.FARMLAND);
+        ModItems.GRAINE_SALADE = new ItemGraine("graine_salade",ModBlocks.PLAN_SALADE, Blocks.FARMLAND);
+        ModItems.GRAINE_ARTICHAUT = new ItemGraine("graine_artichaut",ModBlocks.PLAN_ARTICHAUT, Blocks.FARMLAND);
+        ModItems.GRAINE_BROCOLIS = new ItemGraine("graine_brocolis",ModBlocks.PLAN_BROCOLIS, Blocks.FARMLAND);
+        ModItems.GRAINE_ASPERGE = new ItemGraine("graine_asperge",ModBlocks.PLAN_ASPERGE, Blocks.FARMLAND);
+        ModItems.GRAINE_ENDIVE = new ItemGraine("graine_endive",ModBlocks.PLAN_ENDIVE, Blocks.FARMLAND);
+        ModItems.GRAINE_RIZ = new ItemGraine("graine_riz",ModBlocks.PLAN_RIZ, Blocks.FARMLAND);
+        ModItems.GRAINE_BLE = new ItemGraine("graine_ble",ModBlocks.PLAN_BLE, Blocks.FARMLAND);
         //ModItems.GRAINE_CHANVRE = new ItemGraine("GRAINE_CHANVRE",ModBlocks.PLAN_CHANVRE, Blocks.FARMLAND);
     }
 

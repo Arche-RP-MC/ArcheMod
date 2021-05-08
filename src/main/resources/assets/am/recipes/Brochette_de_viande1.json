@@ -3,7 +3,7 @@
   "pattern": 
  [ 
  "   ", 
- " A ", 
+ "FA ",
  " D " 
  ], 
 
@@ -15,6 +15,12 @@
  "item": "am:viande_de_volaille_crue"
  
 },
+  "F":
+  {
+   "item": "am:hachoir",
+   "data": 32767
+
+  },
  "D":
  {
  "item": "minecraft:stick"

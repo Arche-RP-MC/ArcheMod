@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped", 
   "pattern": 
  [ 
- "   ",
+ " F ",
  "BE ",
  "CCC" 
  ], 
@@ -21,6 +21,12 @@
  "item": "minecraft:bowl"
 
 },
+  "F":
+  {
+   "item": "am:hachoir",
+   "data": 32767
+
+  },
 
 "E": 
  { 

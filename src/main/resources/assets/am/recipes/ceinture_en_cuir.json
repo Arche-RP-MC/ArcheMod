@@ -3,8 +3,8 @@
 
   "pattern":
   [
-    "  N",
-    "L N",
+    "   ",
+    "LNL",
     "P  "
   ],
 
@@ -21,13 +21,13 @@
     },
     "L":
     {
-      "item": "am:cuir_tanne"
+      "item": "am:laniere_de_cuir"
     }
   },
 
   "result":
   {
     "item": "am:ceinture_en_cuir",
-    "count": 2
+    "count": 1
   }
 }

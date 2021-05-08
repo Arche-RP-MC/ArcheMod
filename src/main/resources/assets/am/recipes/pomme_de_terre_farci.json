@@ -3,7 +3,7 @@
   "pattern": 
  [ 
  "CDR", 
- "BAB", 
+ "FAB",
  "EEE" 
  ], 
 
@@ -20,6 +20,12 @@
  "item": "minecraft:egg"
  
 },
+  "F":
+  {
+   "item": "am:hachoir",
+   "data": 32767
+
+  },
  "C": 
  { 
  "item": "am:ail"

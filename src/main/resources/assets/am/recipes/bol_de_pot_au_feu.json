@@ -3,7 +3,7 @@
   "pattern": 
  [ 
  "BED", 
- "BAD", 
+ "FAD",
  "CCC" 
  ], 
 
@@ -24,6 +24,12 @@
  { 
  "item": "minecraft:bowl"
 },
+  "F":
+  {
+   "item": "am:hachoir",
+   "data": 32767
+
+  },
 
 "D": 
  { 

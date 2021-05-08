@@ -2,7 +2,7 @@
  "type": "minecraft:crafting_shaped",
  "pattern": [
   "BED",
-  "BAD",
+  "FAD",
   "CCC"
  ],
  "key": {
@@ -16,6 +16,12 @@
    "item": "minecraft:bowl"
 
  },
+  "F":
+  {
+   "item": "am:hachoir",
+   "data": 32767
+
+  },
  "D": {
   "item": "minecraft:carrot"
  },

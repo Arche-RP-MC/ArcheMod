@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped", 
+  "pattern": 
+ [ 
+ "   ",
+ "FA ",
+ "   "
+ ], 
+
+
+ "key": 
+ { 
+ "A": 
+ { 
+ "item": "am:poulpe"
+ 
+},
+  "F":
+  {
+   "item": "am:hachoir",
+   "data": 32767
+
+  }
+
+},
+ "result": 
+ { 
+ "item": "am:morceau_de_poulpe_cru",
+ "count": 8
+}
+}

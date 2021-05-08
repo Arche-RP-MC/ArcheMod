@@ -3,7 +3,7 @@
   "pattern": 
  [ 
  "   ", 
- " A ", 
+ "FA ",
  " D " 
  ], 
 
@@ -15,6 +15,12 @@
  "item": "am:tripes"
  
 },
+  "F":
+  {
+   "item": "am:hachoir",
+   "data": 32767
+
+  },
  "A":
  {
  "item": "am:sang"

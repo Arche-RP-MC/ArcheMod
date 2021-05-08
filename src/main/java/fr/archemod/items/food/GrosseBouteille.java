@@ -67,4 +67,8 @@ public class GrosseBouteille extends FoodBase {
         itemCopy.setItemDamage(itemCopy.getItemDamage()+1);
         return itemCopy;
     }
+    @Override
+    public boolean hasContainerItem(ItemStack itemStack){
+        return true;
+    }
 }

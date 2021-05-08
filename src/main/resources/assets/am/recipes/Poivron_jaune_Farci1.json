@@ -3,7 +3,7 @@
   "pattern": 
  [ 
  "CDR", 
- "BAB", 
+ "FAB",
  "EEE" 
  ], 
 
@@ -25,6 +25,12 @@
  "item": "am:ail"
 
 },
+  "F":
+  {
+   "item": "am:hachoir",
+   "data": 32767
+
+  },
 "D": 
  { 
  "item": "am:sel"

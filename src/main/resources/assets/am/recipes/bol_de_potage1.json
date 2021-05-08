@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped", 
   "pattern": 
  [ 
- "   ", 
+ "F  ",
  "PCR", 
  "BBB" 
  ], 
@@ -25,6 +25,12 @@
  "item": "am:pomme_de_terre_cru"
 
 },
+  "F":
+  {
+   "item": "am:hachoir",
+   "data": 32767
+
+  },
 "R": 
  { 
  "item": "am:poireau_cru"

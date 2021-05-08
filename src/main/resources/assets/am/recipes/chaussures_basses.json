@@ -25,13 +25,13 @@
     },
     "L":
     {
-      "item": "am:etoffe"
+      "item": "am:etoffe_gris_clair"
     }
   },
 
   "result":
   {
-    "item": "am:chaussures_basses",
+    "item": "am:chaussures_gris_clair",
     "count": 1
   }
 }

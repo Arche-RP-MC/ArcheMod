@@ -3,7 +3,7 @@
   "pattern": 
  [ 
  "BED", 
- "BAD", 
+ "FAD",
  "CCC" 
  ], 
 
@@ -30,6 +30,12 @@
  "item": "minecraft:carrot"
 
 },
+  "F":
+  {
+   "item": "am:hachoir",
+   "data": 32767
+
+  },
 "E": {
  "item": "am:oignon"
 }

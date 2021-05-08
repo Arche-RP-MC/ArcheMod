@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "CL ",
+    "   "
+  ],
+
+  "key":
+  {
+
+    "C":
+    {
+      "item": "am:chaussures_basses"
+    },
+    "L":
+    {
+      "item": "minecraft:dye",
+      "data": 0
+    }
+  },
+
+  "result":
+  {
+ "item": "am:chaussures_noir",
+    "count": 1
+  }
+}

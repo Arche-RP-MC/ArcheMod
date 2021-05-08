@@ -3,7 +3,7 @@
   "pattern": 
  [ 
  "CDR", 
- "BAB", 
+ "FAB",
  "EEE" 
  ], 
 
@@ -30,6 +30,12 @@
  "item": "am:sel"
 
 },
+  "F":
+  {
+   "item": "am:hachoir",
+   "data": 32767
+
+  },
 "E": 
  { 
  "item": "am:poivron_rouge_m_cru"

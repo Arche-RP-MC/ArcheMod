@@ -1017,11 +1017,6 @@ public class ModItems {
     public static final Item PETITE_SERVIETTE = new ItemBase("petite_serviette");
     public static final Item PETIT_CHEVAL_EN_BOIS = new ItemBase("petit_cheval_en_bois");
     public static final Item PETIT_MIROIR = new ItemBase("petit_miroir");
-    public static final Item PIERRE_DE_DIORITE = new ItemBase("pierre_de_diorite");
-    public static final Item PIERRE_DE_GRANITE = new ItemBase("pierre_de_granite");
-    public static final Item PIERRE_DE_GRES = new ItemBase("pierre_de_gres");
-    public static final Item PIERRE_DE_GRES_ROUGE = new ItemBase("pierre_de_gres_rouge");
-    public static final Item PIERRE_D_ANDESITE = new ItemBase("pierre_d_andesite");
     public static final Item PINCEAU = new Consommables("pinceau");
     public static final Item PION_BLANC = new ItemBase("pion_blanc");
     public static final Item PION_NOIR = new ItemBase("pion_noir");
@@ -1368,8 +1363,397 @@ public class ModItems {
 
     // Vetements colorées
 
+    public static final Item BOTTE_EN_CUIR_NOIR = new ItemBase("botte_en_cuir_noir");
+    public static final Item BOTTE_EN_CUIR_BLEU = new ItemBase("botte_en_cuir_bleu");
+    public static final Item BOTTE_EN_CUIR_CYAN = new ItemBase("botte_en_cuir_cyan");
+    public static final Item BOTTE_EN_CUIR_GRIS = new ItemBase("botte_en_cuir_gris");
+    public static final Item BOTTE_EN_CUIR_BLEU_CLAIR = new ItemBase("botte_en_cuir_bleu_clair");
+    public static final Item BOTTE_EN_CUIR_VERT = new ItemBase("botte_en_cuir_vert");
+    public static final Item BOTTE_EN_CUIR_MAGENTA = new ItemBase("botte_en_cuir_magenta");
+    public static final Item BOTTE_EN_CUIR_ORANGE = new ItemBase("botte_en_cuir_orange");
+    public static final Item BOTTE_EN_CUIR_ROSE = new ItemBase("botte_en_cuir_rose");
+    public static final Item BOTTE_EN_CUIR_ROUGE = new ItemBase("botte_en_cuir_rouge");
+    public static final Item BOTTE_EN_CUIR_BLANC = new ItemBase("botte_en_cuir_blanc");
+    public static final Item BOTTE_EN_CUIR_JAUNE = new ItemBase("botte_en_cuir_jaune");
+    public static final Item BOTTE_EN_CUIR_GRIS_CLAIR = new ItemBase("botte_en_cuir_gris_clair");
+    public static final Item BOTTE_EN_CUIR_VERT_CLAIR = new ItemBase("botte_en_cuir_vert_clair");
+
+
+    public static final Item CAPE_NOIR = new ItemBase("cape_noir");
+    public static final Item CAPE_BLEU = new ItemBase("cape_bleu");
+    public static final Item CAPE_MARRON = new ItemBase("cape_marron");
+    public static final Item CAPE_CYAN = new ItemBase("cape_cyan");
+    public static final Item CAPE_GRIS = new ItemBase("cape_gris");
+    public static final Item CAPE_BLEU_CLAIR = new ItemBase("cape_bleu_clair");
+    public static final Item CAPE_VERT = new ItemBase("cape_vert");
+    public static final Item CAPE_MAGENTA = new ItemBase("cape_magenta");
+    public static final Item CAPE_ORANGE = new ItemBase("cape_orange");
+    public static final Item CAPE_ROSE = new ItemBase("cape_rose");
+    public static final Item CAPE_ROUGE = new ItemBase("cape_rouge");
+    public static final Item CAPE_BLANC = new ItemBase("cape_blanc");
+    public static final Item CAPE_JAUNE = new ItemBase("cape_jaune");
+    public static final Item CAPE_GRIS_CLAIR = new ItemBase("cape_gris_clair");
+
+
+    public static final Item CAPELINE_NOIR = new ItemBase("capeline_noir");
+    public static final Item CAPELINE_BLEU = new ItemBase("capeline_bleu");
+    public static final Item CAPELINE_MARRON = new ItemBase("capeline_marron");
+    public static final Item CAPELINE_CYAN = new ItemBase("capeline_cyan");
+    public static final Item CAPELINE_GRIS = new ItemBase("capeline_gris");
+    public static final Item CAPELINE_BLEU_CLAIR = new ItemBase("capeline_bleu_clair");
+    public static final Item CAPELINE_VERT = new ItemBase("capeline_vert");
+    public static final Item CAPELINE_MAGENTA = new ItemBase("capeline_magenta");
+    public static final Item CAPELINE_ORANGE = new ItemBase("capeline_orange");
+    public static final Item CAPELINE_ROSE = new ItemBase("capeline_rose");
+    public static final Item CAPELINE_ROUGE = new ItemBase("capeline_rouge");
+    public static final Item CAPELINE_BLANC = new ItemBase("capeline_blanc");
+    public static final Item CAPELINE_JAUNE = new ItemBase("capeline_jaune");
+    public static final Item CAPELINE_GRIS_CLAIR = new ItemBase("capeline_gris_clair");
 
 
 
+    public static final Item CHAUSSURES_NOIR = new ItemBase("chaussures_noir");
+    public static final Item CHAUSSURES_BLEU = new ItemBase("chaussures_bleu");
+    public static final Item CHAUSSURES_MARRON = new ItemBase("chaussures_marron");
+    public static final Item CHAUSSURES_CYAN = new ItemBase("chaussures_cyan");
+    public static final Item CHAUSSURES_GRIS = new ItemBase("chaussures_gris");
+    public static final Item CHAUSSURES_BLEU_CLAIR = new ItemBase("chaussures_bleu_clair");
+    public static final Item CHAUSSURES_VERT = new ItemBase("chaussures_vert");
+    public static final Item CHAUSSURES_MAGENTA = new ItemBase("chaussures_magenta");
+    public static final Item CHAUSSURES_ORANGE = new ItemBase("chaussures_orange");
+    public static final Item CHAUSSURES_ROSE = new ItemBase("chaussures_rose");
+    public static final Item CHAUSSURES_ROUGE = new ItemBase("chaussures_rouge");
+    public static final Item CHAUSSURES_BLANC = new ItemBase("chaussures_blanc");
+    public static final Item CHAUSSURES_JAUNE = new ItemBase("chaussures_jaune");
+    public static final Item CHAUSSURES_GRIS_CLAIR = new ItemBase("chaussures_gris_clair");
+
+
+    public static final Item COIFFE_NOIR = new ItemBase("coiffe_noir");
+    public static final Item COIFFE_BLEU = new ItemBase("coiffe_bleu");
+    public static final Item COIFFE_CYAN = new ItemBase("coiffe_cyan");
+    public static final Item COIFFE_GRIS = new ItemBase("coiffe_gris");
+    public static final Item COIFFE_BLEU_CLAIR = new ItemBase("coiffe_bleu_clair");
+    public static final Item COIFFE_VERT = new ItemBase("coiffe_vert");
+    public static final Item COIFFE_MAGENTA = new ItemBase("coiffe_magenta");
+    public static final Item COIFFE_ORANGE = new ItemBase("coiffe_orange");
+    public static final Item COIFFE_ROSE = new ItemBase("coiffe_rose");
+    public static final Item COIFFE_ROUGE = new ItemBase("coiffe_rouge");
+    public static final Item COIFFE_BLANC = new ItemBase("coiffe_blanc");
+    public static final Item COIFFE_JAUNE = new ItemBase("coiffe_jaune");
+    public static final Item COIFFE_GRIS_CLAIR = new ItemBase("coiffe_gris_clair");
+
+
+    public static final Item COUVERTURE_NOIR = new ItemBase("couverture_noir");
+    public static final Item COUVERTURE_BLEU = new ItemBase("couverture_bleu");
+    public static final Item COUVERTURE_MARRON = new ItemBase("couverture_marron");
+    public static final Item COUVERTURE_CYAN = new ItemBase("couverture_cyan");
+    public static final Item COUVERTURE_GRIS = new ItemBase("couverture_gris");
+    public static final Item COUVERTURE_BLEU_CLAIR = new ItemBase("couverture_bleu_clair");
+    public static final Item COUVERTURE_VERT = new ItemBase("couverture_vert");
+    public static final Item COUVERTURE_MAGENTA = new ItemBase("couverture_magenta");
+    public static final Item COUVERTURE_ORANGE = new ItemBase("couverture_orange");
+    public static final Item COUVERTURE_ROSE = new ItemBase("couverture_rose");
+    public static final Item COUVERTURE_ROUGE = new ItemBase("couverture_rouge");
+    public static final Item COUVERTURE_BLANC = new ItemBase("couverture_blanc");
+    public static final Item COUVERTURE_JAUNE = new ItemBase("couverture_jaune");
+    public static final Item COUVERTURE_GRIS_CLAIR = new ItemBase("couverture_gris_clair");
+
+
+    public static final Item DRAP_NOIR = new ItemBase("drap_noir");
+    public static final Item DRAP_BLEU = new ItemBase("drap_bleu");
+    public static final Item DRAP_MARRON = new ItemBase("drap_marron");
+    public static final Item DRAP_CYAN = new ItemBase("drap_cyan");
+    public static final Item DRAP_GRIS = new ItemBase("drap_gris");
+    public static final Item DRAP_BLEU_CLAIR = new ItemBase("drap_bleu_clair");
+    public static final Item DRAP_VERT = new ItemBase("drap_vert");
+    public static final Item DRAP_MAGENTA = new ItemBase("drap_magenta");
+    public static final Item DRAP_ORANGE = new ItemBase("drap_orange");
+    public static final Item DRAP_ROSE = new ItemBase("drap_rose");
+    public static final Item DRAP_ROUGE = new ItemBase("drap_rouge");
+    public static final Item DRAP_BLANC = new ItemBase("drap_blanc");
+    public static final Item DRAP_JAUNE = new ItemBase("drap_jaune");
+    public static final Item DRAP_GRIS_CLAIR = new ItemBase("drap_gris_clair");
+
+
+    public static final Item ECHARPE_NOIR = new ItemBase("echarpe_noir");
+    public static final Item ECHARPE_BLEU = new ItemBase("echarpe_bleu");
+    public static final Item ECHARPE_MARRON = new ItemBase("echarpe_marron");
+    public static final Item ECHARPE_CYAN = new ItemBase("echarpe_cyan");
+    public static final Item ECHARPE_GRIS = new ItemBase("echarpe_gris");
+    public static final Item ECHARPE_BLEU_CLAIR = new ItemBase("echarpe_bleu_clair");
+    public static final Item ECHARPE_VERT = new ItemBase("echarpe_vert");
+    public static final Item ECHARPE_MAGENTA = new ItemBase("echarpe_magenta");
+    public static final Item ECHARPE_ORANGE = new ItemBase("echarpe_orange");
+    public static final Item ECHARPE_ROSE = new ItemBase("echarpe_rose");
+    public static final Item ECHARPE_ROUGE = new ItemBase("echarpe_rouge");
+    public static final Item ECHARPE_BLANC = new ItemBase("echarpe_blanc");
+    public static final Item ECHARPE_JAUNE = new ItemBase("echarpe_jaune");
+    public static final Item ECHARPE_GRIS_CLAIR = new ItemBase("echarpe_gris_clair");
+
+    public static final Item GANTS_NOIR = new ItemBase("gants_noir");
+    public static final Item GANTS_BLEU = new ItemBase("gants_bleu");
+    public static final Item GANTS_MARRON = new ItemBase("gants_marron");
+    public static final Item GANTS_CYAN = new ItemBase("gants_cyan");
+    public static final Item GANTS_GRIS = new ItemBase("gants_gris");
+    public static final Item GANTS_BLEU_CLAIR = new ItemBase("gants_bleu_clair");
+    public static final Item GANTS_VERT = new ItemBase("gants_vert");
+    public static final Item GANTS_MAGENTA = new ItemBase("gants_magenta");
+    public static final Item GANTS_ORANGE = new ItemBase("gants_orange");
+    public static final Item GANTS_ROSE = new ItemBase("gants_rose");
+    public static final Item GANTS_ROUGE = new ItemBase("gants_rouge");
+    public static final Item GANTS_BLANC = new ItemBase("gants_blanc");
+    public static final Item GANTS_JAUNE = new ItemBase("gants_jaune");
+    public static final Item GANTS_GRIS_CLAIR = new ItemBase("gants_gris_clair");
+
+    public static final Item GANTS_EN_CUIR_NOIR = new ItemBase("gants_en_cuir_noir");
+    public static final Item GANTS_EN_CUIR_BLEU = new ItemBase("gants_en_cuir_bleu");
+    public static final Item GANTS_EN_CUIR_MARRON = new ItemBase("gants_en_cuir_marron");
+    public static final Item GANTS_EN_CUIR_CYAN = new ItemBase("gants_en_cuir_cyan");
+    public static final Item GANTS_EN_CUIR_GRIS = new ItemBase("gants_en_cuir_gris");
+    public static final Item GANTS_EN_CUIR_BLEU_CLAIR = new ItemBase("gants_en_cuir_bleu_clair");
+    public static final Item GANTS_EN_CUIR_VERT = new ItemBase("gants_en_cuir_vert");
+    public static final Item GANTS_EN_CUIR_MAGENTA = new ItemBase("gants_en_cuir_magenta");
+    public static final Item GANTS_EN_CUIR_ORANGE = new ItemBase("gants_en_cuir_orange");
+    public static final Item GANTS_EN_CUIR_ROSE = new ItemBase("gants_en_cuir_rose");
+    public static final Item GANTS_EN_CUIR_ROUGE = new ItemBase("gants_en_cuir_rouge");
+    public static final Item GANTS_EN_CUIR_BLANC = new ItemBase("gants_en_cuir_blanc");
+    public static final Item GANTS_EN_CUIR_JAUNE = new ItemBase("gants_en_cuir_jaune");
+    public static final Item GANTS_EN_CUIR_GRIS_CLAIR = new ItemBase("gants_en_cuir_gris_clair");
+
+    public static final Item MANTEAU_FOUREE_NOIR = new ItemBase("manteau_fouree_noir");
+    public static final Item MANTEAU_FOUREE_BLEU = new ItemBase("manteau_fouree_bleu");
+    public static final Item MANTEAU_FOUREE_MARRON = new ItemBase("manteau_fouree_marron");
+    public static final Item MANTEAU_FOUREE_CYAN = new ItemBase("manteau_fouree_cyan");
+    public static final Item MANTEAU_FOUREE_GRIS = new ItemBase("manteau_fouree_gris");
+    public static final Item MANTEAU_FOUREE_BLEU_CLAIR = new ItemBase("manteau_fouree_bleu_clair");
+    public static final Item MANTEAU_FOUREE_VERT = new ItemBase("manteau_fouree_vert");
+    public static final Item MANTEAU_FOUREE_MAGENTA = new ItemBase("manteau_fouree_magenta");
+    public static final Item MANTEAU_FOUREE_ORANGE = new ItemBase("manteau_fouree_orange");
+    public static final Item MANTEAU_FOUREE_ROSE = new ItemBase("manteau_fouree_rose");
+    public static final Item MANTEAU_FOUREE_ROUGE = new ItemBase("manteau_fouree_rouge");
+    public static final Item MANTEAU_FOUREE_BLANC = new ItemBase("manteau_fouree_blanc");
+    public static final Item MANTEAU_FOUREE_JAUNE = new ItemBase("manteau_fouree_jaune");
+    public static final Item MANTEAU_FOUREE_GRIS_CLAIR = new ItemBase("manteau_fouree_gris_clair");
+
+    public static final Item MANTEAU_NOIR = new ItemBase("manteau_noir");
+    public static final Item MANTEAU_BLEU = new ItemBase("manteau_bleu");
+    public static final Item MANTEAU_MARRON = new ItemBase("manteau_marron");
+    public static final Item MANTEAU_CYAN = new ItemBase("manteau_cyan");
+    public static final Item MANTEAU_GRIS = new ItemBase("manteau_gris");
+    public static final Item MANTEAU_BLEU_CLAIR = new ItemBase("manteau_bleu_clair");
+    public static final Item MANTEAU_VERT = new ItemBase("manteau_vert");
+    public static final Item MANTEAU_MAGENTA = new ItemBase("manteau_magenta");
+    public static final Item MANTEAU_ORANGE = new ItemBase("manteau_orange");
+    public static final Item MANTEAU_ROSE = new ItemBase("manteau_rose");
+    public static final Item MANTEAU_ROUGE = new ItemBase("manteau_rouge");
+    public static final Item MANTEAU_BLANC = new ItemBase("manteau_blanc");
+    public static final Item MANTEAU_JAUNE = new ItemBase("manteau_jaune");
+    public static final Item MANTEAU_GRIS_CLAIR = new ItemBase("manteau_gris_clair");
+
+
+    public static final Item MASQUE_NOIR = new ItemBase("masque_noir");
+    public static final Item MASQUE_BLEU = new ItemBase("masque_bleu");
+    public static final Item MASQUE_MARRON = new ItemBase("masque_marron");
+    public static final Item MASQUE_CYAN = new ItemBase("masque_cyan");
+    public static final Item MASQUE_GRIS = new ItemBase("masque_gris");
+    public static final Item MASQUE_BLEU_CLAIR = new ItemBase("masque_bleu_clair");
+    public static final Item MASQUE_VERT = new ItemBase("masque_vert");
+    public static final Item MASQUE_MAGENTA = new ItemBase("masque_magenta");
+    public static final Item MASQUE_ORANGE = new ItemBase("masque_orange");
+    public static final Item MASQUE_ROSE = new ItemBase("masque_rose");
+    public static final Item MASQUE_ROUGE = new ItemBase("masque_rouge");
+    public static final Item MASQUE_BLANC = new ItemBase("masque_blanc");
+    public static final Item MASQUE_JAUNE = new ItemBase("masque_jaune");
+    public static final Item MASQUE_GRIS_CLAIR = new ItemBase("masque_gris_clair");
+
+
+    public static final Item MOUCHOIR_NOIR = new ItemBase("mouchoir_noir");
+    public static final Item MOUCHOIR_BLEU = new ItemBase("mouchoir_bleu");
+    public static final Item MOUCHOIR_MARRON = new ItemBase("mouchoir_marron");
+    public static final Item MOUCHOIR_CYAN = new ItemBase("mouchoir_cyan");
+    public static final Item MOUCHOIR_GRIS = new ItemBase("mouchoir_gris");
+    public static final Item MOUCHOIR_BLEU_CLAIR = new ItemBase("mouchoir_bleu_clair");
+    public static final Item MOUCHOIR_VERT = new ItemBase("mouchoir_vert");
+    public static final Item MOUCHOIR_MAGENTA = new ItemBase("mouchoir_magenta");
+    public static final Item MOUCHOIR_ORANGE = new ItemBase("mouchoir_orange");
+    public static final Item MOUCHOIR_ROSE = new ItemBase("mouchoir_rose");
+    public static final Item MOUCHOIR_ROUGE = new ItemBase("mouchoir_rouge");
+    public static final Item MOUCHOIR_BLANC = new ItemBase("mouchoir_blanc");
+    public static final Item MOUCHOIR_JAUNE = new ItemBase("mouchoir_jaune");
+    public static final Item MOUCHOIR_GRIS_CLAIR = new ItemBase("mouchoir_gris_clair");
+
+    public static final Item PANTALON_NOIR = new ItemBase("pantalon_noir");
+    public static final Item PANTALON_BLEU = new ItemBase("pantalon_bleu");
+    public static final Item PANTALON_MARRON = new ItemBase("pantalon_marron");
+    public static final Item PANTALON_CYAN = new ItemBase("pantalon_cyan");
+    public static final Item PANTALON_GRIS = new ItemBase("pantalon_gris");
+    public static final Item PANTALON_BLEU_CLAIR = new ItemBase("pantalon_bleu_clair");
+    public static final Item PANTALON_VERT = new ItemBase("pantalon_vert");
+    public static final Item PANTALON_MAGENTA = new ItemBase("pantalon_magenta");
+    public static final Item PANTALON_ORANGE = new ItemBase("pantalon_orange");
+    public static final Item PANTALON_ROSE = new ItemBase("pantalon_rose");
+    public static final Item PANTALON_ROUGE = new ItemBase("pantalon_rouge");
+    public static final Item PANTALON_BLANC = new ItemBase("pantalon_blanc");
+    public static final Item PANTALON_JAUNE = new ItemBase("pantalon_jaune");
+    public static final Item PANTALON_GRIS_CLAIR = new ItemBase("pantalon_gris_clair");
+
+
+    public static final Item PETITE_SERVIETTE_NOIR = new ItemBase("petite_serviette_noir");
+    public static final Item PETITE_SERVIETTE_BLEU = new ItemBase("petite_serviette_bleu");
+    public static final Item PETITE_SERVIETTE_MARRON = new ItemBase("petite_serviette_marron");
+    public static final Item PETITE_SERVIETTE_CYAN = new ItemBase("petite_serviette_cyan");
+    public static final Item PETITE_SERVIETTE_GRIS = new ItemBase("petite_serviette_gris");
+    public static final Item PETITE_SERVIETTE_BLEU_CLAIR = new ItemBase("petite_serviette_bleu_clair");
+    public static final Item PETITE_SERVIETTE_VERT = new ItemBase("petite_serviette_vert");
+    public static final Item PETITE_SERVIETTE_MAGENTA = new ItemBase("petite_serviette_magenta");
+    public static final Item PETITE_SERVIETTE_ORANGE = new ItemBase("petite_serviette_orange");
+    public static final Item PETITE_SERVIETTE_ROSE = new ItemBase("petite_serviette_rose");
+    public static final Item PETITE_SERVIETTE_ROUGE = new ItemBase("petite_serviette_rouge");
+    public static final Item PETITE_SERVIETTE_BLANC = new ItemBase("petite_serviette_blanc");
+    public static final Item PETITE_SERVIETTE_JAUNE = new ItemBase("petite_serviette_jaune");
+    public static final Item PETITE_SERVIETTE_GRIS_CLAIR = new ItemBase("petite_serviette_gris_clair");
+
+
+    public static final Item ROBE_NOIR = new ItemBase("robe_noir");
+    public static final Item ROBE_BLEU = new ItemBase("robe_bleu");
+    public static final Item ROBE_MARRON = new ItemBase("robe_marron");
+    public static final Item ROBE_CYAN = new ItemBase("robe_cyan");
+    public static final Item ROBE_GRIS = new ItemBase("robe_gris");
+    public static final Item ROBE_BLEU_CLAIR = new ItemBase("robe_bleu_clair");
+    public static final Item ROBE_VERT = new ItemBase("robe_vert");
+    public static final Item ROBE_MAGENTA = new ItemBase("robe_magenta");
+    public static final Item ROBE_ORANGE = new ItemBase("robe_orange");
+    public static final Item ROBE_ROSE = new ItemBase("robe_rose");
+    public static final Item ROBE_ROUGE = new ItemBase("robe_rouge");
+    public static final Item ROBE_BLANC = new ItemBase("robe_blanc");
+    public static final Item ROBE_JAUNE = new ItemBase("robe_jaune");
+    public static final Item ROBE_GRIS_CLAIR = new ItemBase("robe_gris_clair");
+
+
+    public static final Item SAC_DE_COUCHAGE_NOIR = new ItemBase("sac_de_couchage_noir");
+    public static final Item SAC_DE_COUCHAGE_BLEU = new ItemBase("sac_de_couchage_bleu");
+    public static final Item SAC_DE_COUCHAGE_MARRON = new ItemBase("sac_de_couchage_marron");
+    public static final Item SAC_DE_COUCHAGE_CYAN = new ItemBase("sac_de_couchage_cyan");
+    public static final Item SAC_DE_COUCHAGE_GRIS = new ItemBase("sac_de_couchage_gris");
+    public static final Item SAC_DE_COUCHAGE_BLEU_CLAIR = new ItemBase("sac_de_couchage_bleu_clair");
+    public static final Item SAC_DE_COUCHAGE_VERT = new ItemBase("sac_de_couchage_vert");
+    public static final Item SAC_DE_COUCHAGE_MAGENTA = new ItemBase("sac_de_couchage_magenta");
+    public static final Item SAC_DE_COUCHAGE_ORANGE = new ItemBase("sac_de_couchage_orange");
+    public static final Item SAC_DE_COUCHAGE_ROSE = new ItemBase("sac_de_couchage_rose");
+    public static final Item SAC_DE_COUCHAGE_ROUGE = new ItemBase("sac_de_couchage_rouge");
+    public static final Item SAC_DE_COUCHAGE_BLANC = new ItemBase("sac_de_couchage_blanc");
+    public static final Item SAC_DE_COUCHAGE_JAUNE = new ItemBase("sac_de_couchage_jaune");
+    public static final Item SAC_DE_COUCHAGE_GRIS_CLAIR = new ItemBase("sac_de_couchage_gris_clair");
+
+
+    public static final Item JUPE_NOIR = new ItemBase("jupe_noir");
+    public static final Item JUPE_BLEU = new ItemBase("jupe_bleu");
+    public static final Item JUPE_MARRON = new ItemBase("jupe_marron");
+    public static final Item JUPE_CYAN = new ItemBase("jupe_cyan");
+    public static final Item JUPE_GRIS = new ItemBase("jupe_gris");
+    public static final Item JUPE_BLEU_CLAIR = new ItemBase("jupe_bleu_clair");
+    public static final Item JUPE_VERT = new ItemBase("jupe_vert");
+    public static final Item JUPE_MAGENTA = new ItemBase("jupe_magenta");
+    public static final Item JUPE_ORANGE = new ItemBase("jupe_orange");
+    public static final Item JUPE_ROSE = new ItemBase("jupe_rose");
+    public static final Item JUPE_ROUGE = new ItemBase("jupe_rouge");
+    public static final Item JUPE_BLANC = new ItemBase("jupe_blanc");
+    public static final Item JUPE_JAUNE = new ItemBase("jupe_jaune");
+    public static final Item JUPE_GRIS_CLAIR = new ItemBase("jupe_gris_clair");
+
+
+    public static final Item SERVIETTE_NOIR = new ItemBase("serviette_noir");
+    public static final Item SERVIETTE_BLEU = new ItemBase("serviette_bleu");
+    public static final Item SERVIETTE_MARRON = new ItemBase("serviette_marron");
+    public static final Item SERVIETTE_CYAN = new ItemBase("serviette_cyan");
+    public static final Item SERVIETTE_GRIS = new ItemBase("serviette_gris");
+    public static final Item SERVIETTE_BLEU_CLAIR = new ItemBase("serviette_bleu_clair");
+    public static final Item SERVIETTE_VERT = new ItemBase("serviette_vert");
+    public static final Item SERVIETTE_MAGENTA = new ItemBase("serviette_magenta");
+    public static final Item SERVIETTE_ORANGE = new ItemBase("serviette_orange");
+    public static final Item SERVIETTE_ROSE = new ItemBase("serviette_rose");
+    public static final Item SERVIETTE_ROUGE = new ItemBase("serviette_rouge");
+    public static final Item SERVIETTE_BLANC = new ItemBase("serviette_blanc");
+    public static final Item SERVIETTE_JAUNE = new ItemBase("serviette_jaune");
+    public static final Item SERVIETTE_GRIS_CLAIR = new ItemBase("serviette_gris_clair");
+
+    public static final Item SOUS_VETEMENT_FEMININ_NOIR = new ItemBase("sous_vetement_feminin_noir");
+    public static final Item SOUS_VETEMENT_FEMININ_BLEU = new ItemBase("sous_vetement_feminin_bleu");
+    public static final Item SOUS_VETEMENT_FEMININ_MARRON = new ItemBase("sous_vetement_feminin_marron");
+    public static final Item SOUS_VETEMENT_FEMININ_CYAN = new ItemBase("sous_vetement_feminin_cyan");
+    public static final Item SOUS_VETEMENT_FEMININ_GRIS = new ItemBase("sous_vetement_feminin_gris");
+    public static final Item SOUS_VETEMENT_FEMININ_BLEU_CLAIR = new ItemBase("sous_vetement_feminin_bleu_clair");
+    public static final Item SOUS_VETEMENT_FEMININ_VERT = new ItemBase("sous_vetement_feminin_vert");
+    public static final Item SOUS_VETEMENT_FEMININ_MAGENTA = new ItemBase("sous_vetement_feminin_magenta");
+    public static final Item SOUS_VETEMENT_FEMININ_ORANGE = new ItemBase("sous_vetement_feminin_orange");
+    public static final Item SOUS_VETEMENT_FEMININ_ROSE = new ItemBase("sous_vetement_feminin_rose");
+    public static final Item SOUS_VETEMENT_FEMININ_ROUGE = new ItemBase("sous_vetement_feminin_rouge");
+    public static final Item SOUS_VETEMENT_FEMININ_BLANC = new ItemBase("sous_vetement_feminin_blanc");
+    public static final Item SOUS_VETEMENT_FEMININ_JAUNE = new ItemBase("sous_vetement_feminin_jaune");
+    public static final Item SOUS_VETEMENT_FEMININ_GRIS_CLAIR = new ItemBase("sous_vetement_feminin_gris_clair");
+
+
+    public static final Item SOUS_VETEMENT_MASCULIN_NOIR = new ItemBase("sous_vetement_masculin_noir");
+    public static final Item SOUS_VETEMENT_MASCULIN_BLEU = new ItemBase("sous_vetement_masculin_bleu");
+    public static final Item SOUS_VETEMENT_MASCULIN_MARRON = new ItemBase("sous_vetement_masculin_marron");
+    public static final Item SOUS_VETEMENT_MASCULIN_CYAN = new ItemBase("sous_vetement_masculin_cyan");
+    public static final Item SOUS_VETEMENT_MASCULIN_GRIS = new ItemBase("sous_vetement_masculin_gris");
+    public static final Item SOUS_VETEMENT_MASCULIN_BLEU_CLAIR = new ItemBase("sous_vetement_masculin_bleu_clair");
+    public static final Item SOUS_VETEMENT_MASCULIN_VERT = new ItemBase("sous_vetement_masculin_vert");
+    public static final Item SOUS_VETEMENT_MASCULIN_MAGENTA = new ItemBase("sous_vetement_masculin_magenta");
+    public static final Item SOUS_VETEMENT_MASCULIN_ORANGE = new ItemBase("sous_vetement_masculin_orange");
+    public static final Item SOUS_VETEMENT_MASCULIN_ROSE = new ItemBase("sous_vetement_masculin_rose");
+    public static final Item SOUS_VETEMENT_MASCULIN_ROUGE = new ItemBase("sous_vetement_masculin_rouge");
+    public static final Item SOUS_VETEMENT_MASCULIN_BLANC = new ItemBase("sous_vetement_masculin_blanc");
+    public static final Item SOUS_VETEMENT_MASCULIN_JAUNE = new ItemBase("sous_vetement_masculin_jaune");
+    public static final Item SOUS_VETEMENT_MASCULIN_GRIS_CLAIR = new ItemBase("sous_vetement_masculin_gris_clair");
+
+
+    public static final Item TOGE_NOIR = new ItemBase("toge_noir");
+    public static final Item TOGE_BLEU = new ItemBase("toge_bleu");
+    public static final Item TOGE_MARRON = new ItemBase("toge_marron");
+    public static final Item TOGE_CYAN = new ItemBase("toge_cyan");
+    public static final Item TOGE_GRIS = new ItemBase("toge_gris");
+    public static final Item TOGE_BLEU_CLAIR = new ItemBase("toge_bleu_clair");
+    public static final Item TOGE_VERT = new ItemBase("toge_vert");
+    public static final Item TOGE_MAGENTA = new ItemBase("toge_magenta");
+    public static final Item TOGE_ORANGE = new ItemBase("toge_orange");
+    public static final Item TOGE_ROSE = new ItemBase("toge_rose");
+    public static final Item TOGE_ROUGE = new ItemBase("toge_rouge");
+    public static final Item TOGE_BLANC = new ItemBase("toge_blanc");
+    public static final Item TOGE_JAUNE = new ItemBase("toge_jaune");
+    public static final Item TOGE_GRIS_CLAIR = new ItemBase("toge_gris_clair");
+
+
+    public static final Item TUNIQUE_NOIR = new ItemBase("tunique_noir");
+    public static final Item TUNIQUE_BLEU = new ItemBase("tunique_bleu");
+    public static final Item TUNIQUE_MARRON = new ItemBase("tunique_marron");
+    public static final Item TUNIQUE_CYAN = new ItemBase("tunique_cyan");
+    public static final Item TUNIQUE_GRIS = new ItemBase("tunique_gris");
+    public static final Item TUNIQUE_BLEU_CLAIR = new ItemBase("tunique_bleu_clair");
+    public static final Item TUNIQUE_VERT = new ItemBase("tunique_vert");
+    public static final Item TUNIQUE_MAGENTA = new ItemBase("tunique_magenta");
+    public static final Item TUNIQUE_ORANGE = new ItemBase("tunique_orange");
+    public static final Item TUNIQUE_ROSE = new ItemBase("tunique_rose");
+    public static final Item TUNIQUE_ROUGE = new ItemBase("tunique_rouge");
+    public static final Item TUNIQUE_BLANC = new ItemBase("tunique_blanc");
+    public static final Item TUNIQUE_JAUNE = new ItemBase("tunique_jaune");
+    public static final Item TUNIQUE_GRIS_CLAIR = new ItemBase("tunique_gris_clair");
+
+
+    public static final Item VESTE_NOIR = new ItemBase("veste_noir");
+    public static final Item VESTE_BLEU = new ItemBase("veste_bleu");
+    public static final Item VESTE_MARRON = new ItemBase("veste_marron");
+    public static final Item VESTE_CYAN = new ItemBase("veste_cyan");
+    public static final Item VESTE_GRIS = new ItemBase("veste_gris");
+    public static final Item VESTE_BLEU_CLAIR = new ItemBase("veste_bleu_clair");
+    public static final Item VESTE_VERT = new ItemBase("veste_vert");
+    public static final Item VESTE_MAGENTA = new ItemBase("veste_magenta");
+    public static final Item VESTE_ORANGE = new ItemBase("veste_orange");
+    public static final Item VESTE_ROSE = new ItemBase("veste_rose");
+    public static final Item VESTE_ROUGE = new ItemBase("veste_rouge");
+    public static final Item VESTE_BLANC = new ItemBase("veste_blanc");
+    public static final Item VESTE_JAUNE = new ItemBase("veste_jaune");
+    public static final Item VESTE_GRIS_CLAIR = new ItemBase("veste_gris_clair");
 
 }

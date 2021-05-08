@@ -3,7 +3,7 @@
 
   "pattern":
   [
-    "  N",
+    "   ",
     "L N",
     "P  "
   ],
@@ -28,6 +28,6 @@
   "result":
   {
     "item": "am:ceinture_en_cuir",
-    "count": 2
+    "count": 1
   }
 }
