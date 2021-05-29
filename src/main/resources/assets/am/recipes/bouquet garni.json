@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "MBI",
+    "   "
+  ],
+
+  "key":
+  {
+    "M":
+    {
+      "item": "minecraft:string"
+    },
+    "I":
+    {
+      "item": "am:laurier"
+    },
+    "B":
+    {
+      "item": "am:basilic"
+
+    }
+  },
+
+  "result":
+  {
+    "item": "am:bouquet_garni",
+    "count": 1
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "MBB",
+    "   "
+  ],
+
+  "key":
+  {
+    "M":
+    {
+      "item": "minecraft:string"
+    },
+    "B":
+    {
+      "item": "minecraft:red_flower",
+      "data": 8
+    }
+  },
+
+  "result":
+  {
+    "item": "am:bouquet_de_fleurs",
+    "count": 1
+  }
+}

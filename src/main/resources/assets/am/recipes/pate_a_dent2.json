@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " W ",
+    "HA ",
+    "MS "
+  ],
+
+  "key":
+  {
+    "W":
+    {
+      "item": "am:cire"
+    },
+    "H":
+    {
+      "item": "am:huile_essentielle"
+    },
+    "A":
+    {
+      "item": "minecraft:clay_ball"
+    },
+    "S":
+    {
+      "item": "am:sel"
+    },
+    "M":
+    {
+      "item": "am:mortier_pilon_en_pierre"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:pate_a_dent",
+    "count": 4
+  }
+}

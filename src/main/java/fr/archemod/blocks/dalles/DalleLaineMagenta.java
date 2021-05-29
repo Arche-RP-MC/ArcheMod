@@ -1,4 +1,4 @@
-/*package fr.archemod.blocks;
+package fr.archemod.blocks.dalles;
 
 import fr.archemod.init.ModBlocks;
 import net.minecraft.block.BlockSlab;
@@ -19,11 +19,12 @@ import net.minecraft.world.World;
 import javax.annotation.Nonnull;
 import java.util.Random;
 
-public abstract class BlockDalleWoolColoredMagenta extends BlockSlab {
+public abstract class DalleLaineMagenta extends BlockSlab{
+
 
 	public static final PropertyEnum<EnumVariant> VARIANT = PropertyEnum.<EnumVariant>create("variant", EnumVariant.class);
 
-	public BlockDalleWoolColoredMagenta(String name, float hardness, float resistance, Material materialIn, SoundType sound) {
+	public DalleLaineMagenta(String name, float hardness, float resistance, Material materialIn, SoundType sound) {
 		super(materialIn);
 
 		setTranslationKey(name);
@@ -95,15 +96,15 @@ public abstract class BlockDalleWoolColoredMagenta extends BlockSlab {
 
 	@Override
 	public Item getItemDropped(IBlockState state, Random rand, int fortune) {
-		return Item.getItemFromBlock(ModBlocks.WOOL_COLORED_MAGENTA_HALF_SLAB);
+		return Item.getItemFromBlock(ModBlocks.DALLE_LAINE_MAGENTA);
 	}
 
 	@Override
 	public ItemStack getPickBlock(IBlockState state, RayTraceResult target, World world, BlockPos pos, EntityPlayer player) {
-		return new ItemStack(ModBlocks.WOOL_COLORED_MAGENTA_HALF_SLAB);
+		return new ItemStack(ModBlocks.DALLE_LAINE_MAGENTA);
 	}
 
-	public static class Double extends BlockDalleWoolColoredMagenta {
+	public static class Double extends DalleLaineMagenta {
 
 		public Double(String name, float hardness, float resistance, Material materialIn, SoundType sound) {
 			super(name, hardness, resistance, materialIn, sound);
@@ -116,7 +117,7 @@ public abstract class BlockDalleWoolColoredMagenta extends BlockSlab {
 
 	}
 
-	public static class Half extends BlockDalleWoolColoredMagenta {
+	public static class Half extends DalleLaineMagenta {
 
 		public Half(String name, float hardness, float resistance, Material materialIn, SoundType sound) {
 			super(name, hardness, resistance, materialIn, sound);
@@ -131,4 +132,3 @@ public abstract class BlockDalleWoolColoredMagenta extends BlockSlab {
 
 }
 
- */

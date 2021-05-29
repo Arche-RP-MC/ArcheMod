@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "PPP",
+    "PPP",
+    "   "
+  ],
+
+  "key":
+  {
+    "P":
+    {
+      "item": "am:caillou_d_andesite"
+    }
+  },
+
+  "result":
+  {
+    "item": "minecraft:stone",
+    "data": 6,
+    "count": 1
+  }
+}

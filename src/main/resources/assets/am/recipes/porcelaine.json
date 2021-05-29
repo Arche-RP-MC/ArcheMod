@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " F ",
+    "APA",
+    "IA "
+  ],
+
+  "key":
+  {
+    "F":
+    {
+      "item": "am:spatule",
+      "data": 32767
+    },
+    "A":
+    {
+      "item": "minecraft:clay_ball"
+    },
+    "I":
+    {
+      "item": "minecraft:quartz"
+    },
+    "P":
+    {
+      "item": "minecraft:water_bucket"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:bol_en_argile_crue",
+    "count": 3
+  }
+}

@@ -5,7 +5,7 @@
   [
     "   ",
     "FLL",
-    " K "
+    "   "
   ],
 
   "key":
@@ -14,10 +14,7 @@
     {
       "item": "minecraft:water_bucket"
     },
-    "K":
-    {
-      "item": "am:flacon"
-    },
+
     "L":
     {
       "item": "am:farine"

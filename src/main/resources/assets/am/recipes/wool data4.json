@@ -12,7 +12,7 @@
   {
     "B":
     {
-      "item": "am:laine_brute"
+      "item": "am:bobine_de_laine"
     },
     "G":
     {
@@ -29,7 +29,7 @@
   "result":
   {
     "item": "minecraft:wool",
-    "data": 11,
+    "data": 4,
     "count": 3
   }
 }

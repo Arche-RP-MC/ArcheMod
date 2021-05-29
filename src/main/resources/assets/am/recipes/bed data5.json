@@ -23,7 +23,7 @@
       "item": "am:ciseaux_de_couture",
       "data": 32767
     },
-    "F":
+    "P":
     {
       "item": "am:etoffe_vert_clair"
     }
@@ -33,6 +33,6 @@
   {
     "item": "minecraft:bed",
     "data": 5,
-    "count": 2
+    "count": 1
   }
 }

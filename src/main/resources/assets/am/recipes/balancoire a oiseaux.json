@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "LB ",
+    " B ",
+    " P "
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:barre_fer"
+    },
+    "P":
+    {
+      "item": "minecraft:stick"
+    },
+    "L":
+    {
+      "item": "am:pinces",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:balancoire_a_oiseau",
+    "count": 1
+  }
+}

@@ -3,9 +3,9 @@
 
   "pattern":
   [
-    "ETV",
+    "  L",
     " B ",
-    "SML"
+    "ETV"
   ],
 
   "key":
@@ -24,23 +24,15 @@
       "item": "am:vernis",
       "data": 32767
     },
-    "S":
-    {
-      "item": "am:scie_en_fer",
-      "data": 32767
-    },
-    "M":
-    {
-      "item": "am:marteau_en_fer",
-      "data": 32767
-    },
+
+
     "B":
     {
-      "item": "minecraft:log"
+      "item": "am:planche"
     },
     "L":
     {
-      "item": "am:lime_en_fer",
+      "item": "am:ciseaux_a_bois",
       "data": 32767
     }
   },
@@ -48,6 +40,7 @@
   "result":
   {
     "item": "am:pion_blanc",
-    "count": 6
+    "count": 3
   }
 }
+

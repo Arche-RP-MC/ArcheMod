@@ -1,0 +1,34 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "pattern": [
+  "CBC",
+  "BCB",
+  "CBA"
+ ],
+
+
+ "key":
+ {
+  "A": {
+   "item": "am:ciseaux_a_bois",
+   "data": 32767
+  },
+  "C": {
+   "item": "minecraft:stick"
+
+  },
+
+  "B":
+
+  {
+   "item": "am:planche"
+  }
+ },
+
+  "result":
+  {
+   "item": "am:gouvernail",
+   "count": 1
+  }
+ }
+

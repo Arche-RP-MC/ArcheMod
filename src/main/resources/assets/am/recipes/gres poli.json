@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "PPP",
+    "PPP",
+    "   "
+  ],
+
+  "key":
+  {
+    "P":
+    {
+      "item": "am:caillou_de_gres_rouge"
+    }
+  },
+
+  "result":
+  {
+    "item": "minecraft:red_sandstone",
+    "data": 2,
+    "count": 1
+  }
+}

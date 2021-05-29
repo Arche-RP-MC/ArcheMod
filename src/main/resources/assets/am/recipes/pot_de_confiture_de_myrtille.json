@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "BIB",
+    "IBI",
+    " S "
+  ],
+
+  "key":
+  {
+    "S":
+    {
+      "item": "am:bocal"
+    },
+    "I":
+    {
+      "item": "minecraft:sugar"
+    },
+    "B":
+    {
+      "item": "am:myrtilles"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:pot_de_confiture_de_myrtilles",
+    "count": 1
+  }
+}

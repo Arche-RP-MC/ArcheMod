@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " M ",
+    "MJM",
+    "IM "
+  ],
+
+  "key":
+  {
+    "J":
+    {
+      "item": "am:plaque_d_argent"
+    },
+    "M":
+    {
+      "item": "am:bobine_d_or"
+    },
+    "I":
+    {
+      "item": "am:pinces",
+      "data": 32767
+    }
+
+  },
+
+  "result":
+  {
+    "item": "am:miroir_decore",
+    "count": 1
+  }
+}

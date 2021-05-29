@@ -479,7 +479,6 @@ public class ModItems {
     public static final Item BOBINE_D_OR = new ItemBase("bobine_d_or");
     public static final Item BOBINE_EN_BOIS = new ItemBase("bobine_en_bois");
     public static final Item BOCAL = new ItemBase("bocal");
-    public static final Item BOCAL_DE_VERNIS = new Consommables("bocal_de_vernis");
     public static final Item BOCAL_REMPLI = new ItemBase("bocal_rempli");
     public static final Item BOCAL_REMPLI_OVERLAY = new ItemBase("bocal_rempli_overlay");
     public static final Item BOITE = new ItemBase("boite");

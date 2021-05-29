@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    " JG",
+    "I M"
+  ],
+
+  "key":
+  {
+    "J":
+    {
+      "item": "am:plaque_d_argent"
+    },
+    "M":
+    {
+      "item": "am:barre_etain"
+    },
+    "I":
+    {
+      "item": "am:pinces",
+      "data": 32767
+    },
+    "G":
+    {
+      "item": "am:clous"
+
+    }
+  },
+
+  "result":
+  {
+    "item": "am:miroir_a_main_en_etain",
+    "count": 1
+  }
+}

@@ -10,7 +10,7 @@
 
   "key":
   {
-    "B":
+    "P":
     {
       "item": "am:planche"
     },
@@ -33,6 +33,6 @@
   {
     "item": "minecraft:bed",
     "data": 2,
-    "count": 2
+    "count": 1
   }
 }

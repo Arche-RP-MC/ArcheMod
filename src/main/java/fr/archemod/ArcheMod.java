@@ -1,6 +1,7 @@
 package fr.archemod;
 
 
+import fr.archemod.blocks.tileentity.TileEntityFourSechoir;
 import fr.archemod.chat.GuiChatListener;
 import fr.archemod.chat.capabilities.description.Description;
 import fr.archemod.chat.capabilities.description.DescriptionStorage;
@@ -78,6 +79,7 @@ public class ArcheMod {
         ArcheNetwork.NETWORK.registerMessage(PacketArcheChat.ClientHandler.class, PacketArcheChat.class, 6, Side.CLIENT);
         //networkDescription.registerMessage(PacketDescription.ServerHandler.class, PacketDescription.class, 4, Side.SERVER);
         //networkDescription.registerMessage(PacketDescription.ClientHandler.class, PacketDescription.class, 5, Side.CLIENT);
+        GameRegistry.registerTileEntity(TileEntityFourSechoir.class,"am:tile_four_sechoir");
 
     }
     @Mod.EventHandler

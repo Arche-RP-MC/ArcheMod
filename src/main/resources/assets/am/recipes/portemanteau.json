@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "BHT",
+    " HB",
+    "IH "
+  ],
+
+  "key":
+  {
+    "H":
+    {
+      "item": "minecraft:fence"
+    },
+    "I":
+    {
+      "item": "am:ciseaux_a_bois",
+      "data": 32767
+    },
+    "B":
+    {
+      "item": "minecraft:stick"
+    },
+
+    "T":
+    {
+      "item": "am:clous"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:porte_manteaux",
+    "count": 1
+  }
+}

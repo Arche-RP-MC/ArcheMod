@@ -5,6 +5,8 @@ import fr.archemod.blocks.*;
 import fr.archemod.blocks.agriculture.BlockPlanLin;
 import fr.archemod.blocks.baril.LiquideType;
 //import fr.archemod.blocks.bloc3D.Baril3D;
+import fr.archemod.blocks.dalles.DalleLaineBleu;
+import fr.archemod.blocks.dalles.DalleLaineMagenta;
 import fr.archemod.blocks.gateau.Bleu;
 import fr.archemod.blocks.gateau.Fromage;
 import fr.archemod.items.agriculture.ItemGraine;
@@ -90,21 +92,7 @@ public class ModBlocks {
     public static final Block GRANITE_POLI = new BlockBase("granite_poli", Material.ROCK, 5F, 5F, SoundType.STONE);
     public static final Block GRANITE_SCULPTEE = new BlockBase("granite_sculptee", Material.ROCK, 5F, 5F, SoundType.STONE);
     public static final Block JONC_DE_MER = new BlockBase("jonc_de_mer", Material.GRASS, 5F, 5F, SoundType.GROUND);
-    public static final Block LAINE_BLANCHE_CROISEE = new BlockBase("laine_blanche_croisee", Material.CLOTH, 5F, 5F, SoundType.CLOTH);
-    public static final Block LAINE_BLEUE_CIEL_CROISEE = new BlockBase("laine_bleue_ciel_croisee", Material.CLOTH, 5F, 5F, SoundType.CLOTH);
-    public static final Block LAINE_BLEUE_CROISEE = new BlockBase("laine_bleue_croisee",  Material.CLOTH, 5F, 5F, SoundType.CLOTH);
-    public static final Block LAINE_CYAN_CROISEE = new BlockBase("laine_cyan_croisee",  Material.CLOTH, 5F, 5F, SoundType.CLOTH);
-    public static final Block LAINE_GRIS_CROISEE = new BlockBase("laine_gris_croisee",  Material.CLOTH, 5F, 5F, SoundType.CLOTH);
-    public static final Block LAINE_JAUNE_CROISEE = new BlockBase("laine_jaune_croisee",  Material.CLOTH, 5F, 5F, SoundType.CLOTH);
-    public static final Block LAINE_MAGENTA_CROISEE = new BlockBase("laine_magenta_croisee",  Material.CLOTH, 5F, 5F, SoundType.CLOTH);
-    public static final Block LAINE_MARRON_CROISEE = new BlockBase("laine_marron_croisee",  Material.CLOTH, 5F, 5F, SoundType.CLOTH);
-    public static final Block LAINE_NOIRE_CROISEE = new BlockBase("laine_noire_croisee",  Material.CLOTH, 5F, 5F, SoundType.CLOTH);
-    public static final Block LAINE_ORANGE_CROISEE = new BlockBase("laine_orange_croisee", Material.CLOTH, 5F, 5F, SoundType.CLOTH);
-    public static final Block LAINE_ROSE_CROISEE = new BlockBase("laine_rose_croisee",  Material.CLOTH, 5F, 5F, SoundType.CLOTH);
-    public static final Block LAINE_ROUGE_CROISEE = new BlockBase("laine_rouge_croisee",  Material.CLOTH, 5F, 5F, SoundType.CLOTH);
-    public static final Block LAINE_VERTE_CLAIRE_CROISEE = new BlockBase("laine_verte_claire_croisee", Material.CLOTH, 5F, 5F, SoundType.CLOTH);
-    public static final Block LAINE_VERTE_CROISEE = new BlockBase("laine_verte_croisee",  Material.CLOTH, 5F, 5F, SoundType.CLOTH);
-    public static final Block LAINE_VIOLETTE_CROISEE = new BlockBase("laine_violette_croisee",  Material.CLOTH, 5F, 5F, SoundType.CLOTH);
+
     public static final Block MARBRAGE_SOL_GRES = new BlockBase("marbrage_sol_gres", Material.ROCK, 5F, 5F, SoundType.STONE);
     public static final Block PAVE_CRAQUELE = new BlockBase("pave_craquele", Material.ROCK, 5F, 5F, SoundType.STONE);
     public static final Block PIERRES_DE_GRES_NATURELLES = new BlockBase("pierres_de_gres_naturelles", Material.ROCK, 5F, 5F, SoundType.STONE);
@@ -249,6 +237,28 @@ public class ModBlocks {
     public static final Block ESCALIER_EN_TUILE_EN_ARDOISE_TRAVAILLEE = new BlockEscalier("escalier_en_tuile_en_ardoise_travaillee",5F,5F, SoundType.STONE, Block.getStateById(35));
 
     //DALLES \!/ block de base, dalle et double dalle + méthode init & register en bas de ce code.
+    public static final Block LAINE_MAGENTA = new BlockBase("laine_magenta",Material.CLOTH,2F,2F,SoundType.CLOTH);
+    public static DalleLaineMagenta.Half DALLE_LAINE_MAGENTA;
+    public static DalleLaineMagenta.Double DALLE_LAINE_MAGENTA_DOUBLE_SLAB ;
+    public static final Block LAINE_BLEU = new BlockBase("laine_bleu",Material.CLOTH,2F,2F,SoundType.CLOTH);
+    public static DalleLaineMagenta.Half DALLE_LAINE_BLEU;
+    public static DalleLaineMagenta.Double DALLE_LAINE_BLEU_DOUBLE_SLAB ;
+    public static final Block LAINE_BLANCHE_CROISEE = new BlockBase("laine_blanche_croisee", Material.CLOTH, 5F, 5F, SoundType.CLOTH);
+    public static final Block LAINE_BLEUE_CIEL_CROISEE = new BlockBase("laine_bleue_ciel_croisee", Material.CLOTH, 5F, 5F, SoundType.CLOTH);
+    public static final Block LAINE_BLEUE_CROISEE = new BlockBase("laine_bleue_croisee",  Material.CLOTH, 5F, 5F, SoundType.CLOTH);
+    public static final Block LAINE_CYAN_CROISEE = new BlockBase("laine_cyan_croisee",  Material.CLOTH, 5F, 5F, SoundType.CLOTH);
+    public static final Block LAINE_GRIS_CROISEE = new BlockBase("laine_gris_croisee",  Material.CLOTH, 5F, 5F, SoundType.CLOTH);
+    public static final Block LAINE_JAUNE_CROISEE = new BlockBase("laine_jaune_croisee",  Material.CLOTH, 5F, 5F, SoundType.CLOTH);
+    public static final Block LAINE_MAGENTA_CROISEE = new BlockBase("laine_magenta_croisee",  Material.CLOTH, 5F, 5F, SoundType.CLOTH);
+    public static final Block LAINE_MARRON_CROISEE = new BlockBase("laine_marron_croisee",  Material.CLOTH, 5F, 5F, SoundType.CLOTH);
+    public static final Block LAINE_NOIRE_CROISEE = new BlockBase("laine_noire_croisee",  Material.CLOTH, 5F, 5F, SoundType.CLOTH);
+    public static final Block LAINE_ORANGE_CROISEE = new BlockBase("laine_orange_croisee", Material.CLOTH, 5F, 5F, SoundType.CLOTH);
+    public static final Block LAINE_ROSE_CROISEE = new BlockBase("laine_rose_croisee",  Material.CLOTH, 5F, 5F, SoundType.CLOTH);
+    public static final Block LAINE_ROUGE_CROISEE = new BlockBase("laine_rouge_croisee",  Material.CLOTH, 5F, 5F, SoundType.CLOTH);
+    public static final Block LAINE_VERTE_CLAIRE_CROISEE = new BlockBase("laine_verte_claire_croisee", Material.CLOTH, 5F, 5F, SoundType.CLOTH);
+    public static final Block LAINE_VERTE_CROISEE = new BlockBase("laine_verte_croisee",  Material.CLOTH, 5F, 5F, SoundType.CLOTH);
+    public static final Block LAINE_VIOLETTE_CROISEE = new BlockBase("laine_violette_croisee",  Material.CLOTH, 5F, 5F, SoundType.CLOTH);
+
     /*public static final Block WOOLMAGENTA = new BlockBase("wool_colored_magenta",Material.CLOTH,2F,2F,SoundType.CLOTH);
     public static BlockDalleWoolColoredMagenta.Half ANDESITECRACKEDBRICKSLAB;
     public static BlockDalleWoolColoredMagenta.Half ANDESITMOSSYBRICKSLAB ;
@@ -550,34 +560,44 @@ public class ModBlocks {
 
 
     public static final Block BALANCOIRE_A_OISEAU = new BlockBase2("balancoire_a_oiseau", Material.ROCK, 5F, 5F, SoundType.STONE);
-    //public static final Block BALISTE = new BlockBase2("baliste", Material.ROCK, 5F, 5F, SoundType.STONE);
-    //public static final Block BIBLIOTHEQUE = new BlockBase2("bibliotheque", Material.ROCK, 5F, 5F, SoundType.STONE);
+    public static final Block BALISTE = new BlockBase2("baliste", Material.ROCK, 5F, 5F, SoundType.STONE);
+    public static final Block BIBLIOTHEQUE = new BlockBase2("bibliotheque", Material.ROCK, 5F, 5F, SoundType.STONE);
     public static final Block CHAISE = new BlockBase2("chaise", Material.ROCK, 5F, 5F, SoundType.STONE);
-    //public static final Block CLOCHE = new BlockBase2("cloche", Material.ROCK, 5F, 5F, SoundType.STONE);
-    //public static final Block COIN_LIT_BALDAQUIN_RIDEAU_FERMES = new BlockBase2("coin_lit_baldaquin_rideau_fermes", Material.ROCK, 5F, 5F, SoundType.STONE);
-    //public static final Block COIN_LIT_BALDAQUIN_RIDEAU_OUVERTS = new BlockBase2("coin_lit_baldaquin_rideau_ouverts", Material.ROCK, 5F, 5F, SoundType.STONE);
-    //public static final Block ETAGERE_A_ROULEAUX = new BlockBase2("etagere_a_rouleaux", Material.ROCK, 5F, 5F, SoundType.STONE);
-    //public static final Block FAUTEUIL = new BlockBase2("fauteuil", Material.ROCK, 5F, 5F, SoundType.STONE);
-    //public static final Block JEU_D_ECHEC = new BlockBase2("jeu_d_echec", Material.ROCK, 5F, 5F, SoundType.STONE);
-    //public static final Block LUSTRE_ALUME_OFF = new BlockBase2("lustre_alume_off",Material.ROCK, 5F, 5F, SoundType.STONE);
-    //public static final Block LUSTRE_ALUME = new BlockBase2("lustre_alume",Material.ROCK, 5F, 5F, SoundType.STONE);
-    //public static final Block MIROIR_DROIT = new BlockBase2("miroir_droit", Material.ROCK, 5F, 5F, SoundType.STONE);
-    //public static final Block MIROIR_ROND = new BlockBase2("miroir_rond", Material.ROCK, 5F, 5F, SoundType.STONE);
-    //public static final Block PIEGE = new BlockBase2("piege", Material.ROCK, 5F, 5F, SoundType.STONE);
+    public static final Block CLOCHE = new BlockBase2("cloche", Material.ROCK, 5F, 5F, SoundType.STONE);
+    public static final Block COIN_LIT_BALDAQUIN_RIDEAU_FERMES = new BlockBase2("coin_lit_baldaquin_rideau_fermes", Material.ROCK, 5F, 5F, SoundType.STONE);
+    public static final Block COIN_LIT_BALDAQUIN_RIDEAU_OUVERTS = new BlockBase2("coin_lit_baldaquin_rideau_ouverts", Material.ROCK, 5F, 5F, SoundType.STONE);
+    public static final Block ETAGERE_A_ROULEAUX = new BlockBase2("etagere_a_rouleaux", Material.ROCK, 5F, 5F, SoundType.STONE);
+    public static final Block FAUTEUIL = new BlockBase2("fauteuil", Material.ROCK, 5F, 5F, SoundType.STONE);
+    public static final Block JEU_D_ECHEC = new BlockBase2("jeu_d_echec", Material.ROCK, 5F, 5F, SoundType.STONE);
+    public static final Block LUSTRE_ALUME_OFF = new BlockBase2("lustre_alume_off",Material.ROCK, 5F, 5F, SoundType.STONE);
+    public static final Block LUSTRE_ALUME = new BlockBase2("lustre_alume",Material.ROCK, 5F, 5F, SoundType.STONE);
+    public static final Block MIROIR_DROIT = new BlockBase2("miroir_droit", Material.ROCK, 5F, 5F, SoundType.STONE);
+    public static final Block MIROIR_ROND = new BlockBase2("miroir_rond", Material.ROCK, 5F, 5F, SoundType.STONE);
+    public static final Block PIEGE = new BlockBase2("piege", Material.ROCK, 5F, 5F, SoundType.STONE);
     public static final Block PIEGE_A_LOUP = new BlockBase2("piege_a_loup", Material.ROCK, 5F, 5F, SoundType.STONE);
-    //public static final Block PONT_DE_SINGE = new BlockBase2("pont_de_singe", Material.ROCK, 5F, 5F, SoundType.STONE);
+    public static final Block PONT_DE_SINGE = new BlockBase2("pont_de_singe", Material.ROCK, 5F, 5F, SoundType.STONE);
     public static final Block PORTE_MANTEAUX = new BlockBase2("porte_manteaux", Material.ROCK, 5F, 5F, SoundType.STONE);
-    //public static final Block RANGE_BOUTEILLE = new BlockBase2("range_bouteille", Material.ROCK, 5F, 5F, SoundType.STONE);
-    //public static final Block RATELIER_DROIT = new BlockBase2("ratelier_droit", Material.ROCK, 5F, 5F, SoundType.STONE);
-    //public static final Block SECHOIR_PLANTES = new BlockBase2("sechoir_plantes", Material.ROCK, 5F, 5F, SoundType.STONE);
-    //public static final Block SECHOIR_POISSON = new BlockBase2("sechoir_poisson", Material.ROCK, 5F, 5F, SoundType.STONE);
-    //public static final Block SECHOIR_SIMPLE_PAPIER = new BlockBase2("sechoir_simple_papier", Material.ROCK, 5F, 5F, SoundType.STONE);
-    //public static final Block SECHOIR_VIANDES = new BlockBase2("sechoir_viandes", Material.ROCK, 5F, 5F, SoundType.STONE);
+    public static final Block RANGE_BOUTEILLE = new BlockBase2("range_bouteille", Material.ROCK, 5F, 5F, SoundType.STONE);
+    public static final Block RATELIER_DROIT = new BlockBase2("ratelier_droit", Material.ROCK, 5F, 5F, SoundType.STONE);
+    public static final Block SECHOIR_PLANTES = new BlockBase2("sechoir_plantes", Material.ROCK, 5F, 5F, SoundType.STONE);
+    public static final Block SECHOIR_POISSON = new BlockBase2("sechoir_poisson", Material.ROCK, 5F, 5F, SoundType.STONE);
+    public static final Block SECHOIR_SIMPLE_PAPIER = new BlockBase2("sechoir_simple_papier", Material.ROCK, 5F, 5F, SoundType.STONE);
+    public static final Block SECHOIR_VIANDES = new BlockBase2("sechoir_viandes", Material.ROCK, 5F, 5F, SoundType.STONE);
 
 //gateau
 
     public static final Block BLEU_ENTIER = new Bleu("bleu_entier", 5F, 5F, SoundType.SLIME);
     public static final Block FROMAGE_ENTIER = new Bleu("fromage_entier", 5F, 5F, SoundType.SLIME);
+
+
+//fours
+
+    public static final Block FourSechoir = new BlockFourSechoir().setRegistryName("am:foursechoir");
+
+
+
+
+
 
 
 
@@ -587,9 +607,11 @@ public class ModBlocks {
      */
     public static void init(){
         //dalles
-       /* WOOL_COLORED_MAGENTA_HALF_SLAB = new BlockDalleWoolColoredMagenta.Half("wool_colored_magenta_half_slab",1F,1F, Material.CLOTH, SoundType.CLOTH);
-        WOOLMAGENTA_DOUBLE_SLAB = new BlockDalleWoolColoredMagenta.Double("wool_colored_magenta_double_slab",1F,1F, Material.CLOTH, SoundType.CLOTH);
-*/
+        DALLE_LAINE_MAGENTA = new DalleLaineMagenta.Half("dalle_laine_magenta",1F,1F, Material.CLOTH, SoundType.CLOTH);
+        DALLE_LAINE_MAGENTA_DOUBLE_SLAB = new DalleLaineMagenta.Double("dalle_laine_magenta_double_slab",1F,1F, Material.CLOTH, SoundType.CLOTH);
+        /*DALLE_LAINE_BLEU = new DalleLaineBleu.Half("dalle_laine_bleu",1F,1F, Material.CLOTH, SoundType.CLOTH);
+        DALLE_LAINE_BLEU_DOUBLE_SLAB = new DalleLaineBleu.Double("dalle_laine_bleu_double_slab",1F,1F, Material.CLOTH, SoundType.CLOTH);*/
+
 
         //cultures
         ModItems.GRAINE_LIN = new ItemGraine("graine_lin",ModBlocks.PLAN_DE_LIN, Blocks.FARMLAND);
@@ -627,17 +649,17 @@ public class ModBlocks {
 
 
         //dalles
-       /* registerBlock(WOOL_COLORED_MAGENTA_HALF_SLAB, new ItemSlab(WOOL_COLORED_MAGENTA_HALF_SLAB,WOOL_COLORED_MAGENTA_HALF_SLAB,WOOLMAGENTA_DOUBLE_SLAB));
-        ForgeRegistries.BLOCKS.register(WOOLMAGENTA_DOUBLE_SLAB);
-*/
 
 
+        registerBlock(DALLE_LAINE_MAGENTA, new ItemSlab(DALLE_LAINE_MAGENTA,DALLE_LAINE_MAGENTA,DALLE_LAINE_MAGENTA_DOUBLE_SLAB));
+        ForgeRegistries.BLOCKS.register(DALLE_LAINE_MAGENTA_DOUBLE_SLAB);
+        //registerBlock(DALLE_LAINE_BLEU, new ItemSlab(DALLE_LAINE_BLEU,DALLE_LAINE_BLEU,DALLE_LAINE_BLEU_DOUBLE_SLAB));
+       // ForgeRegistries.BLOCKS.register(DALLE_LAINE_BLEU_DOUBLE_SLAB);
 
         //cultures
 
 
-        /*registerBlock(WOOL_COLORED_MAGENTA_HALF_SLAB, new ItemSlab(WOOL_COLORED_MAGENTA_HALF_SLAB,WOOL_COLORED_MAGENTA_HALF_SLAB,WOOL_COLORED_MAGENTA_DOUBLE_SLAB));
-        ForgeRegistries.BLOCKS.register(WOOL_COLORED_MAGENTA_DOUBLE_SLAB);*/
+
         registerItem(ModItems.GRAINE_LIN);
         registerItem(ModItems.GRAINE_CELERI);
         registerItem(ModItems.GRAINE_FENOUIL);

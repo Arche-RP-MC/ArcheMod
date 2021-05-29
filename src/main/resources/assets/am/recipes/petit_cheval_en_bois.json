@@ -26,7 +26,8 @@
     },
     "B":
     {
-      "item": "minecraft:log"
+      "item": "minecraft:log",
+      "data": 0
     },
     "V":
     {

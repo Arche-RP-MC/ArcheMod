@@ -1,0 +1,31 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "pattern": [
+  "   ",
+  " B ",
+  "  A"
+ ],
+
+
+ "key":
+ {
+  "A": {
+   "item": "minecraft:water_bucket"
+
+  },
+
+  "B":
+
+  {
+   "item": "minecraft:dye",
+   "data": 15
+  }
+ },
+
+  "result":
+  {
+   "item": "am:gouache_blanche",
+   "count": 5
+  }
+ }
+

@@ -4,7 +4,7 @@
   "pattern":
   [
     " W ",
-    "HAE",
+    "HA ",
     "MS "
   ],
 
@@ -28,11 +28,7 @@
     },
     "M":
     {
-      "item": "am:mortier_pilon"
-    },
-    "E":
-    {
-      "item": "am:huile_essentielle"
+      "item": "am:mortier_pilon_en_bois"
     }
   },
 

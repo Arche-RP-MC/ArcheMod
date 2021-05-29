@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    " J ",
+    "I  "
+  ],
+
+  "key":
+  {
+    "J":
+    {
+      "item": "am:plaque_d_etain"
+    },
+
+    "I":
+    {
+      "item": "am:pinces",
+      "data": 32767
+    }
+
+  },
+
+  "result":
+  {
+    "item": "am:miroir_en_etain",
+    "count": 1
+  }
+}

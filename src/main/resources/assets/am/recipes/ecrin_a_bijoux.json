@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " L ",
+    "L L",
+    "CL "
+  ],
+
+  "key":
+  {
+    "C":
+    {
+      "item": "am:pinces",
+      "data": 32767
+    },
+
+    "L":
+    {
+      "item": "am:plaque_de_fer"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:ecrin_a_bijoux",
+    "count": 1
+  }
+}
