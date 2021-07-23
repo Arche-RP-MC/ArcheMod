@@ -4,7 +4,7 @@
   "pattern":
   [
     "NNN",
-    "MFP",
+    "MNP",
     "   "
   ],
 
@@ -23,10 +23,6 @@
     "P":
     {
       "item": "am:clous"
-    },
-    "F":
-    {
-      "item": "am:manche"
     }
   },
 

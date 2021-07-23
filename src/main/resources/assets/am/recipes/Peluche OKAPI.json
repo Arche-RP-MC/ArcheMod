@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "HHH",
+    "GCG",
+    "GHG"
+  ],
+
+  "key":
+  {
+    "H":
+    {
+      "item": "am:etoffe"
+    },
+    "C":
+    {
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
+
+    },
+    "G":
+    {
+      "item": "am:etoffe_marron"
+    }
+  },
+
+  "result":
+  {
+    "item": "zawa:okapi_plush",
+    "count": 1
+  }
+}

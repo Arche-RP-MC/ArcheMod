@@ -33,7 +33,7 @@ import net.minecraft.world.World;
 import javax.annotation.Nullable;
 import java.util.Random;
 
-public class BlockBaril extends BlockBase implements ITileEntityProvider {
+public class BlockBaril extends BlockBase2 implements ITileEntityProvider {
 
     //public static final PropertyInteger SIZE = PropertyInteger.create("size", 0, 15);
 

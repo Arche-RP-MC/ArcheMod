@@ -1,13 +1,11 @@
-package fr.archemod.blocks;
+package fr.archemod.blocks.bloc3D;
 
 import fr.archemod.ArcheMod;
-import fr.archemod.blocks.tileentity.TileEntityTable;
 import fr.archemod.init.ModBlocks;
 import fr.archemod.init.ModItems;
 import fr.archemod.util.IHasModel;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockHorizontal;
-import net.minecraft.block.BlockRotatedPillar;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
@@ -16,28 +14,26 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
-import net.minecraft.item.ItemStack;
-import net.minecraft.tileentity.TileEntity;
-import net.minecraft.util.*;
+import net.minecraft.util.EnumBlockRenderType;
+import net.minecraft.util.EnumFacing;
+import net.minecraft.util.Mirror;
+import net.minecraft.util.Rotation;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class BlockBase2 extends Block implements IHasModel {
-
-  /*  public static final PropertyDirection FACING = BlockHorizontal.FACING;
-    private static final AxisAlignedBB AXIS_ALIGNED_BB_SOUTH =  new AxisAlignedBB(1D, 1D, 1D, 1D, 1D, 1D); //OK
-    private static final AxisAlignedBB AXIS_ALIGNED_BB_NORTH =  new AxisAlignedBB(1D, 1D, 1D, 1D, 1D, 1D); //OK
-    private static final AxisAlignedBB AXIS_ALIGNED_BB_EAST =  new AxisAlignedBB(1D, 1D, 1D, 1D, 1D, 1D); //OK
-    private static final AxisAlignedBB AXIS_ALIGNED_BB_WEST =  new AxisAlignedBB(1D, 1D, 1D, 1D, 1D, 1D); //OK*/
+public class BlocChaise2 extends Block implements IHasModel {
 
 
+    public static final PropertyDirection FACING = BlockHorizontal.FACING;
+    private static final AxisAlignedBB AXIS_ALIGNED_BB_SOUTH =  new AxisAlignedBB(0.25D, 0.0D, 0.17D, 0.75D, 0.4D, 0.67D); //OK
+    private static final AxisAlignedBB AXIS_ALIGNED_BB_NORTH =  new AxisAlignedBB(0.25D, 0.0D, 0.37D, 0.75D, 0.4D, 0.87D); //OK
+    private static final AxisAlignedBB AXIS_ALIGNED_BB_EAST =  new AxisAlignedBB(0.17D, 0.0D, 0.25D, 0.67D, 0.4D, 0.75D); //OK
+    private static final AxisAlignedBB AXIS_ALIGNED_BB_WEST =  new AxisAlignedBB(0.37D, 0.0D, 0.25D, 0.87D, 0.4D, 0.75D); //OK
 
-    public BlockBase2(String name, Material material, float hardness, float resistance, SoundType soundType){
+
+    public BlocChaise2(String name, Material material, float hardness, float resistance, SoundType soundType){
         super(material);
         setTranslationKey(name);
         setRegistryName(name);
@@ -50,7 +46,8 @@ public class BlockBase2 extends Block implements IHasModel {
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
     }
 
-    /*@Override
+
+    @Override
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
         if(state.getValue(FACING) == EnumFacing.SOUTH){
             return AXIS_ALIGNED_BB_SOUTH;
@@ -62,8 +59,7 @@ public class BlockBase2 extends Block implements IHasModel {
             return AXIS_ALIGNED_BB_WEST;
         }
         return AXIS_ALIGNED_BB_NORTH;
-    }*/
-
+    }
 
     @Override
     public void registerModels() {
@@ -78,7 +74,7 @@ public class BlockBase2 extends Block implements IHasModel {
 
 
 
-    /*@Override
+    @Override
     protected net.minecraft.block.state.BlockStateContainer createBlockState() {
         return new net.minecraft.block.state.BlockStateContainer(this, new IProperty[]{FACING});
     }
@@ -107,5 +103,5 @@ public class BlockBase2 extends Block implements IHasModel {
     public IBlockState getStateForPlacement(World worldIn, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta,
                                             EntityLivingBase placer) {
         return this.getDefaultState().withProperty(FACING, placer.getHorizontalFacing().getOpposite());
-    }*/
+    }
 }

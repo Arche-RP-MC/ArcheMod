@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "HHH",
+    "GCG",
+    "GGG"
+  ],
+
+  "key":
+  {
+    "H":
+    {
+      "item": "am:etoffe"
+    },
+    "C":
+    {
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
+
+    },
+    "G":
+    {
+      "item": "am:etoffe_orange"
+    }
+  },
+
+  "result":
+  {
+    "item": "zawa:tiger_plush",
+    "count": 1
+  }
+}

@@ -5,6 +5,7 @@ import fr.archemod.blocks.*;
 import fr.archemod.blocks.agriculture.BlockPlanLin;
 import fr.archemod.blocks.baril.LiquideType;
 //import fr.archemod.blocks.bloc3D.Baril3D;
+import fr.archemod.blocks.bloc3D.BlocChaise2;
 import fr.archemod.blocks.dalles.DalleLaineBleu;
 import fr.archemod.blocks.dalles.DalleLaineMagenta;
 import fr.archemod.blocks.gateau.Bleu;
@@ -562,7 +563,7 @@ public class ModBlocks {
     public static final Block BALANCOIRE_A_OISEAU = new BlockBase2("balancoire_a_oiseau", Material.ROCK, 5F, 5F, SoundType.STONE);
     public static final Block BALISTE = new BlockBase2("baliste", Material.ROCK, 5F, 5F, SoundType.STONE);
     public static final Block BIBLIOTHEQUE = new BlockBase2("bibliotheque", Material.ROCK, 5F, 5F, SoundType.STONE);
-    public static final Block CHAISE = new BlockBase2("chaise", Material.ROCK, 5F, 5F, SoundType.STONE);
+    public static final Block CHAISE = new BlocChaise2("chaise", Material.WOOD, 5F, 5F, SoundType.WOOD);
     public static final Block CLOCHE = new BlockBase2("cloche", Material.ROCK, 5F, 5F, SoundType.STONE);
     public static final Block COIN_LIT_BALDAQUIN_RIDEAU_FERMES = new BlockBase2("coin_lit_baldaquin_rideau_fermes", Material.ROCK, 5F, 5F, SoundType.STONE);
     public static final Block COIN_LIT_BALDAQUIN_RIDEAU_OUVERTS = new BlockBase2("coin_lit_baldaquin_rideau_ouverts", Material.ROCK, 5F, 5F, SoundType.STONE);
