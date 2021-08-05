@@ -6,7 +6,7 @@ import fr.archemod.blocks.agriculture.BlockPlanLin;
 import fr.archemod.blocks.baril.LiquideType;
 //import fr.archemod.blocks.bloc3D.Baril3D;
 import fr.archemod.blocks.bloc3D.BlocChaise2;
-import fr.archemod.blocks.dalles.DalleLaineBleu;
+//import fr.archemod.blocks.dalles.DalleLaineBleu;
 import fr.archemod.blocks.dalles.DalleLaineMagenta;
 import fr.archemod.blocks.gateau.Bleu;
 import fr.archemod.blocks.gateau.Fromage;
@@ -241,9 +241,9 @@ public class ModBlocks {
     public static final Block LAINE_MAGENTA = new BlockBase("laine_magenta",Material.CLOTH,2F,2F,SoundType.CLOTH);
     public static DalleLaineMagenta.Half DALLE_LAINE_MAGENTA;
     public static DalleLaineMagenta.Double DALLE_LAINE_MAGENTA_DOUBLE_SLAB ;
-    public static final Block LAINE_BLEU = new BlockBase("laine_bleu",Material.CLOTH,2F,2F,SoundType.CLOTH);
-    public static DalleLaineMagenta.Half DALLE_LAINE_BLEU;
-    public static DalleLaineMagenta.Double DALLE_LAINE_BLEU_DOUBLE_SLAB ;
+    //public static final Block LAINE_BLEU = new BlockBase("laine_bleu",Material.CLOTH,2F,2F,SoundType.CLOTH);
+    //public static DalleLaineMagenta.Half DALLE_LAINE_BLEU;
+    //public static DalleLaineMagenta.Double DALLE_LAINE_BLEU_DOUBLE_SLAB ;
     public static final Block LAINE_BLANCHE_CROISEE = new BlockBase("laine_blanche_croisee", Material.CLOTH, 5F, 5F, SoundType.CLOTH);
     public static final Block LAINE_BLEUE_CIEL_CROISEE = new BlockBase("laine_bleue_ciel_croisee", Material.CLOTH, 5F, 5F, SoundType.CLOTH);
     public static final Block LAINE_BLEUE_CROISEE = new BlockBase("laine_bleue_croisee",  Material.CLOTH, 5F, 5F, SoundType.CLOTH);
@@ -560,7 +560,7 @@ public class ModBlocks {
     // bloc 3d
 
 
-    public static final Block BALANCOIRE_A_OISEAU = new BlockBase2("balancoire_a_oiseau", Material.ROCK, 5F, 5F, SoundType.STONE);
+    /*public static final Block BALANCOIRE_A_OISEAU = new BlockBase2("balancoire_a_oiseau", Material.ROCK, 5F, 5F, SoundType.STONE);
     public static final Block BALISTE = new BlockBase2("baliste", Material.ROCK, 5F, 5F, SoundType.STONE);
     public static final Block BIBLIOTHEQUE = new BlockBase2("bibliotheque", Material.ROCK, 5F, 5F, SoundType.STONE);
     public static final Block CHAISE = new BlocChaise2("chaise", Material.WOOD, 5F, 5F, SoundType.WOOD);
@@ -584,6 +584,8 @@ public class ModBlocks {
     public static final Block SECHOIR_POISSON = new BlockBase2("sechoir_poisson", Material.ROCK, 5F, 5F, SoundType.STONE);
     public static final Block SECHOIR_SIMPLE_PAPIER = new BlockBase2("sechoir_simple_papier", Material.ROCK, 5F, 5F, SoundType.STONE);
     public static final Block SECHOIR_VIANDES = new BlockBase2("sechoir_viandes", Material.ROCK, 5F, 5F, SoundType.STONE);
+
+     */
 
 //gateau
 
