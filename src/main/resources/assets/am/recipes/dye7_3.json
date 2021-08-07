@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "AP ",
+    " M "
+  ],
+
+  "key":
+  {
+    "M":
+    {
+      "item": "am:mortier_pilon_en_pierre",
+      "data": 32767
+    },
+    "P":
+    {
+      "item": "am:poussiere_minerale"
+    },
+    "A":
+    {
+      "item": "am:coquillage"
+    }
+  },
+
+  "result":
+  {
+    "item": "minecraft:dye",
+    "data": 7,
+    "count": 2
+  }
+}

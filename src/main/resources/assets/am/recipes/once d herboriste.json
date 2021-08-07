@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "OEM",
+    " B ",
+    "   "
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:verre_en_fusion"
+    },
+    "O":
+    {
+      "item": "am:canne_de_verrier",
+      "data": 32767
+    },
+    "E":
+    {
+      "item": "am:pinces",
+      "data": 32767
+    },
+    "M":
+    {
+      "item": "am:loupe",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:once_d_herboriste",
+    "count": 1
+  }
+}

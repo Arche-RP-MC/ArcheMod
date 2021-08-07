@@ -9,6 +9,7 @@ import fr.archemod.blocks.bloc3D.BlocChaise2;
 //import fr.archemod.blocks.dalles.DalleLaineBleu;
 import fr.archemod.blocks.dalles.DalleLaineMagenta;
 import fr.archemod.blocks.gateau.Bleu;
+import fr.archemod.blocks.gateau.Brioche;
 import fr.archemod.blocks.gateau.Fromage;
 import fr.archemod.items.agriculture.ItemGraine;
 import net.minecraft.block.Block;
@@ -531,6 +532,9 @@ public class ModBlocks {
     //LUMINEUX
     public static final Block LANTERNE_JAUNE_ETEINTE = new BlockLantern("lanterne_jaune",false,Material.GLASS,0.5F,3F,SoundType.GLASS);
     public static final Block LANTERNE_JAUNE_ALLUMEE = new BlockLantern("lanterne_jaune",true,Material.GLASS,0.5F,3F,SoundType.GLASS);
+    public static final Block LUSTRE_ETEINT = new BlockLustre("lustre_alume",false,Material.GLASS,0.5F,3F,SoundType.GLASS);
+    public static final Block LUSTRE_ALUME = new BlockLustre("lustre_alume",true,Material.GLASS,0.5F,3F,SoundType.GLASS);
+
 
     //FLOWER POT \!/ Venir ajouter les plantes ici pour pouvoir les planter dans ces nouveaux pots ! (ctrl+f BASILIC dans le fichier BlockFlowerPot ;) ) + BlockStates et model à ajuster
     public static final Block FLOWER_POT = new BlockFlowerPot("flower_pot_am");
@@ -570,8 +574,7 @@ public class ModBlocks {
     public static final Block ETAGERE_A_ROULEAUX = new BlockBase2("etagere_a_rouleaux", Material.ROCK, 5F, 5F, SoundType.STONE);
     public static final Block FAUTEUIL = new BlockBase2("fauteuil", Material.ROCK, 5F, 5F, SoundType.STONE);
     public static final Block JEU_D_ECHEC = new BlockBase2("jeu_d_echec", Material.ROCK, 5F, 5F, SoundType.STONE);
-    public static final Block LUSTRE_ALUME_OFF = new BlockBase2("lustre_alume_off",Material.ROCK, 5F, 5F, SoundType.STONE);
-    public static final Block LUSTRE_ALUME = new BlockBase2("lustre_alume",Material.ROCK, 5F, 5F, SoundType.STONE);
+
     public static final Block MIROIR_DROIT = new BlockBase2("miroir_droit", Material.ROCK, 5F, 5F, SoundType.STONE);
     public static final Block MIROIR_ROND = new BlockBase2("miroir_rond", Material.ROCK, 5F, 5F, SoundType.STONE);
     public static final Block PIEGE = new BlockBase2("piege", Material.ROCK, 5F, 5F, SoundType.STONE);
@@ -590,8 +593,8 @@ public class ModBlocks {
 //gateau
 
     public static final Block BLEU_ENTIER = new Bleu("bleu_entier", 5F, 5F, SoundType.SLIME);
-    public static final Block FROMAGE_ENTIER = new Bleu("fromage_entier", 5F, 5F, SoundType.SLIME);
-
+    public static final Block FROMAGE_ENTIER = new Fromage("fromage_entier", 5F, 5F, SoundType.SLIME);
+    public static final Block BRIOCHE_ENTIERE = new Brioche("brioche_entiere", 5F, 5F, SoundType.SLIME);
 
 //fours
 

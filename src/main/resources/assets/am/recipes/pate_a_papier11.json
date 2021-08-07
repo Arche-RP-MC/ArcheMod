@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "FFF",
+    "BFM",
+    " S "
+  ],
+
+  "key":
+  {
+    "F":
+    {
+      "item": "am:sciure"
+    },
+    "B":
+    {
+      "item": "minecraft:stick"
+    },
+    "M":
+    {
+      "item": "am:marteau_en_bronze",
+      "data": 32767
+    },
+    "S":
+    {
+      "item": "minecraft:water_bucket"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:pate_a_papier",
+    "count": 12
+  }
+}

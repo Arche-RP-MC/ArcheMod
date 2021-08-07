@@ -1,4 +1,6 @@
 {
-    "parent": "am:block/bleu_entier1"
-
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "am:items/bleu"
+    }
 }

@@ -21,7 +21,8 @@
     },
     "A":
     {
-      "item": "minecraft:coal"
+      "item": "minecraft:coal",
+      "data": 0
     }
   },
 
@@ -29,6 +30,6 @@
   {
     "item": "minecraft:dye",
     "data": 0,
-    "count": 2
+    "count": 3
   }
 }

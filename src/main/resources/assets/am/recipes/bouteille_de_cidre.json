@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "BBB",
+    "BOB",
+    "ME "
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "minecraft:apple"
+    },
+    "O":
+    {
+      "item": "minecraft:sugar"
+    },
+    "M":
+    {
+      "item": "am:seau_d_eau_en_bois"
+    },
+    "E": {
+      "item": "am:bouteille_vide"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:bouteille_de_cidre",
+    "count": 1
+  }
+}

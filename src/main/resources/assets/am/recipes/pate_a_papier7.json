@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "FFF",
+    "BFM",
+    " S "
+  ],
+
+  "key":
+  {
+    "F":
+    {
+      "item": "am:sciure"
+    },
+    "B":
+    {
+      "item": "minecraft:stick"
+    },
+    "M":
+    {
+      "item": "am:marteau_en_fer",
+      "data": 32767
+    },
+    "S":
+    {
+      "item": "am:seau_d_eau_en_bois"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:pate_a_papier",
+    "count": 12
+  }
+}

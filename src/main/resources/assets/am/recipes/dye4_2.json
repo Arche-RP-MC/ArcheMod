@@ -3,8 +3,8 @@
 
   "pattern":
   [
-    "   ",
-    "AP ",
+    "A A",
+    "APA",
     " M "
   ],
 
@@ -21,7 +21,7 @@
     },
     "A":
     {
-      "item": "am:algue"
+      "item": "am:algues"
     }
   },
 
@@ -29,6 +29,6 @@
   {
     "item": "minecraft:dye",
     "data": 2,
-    "count": 1
+    "count": 2
   }
 }

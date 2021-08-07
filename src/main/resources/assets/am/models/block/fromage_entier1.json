@@ -3,7 +3,7 @@
     "particle": "am:blocks/fromage_entier_side",
     "bottom": "am:blocks/fromage_entier_bottom",
     "top": "am:blocks/fromage_entier_top",
-    "side": "am:blocks/fromage_entier_side",
+    "side": "am:blocks/fromage_entier_side"
 
   },
   "elements": [

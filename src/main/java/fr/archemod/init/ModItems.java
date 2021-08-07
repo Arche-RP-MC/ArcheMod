@@ -280,6 +280,7 @@ public class ModItems {
     public static final Item TARTINE_DE_CONFITURE = new FoodBase("tartine_de_confiture",3,0.2F,false);
     public static final Item TOMATE = new FoodBase("tomate",2,0.2F,false);
     public static final Item TRANCHE_DE_BLEU = new FoodBase("tranche_de_bleu",2,0.2F,false);
+    public static final Item TRANCHE_DE_BRIOCHE = new FoodBase("tranche_de_brioche",2,0.2F,false);
     public static final Item TRANCHE_DE_FROMAGE = new FoodBase("tranche_de_fromage",2,0.2F,false);
     public static final Item TRANCHE_DE_MELON = new FoodBase("tranche_de_melon",2,0.2F,false);
     public static final Item TRANCHE_DE_PASTEQUE = new FoodBase("tranche_de_pasteque",2,0.2F,false);
@@ -479,8 +480,6 @@ public class ModItems {
     public static final Item BOBINE_D_OR = new ItemBase("bobine_d_or");
     public static final Item BOBINE_EN_BOIS = new ItemBase("bobine_en_bois");
     public static final Item BOCAL = new ItemBase("bocal");
-    public static final Item BOCAL_REMPLI = new ItemBase("bocal_rempli");
-    public static final Item BOCAL_REMPLI_OVERLAY = new ItemBase("bocal_rempli_overlay");
     public static final Item BOITE = new ItemBase("boite");
     public static final Item BOITE_A_POUDRE = new Savon("boite_a_poudre");
     public static final Item BOL_EN_ARGILE = new ItemBase("bol_en_argile");
@@ -690,7 +689,6 @@ public class ModItems {
     public static final Item FEUILLE_DE_THE = new ItemBase("feuille_de_the");
     public static final Item FEUILLE_DE_VERVEINE = new ItemBase("feuille_de_verveine");
     public static final Item FIL_DE_CHANVRE = new ItemBase("fil_de_chanvre");
-    public static final Item FIOLE = new ItemBase("fiole");
     public static final Item FLACON = new ItemBase("flacon");
     public static final Item FLUORINE_TAILLE_ASSCHER = new ItemBase("fluorine_taille_asscher");
     public static final Item FLUORINE_TAILLE_BAGUETTE = new ItemBase("fluorine_taille_baguette");
@@ -875,7 +873,6 @@ public class ModItems {
     public static final Item HEMATITE_TAILLE__EN_ROSE = new ItemBase("hematite_taille__en_rose");
     public static final Item HIPPOCAMPE = new ItemBase("hippocampe");
     public static final Item HOMARD = new ItemBase("homard");
-    public static final Item HUILE_DE_TANNAGE = new Consommables("huile_de_tannage");
     public static final Item HUITRE = new Huitre("huitre");
     public static final Item INSECTE_EN_BOCAL = new ItemBase("insecte_en_bocal");
     public static final Item JADE_TAILLE_ASSCHER = new ItemBase("jade_taille_asscher");
@@ -922,7 +919,7 @@ public class ModItems {
     public static final Item MIROIR_DECORE = new ItemBase("miroir_decore");
     public static final Item MIROIR_EN_ETAIN = new ItemBase("miroir_en_etain");
     public static final Item MOLTEN_GLASS = new ItemBase("molten_glass");
-    public static final Item MORTIER = new Consommables("mortier");
+    public static final Item MORTIER = new ItemBase("mortier");
     public static final Item MOUCHOIR = new ItemBase("mouchoir");
     public static final Item NACRE = new ItemBase("nacre");
     public static final Item NAPOLEON = new ItemBase("napoleon");
@@ -1273,6 +1270,8 @@ public class ModItems {
     public static final Item PLANCHE_SCIURE_CHENE = new Sciure_Chene("planche_sciure_chene");
     public static final Item PLANCHE_SCIURE_CHENE_NOIR = new Sciure_Chene_Noir("planche_sciure_chene_noir");
     public static final Item PLANCHE_SCIURE_SAPIN = new Sciure_Sapin("planche_sciure_sapin");
+    public static final Item BOUTEILLE_DE_PARFUM_VIDE = new ItemBase("bouteille_de_parfum_vide");
+    public static final Item BOUTEILLE_ALCOOL_PUR = new Consommables("bouteille_alcool_pur");
 
 
     //seaux et verres

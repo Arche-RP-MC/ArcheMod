@@ -18,10 +18,12 @@
     "P":
     {
       "item": "am:poussiere_minerale"
+
     },
     "A":
     {
-      "item": "minecraft:coal"
+      "item": "minecraft:coal",
+      "data": 0
     }
   },
 

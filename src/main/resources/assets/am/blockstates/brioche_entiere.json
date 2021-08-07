@@ -1,0 +1,25 @@
+{
+  "variants": {
+    "bites=0": {
+      "model": "am:brioche_entiere"
+    },
+    "bites=1": {
+      "model": "am:brioche1"
+    },
+    "bites=2": {
+      "model": "am:brioche2"
+    },
+    "bites=3": {
+      "model": "am:brioche3"
+    },
+    "bites=4": {
+      "model": "am:brioche4"
+    },
+    "bites=5": {
+      "model": "am:brioche5"
+    },
+    "bites=6": {
+      "model": "am:brioche6"
+    }
+  }
+}

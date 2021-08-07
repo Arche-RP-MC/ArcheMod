@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "LP ",
+    "P  "
+  ],
+
+  "key":{
+    "P":
+    {
+      "item": "am:planche"
+    },
+    "L":
+    {
+      "item": "am:scie_en_bronze",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "minecraft:stick",
+    "count": 8
+  }
+}

@@ -37,7 +37,7 @@ public class Brioche extends BlockCake {
         } else {
             worldIn.setBlockToAir(pos);
         }
-        playerIn.addItemStackToInventory(new ItemStack((Item)ModItems.BRIOCHE));
+        playerIn.addItemStackToInventory(new ItemStack((Item)ModItems.TRANCHE_DE_BRIOCHE));
         return true;
     }
 }

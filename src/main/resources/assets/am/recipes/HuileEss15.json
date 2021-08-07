@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "BBB",
+    "BBB",
+    "OEM"
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:lavande"
+    },
+    "O":
+    {
+      "item": "am:once_d_herboriste"
+    },
+    "E":
+    {
+      "item": "minecraft:water_bucket"
+    },
+    "M":
+    {
+      "item": "am:mortier_pilon_en_pierre",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:huile_essentielle",
+    "count": 1
+  }
+}

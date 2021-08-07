@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " H ",
+    " A ",
+    " P "
+  ],
+
+  "key":
+  {
+    "H":
+    {
+      "item": "am:huile_essentielle"
+    },
+    "A":
+    {
+      "item": "am:bouteille_alcool_pur"
+    },
+    "P":
+    {
+      "item": "am:bouteille_de_parfum_vide"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:bouteille_de_parfum",
+    "count": 1
+  }
+}

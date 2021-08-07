@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "BBB",
+    "BBB",
+    "OEM"
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "minecraft:reeds"
+    },
+    "O":
+    {
+      "item": "am:seau_d_eau_en_bois"
+    },
+    "M":
+    {
+      "item": "am:levure"
+    },
+    "E": {
+      "item": "am:bouteille_vide"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:bouteille_de_rhum",
+    "count": 1
+  }
+}

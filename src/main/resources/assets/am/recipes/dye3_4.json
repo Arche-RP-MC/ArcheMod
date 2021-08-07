@@ -4,7 +4,7 @@
   "pattern":
   [
     "   ",
-    "AP ",
+    "APA",
     " M "
   ],
 
@@ -21,7 +21,7 @@
     },
     "A":
     {
-      "item": "am:cacao"
+      "item": "am:buisson_etrange"
     }
   },
 
@@ -29,6 +29,6 @@
   {
     "item": "minecraft:dye",
     "data": 3,
-    "count": 3
+    "count": 2
   }
 }
