@@ -8,7 +8,7 @@ public class Consomable2 extends ItemBase{
         super(name);
         setNoRepair();
         setMaxStackSize(1);
-        setMaxDamage(200);
+        setMaxDamage(50);
     }
 
     @Override

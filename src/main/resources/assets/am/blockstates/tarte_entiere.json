@@ -1,0 +1,25 @@
+{
+  "variants": {
+    "bites=0": {
+      "model": "am:tarte_entiere"
+    },
+    "bites=1": {
+      "model": "am:tarte1"
+    },
+    "bites=2": {
+      "model": "am:tarte2"
+    },
+    "bites=3": {
+      "model": "am:tarte3"
+    },
+    "bites=4": {
+      "model": "am:tarte4"
+    },
+    "bites=5": {
+      "model": "am:tarte5"
+    },
+    "bites=6": {
+      "model": "am:tarte6"
+    }
+  }
+}

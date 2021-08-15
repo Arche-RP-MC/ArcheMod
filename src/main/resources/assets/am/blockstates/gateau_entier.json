@@ -1,0 +1,25 @@
+{
+  "variants": {
+    "bites=0": {
+      "model": "am:gateau_entier"
+    },
+    "bites=1": {
+      "model": "am:gateau1"
+    },
+    "bites=2": {
+      "model": "am:gateau2"
+    },
+    "bites=3": {
+      "model": "am:gateau3"
+    },
+    "bites=4": {
+      "model": "am:gateau4"
+    },
+    "bites=5": {
+      "model": "am:gateau5"
+    },
+    "bites=6": {
+      "model": "am:gateau6"
+    }
+  }
+}

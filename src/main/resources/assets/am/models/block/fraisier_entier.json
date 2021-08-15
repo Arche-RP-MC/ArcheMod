@@ -1,0 +1,37 @@
+{
+  "textures": {
+    "particle": "am:blocks/fraisier_side",
+    "bottom": "am:blocks/fraisier_bottom",
+    "top": "am:blocks/fraisier_top",
+    "side": "am:blocks/fraisier_side"
+
+
+  },
+  "elements": [
+    {
+      "from": [1, 0, 1],
+      "to": [15, 8, 15],
+      "faces": {
+        "down": {
+          "texture": "#bottom",
+          "cullface": "down"
+        },
+        "up": {
+          "texture": "#top"
+        },
+        "north": {
+          "texture": "#side"
+        },
+        "south": {
+          "texture": "#side"
+        },
+        "west": {
+          "texture": "#side"
+        },
+        "east": {
+          "texture": "#side"
+        }
+      }
+    }
+  ]
+}

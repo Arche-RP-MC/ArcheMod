@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "BCD",
+    " E "
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:buisson_etrange"
+    },
+    "C":
+    {
+      "item": "am:romarin"
+    },
+    "D":
+    {
+      "item": "am:laurier"
+    },
+    "E":
+    {
+      "item": "minecraft:string"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:bouquet_garni",
+    "count": 3
+  }
+}

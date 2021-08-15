@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+     "   ",
+    " B ",
+    " EM"
+  ],
+
+  "key":
+  {
+    
+    "B":
+    {
+      "item": "am:dorade"
+    },
+    "E":
+    {
+      "item": "minecraft:stick"
+    },
+    "M":
+    {
+      "item": "am:farine"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:poisson_grille",
+    "count": 1
+  }
+}

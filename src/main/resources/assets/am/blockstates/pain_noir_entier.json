@@ -1,0 +1,25 @@
+{
+  "variants": {
+    "bites=0": {
+      "model": "am:pain_noir_entier"
+    },
+    "bites=1": {
+      "model": "am:pain_noir1"
+    },
+    "bites=2": {
+      "model": "am:pain_noir2"
+    },
+    "bites=3": {
+      "model": "am:pain_noir3"
+    },
+    "bites=4": {
+      "model": "am:pain_noir4"
+    },
+    "bites=5": {
+      "model": "am:pain_noir5"
+    },
+    "bites=6": {
+      "model": "am:pain_noir6"
+    }
+  }
+}

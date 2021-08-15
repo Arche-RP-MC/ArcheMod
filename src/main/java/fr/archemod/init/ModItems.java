@@ -1010,7 +1010,7 @@ public class ModItems {
     public static final Item PERLE = new ItemBase("perle");
     public static final Item PERLE_NATURELLE = new ItemBase("perle_naturelle");
     public static final Item PERLE_NOIRE = new ItemBase("perle_noire");
-    public static final Item PETITE_SERVIETTE = new Consomable2("petite_serviette");
+    public static final Item PETITE_SERVIETTE = new Consomable3("petite_serviette");
     public static final Item PETIT_CHEVAL_EN_BOIS = new ItemBase("petit_cheval_en_bois");
     public static final Item PETIT_MIROIR = new ItemBase("petit_miroir");
     public static final Item PINCEAU = new Consommables("pinceau");
@@ -1591,19 +1591,19 @@ public class ModItems {
     public static final Item PANTALON_GRIS_CLAIR = new ItemBase("pantalon_gris_clair");
 
 
-    public static final Item PETITE_SERVIETTE_NOIR = new Consomable2("petite_serviette_noir");
-    public static final Item PETITE_SERVIETTE_BLEU = new Consomable2("petite_serviette_bleu");
-    public static final Item PETITE_SERVIETTE_MARRON = new Consomable2("petite_serviette_marron");
-    public static final Item PETITE_SERVIETTE_CYAN = new Consomable2("petite_serviette_cyan");
-    public static final Item PETITE_SERVIETTE_GRIS = new Consomable2("petite_serviette_gris");
-    public static final Item PETITE_SERVIETTE_BLEU_CLAIR = new Consomable2("petite_serviette_bleu_clair");
-    public static final Item PETITE_SERVIETTE_VERT = new Consomable2("petite_serviette_vert");
-    public static final Item PETITE_SERVIETTE_MAGENTA = new Consomable2("petite_serviette_magenta");
-    public static final Item PETITE_SERVIETTE_ORANGE = new Consomable2("petite_serviette_orange");
-    public static final Item PETITE_SERVIETTE_ROSE = new Consomable2("petite_serviette_rose");
-    public static final Item PETITE_SERVIETTE_ROUGE = new Consomable2("petite_serviette_rouge");
-    public static final Item PETITE_SERVIETTE_JAUNE = new Consomable2("petite_serviette_jaune");
-    public static final Item PETITE_SERVIETTE_GRIS_CLAIR = new Consomable2("petite_serviette_gris_clair");
+    public static final Item PETITE_SERVIETTE_NOIR = new Consomable3("petite_serviette_noir");
+    public static final Item PETITE_SERVIETTE_BLEU = new Consomable3("petite_serviette_bleu");
+    public static final Item PETITE_SERVIETTE_MARRON = new Consomable3("petite_serviette_marron");
+    public static final Item PETITE_SERVIETTE_CYAN = new Consomable3("petite_serviette_cyan");
+    public static final Item PETITE_SERVIETTE_GRIS = new Consomable3("petite_serviette_gris");
+    public static final Item PETITE_SERVIETTE_BLEU_CLAIR = new Consomable3("petite_serviette_bleu_clair");
+    public static final Item PETITE_SERVIETTE_VERT = new Consomable3("petite_serviette_vert");
+    public static final Item PETITE_SERVIETTE_MAGENTA = new Consomable3("petite_serviette_magenta");
+    public static final Item PETITE_SERVIETTE_ORANGE = new Consomable3("petite_serviette_orange");
+    public static final Item PETITE_SERVIETTE_ROSE = new Consomable3("petite_serviette_rose");
+    public static final Item PETITE_SERVIETTE_ROUGE = new Consomable3("petite_serviette_rouge");
+    public static final Item PETITE_SERVIETTE_JAUNE = new Consomable3("petite_serviette_jaune");
+    public static final Item PETITE_SERVIETTE_GRIS_CLAIR = new Consomable3("petite_serviette_gris_clair");
 
 
     public static final Item ROBE_NOIR = new ItemBase("robe_noir");

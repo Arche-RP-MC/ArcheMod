@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+     "   ",
+    "BBB",
+    " E "
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:fraise"
+    },
+
+    "E":
+    {
+      "item": "am:bocal"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:pot_de_confiture_de_fruits_rouges",
+    "count": 1
+  }
+}

@@ -1,7 +1,7 @@
 {
   "variants": {
     "bites=0": {
-      "model": "am:bleu_entier1"
+      "model": "am:bleu_entier"
     },
     "bites=1": {
       "model": "am:bleu1"

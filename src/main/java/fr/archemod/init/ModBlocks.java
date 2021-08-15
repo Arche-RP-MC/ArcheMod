@@ -8,9 +8,7 @@ import fr.archemod.blocks.baril.LiquideType;
 import fr.archemod.blocks.bloc3D.BlocChaise2;
 //import fr.archemod.blocks.dalles.DalleLaineBleu;
 import fr.archemod.blocks.dalles.DalleLaineMagenta;
-import fr.archemod.blocks.gateau.Bleu;
-import fr.archemod.blocks.gateau.Brioche;
-import fr.archemod.blocks.gateau.Fromage;
+import fr.archemod.blocks.gateau.*;
 import fr.archemod.items.agriculture.ItemGraine;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockSign;
@@ -595,6 +593,15 @@ public class ModBlocks {
     public static final Block BLEU_ENTIER = new Bleu("bleu_entier", 5F, 5F, SoundType.SLIME);
     public static final Block FROMAGE_ENTIER = new Fromage("fromage_entier", 5F, 5F, SoundType.SLIME);
     public static final Block BRIOCHE_ENTIERE = new Brioche("brioche_entiere", 5F, 5F, SoundType.SLIME);
+    public static final Block FRAISIER_ENTIER = new Fraisier("fraisier_entier", 5F, 5F, SoundType.SLIME);
+    public static final Block GATEAU_ENTIER = new Gateau("gateau_entier", 5F, 5F, SoundType.SLIME);
+    //public static final Block JAMBON_ENTIER = new Gateau("jambon_entier", 5F, 5F, SoundType.SLIME);
+    public static final Block PAIN_NOIR_ENTIER = new PainNoir("pain_noir_entier", 5F, 5F, SoundType.SLIME);
+    public static final Block TARTE_ENTIERE = new Tarte("tarte_entiere", 5F, 5F, SoundType.SLIME);
+    public static final Block TARTE_CITRON_ENTIERE = new TarteCitron("tarte_citron_entiere", 5F, 5F, SoundType.SLIME);
+    public static final Block TARTE_FRUIT_ROUGE_ENTIERE = new TarteFruitRouge("tarte_fruit_rouge_entiere", 5F, 5F, SoundType.SLIME);
+    public static final Block TARTE_MYRTILLE_ENTIERE = new TarteMyrtille("tarte_myrtille_entiere", 5F, 5F, SoundType.SLIME);
+    public static final Block TOURTE_ENTIERE = new Tourte("tourte_entiere", 5F, 5F, SoundType.SLIME);
 
 //fours
 

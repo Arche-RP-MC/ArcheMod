@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    " B ",
+    "OEM"
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:mortier_pilon_en_bois",
+      "data":32767
+    },
+    "O":
+    {
+      "item": "am:bouteille_d_lait"
+    },
+    "E":
+    {
+      "item": "am:bouteille_d_lait"
+    },
+    "M":
+    {
+      "item": "am:bouteille_d_lait"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:beurre",
+    "count": 3
+  }
+}

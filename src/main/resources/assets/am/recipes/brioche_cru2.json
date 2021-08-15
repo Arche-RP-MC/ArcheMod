@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    " BC",
+    " E "
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:pate_a_pain"
+    },
+    "C":
+    {
+      "item": "am:rouleau_a_patisserie",
+      "data":32767
+    },
+    "E":
+    {
+      "item": "am:moule",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:brioche_cru",
+    "count": 1
+  }
+}

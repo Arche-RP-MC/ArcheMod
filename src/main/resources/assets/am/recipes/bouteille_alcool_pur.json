@@ -8,11 +8,14 @@
     "OE "
   ],
 
-  "key": {
-    "B": {
+  "key":
+  {
+    "B":
+    {
       "item": "minecraft:sugar"
     },
-    "O": {
+    "O":
+    {
       "item": "am:seau_d_eau_en_bois"
     },
     "E": {
@@ -22,7 +25,7 @@
 
   "result":
   {
-    "item": "am:bouteille_alcool_pur",
+    "item": "am:bouteille_de_biere_brune",
     "count": 1
   }
 }
