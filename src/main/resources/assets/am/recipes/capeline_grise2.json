@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "CL ",
+    "   "
+  ],
+
+  "key":
+  {
+
+    "C":
+    {
+      "item": "am:capeline_blanc"
+    },
+    "L":
+    {
+      "item": "minecraft:dye",
+      "data": 8
+    }
+
+  },
+
+  "result":
+  {
+    "item": "am:capeline_gris",
+    "count": 1
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " C ",
+    " LL",
+    "   "
+  ],
+
+  "key":
+  {
+    "C":
+    {
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
+    },
+
+    "L":
+    {
+      "item": "am:etoffe_bleue"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:echarpe_bleu",
+    "count": 1
+  }
+}

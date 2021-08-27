@@ -1,4 +1,4 @@
-package fr.archemod.blocks;
+/*package fr.archemod.blocks;
 
 
 import fr.archemod.blocks.tileentity.TileEntityLightBlock2;
@@ -177,3 +177,4 @@ public class BlockLustre extends BlockBase implements ITileEntityProvider {
     }
 }
 
+*/

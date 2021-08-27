@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "BM ",
+    "BBE",
+    "BBB"
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:brique_de_granite"
+    },
+    "E":
+    {
+      "item": "am:mortier"
+    },
+    "M":
+    {
+      "item": "am:marteau_burin_en_bronze",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:granitesmoothbrickstair",
+    "count": 2
+  }
+}

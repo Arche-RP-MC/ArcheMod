@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "BBB",
+    "OBM",
+    "   "
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:brique_de_gres_rouge"
+    },
+    "O":
+    {
+      "item": "am:mortier"
+    },
+    "M":
+    {
+      "item": "am:marteau_burin_en_bronze",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "minecraft:red_sandstone",
+    "data": 1
+    "count": 1
+  }
+}

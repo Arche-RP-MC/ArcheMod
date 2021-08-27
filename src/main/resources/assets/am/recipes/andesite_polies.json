@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "BBB",
+    "OBM",
+    "   "
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:caillou_d_andesite"
+    },
+    "O":
+    {
+      "item": "am:mortier"
+    },
+    "M":
+    {
+      "item": "am:marteau_burin_en_bronze",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "minecraft:stone",
+    "data": 6,
+    "count": 1
+  }
+}

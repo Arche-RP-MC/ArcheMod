@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " L ",
+    "CCF",
+    "PM "
+  ],
+
+  "key":
+  {
+    "P":
+    {
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
+    },
+    "F":
+    {
+      "item": "minecraft:string"
+    },
+    "C":
+    {
+      "item": "am:cuir_tanne"
+    },
+    "M":
+    {
+      "item": "minecraft:dye",
+      "data": 2
+    },
+    "L":
+    {
+      "item": "am:clous"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:botte_en_cuir_vert",
+    "count": 1
+  }
+}

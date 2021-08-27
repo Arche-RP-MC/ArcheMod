@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    " B ",
+    " M "
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:andesite_polie"
+    },
+    "M":
+    {
+      "item": "am:marteau_burin_en_bronze",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:andesite_sculptee",
+    "count": 1
+  }
+}

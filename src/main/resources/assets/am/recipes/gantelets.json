@@ -4,7 +4,7 @@
   "pattern":
   [
     "BCB",
-    "T T",
+    "PTP",
     "   "
   ],
 
@@ -19,10 +19,15 @@
       "item": "am:ciseaux_de_couture",
       "data": 32767
     },
+    "P":
+    {
+      "item": "am:plaque_de_fer"
+
+    },
 
     "T":
     {
-      "item": "am:gants"
+      "item": "am:gants_en_cuir"
     }
   },
 

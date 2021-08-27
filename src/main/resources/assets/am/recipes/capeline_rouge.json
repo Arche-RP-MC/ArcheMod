@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "FNG",
+    "NNN",
+    "   "
+  ],
+
+  "key":
+  {
+    "N":
+    {
+      "item": "am:etoffe_rouge"
+    },
+    "G":
+    {
+      "item": "am:laniere_de_cuir"
+    },
+    "F":
+    {
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:capeline_rouge",
+    "count": 1
+  }
+}

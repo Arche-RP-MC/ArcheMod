@@ -3,7 +3,7 @@
   "pattern": 
  [ 
  " S ", 
- "EFE", 
+ " FE",
  "MMM" 
  ], 
 
@@ -27,7 +27,7 @@
 },
 "E": 
  { 
- "item": "minecraft:egg"
+ "item": "minecraft:water_bucket"
 
 }
 },

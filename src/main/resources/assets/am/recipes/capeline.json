@@ -16,7 +16,7 @@
     },
     "G":
     {
-      "item": "am:cuir"
+      "item": "am:laniere_de_cuir"
     },
     "F":
     {
@@ -27,7 +27,7 @@
 
   "result":
   {
-    "item": "am:capeline",
+    "item": "am:capeline_blanc",
     "count": 1
   }
 }

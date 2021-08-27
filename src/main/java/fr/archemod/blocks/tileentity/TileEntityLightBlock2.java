@@ -1,4 +1,4 @@
-package fr.archemod.blocks.tileentity;
+/*package fr.archemod.blocks.tileentity;
 
 import fr.archemod.blocks.BlockLantern;
 import fr.archemod.init.ModBlocks;
@@ -108,3 +108,4 @@ public class TileEntityLightBlock2 extends TileEntity implements ITickable {
         }
     }
 }
+*/

@@ -4,7 +4,7 @@
   "pattern":
   [
     " L ",
-    "CLF",
+    "CCF",
     "P  "
   ],
 
@@ -25,7 +25,7 @@
     },
     "L":
     {
-      "item": "am:cuir"
+      "item": "am:clous"
     }
   },
 

@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " P ",
+    "TRL",
+    " P "
+  ],
+
+  "key":
+  {
+    "P":
+    {
+      "item": "am:plaque_de_acier"
+    },
+    "T":
+    {
+      "item": "am:trousse_d_ingenieur_en_fer",
+      "data": 32767
+    },
+    "R":
+    {
+      "item": "am:rouage"
+    },
+    "L":
+    {
+      "item": "am:loupe",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:serrure_acier",
+    "count": 1
+  }
+}

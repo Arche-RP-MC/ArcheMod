@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    " B ",
+    " E "
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "minecraft:beetroot"
+    },
+    "E":
+    {
+      "item": "am:mortier_pilon_en_pierre",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "minecraft:sugar",
+    "count": 4
+  }
+}

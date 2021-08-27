@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "BM ",
+    "BBE",
+    "BBB"
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:brique_d_andesite"
+    },
+    "E":
+    {
+      "item": "am:mortier"
+    },
+    "M":
+    {
+      "item": "am:marteau_burin_en_bronze",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:andesitsmoothstair",
+    "count": 2
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " NG",
+    "FNN",
+    "NNN"
+  ],
+
+  "key":
+  {
+    "N":
+    {
+      "item": "am:etoffe_verte"
+    },
+    "G":
+    {
+      "item": "am:cuir_tanne"
+    },
+    "F":
+    {
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:cape_vert",
+    "count": 1
+  }
+}

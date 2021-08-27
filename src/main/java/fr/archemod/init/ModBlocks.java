@@ -530,20 +530,30 @@ public class ModBlocks {
     //LUMINEUX
     public static final Block LANTERNE_JAUNE_ETEINTE = new BlockLantern("lanterne_jaune",false,Material.GLASS,0.5F,3F,SoundType.GLASS);
     public static final Block LANTERNE_JAUNE_ALLUMEE = new BlockLantern("lanterne_jaune",true,Material.GLASS,0.5F,3F,SoundType.GLASS);
-    public static final Block LUSTRE_ETEINT = new BlockLustre("lustre_alume",false,Material.GLASS,0.5F,3F,SoundType.GLASS);
-    public static final Block LUSTRE_ALUME = new BlockLustre("lustre_alume",true,Material.GLASS,0.5F,3F,SoundType.GLASS);
+    //public static final Block LUSTRE_ETEINT = new BlockLustre("lustre_alume",false,Material.GLASS,0.5F,3F,SoundType.GLASS);
+    //public static final Block LUSTRE_ALUME = new BlockLustre("lustre_alume",true,Material.GLASS,0.5F,3F,SoundType.GLASS);
 
 
     //FLOWER POT \!/ Venir ajouter les plantes ici pour pouvoir les planter dans ces nouveaux pots ! (ctrl+f BASILIC dans le fichier BlockFlowerPot ;) ) + BlockStates et model à ajuster
     public static final Block FLOWER_POT = new BlockFlowerPot("flower_pot_am");
 
     //BARIL \!/ Ajouter les interactions avec d'autres objets et liquides dans la classe directement en suivant l'exemple de l'eau
-    //public static final Block BARIL_VIDE = new Baril3D("baril_vide", 1.5F, 1.5f, SoundType.WOOD);
     public static final Block BARIL_VIDE = new BlockBaril("baril_vide",Material.WOOD, 1.5F, 1.5f, SoundType.WOOD);
 
 
     //CONTENEUR \!/ Il faut recréer Block, TileEntity, Container, Inventory, GUI, Registry dans util.handlers.RegistryHandler et gérer le GUIid du Block (onBlockActivated) dans le switch case du GUIHandler
     public static final Block ECRIN_A_BIJOUX = new BlockEcrinABijoux("ecrin_a_bijoux", Material.WOOD, 1.5F, 1.5F, SoundType.WOOD);
+
+   // BLOCS CONTENEUR 3D
+
+    //public static final Block BIBLIOTHEQUE = new BlockBase2("bibliotheque", Material.ROCK, 5F, 5F, SoundType.STONE);
+    //public static final Block ETAGERE_A_ROULEAUX = new BlockBase2("etagere_a_rouleaux", Material.ROCK, 5F, 5F, SoundType.STONE);
+    //public static final Block RANGE_BOUTEILLE = new BlockBase2("range_bouteille", Material.ROCK, 5F, 5F, SoundType.STONE);
+    //public static final Block RATELIER_DROIT = new BlockBase2("ratelier_droit", Material.ROCK, 5F, 5F, SoundType.STONE);
+
+    // BLOC 3D JEU
+
+    //public static final Block JEU_D_ECHEC = new BlockBase2("jeu_d_echec", Material.ROCK, 5F, 5F, SoundType.STONE);
 
 
 
@@ -559,28 +569,23 @@ public class ModBlocks {
 
 
 
-    // bloc 3d
+    // bloc 3d simple
 
-
+    public static final Block PIEGE_A_LOUP = new BlockBase2("piege_a_loup", Material.ROCK, 5F, 5F, SoundType.STONE);
+    public static final Block PORTE_MANTEAUX = new BlockBase2("porte_manteaux", Material.ROCK, 5F, 5F, SoundType.STONE);
     /*public static final Block BALANCOIRE_A_OISEAU = new BlockBase2("balancoire_a_oiseau", Material.ROCK, 5F, 5F, SoundType.STONE);
     public static final Block BALISTE = new BlockBase2("baliste", Material.ROCK, 5F, 5F, SoundType.STONE);
-    public static final Block BIBLIOTHEQUE = new BlockBase2("bibliotheque", Material.ROCK, 5F, 5F, SoundType.STONE);
+
     public static final Block CHAISE = new BlocChaise2("chaise", Material.WOOD, 5F, 5F, SoundType.WOOD);
     public static final Block CLOCHE = new BlockBase2("cloche", Material.ROCK, 5F, 5F, SoundType.STONE);
-    public static final Block COIN_LIT_BALDAQUIN_RIDEAU_FERMES = new BlockBase2("coin_lit_baldaquin_rideau_fermes", Material.ROCK, 5F, 5F, SoundType.STONE);
-    public static final Block COIN_LIT_BALDAQUIN_RIDEAU_OUVERTS = new BlockBase2("coin_lit_baldaquin_rideau_ouverts", Material.ROCK, 5F, 5F, SoundType.STONE);
-    public static final Block ETAGERE_A_ROULEAUX = new BlockBase2("etagere_a_rouleaux", Material.ROCK, 5F, 5F, SoundType.STONE);
+
     public static final Block FAUTEUIL = new BlockBase2("fauteuil", Material.ROCK, 5F, 5F, SoundType.STONE);
-    public static final Block JEU_D_ECHEC = new BlockBase2("jeu_d_echec", Material.ROCK, 5F, 5F, SoundType.STONE);
+
 
     public static final Block MIROIR_DROIT = new BlockBase2("miroir_droit", Material.ROCK, 5F, 5F, SoundType.STONE);
     public static final Block MIROIR_ROND = new BlockBase2("miroir_rond", Material.ROCK, 5F, 5F, SoundType.STONE);
     public static final Block PIEGE = new BlockBase2("piege", Material.ROCK, 5F, 5F, SoundType.STONE);
-    public static final Block PIEGE_A_LOUP = new BlockBase2("piege_a_loup", Material.ROCK, 5F, 5F, SoundType.STONE);
-    public static final Block PONT_DE_SINGE = new BlockBase2("pont_de_singe", Material.ROCK, 5F, 5F, SoundType.STONE);
-    public static final Block PORTE_MANTEAUX = new BlockBase2("porte_manteaux", Material.ROCK, 5F, 5F, SoundType.STONE);
-    public static final Block RANGE_BOUTEILLE = new BlockBase2("range_bouteille", Material.ROCK, 5F, 5F, SoundType.STONE);
-    public static final Block RATELIER_DROIT = new BlockBase2("ratelier_droit", Material.ROCK, 5F, 5F, SoundType.STONE);
+
     public static final Block SECHOIR_PLANTES = new BlockBase2("sechoir_plantes", Material.ROCK, 5F, 5F, SoundType.STONE);
     public static final Block SECHOIR_POISSON = new BlockBase2("sechoir_poisson", Material.ROCK, 5F, 5F, SoundType.STONE);
     public static final Block SECHOIR_SIMPLE_PAPIER = new BlockBase2("sechoir_simple_papier", Material.ROCK, 5F, 5F, SoundType.STONE);
@@ -606,7 +611,10 @@ public class ModBlocks {
 //fours
 
     public static final Block FourSechoir = new BlockFourSechoir().setRegistryName("am:foursechoir");
-
+    //public static final Block SECHOIR_PLANTES = new BlockBase2("sechoir_plantes", Material.ROCK, 5F, 5F, SoundType.STONE);
+    //public static final Block SECHOIR_POISSON = new BlockBase2("sechoir_poisson", Material.ROCK, 5F, 5F, SoundType.STONE);
+    //public static final Block SECHOIR_SIMPLE_PAPIER = new BlockBase2("sechoir_simple_papier", Material.ROCK, 5F, 5F, SoundType.STONE);
+    //public static final Block SECHOIR_VIANDES = new BlockBase2("sechoir_viandes", Material.ROCK, 5F, 5F, SoundType.STONE);
 
 
 

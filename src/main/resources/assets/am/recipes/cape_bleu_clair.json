@@ -12,11 +12,11 @@
   {
     "N":
     {
-      "item": "am:etoffe"
+      "item": "am:etoffe_bleu_clair"
     },
     "G":
     {
-      "item": "am:cuir"
+      "item": "am:cuir_tanne"
     },
     "F":
     {
@@ -27,7 +27,7 @@
 
   "result":
   {
-    "item": "am:cape",
+    "item": "am:cape_bleu_clair",
     "count": 1
   }
 }
