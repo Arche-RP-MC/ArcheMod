@@ -7,10 +7,12 @@ import fr.archemod.blocks.tileentity.TileEntityBlockBaril;
 import fr.archemod.init.ModBlocks;
 import fr.archemod.init.ModItems;
 import fr.archemod.items.ItemBase;
+import net.minecraft.block.BlockHorizontal;
 import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
+import net.minecraft.block.properties.PropertyDirection;
 import net.minecraft.block.properties.PropertyInteger;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
@@ -20,9 +22,7 @@ import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
-import net.minecraft.util.EnumBlockRenderType;
-import net.minecraft.util.EnumFacing;
-import net.minecraft.util.EnumHand;
+import net.minecraft.util.*;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.text.Style;
@@ -37,11 +37,11 @@ public class BlockBaril extends BlockBase2 implements ITileEntityProvider {
 
     //public static final PropertyInteger SIZE = PropertyInteger.create("size", 0, 15);
 
-
     public BlockBaril(String name, Material material, float hardness, float resistance, SoundType soundType) {
         super(name, material, hardness, resistance, soundType);
         setTickRandomly(true);
         setCreativeTab(ArcheMod.archeCreativeTabs);
+
     }
 
 
@@ -253,6 +253,69 @@ public class BlockBaril extends BlockBase2 implements ITileEntityProvider {
                             return true;
                         }
                     }
+                    if(item.getItem() == ModItems.SEAU_DE_LIQUIDE_JAUNE){
+                        if(barilTarget == BarilType.VIDE){
+                            //           baril visé joueur  new baril     item cliqué par le joueur            item reçus                 valeur du liquide                  remplir ou vider
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_JAUNE, new ItemStack(ModItems.SEAU_DE_LIQUIDE_JAUNE), new ItemStack(Items.BUCKET), 15, worldIn, pos, playerIn, true);
+                            return true;
+                        }
+                    }
+                    if(item.getItem() == ModItems.SEAU_DE_LIQUIDE_ROUGE){
+                        if(barilTarget == BarilType.VIDE){
+                            //           baril visé joueur  new baril     item cliqué par le joueur            item reçus                 valeur du liquide                  remplir ou vider
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_ROUGE, new ItemStack(ModItems.SEAU_DE_LIQUIDE_ROUGE), new ItemStack(Items.BUCKET), 15, worldIn, pos, playerIn, true);
+                            return true;
+                        }
+                    }
+                    if(item.getItem() == ModItems.SEAU_DE_LIQUIDE_VERT){
+                        if(barilTarget == BarilType.VIDE){
+                            //           baril visé joueur  new baril     item cliqué par le joueur            item reçus                 valeur du liquide                  remplir ou vider
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_VERT, new ItemStack(ModItems.SEAU_DE_LIQUIDE_VERT), new ItemStack(Items.BUCKET), 15, worldIn, pos, playerIn, true);
+                            return true;
+                        }
+                    }
+                    if(item.getItem() == ModItems.SEAU_DE_LIQUIDE_ORANGE){
+                        if(barilTarget == BarilType.VIDE){
+                            //           baril visé joueur  new baril     item cliqué par le joueur            item reçus                 valeur du liquide                  remplir ou vider
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_ORANGE, new ItemStack(ModItems.SEAU_DE_LIQUIDE_ORANGE), new ItemStack(Items.BUCKET), 15, worldIn, pos, playerIn, true);
+                            return true;
+                        }
+                    }
+                    if(item.getItem() == ModItems.SEAU_DE_LIQUIDE_BRUN){
+                        if(barilTarget == BarilType.VIDE){
+                            //           baril visé joueur  new baril     item cliqué par le joueur            item reçus                 valeur du liquide                  remplir ou vider
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_BRUN, new ItemStack(ModItems.SEAU_DE_LIQUIDE_BRUN), new ItemStack(Items.BUCKET), 15, worldIn, pos, playerIn, true);
+                            return true;
+                        }
+                    }
+                    if(item.getItem() == ModItems.SEAU_DE_LIQUIDE_VIOLET){
+                        if(barilTarget == BarilType.VIDE){
+                            //           baril visé joueur  new baril     item cliqué par le joueur            item reçus                 valeur du liquide                  remplir ou vider
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_VIOLET, new ItemStack(ModItems.SEAU_DE_LIQUIDE_VIOLET), new ItemStack(Items.BUCKET), 15, worldIn, pos, playerIn, true);
+                            return true;
+                        }
+                    }
+                    if(item.getItem() == ModItems.SEAU_DE_LIQUIDE_ROSE){
+                        if(barilTarget == BarilType.VIDE){
+                            //           baril visé joueur  new baril     item cliqué par le joueur            item reçus                 valeur du liquide                  remplir ou vider
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_ROSE, new ItemStack(ModItems.SEAU_DE_LIQUIDE_ROSE), new ItemStack(Items.BUCKET), 15, worldIn, pos, playerIn, true);
+                            return true;
+                        }
+                    }
+                    if(item.getItem() == ModItems.SEAU_DE_LIQUIDE_INCOLORE){
+                        if(barilTarget == BarilType.VIDE){
+                            //           baril visé joueur  new baril     item cliqué par le joueur            item reçus                 valeur du liquide                  remplir ou vider
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_INCOLORE, new ItemStack(ModItems.SEAU_DE_LIQUIDE_INCOLORE), new ItemStack(Items.BUCKET), 15, worldIn, pos, playerIn, true);
+                            return true;
+                        }
+                    }
+                    if(item.getItem() == ModItems.SEAU_DE_LIQUIDE_NOIR){
+                        if(barilTarget == BarilType.VIDE){
+                            //           baril visé joueur  new baril     item cliqué par le joueur            item reçus                 valeur du liquide                  remplir ou vider
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_NOIR, new ItemStack(ModItems.SEAU_DE_LIQUIDE_NOIR), new ItemStack(Items.BUCKET), 15, worldIn, pos, playerIn, true);
+                            return true;
+                        }
+                    }
 
 
                     //Partie vidage de baril SEAU
@@ -299,6 +362,43 @@ public class BlockBaril extends BlockBase2 implements ITileEntityProvider {
 
                         if(barilTarget == BarilType.HYDROMEL){
                             setLiquidContainer(barilTarget, BarilType.HYDROMEL, new ItemStack(Items.BUCKET), new ItemStack(ModItems.SEAU_DE_HYDROMEL), 15, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+
+                        if(barilTarget == BarilType.LIQUIDE_JAUNE){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_JAUNE, new ItemStack(Items.BUCKET), new ItemStack(ModItems.SEAU_DE_LIQUIDE_JAUNE), 15, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_ROUGE){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_ROUGE, new ItemStack(Items.BUCKET), new ItemStack(ModItems.SEAU_DE_LIQUIDE_ROUGE), 15, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_VERT){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_VERT, new ItemStack(Items.BUCKET), new ItemStack(ModItems.SEAU_DE_LIQUIDE_VERT), 15, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_ORANGE){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_ORANGE, new ItemStack(Items.BUCKET), new ItemStack(ModItems.SEAU_DE_LIQUIDE_ORANGE), 15, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_BRUN){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_BRUN, new ItemStack(Items.BUCKET), new ItemStack(ModItems.SEAU_DE_LIQUIDE_BRUN), 15, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_VIOLET){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_VIOLET, new ItemStack(Items.BUCKET), new ItemStack(ModItems.SEAU_DE_LIQUIDE_VIOLET), 15, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_ROSE){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_ROSE, new ItemStack(Items.BUCKET), new ItemStack(ModItems.SEAU_DE_LIQUIDE_ROSE), 15, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_INCOLORE){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_INCOLORE, new ItemStack(Items.BUCKET), new ItemStack(ModItems.SEAU_DE_LIQUIDE_INCOLORE), 15, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_NOIR){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_NOIR, new ItemStack(Items.BUCKET), new ItemStack(ModItems.SEAU_DE_LIQUIDE_NOIR), 15, worldIn, pos, playerIn, false);
                             return true;
                         }
 
@@ -356,7 +456,42 @@ public class BlockBaril extends BlockBase2 implements ITileEntityProvider {
                             setLiquidContainer(barilTarget, BarilType.HYDROMEL, new ItemStack(ModItems.SEAU_EN_BOIS), new ItemStack(ModItems.SEAU_DE_HYDROMEL_EN_BOIS), 15, worldIn, pos, playerIn, false);
                             return true;
                         }
-
+                        if(barilTarget == BarilType.LIQUIDE_JAUNE){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_JAUNE, new ItemStack(ModItems.SEAU_EN_BOIS), new ItemStack(ModItems.SEAU_DE_LIQUIDE_JAUNE_EN_BOIS), 15, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_ROUGE){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_ROUGE, new ItemStack(ModItems.SEAU_EN_BOIS), new ItemStack(ModItems.SEAU_DE_LIQUIDE_ROUGE_EN_BOIS), 15, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_VERT){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_VERT, new ItemStack(ModItems.SEAU_EN_BOIS), new ItemStack(ModItems.SEAU_DE_LIQUIDE_VERT_EN_BOIS), 15, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_ORANGE){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_ORANGE, new ItemStack(ModItems.SEAU_EN_BOIS), new ItemStack(ModItems.SEAU_DE_LIQUIDE_ORANGE_EN_BOIS), 15, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_BRUN){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_BRUN, new ItemStack(ModItems.SEAU_EN_BOIS), new ItemStack(ModItems.SEAU_DE_LIQUIDE_BRUN_EN_BOIS), 15, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_VIOLET){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_VIOLET, new ItemStack(ModItems.SEAU_EN_BOIS), new ItemStack(ModItems.SEAU_DE_LIQUIDE_VIOLET_EN_BOIS), 15, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_ROSE){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_ROSE, new ItemStack(ModItems.SEAU_EN_BOIS), new ItemStack(ModItems.SEAU_DE_LIQUIDE_ROSE_EN_BOIS), 15, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_INCOLORE){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_INCOLORE, new ItemStack(ModItems.SEAU_EN_BOIS), new ItemStack(ModItems.SEAU_DE_LIQUIDE_INCOLORE_EN_BOIS), 15, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_NOIR){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_NOIR, new ItemStack(ModItems.SEAU_EN_BOIS), new ItemStack(ModItems.SEAU_DE_LIQUIDE_NOIR_EN_BOIS), 15, worldIn, pos, playerIn, false);
+                            return true;
+                        }
                     }
 
                     //Partie remplissage de baril seau en bois
@@ -433,6 +568,70 @@ public class BlockBaril extends BlockBase2 implements ITileEntityProvider {
                         }
                     }
 
+                    if(item.getItem() == ModItems.SEAU_DE_LIQUIDE_JAUNE_EN_BOIS){
+                        if(barilTarget == BarilType.VIDE){
+                            //           baril visé joueur  new baril     item cliqué par le joueur            item reçus                 valeur du liquide                  remplir ou vider
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_JAUNE, new ItemStack(ModItems.SEAU_DE_LIQUIDE_JAUNE_EN_BOIS), new ItemStack(ModItems.SEAU_EN_BOIS), 15, worldIn, pos, playerIn, true);
+                            return true;
+                        }
+                    }
+                    if(item.getItem() == ModItems.SEAU_DE_LIQUIDE_ROUGE_EN_BOIS){
+                        if(barilTarget == BarilType.VIDE){
+                            //           baril visé joueur  new baril     item cliqué par le joueur            item reçus                 valeur du liquide                  remplir ou vider
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_ROUGE, new ItemStack(ModItems.SEAU_DE_LIQUIDE_ROUGE_EN_BOIS), new ItemStack(ModItems.SEAU_EN_BOIS), 15, worldIn, pos, playerIn, true);
+                            return true;
+                        }
+                    }
+                    if(item.getItem() == ModItems.SEAU_DE_LIQUIDE_VERT_EN_BOIS){
+                        if(barilTarget == BarilType.VIDE){
+                            //           baril visé joueur  new baril     item cliqué par le joueur            item reçus                 valeur du liquide                  remplir ou vider
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_VERT, new ItemStack(ModItems.SEAU_DE_LIQUIDE_VERT_EN_BOIS), new ItemStack(ModItems.SEAU_EN_BOIS), 15, worldIn, pos, playerIn, true);
+                            return true;
+                        }
+                    }
+                    if(item.getItem() == ModItems.SEAU_DE_LIQUIDE_ORANGE_EN_BOIS){
+                        if(barilTarget == BarilType.VIDE){
+                            //           baril visé joueur  new baril     item cliqué par le joueur            item reçus                 valeur du liquide                  remplir ou vider
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_ORANGE, new ItemStack(ModItems.SEAU_DE_LIQUIDE_ORANGE_EN_BOIS), new ItemStack(ModItems.SEAU_EN_BOIS), 15, worldIn, pos, playerIn, true);
+                            return true;
+                        }
+                    }
+                    if(item.getItem() == ModItems.SEAU_DE_LIQUIDE_BRUN_EN_BOIS){
+                        if(barilTarget == BarilType.VIDE){
+                            //           baril visé joueur  new baril     item cliqué par le joueur            item reçus                 valeur du liquide                  remplir ou vider
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_BRUN, new ItemStack(ModItems.SEAU_DE_LIQUIDE_BRUN_EN_BOIS), new ItemStack(ModItems.SEAU_EN_BOIS), 15, worldIn, pos, playerIn, true);
+                            return true;
+                        }
+                    }
+                    if(item.getItem() == ModItems.SEAU_DE_LIQUIDE_VIOLET_EN_BOIS){
+                        if(barilTarget == BarilType.VIDE){
+                            //           baril visé joueur  new baril     item cliqué par le joueur            item reçus                 valeur du liquide                  remplir ou vider
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_VIOLET, new ItemStack(ModItems.SEAU_DE_LIQUIDE_VIOLET_EN_BOIS), new ItemStack(ModItems.SEAU_EN_BOIS), 15, worldIn, pos, playerIn, true);
+                            return true;
+                        }
+                    }
+                    if(item.getItem() == ModItems.SEAU_DE_LIQUIDE_ROSE_EN_BOIS){
+                        if(barilTarget == BarilType.VIDE){
+                            //           baril visé joueur  new baril     item cliqué par le joueur            item reçus                 valeur du liquide                  remplir ou vider
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_ROSE, new ItemStack(ModItems.SEAU_DE_LIQUIDE_ROSE_EN_BOIS), new ItemStack(ModItems.SEAU_EN_BOIS), 15, worldIn, pos, playerIn, true);
+                            return true;
+                        }
+                    }
+                    if(item.getItem() == ModItems.SEAU_DE_LIQUIDE_INCOLORE_EN_BOIS){
+                        if(barilTarget == BarilType.VIDE){
+                            //           baril visé joueur  new baril     item cliqué par le joueur            item reçus                 valeur du liquide                  remplir ou vider
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_INCOLORE, new ItemStack(ModItems.SEAU_DE_LIQUIDE_INCOLORE_EN_BOIS), new ItemStack(ModItems.SEAU_EN_BOIS), 15, worldIn, pos, playerIn, true);
+                            return true;
+                        }
+                    }
+                    if(item.getItem() == ModItems.SEAU_DE_LIQUIDE_NOIR_EN_BOIS){
+                        if(barilTarget == BarilType.VIDE){
+                            //           baril visé joueur  new baril     item cliqué par le joueur            item reçus                 valeur du liquide                  remplir ou vider
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_NOIR, new ItemStack(ModItems.SEAU_DE_LIQUIDE_NOIR_EN_BOIS), new ItemStack(ModItems.SEAU_EN_BOIS), 15, worldIn, pos, playerIn, true);
+                            return true;
+                        }
+                    }
+
 
 
 // BOCAL
@@ -479,6 +678,42 @@ public class BlockBaril extends BlockBase2 implements ITileEntityProvider {
 
                         if(barilTarget == BarilType.HYDROMEL){
                             setLiquidContainer(barilTarget, BarilType.HYDROMEL, new ItemStack(ModItems.BOCAL), new ItemStack(ModItems.BOCAL_DE_HYDROMEL), 2, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_JAUNE){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_JAUNE, new ItemStack(ModItems.BOCAL), new ItemStack(ModItems.BOCAL_DE_LIQUIDE_JAUNE), 2, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_ROUGE){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_ROUGE, new ItemStack(ModItems.BOCAL), new ItemStack(ModItems.BOCAL_DE_LIQUIDE_ROUGE), 2, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_VERT){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_VERT, new ItemStack(ModItems.BOCAL), new ItemStack(ModItems.BOCAL_DE_LIQUIDE_VERT), 2, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_ORANGE){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_ORANGE, new ItemStack(ModItems.BOCAL), new ItemStack(ModItems.BOCAL_DE_LIQUIDE_ORANGE), 2, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_BRUN){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_BRUN, new ItemStack(ModItems.BOCAL), new ItemStack(ModItems.BOCAL_DE_LIQUIDE_BRUN), 2, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_VIOLET){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_VIOLET, new ItemStack(ModItems.BOCAL), new ItemStack(ModItems.BOCAL_DE_LIQUIDE_VIOLET), 2, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_ROSE){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_ROSE, new ItemStack(ModItems.BOCAL), new ItemStack(ModItems.BOCAL_DE_LIQUIDE_ROSE), 2, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_INCOLORE){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_INCOLORE, new ItemStack(ModItems.BOCAL), new ItemStack(ModItems.BOCAL_DE_LIQUIDE_INCOLORE), 2, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_NOIR){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_NOIR, new ItemStack(ModItems.BOCAL), new ItemStack(ModItems.BOCAL_DE_LIQUIDE_NOIR), 2, worldIn, pos, playerIn, false);
                             return true;
                         }
 
@@ -529,6 +764,42 @@ public class BlockBaril extends BlockBase2 implements ITileEntityProvider {
 
                         if(barilTarget == BarilType.HYDROMEL){
                             setLiquidContainer(barilTarget, BarilType.HYDROMEL, new ItemStack(ModItems.VERRE_A_PIED), new ItemStack(ModItems.VERRE_A_PIED_HYDROMEL), 1, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_JAUNE){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_JAUNE, new ItemStack(ModItems.VERRE_A_PIED), new ItemStack(ModItems.VERRE_A_PIED_LIQUIDE_JAUNE), 1, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_ROUGE){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_ROUGE, new ItemStack(ModItems.VERRE_A_PIED), new ItemStack(ModItems.VERRE_A_PIED_LIQUIDE_ROUGE), 1, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_VERT){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_VERT, new ItemStack(ModItems.VERRE_A_PIED), new ItemStack(ModItems.VERRE_A_PIED_LIQUIDE_VERT), 1, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_ORANGE){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_ORANGE, new ItemStack(ModItems.VERRE_A_PIED), new ItemStack(ModItems.VERRE_A_PIED_LIQUIDE_ORANGE), 1, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_BRUN){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_BRUN, new ItemStack(ModItems.VERRE_A_PIED), new ItemStack(ModItems.VERRE_A_PIED_LIQUIDE_BRUN), 1, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_VIOLET){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_VIOLET, new ItemStack(ModItems.VERRE_A_PIED), new ItemStack(ModItems.VERRE_A_PIED_LIQUIDE_VIOLET), 1, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_ROSE){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_ROSE, new ItemStack(ModItems.VERRE_A_PIED), new ItemStack(ModItems.VERRE_A_PIED_LIQUIDE_ROSE), 1, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_INCOLORE){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_INCOLORE, new ItemStack(ModItems.VERRE_A_PIED), new ItemStack(ModItems.VERRE_A_PIED_LIQUIDE_INCOLORE), 1, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_NOIR){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_NOIR, new ItemStack(ModItems.VERRE_A_PIED), new ItemStack(ModItems.VERRE_A_PIED_LIQUIDE_NOIR), 1, worldIn, pos, playerIn, false);
                             return true;
                         }
 
@@ -585,6 +856,43 @@ public class BlockBaril extends BlockBase2 implements ITileEntityProvider {
                             return true;
                         }
 
+                        if(barilTarget == BarilType.LIQUIDE_JAUNE){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_JAUNE, new ItemStack(ModItems.CHOPPE_EN_VERRE), new ItemStack(ModItems.CHOPPE_EN_VERRE_LIQUIDE_JAUNE), 1, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_ROUGE){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_ROUGE, new ItemStack(ModItems.CHOPPE_EN_VERRE), new ItemStack(ModItems.CHOPPE_EN_VERRE_LIQUIDE_ROUGE), 1, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_VERT){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_VERT, new ItemStack(ModItems.CHOPPE_EN_VERRE), new ItemStack(ModItems.CHOPPE_EN_VERRE_LIQUIDE_VERT), 1, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_ORANGE){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_ORANGE, new ItemStack(ModItems.CHOPPE_EN_VERRE), new ItemStack(ModItems.CHOPPE_EN_VERRE_LIQUIDE_ORANGE), 1, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_BRUN){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_BRUN, new ItemStack(ModItems.CHOPPE_EN_VERRE), new ItemStack(ModItems.CHOPPE_EN_VERRE_LIQUIDE_BRUN), 1, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_VIOLET){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_VIOLET, new ItemStack(ModItems.CHOPPE_EN_VERRE), new ItemStack(ModItems.CHOPPE_EN_VERRE_LIQUIDE_VIOLET), 1, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_ROSE){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_ROSE, new ItemStack(ModItems.CHOPPE_EN_VERRE), new ItemStack(ModItems.CHOPPE_EN_VERRE_LIQUIDE_ROSE), 1, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_INCOLORE){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_INCOLORE, new ItemStack(ModItems.CHOPPE_EN_VERRE), new ItemStack(ModItems.CHOPPE_EN_VERRE_LIQUIDE_INCOLORE), 1, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_NOIR){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_NOIR, new ItemStack(ModItems.CHOPPE_EN_VERRE), new ItemStack(ModItems.CHOPPE_EN_VERRE_LIQUIDE_NOIR), 1, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+
                     }
 
                     // CHOPPE EN ARGILE
@@ -636,6 +944,43 @@ public class BlockBaril extends BlockBase2 implements ITileEntityProvider {
                             return true;
                         }
 
+                        if(barilTarget == BarilType.LIQUIDE_JAUNE){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_JAUNE, new ItemStack(ModItems.CHOPPE_EN_ARGILE), new ItemStack(ModItems.CHOPPE_EN_ARGILE_LIQUIDE_JAUNE), 1, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_ROUGE){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_ROUGE, new ItemStack(ModItems.CHOPPE_EN_ARGILE), new ItemStack(ModItems.CHOPPE_EN_ARGILE_LIQUIDE_ROUGE), 1, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_VERT){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_VERT, new ItemStack(ModItems.CHOPPE_EN_ARGILE), new ItemStack(ModItems.CHOPPE_EN_ARGILE_LIQUIDE_VERT), 1, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_ORANGE){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_ORANGE, new ItemStack(ModItems.CHOPPE_EN_ARGILE), new ItemStack(ModItems.CHOPPE_EN_ARGILE_LIQUIDE_ORANGE), 1, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_BRUN){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_BRUN, new ItemStack(ModItems.CHOPPE_EN_ARGILE), new ItemStack(ModItems.CHOPPE_EN_ARGILE_LIQUIDE_BRUN), 1, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_VIOLET){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_VIOLET, new ItemStack(ModItems.CHOPPE_EN_ARGILE), new ItemStack(ModItems.CHOPPE_EN_ARGILE_LIQUIDE_VIOLET), 1, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_ROSE){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_ROSE, new ItemStack(ModItems.CHOPPE_EN_ARGILE), new ItemStack(ModItems.CHOPPE_EN_ARGILE_LIQUIDE_ROSE), 1, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_INCOLORE){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_INCOLORE, new ItemStack(ModItems.CHOPPE_EN_ARGILE), new ItemStack(ModItems.CHOPPE_EN_ARGILE_LIQUIDE_INCOLORE), 1, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_NOIR){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_NOIR, new ItemStack(ModItems.CHOPPE_EN_ARGILE), new ItemStack(ModItems.CHOPPE_EN_ARGILE_LIQUIDE_NOIR), 1, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+
                     }
 
                     // BOUTEILLE EN VERRE
@@ -683,6 +1028,43 @@ public class BlockBaril extends BlockBase2 implements ITileEntityProvider {
 
                         if(barilTarget == BarilType.HYDROMEL){
                             setLiquidContainer(barilTarget, BarilType.HYDROMEL, new ItemStack(ModItems.BOUTEILLE_VIDE), new ItemStack(ModItems.BOUTEILLE_DE_HYDROMEL), 5, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+
+                        if(barilTarget == BarilType.LIQUIDE_JAUNE){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_JAUNE, new ItemStack(ModItems.BOUTEILLE_VIDE), new ItemStack(ModItems.BOUTEILLE_DE_LIQUIDE_JAUNE), 5, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_ROUGE){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_ROUGE, new ItemStack(ModItems.BOUTEILLE_VIDE), new ItemStack(ModItems.BOUTEILLE_DE_LIQUIDE_ROUGE), 5, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_VERT){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_VERT, new ItemStack(ModItems.BOUTEILLE_VIDE), new ItemStack(ModItems.BOUTEILLE_DE_LIQUIDE_VERT), 5, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_ORANGE){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_ORANGE, new ItemStack(ModItems.BOUTEILLE_VIDE), new ItemStack(ModItems.BOUTEILLE_DE_LIQUIDE_ORANGE), 5, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_BRUN){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_BRUN, new ItemStack(ModItems.BOUTEILLE_VIDE), new ItemStack(ModItems.BOUTEILLE_DE_LIQUIDE_BRUN), 5, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_VIOLET){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_VIOLET, new ItemStack(ModItems.BOUTEILLE_VIDE), new ItemStack(ModItems.BOUTEILLE_DE_LIQUIDE_VIOLET), 5, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_ROSE){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_ROSE, new ItemStack(ModItems.BOUTEILLE_VIDE), new ItemStack(ModItems.BOUTEILLE_DE_LIQUIDE_ROSE), 5, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_INCOLORE){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_INCOLORE, new ItemStack(ModItems.BOUTEILLE_VIDE), new ItemStack(ModItems.BOUTEILLE_DE_LIQUIDE_INCOLORE), 5, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_NOIR){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_NOIR, new ItemStack(ModItems.BOUTEILLE_VIDE), new ItemStack(ModItems.BOUTEILLE_DE_LIQUIDE_NOIR), 5, worldIn, pos, playerIn, false);
                             return true;
                         }
 
@@ -738,6 +1120,43 @@ public class BlockBaril extends BlockBase2 implements ITileEntityProvider {
                             return true;
                         }
 
+                        if(barilTarget == BarilType.LIQUIDE_JAUNE){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_JAUNE, new ItemStack(ModItems.GROSSE_BOUTEILLE_VIDE), new ItemStack(ModItems.GROSSE_BOUTEILLE_DE_LIQUIDE_JAUNE), 7, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_ROUGE){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_ROUGE, new ItemStack(ModItems.GROSSE_BOUTEILLE_VIDE), new ItemStack(ModItems.GROSSE_BOUTEILLE_DE_LIQUIDE_ROUGE), 7, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_VERT){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_VERT, new ItemStack(ModItems.GROSSE_BOUTEILLE_VIDE), new ItemStack(ModItems.GROSSE_BOUTEILLE_DE_LIQUIDE_VERT), 7, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_ORANGE){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_ORANGE, new ItemStack(ModItems.GROSSE_BOUTEILLE_VIDE), new ItemStack(ModItems.GROSSE_BOUTEILLE_DE_LIQUIDE_ORANGE), 7, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_BRUN){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_BRUN, new ItemStack(ModItems.GROSSE_BOUTEILLE_VIDE), new ItemStack(ModItems.GROSSE_BOUTEILLE_DE_LIQUIDE_BRUN), 7, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_VIOLET){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_VIOLET, new ItemStack(ModItems.GROSSE_BOUTEILLE_VIDE), new ItemStack(ModItems.GROSSE_BOUTEILLE_DE_LIQUIDE_VIOLET), 7, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_ROSE){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_ROSE, new ItemStack(ModItems.GROSSE_BOUTEILLE_VIDE), new ItemStack(ModItems.GROSSE_BOUTEILLE_DE_LIQUIDE_ROSE), 7, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_INCOLORE){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_INCOLORE, new ItemStack(ModItems.GROSSE_BOUTEILLE_VIDE), new ItemStack(ModItems.GROSSE_BOUTEILLE_DE_LIQUIDE_INCOLORE), 7, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+                        if(barilTarget == BarilType.LIQUIDE_NOIR){
+                            setLiquidContainer(barilTarget, BarilType.LIQUIDE_NOIR, new ItemStack(ModItems.GROSSE_BOUTEILLE_VIDE), new ItemStack(ModItems.GROSSE_BOUTEILLE_DE_LIQUIDE_NOIR), 7, worldIn, pos, playerIn, false);
+                            return true;
+                        }
+
                     }
 
 
@@ -749,6 +1168,7 @@ public class BlockBaril extends BlockBase2 implements ITileEntityProvider {
         return true;
 
     }
+
 
 
 

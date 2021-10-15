@@ -16,7 +16,8 @@
     },
     "C":
     {
-      "item": "am:colle"
+      "item": "am:colle",
+      "data": 32767
     }
   },
 

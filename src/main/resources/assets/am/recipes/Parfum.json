@@ -3,24 +3,31 @@
 
   "pattern":
   [
-    " H ",
+    "HHH",
     " A ",
-    " P "
+    "IP "
   ],
 
   "key":
   {
     "H":
     {
-      "item": "am:huile_essentielle"
+      "item": "am:huile_essentielle",
+      "data": 32767
     },
     "A":
     {
-      "item": "am:bouteille_alcool_pur"
+      "item": "am:bouteille_alcool_pur",
+      "data": 32767
+
     },
     "P":
     {
       "item": "am:bouteille_de_parfum_vide"
+    },
+    "I":
+    {
+      "item": "am:seve"
     }
   },
 

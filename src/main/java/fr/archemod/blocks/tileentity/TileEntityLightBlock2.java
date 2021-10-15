@@ -15,8 +15,6 @@ import net.minecraft.world.World;
 
 import java.util.Date;
 
-import static fr.archemod.blocks.BlockLantern.ORIENTATION;
-import static fr.archemod.blocks.BlockLantern.POSITION;
 
 public class TileEntityLightBlock2 extends TileEntity implements ITickable {
     public Date date_begin = new Date();
@@ -98,7 +96,7 @@ public class TileEntityLightBlock2 extends TileEntity implements ITickable {
                         long timer = (((new Date()).getTime() - date_begin.getTime()));
 
                         if (timer >= 864000000L) {
-                            worldIn.setBlockState(pos, ModBlocks.LUSTRE_ETEINT.getDefaultState().withProperty((IProperty)ORIENTATION, state.getValue((IProperty)ORIENTATION)).withProperty((IProperty)POSITION, state.getValue((IProperty)POSITION)));
+                            worldIn.setBlockState(pos, ModBlocks.LUSTRE_ETEINT.getDefaultState());
                             ((TileEntityLightBlock2)worldIn.getTileEntity(pos)).setDate(new Date());
                         }
                     }

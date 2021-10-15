@@ -13,7 +13,7 @@ public class ArcheCreativeTabs extends CreativeTabs
 
     @Override
     public ItemStack createIcon() {
-        return new ItemStack(ModItems.CISEAUX_DE_COUTURE);
+        return new ItemStack(ModItems.PETIT_CHEVAL_EN_BOIS);
     }
 
     @Override

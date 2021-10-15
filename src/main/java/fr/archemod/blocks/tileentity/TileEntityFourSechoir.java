@@ -1,5 +1,6 @@
 package fr.archemod.blocks.tileentity;
 
+import fr.archemod.init.ModItems;
 import fr.archemod.init.RecipesCustomFurnace;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
@@ -164,13 +165,16 @@ public class TileEntityFourSechoir extends TileEntityLockable implements ITickab
     @Override
     public boolean isItemValidForSlot(int index, ItemStack stack) {
         // Le slot 3 je n'autorise que les planches de bois
-        if (index == 2)
+        /*if (index == 2)
             return OreDictionary.getOres("plankWood").contains(
                     new ItemStack(stack.getItem(), 1,
-                            OreDictionary.WILDCARD_VALUE));
-        // Le slot 4 je n'autorise que le blé
+                            OreDictionary.WILDCARD_VALUE));*/
+        if (index == 2)
+            return stack.getItem() == ModItems.SCIURE;
+
+        // Le slot 4 je n'autorise que la viande crue
         if (index == 3)
-            return stack.getItem() == Items.WHEAT;
+            return stack.getItem() == Items.COAL;
         // Le slot 5 (celui du résultat) je n'autorise rien
         if (index == 4)
             return false;

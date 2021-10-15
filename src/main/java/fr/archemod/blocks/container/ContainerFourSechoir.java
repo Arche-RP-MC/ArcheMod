@@ -109,6 +109,7 @@ public class ContainerFourSechoir extends Container
 
         @Override
         public boolean isItemValid(ItemStack stack) {
+
             return stack.isEmpty() || stack.getItem() == item;
         }
     }

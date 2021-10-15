@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "CL ",
+    "   "
+  ],
+
+  "key":
+  {
+
+    "C":
+    {
+      "item": "am:tunique"
+    },
+    "L":
+    {
+      "item": "minecraft:dye",
+      "data": 3
+    }
+
+  },
+
+  "result":
+  {
+    "item": "am:tunique_marron",
+    "count": 1
+  }
+}

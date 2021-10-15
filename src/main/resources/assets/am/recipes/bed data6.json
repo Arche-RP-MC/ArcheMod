@@ -3,14 +3,22 @@
 
   "pattern":
   [
-    "FFF",
+    "RT ",
     "GLL",
-    "PPP"
+    "P P"
   ],
 
   "key":
   {
-    "B":
+    "R":
+    {
+      "item": "am:drap_rose"
+    },
+    "T":
+    {
+      "item": "am:couverture_rose"
+    },
+    "P":
     {
       "item": "am:planche"
     },
@@ -22,13 +30,9 @@
     {
       "item": "am:ciseaux_de_couture",
       "data": 32767
-    },
-    "P":
-    {
-      "item": "am:etoffe_rose"
     }
-  },
 
+  },
   "result":
   {
     "item": "minecraft:bed",

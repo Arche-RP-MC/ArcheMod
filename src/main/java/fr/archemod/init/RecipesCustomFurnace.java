@@ -12,7 +12,7 @@ public class RecipesCustomFurnace {
 
     private static final HashMap <ItemStack[], ItemStack>recipes = new HashMap<ItemStack[], ItemStack>();
     static {
-        addRecipe(Items.APPLE, Items.ARROW, Items.BAKED_POTATO);
+        addRecipe(ModItems.LAMBEAU_DE_VIANDE_CRUE, ModItems.PLANTES_SECHEES, ModItems.LAMBEAU_DE_VIANDE_SECHEE);
     }
 
 

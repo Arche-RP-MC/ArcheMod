@@ -3,13 +3,21 @@
 
   "pattern":
   [
-    "FFF",
+    "RT ",
     "GLL",
-    "PPP"
+    "P P"
   ],
 
   "key":
   {
+    "R":
+    {
+      "item": "am:drap_jaune"
+    },
+    "T":
+    {
+      "item": "am:couverture_jaune"
+    },
     "B":
     {
       "item": "am:planche"

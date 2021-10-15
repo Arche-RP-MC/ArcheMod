@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "CL ",
+    "   "
+  ],
+
+  "key":
+  {
+
+    "C":
+    {
+      "item": "am:serviette"
+    },
+    "L":
+    {
+      "item": "minecraft:dye",
+      "data": 9
+    }
+
+  },
+
+  "result":
+  {
+    "item": "am:serviette_rose",
+    "count": 1
+  }
+}

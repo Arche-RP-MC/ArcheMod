@@ -46,7 +46,7 @@ public class BlockLantern extends BlockBase implements ITileEntityProvider {
         setDefaultState(this.blockState.getBaseState().withProperty((IProperty)ORIENTATION, Integer.valueOf(0)).withProperty((IProperty)POSITION, EnumPosition.BOTTOM));
 
         if (burning) {
-            setLightLevel(0.875F);
+            setLightLevel(1.2F);
         }
 
         this.burning = burning;

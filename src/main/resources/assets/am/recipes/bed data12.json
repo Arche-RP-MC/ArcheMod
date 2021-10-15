@@ -3,14 +3,22 @@
 
   "pattern":
   [
-    "FFF",
+    "RT ",
     "GLL",
-    "PPP"
+    "P P"
   ],
 
   "key":
   {
-    "B":
+    "R":
+    {
+      "item": "am:drap_marron"
+    },
+    "T":
+    {
+      "item": "am:couverture_marron"
+    },
+    "P":
     {
       "item": "am:planche"
     },
@@ -22,11 +30,8 @@
     {
       "item": "am:ciseaux_de_couture",
       "data": 32767
-    },
-    "P":
-    {
-      "item": "am:etoffe_marron"
     }
+
   },
 
   "result":

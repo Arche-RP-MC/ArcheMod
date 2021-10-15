@@ -3,20 +3,30 @@
 
   "pattern":
   [
-    "   ",
-    "MBB",
-    "   "
+    "A  ",
+    "CB ",
+    " M "
   ],
 
   "key":
   {
     "B":
     {
-      "item": "am:planche"
+      "item": "minecraft:stick"
+    },
+    "A":
+    {
+      "item": "am:ciseaux_a_bois",
+      "data": 32767
+    },
+    "C":
+    {
+      "item": "am:vernis",
+      "data": 32767
     },
     "M":
     {
-      "item": "minecraft:wheat"
+      "item": "am:fibre_vegetale"
     }
   },
 

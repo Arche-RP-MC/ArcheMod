@@ -2698,3 +2698,11 @@ tile.bloc_de_paille.name=Bloc de paille
 tile.bloc_de_plomb.name=Bloc de plomb
 tile.bloc_etain.name=Bloc d'étain
 
+item.anguille.name=Anguille
+item.casserole.name=Casserole
+item.poele.name=Poele
+item.malt_ble.name=Malt de blé
+item.cannelle=Cannelle
+item.calamar.name=Calamar
+item.malt_orge.name=Malt d'orge
+item.cerveau.name=Cerveau

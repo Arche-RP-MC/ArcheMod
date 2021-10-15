@@ -1,6 +1,6 @@
 {
-  "variants": {
-  "normal": {
-    "model": "am:sechoir_viandes"
-  }
-}}
+    "variants": {
+        "normal": {
+            "model": "am:sechoir_viandes"}
+    }
+}

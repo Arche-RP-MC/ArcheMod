@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " BB",
+    " BB",
+    "OEM"
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:concombre"
+    },
+    "E":
+    {
+      "item": "minecraft:water_bucket"
+    },
+    "M":
+    {
+      "item": "minecraft:sugar"
+    },
+    "O":
+    {
+      "item": "am:bouteille_vide"
+
+  },
+
+  "result":
+  {
+    "item": "am:bouteille_de_jus_de_fruit_vert",
+    "count": 1
+  }
+}}

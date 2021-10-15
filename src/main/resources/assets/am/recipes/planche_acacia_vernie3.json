@@ -16,7 +16,8 @@
     },
     "I":
     {
-      "item": "am:vernis"
+      "item": "am:vernis",
+      "data": 32767
     },
     "P":
     {

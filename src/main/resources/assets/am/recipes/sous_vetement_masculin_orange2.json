@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "CL ",
+    "   "
+  ],
+
+  "key":
+  {
+
+    "C":
+    {
+      "item": "am:sous_vetement_masculin_blanc"
+    },
+    "L":
+    {
+      "item": "minecraft:dye",
+      "data": 14
+    }
+
+  },
+
+  "result":
+  {
+    "item": "am:sous_vetement_masculin_orange",
+    "count": 1
+  }
+}

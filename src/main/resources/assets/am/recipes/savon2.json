@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " M ",
+    "HCG",
+    " S "
+  ],
+
+  "key":
+  {
+    "M":
+    {
+      "item": "am:moule"
+    },
+    "H":
+    {
+      "item": "am:huile_essentielle",
+      "data": 32767
+    },
+    "C":
+    {
+      "item": "am:cendres"
+    },
+    "G":
+    {
+      "item": "am:bouteille_huile_olive",
+      "data": 32767
+    },
+    "S":
+    {
+      "item": "minecraft:water_bucket"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:savon",
+    "count": 1
+  }
+}

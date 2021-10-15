@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "CL ",
+    "   "
+  ],
+
+  "key":
+  {
+
+    "C":
+    {
+      "item": "am:veste"
+    },
+    "L":
+    {
+      "item": "minecraft:dye",
+      "data": 1
+    }
+
+  },
+
+  "result":
+  {
+    "item": "am:veste_rouge",
+    "count": 1
+  }
+}

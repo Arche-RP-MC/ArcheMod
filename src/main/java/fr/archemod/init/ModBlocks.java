@@ -42,10 +42,10 @@ public class ModBlocks {
     public static final Block SHOWCASE_LEFT = new Showcase("showcase_left",Material.WOOD);
     public static final Block SHOWCASE_RIGHT = new Showcase("showcase_right",Material.WOOD);
 
-    public static final Block TABLE = new Table("table",Material.WOOD);
-    public static final Block TABLE_MIDDLE = new Table("table_middle",Material.WOOD);
-    public static final Block TABLE_END_1 = new Table("table_end_1",Material.WOOD);
-    public static final Block TABLE_END_2 = new Table("table_end_2",Material.WOOD);
+    //public static final Block TABLE = new Table("table",Material.WOOD);
+    //public static final Block TABLE_MIDDLE = new Table("table_middle",Material.WOOD);
+    //public static final Block TABLE_END_1 = new Table("table_end_1",Material.WOOD);
+    //public static final Block TABLE_END_2 = new Table("table_end_2",Material.WOOD);
 
     public static final Block ANDESITE_PAVE_MOUSSU = new BlockBase("andesite_pave_moussu", Material.ROCK, 5F, 5F, SoundType.STONE);
     public static final Block ANDESITE_POLIE = new BlockBase("andesite_polie", Material.ROCK, 5F, 5F, SoundType.STONE);
@@ -530,7 +530,7 @@ public class ModBlocks {
     //LUMINEUX
     public static final Block LANTERNE_JAUNE_ETEINTE = new BlockLantern("lanterne_jaune",false,Material.GLASS,0.5F,3F,SoundType.GLASS);
     public static final Block LANTERNE_JAUNE_ALLUMEE = new BlockLantern("lanterne_jaune",true,Material.GLASS,0.5F,3F,SoundType.GLASS);
-    //public static final Block LUSTRE_ETEINT = new BlockLustre("lustre_alume",false,Material.GLASS,0.5F,3F,SoundType.GLASS);
+    //public static final Block LUSTRE_ETEINT = new BlockLustre("lustre_eteint",false,Material.GLASS,0.5F,3F,SoundType.GLASS);
     //public static final Block LUSTRE_ALUME = new BlockLustre("lustre_alume",true,Material.GLASS,0.5F,3F,SoundType.GLASS);
 
 
@@ -593,6 +593,7 @@ public class ModBlocks {
 
      */
 
+
 //gateau
 
     public static final Block BLEU_ENTIER = new Bleu("bleu_entier", 5F, 5F, SoundType.SLIME);
@@ -610,7 +611,7 @@ public class ModBlocks {
 
 //fours
 
-    public static final Block FourSechoir = new BlockFourSechoir().setRegistryName("am:foursechoir");
+    public static final Block FourSechoir = new BlockFourSechoir().setRegistryName("am:sechoir_viandes");
     //public static final Block SECHOIR_PLANTES = new BlockBase2("sechoir_plantes", Material.ROCK, 5F, 5F, SoundType.STONE);
     //public static final Block SECHOIR_POISSON = new BlockBase2("sechoir_poisson", Material.ROCK, 5F, 5F, SoundType.STONE);
     //public static final Block SECHOIR_SIMPLE_PAPIER = new BlockBase2("sechoir_simple_papier", Material.ROCK, 5F, 5F, SoundType.STONE);
@@ -637,7 +638,7 @@ public class ModBlocks {
         //cultures
         ModItems.GRAINE_LIN = new ItemGraine("graine_lin",ModBlocks.PLAN_DE_LIN, Blocks.FARMLAND);
         ModItems.GRAINE_CELERI = new ItemGraine("graine_celeri",ModBlocks.PLAN_CELERI, Blocks.FARMLAND);
-        ModItems.GRAINE_FENOUIL = new ItemGraine("graine_fenouilL",ModBlocks.PLAN_FENOUIL, Blocks.FARMLAND);
+        ModItems.GRAINE_FENOUIL = new ItemGraine("graine_fenouil",ModBlocks.PLAN_FENOUIL, Blocks.FARMLAND);
         ModItems.GRAINE_FRAISE = new ItemGraine("graine_fraise",ModBlocks.PLAN_FRAISE, Blocks.FARMLAND);
         ModItems.GRAINE_FRAMBOISE = new ItemGraine("graine_framboise",ModBlocks.PLAN_FRAMBOISE, Blocks.FARMLAND);
         ModItems.GRAINE_MAIS = new ItemGraine("graine_mais",ModBlocks.PLAN_MAIS, Blocks.FARMLAND);

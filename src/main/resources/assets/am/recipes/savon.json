@@ -16,7 +16,8 @@
     },
     "H":
     {
-      "item": "am:huile_essentielle"
+      "item": "am:huile_essentielle",
+      "data": 32767
     },
     "C":
     {
