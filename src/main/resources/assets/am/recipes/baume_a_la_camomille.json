@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " B ",
+    "C C",
+    " EM"
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:graisse_animale"
+    },
+    "C":
+    {
+      "item": "am:camomille"
+    },
+    "E":
+    {
+      "item": "am:huile_essentielle",
+      "data": 32767
+    },
+    "M":
+    {
+      "item": "am:mortier_pilon_en_pierre",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:baume_a_la_camomille",
+    "count": 1
+  }
+}

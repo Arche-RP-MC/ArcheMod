@@ -524,14 +524,14 @@ public class ModBlocks {
     public static final Block PLAN_RIZ = new BlockPlanLin("plan_riz",ModItems.GRAINE_RIZ, ModItems.RIZ_CRU);
     //public static final Block PLAN_CHANVRE = new BlockPlanLin("plan_chanvre",ModItems.GRAINE_CHANVRE, ModItems.CHANVRE);
     public static final Block PLAN_BLE = new BlockPlanLin("plan_ble",ModItems.GRAINE_BLE, ModItems.BLE);
-
+    public static final Block PLAN_THYM = new BlockPlanLin("plan_thym",ModItems.GRAINE_THYM, ModItems.THYM);
 
 
     //LUMINEUX
     public static final Block LANTERNE_JAUNE_ETEINTE = new BlockLantern("lanterne_jaune",false,Material.GLASS,0.5F,3F,SoundType.GLASS);
     public static final Block LANTERNE_JAUNE_ALLUMEE = new BlockLantern("lanterne_jaune",true,Material.GLASS,0.5F,3F,SoundType.GLASS);
     //public static final Block LUSTRE_ETEINT = new BlockLustre("lustre_eteint",false,Material.GLASS,0.5F,3F,SoundType.GLASS);
-    //public static final Block LUSTRE_ALUME = new BlockLustre("lustre_alume",true,Material.GLASS,0.5F,3F,SoundType.GLASS);
+    public static final Block LUSTRE_ALUME = new BlockLustreTest("lustre_alume",Material.GLASS);
 
 
     //FLOWER POT \!/ Venir ajouter les plantes ici pour pouvoir les planter dans ces nouveaux pots ! (ctrl+f BASILIC dans le fichier BlockFlowerPot ;) ) + BlockStates et model à ajuster
@@ -611,7 +611,7 @@ public class ModBlocks {
 
 //fours
 
-    public static final Block FourSechoir = new BlockFourSechoir().setRegistryName("am:sechoir_viandes");
+    public static final Block SECHOIR_VIANDE = new BlockFourSechoir("sechoir_viande", Material.ROCK, 5F, 5F, SoundType.STONE);
     //public static final Block SECHOIR_PLANTES = new BlockBase2("sechoir_plantes", Material.ROCK, 5F, 5F, SoundType.STONE);
     //public static final Block SECHOIR_POISSON = new BlockBase2("sechoir_poisson", Material.ROCK, 5F, 5F, SoundType.STONE);
     //public static final Block SECHOIR_SIMPLE_PAPIER = new BlockBase2("sechoir_simple_papier", Material.ROCK, 5F, 5F, SoundType.STONE);
@@ -661,6 +661,7 @@ public class ModBlocks {
         ModItems.GRAINE_ENDIVE = new ItemGraine("graine_endive",ModBlocks.PLAN_ENDIVE, Blocks.FARMLAND);
         ModItems.GRAINE_RIZ = new ItemGraine("graine_riz",ModBlocks.PLAN_RIZ, Blocks.FARMLAND);
         ModItems.GRAINE_BLE = new ItemGraine("graine_ble",ModBlocks.PLAN_BLE, Blocks.FARMLAND);
+        ModItems.GRAINE_THYM = new ItemGraine("graine_thym",ModBlocks.PLAN_THYM, Blocks.FARMLAND);
         //ModItems.GRAINE_CHANVRE = new ItemGraine("GRAINE_CHANVRE",ModBlocks.PLAN_CHANVRE, Blocks.FARMLAND);
     }
 

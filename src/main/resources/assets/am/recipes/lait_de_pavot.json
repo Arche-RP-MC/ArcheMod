@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " M ",
+    " C ",
+    " G "
+  ],
+
+  "key":
+  {
+    "C":
+    {
+      "item": "minecraft:water_bucket"
+    },
+    "G":
+    {
+      "item": "am:bocal"
+    },
+    "M":
+    {
+      "item": "am:extrait_de_pavot_concentre"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:lait_de_pavot",
+    "count": 1
+  }
+}

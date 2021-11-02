@@ -253,7 +253,7 @@ public class BlockBaril extends BlockBase2 implements ITileEntityProvider {
                             return true;
                         }
                     }
-                    if(item.getItem() == ModItems.SEAU_DE_LIQUIDE_JAUNE){
+                    /*if(item.getItem() == ModItems.SEAU_DE_LIQUIDE_JAUNE){
                         if(barilTarget == BarilType.VIDE){
                             //           baril visé joueur  new baril     item cliqué par le joueur            item reçus                 valeur du liquide                  remplir ou vider
                             setLiquidContainer(barilTarget, BarilType.LIQUIDE_JAUNE, new ItemStack(ModItems.SEAU_DE_LIQUIDE_JAUNE), new ItemStack(Items.BUCKET), 15, worldIn, pos, playerIn, true);
@@ -316,7 +316,7 @@ public class BlockBaril extends BlockBase2 implements ITileEntityProvider {
                             return true;
                         }
                     }
-
+*/
 
                     //Partie vidage de baril SEAU
                     if (item.getItem() == Items.BUCKET) {
@@ -365,7 +365,7 @@ public class BlockBaril extends BlockBase2 implements ITileEntityProvider {
                             return true;
                         }
 
-                        if(barilTarget == BarilType.LIQUIDE_JAUNE){
+                      /*  if(barilTarget == BarilType.LIQUIDE_JAUNE){
                             setLiquidContainer(barilTarget, BarilType.LIQUIDE_JAUNE, new ItemStack(Items.BUCKET), new ItemStack(ModItems.SEAU_DE_LIQUIDE_JAUNE), 15, worldIn, pos, playerIn, false);
                             return true;
                         }
@@ -401,7 +401,7 @@ public class BlockBaril extends BlockBase2 implements ITileEntityProvider {
                             setLiquidContainer(barilTarget, BarilType.LIQUIDE_NOIR, new ItemStack(Items.BUCKET), new ItemStack(ModItems.SEAU_DE_LIQUIDE_NOIR), 15, worldIn, pos, playerIn, false);
                             return true;
                         }
-
+*/
                     }
 
 
@@ -456,7 +456,7 @@ public class BlockBaril extends BlockBase2 implements ITileEntityProvider {
                             setLiquidContainer(barilTarget, BarilType.HYDROMEL, new ItemStack(ModItems.SEAU_EN_BOIS), new ItemStack(ModItems.SEAU_DE_HYDROMEL_EN_BOIS), 15, worldIn, pos, playerIn, false);
                             return true;
                         }
-                        if(barilTarget == BarilType.LIQUIDE_JAUNE){
+                      /*  if(barilTarget == BarilType.LIQUIDE_JAUNE){
                             setLiquidContainer(barilTarget, BarilType.LIQUIDE_JAUNE, new ItemStack(ModItems.SEAU_EN_BOIS), new ItemStack(ModItems.SEAU_DE_LIQUIDE_JAUNE_EN_BOIS), 15, worldIn, pos, playerIn, false);
                             return true;
                         }
@@ -491,7 +491,7 @@ public class BlockBaril extends BlockBase2 implements ITileEntityProvider {
                         if(barilTarget == BarilType.LIQUIDE_NOIR){
                             setLiquidContainer(barilTarget, BarilType.LIQUIDE_NOIR, new ItemStack(ModItems.SEAU_EN_BOIS), new ItemStack(ModItems.SEAU_DE_LIQUIDE_NOIR_EN_BOIS), 15, worldIn, pos, playerIn, false);
                             return true;
-                        }
+                        }*/
                     }
 
                     //Partie remplissage de baril seau en bois
@@ -568,7 +568,7 @@ public class BlockBaril extends BlockBase2 implements ITileEntityProvider {
                         }
                     }
 
-                    if(item.getItem() == ModItems.SEAU_DE_LIQUIDE_JAUNE_EN_BOIS){
+                    /*if(item.getItem() == ModItems.SEAU_DE_LIQUIDE_JAUNE_EN_BOIS){
                         if(barilTarget == BarilType.VIDE){
                             //           baril visé joueur  new baril     item cliqué par le joueur            item reçus                 valeur du liquide                  remplir ou vider
                             setLiquidContainer(barilTarget, BarilType.LIQUIDE_JAUNE, new ItemStack(ModItems.SEAU_DE_LIQUIDE_JAUNE_EN_BOIS), new ItemStack(ModItems.SEAU_EN_BOIS), 15, worldIn, pos, playerIn, true);
@@ -631,7 +631,7 @@ public class BlockBaril extends BlockBase2 implements ITileEntityProvider {
                             return true;
                         }
                     }
-
+*/
 
 
 // BOCAL
@@ -680,7 +680,7 @@ public class BlockBaril extends BlockBase2 implements ITileEntityProvider {
                             setLiquidContainer(barilTarget, BarilType.HYDROMEL, new ItemStack(ModItems.BOCAL), new ItemStack(ModItems.BOCAL_DE_HYDROMEL), 2, worldIn, pos, playerIn, false);
                             return true;
                         }
-                        if(barilTarget == BarilType.LIQUIDE_JAUNE){
+            /*            if(barilTarget == BarilType.LIQUIDE_JAUNE){
                             setLiquidContainer(barilTarget, BarilType.LIQUIDE_JAUNE, new ItemStack(ModItems.BOCAL), new ItemStack(ModItems.BOCAL_DE_LIQUIDE_JAUNE), 2, worldIn, pos, playerIn, false);
                             return true;
                         }
@@ -716,7 +716,7 @@ public class BlockBaril extends BlockBase2 implements ITileEntityProvider {
                             setLiquidContainer(barilTarget, BarilType.LIQUIDE_NOIR, new ItemStack(ModItems.BOCAL), new ItemStack(ModItems.BOCAL_DE_LIQUIDE_NOIR), 2, worldIn, pos, playerIn, false);
                             return true;
                         }
-
+*/
                     }
 
 
@@ -766,7 +766,7 @@ public class BlockBaril extends BlockBase2 implements ITileEntityProvider {
                             setLiquidContainer(barilTarget, BarilType.HYDROMEL, new ItemStack(ModItems.VERRE_A_PIED), new ItemStack(ModItems.VERRE_A_PIED_HYDROMEL), 1, worldIn, pos, playerIn, false);
                             return true;
                         }
-                        if(barilTarget == BarilType.LIQUIDE_JAUNE){
+     /*                   if(barilTarget == BarilType.LIQUIDE_JAUNE){
                             setLiquidContainer(barilTarget, BarilType.LIQUIDE_JAUNE, new ItemStack(ModItems.VERRE_A_PIED), new ItemStack(ModItems.VERRE_A_PIED_LIQUIDE_JAUNE), 1, worldIn, pos, playerIn, false);
                             return true;
                         }
@@ -801,7 +801,7 @@ public class BlockBaril extends BlockBase2 implements ITileEntityProvider {
                         if(barilTarget == BarilType.LIQUIDE_NOIR){
                             setLiquidContainer(barilTarget, BarilType.LIQUIDE_NOIR, new ItemStack(ModItems.VERRE_A_PIED), new ItemStack(ModItems.VERRE_A_PIED_LIQUIDE_NOIR), 1, worldIn, pos, playerIn, false);
                             return true;
-                        }
+                        }*/
 
                     }
 
@@ -856,7 +856,7 @@ public class BlockBaril extends BlockBase2 implements ITileEntityProvider {
                             return true;
                         }
 
-                        if(barilTarget == BarilType.LIQUIDE_JAUNE){
+              /*          if(barilTarget == BarilType.LIQUIDE_JAUNE){
                             setLiquidContainer(barilTarget, BarilType.LIQUIDE_JAUNE, new ItemStack(ModItems.CHOPPE_EN_VERRE), new ItemStack(ModItems.CHOPPE_EN_VERRE_LIQUIDE_JAUNE), 1, worldIn, pos, playerIn, false);
                             return true;
                         }
@@ -892,7 +892,7 @@ public class BlockBaril extends BlockBase2 implements ITileEntityProvider {
                             setLiquidContainer(barilTarget, BarilType.LIQUIDE_NOIR, new ItemStack(ModItems.CHOPPE_EN_VERRE), new ItemStack(ModItems.CHOPPE_EN_VERRE_LIQUIDE_NOIR), 1, worldIn, pos, playerIn, false);
                             return true;
                         }
-
+*/
                     }
 
                     // CHOPPE EN ARGILE
@@ -944,7 +944,7 @@ public class BlockBaril extends BlockBase2 implements ITileEntityProvider {
                             return true;
                         }
 
-                        if(barilTarget == BarilType.LIQUIDE_JAUNE){
+      /*                  if(barilTarget == BarilType.LIQUIDE_JAUNE){
                             setLiquidContainer(barilTarget, BarilType.LIQUIDE_JAUNE, new ItemStack(ModItems.CHOPPE_EN_ARGILE), new ItemStack(ModItems.CHOPPE_EN_ARGILE_LIQUIDE_JAUNE), 1, worldIn, pos, playerIn, false);
                             return true;
                         }
@@ -980,7 +980,7 @@ public class BlockBaril extends BlockBase2 implements ITileEntityProvider {
                             setLiquidContainer(barilTarget, BarilType.LIQUIDE_NOIR, new ItemStack(ModItems.CHOPPE_EN_ARGILE), new ItemStack(ModItems.CHOPPE_EN_ARGILE_LIQUIDE_NOIR), 1, worldIn, pos, playerIn, false);
                             return true;
                         }
-
+*/
                     }
 
                     // BOUTEILLE EN VERRE
@@ -1031,7 +1031,7 @@ public class BlockBaril extends BlockBase2 implements ITileEntityProvider {
                             return true;
                         }
 
-                        if(barilTarget == BarilType.LIQUIDE_JAUNE){
+     /*                   if(barilTarget == BarilType.LIQUIDE_JAUNE){
                             setLiquidContainer(barilTarget, BarilType.LIQUIDE_JAUNE, new ItemStack(ModItems.BOUTEILLE_VIDE), new ItemStack(ModItems.BOUTEILLE_DE_LIQUIDE_JAUNE), 5, worldIn, pos, playerIn, false);
                             return true;
                         }
@@ -1067,7 +1067,7 @@ public class BlockBaril extends BlockBase2 implements ITileEntityProvider {
                             setLiquidContainer(barilTarget, BarilType.LIQUIDE_NOIR, new ItemStack(ModItems.BOUTEILLE_VIDE), new ItemStack(ModItems.BOUTEILLE_DE_LIQUIDE_NOIR), 5, worldIn, pos, playerIn, false);
                             return true;
                         }
-
+*/
                     }
 
 
@@ -1120,7 +1120,7 @@ public class BlockBaril extends BlockBase2 implements ITileEntityProvider {
                             return true;
                         }
 
-                        if(barilTarget == BarilType.LIQUIDE_JAUNE){
+    /*                    if(barilTarget == BarilType.LIQUIDE_JAUNE){
                             setLiquidContainer(barilTarget, BarilType.LIQUIDE_JAUNE, new ItemStack(ModItems.GROSSE_BOUTEILLE_VIDE), new ItemStack(ModItems.GROSSE_BOUTEILLE_DE_LIQUIDE_JAUNE), 7, worldIn, pos, playerIn, false);
                             return true;
                         }
@@ -1156,7 +1156,7 @@ public class BlockBaril extends BlockBase2 implements ITileEntityProvider {
                             setLiquidContainer(barilTarget, BarilType.LIQUIDE_NOIR, new ItemStack(ModItems.GROSSE_BOUTEILLE_VIDE), new ItemStack(ModItems.GROSSE_BOUTEILLE_DE_LIQUIDE_NOIR), 7, worldIn, pos, playerIn, false);
                             return true;
                         }
-
+*/
                     }
 
 

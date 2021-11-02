@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped", 
+  "pattern": 
+ [ 
+ "C E",
+ "BDB", 
+ "BBB" 
+ ], 
+
+
+ "key": 
+ {
+ "B": 
+ { 
+ "item": "am:farine"
+ 
+},
+ "C": 
+ { 
+ "item": "am:levure"
+
+},
+"D": 
+ { 
+ "item": "minecraft:water_bucket"
+
+},
+"E": 
+ { 
+ "item": "am:sel"
+}
+},
+ "result": 
+ { 
+ "item": "am:pain_noir_cru",
+ "count": 4
+}
+}

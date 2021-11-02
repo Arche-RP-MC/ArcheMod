@@ -1,0 +1,53 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "BPL",
+    "RCT",
+    " GM"
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:ail"
+    },
+    "P":
+    {
+      "item": "am:gingembre"
+    },
+    "L":
+    {
+      "item": "am:citron"
+    },
+    "C":
+    {
+      "item": "am:miel"
+    },
+    "T":
+    {
+      "item": "am:thym"
+    },
+    "R":
+    {
+      "item": "am:romarin"
+    },
+    "G":
+    {
+      "item": "am:bocal"
+    },
+    "M":
+    {
+      "item": "am:mortier_pilon_en_pierre",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:cataplasme_febrifuge",
+    "count": 1
+  }
+}

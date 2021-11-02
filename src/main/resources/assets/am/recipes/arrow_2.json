@@ -16,7 +16,7 @@
     },
     "F":
     {
-      "item": "am:pepite_bronze"
+      "item": "am:pointe_de_fleche"
     },
     "L":
     {
@@ -32,6 +32,6 @@
   "result":
   {
     "item": "minecraft:arrow",
-    "count": 2
+    "count": 5
   }
 }

@@ -25,7 +25,7 @@
     "O":
     {
       "item": "am:bouteille_vide"
-
+    }
   },
 
   "result":
@@ -33,4 +33,4 @@
     "item": "am:bouteille_de_jus_de_fruit_blanc",
     "count": 1
   }
-}}
+}

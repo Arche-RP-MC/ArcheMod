@@ -1,0 +1,58 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "PBG",
+    "OSH",
+    "CEM"
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:boite_a_poudre"
+    },
+    "P":
+    {
+      "item": "am:sang"
+    },
+    "C":
+    {
+      "item": "am:cire"
+    },
+    "S":
+    {
+      "item": "am:pepite_plomb"
+    },
+    "O":
+    {
+      "item": "am:larve"
+    },
+    "G":
+    {
+      "item": "am:graisse_animale"
+    },
+    "E": {
+      "item": "am:bouteille_huile_olive",
+      "data": 32767
+    },
+    "H":
+    {
+      "item": "am:huile_essentielle",
+      "data": 32767
+    },
+    "M":
+    {
+      "item": "am:mortier_pilon_en_pierre",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:rouge_a_levres",
+    "count": 1
+  }
+}

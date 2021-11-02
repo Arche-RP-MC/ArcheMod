@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " P ",
+    "   ",
+    "   "
+  ],
+
+  "key":
+  {
+
+    "P":
+    {
+        "item": "am:bouteille_de_vin_rouge"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:bouteille_vinaigre",
+    "count": 1
+  }
+}

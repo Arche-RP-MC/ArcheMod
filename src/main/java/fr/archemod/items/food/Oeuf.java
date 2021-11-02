@@ -24,7 +24,7 @@ public class Oeuf extends ItemBase {
             int rnd = (int)(Math.random()*1);
             switch (rnd){
                 case 0:
-                    playerIn.dropItem(ModItems.OEUF_A_PLAT_CRU,3);
+                    playerIn.dropItem(ModItems.OEUF_A_PLAT_CRU,1);
                     break;
 
 

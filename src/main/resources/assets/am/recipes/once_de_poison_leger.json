@@ -1,0 +1,53 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "UBC",
+    "SCO",
+    "GHM"
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:poche_de_venin"
+    },
+    "S":
+    {
+      "item": "am:once_d_herboriste"
+    },
+    "U":
+    {
+      "item": "am:gui"
+    },
+    "C":
+    {
+      "item": "am:buisson_etrange"
+    },
+    "O":
+    {
+      "item": "am:pomme_de_terre_cru"
+    },
+    "G":
+    {
+      "item": "am:etoffe"
+    },
+    "H":
+    {
+      "item": "minecraft:water_bucket"
+    },
+    "M":
+    {
+      "item": "am:mortier_pilon_en_pierre",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:once_de_poison_leger",
+    "count": 1
+  }
+}

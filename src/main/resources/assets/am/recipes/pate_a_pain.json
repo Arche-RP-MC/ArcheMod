@@ -3,9 +3,9 @@
 
   "pattern":
   [
-    "   ",
+    "R  ",
     "BBB",
-    " EM"
+    "GEM"
   ],
 
   "key":
@@ -15,10 +15,19 @@
     {
       "item": "am:farine"
     },
+    "R":
+    {
+      "item": "am:levure"
+    },
     "E":
     {
       "item": "minecraft:water_bucket"
       
+    },
+    "G":
+    {
+      "item": "am:sel"
+
     },
     "M":
     {

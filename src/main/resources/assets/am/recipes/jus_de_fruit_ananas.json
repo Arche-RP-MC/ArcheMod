@@ -22,9 +22,9 @@
     {
       "item": "minecraft:sugar"
     },
-    "O":
-    {
+    "O": {
       "item": "am:bouteille_vide"
+    }
 
   },
 
@@ -33,4 +33,4 @@
     "item": "am:bouteille_de_jus_de_fruit_jaune",
     "count": 1
   }
-}}
+}

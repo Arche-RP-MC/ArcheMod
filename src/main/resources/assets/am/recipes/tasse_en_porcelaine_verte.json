@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "AP ",
+    " C "
+  ],
+
+  "key":
+  {
+    "C":
+    {
+      "item": "am:pinceau",
+      "data": 32767
+    },
+    "A":
+    {
+      "item": "am:tasse_en_porcelaine"
+    },
+
+    "P":
+    {
+      "item": "minecraft:dye",
+      "data" : 2
+    }
+  },
+
+  "result":
+  {
+    "item": "am:tasse_en_porcelaine_verte",
+    "count": 3
+  }
+}

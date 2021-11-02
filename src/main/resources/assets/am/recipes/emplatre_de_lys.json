@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "SBS",
+    "C C",
+    " EM"
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:emplatre"
+    },
+    "C":
+    {
+      "item": "am:lys"
+    },
+    "S":
+    {
+      "item": "am:sauge"
+    },
+    "E":
+    {
+      "item": "am:buisson_de_fleurs_blanches"
+    },
+    "M":
+    {
+      "item": "am:mortier_pilon_en_pierre",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:emplatre_de_lys",
+    "count": 1
+  }
+}

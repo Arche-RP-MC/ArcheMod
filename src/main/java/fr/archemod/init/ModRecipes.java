@@ -84,6 +84,7 @@ public class ModRecipes
         GameRegistry.addSmelting(ModItems.SAUCISSE_CRU, new ItemStack(ModItems.SAUCISSE,1),0);
         GameRegistry.addSmelting(ModItems.ASPERGE_CRU, new ItemStack(ModItems.ASPERGE,1),0);
         GameRegistry.addSmelting(ModItems.MORCEAU_DE_POULPE_CRU, new ItemStack(ModItems.MORCEAU_DE_POULPE,1),0);
+        GameRegistry.addSmelting(ModItems.MORCEAU_DE_POISSON_CRU, new ItemStack(ModItems.MORCEAU_DE_POISSON_CUIT,1),0);
         GameRegistry.addSmelting(ModItems.BOL_EN_ARGILE_CRUE, new ItemStack(ModItems.BOL_EN_ARGILE,1),0);
         GameRegistry.addSmelting(ModItems.CHOPPE_EN_ARGILE_CRUE, new ItemStack(ModItems.CHOPPE_EN_ARGILE,1),0);
         GameRegistry.addSmelting(ModItems.PEPITE_FER, new ItemStack(ModItems.FER_FONDU,1),0);
@@ -112,6 +113,7 @@ public class ModRecipes
         GameRegistry.addSmelting(ModItems.GRAND_POT_EN_ARGILE_CRUE, new ItemStack(ModItems.GRAND_POT_EN_ARGILE,1),0);
         GameRegistry.addSmelting(ModItems.JARRE_EN_ARGILE_CRUE, new ItemStack(ModItems.JARRE_EN_ARGILE,1),0);
         GameRegistry.addSmelting(ModItems.THEIERE_CRUE, new ItemStack(ModItems.THEIERE,1),0);
+        GameRegistry.addSmelting(ModItems.TASSE_EN_PORCELAINE_CRU, new ItemStack(ModItems.TASSE_EN_PORCELAINE,1),0);
 
     }
 }

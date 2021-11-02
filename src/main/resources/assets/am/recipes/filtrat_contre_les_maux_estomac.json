@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "P P",
+    "BCB",
+    " GM"
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:ail"
+    },
+    "P":
+    {
+      "item": "am:sauge"
+    },
+    "C":
+    {
+      "item": "am:pivoine"
+    },
+    "G":
+    {
+      "item": "am:bocal"
+    },
+    "M":
+    {
+      "item": "am:mortier_pilon_en_pierre",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:filtrat_contre_les_maux_estomac",
+    "count": 1
+  }
+}

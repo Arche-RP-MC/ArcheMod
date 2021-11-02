@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " C ",
+    "L P",
+    "BGM"
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "minecraft:water_bucket"
+    },
+    "P":
+    {
+      "item": "am:cassis"
+    },
+    "L":
+    {
+      "item": "am:lavande"
+    },
+    "C":
+    {
+      "item": "am:ronces"
+    },
+    "G":
+    {
+      "item": "am:bocal"
+    },
+    "M":
+    {
+      "item": "am:mortier_pilon_en_pierre",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:antiparasitaire",
+    "count": 1
+  }
+}

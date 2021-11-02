@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped", 
+  "pattern": 
+ [ 
+ "EC ",
+ "   ",
+ "   "
+ ], 
+
+
+ "key": 
+ {
+
+ "C": 
+ { 
+ "item": "am:coquille_d_oeuf"
+
+},
+
+"E": 
+ { 
+ "item": "am:oeuf_a_plat_cru"
+}
+},
+ "result": 
+ { 
+ "item": "am:oeuf_dur_cru",
+ "count": 1
+}
+}

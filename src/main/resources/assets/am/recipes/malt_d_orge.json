@@ -4,32 +4,27 @@
   "pattern":
   [
     "   ",
-    "BBB",
-    " EM"
+    "CL ",
+    "   "
   ],
 
   "key":
   {
 
-    "B":
+    "C":
     {
-      "item": "am:farine"
+      "item": "am:graine_orge"
     },
-    "E":
+    "L":
     {
       "item": "minecraft:water_bucket"
-      
-    },
-    "M":
-    {
-      "item": "am:rouleau_a_patisserie",
-      "data":32767
     }
+
   },
 
   "result":
   {
-    "item": "am:pate_a_pain",
+    "item": "am:malt_orge",
     "count": 1
   }
 }

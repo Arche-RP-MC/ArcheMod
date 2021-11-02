@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "BBB",
+    "BBB",
+    "OE "
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "minecraft:sugar"
+    },
+    "O":
+    {
+      "item": "minecraft:water_bucket"
+    },
+    "E": {
+      "item": "am:bouteille_vide"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:bouteille_alcool_pur",
+    "count": 1
+  }
+}

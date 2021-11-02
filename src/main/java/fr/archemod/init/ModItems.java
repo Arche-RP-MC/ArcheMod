@@ -6,13 +6,13 @@ import fr.archemod.items.*;
 import fr.archemod.items.agriculture.GraineBle;
 import fr.archemod.items.agriculture.GraineOrge;
 import fr.archemod.items.epuisette.Epuisette;
+import fr.archemod.items.epuisette.Epuisette2;
 import fr.archemod.items.food.*;
 import fr.archemod.items.huitre.Huitre;
 import fr.archemod.items.sciure.*;
-import fr.archemod.items.tools.ToolAxe;
-import fr.archemod.items.tools.ToolHoe;
-import fr.archemod.items.tools.ToolSword;
-import fr.archemod.items.tools.Toolpickaxe;
+import fr.archemod.items.tools.*;
+import net.minecraft.block.Block;
+import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemAxe;
 import net.minecraft.item.ItemHoe;
@@ -124,7 +124,7 @@ public class ModItems {
     public static final Item COUTEAU_EN_FER = new OutilsEnFer("couteau_en_fer");
     public static final Item LOUPE = new OutilsEnFer("loupe");
     public static final Item CISEAUX_A_BOIS = new OutilsEnFer("ciseaux_a_bois");
-    public static final Item EPUISETTE = new Epuisette("epuisette", Item.ToolMaterial.WOOD);
+    public static final Item EPUISETTE = new Epuisette2("epuisette");
     public static final Item FILET = new OutilsEnFer("filet");
     public static final Item FOURCHE_EN_FER = new OutilsEnFer("fourche_en_fer");
     public static final Item HACHOIR = new OutilsEnFer("hachoir");
@@ -294,6 +294,7 @@ public class ModItems {
     public static final Item ASPERGE = new FoodBase("asperge",2,0.2F,false);
     public static final Item HUITRE_OUVERTE = new FoodBase("huitre_ouverte",2,0.2F,false);
     public static final Item MORCEAU_DE_POULPE = new FoodBase("morceau_de_poulpe",2,0.2F,false);
+    public static final Item MORCEAU_DE_POISSON_CUIT = new FoodBase("morceau_de_poisson_cuit",2,0.2F,false);
 
     //FOODS CRU
     public static final Item BOL_DE_GRUAU_CRU = new ItemBase("bol_de_gruau_cru");
@@ -370,7 +371,8 @@ public class ModItems {
     public static final Item TOMATE_CRU = new ItemBase("tomate_cru");
     public static final Item ARTICHAUT_CRU = new ItemBase("artichaut_cru");
     public static final Item CHOU_VERT_CRU = new ItemBase("chou_vert_cru");
-    public static final Item MORCEAU_DE_POISSON_CRU = new ItemBase("morceau_de_poisson");
+    public static final Item MORCEAU_DE_POISSON_CRU = new ItemBase("morceau_de_poisson_cru");
+    public static final Item MORCEAU_DE_POISSON = new Poisson("morceau_de_poisson");
 
 
 
@@ -855,9 +857,12 @@ public class ModItems {
     public static Item GRAINE_RIZ;
     public static Item GRAINE_BLE;
     public static Item GRAINE_PAVOT;
+    public static Item GRAINE_THYM;
 
+    public static final Item GRAINE_DE_PAVOT = new ItemBase("graine_de_pavot");
 
     //Item 2
+
     public static final Item POULPE = new ItemBase("poulpe");
     public static final Item GRAMMA_LORETO = new ItemBase("gramma_loreto");
     public static final Item GRAND_HEAUME = new ItemBase("grand_heaume");
@@ -1000,7 +1005,7 @@ public class ModItems {
     public static final Item PAPIER_A_PLAN = new ItemBase("papier_a_plan");
     public static final Item PAPIER_ECRIT = new ItemBase("papier_ecrit");
     public static final Item PAPIER_HUMIDE = new ItemBase("papier_humide");
-    public static final Item PARCHEMIN = new ItemBase("parchemin");
+    public static final Item PARCHEMIN = new Parchemin("parchemin");
     public static final Item PARCHEMIN_DESCELLE = new ItemBase("parchemin_descelle");
     public static final Item PATE_A_DENT = new Savon("pate_a_dent");
     public static final Item PATE_A_PAPIER = new ItemBase("pate_a_papier");
@@ -1056,11 +1061,14 @@ public class ModItems {
     public static final Item PLUME_D_ECRITURE_EN_ARGENT = new Consommables("plume_d_ecriture_en_argent");
     public static final Item PLUME_D_ECRITURE_EN_BRONZE = new Consommables("plume_d_ecriture_en_bronze");
     public static final Item PLUME_D_ECRITURE_EN_OR = new Consommables("plume_d_ecriture_en_or");
+    public static final Item PLUME_D_ECRITURE_EN_ACIER = new Consommables("plume_d_ecriture_en_acier");
+    public static final Item PLUME_D_ECRITURE_EN_FER = new Consommables("plume_d_ecriture_en_fer");
     public static final Item POCHE_DE_VENIN = new ItemBase("poche_de_venin");
     public static final Item POCHE_D_ENCRE = new ItemBase("poche_d_encre");
     public static final Item POILS = new ItemBase("poils");
     public static final Item POINTE_DE_FLECHE = new ItemBase("pointe_de_fleche");
     public static final Item POINTE_DE_FLECHE_LONGUE = new ItemBase("pointe_de_fleche_longue");
+    public static final Item FLECHE_POINTE_LONGUE = new ItemBase("fleche_pointe_longue");
     public static final Item POISSON_CHAT = new ItemBase("poisson_chat");
     public static final Item POISSON_CHIRURGIEN = new ItemBase("poisson_chirurgien");
     public static final Item POISSON_CLOWN_NOIR = new ItemBase("poisson_clown_noir");
@@ -1136,6 +1144,7 @@ public class ModItems {
     public static final Item SOUS_VETEMENT_FEMININS = new ItemBase("sous_vetement_feminins");
     public static final Item SOUS_VETEMENT_MASCULIN = new ItemBase("sous_vetement_masculin");
     public static final Item SPALIERES = new ItemBase("spalieres");
+    public static final Item SPALIERES_CUIR = new ItemBase("spalieres_cuir");
     public static final Item SPINELLE_TAILLE_ASSCHER = new ItemBase("spinelle_taille_asscher");
     public static final Item SPINELLE_TAILLE_BAGUETTE = new ItemBase("spinelle_taille_baguette");
     public static final Item SPINELLE_TAILLE_BRILLANT = new ItemBase("spinelle_taille_brillant");
@@ -1157,7 +1166,7 @@ public class ModItems {
     public static final Item STYLET_EN_BRONZE = new Consommables("stylet_en_bronze");
     public static final Item STYLET_EN_OR = new Consommables("stylet_en_or");
     public static final Item TABAC = new Savon("tabac");
-    public static final Item TASSE_EN_PORCELAINE = new ItemBase("tasse_en_porcelaine");
+
     public static final Item TETE_BURIN_ACIER = new ItemBase("tete_burin_acier");
     public static final Item TETE_BURIN_BRONZE = new ItemBase("tete_burin_bronze");
     public static final Item TETE_BURIN_FER = new ItemBase("tete_burin_fer");
@@ -1293,12 +1302,12 @@ public class ModItems {
     public static final Item PLANCHE_SCIURE_SAPIN = new Sciure_Sapin("planche_sciure_sapin");
     public static final Item BOUTEILLE_DE_PARFUM_VIDE = new ItemBase("bouteille_de_parfum_vide");
     public static final Item BOUTEILLE_ALCOOL_PUR = new Consommables("bouteille_alcool_pur");
-
+    public static final Item THYM = new ItemBase("thym");
 
     //seaux et verres
 
     public static final Item SEAU_D_EAU_EN_BOIS = new ItemBase("seau_d_eau_en_bois");
-    public static final Item SEAU_EN_BOIS = new ItemBase("seau_en_bois");
+    public static final Item SEAU_EN_BOIS = new SeauBois(Blocks.AIR, "seau_en_bois");
     public static final Item VERRE_A_PIED_EAU = new VerrePlein("verre_a_pied_eau",0,0.2F,false);
     public static final Item CHOPPE_EN_VERRE_EAU = new ChoppePleine("choppe_en_verre_eau",0,0.2F,false);
     public static final Item CHOPPE_EN_ARGILE_EAU = new ChoppeArPleine("choppe_en_argile_eau",0,0.2F,false);
@@ -1377,7 +1386,7 @@ public class ModItems {
     public static final Item BOUTEILLE_DE_HYDROMEL= new BouteilleDeVin("bouteille_de_hydromel",0,0.2F,false);
     public static final Item BOCAL_DE_HYDROMEL = new BocalPlein("bocal_de_hydromel",0,0.2F,false);
 
-    public static final Item SEAU_DE_LIQUIDE_JAUNE = new ItemBase("seau_de_liquide_jaune");
+   /* public static final Item SEAU_DE_LIQUIDE_JAUNE = new ItemBase("seau_de_liquide_jaune");
     public static final Item SEAU_DE_LIQUIDE_JAUNE_EN_BOIS = new ItemBase("seau_de_liquide_jaune_en_bois");
     public static final Item VERRE_A_PIED_LIQUIDE_JAUNE = new VerrePlein("verre_a_pied_liquide_jaune",0,0.2F,false);
     public static final Item CHOPPE_EN_VERRE_LIQUIDE_JAUNE = new ChoppePleine("choppe_en_verre_liquide_jaune",0,0.2F,false);
@@ -1456,13 +1465,13 @@ public class ModItems {
     public static final Item CHOPPE_EN_ARGILE_LIQUIDE_NOIR = new ChoppeArPleine("choppe_en_argile_liquide_noir",0,0.2F,false);
     public static final Item GROSSE_BOUTEILLE_DE_LIQUIDE_NOIR = new GrosseBouteille("grosse_bouteille_liquide_noir",0,0.2F,false);
     public static final Item BOUTEILLE_DE_LIQUIDE_NOIR= new BouteilleDeVin("bouteille_de_liquide_noir",0,0.2F,false);
-    public static final Item BOCAL_DE_LIQUIDE_NOIR = new BocalPlein("bocal_de_liquide_noir",0,0.2F,false);
+    public static final Item BOCAL_DE_LIQUIDE_NOIR = new BocalPlein("bocal_de_liquide_noir",0,0.2F,false);*/
 
     public static final Item BOUTEILLE_HUILE_OLIVE = new GrosseBouteille("bouteille_huile_olive",0,0.2F,false);
     public static final Item BOUTEILLE_HUILE_TOURNESOL = new GrosseBouteille("bouteille_huile_tournesol",0,0.2F,false);
     public static final Item BOUTEILLE_HUILE_NOIX = new GrosseBouteille("bouteille_huile_noix",0,0.2F,false);
     public static final Item BOUTEILLE_VINAIGRE = new GrosseBouteille("bouteille_vinaigre",0,0.2F,false);
-    //public static final Item BOUTEILLE_HUILE_LIN = new GrosseBouteille("bouteille_huile_lin",0,0.2F,false);
+
 
     public static final Item BOUTEILLE_DE_JUS_DE_FRUIT_VERT= new BouteilleDeVin("bouteille_de_jus_de_fruit_vert",0,0.2F,false);
     public static final Item BOUTEILLE_DE_JUS_DE_FRUIT_ROUGE= new BouteilleDeVin("bouteille_de_jus_de_fruit_rouge",0,0.2F,false);
@@ -1827,8 +1836,33 @@ public class ModItems {
     public static final Item ANTIPARASITAIRE = new SolutionBuvable ("antiparasitaire",0,0.2F,false);
     public static final Item CATAPLASME_FEBRIFUGE = new SolutionBuvable ("cataplasme_febrifuge",0,0.2F,false);
     public static final Item SIROP_POUR_LA_TOUX = new SolutionBuvable ("sirop_pour_la_toux",0,0.2F,false);
-    public static final Item HUILE_DE_LIN = new SolutionBuvable ("huilde_de_lin",0,0.2F,false);
+    public static final Item HUILE_DE_LIN = new SolutionBuvable ("huile_de_lin",0,0.2F,false);
 
+    // Apoticaire
 
+    public static final Item BAUME_A_LA_CAMOMILLE = new Savon ("baume_a_la_camomille");
+    public static final Item ROUGE_A_LEVRES = new Savon ("rouge_a_levres");
+    public static final Item FARD_A_JOUE = new Savon ("fard_a_joue");
+    public static final Item POUDRE_DE_TEINT = new Savon ("poudre_de_teint");
+    public static final Item NOIR_CHARBON = new Savon ("noir_charbon");
+    public static final Item EMPLATRE_DE_LYS = new Savon ("emplatre_de_lys");
+    public static final Item EMPLATRE_A_BRULURE = new Savon ("emplatre_a_brulure");
+    public static final Item EMPLATRE_CONTRE_LA_GRATTE = new Savon ("emplatre_contre_la_gratte");
+    public static final Item OPIUM_A_FUMER = new Savon ("opium_a_fumer");
+
+    public static final Item SAUGE = new ItemBase ("sauge");
+    public static final Item SUREAU = new ItemBase ("sureau");
+    public static final Item SEAU_DE_COLLE = new ItemBase ("seau_de_colle");
+    public static final Item EXTRAIT_DE_PAVOT_CONCENTRE = new ItemBase ("extrait_de_pavot_concentre");
+    public static final Item ONCE_DE_POISON_LEGER = new ItemBase ("once_de_poison_leger");
+
+    // Porcelaine
+
+    public static final Item TASSE_EN_PORCELAINE = new ItemBase("tasse_en_porcelaine");
+    public static final Item TASSE_EN_PORCELAINE_CRU = new ItemBase("tasse_en_porcelaine_cru");
+    public static final Item TASSE_EN_PORCELAINE_BLEU = new ItemBase("tasse_en_porcelaine_bleu");
+    public static final Item TASSE_EN_PORCELAINE_ROSE = new ItemBase("tasse_en_porcelaine_rose");
+    public static final Item TASSE_EN_PORCELAINE_VERTE = new ItemBase("tasse_en_porcelaine_verte");
+    public static final Item TASSE_EN_PORCELAINE_VIOLETTE = new ItemBase("tasse_en_porcelaine_violette");
 
 }

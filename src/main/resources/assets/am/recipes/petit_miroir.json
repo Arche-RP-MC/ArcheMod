@@ -4,7 +4,7 @@
   "pattern":
   [
     "MBC",
-    "BPB",
+    " P ",
     " V "
   ],
 
@@ -17,7 +17,7 @@
     },
     "B":
     {
-      "item": "minecraft:stick"
+      "item": "am:cadre_en_bois"
     },
     "C":
     {

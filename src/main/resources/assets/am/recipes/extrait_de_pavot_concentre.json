@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "B B",
+    " HM"
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:graine_de_pavot"
+    },
+    "H":
+    {
+      "item": "minecraft:water_bucket"
+    },
+    "M":
+    {
+      "item": "am:mortier_pilon_en_pierre",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:extrait_de_pavot_concentre",
+    "count": 1
+  }
+}

@@ -3,21 +3,17 @@
 
   "pattern":
   [
-    "BBB",
+    "   ",
     "BIB",
-    "HBB"
+    "   "
   ],
 
   "key":
   {
-    "H":
-    {
-      "item": "am:ciseaux_a_bois",
-      "data": 32767
-    },
+
     "B":
     {
-      "item": "am:planche"
+      "item": "am:cadre_en_bois"
     },
     "I":
     {

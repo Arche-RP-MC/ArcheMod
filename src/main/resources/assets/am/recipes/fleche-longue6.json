@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " L ",
+    "FBP",
+    "   "
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "minecraft:stick"
+    },
+    "F":
+    {
+      "item": "am:pointe_de_fleche_longue"
+    },
+    "L":
+    {
+      "item": "am:lime_en_fer",
+      "data": 32767
+    },
+    "P":
+    {
+      "item": "minecraft:feather"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:fleche_pointe_longue",
+    "count": 5
+  }
+}

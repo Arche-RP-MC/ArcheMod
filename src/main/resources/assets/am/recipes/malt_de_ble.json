@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "CL ",
+    "   "
+  ],
+
+  "key":
+  {
+
+    "C":
+    {
+      "item": "am:graine_ble"
+    },
+    "L":
+    {
+      "item": "minecraft:water_bucket"
+    }
+
+  },
+
+  "result":
+  {
+    "item": "am:malt_ble",
+    "count": 1
+  }
+}

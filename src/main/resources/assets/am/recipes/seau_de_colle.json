@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "BBB",
+    " H "
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:colle"
+    },
+    "H":
+    {
+      "item": "minecraft:water_bucket"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:seau_de_colle",
+    "count": 1
+  }
+}

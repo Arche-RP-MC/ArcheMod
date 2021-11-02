@@ -1,0 +1,50 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " B ",
+    "SCO",
+    "GHM"
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:boite_a_poudre"
+    },
+    "S":
+    {
+      "item": "am:pepite_plomb"
+    },
+    "C":
+    {
+      "item": "am:farine"
+    },
+    "O":
+    {
+      "item": "am:coquillage"
+    },
+    "G":
+    {
+      "item": "am:nacre"
+    },
+    "H":
+    {
+      "item": "am:huile_essentielle",
+      "data": 32767
+    },
+    "M":
+    {
+      "item": "am:mortier_pilon_en_pierre",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:poudre_de_teint",
+    "count": 1
+  }
+}

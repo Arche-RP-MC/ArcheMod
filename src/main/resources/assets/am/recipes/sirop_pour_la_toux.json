@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "B C",
+    "P L",
+    " GM"
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:sauge"
+    },
+    "P":
+    {
+      "item": "am:miel"
+    },
+    "L":
+    {
+      "item": "am:extrait_de_pavot_concentre"
+    },
+    "C":
+    {
+      "item": "am:ronces"
+    },
+    "G":
+    {
+      "item": "am:bocal"
+    },
+    "M":
+    {
+      "item": "am:mortier_pilon_en_pierre",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:sirop_pour_la_toux",
+    "count": 1
+  }
+}
