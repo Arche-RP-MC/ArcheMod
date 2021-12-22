@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "BCB",
+    "PTP",
+    "   "
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:bobine_de_fil"
+    },
+    "C":
+    {
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
+    },
+    "P":
+    {
+      "item": "am:plaque_d_acier"
+
+    },
+
+    "T":
+    {
+      "item": "am:gants_en_cuir"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:gantelets_acier",
+    "count": 1
+  }
+}

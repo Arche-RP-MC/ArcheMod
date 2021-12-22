@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "LL ",
+    "GNP",
+    "   "
+  ],
+
+  "key":
+  {
+    "N":
+    {
+      "item": "am:plaque_d_acier"
+    },
+    "P":
+    {
+      "item": "am:marteau_en_acier",
+      "data": 32767
+    },
+    "L":
+    {
+      "item": "minecraft:feather"
+    },
+    "G":
+    {
+      "item": "am:pinces",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:casque_coiffe_acier",
+    "count": 1
+  }
+}

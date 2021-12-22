@@ -18,7 +18,7 @@ public class Epuisette2 extends ItemBase {
         super(name);
         setMaxDamage(7);
         setNoRepair();
-        setMaxStackSize(1);
+
     }
 
     @Override
@@ -33,22 +33,22 @@ public class Epuisette2 extends ItemBase {
                 int nombreAleatoire = (int) (Math.random() * 6);
 
                 switch (nombreAleatoire) {
-                    case 1:
+                    case 0:
                         playerIn.dropItem(ModItems.CREVETTE_GRISE, 1);
                         break;
-                    case 2:
+                    case 1:
                         playerIn.dropItem(ModItems.CREVETTE_ROSE, 1);
                         break;
-                    case 3:
+                    case 2:
                         playerIn.dropItem(ModItems.HIPPOCAMPE, 1);
                         break;
-                    case 4:
+                    case 3:
                         playerIn.dropItem(ModItems.ECREVISSE, 1);
                         break;
-                    case 5:
+                    case 4:
                         playerIn.dropItem(ModItems.ECREVISSE_ORANGE, 1);
                         break;
-                    case 6:
+                    case 5:
                         playerIn.dropItem(ModItems.POULPE, 1);
                         break;
 

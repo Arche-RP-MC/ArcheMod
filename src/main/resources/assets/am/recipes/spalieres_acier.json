@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "P P",
+    "L L",
+    "CMC"
+  ],
+
+  "key":
+  {
+    "P":
+    {
+      "item": "am:plaque_d_acier"
+    },
+    "L":
+    {
+      "item": "am:laniere_de_cuir"
+    },
+    "M":
+    {
+      "item": "am:marteau_en_fer",
+      "data": 32767
+    },
+    "C":
+    {
+      "item": "am:clous"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:spalieres_acier",
+    "count": 1
+  }
+}

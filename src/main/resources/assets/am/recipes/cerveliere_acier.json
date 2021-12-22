@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "L  ",
+    "P  "
+  ],
+
+  "key":
+  {
+    "P":
+    {
+      "item": "am:pinces",
+      "data": 32767
+    },
+    "L":
+    {
+      "item": "am:plaque_d_acier"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:cerveliere",
+    "count": 1
+  }
+}

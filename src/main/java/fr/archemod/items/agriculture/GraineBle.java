@@ -29,7 +29,7 @@ public class GraineBle extends ItemBase {
 
 
             }
-            playerIn.dropItem(Items.WHEAT_SEEDS,20);
+            playerIn.dropItem(ModItems.GRAINE_BLE,20);
         }
         return new ActionResult<>(EnumActionResult.SUCCESS, playerIn.getHeldItem(handIn));
     }

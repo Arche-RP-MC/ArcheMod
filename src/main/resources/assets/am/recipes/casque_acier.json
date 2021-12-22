@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " P ",
+    "GN ",
+    "   "
+  ],
+
+  "key":
+  {
+    "N":
+    {
+      "item": "am:plaque_d_acier"
+    },
+    "P":
+    {
+      "item": "am:marteau_en_bronze",
+      "data": 32767
+    },
+    "G":
+    {
+      "item": "am:pinces",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:casque_acier",
+    "count": 1
+  }
+}
