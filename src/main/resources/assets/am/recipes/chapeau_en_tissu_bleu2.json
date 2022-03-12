@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "CL ",
+    "   "
+  ],
+
+  "key":
+  {
+
+    "C":
+    {
+      "item": "am:chapeau_en_tissu"
+    },
+    "L":
+    {
+      "item": "minecraft:dye",
+      "data": 4
+    }
+  },
+
+  "result":
+  {
+ "item": "am:chapeau_en_tissu_bleu",
+    "count": 1
+  }
+}

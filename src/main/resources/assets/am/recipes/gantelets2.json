@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "BCB",
+    "PTP",
+    "   "
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:clous"
+    },
+    "C":
+    {
+      "item": "am:marteau_en_acier",
+      "data": 32767
+    },
+    "P":
+    {
+      "item": "am:plaque_de_fer"
+
+    },
+
+    "T":
+    {
+      "item": "am:gants_en_cuir"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:gantelets",
+    "count": 1
+  }
+}

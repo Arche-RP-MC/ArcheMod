@@ -3,9 +3,9 @@
 
   "pattern":
   [
-    "   ",
-    "BIB",
-    "   "
+    "PBC",
+    "VIV",
+    " I "
   ],
 
   "key":
@@ -14,6 +14,19 @@
     "B":
     {
       "item": "am:cadre_en_bois"
+    },
+    "P":
+    {
+      "item": "am:pinces",
+      "data": 32767
+    },
+    "C":
+    {
+      "item": "am:clous"
+    },
+    "V":
+    {
+      "item": "am:verre_en_fusion"
     },
     "I":
     {

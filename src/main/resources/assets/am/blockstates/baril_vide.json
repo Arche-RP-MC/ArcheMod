@@ -1,6 +1,6 @@
 {
-    "variants": {
+  "variants": {
 
-            "normal" :{"model": "am:baril_vide"}
-        }
-    }
+    "normal" :{"model": "am:baril_vide"}
+  }
+}

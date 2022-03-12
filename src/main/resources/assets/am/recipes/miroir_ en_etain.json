@@ -3,8 +3,8 @@
 
   "pattern":
   [
-    "   ",
-    " J ",
+    " VG",
+    "DJ ",
     "I  "
   ],
 
@@ -13,6 +13,20 @@
     "J":
     {
       "item": "am:plaque_d_etain"
+    },
+    "G":
+    {
+      "item": "am:clous"
+
+    },
+    "D":
+    {
+      "item": "am:barre_etain"
+
+    },
+    "V":
+    {
+      "item": "am:verre_en_fusion"
     },
 
     "I":

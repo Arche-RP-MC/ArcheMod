@@ -5,7 +5,7 @@
   [
     "   ",
     "CLL",
-    "F  "
+    "M  "
   ],
 
   "key":
@@ -14,9 +14,10 @@
     {
       "item": "minecraft:water_bucket"
     },
-    "F":
+    "M":
     {
-      "item": "am:flacon"
+      "item": "am:mortier_pilon_en_pierre",
+      "data": 32767
     },
     "L":
     {

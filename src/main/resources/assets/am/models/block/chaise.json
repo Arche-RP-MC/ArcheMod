@@ -2,10 +2,10 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"1": "blocks/redstone_dust_dot",
-		"2": "blocks/planks_oak",
-		"5": "blocks/iron_block",
-		"particle": "blocks/redstone_dust_dot"
+		"1": "am:blocks/redstone_dust_dot",
+		"2": "am:blocks/planks_oak",
+		"5": "am:blocks/iron_block",
+		"particle": "am:blocks/redstone_dust_dot"
 	},
 	"elements": [
 		{

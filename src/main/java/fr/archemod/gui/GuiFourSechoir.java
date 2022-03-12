@@ -1,8 +1,11 @@
-package fr.archemod.gui;
+/*package fr.archemod.gui;
 
-import fr.archemod.blocks.container.ContainerFourSechoir;
+
+import fr.archemod.blocks.container.ContainerSechoirViande;
 import fr.archemod.blocks.tileentity.TileEntityFourSechoir;
+import fr.archemod.blocks.tileentity.TileEntityFourSechoir2;
 import net.minecraft.client.gui.inventory.GuiContainer;
+import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.tileentity.TileEntity;
@@ -12,58 +15,61 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.common.network.IGuiHandler;
 
 public class GuiFourSechoir extends GuiContainer
+
 {
 
-    private static final ResourceLocation background = new ResourceLocation("am","textures/gui/container/custom_furnace.png");
-    private TileEntityFourSechoir tile;
+    private static final ResourceLocation TEXTURES = new ResourceLocation("am", "textures/gui/container/custom_furnace.png");
+    private final InventoryPlayer player;
+    private final TileEntityFourSechoir2 tileentity;
 
-    public GuiFourSechoir(TileEntityFourSechoir tile, InventoryPlayer playerInv) {
-        super(new ContainerFourSechoir(tile, playerInv));
-        this.tile = tile;
+    public GuiFourSechoir(InventoryPlayer player, TileEntityFourSechoir2 tileentity) {
+        super(new ContainerSechoirViande(player, tileentity));
+        this.tileentity = tileentity;
+        this.player =player;
     }
 
     @Override
-    protected void drawGuiContainerBackgroundLayer(float partialTicks, int mouseX, int mouseY) {
-        int i = (this.width - this.xSize) / 2;
-        int j = (this.height - this.ySize) / 2;
-        this.drawDefaultBackground();
-        this.mc.getTextureManager().bindTexture(background);
-        this.drawTexturedModalRect(i, j, 0, 0, this.xSize, this.ySize);
+    protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY)
+    {
+        String tileName = this.tileentity.getDisplayName().getUnformattedText();
+        this.fontRenderer.drawString(tileName, (this.xSize / 2 - this.fontRenderer.getStringWidth(tileName) / 2) + 3, 8, 4210752);
+        this.fontRenderer.drawString(this.player.getDisplayName().getUnformattedText(), 122, this.ySize - 96 + 2, 4210752);
 
-        int timePassed = this.tile.getField(1);
-        int textureWidth = (int) (23f / 200f * timePassed);
-        this.drawTexturedModalRect(i + 81, j + 24, 177, 18, textureWidth, 7);
-
-        if (this.tile.isBurning()) {
-            int burningTime = this.tile.getField(0);
-            int textureHeight = (int) (12f / this.tile.getFullBurnTime() * burningTime);
-            this.drawTexturedModalRect(i + 37, j + 26 + 12 - textureHeight,
-                    177, 12 - textureHeight, 27, textureHeight);
-        }
-
-        this.fontRenderer.drawString(this.tile.getName(), i + 80, j + 45, 0xFFFFFF);
     }
 
-    public class GuiHandler implements IGuiHandler {
 
-        @Override
-        public Object getServerGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) {
-            TileEntity te = world.getTileEntity(new BlockPos(x, y, z));
-            if(te instanceof TileEntityFourSechoir) {
-                return new ContainerFourSechoir((TileEntityFourSechoir) te, player.inventory);
-            }
-            return null;
-        }
 
-        @Override
-        public Object getClientGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) {
-            TileEntity te = world.getTileEntity(new BlockPos(x, y, z));
-            if(te instanceof TileEntityFourSechoir) {
-                return new GuiFourSechoir((TileEntityFourSechoir)te, player.inventory);
-            }
-            return null;
+    @Override
+    protected void drawGuiContainerBackgroundLayer(float partialTicks, int mouseX, int mouseY)
+    {
+        GlStateManager.color(1.0f,1.0f,1.0f);
+        this.mc.getTextureManager().bindTexture(TEXTURES);
+        this.drawTexturedModalRect(this.guiLeft, this.guiTop,0,0, this.xSize,this.ySize);
+
+        if(TileEntityFourSechoir2.isBurning(tileentity))
+        {
+            int k = this.getBurnLeftScaled(13);
+            this.drawTexturedModalRect(this.guiLeft + 8, this.guiTop+54+12- k,176,12- k,14,k +1);
         }
+    int l = this.getCookProgressScaled(24);
+        this.drawTexturedModalRect(this.guiLeft+44,this.guiTop+36,176,14,l+1,16);
+
+    }
+
+    private int getBurnLeftScaled(int pixels)
+    {
+        int i = this.tileentity.getField(1);
+        if(i ==0) i=200;
+        return this.tileentity.getField(0) * pixels / i ;
+    }
+
+    private int getCookProgressScaled (int pixels)
+    {
+        int i = this.tileentity.getField(2);
+        int j = this.tileentity.getField(3);
+        return j != 0 && i != 0 ? i*pixels / j :0;
     }
 
 
 }
+*/

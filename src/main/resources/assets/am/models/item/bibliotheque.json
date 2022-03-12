@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"3": "livres",
-		"4": "palette"
+		"3": "am:blocks/livres",
+		"4": "am:blocks/palette"
 	},
 	"elements": [
 		{

@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " C ",
+    " TB",
+    "   "
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:etoffe_gris_clair"
+    },
+    "C":
+    {
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
+    },
+    "T":
+    {
+      "item": "am:cuir_tanne"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:masque_gris_clair",
+    "count": 1
+  }
+}

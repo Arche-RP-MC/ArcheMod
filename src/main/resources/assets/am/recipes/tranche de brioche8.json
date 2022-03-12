@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    " B ",
+    " C "
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:brioche"
+    },
+
+    "C":
+    {
+      "item": "am:couteau_acier",
+      "data":32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:tranche_de_brioche",
+    "count": 4
+  }
+}

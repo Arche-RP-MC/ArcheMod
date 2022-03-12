@@ -3,7 +3,7 @@
 
   "pattern":
   [
-     "   ",
+    "III",
     "BCD",
     " E "
   ],
@@ -21,6 +21,10 @@
     "D":
     {
       "item": "am:orange"
+    },
+    "I":
+    {
+      "item": "minecraft:sugar"
     },
     "E":
     {

@@ -2,12 +2,12 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"1": "blocks/redstone_dust_dot",
-		"2": "blocks/planks_oak",
-		"5": "blocks/iron_block",
-		"7": "blocks/bed_feet_top",
-		"9": "blocks/hardened_clay",
-		"particle": "blocks/redstone_dust_dot"
+		"1": "am:blocks/redstone_dust_dot",
+		"2": "am:blocks/planks_oak",
+		"5": "am:blocks/iron_block",
+		"7": "am:blocks/bed_feet_top",
+		"9": "am:blocks/hardened_clay",
+		"particle": "am:blocks/redstone_dust_dot"
 	},
 	"elements": [
 		{

@@ -12,7 +12,7 @@
   {
     "M":
     {
-      "item": "am:marteau_en_fer",
+      "item": "am:pinces",
       "data": 32767
     },
     "B":
@@ -29,7 +29,7 @@
     },
     "V":
     {
-      "item": "minecraft:glass_pane"
+      "item": "am:verre_en_fusion"
     }
   },
 

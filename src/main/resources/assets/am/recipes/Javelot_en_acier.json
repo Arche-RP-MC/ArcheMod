@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " Z ",
+    " H ",
+    "BH "
+  ],
+
+  "key":
+  {
+    "H":
+    {
+      "item": "am:planche"
+    },
+    "Z":
+    {
+      "item": "am:tete_couteau_acier"
+    },
+    "B":
+    {
+      "item": "am:ciseaux_a_bois",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:javelot_en_acier",
+    "count": 1
+  }
+}

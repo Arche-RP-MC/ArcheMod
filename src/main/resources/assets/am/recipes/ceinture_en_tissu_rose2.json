@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "CL ",
+    "   "
+  ],
+
+  "key":
+  {
+
+    "C":
+    {
+      "item": "am:ceinture_en_tissu_blanc"
+    },
+    "L":
+    {
+      "item": "minecraft:dye",
+      "data": 9
+    }
+  },
+
+  "result":
+  {
+ "item": "am:ceinture_en_tissu_rose",
+    "count": 1
+  }
+}

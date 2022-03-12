@@ -2,9 +2,9 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"3": "cordage",
-		"6": "papier_humide",
-		"particle": "cordage"
+		"3": "am:blocks/cordage",
+		"6": "am:blocks/papier_humide",
+		"particle": "am:blocks/cordage"
 	},
 	"elements": [
 		{

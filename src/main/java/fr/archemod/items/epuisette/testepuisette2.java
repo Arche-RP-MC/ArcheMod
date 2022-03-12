@@ -43,7 +43,7 @@ public class testepuisette2 extends ItemBase {
                         playerIn.dropItem(ModItems.ECREVISSE_ORANGE, 1);
                         break;
                     case 5:
-                        playerIn.dropItem(ModItems.MORCEAU_DE_POULPE_CRU, 1);
+                        playerIn.dropItem(ModItems.POULPE, 1);
                         break;
                 }
 

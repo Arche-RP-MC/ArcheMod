@@ -35,12 +35,18 @@ import java.util.Random;
 
 public class BlockBaril extends BlockBase2 implements ITileEntityProvider {
 
+
+
+
+    public static final PropertyDirection FACING = BlockHorizontal.FACING;
+
     //public static final PropertyInteger SIZE = PropertyInteger.create("size", 0, 15);
 
     public BlockBaril(String name, Material material, float hardness, float resistance, SoundType soundType) {
         super(name, material, hardness, resistance, soundType);
         setTickRandomly(true);
         setCreativeTab(ArcheMod.archeCreativeTabs);
+        //this.setDefaultState(this.blockState.getBaseState().withProperty(FACING,EnumFacing.NORTH));
 
     }
 
@@ -73,6 +79,24 @@ public class BlockBaril extends BlockBase2 implements ITileEntityProvider {
     public IBlockState getStateForPlacement(World worldIn, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer) {
 
         return getDefaultState();
+    }
+    @Override
+    public void onBlockAdded(World worldIn, BlockPos pos, IBlockState state)
+    {
+        if(!worldIn.isRemote)
+        {
+            IBlockState north = worldIn.getBlockState(pos.north());
+            IBlockState south = worldIn.getBlockState(pos.south());
+            IBlockState west = worldIn.getBlockState(pos.west());
+            IBlockState east = worldIn.getBlockState(pos.east());
+            EnumFacing face = (EnumFacing)state.getValue(FACING);
+
+            if (face == EnumFacing.NORTH && north.isFullBlock() && !south.isFullBlock()) face = EnumFacing.SOUTH;
+            else if (face == EnumFacing.SOUTH && south.isFullBlock() && !north.isFullBlock()) face = EnumFacing.NORTH;
+            else if (face == EnumFacing.WEST && west.isFullBlock() && !east.isFullBlock()) face = EnumFacing.EAST;
+            else if (face == EnumFacing.EAST && east.isFullBlock() && !west.isFullBlock()) face = EnumFacing.WEST;
+            worldIn.setBlockState(pos, state.withProperty(FACING, face),2);
+        }
     }
 
     public Item getItemDropped(IBlockState state, Random rand, int fortune) {

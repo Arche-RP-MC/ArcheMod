@@ -2,6 +2,7 @@ package fr.archemod;
 
 
 import fr.archemod.blocks.tileentity.TileEntityFourSechoir;
+import fr.archemod.blocks.tileentity.TileEntityFourSechoir2;
 import fr.archemod.chat.GuiChatListener;
 import fr.archemod.chat.capabilities.description.Description;
 import fr.archemod.chat.capabilities.description.DescriptionStorage;
@@ -12,6 +13,7 @@ import fr.archemod.chat.capabilities.indicator.IArcheChat;
 import fr.archemod.chat.network.indicator.PacketArcheChat;
 import fr.archemod.cmd.HRPCommand;
 import fr.archemod.init.ModRecipes;
+import fr.archemod.init.SechoirViandeRecipe;
 import fr.archemod.network.ArcheNetwork;
 import fr.archemod.proxy.CommonProxy;
 import fr.archemod.util.ArcheCreativeTabs;
@@ -79,7 +81,7 @@ public class ArcheMod {
         ArcheNetwork.NETWORK.registerMessage(PacketArcheChat.ClientHandler.class, PacketArcheChat.class, 6, Side.CLIENT);
         //networkDescription.registerMessage(PacketDescription.ServerHandler.class, PacketDescription.class, 4, Side.SERVER);
         //networkDescription.registerMessage(PacketDescription.ClientHandler.class, PacketDescription.class, 5, Side.CLIENT);
-        GameRegistry.registerTileEntity(TileEntityFourSechoir.class,"am:tile_four_sechoir");
+        GameRegistry.registerTileEntity(TileEntityFourSechoir2.class,"am:TileEntityFourSechoir2");
 
     }
     @Mod.EventHandler
@@ -100,6 +102,7 @@ public class ArcheMod {
     public void init(FMLInitializationEvent event) {
         ArcheNetwork.init();
         ModRecipes.instance.initRecipes();
+
     }
 
     /**

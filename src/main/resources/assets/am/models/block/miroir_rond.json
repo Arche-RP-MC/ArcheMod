@@ -1,10 +1,10 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"3": "blocks/planks_big_oak",
-		"5": "blocks/iron_block",
-		"6": "miroir_en_etain",
-		"particle": "miroir_en_etain"
+		"3": "am:blocks/planks_big_oak",
+		"5": "am:blocks/iron_block",
+		"6": "am:blocks/miroir_en_etain",
+		"particle": "am:blocks/miroir_en_etain"
 	},
 	"elements": [
 		{

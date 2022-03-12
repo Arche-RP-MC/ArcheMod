@@ -17,7 +17,8 @@
     },
     "E":
     {
-      "item": "am:hachoir"
+      "item": "am:hachoir",
+      "data": 32767
     }
   },
 

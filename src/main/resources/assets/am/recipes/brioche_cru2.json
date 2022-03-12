@@ -4,7 +4,7 @@
   "pattern":
   [
     "   ",
-    " BC",
+    "PBC",
     " E "
   ],
 
@@ -13,6 +13,10 @@
     "B":
     {
       "item": "am:pate_a_pain"
+    },
+    "P":
+    {
+      "item": "am:beurre"
     },
     "C":
     {

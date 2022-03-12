@@ -3,9 +3,9 @@
 
   "pattern":
   [
-    " M ",
+    " V ",
     "MJM",
-    "IM "
+    "IG "
   ],
 
   "key":
@@ -17,6 +17,15 @@
     "M":
     {
       "item": "am:bobine_de_bronze"
+    },
+    "V":
+    {
+      "item": "am:verre_en_fusion"
+    },
+    "G":
+    {
+      "item": "am:clous"
+
     },
     "I":
     {

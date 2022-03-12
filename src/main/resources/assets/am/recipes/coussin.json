@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "LML",
+    "NMK"
+  ],
+
+  "key":
+  {
+
+    "N":
+    {
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
+    },
+
+    "L":
+    {
+      "item": "am:etoffe"
+    },
+    "K":
+    {
+      "item": "am:bobine_de_laine"
+    },
+    "M":
+    {
+      "item": "minecraft:feather"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:coussin",
+    "count": 1
+  }
+}

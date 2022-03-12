@@ -21,17 +21,17 @@
     },
     "T":
     {
-      "item": "am:tunique"
+      "item": "am:tunique_blanc"
     },
     "J":
     {
-      "item": "am:jupe"
+      "item": "am:jupe_blanc"
     }
   },
 
   "result":
   {
-    "item": "am:robe",
+    "item": "am:robe_blanc",
     "count": 1
   }
 }

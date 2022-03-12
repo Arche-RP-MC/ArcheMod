@@ -4,8 +4,8 @@
   "pattern":
   [
     " P ",
-    "   ",
-    "   "
+    " C ",
+    " M "
   ],
 
   "key":
@@ -14,6 +14,15 @@
     "P":
     {
         "item": "am:bouteille_de_vin_rouge"
+    },
+    "C":
+    {
+      "item": "minecraft:brown_mushroom"
+    },
+    "M":
+    {
+      "item": "am:mortier_pilon_en_pierre",
+      "data": 32767
     }
   },
 

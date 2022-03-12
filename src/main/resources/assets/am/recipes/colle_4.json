@@ -5,7 +5,7 @@
   [
     "LLL",
     "CLL",
-    "FLL"
+    "MLL"
   ],
 
   "key":
@@ -14,9 +14,10 @@
     {
       "item": "minecraft:water_bucket"
     },
-    "F":
+    "M":
     {
-      "item": "am:flacon"
+      "item": "am:mortier_pilon_en_pierre",
+      "data": 32767
     },
     "L":
     {
@@ -27,6 +28,6 @@
   "result":
   {
     "item": "am:colle",
-    "count": 8
+    "count": 4
   }
 }

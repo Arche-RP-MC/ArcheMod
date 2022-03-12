@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "  G",
+    "FNG",
+    "   "
+  ],
+
+  "key":
+  {
+    "N":
+    {
+      "item": "am:laniere_de_cuir"
+    },
+    "G":
+    {
+      "item": "am:cuir_tanne"
+    },
+    "F":
+    {
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:corsage",
+    "count": 1
+  }
+}

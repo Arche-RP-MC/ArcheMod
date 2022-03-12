@@ -1,8 +1,7 @@
-package fr.archemod.blocks.container;
+/*package fr.archemod.blocks.container;
 
-import fr.archemod.blocks.slot.SlotOutput;
-import fr.archemod.blocks.slot.SlotSingleItem;
 import fr.archemod.blocks.tileentity.TileEntityFourSechoir;
+import fr.archemod.blocks.tileentity.TileEntityFourSechoir2;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.init.Blocks;
@@ -22,7 +21,7 @@ public class ContainerFourSechoir extends Container
     private int	timePassed = 0;
     private int	burnTimeLeft = 0;
 
-    public ContainerFourSechoir(TileEntityFourSechoir tile, InventoryPlayer playerInventory) {
+    public ContainerFourSechoir(InventoryPlayer tile, TileEntityFourSechoir2 playerInventory) {
         this.tile = tile;
 
         int i;
@@ -115,3 +114,4 @@ public class ContainerFourSechoir extends Container
     }
 
 }
+*/

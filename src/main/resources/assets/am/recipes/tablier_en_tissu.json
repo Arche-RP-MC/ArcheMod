@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " M ",
+    "LML",
+    "N  "
+  ],
+
+  "key":
+  {
+
+    "N":
+    {
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
+    },
+
+    "L":
+    {
+      "item": "am:bobine_de_laine"
+    },
+    "M":
+    {
+      "item": "am:etoffe"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:tablier_en_cuir",
+    "count": 1
+  }
+}

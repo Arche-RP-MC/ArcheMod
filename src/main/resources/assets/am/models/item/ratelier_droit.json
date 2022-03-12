@@ -2,16 +2,16 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"1": "blocks/redstone_dust_dot",
-		"2": "blocks/planks_oak",
-		"4": "blocks/hardened_clay_stained_red",
-		"5": "blocks/iron_block",
-		"6": "blocks/log_big_oak",
-		"7": "blocks/redstone_dust_linee",
-		"8": "blocks/planks_spruce",
-		"1_5": "blocks/iron_block",
-		"2_5": "blocks/item_frame_sides 2",
-		"texture": "custom/palette1"
+		"1": "am:blocks/redstone_dust_dot",
+		"2": "am:blocks/planks_oak",
+		"4": "am:blocks/hardened_clay_stained_red",
+		"5": "am:blocks/iron_block",
+		"6": "am:blocks/log_big_oak",
+		"7": "am:blocks/redstone_dust_linee",
+		"8": "am:blocks/planks_spruce",
+		"1_5": "am:blocks/iron_block",
+		"2_5": "am:blocks/item_frame_sides 2",
+		"texture": "am:blocks/palette1"
 	},
 	"elements": [
 		{

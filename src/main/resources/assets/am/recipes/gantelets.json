@@ -12,11 +12,11 @@
   {
     "B":
     {
-      "item": "am:bobine_de_fil"
+      "item": "am:clous"
     },
     "C":
     {
-      "item": "am:ciseaux_de_couture",
+      "item": "am:marteau_en_fer",
       "data": 32767
     },
     "P":

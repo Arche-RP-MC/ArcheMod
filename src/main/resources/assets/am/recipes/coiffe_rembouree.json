@@ -4,8 +4,8 @@
   "pattern":
   [
     "   ",
-    "CLL",
-    " LK"
+    "CRR",
+    " RK"
   ],
 
   "key":
@@ -19,10 +19,11 @@
     {
       "item": "am:laine_brute"
     },
-    "L":
+    "R":
     {
-      "item": "am:etoffe"
+      "item": "am:cuir_tanne"
     }
+
   },
 
   "result":

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    " C ",
+    "EEE"
+  ],
+
+  "key":
+  {
+    "C":
+    {
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
+    },
+    "E":
+    {
+      "item": "am:etoffe_violette"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:mouchoir_violet",
+    "count": 3
+  }
+}

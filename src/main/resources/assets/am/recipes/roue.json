@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "LCL",
+    "GAG",
+    "LOL"
+  ],
+
+  "key":
+  {
+
+    "A":
+    {
+      "item": "am:rouage"
+    },
+    "C":
+    {
+      "item": "am:clous"
+    },
+    "O":
+    {
+      "item": "am:marteau_en_fer",
+      "data": 32767
+    },
+    "G":
+    {
+      "item": "am:planche"
+    },
+
+    "L":
+     {
+      "item": "minecraft:stick"
+
+    }
+  },
+
+  "result":
+  {
+    "item": "astikorcarts:wheel",
+    "count": 1
+  }
+}

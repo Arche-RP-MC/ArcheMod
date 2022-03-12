@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "BCB",
+    " T ",
+    " J "
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:bobine_de_fil"
+    },
+    "C":
+    {
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
+    },
+    "T":
+    {
+      "item": "am:tunique_marron"
+    },
+    "J":
+    {
+      "item": "am:jupe_marron"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:robe_marron",
+    "count": 1
+  }
+}

@@ -3,7 +3,7 @@
 
   "pattern":
   [
-    "   ",
+    "III",
     "BCD",
     " E "
   ],
@@ -13,6 +13,10 @@
     "B":
     {
       "item": "am:cassis"
+    },
+    "I":
+    {
+      "item": "minecraft:sugar"
     },
     "C":
     {

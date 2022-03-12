@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "EEE",
+    "LCL",
+    "EEE"
+  ],
+
+  "key":
+  {
+    "E":
+    {
+      "item": "am:etoffe_vert_clair"
+    },
+    "L":
+    {
+      "item": "am:laniere_de_cuir"
+    },
+    "C":
+    {
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:sac_de_couchage_vert_clair",
+    "count": 1
+  }
+}

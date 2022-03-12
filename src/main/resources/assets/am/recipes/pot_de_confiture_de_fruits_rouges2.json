@@ -3,7 +3,7 @@
 
   "pattern":
   [
-     "   ",
+    "III",
     "BBB",
     " E "
   ],
@@ -13,6 +13,10 @@
     "B":
     {
       "item": "am:fraise"
+    },
+    "I":
+    {
+      "item": "minecraft:sugar"
     },
 
     "E":

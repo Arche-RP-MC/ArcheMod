@@ -526,7 +526,7 @@ public class ModBlocks {
     public static final Block PLAN_BLE = new BlockPlanLin("plan_ble",ModItems.GRAINE_BLE, ModItems.BLE);
     public static final Block PLAN_THYM = new BlockPlanLin("plan_thym",ModItems.GRAINE_THYM, ModItems.THYM);
 
-    public static final Block PLAN_BASILIC= new BlockPlanLin("plan_basilic",ModItems.GRAINE_BASILIC, ModItems.BASILIC);
+    /*public static final Block PLAN_BASILIC= new BlockPlanLin("plan_basilic",ModItems.GRAINE_BASILIC, ModItems.BASILIC);
     public static final Block PLAN_ANETH= new BlockPlanLin("plan_aneth",ModItems.GRAINE_ANETH, ModItems.ANETH);
     public static final Block PLAN_ANIS= new BlockPlanLin("plan_anis",ModItems.GRAINE_ANIS, ModItems.ANIS);
     public static final Block PLAN_BELLE_DE_NUIT= new BlockPlanLin("plan_belle_de_nuit",ModItems.GRAINE_BELLE_DE_NUIT, ModItems.BELLE_DE_NUIT);
@@ -578,7 +578,7 @@ public class ModBlocks {
     public static final Block PLAN_VERGE_D_OR= new BlockPlanLin("plan_verge_d_or",ModItems.GRAINE_VERGE_D_OR, ModItems.VERGE_D_OR);
     public static final Block PLAN_VERVEINE= new BlockPlanLin("plan_verveine",ModItems.GRAINE_VERVEINE, ModItems.VERVEINE);
     public static final Block PLAN_VIOLETTES= new BlockPlanLin("plan_violettes",ModItems.GRAINE_VIOLETTES, ModItems.VIOLETTES);
-
+*/
 
 
 
@@ -606,8 +606,8 @@ public class ModBlocks {
    // BLOCS CONTENEUR 3D
 
     //public static final Block BIBLIOTHEQUE = new BlockBase2("bibliotheque", Material.ROCK, 5F, 5F, SoundType.STONE);
-    //public static final Block ETAGERE_A_ROULEAUX = new BlockBase2("etagere_a_rouleaux", Material.ROCK, 5F, 5F, SoundType.STONE);
-    //public static final Block RANGE_BOUTEILLE = new BlockBase2("range_bouteille", Material.ROCK, 5F, 5F, SoundType.STONE);
+    // static final Block ETAGERE_A_ROULEAUX = new BlockBase2("etagere_a_rouleaux", Material.ROCK, 5F, 5F, SoundType.STONE);
+   //public static final Block RANGE_BOUTEILLE = new BlockBase2("range_bouteille", Material.ROCK, 5F, 5F, SoundType.STONE);
     //public static final Block RATELIER_DROIT = new BlockBase2("ratelier_droit", Material.ROCK, 5F, 5F, SoundType.STONE);
 
     // BLOC 3D JEU
@@ -632,25 +632,36 @@ public class ModBlocks {
 
     public static final Block PIEGE_A_LOUP = new BlockBase2("piege_a_loup", Material.ROCK, 5F, 5F, SoundType.STONE);
     public static final Block PORTE_MANTEAUX = new BlockBase2("porte_manteaux", Material.ROCK, 5F, 5F, SoundType.STONE);
-    /*public static final Block BALANCOIRE_A_OISEAU = new BlockBase2("balancoire_a_oiseau", Material.ROCK, 5F, 5F, SoundType.STONE);
-    public static final Block BALISTE = new BlockBase2("baliste", Material.ROCK, 5F, 5F, SoundType.STONE);
+   // public static final Block AMPHORE = new BlockBase2("amphore", Material.ROCK, 5F, 5F, SoundType.STONE);
+    //public static final Block ARMOIRE = new BlockBase2("armoire", Material.WOOD, 5F, 5F, SoundType.WOOD);
+    //public static final Block COFFRE_EN_BOIS = new BlockBase2("coffre_en_bois", Material.WOOD, 5F, 5F, SoundType.WOOD);
+    //public static final Block COUPE_DE_FRUITS = new BlockBase2("coupe_de_fruits", Material.WOOD, 5F, 5F, SoundType.WOOD);
+    //public static final Block MEUBLE_HAUT = new BlockBase2("meuble_haut", Material.WOOD, 5F, 5F, SoundType.WOOD);
+    //public static final Block NASSE_A_POISSON = new BlockBase2("nasse_a_poisson", Material.WOOD, 5F, 5F, SoundType.WOOD);
+    //public static final Block RIDEAU_SIMPLE = new BlockBase2("rideau_simple", Material.CLOTH, 5F, 5F, SoundType.CLOTH);
+    //public static final Block RIDEAUX_DOUBLES = new BlockBase2("rideaux_doubles", Material.CLOTH, 5F, 5F, SoundType.CLOTH);
+    //public static final Block SAC_DE_DEBRIS = new BlockBase2("sac_de_debris", Material.ROCK, 5F, 5F, SoundType.STONE);
+    //public static final Block TABLE_DE_CHEVET = new BlockBase2("table_de_chevet", Material.WOOD, 5F, 5F, SoundType.WOOD);
+    //public static final Block TABOURET_EN_CUIR = new BlockBase2("tabouret_en_cuir", Material.WOOD, 5F, 5F, SoundType.WOOD);
+    //public static final Block VASE = new BlockBase2("vase", Material.WOOD, 5F, 5F, SoundType.WOOD);
+    //public static final Block BALANCOIRE_A_OISEAU = new BlockBase2("balancoire_a_oiseau", Material.ROCK, 5F, 5F, SoundType.STONE);
 
-    public static final Block CHAISE = new BlocChaise2("chaise", Material.WOOD, 5F, 5F, SoundType.WOOD);
-    public static final Block CLOCHE = new BlockBase2("cloche", Material.ROCK, 5F, 5F, SoundType.STONE);
 
-    public static final Block FAUTEUIL = new BlockBase2("fauteuil", Material.ROCK, 5F, 5F, SoundType.STONE);
+    //public static final Block CHAISE = new BlocChaise2("chaise", Material.WOOD, 5F, 5F, SoundType.WOOD);
+
+    //public static final Block FAUTEUIL = new BlockBase2("fauteuil", Material.ROCK, 5F, 5F, SoundType.STONE);
 
 
-    public static final Block MIROIR_DROIT = new BlockBase2("miroir_droit", Material.ROCK, 5F, 5F, SoundType.STONE);
-    public static final Block MIROIR_ROND = new BlockBase2("miroir_rond", Material.ROCK, 5F, 5F, SoundType.STONE);
-    public static final Block PIEGE = new BlockBase2("piege", Material.ROCK, 5F, 5F, SoundType.STONE);
+    //public static final Block MIROIR_DROIT = new BlockBase2("miroir_droit", Material.ROCK, 5F, 5F, SoundType.STONE);
+    //public static final Block MIROIR_ROND = new BlockBase2("miroir_rond", Material.ROCK, 5F, 5F, SoundType.STONE);
+    //public static final Block PIEGE = new BlockBase2("piege", Material.ROCK, 5F, 5F, SoundType.STONE);
 
-    public static final Block SECHOIR_PLANTES = new BlockBase2("sechoir_plantes", Material.ROCK, 5F, 5F, SoundType.STONE);
-    public static final Block SECHOIR_POISSON = new BlockBase2("sechoir_poisson", Material.ROCK, 5F, 5F, SoundType.STONE);
-    public static final Block SECHOIR_SIMPLE_PAPIER = new BlockBase2("sechoir_simple_papier", Material.ROCK, 5F, 5F, SoundType.STONE);
-    public static final Block SECHOIR_VIANDES = new BlockBase2("sechoir_viandes", Material.ROCK, 5F, 5F, SoundType.STONE);
+    //public static final Block SECHOIR_PLANTES = new BlockBase2("sechoir_plantes", Material.ROCK, 5F, 5F, SoundType.STONE);
+    //public static final Block SECHOIR_POISSON = new BlockBase2("sechoir_poisson", Material.ROCK, 5F, 5F, SoundType.STONE);
+    //public static final Block SECHOIR_SIMPLE_PAPIER = new BlockBase2("sechoir_simple_papier", Material.ROCK, 5F, 5F, SoundType.STONE);
+    //public static final Block SECHOIR_VIANDES = new BlockBase2("sechoir_viandes", Material.ROCK, 5F, 5F, SoundType.STONE);
 
-     */
+
 
 
 //gateau
@@ -670,15 +681,16 @@ public class ModBlocks {
 
 //fours
 
-    public static final Block SECHOIR_VIANDE = new BlockFourSechoir("sechoir_viande", Material.ROCK, 5F, 5F, SoundType.STONE);
+    public static final Block SECHOIR_VIANDE = new BlockFourSechoir2("sechoir_viandes");
     //public static final Block SECHOIR_PLANTES = new BlockBase2("sechoir_plantes", Material.ROCK, 5F, 5F, SoundType.STONE);
     //public static final Block SECHOIR_POISSON = new BlockBase2("sechoir_poisson", Material.ROCK, 5F, 5F, SoundType.STONE);
     //public static final Block SECHOIR_SIMPLE_PAPIER = new BlockBase2("sechoir_simple_papier", Material.ROCK, 5F, 5F, SoundType.STONE);
     //public static final Block SECHOIR_VIANDES = new BlockBase2("sechoir_viandes", Material.ROCK, 5F, 5F, SoundType.STONE);
 
 
+// BLOC Pour CHisel
 
-
+    //public static final Block FULLGLASS = new BlockVitre(Material.GLASS);
 
 
 
@@ -688,8 +700,8 @@ public class ModBlocks {
      */
     public static void init(){
         //dalles
-        DALLE_LAINE_MAGENTA = new DalleLaineMagenta.Half("dalle_laine_magenta",1F,1F, Material.CLOTH, SoundType.CLOTH);
-        DALLE_LAINE_MAGENTA_DOUBLE_SLAB = new DalleLaineMagenta.Double("dalle_laine_magenta_double_slab",1F,1F, Material.CLOTH, SoundType.CLOTH);
+       // DALLE_LAINE_MAGENTA = new DalleLaineMagenta.Half("dalle_laine_magenta",1F,1F, Material.CLOTH, SoundType.CLOTH);
+        //DALLE_LAINE_MAGENTA_DOUBLE_SLAB = new DalleLaineMagenta.Double("dalle_laine_magenta_double_slab",1F,1F, Material.CLOTH, SoundType.CLOTH);
         /*DALLE_LAINE_BLEU = new DalleLaineBleu.Half("dalle_laine_bleu",1F,1F, Material.CLOTH, SoundType.CLOTH);
         DALLE_LAINE_BLEU_DOUBLE_SLAB = new DalleLaineBleu.Double("dalle_laine_bleu_double_slab",1F,1F, Material.CLOTH, SoundType.CLOTH);*/
 
@@ -722,7 +734,7 @@ public class ModBlocks {
         ModItems.GRAINE_BLE = new ItemGraine("graine_ble",ModBlocks.PLAN_BLE, Blocks.FARMLAND);
         ModItems.GRAINE_THYM = new ItemGraine("graine_thym",ModBlocks.PLAN_THYM, Blocks.FARMLAND);
         //ModItems.GRAINE_CHANVRE = new ItemGraine("GRAINE_CHANVRE",ModBlocks.PLAN_CHANVRE, Blocks.FARMLAND);
-        ModItems.GRAINE_BASILIC = new ItemGraine("graine_basilic",ModBlocks.PLAN_BASILIC, Blocks.FARMLAND);
+        /*ModItems.GRAINE_BASILIC = new ItemGraine("graine_basilic",ModBlocks.PLAN_BASILIC, Blocks.FARMLAND);
         ModItems.GRAINE_ANETH = new ItemGraine("graine_aneth",ModBlocks.PLAN_ANETH, Blocks.FARMLAND);
         ModItems.GRAINE_ANIS = new ItemGraine("graine_anis",ModBlocks.PLAN_ANIS, Blocks.FARMLAND);
         ModItems.GRAINE_BELLE_DE_NUIT = new ItemGraine("graine_belle_de_nuit",ModBlocks.PLAN_BELLE_DE_NUIT, Blocks.FARMLAND);
@@ -774,7 +786,7 @@ public class ModBlocks {
         ModItems.GRAINE_VERGE_D_OR = new ItemGraine("graine_verge_d_or",ModBlocks.PLAN_VERGE_D_OR, Blocks.FARMLAND);
         ModItems.GRAINE_VERVEINE = new ItemGraine("graine_verveine",ModBlocks.PLAN_VERVEINE, Blocks.FARMLAND);
         ModItems.GRAINE_VIOLETTES = new ItemGraine("graine_violettes",ModBlocks.PLAN_VIOLETTES, Blocks.FARMLAND);
-
+*/
     }
 
     /**
@@ -786,8 +798,8 @@ public class ModBlocks {
         //dalles
 
 
-        registerBlock(DALLE_LAINE_MAGENTA, new ItemSlab(DALLE_LAINE_MAGENTA,DALLE_LAINE_MAGENTA,DALLE_LAINE_MAGENTA_DOUBLE_SLAB));
-        ForgeRegistries.BLOCKS.register(DALLE_LAINE_MAGENTA_DOUBLE_SLAB);
+        //registerBlock(DALLE_LAINE_MAGENTA, new ItemSlab(DALLE_LAINE_MAGENTA,DALLE_LAINE_MAGENTA,DALLE_LAINE_MAGENTA_DOUBLE_SLAB));
+       // ForgeRegistries.BLOCKS.register(DALLE_LAINE_MAGENTA_DOUBLE_SLAB);
         //registerBlock(DALLE_LAINE_BLEU, new ItemSlab(DALLE_LAINE_BLEU,DALLE_LAINE_BLEU,DALLE_LAINE_BLEU_DOUBLE_SLAB));
        // ForgeRegistries.BLOCKS.register(DALLE_LAINE_BLEU_DOUBLE_SLAB);
 
@@ -824,7 +836,7 @@ public class ModBlocks {
 
         registerItem(ModItems.GRAINE_DE_THE);
 
-        registerItem(ModItems.GRAINE_BASILIC);
+        /*registerItem(ModItems.GRAINE_BASILIC);
         registerItem(ModItems.GRAINE_ANETH);
         registerItem(ModItems.GRAINE_ANIS);
         registerItem(ModItems.GRAINE_BELLE_DE_NUIT);
@@ -876,7 +888,7 @@ public class ModBlocks {
         registerItem(ModItems.GRAINE_VERGE_D_OR);
         registerItem(ModItems.GRAINE_VERVEINE);
         registerItem(ModItems.GRAINE_VIOLETTES);
-
+*/
     }
 
     public static void registerBlock(Block block){

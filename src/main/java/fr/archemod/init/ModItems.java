@@ -5,6 +5,7 @@ package fr.archemod.init;
 import fr.archemod.items.*;
 import fr.archemod.items.agriculture.GraineBle;
 import fr.archemod.items.agriculture.GraineOrge;
+import fr.archemod.items.agriculture.Poulpe;
 import fr.archemod.items.epuisette.Epuisette;
 import fr.archemod.items.epuisette.Epuisette2;
 import fr.archemod.items.epuisette.testepuisette2;
@@ -109,17 +110,22 @@ public class ModItems {
     public static final Item MAILLE_DE_FER = new ItemBase("maille_de_fer");
     public static final Item MAILLE_D_ACIER = new ItemBase("maille_d_acier");
     public static final Item CADRE_EN_BOIS = new ItemBase("cadre_en_bois");
-
+    public static final Item GRANDE_CUILLERE_EN_BOIS = new ItemBase("grande_cuilliere_en_bois");
+    public static final Item LOUCHE_EN_BOIS = new ItemBase("louche_en_bois");
+    public static final Item LOUCHE_EN_FER = new ItemBase("louche_en_fer");
+    public static final Item COUTEAU_DE_TABLE_EN_BOIS = new ItemBase("couteau_de_table_en_bois");
+    public static final Item CUILLERE_EN_BOIS = new ItemBase("cuilliere_en_bois");
+    public static final Item FOURCHETTE_EN_BOIS = new ItemBase("fourchette_en_bois");
 
 
     //OUTILS
 
 
     public static final Item LIME_EN_FER = new OutilsEnFer("lime_en_fer");
-    public static final Item LIME_EN_BRONZE = new OutilsEnBronze("lime_en_bronze");
+   // public static final Item LIME_EN_BRONZE = new OutilsEnBronze("lime_en_bronze");
     public static final Item LIME_EN_ACIER = new OutilsEnAcier("lime_en_acier");
     public static final Item MARTEAU_EN_FER = new OutilsEnFer("marteau_en_fer");
-    public static final Item MARTEAU_EN_BRONZE = new OutilsEnBronze("marteau_en_bronze");
+    //public static final Item MARTEAU_EN_BRONZE = new OutilsEnBronze("marteau_en_bronze");
     public static final Item MARTEAU_EN_ACIER = new OutilsEnAcier("marteau_en_acier");
     public static final Item PINCES = new OutilsEnFer("pinces");
     public static final Item COUTEAU_EN_FER = new OutilsEnFer("couteau_en_fer");
@@ -135,9 +141,9 @@ public class ModItems {
     public static final Item PIOLET = new OutilsEnFer("piolet");
     public static final Item SPATULE = new OutilsEnFer("spatule");
     public static final Item TROUSSE_D_INGENIEUR_EN_ACIER = new OutilsEnAcier("trousse_d_ingenieur_en_acier");
-    public static final Item TROUSSE_D_INGENIEUR_EN_BRONZE = new OutilsEnBronze("trousse_d_ingenieur_en_bronze");
+    //public static final Item TROUSSE_D_INGENIEUR_EN_BRONZE = new OutilsEnBronze("trousse_d_ingenieur_en_bronze");
     public static final Item TROUSSE_D_INGENIEUR_EN_FER = new OutilsEnFer("trousse_d_ingenieur_en_fer");
-    public static final Item SCIE_EN_BRONZE = new OutilsEnBronze("scie_en_bronze");
+    //public static final Item SCIE_EN_BRONZE = new OutilsEnBronze("scie_en_bronze");
     public static final Item SCIE_EN_FER = new OutilsEnFer("scie_en_fer");
     public static final Item SCIE_EN_ACIER = new OutilsEnAcier("scie_en_acier");
     public static final Item COUTEAU_BRONZE = new OutilsEnBronze("couteau_bronze");
@@ -145,7 +151,7 @@ public class ModItems {
     public static final Item CISEAUX_DE_COUTURE = new OutilsEnFer("ciseaux_de_couture");
     public static final Item BALAI = new Consomable2("balai");
     public static final Item CANNE_DE_VERRIER = new OutilsEnFer("canne_de_verrier");
-    public static final Item MARTEAU_BURIN_EN_BRONZE = new OutilsEnBronze("marteau_burin_en_bronze");
+    //public static final Item MARTEAU_BURIN_EN_BRONZE = new OutilsEnBronze("marteau_burin_en_bronze");
     public static final Item MARTEAU_BURIN_EN_FER = new OutilsEnFer("marteau_burin_en_fer");
     public static final Item MARTEAU_BURIN_EN_ACIER = new OutilsEnAcier("marteau_burin_en_acier");
     public static final Item SERPE_EN_BRONZE = new OutilsEnBronze("serpe_en_bronze");
@@ -409,15 +415,19 @@ public class ModItems {
     public static final Item HALLEBARDE_EN_FER = new ToolSword("hallebarde_en_fer",Item.ToolMaterial.IRON);
     public static final Item HALLEBARDE_EN_ACIER = new ToolSword("hallebarde_en_acier",Item.ToolMaterial.IRON);
     public static final Item BATON_DE_COMBAT = new ToolSword("baton_de_combat",Item.ToolMaterial.IRON);
+    public static final Item JAVELOT_EN_BOIS = new ToolSword("javelot_en_bois",Item.ToolMaterial.IRON);
+    public static final Item JAVELOT_EN_BRONZE = new ToolSword("javelot_en_bronze",Item.ToolMaterial.IRON);
+    public static final Item JAVELOT_EN_FER = new ToolSword("javelot_en_fer",Item.ToolMaterial.IRON);
+    public static final Item JAVELOT_EN_ACIER = new ToolSword("javelot_en_acier",Item.ToolMaterial.IRON);
     //public static final Item BATON_DE_MARCHE = new ToolSword("baton_de_marche",Item.ToolMaterial.IRON);
 
 
     //SECOND PART
     public static final Item AIGUILLE = new Consommables("aiguille");
-    public static final Item COUTEAU_EN_OR = new ItemBase("couteau_en_or");
-    public static final Item COUTEAU_EN_ARGENT = new ItemBase("couteau_en_argent");
-    public static final Item COUTEAU_EN_BOIS = new ItemBase("couteau_en_bois");
-    public static final Item COUTEAU_EN_ETAIN = new ItemBase("couteau_en_etain");
+    public static final Item COUTEAU_EN_OR = new OutilsEnFer("couteau_en_or");
+    public static final Item COUTEAU_EN_ARGENT = new OutilsEnFer("couteau_en_argent");
+    public static final Item COUTEAU_EN_BOIS = new OutilsEnFer("couteau_en_bois");
+    public static final Item COUTEAU_EN_ETAIN = new OutilsEnFer("couteau_en_etain");
     public static final Item AFFICHE = new ItemBase("affiche");
     public static final Item AIGUE_MARINE_TAILLE_ASSCHER = new ItemBase("aigue_marine_taille_asscher");
     public static final Item AIGUE_MARINE_TAILLE_BAGUETTE = new ItemBase("aigue_marine_taille_baguette");
@@ -487,7 +497,7 @@ public class ModItems {
     public static final Item BOBINE_EN_BOIS = new ItemBase("bobine_en_bois");
     public static final Item BOCAL = new ItemBase("bocal");
     public static final Item BOITE = new ItemBase("boite");
-    public static final Item BOITE_A_POUDRE = new Savon("boite_a_poudre");
+    public static final Item BOITE_A_POUDRE = new ItemBase("boite_a_poudre");
     public static final Item BOL_EN_ARGILE = new ItemBase("bol_en_argile");
     public static final Item BOL_EN_ARGILE_CRUE = new ItemBase("bol_en_argile_crue");
     public static final Item BOL_SALE = new ItemBase("bol_sale");
@@ -608,6 +618,10 @@ public class ModItems {
     public static final Item CORNE_DE_BRUME = new ItemBase("corne_de_brume");
     public static final Item COUTEAU_DE_TABLE_EN_FER = new ItemBase("couteau_de_table_en_fer");
     public static final Item COQUILLE_D_OEUF = new ItemBase("coquille_d_oeuf");
+    public static final Item TABLIER_EN_CUIR = new ItemBase("tablier_en_cuir");
+    public static final Item TABLIER_EN_TISSU = new ItemBase("tablier_en_tissu");
+
+    public static final Item COUSSIN = new ItemBase("coussin");
 
     //public static final Item COURONNE_EN_OR = new ItemBase("couronne_en_or");
 
@@ -865,7 +879,7 @@ public class ModItems {
     public static Item GRAINE_PAVOT;
     public static Item GRAINE_THYM;
 
-    public static Item GRAINE_BASILIC;
+    /*public static Item GRAINE_BASILIC;
     public static Item GRAINE_ANETH;
     public static Item GRAINE_ANIS;
     public static Item GRAINE_BELLE_DE_NUIT;
@@ -917,13 +931,13 @@ public class ModItems {
     public static Item GRAINE_VERGE_D_OR;
     public static Item GRAINE_VERVEINE;
     public static Item GRAINE_VIOLETTES;
-
+*/
 
     public static final Item GRAINE_DE_PAVOT = new ItemBase("graine_de_pavot");
 
     //Item 2
 
-    public static final Item POULPE = new ItemBase("poulpe");
+    public static final Item POULPE = new Poulpe("poulpe");
     public static final Item GRAMMA_LORETO = new ItemBase("gramma_loreto");
     public static final Item GRAND_HEAUME = new ItemBase("grand_heaume");
     public static final Item GRAND_MIROIR = new ItemBase("grand_miroir");
@@ -997,7 +1011,7 @@ public class ModItems {
     public static final Item MIROIR_A_MAIN_EN_ETAIN = new ItemBase("miroir_a_main_en_etain");
     public static final Item MIROIR_DECORE = new ItemBase("miroir_decore");
     public static final Item MIROIR_EN_ETAIN = new ItemBase("miroir_en_etain");
-    public static final Item MOLTEN_GLASS = new ItemBase("molten_glass");
+    //public static final Item MOLTEN_GLASS = new ItemBase("molten_glass");
     public static final Item MORTIER = new ItemBase("mortier");
     public static final Item MOUCHOIR = new ItemBase("mouchoir");
     public static final Item NACRE = new ItemBase("nacre");
@@ -1230,7 +1244,7 @@ public class ModItems {
     public static final Item TABAC = new Savon("tabac");
 
     public static final Item TETE_BURIN_ACIER = new ItemBase("tete_burin_acier");
-    public static final Item TETE_BURIN_BRONZE = new ItemBase("tete_burin_bronze");
+   // public static final Item TETE_BURIN_BRONZE = new ItemBase("tete_burin_bronze");
     public static final Item TETE_BURIN_FER = new ItemBase("tete_burin_fer");
     public static final Item TETE_COUTEAU_ACIER = new ItemBase("tete_couteau_acier");
     public static final Item TETE_COUTEAU_FER = new ItemBase("tete_couteau_fer");
@@ -1266,9 +1280,9 @@ public class ModItems {
     public static final Item TETE_LANCE_FER = new ItemBase("tete_lance_fer");
     public static final Item TETE_LANCE_OR = new ItemBase("tete_lance_or");
     public static final Item TETE_LIME_ACIER = new ItemBase("tete_lime_acier");
-    public static final Item TETE_LIME_BRONZE = new ItemBase("tete_lime_bronze");
+    //public static final Item TETE_LIME_BRONZE = new ItemBase("tete_lime_bronze");
     public static final Item TETE_LIME_FER = new ItemBase("tete_lime_fer");
-    public static final Item TETE_MARTEAU_BRONZE = new ItemBase("tete_marteau_bronze");
+   // public static final Item TETE_MARTEAU_BRONZE = new ItemBase("tete_marteau_bronze");
     public static final Item TETE_MARTEAU_ACIER = new ItemBase("tete_marteau_acier");
    // public static final Item TETE_MARTEAU_DE_GUERRE_ACIER = new ItemBase("tete_marteau_de_guerre_acier");
     //ublic static final Item TETE_MARTEAU_DE_GUERRE_FER = new ItemBase("tete_marteau_de_guerre_fer");
@@ -1276,7 +1290,7 @@ public class ModItems {
     public static final Item TETE_MARTEAU_GUERRE_OR = new ItemBase("tete_marteau_guerre_or");
     public static final Item TETE_MARTEAU_OR = new ItemBase("tete_marteau_or");
     public static final Item TETE_MASSE_ACIER = new ItemBase("tete_masse_acier");
-    public static final Item TETE_MASSE_BRONZE = new ItemBase("tete_masse_bronze");
+    //public static final Item TETE_MASSE_BRONZE = new ItemBase("tete_masse_bronze");
     public static final Item TETE_MASSE_FER = new ItemBase("tete_masse_fer");
     public static final Item TETE_FOURCHE_FER = new ItemBase("tete_fourche_fer");
     public static final Item TETE_MASSE_OR = new ItemBase("tete_masse_or");
@@ -1365,8 +1379,63 @@ public class ModItems {
     public static final Item BOUTEILLE_DE_PARFUM_VIDE = new ItemBase("bouteille_de_parfum_vide");
     public static final Item BOUTEILLE_ALCOOL_PUR = new Consommables("bouteille_alcool_pur");
     public static final Item THYM = new ItemBase("thym");
+    public static final Item CORNE = new ItemBase("corne");
+    public static final Item FOURREAU = new ItemBase("fourreau");
+    public static final Item FOURREAU_COURT = new ItemBase("fourreau_court");
+    public static final Item POULPE_MORT = new ItemBase("poulpe_mort");
 
-    //seaux et verres
+   // Bijoux
+   public static final Item TORQUE_OR=new ItemBase("torque_or");
+ public static final Item TORQUE_ARGENT=new ItemBase("torque_argent");
+ public static final Item BROCHE_OR=new ItemBase("broche_or");
+ public static final Item BROCHE_ARGENT=new ItemBase("broche_argent");
+ public static final Item BROCHE_IVOIRE=new ItemBase("broche_ivoire");
+ public static final Item CHEVALIERE_OR=new ItemBase("chevaliere_or");
+ public static final Item CHEVALIERE_ARGENT=new ItemBase("chevaliere_argent");
+ public static final Item DIADEME_OR=new ItemBase("diademe_or");
+ public static final Item DIADEME_ARGENT=new ItemBase("diademe_argent");
+ public static final Item BRACELET_PERLE=new ItemBase("bracelet_perle");
+
+ public static final Item FIL_OR=new ItemBase("fil_or");
+ public static final Item FIL_ARGENT=new ItemBase("fil_argent");
+
+
+ public static final Item ANNEAU_BOIS=new ItemBase("anneau_bois");
+ public static final Item BRACELET_CUIR=new ItemBase("bracelet_cuir");
+ public static final Item GRIFFE_DE_SERTISSAGE=new ItemBase("griffe_de_sertissage");
+ public static final Item FERMOIR=new ItemBase("fermoir");
+ public static final Item FEUILLE_OR=new ItemBase("feuille_or");
+ public static final Item FEUILLE_ARGENT=new ItemBase("feuille_argent");
+ public static final Item POINTE_OR=new ItemBase("pointe_or");
+ public static final Item POINTE_ARGENT=new ItemBase("pointe_argent");
+
+
+ // Bijoux SERTIS
+ public static final Item TORQUE_OR_SERTIE=new ItemBase("torque_or_sertie");
+ public static final Item TORQUE_ARGENT_SERTIE=new ItemBase("torque_argent_sertie");
+ public static final Item BROCHE_OR_SERTIE=new ItemBase("broche_or_sertie");
+ public static final Item BROCHE_ARGENT_SERTIE=new ItemBase("broche_argent_sertie");
+ public static final Item BROCHE_IVOIRE_SERTIE=new ItemBase("broche_ivoire_sertie");
+ public static final Item CHEVALIERE_OR_SERTIE=new ItemBase("chevaliere_or_sertie");
+ public static final Item CHEVALIERE_ARGENT_SERTIE=new ItemBase("chevaliere_argent_sertie");
+ public static final Item DIADEME_OR_SERTIE=new ItemBase("diademe_or_sertie");
+ public static final Item DIADEME_ARGENT_SERTIE=new ItemBase("diademe_argent_sertie");
+ public static final Item BAGUE_EN_OR_SERTIE=new ItemBase("bague_en_or_sertie");
+ public static final Item BAGUE_EN_ARGENT_SERTIE=new ItemBase("bague_en_argent_sertie");
+ public static final Item COLLIER_EN_OR_SERTIE=new ItemBase("collier_en_or_sertie");
+ public static final Item COLLIER_EN_ARGENT_SERTIE=new ItemBase("collier_en_argent_sertie");
+ public static final Item BOUCLES_OREILLES_EN_OR_SERTIE=new ItemBase("boucles_oreilles_en_or_sertie");
+ public static final Item BOUCLES_OREILLES_EN_ARGENT_SERTIE=new ItemBase("boucles_oreilles_en_argent_sertie");
+ public static final Item BRACELET_EN_OR_SERTIE=new ItemBase("bracelet_en_or_sertie");
+ public static final Item BRACELET_EN_ARGENT_SERTIE=new ItemBase("bracelet_en_argent_sertie");
+ public static final Item MANCHETTE_EN_OR_SERTIE=new ItemBase("manchette_en_or_sertie");
+ public static final Item MANCHETTE_EN_ARGENT_SERTIE=new ItemBase("manchette_en_argent_sertie");
+
+
+
+
+
+  //seaux et verres
 
     public static final Item SEAU_D_EAU_EN_BOIS = new ItemBase("seau_d_eau_en_bois");
     public static final Item SEAU_EN_BOIS = new SeauBois(Blocks.AIR, "seau_en_bois");
@@ -1558,6 +1627,7 @@ public class ModItems {
     public static final Item BOTTE_EN_CUIR_JAUNE = new ItemBase("botte_en_cuir_jaune");
     public static final Item BOTTE_EN_CUIR_GRIS_CLAIR = new ItemBase("botte_en_cuir_gris_clair");
     public static final Item BOTTE_EN_CUIR_VERT_CLAIR = new ItemBase("botte_en_cuir_vert_clair");
+    public static final Item BOTTE_EN_CUIR_VIOLET = new ItemBase("botte_en_cuir_violet");
 
 
     public static final Item CAPE_NOIR = new ItemBase("cape_noir");
@@ -1573,23 +1643,43 @@ public class ModItems {
     public static final Item CAPE_ROUGE = new ItemBase("cape_rouge");
     public static final Item CAPE_BLANC = new ItemBase("cape_blanc");
     public static final Item CAPE_JAUNE = new ItemBase("cape_jaune");
+    public static final Item CAPE_VIOLET = new ItemBase("cape_violet");
+    public static final Item CAPE_VERT_CLAIR = new ItemBase("cape_vert_clair");
 
 
-    public static final Item CAPELINE_NOIR = new ItemBase("capeline_noir");
-    public static final Item CAPELINE_BLEU = new ItemBase("capeline_bleu");
-    public static final Item CAPELINE_MARRON = new ItemBase("capeline_marron");
-    public static final Item CAPELINE_CYAN = new ItemBase("capeline_cyan");
-    public static final Item CAPELINE_GRIS = new ItemBase("capeline_gris");
-    public static final Item CAPELINE_BLEU_CLAIR = new ItemBase("capeline_bleu_clair");
-    public static final Item CAPELINE_VERT = new ItemBase("capeline_vert");
-    public static final Item CAPELINE_MAGENTA = new ItemBase("capeline_magenta");
-    public static final Item CAPELINE_ORANGE = new ItemBase("capeline_orange");
-    public static final Item CAPELINE_ROSE = new ItemBase("capeline_rose");
-    public static final Item CAPELINE_ROUGE = new ItemBase("capeline_rouge");
-    public static final Item CAPELINE_BLANC = new ItemBase("capeline_blanc");
-    public static final Item CAPELINE_JAUNE = new ItemBase("capeline_jaune");
+    public static final Item CHAPEAU_EN_CUIR_NOIR = new ItemBase("chapeau_en_cuir_noir");
+    public static final Item CHAPEAU_EN_CUIR_BLEU = new ItemBase("chapeau_en_cuir_bleu");
+    public static final Item CHAPEAU_EN_CUIR = new ItemBase("chapeau_en_cuir");
+    public static final Item CHAPEAU_EN_CUIR_CYAN = new ItemBase("chapeau_en_cuir_cyan");
+    public static final Item CHAPEAU_EN_CUIR_GRIS = new ItemBase("chapeau_en_cuir_gris");
+    public static final Item CHAPEAU_EN_CUIR_BLEU_CLAIR = new ItemBase("chapeau_en_cuir_bleu_clair");
+    public static final Item CHAPEAU_EN_CUIR_VERT = new ItemBase("chapeau_en_cuir_vert");
+    public static final Item CHAPEAU_EN_CUIR_MAGENTA = new ItemBase("chapeau_en_cuir_magenta");
+    public static final Item CHAPEAU_EN_CUIR_ORANGE = new ItemBase("chapeau_en_cuir_orange");
+    public static final Item CHAPEAU_EN_CUIR_ROSE = new ItemBase("chapeau_en_cuir_rose");
+    public static final Item CHAPEAU_EN_CUIR_ROUGE = new ItemBase("chapeau_en_cuir_rouge");
+    public static final Item CHAPEAU_EN_CUIR_BLANC = new ItemBase("chapeau_en_cuir_blanc");
+    public static final Item CHAPEAU_EN_CUIR_JAUNE = new ItemBase("chapeau_en_cuir_jaune");
+    public static final Item CHAPEAU_EN_CUIR_VIOLET = new ItemBase("chapeau_en_cuir_violet");
+    public static final Item CHAPEAU_EN_CUIR_VERT_CLAIR = new ItemBase("chapeau_en_cuir_vert_clair");
 
-
+    public static final Item CHAPEAU_EN_TISSU_NOIR = new ItemBase("chapeau_en_tissu_noir");
+    public static final Item CHAPEAU_EN_TISSU_BLEU = new ItemBase("chapeau_en_tissu_bleu");
+    public static final Item CHAPEAU_EN_TISSU_MARRON = new ItemBase("chapeau_en_tissu_marron");
+    public static final Item CHAPEAU_EN_TISSU_CYAN = new ItemBase("chapeau_en_tissu_cyan");
+    public static final Item CHAPEAU_EN_TISSU_GRIS = new ItemBase("chapeau_en_tissu_gris");
+    public static final Item CHAPEAU_EN_TISSU_BLEU_CLAIR = new ItemBase("chapeau_en_tissu_bleu_clair");
+    public static final Item CHAPEAU_EN_TISSU_VERT = new ItemBase("chapeau_en_tissu_vert");
+    public static final Item CHAPEAU_EN_TISSU_MAGENTA = new ItemBase("chapeau_en_tissu_magenta");
+    public static final Item CHAPEAU_EN_TISSU_ORANGE = new ItemBase("chapeau_en_tissu_orange");
+    public static final Item CHAPEAU_EN_TISSU_ROSE = new ItemBase("chapeau_en_tissu_rose");
+    public static final Item CHAPEAU_EN_TISSU_ROUGE = new ItemBase("chapeau_en_tissu_rouge");
+    public static final Item CHAPEAU_EN_TISSU_BLANC = new ItemBase("chapeau_en_tissu_blanc");
+    public static final Item CHAPEAU_EN_TISSU_JAUNE = new ItemBase("chapeau_en_tissu_jaune");
+    public static final Item CHAPEAU_EN_TISSU_VIOLET = new ItemBase("chapeau_en_tissu_violet");
+    public static final Item CHAPEAU_EN_TISSU_VERT_CLAIR = new ItemBase("chapeau_en_tissu_vert_clair");
+    public static final Item CHAPEAU_EN_TISSU = new ItemBase("chapeau_en_tissu");
+    public static final Item CHAPEAU_FLEURI = new ItemBase("chapeau_fleuri");
 
 
     public static final Item CHAUSSURES_NOIR = new ItemBase("chaussures_noir");
@@ -1605,7 +1695,7 @@ public class ModItems {
     public static final Item CHAUSSURES_ROUGE = new ItemBase("chaussures_rouge");
     public static final Item CHAUSSURES_BLANC = new ItemBase("chaussures_blanc");
     public static final Item CHAUSSURES_JAUNE = new ItemBase("chaussures_jaune");
-
+    public static final Item CHAUSSURES_VIOLET = new ItemBase("chaussures_violet");
 
     public static final Item COUVERTURE_NOIR = new ItemBase("couverture_noir");
     public static final Item COUVERTURE_BLEU = new ItemBase("couverture_bleu");
@@ -1620,8 +1710,24 @@ public class ModItems {
     public static final Item COUVERTURE_ROUGE = new ItemBase("couverture_rouge");
     public static final Item COUVERTURE_BLANC = new ItemBase("couverture_blanc");
     public static final Item COUVERTURE_JAUNE = new ItemBase("couverture_jaune");
+    public static final Item COUVERTURE_VIOLET = new ItemBase("couverture_violet");
+    public static final Item COUVERTURE_VERT_CLAIR = new ItemBase("couverture_vert_clair");
 
-
+ public static final Item RUBAN_NOIR = new ItemBase("ruban_noir");
+ public static final Item RUBAN_BLEU = new ItemBase("ruban_bleu");
+ public static final Item RUBAN_MARRON = new ItemBase("ruban_marron");
+ public static final Item RUBAN_CYAN = new ItemBase("ruban_cyan");
+ public static final Item RUBAN_GRIS = new ItemBase("ruban_gris");
+ public static final Item RUBAN_BLEU_CLAIR = new ItemBase("ruban_bleu_clair");
+ public static final Item RUBAN_VERT = new ItemBase("ruban_vert");
+ public static final Item RUBAN_MAGENTA = new ItemBase("ruban_magenta");
+ public static final Item RUBAN_ORANGE = new ItemBase("ruban_orange");
+ public static final Item RUBAN_ROSE = new ItemBase("ruban_rose");
+ public static final Item RUBAN_ROUGE = new ItemBase("ruban_rouge");
+ public static final Item RUBAN_BLANC = new ItemBase("ruban_blanc");
+ public static final Item RUBAN_JAUNE = new ItemBase("ruban_jaune");
+ public static final Item RUBAN_VIOLET = new ItemBase("ruban_violet");
+ public static final Item RUBAN_VERT_CLAIR = new ItemBase("ruban_vert_clair");
 
     public static final Item DRAP_NOIR = new ItemBase("drap_noir");
     public static final Item DRAP_BLEU = new ItemBase("drap_bleu");
@@ -1636,7 +1742,8 @@ public class ModItems {
     public static final Item DRAP_ROUGE = new ItemBase("drap_rouge");
     public static final Item DRAP_JAUNE = new ItemBase("drap_jaune");
     public static final Item DRAP_GRIS_CLAIR = new ItemBase("drap_gris_clair");
-
+    public static final Item DRAP_VIOLET = new ItemBase("drap_violet");
+    public static final Item DRAP_VERT_CLAIR = new ItemBase("drap_vert_clair");
 
     public static final Item ECHARPE_NOIR = new ItemBase("echarpe_noir");
     public static final Item ECHARPE_BLEU = new ItemBase("echarpe_bleu");
@@ -1651,7 +1758,8 @@ public class ModItems {
     public static final Item ECHARPE_ROUGE = new ItemBase("echarpe_rouge");
     public static final Item ECHARPE_BLANC = new ItemBase("echarpe_blanc");
     public static final Item ECHARPE_JAUNE = new ItemBase("echarpe_jaune");
-
+    public static final Item ECHARPE_VIOLET = new ItemBase("echarpe_violet");
+    public static final Item ECHARPE_VERT_CLAIR = new ItemBase("echarpe_vert_clair");
 
     public static final Item GANTS_NOIR = new ItemBase("gants_noir");
     public static final Item GANTS_BLEU = new ItemBase("gants_bleu");
@@ -1666,6 +1774,8 @@ public class ModItems {
     public static final Item GANTS_ROUGE = new ItemBase("gants_rouge");
     public static final Item GANTS_JAUNE = new ItemBase("gants_jaune");
     public static final Item GANTS_GRIS_CLAIR = new ItemBase("gants_gris_clair");
+    public static final Item GANTS_VIOLET = new ItemBase("gants_violet");
+    public static final Item GANTS_VERT_CLAIR = new ItemBase("gants_vert_clair");
 
     public static final Item GANTS_EN_CUIR_NOIR = new ItemBase("gants_en_cuir_noir");
     public static final Item GANTS_EN_CUIR_BLEU = new ItemBase("gants_en_cuir_bleu");
@@ -1680,6 +1790,8 @@ public class ModItems {
     public static final Item GANTS_EN_CUIR_BLANC = new ItemBase("gants_en_cuir_blanc");
     public static final Item GANTS_EN_CUIR_JAUNE = new ItemBase("gants_en_cuir_jaune");
     public static final Item GANTS_EN_CUIR_GRIS_CLAIR = new ItemBase("gants_en_cuir_gris_clair");
+    public static final Item GANTS_EN_CUIR_VIOLET = new ItemBase("gants_en_cuir_violet");
+    public static final Item GANTS_EN_CUIR_VERT_CLAIR = new ItemBase("gants_en_cuir_vert_clair");
 
 
     public static final Item MANTEAU_NOIR = new ItemBase("manteau_noir");
@@ -1696,7 +1808,8 @@ public class ModItems {
     public static final Item MANTEAU_BLANC = new ItemBase("manteau_blanc");
     public static final Item MANTEAU_JAUNE = new ItemBase("manteau_jaune");
     public static final Item MANTEAU_GRIS_CLAIR = new ItemBase("manteau_gris_clair");
-
+    public static final Item MANTEAU_VIOLET = new ItemBase("manteau_violet");
+    public static final Item MANTEAU_VERT_CLAIR = new ItemBase("manteau_vert_clair");
 
     public static final Item MASQUE_NOIR = new ItemBase("masque_noir");
     public static final Item MASQUE_BLEU = new ItemBase("masque_bleu");
@@ -1712,7 +1825,8 @@ public class ModItems {
     public static final Item MASQUE_BLANC = new ItemBase("masque_blanc");
     public static final Item MASQUE_JAUNE = new ItemBase("masque_jaune");
     public static final Item MASQUE_GRIS_CLAIR = new ItemBase("masque_gris_clair");
-
+    public static final Item MASQUE_VIOLET = new ItemBase("masque_violet");
+    public static final Item MASQUE_VERT_CLAIR = new ItemBase("masque_vert_clair");
 
     public static final Item MOUCHOIR_NOIR = new ItemBase("mouchoir_noir");
     public static final Item MOUCHOIR_BLEU = new ItemBase("mouchoir_bleu");
@@ -1728,6 +1842,9 @@ public class ModItems {
     public static final Item MOUCHOIR_BLANC = new ItemBase("mouchoir_blanc");
     public static final Item MOUCHOIR_JAUNE = new ItemBase("mouchoir_jaune");
     public static final Item MOUCHOIR_GRIS_CLAIR = new ItemBase("mouchoir_gris_clair");
+    public static final Item MOUCHOIR_VIOLET = new ItemBase("mouchoir_violet");
+    public static final Item MOUCHOIR_VERT_CLAIR = new ItemBase("mouchoir_vert_clair");
+
 
     public static final Item PANTALON_NOIR = new ItemBase("pantalon_noir");
     public static final Item PANTALON_BLEU = new ItemBase("pantalon_bleu");
@@ -1743,7 +1860,8 @@ public class ModItems {
     public static final Item PANTALON_BLANC = new ItemBase("pantalon_blanc");
     public static final Item PANTALON_JAUNE = new ItemBase("pantalon_jaune");
     public static final Item PANTALON_GRIS_CLAIR = new ItemBase("pantalon_gris_clair");
-
+    public static final Item PANTALON_VIOLET = new ItemBase("pantalon_violet");
+    public static final Item PANTALON_VERT_CLAIR = new ItemBase("pantalon_vert_clair");
 
     public static final Item PETITE_SERVIETTE_NOIR = new Consomable3("petite_serviette_noir");
     public static final Item PETITE_SERVIETTE_BLEU = new Consomable3("petite_serviette_bleu");
@@ -1758,7 +1876,8 @@ public class ModItems {
     public static final Item PETITE_SERVIETTE_ROUGE = new Consomable3("petite_serviette_rouge");
     public static final Item PETITE_SERVIETTE_JAUNE = new Consomable3("petite_serviette_jaune");
     public static final Item PETITE_SERVIETTE_GRIS_CLAIR = new Consomable3("petite_serviette_gris_clair");
-
+    public static final Item PETITE_SERVIETTE_VIOLET = new Consomable3("petite_serviette_violet");
+    public static final Item PETITE_SERVIETTE_VERT_CLAIR = new Consomable3("petite_serviette_vert_clair");
 
     public static final Item ROBE_NOIR = new ItemBase("robe_noir");
     public static final Item ROBE_BLEU = new ItemBase("robe_bleu");
@@ -1774,7 +1893,8 @@ public class ModItems {
     public static final Item ROBE_BLANC = new ItemBase("robe_blanc");
     public static final Item ROBE_JAUNE = new ItemBase("robe_jaune");
     public static final Item ROBE_GRIS_CLAIR = new ItemBase("robe_gris_clair");
-
+    public static final Item ROBE_VIOLET = new ItemBase("robe_violet");
+    public static final Item ROBE_VERT_CLAIR = new ItemBase("robe_vert_clair");
 
     public static final Item SAC_DE_COUCHAGE_NOIR = new ItemBase("sac_de_couchage_noir");
     public static final Item SAC_DE_COUCHAGE_BLEU = new ItemBase("sac_de_couchage_bleu");
@@ -1790,6 +1910,8 @@ public class ModItems {
     public static final Item SAC_DE_COUCHAGE_BLANC = new ItemBase("sac_de_couchage_blanc");
     public static final Item SAC_DE_COUCHAGE_JAUNE = new ItemBase("sac_de_couchage_jaune");
     public static final Item SAC_DE_COUCHAGE_GRIS_CLAIR = new ItemBase("sac_de_couchage_gris_clair");
+    public static final Item SAC_DE_COUCHAGE_VIOLET = new ItemBase("sac_de_couchage_violet");
+    public static final Item SAC_DE_COUCHAGE_VERT_CLAIR = new ItemBase("sac_de_couchage_vert_clair");
 
 
     public static final Item JUPE_NOIR = new ItemBase("jupe_noir");
@@ -1806,7 +1928,8 @@ public class ModItems {
     public static final Item JUPE_BLANC = new ItemBase("jupe_blanc");
     public static final Item JUPE_JAUNE = new ItemBase("jupe_jaune");
     public static final Item JUPE_GRIS_CLAIR = new ItemBase("jupe_gris_clair");
-
+    public static final Item JUPE_VIOLET = new ItemBase("jupe_violet");
+    public static final Item JUPE_VERT_CLAIR = new ItemBase("jupe_vert_clair");
 
     public static final Item SERVIETTE_NOIR = new Consomable2("serviette_noir");
     public static final Item SERVIETTE_BLEU = new Consomable2("serviette_bleu");
@@ -1822,6 +1945,8 @@ public class ModItems {
     public static final Item SERVIETTE_BLANC = new Consomable2("serviette_blanc");
     public static final Item SERVIETTE_JAUNE = new Consomable2("serviette_jaune");
     public static final Item SERVIETTE_GRIS_CLAIR = new Consomable2("serviette_gris_clair");
+    public static final Item SERVIETTE_VIOLET = new Consomable2("serviette_violet");
+    public static final Item SERVIETTE_VERT_CLAIR = new Consomable2("serviette_vert_clair");
 
     public static final Item SOUS_VETEMENT_FEMININ_NOIR = new ItemBase("sous_vetement_feminin_noir");
     public static final Item SOUS_VETEMENT_FEMININ_BLEU = new ItemBase("sous_vetement_feminin_bleu");
@@ -1837,7 +1962,8 @@ public class ModItems {
     public static final Item SOUS_VETEMENT_FEMININ_BLANC = new ItemBase("sous_vetement_feminin_blanc");
     public static final Item SOUS_VETEMENT_FEMININ_JAUNE = new ItemBase("sous_vetement_feminin_jaune");
     public static final Item SOUS_VETEMENT_FEMININ_GRIS_CLAIR = new ItemBase("sous_vetement_feminin_gris_clair");
-
+    public static final Item SOUS_VETEMENT_FEMININ_VIOLET = new ItemBase("sous_vetement_feminin_violet");
+    public static final Item SOUS_VETEMENT_FEMININ_VERT_CLAIR = new ItemBase("sous_vetement_feminin_vert_clair");
 
     public static final Item SOUS_VETEMENT_MASCULIN_NOIR = new ItemBase("sous_vetement_masculin_noir");
     public static final Item SOUS_VETEMENT_MASCULIN_BLEU = new ItemBase("sous_vetement_masculin_bleu");
@@ -1853,6 +1979,8 @@ public class ModItems {
     public static final Item SOUS_VETEMENT_MASCULIN_BLANC = new ItemBase("sous_vetement_masculin_blanc");
     public static final Item SOUS_VETEMENT_MASCULIN_JAUNE = new ItemBase("sous_vetement_masculin_jaune");
     public static final Item SOUS_VETEMENT_MASCULIN_GRIS_CLAIR = new ItemBase("sous_vetement_masculin_gris_clair");
+    public static final Item SOUS_VETEMENT_MASCULIN_VIOLET = new ItemBase("sous_vetement_masculin_violet");
+    public static final Item SOUS_VETEMENT_MASCULIN_VERT_CLAIR = new ItemBase("sous_vetement_masculin_vert_clair");
 
 
     public static final Item TUNIQUE_NOIR = new ItemBase("tunique_noir");
@@ -1869,6 +1997,8 @@ public class ModItems {
     public static final Item TUNIQUE_BLANC = new ItemBase("tunique_blanc");
     public static final Item TUNIQUE_JAUNE = new ItemBase("tunique_jaune");
     public static final Item TUNIQUE_GRIS_CLAIR = new ItemBase("tunique_gris_clair");
+    public static final Item TUNIQUE_VIOLET = new ItemBase("tunique_violet");
+    public static final Item TUNIQUE_VERT_CLAIR = new ItemBase("tunique_vert_clair");
 
 
     public static final Item VESTE_NOIR = new ItemBase("veste_noir");
@@ -1885,6 +2015,29 @@ public class ModItems {
     public static final Item VESTE_BLANC = new ItemBase("veste_blanc");
     public static final Item VESTE_JAUNE = new ItemBase("veste_jaune");
     public static final Item VESTE_GRIS_CLAIR = new ItemBase("veste_gris_clair");
+    public static final Item VESTE_VIOLET = new ItemBase("veste_violet");
+    public static final Item VESTE_VERT_CLAIR = new ItemBase("veste_vert_clair");
+
+
+    public static final Item CEINTURE_EN_TISSU_NOIR = new ItemBase("ceinture_en_tissu_noir");
+    public static final Item CEINTURE_EN_TISSU_BLEU = new ItemBase("ceinture_en_tissu_bleu");
+    public static final Item CEINTURE_EN_TISSU_MARRON = new ItemBase("ceinture_en_tissu_marron");
+    public static final Item CEINTURE_EN_TISSU_CYAN = new ItemBase("ceinture_en_tissu_cyan");
+    public static final Item CEINTURE_EN_TISSU_GRIS = new ItemBase("ceinture_en_tissu_gris");
+    public static final Item CEINTURE_EN_TISSU_BLEU_CLAIR = new ItemBase("ceinture_en_tissu_bleu_clair");
+    public static final Item CEINTURE_EN_TISSU_VERT = new ItemBase("ceinture_en_tissu_vert");
+    public static final Item CEINTURE_EN_TISSU_MAGENTA = new ItemBase("ceinture_en_tissu_magenta");
+    public static final Item CEINTURE_EN_TISSU_ORANGE = new ItemBase("ceinture_en_tissu_orange");
+    public static final Item CEINTURE_EN_TISSU_ROSE = new ItemBase("ceinture_en_tissu_rose");
+    public static final Item CEINTURE_EN_TISSU_ROUGE = new ItemBase("ceinture_en_tissu_rouge");
+    public static final Item CEINTURE_EN_TISSU_BLANC = new ItemBase("ceinture_en_tissu_blanc");
+    public static final Item CEINTURE_EN_TISSU_JAUNE = new ItemBase("ceinture_en_tissu_jaune");
+    public static final Item CEINTURE_EN_TISSU_GRIS_CLAIR = new ItemBase("ceinture_en_tissu");
+    public static final Item CEINTURE_EN_TISSU_VIOLET = new ItemBase("ceinture_en_tissu_violet");
+    public static final Item CEINTURE_EN_TISSU_VERT_CLAIR = new ItemBase("ceinture_en_tissu_vert_clair");
+
+
+    public static final Item CORSAGE = new ItemBase("corsage");
 
 
     // BOCAUX Dispensaire

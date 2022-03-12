@@ -3,7 +3,7 @@
 
   "pattern":
   [
-    "   ",
+    " V ",
     " JG",
     "I M"
   ],
@@ -17,6 +17,10 @@
     "M":
     {
       "item": "am:barre_etain"
+    },
+    "V":
+    {
+      "item": "am:verre_en_fusion"
     },
     "I":
     {

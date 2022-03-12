@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "LLL",
+    "LCL",
+    "L L"
+  ],
+
+  "key":
+  {
+    "C":
+    {
+      "item": "am:pinces",
+      "data": 32767
+    },
+    "L":
+    {
+      "item": "am:maille_de_fer"
+    }
+  },
+
+  "result":
+  {
+    "item": "minecraft:chainmail_leggings",
+    "count": 1
+  }
+}

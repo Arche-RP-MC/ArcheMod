@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "CLL",
+    "M  "
+  ],
+
+  "key":
+  {
+    "C":
+    {
+      "item": "minecraft:water_bucket"
+    },
+    "M":
+    {
+      "item": "am:mortier_pilon_en_bois",
+      "data": 32767
+    },
+    "L":
+    {
+      "item": "am:carcasse_de_poisson"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:colle",
+    "count": 1
+  }
+}
