@@ -17,7 +17,8 @@
     },
     "L":
     {
-      "item": "am:ciseaux_a_bois"
+      "item": "am:ciseaux_a_bois",
+      "data": 32767
     }
 
   },

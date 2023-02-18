@@ -1,4 +1,4 @@
-package fr.archemod.blocks.slot;
+/*package fr.archemod.blocks.slot;
 
 import fr.archemod.blocks.tileentity.TileEntityFourSechoir2;
 import net.minecraft.inventory.IInventory;
@@ -23,3 +23,4 @@ public SlotSechoirViandeFuel(IInventory inventory, int index, int x, int y)
     return super.getItemStackLimit(stack);
 }
 }
+*/

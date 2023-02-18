@@ -5,7 +5,7 @@
   [
     " M ",
     "HCG",
-    " S "
+    " SP"
   ],
 
   "key":
@@ -30,6 +30,11 @@
     "S":
     {
       "item": "minecraft:water_bucket"
+    },
+    "P":
+    {
+      "item": "am:spatule",
+      "data": 32767
     }
   },
 

@@ -4,8 +4,8 @@
   "pattern":
   [
     "  G",
-    " TT",
-    "   "
+    "  T",
+    "  P"
   ],
 
   "key":
@@ -19,6 +19,11 @@
     "G":
     {
       "item": "am:marteau_en_acier",
+      "data": 32767
+    },
+    "P":
+    {
+      "item": "am:pinces",
       "data": 32767
     }
   },

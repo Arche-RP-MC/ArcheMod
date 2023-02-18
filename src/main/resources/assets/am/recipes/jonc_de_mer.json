@@ -2,9 +2,9 @@
   "type": "minecraft:crafting_shaped", 
   "pattern": 
  [ 
- "AAA",
- "   ",
- "   "
+ "ABA",
+ "A A",
+ "C  "
  ], 
 
 
@@ -12,13 +12,23 @@
  { 
  "A": 
  { 
- "item": "am:jonc"
+ "item": "am:fibre_vegetale"
 
-}
+},
+  "B":
+  {
+   "item": "am:paille"
+
+  },
+  "C":
+  {
+   "item": "minecraft:string"
+
+  }
 },
  "result": 
  { 
- "item": "resultat", 
+ "item": "am:jonc_de_mer",
  "count": 1
 }
 }

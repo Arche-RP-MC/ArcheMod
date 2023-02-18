@@ -1,4 +1,4 @@
-package fr.archemod.gui;
+/*package fr.archemod.gui;
 
 import fr.archemod.blocks.container.ContainerSechoirViande;
 
@@ -64,3 +64,4 @@ private int getCookProgressScaled(int pixels)
 }
 
 }
+*/

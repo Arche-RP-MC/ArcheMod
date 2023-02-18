@@ -5,7 +5,7 @@
   [
     "   ",
     " B ",
-    "OEM"
+    " O "
   ],
 
   "key":
@@ -17,21 +17,14 @@
     },
     "O":
     {
-      "item": "am:bouteille_d_lait"
-    },
-    "E":
-    {
-      "item": "am:bouteille_d_lait"
-    },
-    "M":
-    {
-      "item": "am:bouteille_d_lait"
+      "item": "am:bouteille_d_lait",
+      "data":32767
     }
   },
 
   "result":
   {
     "item": "am:beurre",
-    "count": 3
+    "count": 1
   }
 }

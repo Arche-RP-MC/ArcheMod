@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    " B ",
+    " O "
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "am:mortier_pilon_en_pierre",
+      "data":32767
+    },
+    "O":
+    {
+      "item": "am:bouteille_d_lait",
+      "data":32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:beurre",
+    "count": 1
+  }
+}

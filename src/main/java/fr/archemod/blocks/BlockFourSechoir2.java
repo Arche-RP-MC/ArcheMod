@@ -1,4 +1,4 @@
-package fr.archemod.blocks;
+/*package fr.archemod.blocks;
 
 import fr.archemod.ArcheMod;
 import fr.archemod.blocks.tileentity.TileEntityFourSechoir2;
@@ -180,3 +180,4 @@ public static final PropertyBool BURNING = PropertyBool.create("burning");
 
 }
 
+*/

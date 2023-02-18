@@ -12,7 +12,8 @@
   {
     "B":
     {
-      "item": "minecraft:stick"
+      "item": "am:spatule",
+      "data": 32767
     },
     "S":
     {

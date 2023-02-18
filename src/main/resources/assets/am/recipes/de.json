@@ -4,7 +4,7 @@
   "pattern":
   [
     "   ",
-    " HJ",
+    "IHJ",
     "G  "
   ],
 
@@ -12,7 +12,7 @@
   {
     "H":
     {
-      "item": "am:planche"
+      "item": "am:balle_en_bois"
     },
     "J":
     {
@@ -21,7 +21,14 @@
     "G":
     {
 
-      "item": "am:ciseaux_a_bois",
+      "item": "am:lime_en_fer",
+      "data": 32767
+
+    },
+    "I":
+    {
+
+      "item": "am:pinceau",
       "data": 32767
 
     }
@@ -30,6 +37,6 @@
   "result":
   {
     "item": "am:de",
-    "count": 4
+    "count": 1
   }
 }

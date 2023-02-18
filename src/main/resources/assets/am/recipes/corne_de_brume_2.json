@@ -3,8 +3,8 @@
 
   "pattern":
   [
-    "   ",
-    "CCG",
+    " E ",
+    "LCG",
     "   "
   ],
 
@@ -12,7 +12,15 @@
   {
     "C":
     {
-      "item": "minecraft:bone"
+      "item": "am:corne"
+    },
+    "E":
+    {
+      "item": "am:etoffe"
+    },
+    "L":
+    {
+      "item": "am:laniere_de_cuir"
     },
     "G":
     {

@@ -1,4 +1,4 @@
-package fr.archemod.blocks.tileentity;
+/*package fr.archemod.blocks.tileentity;
 
 
 import fr.archemod.blocks.BlockFourSechoir2;
@@ -380,3 +380,4 @@ public String getGuiID()
 }
 
 }
+*/

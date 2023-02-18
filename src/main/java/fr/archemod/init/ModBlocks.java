@@ -3,12 +3,15 @@ package fr.archemod.init;
 import fr.archemod.ArcheMod;
 import fr.archemod.blocks.*;
 import fr.archemod.blocks.agriculture.BlockPlanLin;
+import fr.archemod.blocks.agriculture.BlockPlanLin2;
 import fr.archemod.blocks.baril.LiquideType;
 //import fr.archemod.blocks.bloc3D.Baril3D;
 import fr.archemod.blocks.bloc3D.BlocChaise2;
 //import fr.archemod.blocks.dalles.DalleLaineBleu;
 import fr.archemod.blocks.dalles.DalleLaineMagenta;
 import fr.archemod.blocks.gateau.*;
+import fr.archemod.blocks.plante.BlockMushroom;
+import fr.archemod.blocks.plante.PlantBlock;
 import fr.archemod.items.agriculture.ItemGraine;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockSign;
@@ -37,10 +40,10 @@ public class ModBlocks {
 
 
 
-    public static final Block SHOWCASE = new Showcase("showcase",Material.WOOD);
-    public static final Block SHOWCASE_CENTER = new Showcase("showcase_center",Material.WOOD);
-    public static final Block SHOWCASE_LEFT = new Showcase("showcase_left",Material.WOOD);
-    public static final Block SHOWCASE_RIGHT = new Showcase("showcase_right",Material.WOOD);
+    //public static final Block SHOWCASE = new Showcase("showcase",Material.WOOD);
+    //public static final Block SHOWCASE_CENTER = new Showcase("showcase_center",Material.WOOD);
+    //public static final Block SHOWCASE_LEFT = new Showcase("showcase_left",Material.WOOD);
+    //public static final Block SHOWCASE_RIGHT = new Showcase("showcase_right",Material.WOOD);
 
     //public static final Block TABLE = new Table("table",Material.WOOD);
     //public static final Block TABLE_MIDDLE = new Table("table_middle",Material.WOOD);
@@ -368,7 +371,7 @@ public class ModBlocks {
 
 
     //PLANTES
-    public static final Block BASILIC = new BlockPlante("basilic");
+   /* public static final Block BASILIC = new BlockPlante("basilic");
     public static final Block ALGUES = new BlockPlante("algues");
     public static final Block ANETH = new BlockPlante("aneth");
     public static final Block ANIS = new BlockPlante("anis");
@@ -425,7 +428,7 @@ public class ModBlocks {
     public static final Block VERGE_D_OR = new BlockPlante("verge_d_or");
     public static final Block VERVEINE = new BlockPlante("verveine");
     public static final Block VIOLETTES = new BlockPlante("violettes");
-
+*/
     //PORTE
     public static final Block PORTE_RENFORCEE = new BlockPorte("porte_renforcee", Material.WOOD, SoundType.WOOD, 4F);
     public static final Block PORTE_DELABREE = new BlockPorte("porte_delabree", Material.WOOD, SoundType.WOOD, 4F);
@@ -499,86 +502,88 @@ public class ModBlocks {
 
     //PLANTATION \!/ Allez changer la graine correspondant dans init.ModItems en ItemGraine (faire ctrl+f pour la trouver) + register l'item ici, dans init() et register();
     public static final Block PLAN_DE_LIN = new BlockPlanLin("plan_de_lin",ModItems.GRAINE_LIN, ModItems.LIN);
-    public static final Block PLAN_CELERI = new BlockPlanLin("plan_celeri",ModItems.GRAINE_CELERI, ModItems.CELERI_BRANCHE_CRU);
-    public static final Block PLAN_FENOUIL = new BlockPlanLin("plan_fenouil",ModItems.GRAINE_FENOUIL, ModItems.FENOUIL_CRU);
+    public static final Block PLAN_CELERI = new BlockPlanLin2("plan_celeri",ModItems.GRAINE_CELERI, ModItems.CELERI_BRANCHE_CRU,2,2,2);
+    public static final Block PLAN_FENOUIL = new BlockPlanLin2("plan_fenouil",ModItems.GRAINE_FENOUIL, ModItems.FENOUIL_CRU,2,2,2);
     public static final Block PLAN_MAIS = new BlockPlanLin("plan_mais",ModItems.GRAINE_MAIS, ModItems.MAIS_CRU);
-    public static final Block PLAN_NAVET = new BlockPlanLin("plan_navet",ModItems.GRAINE_NAVET, ModItems.NAVET_CRU);
+    public static final Block PLAN_NAVET = new BlockPlanLin2("plan_navet",ModItems.GRAINE_NAVET, ModItems.NAVET_CRU,2,2,2);
     public static final Block PLAN_ORGE = new BlockPlanLin("plan_orge",ModItems.GRAINE_ORGE, ModItems.ORGE);
-    public static final Block PLAN_FRAISE = new BlockPlanLin("plan_fraise",ModItems.GRAINE_FRAISE, ModItems.FRAISE);
-    public static final Block PLAN_FRAMBOISE = new BlockPlanLin("plan_framboise",ModItems.GRAINE_FRAMBOISE, ModItems.FRAMBOISE);
-    public static final Block PLAN_MYRTILLE = new BlockPlanLin("plan_myrtille",ModItems.GRAINE_MYRTILLE, ModItems.MYRTILLES);
-    public static final Block PLAN_POIREAU = new BlockPlanLin("plan_poireau",ModItems.GRAINE_POIREAU, ModItems.POIREAU_CRU);
-    public static final Block PLAN_RADIS = new BlockPlanLin("plan_radis",ModItems.GRAINE_RADIS, ModItems.RADIS);
-    public static final Block PLAN_SALSIFI = new BlockPlanLin("plan_salsifi",ModItems.GRAINE_SALSIFI, ModItems.SALSIFI_CRU);
-    public static final Block PLAN_TOMATE = new BlockPlanLin("plan_tomate",ModItems.GRAINE_TOMATE, ModItems.TOMATE_CRU);
-    public static final Block PLAN_VIGNE_NOIRE = new BlockPlanLin("plan_vigne_noire",ModItems.GRAINE_VIGNE_NOIRE, ModItems.RAISIN_NOIR);
-    public static final Block PLAN_VIGNE_BLANCHE = new BlockPlanLin("plan_vigne_blanche",ModItems.GRAINE_VIGNE_BLANCHE, ModItems.RAISIN_BLANC);
-    public static final Block PLAN_EPINARD = new BlockPlanLin("plan_epinard",ModItems.GRAINE_EPINARD, ModItems.EPINARD_CRU);
-    public static final Block PLAN_CHOU = new BlockPlanLin("plan_chou",ModItems.GRAINE_CHOU, ModItems.CHOU_VERT_CRU);
-    public static final Block PLAN_THE = new BlockPlanLin("plan_the",ModItems.GRAINE_DE_THE, ModItems.FEUILLE_DE_THE);
-    public static final Block PLAN_SALADE = new BlockPlanLin("plan_salade",ModItems.GRAINE_SALADE, ModItems.SALADE);
-    public static final Block PLAN_ARTICHAUT = new BlockPlanLin("plan_artichaut",ModItems.GRAINE_ARTICHAUT, ModItems.ARTICHAUT_CRU);
-    public static final Block PLAN_BROCOLIS = new BlockPlanLin("plan_brocolis",ModItems.GRAINE_BROCOLIS, ModItems.BROCOLI_CRU);
-    public static final Block PLAN_ASPERGE = new BlockPlanLin("plan_asperge",ModItems.GRAINE_ASPERGE, ModItems.ASPERGE_CRU);
-    public static final Block PLAN_ENDIVE = new BlockPlanLin("plan_endive",ModItems.GRAINE_ENDIVE, ModItems.ENDIVE_CRU);
-    public static final Block PLAN_RIZ = new BlockPlanLin("plan_riz",ModItems.GRAINE_RIZ, ModItems.RIZ_CRU);
-    //public static final Block PLAN_CHANVRE = new BlockPlanLin("plan_chanvre",ModItems.GRAINE_CHANVRE, ModItems.CHANVRE);
+    public static final Block PLAN_FRAISE = new BlockPlanLin2("plan_fraise",ModItems.GRAINE_FRAISE, ModItems.FRAISE,2,2,2);
+    public static final Block PLAN_FRAMBOISE = new BlockPlanLin2("plan_framboise",ModItems.GRAINE_FRAMBOISE, ModItems.FRAMBOISE,2,2,2);
+    public static final Block PLAN_MYRTILLE = new BlockPlanLin2("plan_myrtille",ModItems.GRAINE_MYRTILLE, ModItems.MYRTILLES,2,2,2);
+    public static final Block PLAN_POIREAU = new BlockPlanLin2("plan_poireau",ModItems.GRAINE_POIREAU, ModItems.POIREAU_CRU,2,2,2);
+    public static final Block PLAN_RADIS = new BlockPlanLin2("plan_radis",ModItems.GRAINE_RADIS, ModItems.RADIS,2,2,2);
+    public static final Block PLAN_SALSIFI = new BlockPlanLin2("plan_salsifi",ModItems.GRAINE_SALSIFI, ModItems.SALSIFI_CRU,2,2,2);
+    public static final Block PLAN_TOMATE = new BlockPlanLin2("plan_tomate",ModItems.GRAINE_TOMATE, ModItems.TOMATE_CRU,2,2,2);
+    public static final Block PLAN_VIGNE_NOIRE = new BlockPlanLin2("plan_vigne_noire",ModItems.GRAINE_VIGNE_NOIRE, ModItems.RAISIN_NOIR,2,2,2);
+    public static final Block PLAN_VIGNE_BLANCHE = new BlockPlanLin2("plan_vigne_blanche",ModItems.GRAINE_VIGNE_BLANCHE, ModItems.RAISIN_BLANC,2,2,2);
+    public static final Block PLAN_EPINARD = new BlockPlanLin2("plan_epinard",ModItems.GRAINE_EPINARD, ModItems.EPINARD_CRU,2,2,2);
+    public static final Block PLAN_CHOU = new BlockPlanLin2("plan_chou",ModItems.GRAINE_CHOU, ModItems.CHOU_VERT_CRU,2,2,2);
+    public static final Block PLAN_THE = new BlockPlanLin2("plan_the",ModItems.GRAINE_DE_THE, ModItems.FEUILLE_DE_THE,2,2,2);
+    public static final Block PLAN_SALADE = new BlockPlanLin2("plan_salade",ModItems.GRAINE_SALADE, ModItems.SALADE,2,2,2);
+    public static final Block PLAN_ARTICHAUT = new BlockPlanLin2("plan_artichaut",ModItems.GRAINE_ARTICHAUT, ModItems.ARTICHAUT_CRU,2,2,2);
+    public static final Block PLAN_BROCOLIS = new BlockPlanLin2("plan_brocolis",ModItems.GRAINE_BROCOLIS, ModItems.BROCOLI_CRU,2,2,2);
+    public static final Block PLAN_ASPERGE = new BlockPlanLin2("plan_asperge",ModItems.GRAINE_ASPERGE, ModItems.ASPERGE_CRU,2,2,2);
+    public static final Block PLAN_ENDIVE = new BlockPlanLin2("plan_endive",ModItems.GRAINE_ENDIVE, ModItems.ENDIVE_CRU,1,2,3);
+    public static final Block PLAN_RIZ = new BlockPlanLin2("plan_riz",ModItems.GRAINE_RIZ, ModItems.RIZ_CRU,2,2,2);
+    public static final Block PLAN_CHANVRE = new BlockPlanLin2("plan_chanvre",ModItems.GRAINE_CHANVRE, ModItems.CHANVRE,2,2,2);
     public static final Block PLAN_BLE = new BlockPlanLin("plan_ble",ModItems.GRAINE_BLE, ModItems.BLE);
-    public static final Block PLAN_THYM = new BlockPlanLin("plan_thym",ModItems.GRAINE_THYM, ModItems.THYM);
+    public static final Block PLAN_THYM = new BlockPlanLin2("plan_thym",ModItems.GRAINE_THYM, ModItems.THYM,2,2,2);
 
-    /*public static final Block PLAN_BASILIC= new BlockPlanLin("plan_basilic",ModItems.GRAINE_BASILIC, ModItems.BASILIC);
-    public static final Block PLAN_ANETH= new BlockPlanLin("plan_aneth",ModItems.GRAINE_ANETH, ModItems.ANETH);
-    public static final Block PLAN_ANIS= new BlockPlanLin("plan_anis",ModItems.GRAINE_ANIS, ModItems.ANIS);
-    public static final Block PLAN_BELLE_DE_NUIT= new BlockPlanLin("plan_belle_de_nuit",ModItems.GRAINE_BELLE_DE_NUIT, ModItems.BELLE_DE_NUIT);
-    public static final Block PLAN_BLEUETS= new BlockPlanLin("plan_bleuets",ModItems.GRAINE_BLEUETS, ModItems.BLEUETS);
+    //public static final Block PLAN_TEST = new BlockMushroom("plan_test" );
+
+    public static final Block PLAN_BASILIC= new BlockPlanLin2("plan_basilic",ModItems.GRAINE_BASILIC, ModItems.BASILIC,2,2,2);
+    public static final Block PLAN_ANETH= new BlockPlanLin2("plan_aneth",ModItems.GRAINE_ANETH, ModItems.ANETH,2,2,2);
+    public static final Block PLAN_ANIS= new BlockPlanLin2("plan_anis",ModItems.GRAINE_ANIS, ModItems.ANIS,2,2,2);
+    public static final Block PLAN_BELLE_DE_NUIT= new BlockPlanLin2("plan_belle_de_nuit",ModItems.GRAINE_BELLE_DE_NUIT, ModItems.BELLE_DE_NUIT,2,2,2);
+    public static final Block PLAN_BLEUETS= new BlockPlanLin2("plan_bleuets",ModItems.GRAINE_BLEUETS, ModItems.BLEUETS,2,2,2);
     public static final Block PLAN_BUISSON= new BlockPlanLin("plan_buisson",ModItems.GRAINE_BUISSON, ModItems.BUISSON);
     public static final Block PLAN_BUISSON_DE_FLEURS_BLANCHES= new BlockPlanLin("plan_buisson_de_fleurs_blanches",ModItems.GRAINE_BUISSON_DE_FLEURS_BLANCHES, ModItems.BUISSON_DE_FLEURS_BLANCHES);
     public static final Block PLAN_BUISSON_ETRANGE= new BlockPlanLin("plan_buisson_etrange",ModItems.GRAINE_BUISSON_ETRANGE, ModItems.BUISSON_ETRANGE);
     public static final Block PLAN_BUISSON_HERBEUX= new BlockPlanLin("plan_buisson_herbeux",ModItems.GRAINE_BUISSON_HERBEUX, ModItems.BUISSON_HERBEUX);
-    public static final Block PLAN_CAMOMILLE= new BlockPlanLin("plan_camomille",ModItems.GRAINE_CAMOMILLE, ModItems.CAMOMILLE);
-    public static final Block PLAN_CHARDON= new BlockPlanLin("plan_chardon",ModItems.GRAINE_CHARDON, ModItems.CHARDON);
-    public static final Block PLAN_CIBOULETTE= new BlockPlanLin("plan_ciboulette",ModItems.GRAINE_CIBOULETTE, ModItems.CIBOULETTE);
-    public static final Block PLAN_CLOCHETTES= new BlockPlanLin("plan_clochettes",ModItems.GRAINE_CLOCHETTES, ModItems.CLOCHETTES);
-    public static final Block PLAN_COSMOS= new BlockPlanLin("plan_cosmos",ModItems.GRAINE_COSMOS, ModItems.COSMOS);
-    public static final Block PLAN_ETOILE_DES_GLACIERS= new BlockPlanLin("plan_etoile_des_glaciers",ModItems.GRAINE_ETOILE_DES_GLACIERS, ModItems.ETOILE_DES_GLACIERS);
-    public static final Block PLAN_GERANIUM= new BlockPlanLin("plan_geranium",ModItems.GRAINE_GERANIUM, ModItems.GERANIUM);
-    public static final Block PLAN_GLYCINE= new BlockPlanLin("plan_glycine",ModItems.GRAINE_GLYCINE, ModItems.GLYCINE);
-    public static final Block PLAN_GUI= new BlockPlanLin("plan_gui",ModItems.GRAINE_GUI, ModItems.GUI);
-    public static final Block PLAN_GUZMANIAS= new BlockPlanLin("plan_guzmanias",ModItems.GRAINE_GUZMANIAS, ModItems.GUZMANIAS);
-    public static final Block PLAN_HIBISCUS= new BlockPlanLin("plan_hibiscus",ModItems.GRAINE_HIBISCUS, ModItems.HIBISCUS);
-    public static final Block PLAN_HORTENSIAS= new BlockPlanLin("plan_hortensias",ModItems.GRAINE_HORTENSIAS, ModItems.HORTENSIAS);
-    public static final Block PLAN_HOUX= new BlockPlanLin("plan_houx",ModItems.GRAINE_HOUX, ModItems.HOUX);
-    public static final Block PLAN_HYDRANGEE= new BlockPlanLin("plan_hydrangee",ModItems.GRAINE_HYDRANGEE, ModItems.HYDRANGEE);
-    public static final Block PLAN_IRIS= new BlockPlanLin("plan_iris",ModItems.GRAINE_IRIS, ModItems.IRIS);
-    public static final Block PLAN_JACINTHE_DES_BOIS= new BlockPlanLin("plan_jacinthe_des_bois",ModItems.GRAINE_JACINTHE_DES_BOIS, ModItems.JACINTHE_DES_BOIS);
-    public static final Block PLAN_JASMIN= new BlockPlanLin("plan_jasmin",ModItems.GRAINE_JASMIN, ModItems.JASMIN);
+    public static final Block PLAN_CAMOMILLE= new BlockPlanLin2("plan_camomille",ModItems.GRAINE_CAMOMILLE, ModItems.CAMOMILLE,2,2,2);
+    public static final Block PLAN_CHARDON= new BlockPlanLin2("plan_chardon",ModItems.GRAINE_CHARDON, ModItems.CHARDON,2,2,2);
+    public static final Block PLAN_CIBOULETTE= new BlockPlanLin2("plan_ciboulette",ModItems.GRAINE_CIBOULETTE, ModItems.CIBOULETTE,2,2,2);
+    public static final Block PLAN_CLOCHETTES= new BlockPlanLin2("plan_clochettes",ModItems.GRAINE_CLOCHETTES, ModItems.CLOCHETTES,2,2,2);
+    public static final Block PLAN_COSMOS= new BlockPlanLin2("plan_cosmos",ModItems.GRAINE_COSMOS, ModItems.COSMOS,2,2,2);
+    public static final Block PLAN_ETOILE_DES_GLACIERS= new BlockPlanLin2("plan_etoile_des_glaciers",ModItems.GRAINE_ETOILE_DES_GLACIERS, ModItems.ETOILE_DES_GLACIERS,2,2,2);
+    public static final Block PLAN_GERANIUM= new BlockPlanLin2("plan_geranium",ModItems.GRAINE_GERANIUM, ModItems.GERANIUM,2,2,2);
+    public static final Block PLAN_GLYCINE= new BlockPlanLin2("plan_glycine",ModItems.GRAINE_GLYCINE, ModItems.GLYCINE,2,2,2);
+    public static final Block PLAN_GUI= new BlockPlanLin2("plan_gui",ModItems.GRAINE_GUI, ModItems.GUI,2,2,2);
+    public static final Block PLAN_GUZMANIAS= new BlockPlanLin2("plan_guzmanias",ModItems.GRAINE_GUZMANIAS, ModItems.GUZMANIAS,2,2,2);
+    public static final Block PLAN_HIBISCUS= new BlockPlanLin2("plan_hibiscus",ModItems.GRAINE_HIBISCUS, ModItems.HIBISCUS,2,2,2);
+    public static final Block PLAN_HORTENSIAS= new BlockPlanLin2("plan_hortensias",ModItems.GRAINE_HORTENSIAS, ModItems.HORTENSIAS,2,2,2);
+    public static final Block PLAN_HOUX= new BlockPlanLin2("plan_houx",ModItems.GRAINE_HOUX, ModItems.HOUX,2,2,2);
+    public static final Block PLAN_HYDRANGEE= new BlockPlanLin2("plan_hydrangee",ModItems.GRAINE_HYDRANGEE, ModItems.HYDRANGEE,2,2,2);
+    public static final Block PLAN_IRIS= new BlockPlanLin2("plan_iris",ModItems.GRAINE_IRIS, ModItems.IRIS,2,2,2);
+    public static final Block PLAN_JACINTHE_DES_BOIS= new BlockPlanLin2("plan_jacinthe_des_bois",ModItems.GRAINE_JACINTHE_DES_BOIS, ModItems.JACINTHE_DES_BOIS,2,2,2);
+    public static final Block PLAN_JASMIN= new BlockPlanLin2("plan_jasmin",ModItems.GRAINE_JASMIN, ModItems.JASMIN,2,2,2);
     public static final Block PLAN_JOLI_BUISSON= new BlockPlanLin("plan_joli_buisson",ModItems.GRAINE_JOLI_BUISSON, ModItems.JOLI_BUISSON);
-    public static final Block PLAN_JONQUILLE= new BlockPlanLin("plan_jonquille",ModItems.GRAINE_JONQUILLE, ModItems.JONQUILLE);
-    public static final Block PLAN_LAURIER= new BlockPlanLin("plan_laurier",ModItems.GRAINE_LAURIER, ModItems.LAURIER);
-    public static final Block PLAN_LAVANDE= new BlockPlanLin("plan_lavande",ModItems.GRAINE_LAVANDE, ModItems.LAVANDE);
-    public static final Block PLAN_LYS= new BlockPlanLin("plan_lys",ModItems.GRAINE_LYS, ModItems.LYS);
-    public static final Block PLAN_MANDRAGORE= new BlockPlanLin("plan_mandragore",ModItems.GRAINE_MANDRAGORE, ModItems.MANDRAGORE);
-    public static final Block PLAN_MENTHE= new BlockPlanLin("plan_menthe",ModItems.GRAINE_MENTHE, ModItems.MENTHE);
-    public static final Block PLAN_MUGUET= new BlockPlanLin("plan_muguet",ModItems.GRAINE_MUGUET, ModItems.MUGUET);
-    public static final Block PLAN_MYOSOTIS= new BlockPlanLin("plan_myosotis",ModItems.GRAINE_MYOSOTIS, ModItems.MYOSOTIS);
-    public static final Block PLAN_NARCISSES= new BlockPlanLin("plan_narcisses",ModItems.GRAINE_NARCISSES, ModItems.NARCISSES);
-    public static final Block PLAN_OEILLETS= new BlockPlanLin("plan_oeillets",ModItems.GRAINE_OEILLETS, ModItems.OEILLETS);
-    public static final Block PLAN_ORCHIDEE_ROSE= new BlockPlanLin("plan_orchidee_rose",ModItems.GRAINE_ORCHIDEE_ROSE, ModItems.ORCHIDEE_ROSE);
-    public static final Block PLAN_PENSEES= new BlockPlanLin("plan_pensees",ModItems.GRAINE_PENSEES, ModItems.PENSEES);
-    public static final Block PLAN_PERSIL= new BlockPlanLin("plan_persil",ModItems.GRAINE_PERSIL, ModItems.PERSIL);
-    public static final Block PLAN_PIVOINE= new BlockPlanLin("plan_pivoine",ModItems.GRAINE_PIVOINE, ModItems.PIVOINE);
-    public static final Block PLAN_PLANTE_ETRANGE= new BlockPlanLin("plan_plante_etrange",ModItems.GRAINE_PLANTE_ETRANGE, ModItems.PLANTE_ETRANGE);
-    public static final Block PLAN_PLANTE_GRASSE_COLOREE= new BlockPlanLin("plan_plante_grasse_coloree",ModItems.GRAINE_PLANTE_GRASSE_COLOREE, ModItems.PLANTE_GRASSE_COLOREE);
-    public static final Block PLAN_POIVRON_JAUNE= new BlockPlanLin("plan_poivron_jaune",ModItems.GRAINE_POIVRON_JAUNE, ModItems.POIVRON_JAUNE);
-    public static final Block PLAN_POIVRON_ORANGE= new BlockPlanLin("plan_poivron_orange",ModItems.GRAINE_POIVRON_ORANGE, ModItems.POIVRON_ORANGE);
-    public static final Block PLAN_POIVRON_ROUGE= new BlockPlanLin("plan_poivron_rouge",ModItems.GRAINE_POIVRON_ROUGE, ModItems.POIVRON_ROUGE);
-    public static final Block PLAN_POIVRON_VERT= new BlockPlanLin("plan_poivron_vert",ModItems.GRAINE_POIVRON_VERT, ModItems.POIVRON_VERT);
-    public static final Block PLAN_ROMARIN= new BlockPlanLin("plan_romarin",ModItems.GRAINE_ROMARIN, ModItems.ROMARIN);
-    public static final Block PLAN_SALICORNE= new BlockPlanLin("plan_salicorne",ModItems.GRAINE_SALICORNE, ModItems.SALICORNE);
-    public static final Block PLAN_VERGE_D_OR= new BlockPlanLin("plan_verge_d_or",ModItems.GRAINE_VERGE_D_OR, ModItems.VERGE_D_OR);
-    public static final Block PLAN_VERVEINE= new BlockPlanLin("plan_verveine",ModItems.GRAINE_VERVEINE, ModItems.VERVEINE);
-    public static final Block PLAN_VIOLETTES= new BlockPlanLin("plan_violettes",ModItems.GRAINE_VIOLETTES, ModItems.VIOLETTES);
-*/
+    public static final Block PLAN_JONQUILLE= new BlockPlanLin2("plan_jonquille",ModItems.GRAINE_JONQUILLE, ModItems.JONQUILLE,2,2,2);
+    public static final Block PLAN_LAURIER= new BlockPlanLin2("plan_laurier",ModItems.GRAINE_LAURIER, ModItems.LAURIER,2,2,2);
+    public static final Block PLAN_LAVANDE= new BlockPlanLin2("plan_lavande",ModItems.GRAINE_LAVANDE, ModItems.LAVANDE,2,2,2);
+    public static final Block PLAN_LYS= new BlockPlanLin2("plan_lys",ModItems.GRAINE_LYS, ModItems.LYS,2,2,2);
+    public static final Block PLAN_MANDRAGORE= new BlockPlanLin2("plan_mandragore",ModItems.GRAINE_MANDRAGORE, ModItems.MANDRAGORE,2,2,2);
+    public static final Block PLAN_MENTHE= new BlockPlanLin2("plan_menthe",ModItems.GRAINE_MENTHE, ModItems.MENTHE,2,2,2);
+    public static final Block PLAN_MUGUET= new BlockPlanLin2("plan_muguet",ModItems.GRAINE_MUGUET, ModItems.MUGUET,2,2,2);
+    public static final Block PLAN_MYOSOTIS= new BlockPlanLin2("plan_myosotis",ModItems.GRAINE_MYOSOTIS, ModItems.MYOSOTIS,2,2,2);
+    public static final Block PLAN_NARCISSES= new BlockPlanLin2("plan_narcisses",ModItems.GRAINE_NARCISSES, ModItems.NARCISSES,2,2,2);
+    public static final Block PLAN_OEILLETS= new BlockPlanLin2("plan_oeillets",ModItems.GRAINE_OEILLETS, ModItems.OEILLETS,2,2,2);
+    public static final Block PLAN_ORCHIDEE_ROSE= new BlockPlanLin2("plan_orchidee_rose",ModItems.GRAINE_ORCHIDEE_ROSE, ModItems.ORCHIDEE_ROSE,2,2,2);
+    public static final Block PLAN_PENSEES= new BlockPlanLin2("plan_pensees",ModItems.GRAINE_PENSEES, ModItems.PENSEES,2,2,2);
+    public static final Block PLAN_PERSIL= new BlockPlanLin2("plan_persil",ModItems.GRAINE_PERSIL, ModItems.PERSIL,2,2,2);
+    public static final Block PLAN_PIVOINE= new BlockPlanLin2("plan_pivoine",ModItems.GRAINE_PIVOINE, ModItems.PIVOINE,2,2,2);
+    public static final Block PLAN_PLANTE_ETRANGE= new BlockPlanLin2("plan_plante_etrange",ModItems.GRAINE_PLANTE_ETRANGE, ModItems.PLANTE_ETRANGE,2,2,2);
+    public static final Block PLAN_PLANTE_GRASSE_COLOREE= new BlockPlanLin2("plan_plante_grasse_coloree",ModItems.GRAINE_PLANTE_GRASSE_COLOREE, ModItems.PLANTE_GRASSE_COLOREE,2,2,2);
+    public static final Block PLAN_POIVRON_JAUNE= new BlockPlanLin2("plan_poivron_jaune",ModItems.GRAINE_POIVRON_JAUNE, ModItems.POIVRON_JAUNE,2,2,2);
+    public static final Block PLAN_POIVRON_ORANGE= new BlockPlanLin2("plan_poivron_orange",ModItems.GRAINE_POIVRON_ORANGE, ModItems.POIVRON_ORANGE,2,2,2);
+    public static final Block PLAN_POIVRON_ROUGE= new BlockPlanLin2("plan_poivron_rouge",ModItems.GRAINE_POIVRON_ROUGE, ModItems.POIVRON_ROUGE,2,2,2);
+    public static final Block PLAN_POIVRON_VERT= new BlockPlanLin2("plan_poivron_vert",ModItems.GRAINE_POIVRON_VERT, ModItems.POIVRON_VERT,2,2,2);
+    public static final Block PLAN_ROMARIN= new BlockPlanLin2("plan_romarin",ModItems.GRAINE_ROMARIN, ModItems.ROMARIN,2,2,2);
+    public static final Block PLAN_SALICORNE= new BlockPlanLin2("plan_salicorne",ModItems.GRAINE_SALICORNE, ModItems.SALICORNE,2,2,2);
+    public static final Block PLAN_VERGE_D_OR= new BlockPlanLin2("plan_verge_d_or",ModItems.GRAINE_VERGE_D_OR, ModItems.VERGE_D_OR,2,2,2);
+    public static final Block PLAN_VERVEINE= new BlockPlanLin2("plan_verveine",ModItems.GRAINE_VERVEINE, ModItems.VERVEINE,2,2,2);
+    public static final Block PLAN_VIOLETTES= new BlockPlanLin2("plan_violettes",ModItems.GRAINE_VIOLETTES, ModItems.VIOLETTES,2,2,2);
+
 
 
 
@@ -594,10 +599,10 @@ public class ModBlocks {
 
 
     //FLOWER POT \!/ Venir ajouter les plantes ici pour pouvoir les planter dans ces nouveaux pots ! (ctrl+f BASILIC dans le fichier BlockFlowerPot ;) ) + BlockStates et model à ajuster
-    public static final Block FLOWER_POT = new BlockFlowerPot("flower_pot_am");
+   // public static final Block FLOWER_POT = new BlockFlowerPot("flower_pot_am");
 
     //BARIL \!/ Ajouter les interactions avec d'autres objets et liquides dans la classe directement en suivant l'exemple de l'eau
-    public static final Block BARIL_VIDE = new BlockBaril("baril_vide",Material.WOOD, 1.5F, 1.5f, SoundType.WOOD);
+    public static final Block BARIL_VIDE = new BlockBarril("baril_vide",Material.WOOD, 1.5F, 1.5f, SoundType.WOOD);
 
 
     //CONTENEUR \!/ Il faut recréer Block, TileEntity, Container, Inventory, GUI, Registry dans util.handlers.RegistryHandler et gérer le GUIid du Block (onBlockActivated) dans le switch case du GUIHandler
@@ -681,7 +686,7 @@ public class ModBlocks {
 
 //fours
 
-    public static final Block SECHOIR_VIANDE = new BlockFourSechoir2("sechoir_viandes");
+    //public static final Block SECHOIR_VIANDE = new BlockFourSechoir2("sechoir_viandes");
     //public static final Block SECHOIR_PLANTES = new BlockBase2("sechoir_plantes", Material.ROCK, 5F, 5F, SoundType.STONE);
     //public static final Block SECHOIR_POISSON = new BlockBase2("sechoir_poisson", Material.ROCK, 5F, 5F, SoundType.STONE);
     //public static final Block SECHOIR_SIMPLE_PAPIER = new BlockBase2("sechoir_simple_papier", Material.ROCK, 5F, 5F, SoundType.STONE);
@@ -689,8 +694,30 @@ public class ModBlocks {
 
 
 // BLOC Pour CHisel
-
+/*
     //public static final Block FULLGLASS = new BlockVitre(Material.GLASS);
+    public static final Block BLOC_VERRE = new BlockVerre(Material.GLASS,false,"bloc_verre",5F,5F);
+    public static final Block BLOC_VERRE_BLANC = new BlockVerre(Material.GLASS,false,"bloc_verre_blanc",5F,5F);
+    public static final Block BLOC_VERRE_ORANGE = new BlockVerre(Material.GLASS,false,"bloc_verre_orange",5F,5F);
+    public static final Block BLOC_VERRE_MAGENTA = new BlockVerre(Material.GLASS,true,"bloc_verre_magenta",5F,5F);
+    public static final Block BLOC_VERRE_BLEU_CLAIR = new BlockVerre(Material.GLASS,true,"bloc_verre_bleu_clair",5F,5F);
+    public static final Block BLOC_VERRE_JAUNE = new BlockVerre(Material.GLASS,true,"bloc_verre_jaune",5F,5F);
+    public static final Block BLOC_VERRE_VERT_CLAIR = new BlockVerre(Material.GLASS,true,"bloc_verre_vert_clair",5F,5F);
+    public static final Block BLOC_VERRE_ROSE = new BlockVerre(Material.GLASS,true,"bloc_verre_rose",5F,5F);
+    public static final Block BLOC_VERRE_GRIS = new BlockVerre(Material.GLASS,true,"bloc_verre_gris",5F,5F);
+    public static final Block BLOC_VERRE_GRIS_CLAIR = new BlockVerre(Material.GLASS,true,"bloc_verre_gris_clair",5F,5F);
+    public static final Block BLOC_VERRE_CYAN = new BlockVerre(Material.GLASS,true,"bloc_verre_cyan",5F,5F);
+    public static final Block BLOC_VERRE_VIOLET = new BlockVerre(Material.GLASS,true,"bloc_verre_violet",5F,5F);
+    public static final Block BLOC_VERRE_BLEU = new BlockVerre(Material.GLASS,true,"bloc_verre_bleu",5F,5F);
+    public static final Block BLOC_VERRE_MARRON = new BlockVerre(Material.GLASS,true,"bloc_verre_marron",5F,5F);
+    public static final Block BLOC_VERRE_VERT = new BlockVerre(Material.GLASS,true,"bloc_verre_vert",5F,5F);
+    public static final Block BLOC_VERRE_ROUGE = new BlockVerre(Material.GLASS,true,"bloc_verre_rouge",5F,5F);
+    public static final Block BLOC_VERRE_NOIR = new BlockVerre(Material.GLASS,true,"bloc_verre_noir",5F,5F);
+
+
+ */
+
+
 
 
 
@@ -733,8 +760,8 @@ public class ModBlocks {
         ModItems.GRAINE_RIZ = new ItemGraine("graine_riz",ModBlocks.PLAN_RIZ, Blocks.FARMLAND);
         ModItems.GRAINE_BLE = new ItemGraine("graine_ble",ModBlocks.PLAN_BLE, Blocks.FARMLAND);
         ModItems.GRAINE_THYM = new ItemGraine("graine_thym",ModBlocks.PLAN_THYM, Blocks.FARMLAND);
-        //ModItems.GRAINE_CHANVRE = new ItemGraine("GRAINE_CHANVRE",ModBlocks.PLAN_CHANVRE, Blocks.FARMLAND);
-        /*ModItems.GRAINE_BASILIC = new ItemGraine("graine_basilic",ModBlocks.PLAN_BASILIC, Blocks.FARMLAND);
+        ModItems.GRAINE_CHANVRE = new ItemGraine("GRAINE_CHANVRE",ModBlocks.PLAN_CHANVRE, Blocks.FARMLAND);
+        ModItems.GRAINE_BASILIC = new ItemGraine("graine_basilic",ModBlocks.PLAN_BASILIC, Blocks.FARMLAND);
         ModItems.GRAINE_ANETH = new ItemGraine("graine_aneth",ModBlocks.PLAN_ANETH, Blocks.FARMLAND);
         ModItems.GRAINE_ANIS = new ItemGraine("graine_anis",ModBlocks.PLAN_ANIS, Blocks.FARMLAND);
         ModItems.GRAINE_BELLE_DE_NUIT = new ItemGraine("graine_belle_de_nuit",ModBlocks.PLAN_BELLE_DE_NUIT, Blocks.FARMLAND);
@@ -786,7 +813,7 @@ public class ModBlocks {
         ModItems.GRAINE_VERGE_D_OR = new ItemGraine("graine_verge_d_or",ModBlocks.PLAN_VERGE_D_OR, Blocks.FARMLAND);
         ModItems.GRAINE_VERVEINE = new ItemGraine("graine_verveine",ModBlocks.PLAN_VERVEINE, Blocks.FARMLAND);
         ModItems.GRAINE_VIOLETTES = new ItemGraine("graine_violettes",ModBlocks.PLAN_VIOLETTES, Blocks.FARMLAND);
-*/
+
     }
 
     /**
@@ -836,7 +863,7 @@ public class ModBlocks {
 
         registerItem(ModItems.GRAINE_DE_THE);
 
-        /*registerItem(ModItems.GRAINE_BASILIC);
+        registerItem(ModItems.GRAINE_BASILIC);
         registerItem(ModItems.GRAINE_ANETH);
         registerItem(ModItems.GRAINE_ANIS);
         registerItem(ModItems.GRAINE_BELLE_DE_NUIT);
@@ -888,7 +915,7 @@ public class ModBlocks {
         registerItem(ModItems.GRAINE_VERGE_D_OR);
         registerItem(ModItems.GRAINE_VERVEINE);
         registerItem(ModItems.GRAINE_VIOLETTES);
-*/
+
     }
 
     public static void registerBlock(Block block){

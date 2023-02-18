@@ -16,8 +16,7 @@
     },
     "A":
     {
-      "item": "am:aiguille",
-      "data": 32767
+      "item": "am:aiguille"
     },
     "B":
     {
@@ -32,7 +31,7 @@
 
   "result":
   {
-    "item": "am:serviette_bleu_ciel",
+    "item": "am:serviette_bleu_clair",
     "count": 1
   }
 }

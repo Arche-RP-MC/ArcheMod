@@ -53,6 +53,7 @@ public class BouteilleDeVin extends FoodBase {
         }
     }
 
+
     @Override
     public EnumAction getItemUseAction(ItemStack stack) {
         return EnumAction.DRINK;

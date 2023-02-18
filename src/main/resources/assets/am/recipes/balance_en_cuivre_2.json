@@ -3,7 +3,7 @@
 
   "pattern":
   [
-    " LM",
+    "ILM",
     "PBP",
     "   "
   ],
@@ -18,9 +18,13 @@
     {
       "item": "am:plaque_de_cuivre"
     },
+    "I":
+    {
+      "item": "am:rouage"
+    },
     "L":
     {
-      "item": "am:lime_en_bronze",
+      "item": "am:trousse_d_ingenieur_en_acier",
       "data": 32767
     },
     "M":

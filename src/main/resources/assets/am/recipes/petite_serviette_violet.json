@@ -20,8 +20,7 @@
     },
     "A":
     {
-      "item": "am:aiguille",
-      "data": 32767
+      "item": "am:aiguille"
     },
     "C":
     {
@@ -32,7 +31,7 @@
 
   "result":
   {
-    "item": "am:petite_serviette",
+    "item": "am:petite_serviette_violet",
     "count": 1
   }
 }

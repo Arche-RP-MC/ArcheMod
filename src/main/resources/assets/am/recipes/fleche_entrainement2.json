@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " L ",
+    "FBP",
+    "   "
+  ],
+
+  "key":
+  {
+    "B":
+    {
+      "item": "minecraft:stick"
+    },
+    "F":
+    {
+      "item": "am:balle_en_bois"
+    },
+    "L":
+    {
+      "item": "am:lime_en_fer",
+      "data": 32767
+    },
+    "P":
+    {
+      "item": "minecraft:feather"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:fleche_entrainement",
+    "count": 1
+  }
+}

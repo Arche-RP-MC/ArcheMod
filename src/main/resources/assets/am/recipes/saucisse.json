@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped", 
   "pattern": 
  [ 
- "   ", 
+ " P ",
  " A ", 
  " D "
  ], 
@@ -16,6 +16,11 @@
   "data": 32767
  
 },
+  "P":
+  {
+   "item": "am:tripes"
+
+  },
  "A":
  {
  "item": "am:viande_crue"

@@ -1,0 +1,8 @@
+
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "am:items/canne_a_peche_test"
+    }
+
+}

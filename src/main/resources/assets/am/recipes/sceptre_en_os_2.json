@@ -3,9 +3,9 @@
 
   "pattern":
   [
-    "   ",
-    "H  ",
-    " B "
+    "  H",
+    "LMC",
+    "MB "
   ],
 
   "key":
@@ -13,6 +13,18 @@
     "H":
     {
       "item": "minecraft:bone"
+    },
+    "M":
+    {
+      "item": "am:manche"
+    },
+    "L":
+    {
+      "item": "am:laniere_de_cuir"
+    },
+    "C":
+    {
+      "item": "am:clous"
     },
     "B":
     {

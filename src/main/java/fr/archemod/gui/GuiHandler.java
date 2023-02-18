@@ -88,13 +88,13 @@ public class GuiHandler implements IGuiHandler {
                 if (!(player.getHeldItem(EnumHand.MAIN_HAND).getItem() instanceof GrandSac)) return null;
                 return new ContainerGrandSac(player.inventory, new InventoryGrandSac(player.getHeldItem(EnumHand.MAIN_HAND), 6));
 
-            case 10: //SechoirViande
+         /*case 10: //SechoirViande
                 TileEntity TileSechoirViande2 = world.getTileEntity(new BlockPos(x,y,z));
                 if(TileSechoirViande2 instanceof TileEntityFourSechoir2){
                     return new ContainerSechoirViande(player.inventory,(TileEntityFourSechoir2) TileSechoirViande2);
                 } else {
                     return null;
-                }
+                }*/
         }
         return null;
     }
@@ -164,13 +164,13 @@ public class GuiHandler implements IGuiHandler {
                 if (!(player.getHeldItem(EnumHand.MAIN_HAND).getItem() instanceof GrandSac)) return null;
                 return new GuiGrandSac(player.inventory, new InventoryGrandSac(player.getHeldItem(EnumHand.MAIN_HAND), 6));
 
-            case 10:
+            /*case 10:
                 TileEntity TileSechoirViande2 = world.getTileEntity(new BlockPos(x,y,z));
                 if(TileSechoirViande2 instanceof TileEntityFourSechoir2){
                     return new GuiSechoirViande(player.inventory,(TileEntityFourSechoir2) TileSechoirViande2);
                 } else {
                     return null;
-                }
+                }*/
 
 
         }

@@ -4,7 +4,7 @@
   "pattern":
   [
     "   ",
-    "P T",
+    "PUT",
     " TT"
   ],
 
@@ -12,8 +12,11 @@
   {
     "P":
     {
-        "item": "am:ciseaux_de_couture",
-        "data": 32767
+        "item": "minecraft:string"
+    },
+    "U":
+    {
+      "item": "am:paille"
     },
     "T":
     {

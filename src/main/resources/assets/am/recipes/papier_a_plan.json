@@ -3,9 +3,9 @@
 
   "pattern":
   [
-    "PPP",
-    "PPP",
-    "WCB"
+    "PP ",
+    "PP ",
+    "WC "
   ],
 
   "key":
@@ -18,10 +18,7 @@
     {
       "item": "minecraft:paper"
     },
-    "B":
-    {
-      "item": "am:bobine_de_laine"
-    },
+
     "C":
     {
       "item": "am:spatule",

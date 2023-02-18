@@ -4,16 +4,16 @@
   "pattern":
   [
     "G F",
-    "LLL",
-    "L L"
+    "L L",
+    "  "
   ],
 
   "key":
   {
     "L":
     {
-      "item": "minecraft:sapling",
-      "data": 4
+      "item": "minecraft:log2",
+      "data": 0
     },
 
     "G":

@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "am:items/perle_en_verre_vert"
+  }
+}

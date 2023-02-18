@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "FFF",
+    "FFF",
+    " D "
+  ],
+
+  "key":
+  {
+
+    "F":
+    {
+      "item": "am:papier_humide"
+    },
+    "D":
+    {
+      "item": "am:etoffe"
+    }
+  },
+
+  "result":
+  {
+    "item": "minecraft:paper",
+    "count": 6
+  }
+}

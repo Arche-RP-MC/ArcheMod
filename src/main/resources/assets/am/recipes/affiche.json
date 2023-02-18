@@ -3,17 +3,14 @@
 
   "pattern":
   [
-    " B ",
+    "   ",
     "FP ",
-    " B "
+    "   "
   ],
 
   "key":
   {
-    "B":
-    {
-      "item": "minecraft:stick"
-    },
+
     "F":
     {
       "item": "am:fusain",

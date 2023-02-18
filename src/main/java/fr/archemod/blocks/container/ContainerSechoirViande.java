@@ -1,4 +1,4 @@
-package fr.archemod.blocks.container;
+/*package fr.archemod.blocks.container;
 
 import fr.archemod.blocks.slot.SlotSechoirViandeFuel;
 import fr.archemod.blocks.slot.SlotSechoirViandeOutput;
@@ -164,3 +164,4 @@ public ContainerSechoirViande(InventoryPlayer player, TileEntityFourSechoir2 til
 
 
 }
+*/

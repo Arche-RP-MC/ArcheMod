@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "NNN",
+    "NFN",
+    "   "
+  ],
+
+  "key":
+  {
+    "N":
+    {
+      "item": "am:graine_orge"
+    },
+    "F":
+    {
+      "item": "am:mortier_pilon_en_pierre",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:farine",
+    "count": 3
+  }
+}
