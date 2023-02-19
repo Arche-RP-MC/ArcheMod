@@ -1122,6 +1122,8 @@ public class ModItems {
     public static final Item CERVELIERE_ACIER = new ItemBase("cerveliere_acier");
     public static final Item COIFFE_REMBOUREE = new ItemBase("coiffe_rembouree");
     public static final Item FER_A_CHEVAL = new ItemBase("fer_a_cheval");
+    public static final Item GANTELETS = new ItemBase("gantelets");
+    public static final Item GANTELETS_ACIER = new ItemBase("gantelets_acier");
     public static final Item GRAND_HEAUME = new ItemBase("grand_heaume");
     public static final Item JUPE_DE_MAILLES = new ItemBase("jupe_de_mailles");
     public static final Item JUPE_EN_MAILLE_DE_FER = new ItemBase("jupe_en_maille_de_fer");
