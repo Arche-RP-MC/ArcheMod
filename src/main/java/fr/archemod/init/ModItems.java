@@ -66,7 +66,7 @@ public class ModItems {
     public static final Item TOKEN_STONE_SILVER = new ItemBase("token_stone_silver");
     public static final Item TOKEN_STONE_WHITE = new ItemBase("token_stone_white");
     public static final Item TOKEN_STONE_YELLOW = new ItemBase("token_stone_yellow");
-    
+
 
 
 
