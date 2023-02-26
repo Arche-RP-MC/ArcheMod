@@ -50,12 +50,9 @@ public class ModBlocks {
     //public static final Block TABLE_END_1 = new Table("table_end_1",Material.WOOD);
     //public static final Block TABLE_END_2 = new Table("table_end_2",Material.WOOD);
 
-    public static final Block ANDESITE_PAVE_MOUSSU = new BlockBase("andesite_pave_moussu", Material.ROCK, 5F, 5F, SoundType.STONE);
-    public static final Block ANDESITE_POLIE = new BlockBase("andesite_polie", Material.ROCK, 5F, 5F, SoundType.STONE);
-    public static final Block ANDESITE_SCULPTEE = new BlockBase("andesite_sculptee", Material.ROCK, 5F, 5F, SoundType.STONE);
-    public static final Block ARDOISE_BRUTE = new BlockBase("ardoise_brute", Material.ROCK, 5F, 5F, SoundType.STONE);
-    public static final Block ARDOISE_BRUTE_BLEUE = new BlockBase("ardoise_brute_bleue", Material.ROCK, 5F, 5F, SoundType.STONE);
-    public static final Block ARDOISE_PEINTE = new BlockBase("ardoise_peinte", Material.ROCK, 5F, 5F, SoundType.STONE);
+    //Blocs
+
+        //Métaux
     public static final Block BLOC_D_ACIER = new BlockBase("bloc_d_acier", Material.IRON, 5F, 5F, SoundType.METAL);
     public static final Block BLOC_D_ARGENT = new BlockBase("bloc_d_argent",  Material.IRON, 5F, 5F, SoundType.METAL);
     public static final Block BLOC_DE_BRONZE = new BlockBase("bloc_de_bronze",  Material.IRON, 5F, 5F, SoundType.METAL);
@@ -65,6 +62,14 @@ public class ModBlocks {
     public static final Block BLOC_DE_PAILLE = new BlockBase("bloc_de_paille", Material.ROCK, 5F, 5F, SoundType.STONE);
     public static final Block BLOC_DE_PLOMB = new BlockBase("bloc_de_plomb",  Material.IRON, 5F, 5F, SoundType.METAL);
     public static final Block BLOC_ETAIN = new BlockBase("bloc_etain",  Material.IRON, 5F, 5F, SoundType.METAL);
+
+        //Pierre
+    public static final Block ANDESITE_PAVE_MOUSSU = new BlockBase("andesite_pave_moussu", Material.ROCK, 5F, 5F, SoundType.STONE);
+    public static final Block ANDESITE_POLIE = new BlockBase("andesite_polie", Material.ROCK, 5F, 5F, SoundType.STONE);
+    public static final Block ANDESITE_SCULPTEE = new BlockBase("andesite_sculptee", Material.ROCK, 5F, 5F, SoundType.STONE);
+    public static final Block ARDOISE_BRUTE = new BlockBase("ardoise_brute", Material.ROCK, 5F, 5F, SoundType.STONE);
+    public static final Block ARDOISE_BRUTE_BLEUE = new BlockBase("ardoise_brute_bleue", Material.ROCK, 5F, 5F, SoundType.STONE);
+    public static final Block ARDOISE_PEINTE = new BlockBase("ardoise_peinte", Material.ROCK, 5F, 5F, SoundType.STONE);
     public static final Block BRIQUE_ANDESITE = new BlockBase("brique_andesite", Material.ROCK, 5F, 5F, SoundType.STONE);
     public static final Block BRIQUE_ANDESITE_CRAQUELEE = new BlockBase("brique_andesite_craquelee", Material.ROCK, 5F, 5F, SoundType.STONE);
     public static final Block BRIQUE_ANDESITE_MOUSSUE = new BlockBase("brique_andesite_moussue", Material.ROCK, 5F, 5F, SoundType.STONE);
@@ -94,11 +99,19 @@ public class ModBlocks {
     public static final Block GRANITE_PAVE_MOUSSU = new BlockBase("granite_pave_moussu", Material.ROCK, 5F, 5F, SoundType.STONE);
     public static final Block GRANITE_POLI = new BlockBase("granite_poli", Material.ROCK, 5F, 5F, SoundType.STONE);
     public static final Block GRANITE_SCULPTEE = new BlockBase("granite_sculptee", Material.ROCK, 5F, 5F, SoundType.STONE);
-    public static final Block JONC_DE_MER = new BlockBase("jonc_de_mer", Material.GRASS, 5F, 5F, SoundType.GROUND);
-
     public static final Block MARBRAGE_SOL_GRES = new BlockBase("marbrage_sol_gres", Material.ROCK, 5F, 5F, SoundType.STONE);
     public static final Block PAVE_CRAQUELE = new BlockBase("pave_craquele", Material.ROCK, 5F, 5F, SoundType.STONE);
     public static final Block PIERRES_DE_GRES_NATURELLES = new BlockBase("pierres_de_gres_naturelles", Material.ROCK, 5F, 5F, SoundType.STONE);
+    public static final Block ROCHE_ET_PIERRE = new BlockBase("roche_et_pierre", Material.ROCK, 5F, 5F, SoundType.STONE);
+    public static final Block STUC = new BlockBase("stuc", Material.ROCK, 5F, 5F, SoundType.STONE);
+    public static final Block TUILE = new BlockBase("tuile", Material.ROCK, 5F, 5F, SoundType.STONE);
+    public static final Block TUILE_EN_ARDOISE = new BlockBase("tuile_en_ardoise", Material.ROCK, 5F, 5F, SoundType.STONE);
+    public static final Block TUILE_EN_ARDOISE_TAILLEE = new BlockBase("tuile_en_ardoise_taillee", Material.ROCK, 5F, 5F, SoundType.STONE);
+    public static final Block TUILE_EN_ARDOISE_TRAVAILLEE = new BlockBase("tuile_en_ardoise_travaillee", Material.ROCK, 5F, 5F, SoundType.STONE);
+
+
+        //Bois
+    public static final Block JONC_DE_MER = new BlockBase("jonc_de_mer", Material.GRASS, 5F, 5F, SoundType.GROUND);
     public static final Block PLANCHE_ACACIA_VERNIE = new BlockBase("planche_acacia_vernie", Material.WOOD, 5F, 5F, SoundType.WOOD);
     public static final Block PLANCHE_BOULEAU_VERNIE = new BlockBase("planche_bouleau_vernie", Material.WOOD, 5F, 5F, SoundType.WOOD);
     public static final Block PLANCHE_CHENE_NOIR_VERNIE = new BlockBase("planche_chene_noir_vernie", Material.WOOD, 5F, 5F, SoundType.WOOD);
@@ -142,17 +155,62 @@ public class ModBlocks {
     public static final Block PLANCHER_SAPIN_CRAQUELE = new BlockBase("plancher_sapin_craquele", Material.WOOD, 5F, 5F, SoundType.WOOD);
     public static final Block PLANCHER_SAPIN_CROISE = new BlockBase("plancher_sapin_croise",Material.WOOD, 5F, 5F, SoundType.WOOD);
     public static final Block PLANCHER_SAPIN_MOUSSU = new BlockBase("plancher_sapin_moussu", Material.WOOD, 5F, 5F, SoundType.WOOD);
-    public static final Block ROCHE_ET_PIERRE = new BlockBase("roche_et_pierre", Material.ROCK, 5F, 5F, SoundType.STONE);
-    public static final Block STUC = new BlockBase("stuc", Material.ROCK, 5F, 5F, SoundType.STONE);
-    public static final Block TUILE = new BlockBase("tuile", Material.ROCK, 5F, 5F, SoundType.STONE);
-    public static final Block TUILE_EN_ARDOISE = new BlockBase("tuile_en_ardoise", Material.ROCK, 5F, 5F, SoundType.STONE);
-    public static final Block TUILE_EN_ARDOISE_TAILLEE = new BlockBase("tuile_en_ardoise_taillee", Material.ROCK, 5F, 5F, SoundType.STONE);
-    public static final Block TUILE_EN_ARDOISE_TRAVAILLEE = new BlockBase("tuile_en_ardoise_travaillee", Material.ROCK, 5F, 5F, SoundType.STONE);
 
 
 
     //ESCALIER
+
+        //LAINE
+    public static final Block ESCALIER_EN_JONC_DE_MER = new BlockEscalier("escalier_en_jonc_de_mer",5F,5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_LAINE_BLANCHE_CROISEE = new BlockEscalier("escalier_en_laine_blanche_croisee",5F,5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_LAINE_BLEUE_CIEL_CROISEE = new BlockEscalier("escalier_en_laine_bleue_ciel_croisee",5F,5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_LAINE_BLEUE_CROISEE = new BlockEscalier("escalier_en_laine_bleue_croisee",5F,5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_LAINE_CYAN_CROISEE = new BlockEscalier("escalier_en_laine_cyan_croisee",5F,5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_LAINE_GRIS_CROISEE = new BlockEscalier("escalier_en_laine_gris_croisee",5F,5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_LAINE_JAUNE_CROISEE = new BlockEscalier("escalier_en_laine_jaune_croisee",5F,5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_LAINE_MAGENTA_CROISEE = new BlockEscalier("escalier_en_laine_magenta_croisee",5F,5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_LAINE_MARRON_CROISEE = new BlockEscalier("escalier_en_laine_marron_croisee",5F,5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_LAINE_NOIRE_CROISEE = new BlockEscalier("escalier_en_laine_noire_croisee",5F,5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_LAINE_ORANGE_CROISEE = new BlockEscalier("escalier_en_laine_orange_croisee",5F,5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_LAINE_ROSE_CROISEE = new BlockEscalier("escalier_en_laine_rose_croisee",5F,5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_LAINE_ROUGE_CROISEE = new BlockEscalier("escalier_en_laine_rouge_croisee",5F,5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_LAINE_VERTE_CLAIRE_CROISEE = new BlockEscalier("escalier_en_laine_verte_claire_croisee",5F,5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_LAINE_VERTE_CROISEE = new BlockEscalier("escalier_en_laine_verte_croisee",5F,5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_LAINE_VIOLETTE_CROISEE = new BlockEscalier("escalier_en_laine_violette_croisee",5F,5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block WOOLBLACKSTAIR  = new BlockEscalier("woolblackstair",3F,3F, SoundType.CLOTH, Block.getStateById(35));
+    public static final Block WOOLBLUESTAIR  = new BlockEscalier("woolbluestair",3F,3F, SoundType.CLOTH, Block.getStateById(35));
+    public static final Block WOOLBROWNSTAIR  = new BlockEscalier("woolbrownstair",3F,3F, SoundType.CLOTH, Block.getStateById(35));
+    public static final Block WOOLCYANSTAIR  = new BlockEscalier("woolcyanstair",3F,3F, SoundType.CLOTH, Block.getStateById(35));
+    public static final Block WOOLGRAYSTAIRS  = new BlockEscalier("woolgraystairs",3F,3F, SoundType.CLOTH, Block.getStateById(35));
+    public static final Block WOOLGREENSTAIR  = new BlockEscalier("woolgreenstair",3F,3F, SoundType.CLOTH, Block.getStateById(35));
+    public static final Block WOOLLIGHTBLUESTAIR  = new BlockEscalier("woollightbluestair",3F,3F, SoundType.CLOTH, Block.getStateById(35));
+    public static final Block WOOLLIMESTAIR  = new BlockEscalier("woollimestair",3F,3F, SoundType.CLOTH, Block.getStateById(35));
+    public static final Block WOOLMAGENTASTAIR  = new BlockEscalier("woolmagentastair",3F,3F, SoundType.CLOTH, Block.getStateById(35));
+    public static final Block WOOLORANGESTAIR  = new BlockEscalier("woolorangestair",3F,3F, SoundType.CLOTH, Block.getStateById(35));
+    public static final Block WOOLPEURPLESTAIR  = new BlockEscalier("woolpeurplestair",3F,3F, SoundType.CLOTH, Block.getStateById(35));
+    public static final Block WOOLPINKSTAIR  = new BlockEscalier("woolpinkstair",3F,3F, SoundType.CLOTH, Block.getStateById(35));
+    public static final Block WOOLREDSTAIR  = new BlockEscalier("woolredstair",3F,3F, SoundType.CLOTH, Block.getStateById(35));
+    public static final Block WOOLSILVERSTAIR  = new BlockEscalier("woolsilverstair",3F,3F, SoundType.CLOTH, Block.getStateById(35));
+    public static final Block WOOLWHITESTAIR  = new BlockEscalier("woolwhitestair",3F,3F, SoundType.CLOTH, Block.getStateById(35));
+    public static final Block WOOLYELLOWSTAIR  = new BlockEscalier("woolyellowstair",3F,3F, SoundType.CLOTH, Block.getStateById(35));
     public static final Block WOOL_COLORED_MAGENTA_STAIRS = new BlockEscalier("wool_colored_magenta_stairs",3F,3F, SoundType.CLOTH, Block.getStateById(35));
+
+        //BOIS
+    public static final Block ESCALIER_EN_PLANCHER_BAMBOU = new BlockEscalier("escalier_en_plancher_bambou",5F,5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_PLANCHE_ACACIA_VERNIE = new BlockEscalier("escalier_en_planche_acacia_vernie",5F,5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_PLANCHE_BOULEAU_VERNIE = new BlockEscalier("escalier_en_planche_bouleau_vernie",5F,5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_PLANCHE_CHENE_NOIR_VERNIE = new BlockEscalier("escalier_en_planche_chene_noir_vernie",5F,5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_PLANCHE_CHENE_VERNIE = new BlockEscalier("escalier_en_planche_chene_vernie",5F,5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_PLANCHE_SAPIN_VERNIE = new BlockEscalier("escalier_en_planche_sapin_vernie",5F,5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block HIDDENPLANKACACIASTAIR  = new BlockEscalier("hiddenplankacaciastair",4F,4F, SoundType.WOOD, Block.getStateById(35));
+    public static final Block HIDDENPLANKBIGOAKSTAIR  = new BlockEscalier("hiddenplankbigoakstair",4F,4F, SoundType.WOOD, Block.getStateById(35));
+    public static final Block HIDDENPLANKBIRCHSTAIR  = new BlockEscalier("hiddenplankbirchstair",4F,4F, SoundType.WOOD, Block.getStateById(35));
+    public static final Block HIDDENPLANKJUNGLESTAIR  = new BlockEscalier("hiddenplankjunglestair",4F,4F, SoundType.WOOD, Block.getStateById(35));
+    public static final Block HIDDENPLANKOAKSTAIR  = new BlockEscalier("hiddenplankoakstair",4F,4F, SoundType.WOOD, Block.getStateById(35));
+    public static final Block HIDDENPLANKSACACIASTAIR  = new BlockEscalier("hiddenplanksacaciastair",4F,4F, SoundType.WOOD, Block.getStateById(35));
+
+
+    //PIERRE
     public static final Block ADESITSMOOTHMOSSYSTAIR = new BlockEscalier("adesitsmoothmossystair",5F,5F, SoundType.STONE, Block.getStateById(35));
     public static final Block ANDESITECRACKEDBRICKSTAIRS  = new BlockEscalier("andesitecrackedbrickstairs",5F,5F, SoundType.STONE, Block.getStateById(35));
     public static final Block ANDESITMOSSYBRICKSTAIR  = new BlockEscalier("andesitmossybrickstair",5F,5F, SoundType.STONE, Block.getStateById(35));
@@ -178,66 +236,27 @@ public class ModBlocks {
     public static final Block DIORITESMOOTH2STAIR  = new BlockEscalier("dioritesmooth2stair",5F,5F, SoundType.STONE, Block.getStateById(35));
     public static final Block DIORITESMOOTHBRICKSTAIR  = new BlockEscalier("dioritesmoothbrickstair",5F,5F, SoundType.STONE, Block.getStateById(35));
     public static final Block DIORITESMOOTHMOSSYSTAIRS  = new BlockEscalier("dioritesmoothmossystairs",5F,5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_ECAILLE_EN_ARDOISE = new BlockEscalier("escalier_en_ecaille_en_ardoise",5F,5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_ECAILLE_EN_ARDOISE_CYAN = new BlockEscalier("escalier_en_ecaille_en_ardoise_cyan",5F,5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_ECAILLE_EN_ARDOISE_VERTE = new BlockEscalier("escalier_en_ecaille_en_ardoise_verte",5F,5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_ECAILLE_EN_ARDOISE_VERTE_CLAIRE = new BlockEscalier("escalier_en_ecaille_en_ardoise_verte_claire",5F,5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_TUILE = new BlockEscalier("escalier_en_tuile",5F,5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_TUILE_EN_ARDOISE = new BlockEscalier("escalier_en_tuile_en_ardoise",5F,5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_TUILE_EN_ARDOISE_TAILLEE = new BlockEscalier("escalier_en_tuile_en_ardoise_taillee",5F,5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_TUILE_EN_ARDOISE_TRAVAILLEE = new BlockEscalier("escalier_en_tuile_en_ardoise_travaillee",5F,5F, SoundType.STONE, Block.getStateById(35));
     public static final Block GRANITECRACKEDBRICKSTAIR  = new BlockEscalier("granitecrackedbrickstair",5F,5F, SoundType.STONE, Block.getStateById(35));
     public static final Block GRANITEMOSSYSTAIR  = new BlockEscalier("granitemossystair",5F,5F, SoundType.STONE, Block.getStateById(35));
     public static final Block GRANITESMOOTH2STAIR  = new BlockEscalier("granitesmooth2stair",5F,5F, SoundType.STONE, Block.getStateById(35));
     public static final Block GRANITESMOOTHBRICKSTAIR  = new BlockEscalier("granitesmoothbrickstair",5F,5F, SoundType.STONE, Block.getStateById(35));
     public static final Block GRANITESMOOTHMOSSYSTAIR  = new BlockEscalier("granitesmoothmossystair",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block HIDDENPLANKACACIASTAIR  = new BlockEscalier("hiddenplankacaciastair",4F,4F, SoundType.WOOD, Block.getStateById(35));
-    public static final Block HIDDENPLANKBIGOAKSTAIR  = new BlockEscalier("hiddenplankbigoakstair",4F,4F, SoundType.WOOD, Block.getStateById(35));
-    public static final Block HIDDENPLANKBIRCHSTAIR  = new BlockEscalier("hiddenplankbirchstair",4F,4F, SoundType.WOOD, Block.getStateById(35));
-    public static final Block HIDDENPLANKJUNGLESTAIR  = new BlockEscalier("hiddenplankjunglestair",4F,4F, SoundType.WOOD, Block.getStateById(35));
-    public static final Block HIDDENPLANKOAKSTAIR  = new BlockEscalier("hiddenplankoakstair",4F,4F, SoundType.WOOD, Block.getStateById(35));
-    public static final Block HIDDENPLANKSACACIASTAIR  = new BlockEscalier("hiddenplanksacaciastair",4F,4F, SoundType.WOOD, Block.getStateById(35));
-    public static final Block WOOLBLACKSTAIR  = new BlockEscalier("woolblackstair",3F,3F, SoundType.CLOTH, Block.getStateById(35));
-    public static final Block WOOLBLUESTAIR  = new BlockEscalier("woolbluestair",3F,3F, SoundType.CLOTH, Block.getStateById(35));
-    public static final Block WOOLBROWNSTAIR  = new BlockEscalier("woolbrownstair",3F,3F, SoundType.CLOTH, Block.getStateById(35));
-    public static final Block WOOLCYANSTAIR  = new BlockEscalier("woolcyanstair",3F,3F, SoundType.CLOTH, Block.getStateById(35));
-    public static final Block WOOLGRAYSTAIRS  = new BlockEscalier("woolgraystairs",3F,3F, SoundType.CLOTH, Block.getStateById(35));
-    public static final Block WOOLGREENSTAIR  = new BlockEscalier("woolgreenstair",3F,3F, SoundType.CLOTH, Block.getStateById(35));
-    public static final Block WOOLLIGHTBLUESTAIR  = new BlockEscalier("woollightbluestair",3F,3F, SoundType.CLOTH, Block.getStateById(35));
-    public static final Block WOOLLIMESTAIR  = new BlockEscalier("woollimestair",3F,3F, SoundType.CLOTH, Block.getStateById(35));
-    public static final Block WOOLMAGENTASTAIR  = new BlockEscalier("woolmagentastair",3F,3F, SoundType.CLOTH, Block.getStateById(35));
-    public static final Block WOOLORANGESTAIR  = new BlockEscalier("woolorangestair",3F,3F, SoundType.CLOTH, Block.getStateById(35));
-    public static final Block WOOLREDSTAIR  = new BlockEscalier("woolredstair",3F,3F, SoundType.CLOTH, Block.getStateById(35));
-    public static final Block WOOLSILVERSTAIR  = new BlockEscalier("woolsilverstair",3F,3F, SoundType.CLOTH, Block.getStateById(35));
-    public static final Block WOOLWHITESTAIR  = new BlockEscalier("woolwhitestair",3F,3F, SoundType.CLOTH, Block.getStateById(35));
-    public static final Block WOOLYELLOWSTAIR  = new BlockEscalier("woolyellowstair",3F,3F, SoundType.CLOTH, Block.getStateById(35));
-    public static final Block WOOLPEURPLESTAIR  = new BlockEscalier("woolpeurplestair",3F,3F, SoundType.CLOTH, Block.getStateById(35));
-    public static final Block WOOLPINKSTAIR  = new BlockEscalier("woolpinkstair",3F,3F, SoundType.CLOTH, Block.getStateById(35));
 
+        //AUTRES
     public static final Block ESCALIER_EN_BLOC_DE_CHAUME = new BlockEscalier("escalier_en_bloc_de_chaume",5F,5F, SoundType.STONE, Block.getStateById(35));
     public static final Block ESCALIER_EN_BLOC_DE_PAILLE = new BlockEscalier("escalier_en_bloc_de_paille",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_ECAILLE_EN_ARDOISE = new BlockEscalier("escalier_en_ecaille_en_ardoise",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_ECAILLE_EN_ARDOISE_CYAN = new BlockEscalier("escalier_en_ecaille_en_ardoise_cyan",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_ECAILLE_EN_ARDOISE_VERTE = new BlockEscalier("escalier_en_ecaille_en_ardoise_verte",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_ECAILLE_EN_ARDOISE_VERTE_CLAIRE = new BlockEscalier("escalier_en_ecaille_en_ardoise_verte_claire",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_JONC_DE_MER = new BlockEscalier("escalier_en_jonc_de_mer",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_LAINE_BLANCHE_CROISEE = new BlockEscalier("escalier_en_laine_blanche_croisee",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_LAINE_BLEUE_CIEL_CROISEE = new BlockEscalier("escalier_en_laine_bleue_ciel_croisee",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_LAINE_BLEUE_CROISEE = new BlockEscalier("escalier_en_laine_bleue_croisee",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_LAINE_CYAN_CROISEE = new BlockEscalier("escalier_en_laine_cyan_croisee",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_LAINE_GRIS_CROISEE = new BlockEscalier("escalier_en_laine_gris_croisee",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_LAINE_JAUNE_CROISEE = new BlockEscalier("escalier_en_laine_jaune_croisee",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_LAINE_MAGENTA_CROISEE = new BlockEscalier("escalier_en_laine_magenta_croisee",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_LAINE_MARRON_CROISEE = new BlockEscalier("escalier_en_laine_marron_croisee",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_LAINE_NOIRE_CROISEE = new BlockEscalier("escalier_en_laine_noire_croisee",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_LAINE_ORANGE_CROISEE = new BlockEscalier("escalier_en_laine_orange_croisee",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_LAINE_ROSE_CROISEE = new BlockEscalier("escalier_en_laine_rose_croisee",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_LAINE_ROUGE_CROISEE = new BlockEscalier("escalier_en_laine_rouge_croisee",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_LAINE_VERTE_CLAIRE_CROISEE = new BlockEscalier("escalier_en_laine_verte_claire_croisee",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_LAINE_VERTE_CROISEE = new BlockEscalier("escalier_en_laine_verte_croisee",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_LAINE_VIOLETTE_CROISEE = new BlockEscalier("escalier_en_laine_violette_croisee",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_PLANCHE_ACACIA_VERNIE = new BlockEscalier("escalier_en_planche_acacia_vernie",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_PLANCHE_BOULEAU_VERNIE = new BlockEscalier("escalier_en_planche_bouleau_vernie",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_PLANCHE_CHENE_NOIR_VERNIE = new BlockEscalier("escalier_en_planche_chene_noir_vernie",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_PLANCHE_CHENE_VERNIE = new BlockEscalier("escalier_en_planche_chene_vernie",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_PLANCHE_SAPIN_VERNIE = new BlockEscalier("escalier_en_planche_sapin_vernie",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_PLANCHER_BAMBOU = new BlockEscalier("escalier_en_plancher_bambou",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_TUILE = new BlockEscalier("escalier_en_tuile",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_TUILE_EN_ARDOISE = new BlockEscalier("escalier_en_tuile_en_ardoise",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_TUILE_EN_ARDOISE_TAILLEE = new BlockEscalier("escalier_en_tuile_en_ardoise_taillee",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_TUILE_EN_ARDOISE_TRAVAILLEE = new BlockEscalier("escalier_en_tuile_en_ardoise_travaillee",5F,5F, SoundType.STONE, Block.getStateById(35));
+
+
+
+
 
     //DALLES \!/ block de base, dalle et double dalle + méthode init & register en bas de ce code.
     public static final Block LAINE_MAGENTA = new BlockBase("laine_magenta",Material.CLOTH,2F,2F,SoundType.CLOTH);
@@ -429,6 +448,7 @@ public class ModBlocks {
     public static final Block VERVEINE = new BlockPlante("verveine");
     public static final Block VIOLETTES = new BlockPlante("violettes");
 */
+
     //PORTE
     public static final Block PORTE_RENFORCEE = new BlockPorte("porte_renforcee", Material.WOOD, SoundType.WOOD, 4F);
     public static final Block PORTE_DELABREE = new BlockPorte("porte_delabree", Material.WOOD, SoundType.WOOD, 4F);
@@ -493,7 +513,7 @@ public class ModBlocks {
     public static final Block WALLLEGSPRUCE  = new BlockMur("spruce_wall", Material.WOOD, 5F, 5F, SoundType.WOOD);
 
 
-    //TÄCHES
+    //TÂCHES
     public static final Block TACHE_DE_SANG = new BlockTache("tache_de_sang", Material.WOOD,0.5F,5F,SoundType.WOOD);
     public static final Block TACHE_EAU = new BlockTache("tache_d_eau", Material.WOOD, 0.5F, 0.5F, SoundType.WOOD);
     public static final Block TACHE_DE_BOUE = new BlockTache("tache_de_boue", Material.WOOD, 0.5F, 0.5F, SoundType.WOOD);
@@ -669,7 +689,7 @@ public class ModBlocks {
 
 
 
-//gateau
+//GATEAU
 
     public static final Block BLEU_ENTIER = new Bleu("bleu_entier", 5F, 5F, SoundType.SLIME);
     public static final Block FROMAGE_ENTIER = new Fromage("fromage_entier", 5F, 5F, SoundType.SLIME);
