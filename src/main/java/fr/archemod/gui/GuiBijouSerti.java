@@ -1,7 +1,7 @@
 package fr.archemod.gui;
 
-import fr.archemod.items.inventory.InventoryBourse;
-import fr.archemod.items.inventory.container.ContainerBourse;
+import fr.archemod.items.inventory.InventoryBijouSerti;
+import fr.archemod.items.inventory.container.ContainerBijouSerti;
 import fr.archemod.util.Reference;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.resources.I18n;
@@ -11,12 +11,12 @@ import org.lwjgl.opengl.GL11;
 
 public class GuiBijouSerti extends GuiContainer {
     public static final ResourceLocation texture = new ResourceLocation(Reference.MOD_ID,"textures/gui/container/generic_36.png");
-    protected InventoryBourse inv;
+    protected InventoryBijouSerti inv;
     protected InventoryPlayer playerInv;
     public int rows;
 
-    public GuiBijouSerti(InventoryPlayer playerInv, InventoryBourse inv) {
-        super(new ContainerBourse(playerInv, inv));
+    public GuiBijouSerti(InventoryPlayer playerInv, InventoryBijouSerti inv) {
+        super(new ContainerBijouSerti(playerInv, inv));
         this.playerInv = playerInv;
         this.inv = inv;
         this.allowUserInput = false;

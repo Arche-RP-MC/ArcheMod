@@ -1,7 +1,6 @@
 package fr.archemod.items.inventory.slot;
 
 import fr.archemod.items.BijouSerti;
-import fr.archemod.items.Bourse;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;

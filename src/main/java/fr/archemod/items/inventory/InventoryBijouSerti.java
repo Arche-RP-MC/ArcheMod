@@ -1,6 +1,6 @@
 package fr.archemod.items.inventory;
 
-import fr.archemod.items.Bourse;
+import fr.archemod.items.BijouSerti;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
@@ -107,7 +107,7 @@ public class InventoryBijouSerti implements IInventory {
 
     @Override
     public String getName() {
-        return "Bourse";
+        return "Bijou Serti";
     }
 
     @Override
@@ -144,7 +144,7 @@ public class InventoryBijouSerti implements IInventory {
      */
     @Override
     public boolean isItemValidForSlot(int index, ItemStack stack) {
-        return !(stack.getItem() instanceof Bourse);
+        return !(stack.getItem() instanceof BijouSerti);
     }
 
     @Override

@@ -210,7 +210,7 @@ public class ModBlocks {
     public static final Block HIDDENPLANKSACACIASTAIR  = new BlockEscalier("hiddenplanksacaciastair",4F,4F, SoundType.WOOD, Block.getStateById(35));
 
 
-    //PIERRE
+        //PIERRE
     public static final Block ADESITSMOOTHMOSSYSTAIR = new BlockEscalier("adesitsmoothmossystair",5F,5F, SoundType.STONE, Block.getStateById(35));
     public static final Block ANDESITECRACKEDBRICKSTAIRS  = new BlockEscalier("andesitecrackedbrickstairs",5F,5F, SoundType.STONE, Block.getStateById(35));
     public static final Block ANDESITMOSSYBRICKSTAIR  = new BlockEscalier("andesitmossybrickstair",5F,5F, SoundType.STONE, Block.getStateById(35));

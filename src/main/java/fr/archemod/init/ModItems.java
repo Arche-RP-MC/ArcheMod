@@ -1272,8 +1272,8 @@ public class ModItems {
     public static final Item PEIGNE_EN_OR = new ItemBase("peigne_en_or");
 
 
-  /* public static final Item TORQUE_OR=new ItemBase("torque_or");
- public static final Item TORQUE_ARGENT=new ItemBase("torque_argent");
+  public static final Item TORQUE_OR=new ItemBase("torque_or");
+ /* public static final Item TORQUE_ARGENT=new ItemBase("torque_argent");
  public static final Item BROCHE_OR=new ItemBase("broche_or");
  public static final Item BROCHE_ARGENT=new ItemBase("broche_argent");
  public static final Item BROCHE_CUIVRE=new ItemBase("broche_cuivre");
@@ -1301,29 +1301,30 @@ public class ModItems {
  public static final Item FEUILLE_OR=new ItemBase("feuille_or");
  public static final Item FEUILLE_ARGENT=new ItemBase("feuille_argent");
  public static final Item POINTE_OR=new ItemBase("pointe_or");
- public static final Item POINTE_ARGENT=new ItemBase("pointe_argent");
+ public static final Item POINTE_ARGENT=new ItemBase("pointe_argent");*/
 
     // Bijoux SERTIS
- /*
- public static final Item TORQUE_OR_SERTIE=new ItemBase("torque_or_sertie");
- public static final Item TORQUE_ARGENT_SERTIE=new ItemBase("torque_argent_sertie");
- public static final Item BROCHE_OR_SERTIE=new ItemBase("broche_or_sertie");
- public static final Item BROCHE_ARGENT_SERTIE=new ItemBase("broche_argent_sertie");
- public static final Item BROCHE_IVOIRE_SERTIE=new ItemBase("broche_ivoire_sertie");
- public static final Item CHEVALIERE_OR_SERTIE=new ItemBase("chevaliere_or_sertie");
- public static final Item CHEVALIERE_ARGENT_SERTIE=new ItemBase("chevaliere_argent_sertie");
- public static final Item DIADEME_OR_SERTIE=new ItemBase("diademe_or_sertie");
- public static final Item DIADEME_ARGENT_SERTIE=new ItemBase("diademe_argent_sertie");
- public static final Item BAGUE_EN_OR_SERTIE=new ItemBase("bague_en_or_sertie");
- public static final Item BAGUE_EN_ARGENT_SERTIE=new ItemBase("bague_en_argent_sertie");
- public static final Item COLLIER_EN_OR_SERTIE=new ItemBase("collier_en_or_sertie");
- public static final Item COLLIER_EN_ARGENT_SERTIE=new ItemBase("collier_en_argent_sertie");
- public static final Item BOUCLES_OREILLES_EN_OR_SERTIE=new ItemBase("boucles_oreilles_en_or_sertie");
- public static final Item BOUCLES_OREILLES_EN_ARGENT_SERTIE=new ItemBase("boucles_oreilles_en_argent_sertie");
- public static final Item BRACELET_EN_OR_SERTIE=new ItemBase("bracelet_en_or_sertie");
- public static final Item BRACELET_EN_ARGENT_SERTIE=new ItemBase("bracelet_en_argent_sertie");
- public static final Item MANCHETTE_EN_OR_SERTIE=new ItemBase("manchette_en_or_sertie");
- public static final Item MANCHETTE_EN_ARGENT_SERTIE=new ItemBase("manchette_en_argent_sertie");
+
+        //Torque ajouté pour test
+    public static final Item TORQUE_OR_SERTIE=new BijouSerti("torque_or_sertie");
+    /*public static final Item TORQUE_ARGENT_SERTIE=new BijouSerti("torque_argent_sertie");
+    public static final Item BROCHE_OR_SERTIE=new BijouSerti("broche_or_sertie");
+    public static final Item BROCHE_ARGENT_SERTIE=new BijouSerti("broche_argent_sertie");
+    public static final Item BROCHE_IVOIRE_SERTIE=new BijouSerti("broche_ivoire_sertie");
+    public static final Item CHEVALIERE_OR_SERTIE=new BijouSerti("chevaliere_or_sertie");
+    public static final Item CHEVALIERE_ARGENT_SERTIE=new BijouSerti("chevaliere_argent_sertie");
+    public static final Item DIADEME_OR_SERTIE=new BijouSerti("diademe_or_sertie");
+    public static final Item DIADEME_ARGENT_SERTIE=new BijouSerti("diademe_argent_sertie");
+    public static final Item BAGUE_EN_OR_SERTIE=new BijouSerti("bague_en_or_sertie");
+    public static final Item BAGUE_EN_ARGENT_SERTIE=new BijouSerti("bague_en_argent_sertie");
+    public static final Item COLLIER_EN_OR_SERTIE=new BijouSerti("collier_en_or_sertie");
+    public static final Item COLLIER_EN_ARGENT_SERTIE=new BijouSerti("collier_en_argent_sertie");
+    public static final Item BOUCLES_OREILLES_EN_OR_SERTIE=new BijouSerti("boucles_oreilles_en_or_sertie");
+    public static final Item BOUCLES_OREILLES_EN_ARGENT_SERTIE=new BijouSerti("boucles_oreilles_en_argent_sertie");
+    public static final Item BRACELET_EN_OR_SERTIE=new BijouSerti("bracelet_en_or_sertie");
+    public static final Item BRACELET_EN_ARGENT_SERTIE=new BijouSerti("bracelet_en_argent_sertie");
+    public static final Item MANCHETTE_EN_OR_SERTIE=new BijouSerti("manchette_en_or_sertie");
+    public static final Item MANCHETTE_EN_ARGENT_SERTIE=new BijouSerti("manchette_en_argent_sertie");
 
 */
 
@@ -1754,21 +1755,21 @@ public class ModItems {
     public static final Item COUVERTURE_VIOLET = new ItemBase("couverture_violet");
     public static final Item COUVERTURE_VERT_CLAIR = new ItemBase("couverture_vert_clair");
 
- public static final Item RUBAN_NOIR = new ItemBase("ruban_noir");
- public static final Item RUBAN_BLEU = new ItemBase("ruban_bleu");
- public static final Item RUBAN_MARRON = new ItemBase("ruban_marron");
- public static final Item RUBAN_CYAN = new ItemBase("ruban_cyan");
- public static final Item RUBAN_GRIS = new ItemBase("ruban_gris");
- public static final Item RUBAN_BLEU_CLAIR = new ItemBase("ruban_bleu_clair");
- public static final Item RUBAN_VERT = new ItemBase("ruban_vert");
- public static final Item RUBAN_MAGENTA = new ItemBase("ruban_magenta");
- public static final Item RUBAN_ORANGE = new ItemBase("ruban_orange");
- public static final Item RUBAN_ROSE = new ItemBase("ruban_rose");
- public static final Item RUBAN_ROUGE = new ItemBase("ruban_rouge");
- public static final Item RUBAN_BLANC = new ItemBase("ruban_blanc");
- public static final Item RUBAN_JAUNE = new ItemBase("ruban_jaune");
- public static final Item RUBAN_VIOLET = new ItemBase("ruban_violet");
- public static final Item RUBAN_VERT_CLAIR = new ItemBase("ruban_vert_clair");
+    public static final Item RUBAN_NOIR = new ItemBase("ruban_noir");
+    public static final Item RUBAN_BLEU = new ItemBase("ruban_bleu");
+    public static final Item RUBAN_MARRON = new ItemBase("ruban_marron");
+    public static final Item RUBAN_CYAN = new ItemBase("ruban_cyan");
+    public static final Item RUBAN_GRIS = new ItemBase("ruban_gris");
+    public static final Item RUBAN_BLEU_CLAIR = new ItemBase("ruban_bleu_clair");
+    public static final Item RUBAN_VERT = new ItemBase("ruban_vert");
+    public static final Item RUBAN_MAGENTA = new ItemBase("ruban_magenta");
+    public static final Item RUBAN_ORANGE = new ItemBase("ruban_orange");
+    public static final Item RUBAN_ROSE = new ItemBase("ruban_rose");
+    public static final Item RUBAN_ROUGE = new ItemBase("ruban_rouge");
+    public static final Item RUBAN_BLANC = new ItemBase("ruban_blanc");
+    public static final Item RUBAN_JAUNE = new ItemBase("ruban_jaune");
+    public static final Item RUBAN_VIOLET = new ItemBase("ruban_violet");
+    public static final Item RUBAN_VERT_CLAIR = new ItemBase("ruban_vert_clair");
 
     public static final Item DRAP_NOIR = new ItemBase("drap_noir");
     public static final Item DRAP_BLEU = new ItemBase("drap_bleu");

@@ -5,18 +5,17 @@ import fr.archemod.blocks.tileentity.*;
 import fr.archemod.fiche.container.ContainerFichePersonnage;
 import fr.archemod.fiche.gui.GuiFichePersonnage;
 import fr.archemod.fiche.inventory.InventoryFichePersonnage;
+import fr.archemod.items.BijouSerti;
 import fr.archemod.items.Bourse;
 import fr.archemod.items.GrandSac;
 import fr.archemod.items.PanierEnOsier;
 import fr.archemod.items.Sacoche;
+import fr.archemod.items.inventory.InventoryBijouSerti;
 import fr.archemod.items.inventory.InventoryBourse;
 import fr.archemod.items.inventory.InventoryGrandSac;
 import fr.archemod.items.inventory.InventoryPanierEnOsier;
 import fr.archemod.items.inventory.InventorySacoche;
-import fr.archemod.items.inventory.container.ContainerBourse;
-import fr.archemod.items.inventory.container.ContainerGrandSac;
-import fr.archemod.items.inventory.container.ContainerPanierEnOsier;
-import fr.archemod.items.inventory.container.ContainerSacoche;
+import fr.archemod.items.inventory.container.*;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.EnumHand;
@@ -95,6 +94,12 @@ public class GuiHandler implements IGuiHandler {
                 } else {
                     return null;
                 }*/
+            case 12: //BijouSerti
+                // The last parameter must be a multiple of 9 (e.g: 9, 18, 27, 54)
+                // Condition to check if the player has the right item in hand
+                player.getHeldItem(EnumHand.MAIN_HAND);
+                if (!(player.getHeldItem(EnumHand.MAIN_HAND).getItem() instanceof BijouSerti)) return null;
+                return new ContainerBijouSerti(player.inventory, new InventoryBijouSerti(player.getHeldItem(EnumHand.MAIN_HAND), 6));
         }
         return null;
     }
@@ -171,7 +176,13 @@ public class GuiHandler implements IGuiHandler {
                 } else {
                     return null;
                 }*/
-
+            //10 & 11 font crash le client
+            case 12:
+                // The last parameter must be a multiple of 9 (e.g: 9, 18, 27, 54)
+                // Condition to check if the player has the right item in hand
+                player.getHeldItem(EnumHand.MAIN_HAND);
+                if (!(player.getHeldItem(EnumHand.MAIN_HAND).getItem() instanceof BijouSerti)) return null;
+                return new GuiBijouSerti(player.inventory, new InventoryBijouSerti(player.getHeldItem(EnumHand.MAIN_HAND), 6));
 
         }
         return null; }

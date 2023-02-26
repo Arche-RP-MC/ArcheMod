@@ -1,8 +1,8 @@
 package fr.archemod.items.inventory.container;
 
-import fr.archemod.items.Bourse;
-import fr.archemod.items.inventory.InventoryBourse;
-import fr.archemod.items.inventory.slot.SlotBourse;
+import fr.archemod.items.BijouSerti;
+import fr.archemod.items.inventory.InventoryBijouSerti;
+import fr.archemod.items.inventory.slot.SlotBijouSerti;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.ClickType;
@@ -13,11 +13,11 @@ import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.EnumHand;
 
 public class ContainerBijouSerti extends Container {
-    public InventoryBourse invBourse;
+    public InventoryBijouSerti invBijouSerti;
     public int rows;
 
-    public ContainerBijouSerti(InventoryPlayer playerInv, InventoryBourse inv) {
-        this.invBourse = inv;
+    public ContainerBijouSerti(InventoryPlayer playerInv, InventoryBijouSerti inv) {
+        this.invBijouSerti = inv;
         this.rows = inv.getSizeInventory() / 6;
         int i = (this.rows - 4) * 18;
         int j;
@@ -26,7 +26,7 @@ public class ContainerBijouSerti extends Container {
         // Adding slots to the backpack //26 ou 25
         for (j = 0; j < this.rows; ++j) {
             for (k = 0; k < 6; ++k) {
-                this.addSlotToContainer(new SlotBourse(inv, k + j * 6, 26 + k * 18, 18 + j * 18));
+                this.addSlotToContainer(new SlotBijouSerti(inv, k + j * 6, 26 + k * 18, 18 + j * 18));
             }
         }
 
@@ -49,7 +49,7 @@ public class ContainerBijouSerti extends Container {
 
     public void writeToNBT(ItemStack stack) {
         if (!stack.hasTagCompound()) stack.setTagCompound(new NBTTagCompound());
-        invBourse.writeToNBT(stack.getTagCompound());
+        invBijouSerti.writeToNBT(stack.getTagCompound());
     }
 
     @Override
@@ -63,11 +63,11 @@ public class ContainerBijouSerti extends Container {
 
             // Prevents backpack-ception (backpack inside backpack) with
             // shift-click
-            if (itemstack.getItem() instanceof Bourse) return ItemStack.EMPTY;
+            if (itemstack.getItem() instanceof BijouSerti) return ItemStack.EMPTY;
 
-            if (index < this.invBourse.getSizeInventory()) {
-                if (!this.mergeItemStack(itemstack1, this.invBourse.getSizeInventory(), this.inventorySlots.size(), true)) return ItemStack.EMPTY;
-            } else if (!this.mergeItemStack(itemstack1, 0, this.invBourse.getSizeInventory(), false)) { return ItemStack.EMPTY; }
+            if (index < this.invBijouSerti.getSizeInventory()) {
+                if (!this.mergeItemStack(itemstack1, this.invBijouSerti.getSizeInventory(), this.inventorySlots.size(), true)) return ItemStack.EMPTY;
+            } else if (!this.mergeItemStack(itemstack1, 0, this.invBijouSerti.getSizeInventory(), false)) { return ItemStack.EMPTY; }
 
             if (itemstack1.getCount() == 0)
                 slot.putStack(ItemStack.EMPTY);
@@ -83,7 +83,7 @@ public class ContainerBijouSerti extends Container {
     public ItemStack slotClick(int slotId, int dragType, ClickType clickTypeIn, EntityPlayer player) {
         // Prevents from removing current backpack
         if (clickTypeIn == ClickType.SWAP && dragType == player.inventory.currentItem) return ItemStack.EMPTY;
-        if (slotId - this.invBourse.getSizeInventory() - 27 == player.inventory.currentItem) return ItemStack.EMPTY;
+        if (slotId - this.invBijouSerti.getSizeInventory() - 27 == player.inventory.currentItem) return ItemStack.EMPTY;
         return super.slotClick(slotId, dragType, clickTypeIn, player);
     }
 

@@ -20,7 +20,7 @@ public class BijouSerti extends ItemBase {
      */
     @Override
     public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) {
-        playerIn.openGui(ArcheMod.INSTANCE, 0, worldIn, (int) playerIn.posX, (int) playerIn.posY, (int) playerIn.posZ);
+        playerIn.openGui(ArcheMod.INSTANCE, 12, worldIn, (int) playerIn.posX, (int) playerIn.posY, (int) playerIn.posZ);
         return new ActionResult<>(EnumActionResult.SUCCESS, playerIn.getHeldItem(handIn));
     }
 }
