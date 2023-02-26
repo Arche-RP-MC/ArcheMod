@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    " LF",
+    " N "
+  ],
+
+  "key":
+  {
+    "N":
+    {
+      "item": "am:barre_bronze"
+    },
+    "F":
+    {
+      "item": "am:lime_en_bronze",
+      "data": 32767
+    },
+    "L":
+    {
+      "item": "am:pinces",
+      "data": 32767
+    }
+  },
+
+  "result":
+  {
+    "item": "am:bracelet_en_bronze",
+    "count": 1
+  }
+}
