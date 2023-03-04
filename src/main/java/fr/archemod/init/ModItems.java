@@ -1221,34 +1221,42 @@ public class ModItems {
     public static final Item PERLE = new ItemBase("perle");
     public static final Item PERLE_NOIRE = new ItemBase("perle_noire");
 
-    //    public static final Item BAGUE_EN_ACIER = new ItemBase("bague_en_acier");
-    //    public static final Item BAGUE_EN_BRONZE = new ItemBase("bague_en_bronze");
-    //    public static final Item BAGUE_EN_ETAIN = new ItemBase("bague_en_etain");
-    //    public static final Item BAGUE_EN_FER = new ItemBase("bague_en_fer");
+    /*
+    public static final Item BAGUE_EN_ACIER = new ItemBase("bague_en_acier");
+    public static final Item BAGUE_EN_BRONZE = new ItemBase("bague_en_bronze");
+    public static final Item BAGUE_EN_ETAIN = new ItemBase("bague_en_etain");
+    public static final Item BAGUE_EN_FER = new ItemBase("bague_en_fer");
+    */
     public static final Item BAGUE_EN_ARGENT = new ItemBase("bague_en_argent");
     public static final Item BAGUE_EN_CUIVRE = new ItemBase("bague_en_cuivre");
     public static final Item BAGUE_EN_OR = new ItemBase("bague_en_or");
 
-    //    public static final Item BOUCLES_OREILLES_EN_ACIER = new ItemBase("boucles_oreilles_en_acier");
-    //    public static final Item BOUCLES_OREILLES_EN_BRONZE = new ItemBase("boucles_oreilles_en_bronze");
-    //    public static final Item BOUCLES_OREILLES_EN_ETAIN = new ItemBase("boucles_oreilles_en_etain");
-    //    public static final Item BOUCLES_OREILLES_EN_FER = new ItemBase("boucles_oreilles_en_fer");
+    /*
+    public static final Item BOUCLES_OREILLES_EN_ACIER = new ItemBase("boucles_oreilles_en_acier");
+    public static final Item BOUCLES_OREILLES_EN_BRONZE = new ItemBase("boucles_oreilles_en_bronze");
+    public static final Item BOUCLES_OREILLES_EN_ETAIN = new ItemBase("boucles_oreilles_en_etain");
+    public static final Item BOUCLES_OREILLES_EN_FER = new ItemBase("boucles_oreilles_en_fer");
+    */
     public static final Item BOUCLES_OREILLES_EN_ARGENT = new ItemBase("boucles_oreilles_en_argent");
     public static final Item BOUCLES_OREILLES_EN_CUIVRE = new ItemBase("boucles_oreilles_en_cuivre");
     public static final Item BOUCLES_OREILLES_EN_OR = new ItemBase("boucles_oreilles_en_or");
 
-    //    public static final Item BRACELET_EN_ACIER = new ItemBase("bracelet_en_acier");
-    //    public static final Item BRACELET_EN_BRONZE = new ItemBase("bracelet_en_bronze");
-    //    public static final Item BRACELET_EN_ETAIN = new ItemBase("bracelet_en_etain");
-    //    public static final Item BRACELET_EN_FER = new ItemBase("bracelet_en_fer");
+    /*
+    public static final Item BRACELET_EN_ACIER = new ItemBase("bracelet_en_acier");
+    public static final Item BRACELET_EN_BRONZE = new ItemBase("bracelet_en_bronze");
+    public static final Item BRACELET_EN_ETAIN = new ItemBase("bracelet_en_etain");
+    public static final Item BRACELET_EN_FER = new ItemBase("bracelet_en_fer");
+    */
     public static final Item BRACELET_EN_ARGENT = new ItemBase("bracelet_en_argent");
     public static final Item BRACELET_EN_CUIVRE = new ItemBase("bracelet_en_cuivre");
     public static final Item BRACELET_EN_OR = new ItemBase("bracelet_en_or");
 
-    //    public static final Item COLLIER_EN_ACIER = new ItemBase("collier_en_acier");
-    //    public static final Item COLLIER_EN_BRONZE = new ItemBase("collier_en_bronze");
-    //    public static final Item COLLIER_EN_ETAIN = new ItemBase("collier_en_etain");
-    //    public static final Item COLLIER_EN_FER = new ItemBase("collier_en_fer");
+    /*
+    public static final Item COLLIER_EN_ACIER = new ItemBase("collier_en_acier");
+    public static final Item COLLIER_EN_BRONZE = new ItemBase("collier_en_bronze");
+    public static final Item COLLIER_EN_ETAIN = new ItemBase("collier_en_etain");
+    public static final Item COLLIER_EN_FER = new ItemBase("collier_en_fer");
+    */
     public static final Item COLLIER_DE_PERLES = new ItemBase("collier_de_perles");
     public static final Item COLLIER_EN_ARGENT = new ItemBase("collier_en_argent");
     public static final Item COLLIER_EN_CUIR_ET_GRIFFE = new ItemBase("collier_en_cuir_et_griffe");
@@ -1259,74 +1267,156 @@ public class ModItems {
     public static final Item COURONNE = new ItemBase("couronne");
     public static final Item COURONNE_DE_FLEURS = new ItemBase("couronne_de_fleurs");
 
-    //    public static final Item MANCHETTE_EN_ACIER = new ItemBase("manchette_en_acier");
-    //    public static final Item MANCHETTE_EN_BRONZE = new ItemBase("manchette_en_bronze");
-    //    public static final Item MANCHETTE_EN_ETAIN = new ItemBase("manchette_en_etain");
-    //    public static final Item MANCHETTE_EN_FER = new ItemBase("manchette_en_fer");
+    /*
+    public static final Item MANCHETTE_EN_ACIER = new ItemBase("manchette_en_acier");
+    public static final Item MANCHETTE_EN_BRONZE = new ItemBase("manchette_en_bronze");
+    public static final Item MANCHETTE_EN_ETAIN = new ItemBase("manchette_en_etain");
+    public static final Item MANCHETTE_EN_FER = new ItemBase("manchette_en_fer");
+    */
     public static final Item MANCHETTE_EN_ARGENT = new ItemBase("manchette_en_argent");
     public static final Item MANCHETTE_EN_CUIVRE = new ItemBase("manchette_en_cuivre");
     public static final Item MANCHETTE_EN_OR = new ItemBase("manchette_en_or");
 
+    /*
+    public static final Item PEIGNE_EN_ACIER = new ItemBase("peigne_en_acier");
+    public static final Item PEIGNE_EN_BRONZE = new ItemBase("peigne_en_bronze");
+    public static final Item PEIGNE_EN_ETAIN = new ItemBase("peigne_en_etain");
+    public static final Item PEIGNE_EN_FER = new ItemBase("peigne_en_fer");
+    */
     public static final Item PEIGNE_EN_ARGENT = new ItemBase("peigne_en_argent");
     public static final Item PEIGNE_EN_BRONZE = new ItemBase("peigne_en_bronze");
     public static final Item PEIGNE_EN_OR = new ItemBase("peigne_en_or");
 
 
-  public static final Item TORQUE_OR=new ItemBase("torque_or");
- /* public static final Item TORQUE_ARGENT=new ItemBase("torque_argent");
- public static final Item BROCHE_OR=new ItemBase("broche_or");
- public static final Item BROCHE_ARGENT=new ItemBase("broche_argent");
- public static final Item BROCHE_CUIVRE=new ItemBase("broche_cuivre");
- public static final Item BROCHE_ACIER=new ItemBase("broche_acier");
- public static final Item BROCHE_ETAIN=new ItemBase("broche_etain");
- public static final Item BROCHE_IVOIRE=new ItemBase("broche_ivoire");
- public static final Item CHEVALIERE_OR=new ItemBase("chevaliere_or");
- public static final Item CHEVALIERE_ARGENT=new ItemBase("chevaliere_argent");
- public static final Item CHEVALIERE_ACIER=new ItemBase("chevaliere_acier");
- public static final Item CHEVALIERE_BRONZE=new ItemBase("chevaliere_bronze");
- public static final Item DIADEME_OR=new ItemBase("diademe_or");
- public static final Item DIADEME_ARGENT=new ItemBase("diademe_argent");
- public static final Item BRACELET_PERLE=new ItemBase("bracelet_perle");
+    /*
+    public static final Item TORQUE_OR=new ItemBase("torque_or");
+    public static final Item TORQUE_ARGENT=new ItemBase("torque_argent");
+    public static final Item TORQUE_ACIER=new ItemBase("torque_acier");
+    public static final Item TORQUE_ETAIN=new ItemBase("torque_etain");
+    public static final Item TORQUE_CUIVRE=new ItemBase("torque_cuivre");
+    public static final Item TORQUE_BRONZE=new ItemBase("torque_bronze");
+    public static final Item TORQUE_FER=new ItemBase("torque_fer");
+
+    public static final Item BROCHE_OR=new ItemBase("broche_or");
+    public static final Item BROCHE_ARGENT=new ItemBase("broche_argent");
+    public static final Item BROCHE_CUIVRE=new ItemBase("broche_cuivre");
+    public static final Item BROCHE_ACIER=new ItemBase("broche_acier");
+    public static final Item BROCHE_ETAIN=new ItemBase("broche_etain");
+    public static final Item BROCHE_BRONZE=new ItemBase("broche_bronze");
+    public static final Item BROCHE_FER=new ItemBase("broche_fer");
+    public static final Item BROCHE_IVOIRE=new ItemBase("broche_ivoire");
+
+    public static final Item CHEVALIERE_OR=new ItemBase("chevaliere_or");
+    public static final Item CHEVALIERE_ARGENT=new ItemBase("chevaliere_argent");
+    public static final Item CHEVALIERE_ACIER=new ItemBase("chevaliere_acier");
+    public static final Item CHEVALIERE_BRONZE=new ItemBase("chevaliere_bronze");
+    public static final Item CHEVALIERE_CUIVRE=new ItemBase("chevaliere_cuivre");
+    public static final Item CHEVALIERE_ACIER=new ItemBase("chevaliere_acier");
+    public static final Item CHEVALIERE_ETAIN=new ItemBase("chevaliere_etain");
+    public static final Item CHEVALIERE_FER=new ItemBase("chevaliere_fer");
+
+    public static final Item DIADEME_OR=new ItemBase("diademe_or");
+    public static final Item DIADEME_ARGENT=new ItemBase("diademe_argent");
+    public static final Item DIADEME_CUIVRE=new ItemBase("diademe_cuivre");
+    public static final Item DIADEME_ACIER=new ItemBase("diademe_acier");
+    public static final Item DIADEME_ETAIN=new ItemBase("diademe_etain");
+    public static final Item DIADEME_BRONZE=new ItemBase("diademe_bronze");
+    public static final Item DIADEME_FER=new ItemBase("diademe_fer");
+
+    public static final Item BRACELET_PERLE=new ItemBase("bracelet_perle");
 
 
+    public static final Item FIL_OR=new ItemBase("fil_or");
+    public static final Item FIL_ARGENT=new ItemBase("fil_argent");
 
- public static final Item FIL_OR=new ItemBase("fil_or");
- public static final Item FIL_ARGENT=new ItemBase("fil_argent");
-
-
- public static final Item ANNEAU_BOIS=new ItemBase("anneau_bois");
- public static final Item BRACELET_CUIR=new ItemBase("bracelet_cuir");
- public static final Item GRIFFE_DE_SERTISSAGE=new ItemBase("griffe_de_sertissage");
- public static final Item FERMOIR=new ItemBase("fermoir");
- public static final Item FEUILLE_OR=new ItemBase("feuille_or");
- public static final Item FEUILLE_ARGENT=new ItemBase("feuille_argent");
- public static final Item POINTE_OR=new ItemBase("pointe_or");
- public static final Item POINTE_ARGENT=new ItemBase("pointe_argent");*/
+    public static final Item ANNEAU_BOIS=new ItemBase("anneau_bois");
+    public static final Item BRACELET_CUIR=new ItemBase("bracelet_cuir");
+    public static final Item GRIFFE_DE_SERTISSAGE=new ItemBase("griffe_de_sertissage");
+    public static final Item FERMOIR=new ItemBase("fermoir");
+    public static final Item FEUILLE_OR=new ItemBase("feuille_or");
+    public static final Item FEUILLE_ARGENT=new ItemBase("feuille_argent");
+    public static final Item POINTE_OR=new ItemBase("pointe_or");
+    public static final Item POINTE_ARGENT=new ItemBase("pointe_argent");
+    */
 
     // Bijoux SERTIS
 
         //Torque ajouté pour test
     public static final Item TORQUE_OR_SERTIE=new BijouSerti("torque_or_sertie");
-    /*public static final Item TORQUE_ARGENT_SERTIE=new BijouSerti("torque_argent_sertie");
+    /*
+    public static final Item TORQUE_ARGENT_SERTIE=new BijouSerti("torque_argent_sertie");
+    public static final Item TORQUE_ACIER_SERTIE=new BijouSerti("torque_acier_sertie");
+    public static final Item TORQUE_ETAIN_SERTIE=new BijouSerti("torque_etain_sertie");
+    public static final Item TORQUE_CUIVRE_SERTIE=new BijouSerti("torque_cuivre_sertie");
+    public static final Item TORQUE_BRONZE_SERTIE=new BijouSerti("torque_bronze_sertie");
+    public static final Item TORQUE_FER_SERTIE=new BijouSerti("torque_fer_sertie");
+
     public static final Item BROCHE_OR_SERTIE=new BijouSerti("broche_or_sertie");
     public static final Item BROCHE_ARGENT_SERTIE=new BijouSerti("broche_argent_sertie");
+    public static final Item BROCHE_ACIER_SERTIE=new BijouSerti("broche_acier_sertie");
+    public static final Item BROCHE_ETAIN_SERTIE=new BijouSerti("broche_etain_sertie");
+    public static final Item BROCHE_CUIVRE_SERTIE=new BijouSerti("broche_cuivre_sertie");
+    public static final Item BROCHE_BRONZE_SERTIE=new BijouSerti("broche_bronze_sertie");
+    public static final Item BROCHE_FER_SERTIE=new BijouSerti("broche_fer_sertie");
+
     public static final Item BROCHE_IVOIRE_SERTIE=new BijouSerti("broche_ivoire_sertie");
+
     public static final Item CHEVALIERE_OR_SERTIE=new BijouSerti("chevaliere_or_sertie");
     public static final Item CHEVALIERE_ARGENT_SERTIE=new BijouSerti("chevaliere_argent_sertie");
-    public static final Item DIADEME_OR_SERTIE=new BijouSerti("diademe_or_sertie");
-    public static final Item DIADEME_ARGENT_SERTIE=new BijouSerti("diademe_argent_sertie");
-    public static final Item BAGUE_EN_OR_SERTIE=new BijouSerti("bague_en_or_sertie");
-    public static final Item BAGUE_EN_ARGENT_SERTIE=new BijouSerti("bague_en_argent_sertie");
-    public static final Item COLLIER_EN_OR_SERTIE=new BijouSerti("collier_en_or_sertie");
-    public static final Item COLLIER_EN_ARGENT_SERTIE=new BijouSerti("collier_en_argent_sertie");
-    public static final Item BOUCLES_OREILLES_EN_OR_SERTIE=new BijouSerti("boucles_oreilles_en_or_sertie");
-    public static final Item BOUCLES_OREILLES_EN_ARGENT_SERTIE=new BijouSerti("boucles_oreilles_en_argent_sertie");
-    public static final Item BRACELET_EN_OR_SERTIE=new BijouSerti("bracelet_en_or_sertie");
-    public static final Item BRACELET_EN_ARGENT_SERTIE=new BijouSerti("bracelet_en_argent_sertie");
-    public static final Item MANCHETTE_EN_OR_SERTIE=new BijouSerti("manchette_en_or_sertie");
-    public static final Item MANCHETTE_EN_ARGENT_SERTIE=new BijouSerti("manchette_en_argent_sertie");
+    public static final Item CHEVALIERE_ACIER_SERTIE=new BijouSerti("chevaliere_acier_sertie");
+    public static final Item CHEVALIERE_ETAIN_SERTIE=new BijouSerti("chevaliere_etain_sertie");
+    public static final Item CHEVALIERE_CUIVRE_SERTIE=new BijouSerti("chevaliere_cuivre_sertie");
+    public static final Item CHEVALIERE_BRONZE_SERTIE=new BijouSerti("chevaliere_bronze_sertie");
+    public static final Item CHEVALIERE_FER_SERTIE=new BijouSerti("chevaliere_fer_sertie");
 
-*/
+    public static final Item DIADEME_OR_SERTI=new BijouSerti("diademe_or_serti");
+    public static final Item DIADEME_ARGENT_SERTI=new BijouSerti("diademe_argent_serti");
+    public static final Item DIADEME_ACIER_SERTI=new BijouSerti("diademe_acier_serti");
+    public static final Item DIADEME_ETAIN_SERTI=new BijouSerti("diademe_etain_serti");
+    public static final Item DIADEME_CUIVRE_SERTI=new BijouSerti("diademe_cuivre_serti");
+    public static final Item DIADEME_BRONZE_SERTI=new BijouSerti("diademe_bronze_serti");
+    public static final Item DIADEME_FER_SERTI=new BijouSerti("diademe_fer_serti");
+
+    public static final Item BAGUE_OR_SERTIE=new BijouSerti("bague_or_sertie");
+    public static final Item BAGUE_ARGENT_SERTIE=new BijouSerti("bague_argent_sertie");
+    public static final Item BAGUE_ACIER_SERTIE=new BijouSerti("bague_acier_sertie");
+    public static final Item BAGUE_ETAIN_SERTIE=new BijouSerti("bague_etain_sertie");
+    public static final Item BAGUE_CUIVRE_SERTIE=new BijouSerti("bague_cuivre_sertie");
+    public static final Item BAGUE_BRONZE_SERTIE=new BijouSerti("bague_bronze_sertie");
+    public static final Item BAGUE_FER_SERTIE=new BijouSerti("bague_fer_sertie");
+
+    public static final Item COLLIER_OR_SERTIE=new BijouSerti("collier_or_sertie");
+    public static final Item COLLIER_ARGENT_SERTIE=new BijouSerti("collier_argent_sertie");
+    public static final Item COLLIER_ACIER_SERTI=new BijouSerti("collier_acier_serti");
+    public static final Item COLLIER_ETAIN_SERTI=new BijouSerti("collier_etain_serti");
+    public static final Item COLLIER_CUIVRE_SERTI=new BijouSerti("collier_cuivre_serti");
+    public static final Item COLLIER_BRONZE_SERTI=new BijouSerti("collier_bronze_serti");
+    public static final Item COLLIER_FER_SERTI=new BijouSerti("collier_fer_serti");
+
+    public static final Item BOUCLES_OREILLES_OR_SERTIE=new BijouSerti("boucles_oreilles_or_sertie");
+    public static final Item BOUCLES_OREILLES_ARGENT_SERTIE=new BijouSerti("boucles_oreilles_argent_sertie");
+    public static final Item BOUCLES_OREILLES_ACIER_SERTIE=new BijouSerti("boucles_oreilles_acier_sertie");
+    public static final Item BOUCLES_OREILLES_ETAIN_SERTIE=new BijouSerti("boucles_oreilles_etain_sertie");
+    public static final Item BOUCLES_OREILLES_CUIVRE_SERTIE=new BijouSerti("boucles_oreilles_cuivre_sertie");
+    public static final Item BOUCLES_OREILLES_BRONZE_SERTIE=new BijouSerti("boucles_oreilles_bronze_sertie");
+    public static final Item BOUCLES_OREILLES_FER_SERTIE=new BijouSerti("boucles_oreilles_fer_sertie");
+
+    public static final Item BRACELET_OR_SERTI=new BijouSerti("bracelet_or_serti");
+    public static final Item BRACELET_ARGENT_SERTI=new BijouSerti("bracelet_argent_serti");
+    public static final Item BRACELET_ACIER_SERTI=new BijouSerti("bracelet_acier_serti");
+    public static final Item BRACELET_ETAIN_SERTI=new BijouSerti("bracelet_etain_serti");
+    public static final Item BRACELET_CUIVRE_SERTI=new BijouSerti("bracelet_cuivre_serti");
+    public static final Item BRACELET_BRONZE_SERTI=new BijouSerti("bracelet_bronze_serti");
+    public static final Item BRACELET_FER_SERTI=new BijouSerti("bracelet_fer_serti");
+
+    public static final Item MANCHETTE_OR_SERTIE=new BijouSerti("manchette_or_sertie");
+    public static final Item MANCHETTE_ARGENT_SERTIE=new BijouSerti("manchette_argent_sertie");
+    public static final Item MANCHETTE_ACIER_SERTIE=new BijouSerti("manchette_acier_sertie");
+    public static final Item MANCHETTE_ETAIN_SERTIE=new BijouSerti("manchette_etain_sertie");
+    public static final Item MANCHETTE_CUIVRE_SERTIE=new BijouSerti("manchette_cuivre_sertie");
+    public static final Item MANCHETTE_BRONZE_SERTIE=new BijouSerti("manchette_bronze_sertie");
+    public static final Item MANCHETTE_FER_SERTIE=new BijouSerti("manchette_fer_sertie");
+    */
 
     //Potier - Tailleur pierre
 
