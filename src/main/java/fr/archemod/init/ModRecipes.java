@@ -3,7 +3,9 @@ package fr.archemod.init;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemFishFood;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.event.entity.player.ItemFishedEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModRecipes
@@ -114,6 +116,15 @@ public class ModRecipes
         GameRegistry.addSmelting(ModItems.JARRE_EN_ARGILE_CRUE, new ItemStack(ModItems.JARRE_EN_ARGILE,1),0);
         GameRegistry.addSmelting(ModItems.THEIERE_CRUE, new ItemStack(ModItems.THEIERE,1),0);
         GameRegistry.addSmelting(ModItems.TASSE_EN_PORCELAINE_CRU, new ItemStack(ModItems.TASSE_EN_PORCELAINE,1),0);
-
+        GameRegistry.addSmelting(ModItems.CREVETTE_GRISE, new ItemStack(ModItems.CREVETTE_GRISE_CUITE,1),0);
+        GameRegistry.addSmelting(ModItems.CREVETTE_ROSE, new ItemStack(ModItems.CREVETTE_ROSE_CUITE,1),0);
+        GameRegistry.addSmelting(ModItems.ECREVISSE, new ItemStack(ModItems.ECREVISSE_CUITE,1),0);
+        GameRegistry.addSmelting(ModItems.ECREVISSE_ORANGE, new ItemStack(ModItems.ECREVISSE_ORANGE_CUITE,1),0);
+        GameRegistry.addSmelting(ModItems.COQUILLE_SAINT_JACQUES, new ItemStack(ModItems.COQUILLE_SAINT_JACQUES_CUITE,1),0);
+        GameRegistry.addSmelting(ModItems.CRABE, new ItemStack(ModItems.CRABE_CUIT,1),0);
+        GameRegistry.addSmelting(ModItems.HOMARD, new ItemStack(ModItems.HOMARD_CUIT,1),0);
+        GameRegistry.addSmelting(ModItems.PALOURDE, new ItemStack(ModItems.PALOURDE_CUITE,1),0);
+        GameRegistry.addSmelting(Items.FISH, new ItemStack(ModItems.POISSON_GRILLE,1),0);
+        GameRegistry.addSmelting(ModItems.PATE_A_PAIN, new ItemStack(ModItems.PETIT_PAIN,1),0);
     }
 }

@@ -12,6 +12,7 @@ import fr.archemod.items.sciure.*;
 import fr.archemod.items.tools.*;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemAxe;
 
@@ -82,7 +83,7 @@ public class ModItems {
     public static final Item BEBE = new ItemBase("bebe");
     public static final Item CENDRES = new ItemBase("cendres");
     public static final Item ENTRAVES = new ItemBase("entraves");
-    public static final Item PAIN_MOISSI = new ItemBase("pain_moissi");
+    public static final Item PAIN_MOISI = new ItemBase("pain_moisi");
     public static final Item PIECE_EN_ARGENT = new PieceBase("piece_en_argent");
     public static final Item PIECE_EN_BRONZE = new PieceBase("piece_en_bronze");
     public static final Item PIECE_EN_OR = new PieceBase("piece_en_or");
@@ -329,6 +330,16 @@ public class ModItems {
     public static final Item VIANDE_DE_GIBIER_CUITE = new FoodBase("viande_de_gibier_cuite",4,0.2F,false);
     public static final Item VIANDE_DE_RAT_CUITE = new FoodBase("viande_de_rat_cuite",2,0.2F,false);
     public static final Item VIANDE_DE_VOLAILLE_CUITE = new FoodBase("viande_de_volaille_cuite",3,0.2F,false);
+    public static final Item CREVETTE_GRISE_CUITE = new FoodBase("crevette_grise_cuite", 2,0.2F,false);
+    public static final Item CREVETTE_ROSE_CUITE = new FoodBase("crevette_rose_cuite", 2,0.2F,false);
+    public static final Item ECREVISSE_CUITE = new FoodBase("ecrevisse_cuite", 2,0.2F,false);
+    public static final Item ECREVISSE_ORANGE_CUITE = new FoodBase("ecrevisse_orange_cuite", 2,0.2F,false);
+    public static final Item COQUILLE_SAINT_JACQUES_CUITE = new FoodBase("coquille_saint_jacques_cuite", 2,0.2F,false);
+    public static final Item CRABE_CUIT= new FoodBase("crabe_cuit", 2,0.2F,false);
+    public static final Item HOMARD_CUIT = new FoodBase("homard_cuit", 2,0.2F,false);
+    public static final Item PALOURDE_CUITE = new FoodBase("palourde_cuite", 2,0.2F,false);
+
+
 
     //FOODS CRU
     //public static final Item PART_DE_TOURTE_CRU = new ItemBase("part_de_tourte_cru");
@@ -1165,7 +1176,7 @@ public class ModItems {
     public static final Item CALAMAR = new Calamar("calamar");
     public static final Item CALAMAR_MORT = new ItemBase("calamar_mort");
     public static final Item CARCASSE_DE_POISSON = new ItemBase("carcasse_de_poisson");
-    public static final Item CARPE = new ItemBase("carpe");
+    public static final Item CARPE = new Poisson("carpe");
     public static final Item CARPE_KOI = new ItemBase("carpe_koi");
     public static final Item CHIRURGIEN_BLEU = new ItemBase("chirurgien_bleu");
     public static final Item CHIRURGIEN_NOIR = new ItemBase("chirurgien_noir");
@@ -1184,8 +1195,8 @@ public class ModItems {
     public static final Item CROISSANT_A_QUEUE_JAUNE = new ItemBase("croissant_a_queue_jaune");
     public static final Item CHROMIS_VIRIDIS = new ItemBase("chromis_viridis");
     public static final Item DEMOISELLE_RAYEE = new ItemBase("demoiselle_rayee");
-    public static final Item DORADE = new ItemBase("dorade");
-    public static final Item DORE_JAUNE = new ItemBase("dore_jaune");
+    public static final Item DORADE = new Poisson("dorade");
+    public static final Item DORE_JAUNE = new Poisson("dore_jaune");
     public static final Item ECREVISSE = new ItemBase("ecrevisse");
     public static final Item ECREVISSE_ORANGE = new ItemBase("ecrevisse_orange");
     public static final Item GOURAMI_MIEL = new ItemBase("gourami_miel");
@@ -1195,7 +1206,7 @@ public class ModItems {
     public static final Item HOMARD = new ItemBase("homard");
     public static final Item HUITRE = new Huitre("huitre");
     public static final Item LABIDO_JAUNE = new ItemBase("labido_jaune");
-    public static final Item MEROU = new ItemBase("merou");
+    public static final Item MEROU = new Poisson("merou");
     public static final Item NAPOLEON = new ItemBase("napoleon");
     public static final Item NAUTILE = new ItemBase("nautile");
     public static final Item ORMEAUX = new ItemBase("ormeaux");
@@ -1209,11 +1220,13 @@ public class ModItems {
     public static final Item POISSON_PERROQUET = new ItemBase("poisson_perroquet");
     public static final Item POULPE = new Poulpe("poulpe");
     public static final Item POULPE_MORT = new ItemBase("poulpe_mort");
-    public static final Item ROUGET = new ItemBase("rouget");
-    public static final Item SARDINE = new ItemBase("sardine");
+    public static final Item ROUGET = new Poisson("rouget");
+    public static final Item SARDINE = new Poisson("sardine");
     public static final Item SEL = new ItemBase("sel");
-    public static final Item THON = new ItemBase("thon");
+    public static final Item THON = new Poisson("thon");
     public static final Item ZANCLUS_CORNUTUS = new ItemBase("zanclus_cornutus");
+
+
 
     // Bijoux
 

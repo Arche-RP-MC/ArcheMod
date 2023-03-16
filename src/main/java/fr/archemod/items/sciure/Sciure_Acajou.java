@@ -24,7 +24,7 @@ public class Sciure_Acajou extends ItemBase {
             int rnd = (int)(Math.random()*1);
             switch (rnd){
                 case 0:
-                    playerIn.dropItem(ModItems.SCIURE,2);
+                    playerIn.dropItem(ModItems.SCIURE,1);
                     break;
 
 
