@@ -26,7 +26,7 @@
     },
     "A":
     {
-      "item": "am:plaque_d_etain"
+      "item": "am:plaque_d_or"
     },
     "E":
     {
@@ -36,7 +36,7 @@
 
   "result":
   {
-    "item": "am:peigne_en_etain",
+    "item": "am:peigne_en_or",
     "count": 1
   }
 }

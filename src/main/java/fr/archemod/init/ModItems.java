@@ -1234,70 +1234,64 @@ public class ModItems {
     public static final Item PERLE = new ItemBase("perle");
     public static final Item PERLE_NOIRE = new ItemBase("perle_noire");
 
-    /*
+
+
     public static final Item BAGUE_EN_ACIER = new ItemBase("bague_en_acier");
+    public static final Item BAGUE_EN_ARGENT = new ItemBase("bague_en_argent");
     public static final Item BAGUE_EN_BRONZE = new ItemBase("bague_en_bronze");
+    public static final Item BAGUE_EN_CUIVRE = new ItemBase("bague_en_cuivre");
     public static final Item BAGUE_EN_ETAIN = new ItemBase("bague_en_etain");
     public static final Item BAGUE_EN_FER = new ItemBase("bague_en_fer");
-    */
-    public static final Item BAGUE_EN_ARGENT = new ItemBase("bague_en_argent");
-    public static final Item BAGUE_EN_CUIVRE = new ItemBase("bague_en_cuivre");
     public static final Item BAGUE_EN_OR = new ItemBase("bague_en_or");
 
-    /*
+
     public static final Item BOUCLES_OREILLES_EN_ACIER = new ItemBase("boucles_oreilles_en_acier");
+    public static final Item BOUCLES_OREILLES_EN_ARGENT = new ItemBase("boucles_oreilles_en_argent");
     public static final Item BOUCLES_OREILLES_EN_BRONZE = new ItemBase("boucles_oreilles_en_bronze");
+    public static final Item BOUCLES_OREILLES_EN_CUIVRE = new ItemBase("boucles_oreilles_en_cuivre");
     public static final Item BOUCLES_OREILLES_EN_ETAIN = new ItemBase("boucles_oreilles_en_etain");
     public static final Item BOUCLES_OREILLES_EN_FER = new ItemBase("boucles_oreilles_en_fer");
-    */
-    public static final Item BOUCLES_OREILLES_EN_ARGENT = new ItemBase("boucles_oreilles_en_argent");
-    public static final Item BOUCLES_OREILLES_EN_CUIVRE = new ItemBase("boucles_oreilles_en_cuivre");
     public static final Item BOUCLES_OREILLES_EN_OR = new ItemBase("boucles_oreilles_en_or");
 
-    /*
+
     public static final Item BRACELET_EN_ACIER = new ItemBase("bracelet_en_acier");
+    public static final Item BRACELET_EN_ARGENT = new ItemBase("bracelet_en_argent");
     public static final Item BRACELET_EN_BRONZE = new ItemBase("bracelet_en_bronze");
+    public static final Item BRACELET_EN_CUIVRE = new ItemBase("bracelet_en_cuivre");
     public static final Item BRACELET_EN_ETAIN = new ItemBase("bracelet_en_etain");
     public static final Item BRACELET_EN_FER = new ItemBase("bracelet_en_fer");
-    */
-    public static final Item BRACELET_EN_ARGENT = new ItemBase("bracelet_en_argent");
-    public static final Item BRACELET_EN_CUIVRE = new ItemBase("bracelet_en_cuivre");
     public static final Item BRACELET_EN_OR = new ItemBase("bracelet_en_or");
 
-    /*
-    public static final Item COLLIER_EN_ACIER = new ItemBase("collier_en_acier");
-    public static final Item COLLIER_EN_BRONZE = new ItemBase("collier_en_bronze");
-    public static final Item COLLIER_EN_ETAIN = new ItemBase("collier_en_etain");
-    public static final Item COLLIER_EN_FER = new ItemBase("collier_en_fer");
-    */
+
     public static final Item COLLIER_DE_PERLES = new ItemBase("collier_de_perles");
+    public static final Item COLLIER_EN_ACIER = new ItemBase("collier_en_acier");
     public static final Item COLLIER_EN_ARGENT = new ItemBase("collier_en_argent");
+    public static final Item COLLIER_EN_BRONZE = new ItemBase("collier_en_bronze");
     public static final Item COLLIER_EN_CUIR_ET_GRIFFE = new ItemBase("collier_en_cuir_et_griffe");
     public static final Item COLLIER_EN_CUIR_ET_PERLE_DE_VERRE = new ItemBase("collier_en_cuir_et_perle_de_verre");
     public static final Item COLLIER_EN_CUIVRE = new ItemBase("collier_en_cuivre");
+    public static final Item COLLIER_EN_ETAIN = new ItemBase("collier_en_etain");
+    public static final Item COLLIER_EN_FER = new ItemBase("collier_en_fer");
     public static final Item COLLIER_EN_OR = new ItemBase("collier_en_or");
 
     public static final Item COURONNE = new ItemBase("couronne");
     public static final Item COURONNE_DE_FLEURS = new ItemBase("couronne_de_fleurs");
 
-    /*
+
     public static final Item MANCHETTE_EN_ACIER = new ItemBase("manchette_en_acier");
+    public static final Item MANCHETTE_EN_ARGENT = new ItemBase("manchette_en_argent");
     public static final Item MANCHETTE_EN_BRONZE = new ItemBase("manchette_en_bronze");
+    public static final Item MANCHETTE_EN_CUIVRE = new ItemBase("manchette_en_cuivre");
     public static final Item MANCHETTE_EN_ETAIN = new ItemBase("manchette_en_etain");
     public static final Item MANCHETTE_EN_FER = new ItemBase("manchette_en_fer");
-    */
-    public static final Item MANCHETTE_EN_ARGENT = new ItemBase("manchette_en_argent");
-    public static final Item MANCHETTE_EN_CUIVRE = new ItemBase("manchette_en_cuivre");
     public static final Item MANCHETTE_EN_OR = new ItemBase("manchette_en_or");
 
-    /*
+
     public static final Item PEIGNE_EN_ACIER = new ItemBase("peigne_en_acier");
+    public static final Item PEIGNE_EN_ARGENT = new ItemBase("peigne_en_argent");
     public static final Item PEIGNE_EN_BRONZE = new ItemBase("peigne_en_bronze");
     public static final Item PEIGNE_EN_ETAIN = new ItemBase("peigne_en_etain");
     public static final Item PEIGNE_EN_FER = new ItemBase("peigne_en_fer");
-    */
-    public static final Item PEIGNE_EN_ARGENT = new ItemBase("peigne_en_argent");
-    public static final Item PEIGNE_EN_BRONZE = new ItemBase("peigne_en_bronze");
     public static final Item PEIGNE_EN_OR = new ItemBase("peigne_en_or");
 
 
@@ -1337,7 +1331,6 @@ public class ModItems {
     public static final Item DIADEME_FER=new ItemBase("diademe_fer");
 
     public static final Item BRACELET_PERLE=new ItemBase("bracelet_perle");
-
 
     public static final Item FIL_OR=new ItemBase("fil_or");
     public static final Item FIL_ARGENT=new ItemBase("fil_argent");
