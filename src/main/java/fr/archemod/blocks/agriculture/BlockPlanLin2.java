@@ -65,7 +65,7 @@ public class BlockPlanLin2 extends BlockCrops {
         if (!worldIn.isRemote) {
             int age = getAge(state);
             if (age >= getMaxAge()) {
-                worldIn.setBlockState(pos, withAge(age - 2));
+                worldIn.setBlockState(pos, withAge(age - 3));
                 spawnAsEntity(worldIn, pos, new ItemStack(crop, dropsWhenRightClicked));
             }
         }

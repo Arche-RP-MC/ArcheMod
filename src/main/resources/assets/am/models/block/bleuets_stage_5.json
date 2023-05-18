@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "am:blocks/bleuets_stage_5"
+    }
+}

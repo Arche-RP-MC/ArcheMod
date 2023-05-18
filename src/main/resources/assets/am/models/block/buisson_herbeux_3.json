@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "am:blocks/buisson_herbeux_stage_3"
+    }
+}

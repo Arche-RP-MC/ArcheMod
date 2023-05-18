@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "am:blocks/belle_de_nuit_stage_2"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "am:blocks/buisson_de_fleurs_blanches_stage_4"
+    }
+}

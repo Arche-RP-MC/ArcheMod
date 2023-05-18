@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    " HJ",
+    " G "
+  ],
+
+  "key":
+  {
+    "H":
+    {
+      "item": "am:plume_d_ecriture_en_acier"
+    },
+    "J":
+    {
+      "item": "am:poche_d_encre"
+    },
+    "G":
+    {
+      "item": "am:encrier_en_verre"
+    }
+  },
+
+  "result":
+  {
+    "item": "am:encrier_et_plume",
+    "count": 1
+  }
+}

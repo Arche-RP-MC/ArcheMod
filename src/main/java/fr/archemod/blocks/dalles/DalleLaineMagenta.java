@@ -1,4 +1,4 @@
-package fr.archemod.blocks.dalles;
+/*package fr.archemod.blocks.dalles;
 
 import fr.archemod.init.ModBlocks;
 import net.minecraft.block.BlockSlab;
@@ -132,3 +132,4 @@ public abstract class DalleLaineMagenta extends BlockSlab{
 
 }
 
+*/
