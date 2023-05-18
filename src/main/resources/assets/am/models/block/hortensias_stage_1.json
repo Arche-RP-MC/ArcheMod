@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "am:blocks/hortensias_stage_1"
+    }
+}

@@ -594,10 +594,10 @@ public class ModBlocks {
     public static final Block PLAN_PIVOINE= new BlockPlanLin2("plan_pivoine",ModItems.GRAINE_PIVOINE, ModItems.PIVOINE2,2,2,2);
     public static final Block PLAN_PLANTE_ETRANGE= new BlockPlanLin2("plan_plante_etrange",ModItems.GRAINE_PLANTE_ETRANGE, ModItems.PLANTE_ETRANGE2,2,2,2);
     public static final Block PLAN_PLANTE_GRASSE_COLOREE= new BlockPlanLin2("plan_plante_grasse_coloree",ModItems.GRAINE_PLANTE_GRASSE_COLOREE, ModItems.PLANTE_GRASSE_COLOREE2,2,2,2);
-    public static final Block PLAN_POIVRON_JAUNE= new BlockPlanLin2("plan_poivron_jaune",ModItems.GRAINE_POIVRON_JAUNE, ModItems.POIVRON_JAUNE2,2,2,2);
+    public static final Block PLAN_POIVRON_JAUNE= new BlockPlanLin2("plan_poivron_jaune",ModItems.GRAINE_POIVRON_JAUNE, ModItems.POIVRON_JAUNE_M_CRU,2,2,2);
     public static final Block PLAN_POIVRON_ORANGE= new BlockPlanLin2("plan_poivron_orange",ModItems.GRAINE_POIVRON_ORANGE, ModItems.POIVRON_ORANGE2,2,2,2);
-    public static final Block PLAN_POIVRON_ROUGE= new BlockPlanLin2("plan_poivron_rouge",ModItems.GRAINE_POIVRON_ROUGE, ModItems.POIVRON_ROUGE2,2,2,2);
-    public static final Block PLAN_POIVRON_VERT= new BlockPlanLin2("plan_poivron_vert",ModItems.GRAINE_POIVRON_VERT, ModItems.POIVRON_VERT2,2,2,2);
+    public static final Block PLAN_POIVRON_ROUGE= new BlockPlanLin2("plan_poivron_rouge",ModItems.GRAINE_POIVRON_ROUGE, ModItems.POIVRON_ROUGE_M_CRU,2,2,2);
+    public static final Block PLAN_POIVRON_VERT= new BlockPlanLin2("plan_poivron_vert",ModItems.GRAINE_POIVRON_VERT, ModItems.POIVRON_VERT_M_CRU,2,2,2);
     public static final Block PLAN_ROMARIN= new BlockPlanLin2("plan_romarin",ModItems.GRAINE_ROMARIN, ModItems.ROMARIN2,2,2,2);
     public static final Block PLAN_SALICORNE= new BlockPlanLin2("plan_salicorne",ModItems.GRAINE_SALICORNE, ModItems.SALICORNE2,2,2,2);
     public static final Block PLAN_VERGE_D_OR= new BlockPlanLin2("plan_verge_d_or",ModItems.GRAINE_VERGE_D_OR, ModItems.VERGE_D_OR2,2,2,2);

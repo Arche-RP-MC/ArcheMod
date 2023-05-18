@@ -60,15 +60,29 @@ public class BlockPlanLin2 extends BlockCrops {
         }
     }
 
-    @Override
     public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer player, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
-        if (!worldIn.isRemote) {
-            int age = getAge(state);
-            if (age >= getMaxAge()) {
-                worldIn.setBlockState(pos, withAge(age - 3));
-                spawnAsEntity(worldIn, pos, new ItemStack(crop, dropsWhenRightClicked));
+        ItemStack heldItem = player.getHeldItem(hand);
+
+        if (heldItem.getItem() == ModItems.SERPE_EN_FER || heldItem.getItem() == ModItems.SERPE_EN_ACIER) {
+            if (!worldIn.isRemote) {
+                int age = getAge(state);
+                if (age >= getMaxAge()) {
+                    worldIn.setBlockState(pos, withAge(0));
+                    spawnAsEntity(worldIn, pos, new ItemStack(crop, dropsWhenRightClicked));
+                }
             }
+
+            heldItem.damageItem(1, player);
+            return true;
         }
+
         return super.onBlockActivated(worldIn, pos, state, player, hand, facing, hitX, hitY, hitZ);
     }
+
+
+
+
+
+
+
 }

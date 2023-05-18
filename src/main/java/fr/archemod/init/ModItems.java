@@ -2273,12 +2273,10 @@ public class ModItems {
     //plantes
 
     public static final Item BASILIC2 = new ItemBase("basilic2");
-    public static final Item ALGUES2 = new ItemBase("algues2");
     public static final Item ANETH2 = new ItemBase("aneth2");
     public static final Item ANIS2 = new ItemBase("anis2");
     public static final Item BELLE_DE_NUIT2 = new ItemBase("belle_de_nuit2");
     public static final Item BLEUETS2 = new ItemBase("bleuets2");
-    public static final Item BONZAI2 = new ItemBase("bonzai2");
     public static final Item BUISSON2 = new ItemBase("buisson2");
     public static final Item BUISSON_DE_FLEURS_BLANCHES2 = new ItemBase("buisson_de_fleurs_blanches2");
     public static final Item BUISSON_ETRANGE2 = new ItemBase("buisson_etrange2");
@@ -2290,7 +2288,6 @@ public class ModItems {
     public static final Item COSMOS2 = new ItemBase("cosmos2");
     public static final Item ETOILE_DES_GLACIERS2 = new ItemBase("etoile_des_glaciers2");
     public static final Item GERANIUM2 = new ItemBase("geranium2");
-    public static final Item GIROUETTE2 = new ItemBase("girouette2");
     public static final Item GLYCINE2 = new ItemBase("glycine2");
     public static final Item GUI2 = new ItemBase("gui2");
     public static final Item GUZMANIAS2 = new ItemBase("guzmanias2");
@@ -2319,10 +2316,7 @@ public class ModItems {
     public static final Item PLANTE_ETRANGE2 = new ItemBase("plante_etrange2");
     public static final Item PLANTE_GRASSE2 = new ItemBase("plante_grasse2");
     public static final Item PLANTE_GRASSE_COLOREE2 = new ItemBase("plante_grasse_coloree2");
-    public static final Item POIVRON_JAUNE2 = new ItemBase("poivron_jaune2");
     public static final Item POIVRON_ORANGE2 = new ItemBase("poivron_orange2");
-    public static final Item POIVRON_ROUGE2 = new ItemBase("poivron_rouge2");
-    public static final Item POIVRON_VERT2 = new ItemBase("poivron_vert2");
     public static final Item ROMARIN2 = new ItemBase("romarin2");
     public static final Item RONCES2 = new ItemBase("ronces2");
     public static final Item SALICORNE2 = new ItemBase("salicorne2");
