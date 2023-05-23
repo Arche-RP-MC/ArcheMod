@@ -16,7 +16,8 @@
     },
     "M":
     {
-      "item": "am:bobine_d_or"
+      "item": "am:bobine_d_or",
+      "data": 32767
     },
     "V":
     {

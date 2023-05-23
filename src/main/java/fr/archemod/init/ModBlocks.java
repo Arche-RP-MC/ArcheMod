@@ -587,6 +587,7 @@ public class ModBlocks {
     public static final Block PLAN_MUGUET= new BlockPlanLin2("plan_muguet",ModItems.GRAINE_MUGUET, ModItems.MUGUET2,2,2,2);
     public static final Block PLAN_MYOSOTIS= new BlockPlanLin2("plan_myosotis",ModItems.GRAINE_MYOSOTIS, ModItems.MYOSOTIS2,2,2,2);
     public static final Block PLAN_NARCISSES= new BlockPlanLin2("plan_narcisses",ModItems.GRAINE_NARCISSES, ModItems.NARCISSES2,2,2,2);
+    public static final Block PLAN_RONCES= new BlockPlanLin2("plan_ronces",ModItems.GRAINE_RONCES, ModItems.RONCES2,2,2,2);
     public static final Block PLAN_OEILLETS= new BlockPlanLin2("plan_oeillets",ModItems.GRAINE_OEILLETS, ModItems.OEILLETS2,2,2,2);
     public static final Block PLAN_ORCHIDEE_ROSE= new BlockPlanLin2("plan_orchidee_rose",ModItems.GRAINE_ORCHIDEE_ROSE, ModItems.ORCHIDEE_ROSE2,2,2,2);
     public static final Block PLAN_PENSEES= new BlockPlanLin2("plan_pensees",ModItems.GRAINE_PENSEES, ModItems.PENSEES2,2,2,2);
@@ -603,7 +604,12 @@ public class ModBlocks {
     public static final Block PLAN_VERGE_D_OR= new BlockPlanLin2("plan_verge_d_or",ModItems.GRAINE_VERGE_D_OR, ModItems.VERGE_D_OR2,2,2,2);
     public static final Block PLAN_VERVEINE= new BlockPlanLin2("plan_verveine",ModItems.GRAINE_VERVEINE, ModItems.VERVEINE2,2,2,2);
     public static final Block PLAN_VIOLETTES= new BlockPlanLin2("plan_violettes",ModItems.GRAINE_VIOLETTES, ModItems.VIOLETTES2,2,2,2);
-
+    public static final Block PLAN_ESTRAGON= new BlockPlanLin2("plan_estragon",ModItems.GRAINE_ESTRAGON, ModItems.ESTRAGON,2,2,2);
+    public static final Block PLAN_FLEUR_DE_PAVOT= new BlockPlanLin2("plan_fleur_de_pavot",ModItems.GRAINE_FLEUR_DE_PAVOT, ModItems.GRAINE_DE_PAVOT,2,2,2);
+    public static final Block PLAN_GIROFLIER= new BlockPlanLin2("plan_giroflier",ModItems.GRAINE_GIROFLIER, ModItems.CLOU_DE_GIROFLE,2,2,2);
+    public static final Block PLAN_RHUBARBE= new BlockPlanLin2("plan_rhubarbe",ModItems.GRAINE_RHUBARBE, ModItems.RHUBARBE,2,2,2);
+    public static final Block PLAN_SAUGE= new BlockPlanLin2("plan_sauge",ModItems.GRAINE_SAUGE, ModItems.SAUGE,2,2,2);
+    public static final Block PLAN_SUREAU= new BlockPlanLin2("plan_sureau",ModItems.GRAINE_SUREAU, ModItems.SUREAU,2,2,2);
 
 
 
@@ -714,28 +720,30 @@ public class ModBlocks {
 
 
 // BLOC Pour CHisel
-/*
-    //public static final Block FULLGLASS = new BlockVitre(Material.GLASS);
-    public static final Block BLOC_VERRE = new BlockVerre(Material.GLASS,false,"bloc_verre",5F,5F);
-    public static final Block BLOC_VERRE_BLANC = new BlockVerre(Material.GLASS,false,"bloc_verre_blanc",5F,5F);
-    public static final Block BLOC_VERRE_ORANGE = new BlockVerre(Material.GLASS,false,"bloc_verre_orange",5F,5F);
-    public static final Block BLOC_VERRE_MAGENTA = new BlockVerre(Material.GLASS,true,"bloc_verre_magenta",5F,5F);
-    public static final Block BLOC_VERRE_BLEU_CLAIR = new BlockVerre(Material.GLASS,true,"bloc_verre_bleu_clair",5F,5F);
-    public static final Block BLOC_VERRE_JAUNE = new BlockVerre(Material.GLASS,true,"bloc_verre_jaune",5F,5F);
-    public static final Block BLOC_VERRE_VERT_CLAIR = new BlockVerre(Material.GLASS,true,"bloc_verre_vert_clair",5F,5F);
-    public static final Block BLOC_VERRE_ROSE = new BlockVerre(Material.GLASS,true,"bloc_verre_rose",5F,5F);
-    public static final Block BLOC_VERRE_GRIS = new BlockVerre(Material.GLASS,true,"bloc_verre_gris",5F,5F);
-    public static final Block BLOC_VERRE_GRIS_CLAIR = new BlockVerre(Material.GLASS,true,"bloc_verre_gris_clair",5F,5F);
-    public static final Block BLOC_VERRE_CYAN = new BlockVerre(Material.GLASS,true,"bloc_verre_cyan",5F,5F);
-    public static final Block BLOC_VERRE_VIOLET = new BlockVerre(Material.GLASS,true,"bloc_verre_violet",5F,5F);
-    public static final Block BLOC_VERRE_BLEU = new BlockVerre(Material.GLASS,true,"bloc_verre_bleu",5F,5F);
-    public static final Block BLOC_VERRE_MARRON = new BlockVerre(Material.GLASS,true,"bloc_verre_marron",5F,5F);
-    public static final Block BLOC_VERRE_VERT = new BlockVerre(Material.GLASS,true,"bloc_verre_vert",5F,5F);
-    public static final Block BLOC_VERRE_ROUGE = new BlockVerre(Material.GLASS,true,"bloc_verre_rouge",5F,5F);
-    public static final Block BLOC_VERRE_NOIR = new BlockVerre(Material.GLASS,true,"bloc_verre_noir",5F,5F);
 
 
- */
+   /* public static final Block BLOC_VERRE = new BlockBase3("bloc_verre");
+    public static final Block BLOC_VERRE_BLANC = new BlockBase3("bloc_verre_blanc");
+    public static final Block BLOC_VERRE_ORANGE = new BlockBase3("bloc_verre_orange");
+    public static final Block BLOC_VERRE_MAGENTA = new BlockBase3("bloc_verre_magenta");
+    public static final Block BLOC_VERRE_BLEU_CLAIR = new BlockBase3("bloc_verre_bleu_clair");
+    public static final Block BLOC_VERRE_JAUNE = new BlockBase3("bloc_verre_jaune");
+    public static final Block BLOC_VERRE_VERT_CLAIR = new BlockBase3("bloc_verre_vert_clair");
+    public static final Block BLOC_VERRE_ROSE = new BlockBase3("bloc_verre_rose");
+    public static final Block BLOC_VERRE_GRIS = new BlockBase3("bloc_verre_gris");
+    public static final Block BLOC_VERRE_GRIS_CLAIR = new BlockBase3("bloc_verre_gris_clair");
+    public static final Block BLOC_VERRE_CYAN = new BlockBase3("bloc_verre_cyan");
+    public static final Block BLOC_VERRE_VIOLET = new BlockBase3("bloc_verre_violet");
+    public static final Block BLOC_VERRE_BLEU = new BlockBase3("bloc_verre_bleu");
+    public static final Block BLOC_VERRE_MARRON = new BlockBase3("bloc_verre_marron");
+    public static final Block BLOC_VERRE_VERT = new BlockBase3("bloc_verre_vert");
+    public static final Block BLOC_VERRE_ROUGE = new BlockBase3("bloc_verre_rouge");
+    public static final Block BLOC_VERRE_NOIR = new BlockBase3("bloc_verre_noir");
+
+    */
+
+
+
 
 
 
@@ -829,10 +837,19 @@ public class ModBlocks {
         ModItems.GRAINE_POIVRON_ROUGE = new ItemGraine("graine_poivron_rouge",ModBlocks.PLAN_POIVRON_ROUGE, Blocks.FARMLAND);
         ModItems.GRAINE_POIVRON_VERT = new ItemGraine("graine_poivron_vert",ModBlocks.PLAN_POIVRON_VERT, Blocks.FARMLAND);
         ModItems.GRAINE_ROMARIN = new ItemGraine("graine_romarin",ModBlocks.PLAN_ROMARIN, Blocks.FARMLAND);
+        ModItems.GRAINE_RONCES = new ItemGraine("graine_ronces",ModBlocks.PLAN_RONCES, Blocks.FARMLAND);
         ModItems.GRAINE_SALICORNE = new ItemGraine("graine_salicorne",ModBlocks.PLAN_SALICORNE, Blocks.FARMLAND);
         ModItems.GRAINE_VERGE_D_OR = new ItemGraine("graine_verge_d_or",ModBlocks.PLAN_VERGE_D_OR, Blocks.FARMLAND);
         ModItems.GRAINE_VERVEINE = new ItemGraine("graine_verveine",ModBlocks.PLAN_VERVEINE, Blocks.FARMLAND);
         ModItems.GRAINE_VIOLETTES = new ItemGraine("graine_violettes",ModBlocks.PLAN_VIOLETTES, Blocks.FARMLAND);
+        ModItems.GRAINE_ESTRAGON = new ItemGraine("graine_estragon",ModBlocks.PLAN_ESTRAGON, Blocks.FARMLAND);
+        ModItems.GRAINE_FLEUR_DE_PAVOT = new ItemGraine("graine_fleur_de_pavot",ModBlocks.PLAN_FLEUR_DE_PAVOT, Blocks.FARMLAND);
+        ModItems.GRAINE_GIROFLIER = new ItemGraine("graine_giroflier",ModBlocks.PLAN_GIROFLIER, Blocks.FARMLAND);
+        ModItems.GRAINE_RHUBARBE = new ItemGraine("graine_rhubarbe",ModBlocks.PLAN_RHUBARBE, Blocks.FARMLAND);
+        ModItems.GRAINE_SAUGE = new ItemGraine("graine_sauge",ModBlocks.PLAN_SAUGE, Blocks.FARMLAND);
+        ModItems.GRAINE_SUREAU = new ItemGraine("graine_sureau",ModBlocks.PLAN_SUREAU, Blocks.FARMLAND);
+        ModItems.GRAINE_THYM = new ItemGraine("graine_thym",ModBlocks.PLAN_THYM, Blocks.FARMLAND);
+        ModItems.GRAINE_MANDRAGORE = new ItemGraine("graine_mandragore",ModBlocks.PLAN_MANDRAGORE, Blocks.FARMLAND);
 
     }
 
@@ -931,10 +948,22 @@ public class ModBlocks {
         registerItem(ModItems.GRAINE_POIVRON_ROUGE);
         registerItem(ModItems.GRAINE_POIVRON_VERT);
         registerItem(ModItems.GRAINE_ROMARIN);
+        registerItem(ModItems.GRAINE_RONCES);
         registerItem(ModItems.GRAINE_SALICORNE);
         registerItem(ModItems.GRAINE_VERGE_D_OR);
         registerItem(ModItems.GRAINE_VERVEINE);
         registerItem(ModItems.GRAINE_VIOLETTES);
+        registerItem(ModItems.GRAINE_ESTRAGON);
+        registerItem(ModItems.GRAINE_FLEUR_DE_PAVOT);
+        registerItem(ModItems.GRAINE_GIROFLIER);
+        registerItem(ModItems.GRAINE_RHUBARBE);
+        registerItem(ModItems.GRAINE_SAUGE);
+        registerItem(ModItems.GRAINE_SUREAU);
+        registerItem(ModItems.GRAINE_THYM);
+        registerItem(ModItems.GRAINE_MANDRAGORE);
+
+
+
 
     }
 

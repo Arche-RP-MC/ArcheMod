@@ -16,7 +16,8 @@
     },
     "M":
     {
-      "item": "am:bobine_de_bronze"
+      "item": "am:bobine_de_bronze",
+      "data": 32767
     },
     "V":
     {

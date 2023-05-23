@@ -5,7 +5,7 @@
   [
     "PPP",
     "FIC",
-    " B "
+    "KB "
   ],
 
   "key":
@@ -26,9 +26,14 @@
     {
       "item": "am:clous"
     },
+    "K":
+    {
+      "item": "am:pinces",
+      "data": 32767
+    },
     "B":
     {
-      "item": "minecraft:stick"
+      "item": "am:manche"
     }
   },
 

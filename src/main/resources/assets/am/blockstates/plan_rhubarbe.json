@@ -1,0 +1,28 @@
+{
+    "variants": {
+        "age=0": {
+            "model": "am:rhubarbe1"
+        },
+        "age=1": {
+            "model": "am:rhubarbe2"
+        },
+        "age=2": {
+            "model": "am:rhubarbe3"
+        },
+        "age=3": {
+            "model": "am:rhubarbe4"
+        },
+        "age=4": {
+            "model": "am:rhubarbe5"
+        },
+        "age=5": {
+            "model": "am:rhubarbe6"
+        },
+        "age=6": {
+            "model": "am:rhubarbe7"
+        },
+        "age=7": {
+            "model": "am:rhubarbe8"
+        }
+    }
+}

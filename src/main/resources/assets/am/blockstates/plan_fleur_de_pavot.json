@@ -1,0 +1,28 @@
+{
+    "variants": {
+        "age=0": {
+            "model": "am:fleur_de_pavot1"
+        },
+        "age=1": {
+            "model": "am:fleur_de_pavot2"
+        },
+        "age=2": {
+            "model": "am:fleur_de_pavot3"
+        },
+        "age=3": {
+            "model": "am:fleur_de_pavot4"
+        },
+        "age=4": {
+            "model": "am:fleur_de_pavot5"
+        },
+        "age=5": {
+            "model": "am:fleur_de_pavot6"
+        },
+        "age=6": {
+            "model": "am:fleur_de_pavot7"
+        },
+        "age=7": {
+            "model": "am:fleur_de_pavot8"
+        }
+    }
+}

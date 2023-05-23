@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    " P ",
+    "L  "
+  ],
+
+  "key":
+  {
+    "P":
+    {
+      "item": "minecraft:quartz_block"
+
+    },
+    "L":
+    {
+      "item": "am:marteau_burin_en_acier",
+      "data": 32767
+    }
+
+  },
+
+  "result":
+  {
+    "item": "am:statuette_marbre",
+    "count": 1
+  }
+}

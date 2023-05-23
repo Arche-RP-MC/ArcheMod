@@ -3,7 +3,7 @@
 
   "pattern":
   [
-    " P ",
+    "KP ",
     "FIC",
     " B "
   ],
@@ -18,6 +18,11 @@
     {
       "item": "am:pepite_fer"
     },
+    "K":
+    {
+      "item": "am:pinces",
+      "data": 32767
+    },
     "F":
     {
       "item": "am:bobine_de_fil"
@@ -28,7 +33,7 @@
     },
     "B":
     {
-      "item": "minecraft:stick"
+      "item": "am:manche"
     }
   },
 

@@ -1,0 +1,31 @@
+ {
+    "type": "minecraft:crafting_shaped",
+  
+    "pattern":
+    [
+      "   ",
+      " P ",
+      " M "
+    ],
+  
+    "key":
+    {
+      "M":
+      {
+        "item": "am:mortier_pilon_en_pierre",
+        "data": 32767
+      },
+      "P":
+      {
+        "item": "am:joli_buisson2"
+      }
+      
+    },
+  
+    "result":
+    {
+      "item": "am:graine_joli_buisson",
+      "data": 0,
+      "count": 2
+    }
+  }

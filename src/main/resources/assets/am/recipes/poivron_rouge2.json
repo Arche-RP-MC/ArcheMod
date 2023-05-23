@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:crafting_shaped",
+  
+    "pattern":
+    [
+      "   ",
+      " P ",
+      " M "
+    ],
+  
+    "key":
+    {
+      "M":
+      {
+        "item": "am:mortier_pilon_en_bois",
+        "data": 32767
+      },
+      "P":
+      {
+        "item": "am:poivron_rouge"
+      }
+      
+    },
+  
+    "result":
+    {
+      "item": "am:graine_poivron_rouge",
+      "data": 0,
+      "count": 2
+    }
+  }

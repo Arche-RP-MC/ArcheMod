@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "K  ",
+    "F C",
+    "   "
+  ],
+
+  "key":
+  {
+
+    "K":
+    {
+      "item": "am:ciseau_a_bois",
+      "data": 32767
+    },
+    "F":
+    {
+      "item": "am:planche"
+    },
+    "C":
+    {
+      "item": "am:vernis",
+      "data": 32767
+    }
+
+  },
+
+  "result":
+  {
+    "item": "am:sifflet",
+    "count": 1
+  }
+}

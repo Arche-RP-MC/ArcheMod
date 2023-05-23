@@ -56,6 +56,10 @@ public class ModItems {
     public static final Item VER_A_SOIE = new ItemBase("ver_a_soie");
     public static final Item POCHE_DE_VENIN = new ItemBase("poche_de_venin");
     public static final Item OEUF = new Oeuf("oeuf");
+    public static final Item MEDUSE = new ItemBase("meduse");
+    public static final Item CARCASSE_OISEAU = new ItemBase("carcasse_oiseau");
+    public static final Item AILE_MEMBRANEUSE = new ItemBase("aile_membraneuse");
+    public static final Item IVOIRE = new ItemBase("ivoire");
 
     // Minerais - Cailloux - matières premières
     public static final Item PEPITE_ACIER = new ItemBase("pepite_acier");
@@ -78,6 +82,7 @@ public class ModItems {
     public static final Item CAILLOU_DIORITE = new ItemBase("caillou_diorite");
     public static final Item CAILLOU_D_ANDESITE = new ItemBase("caillou_d_andesite");
     public static final Item CAILLOU_GRANITE = new ItemBase("caillou_granite");
+    public static final Item EPONGE = new ItemBase("eponge");
 
     //DIVERS - MJ
     public static final Item BEBE = new ItemBase("bebe");
@@ -153,6 +158,7 @@ public class ModItems {
     public static final Item AIGUILLE = new ItemBase("aiguille");
     public static final Item ARROSOIR = new ItemBase("arrosoir");
     public static final Item BALAI = new Consomable2("balai");
+    public static final Item PLUMEAU = new Consomable2("plumeau");
     public static final Item CANNE_A_PECHE_TEST = new CustomFishingRod("canne_a_peche_test");
     public static final Item CANNE_DE_VERRIER = new OutilsEnFer("canne_de_verrier");
     public static final Item CISEAUX_A_BOIS = new OutilsEnFer("ciseaux_a_bois");
@@ -183,6 +189,8 @@ public class ModItems {
     public static final Item SPATULE = new OutilsEnFer("spatule");
     public static final Item TROUSSE_D_INGENIEUR_EN_ACIER = new OutilsEnAcier("trousse_d_ingenieur_en_acier");
     public static final Item TROUSSE_D_INGENIEUR_EN_FER = new OutilsEnFer("trousse_d_ingenieur_en_fer");
+    public static final Item COMPAS = new OutilsEnBronze("compas");
+    public static final Item CADRE_TANNAGE = new OutilsEnBronze("cadre_tannage");
 
     //FOODS
     public static final Item ABRICOT = new FoodBase("abricot",2,0.2F,false);
@@ -196,7 +204,7 @@ public class ModItems {
     public static final Item BANANE = new FoodBase("banane",2,0.2F,false);
     public static final Item BEIGNET = new FoodBase("beignet",2,0.2F,false);
     public static final Item BEIGNET_DE_CRABE = new FoodBase("beignet_de_crabe",5,0.2F,false);
-    public static final Item BEURRE = new FoodBase("beurre",1,0.2F,false);
+    public static final Item BEURRE = new Consomable5("beurre");
     public static final Item BISCUIT = new FoodBase("biscuit",1,0.2F,false);
     public static final Item BISCUIT_AU_CHOCOLAT = new FoodBase("biscuit_au_chocolat",1,0.2F,false);
     public static final Item BLEU = new FoodBase("bleu",1,0.2F,false);
@@ -545,6 +553,7 @@ public class ModItems {
     public static Item GRAINE_RADIS ;
     public static Item GRAINE_RIZ;
     public static Item GRAINE_ROMARIN;
+    public static Item GRAINE_RONCES;
     public static Item GRAINE_SALADE;
     public static Item GRAINE_SALICORNE;
     public static Item GRAINE_SALSIFI;
@@ -556,6 +565,13 @@ public class ModItems {
     public static Item GRAINE_VIGNE_NOIRE;
     public static Item GRAINE_VIOLETTES;
     public static final Item GRAINE_DE_PAVOT = new ItemBase("graine_de_pavot");
+    public static Item GRAINE_ESTRAGON;
+    public static Item GRAINE_FLEUR_DE_PAVOT;
+    public static Item GRAINE_GIROFLIER;
+    public static Item GRAINE_RHUBARBE;
+    public static Item GRAINE_SAUGE;
+    public static Item GRAINE_SUREAU;
+
 
     // Ingé - rouages - serrures - mécanique
 
@@ -570,6 +586,8 @@ public class ModItems {
     public static final Item LONGUE_VUE = new ItemBase("longue_vue");
     public static final Item BALANCE_EN_CUIVRE = new ItemBase("balance_en_cuivre");
     public static final Item CLE_EN_ARGENT = new ItemBase("cle_en_argent");
+    public static final Item SEXTAN = new ItemBase("sextan");
+    public static final Item MONOCLE = new ItemBase("monocle");
 
     // Pierres taillées - Géodes
 
@@ -918,19 +936,22 @@ public class ModItems {
     public static final Item PATE_A_PAPIER = new ItemBase("pate_a_papier");
     public static final Item PINCEAU = new Consommables("pinceau");
     public static final Item PINCEAU_BROSSE = new OutilsEnFer("pinceau_brosse");
+    public static final Item TICKET = new ItemBase("ticket");
+    public static final Item JEU_DE_CARTES = new ItemBase("jeu_de_cartes");
+
 
     //Métaux fondus - lingots - barres - plaques - clous
 
     public static final Item FER_FONDU = new ItemBase("fer_fondu");
     public static final Item BARRE_FER = new ItemBase("barre_fer");
     public static final Item PLAQUE_DE_FER = new ItemBase("plaque_de_fer");
-    public static final Item BOBINE_DE_FER = new ItemBase("bobine_de_fer");
+    public static final Item BOBINE_DE_FER = new Consommables("bobine_de_fer");
 
     public static final Item CUIVRE_FONDU = new ItemBase("cuivre_fondu");
     public static final Item BARRE_CUIVRE = new ItemBase("barre_cuivre");
     public static final Item PLAQUE_DE_CUIVRE = new ItemBase("plaque_de_cuivre");
     public static final Item LINGOT_CUIVRE = new ItemBase("lingot_cuivre");
-    public static final Item BOBINE_DE_CUIVRE = new ItemBase("bobine_de_cuivre");
+    public static final Item BOBINE_DE_CUIVRE = new Consommables("bobine_de_cuivre");
 
     public static final Item PLOMB_FONDU = new ItemBase("plomb_fondu");
     public static final Item BARRE_PLOMB = new ItemBase("barre_plomb");
@@ -946,26 +967,28 @@ public class ModItems {
     public static final Item BARRE_BRONZE = new ItemBase("barre_bronze");
     public static final Item PLAQUE_DE_BRONZE = new ItemBase("plaque_de_bronze");
     public static final Item LINGOT_BRONZE = new ItemBase("lingot_bronze");
-    public static final Item BOBINE_DE_BRONZE = new ItemBase("bobine_de_bronze");
+    public static final Item BOBINE_DE_BRONZE = new Consommables("bobine_de_bronze");
 
     public static final Item ACIER_FONDU = new ItemBase("acier_fondu");
     public static final Item BARRE_ACIER = new ItemBase("barre_acier");
     public static final Item PLAQUE_D_ACIER = new ItemBase("plaque_d_acier");
     public static final Item LINGOT_ACIER = new ItemBase("lingot_acier");
-    public static final Item BOBINE_D_ACIER = new ItemBase("bobine_d_acier");
+    public static final Item BOBINE_D_ACIER = new Consommables("bobine_d_acier");
 
     public static final Item ARGENT_FONDU = new ItemBase("argent_fondu");
     public static final Item BARRE_ARGENT = new ItemBase("barre_argent");
     public static final Item PLAQUE_D_ARGENT = new ItemBase("plaque_d_argent");
     public static final Item LINGOT_ARGENT = new ItemBase("lingot_argent");
-    public static final Item BOBINE_D_ARGENT = new ItemBase("bobine_d_argent");
+    public static final Item BOBINE_D_ARGENT = new Consommables("bobine_d_argent");
 
     public static final Item OR_FONDU = new ItemBase("or_fondu");
     public static final Item BARRE_OR = new ItemBase("barre_or");
     public static final Item PLAQUE_D_OR = new ItemBase("plaque_d_or");
-    public static final Item BOBINE_D_OR = new ItemBase("bobine_d_or");
+    public static final Item BOBINE_D_OR = new Consommables("bobine_d_or");
 
     public static final Item CLOUS = new ItemBase("clous");
+    public static final Item SIFFLET = new ItemSifflet("sifflet");
+    public static final Item SIFFLET_METAL = new ItemSifflet("sifflet_metal");
 
     //Têtes d'outils
 
@@ -1454,6 +1477,10 @@ public class ModItems {
     public static final Item BRIQUE_DE_PIERRE = new ItemBase("brique_de_pierre");
     public static final Item BRIQUE_D_ANDESITE = new ItemBase("brique_d_andesite");
 
+    public static final Item STATUETTE_MARBRE = new ItemBase("statuette_marbre");
+    public static final Item STATUETTE_PIERRE = new ItemBase("statuette_pierre");
+    public static final Item MOULE_FROMAGE = new ItemBase("moule_fromage");
+
     //seaux et verres pleins
 
     public static final Item BOUTEILLE_DE_BIERE = new ItemBase("bouteille_de_biere");
@@ -1749,6 +1776,7 @@ public class ModItems {
     public static final Item TUNIQUE = new ItemBase("tunique");
     public static final Item TUNIQUE_APICULTEUR = new ItemBase("tunique_apiculteur");
     public static final Item VESTE = new ItemBase("veste");
+    public static final Item BOUTON = new ItemBase("bouton");
 
     // Vetements colorées
 
@@ -2195,7 +2223,7 @@ public class ModItems {
     public static final Item BAUME_A_LA_CAMOMILLE = new ItemBase ("baume_a_la_camomille");
     public static final Item BAUME_EXFOLIANT = new ItemBase("baume_exfoliant");
     public static final Item BOUGIE = new ItemBase("candle");
-    public static final Item BOUTEILLE_ALCOOL_PUR = new Consommables("bouteille_alcool_pur");
+    public static final Item BOUTEILLE_ALCOOL_PUR = new BouteilleDeVin("bouteille_alcool_pur",0,0.2F,false);
     public static final Item BOUTEILLE_DE_PARFUM = new Savon("bouteille_de_parfum");
     public static final Item CANNE_BEQUILLE = new ItemBase("canne_bequille");
     public static final Item COLLE = new ItemBase("colle");
@@ -2230,6 +2258,8 @@ public class ModItems {
     public static final Item TASSE_EN_PORCELAINE_ROSE = new ItemBase("tasse_en_porcelaine_rose");
     public static final Item TASSE_EN_PORCELAINE_VERTE = new ItemBase("tasse_en_porcelaine_verte");
     public static final Item TASSE_EN_PORCELAINE_VIOLETTE = new ItemBase("tasse_en_porcelaine_violette");
+    public static final Item ASSIETTE_EN_PORCELAINE = new ItemBase("assiette_en_porcelaine");
+    public static final Item SALADIER_EN_PORCELAINE = new ItemBase("saladier_en_porcelaine");
 
     // verrerie
 
@@ -2324,6 +2354,7 @@ public class ModItems {
     public static final Item VERVEINE2 = new ItemBase("verveine2");
     public static final Item VIOLETTES2 = new ItemBase("violettes2");
 
+
         // \/ A ajouter aux plantes quand tu veux :p \/
         public static final Item BLE = new GraineBle("ble");
         public static final Item CANNELLE = new ItemBase("cannelle");
@@ -2357,4 +2388,6 @@ public class ModItems {
     public static final Item POMME_DE_PIN = new ItemBase("pomme_de_pin");
     public static final Item POMME_DE_TERRE_GERMEE = new ItemBase("pomme_de_terre_germee");
     public static final Item SEVE = new ItemBase("seve");
+    public static final Item ESTRAGON = new ItemBase("estragon");
+    public static final Item RHUBARBE = new ItemBase("rhubarbe");
 }

@@ -61,17 +61,17 @@ public class BlockBarril extends Block implements ITileEntityProvider {
                     playerIn.addItemStackToInventory(new ItemStack(Items.BUCKET));
                 } else if (itemStack.getItem() == ModItems.SEAU_DE_BIERE_BRUNE && tileEntityBarril.getCharge() == 0) {
                     tileEntityBarril.setCharge(15);
-                    tileEntityBarril.setContenu("bière brune");
+                    tileEntityBarril.setContenu("biere brune");
                     itemStack.shrink(1);
                     playerIn.addItemStackToInventory(new ItemStack(Items.BUCKET));
                 } else if (itemStack.getItem() == ModItems.SEAU_DE_BIERE_ROUSSE && tileEntityBarril.getCharge() == 0) {
                     tileEntityBarril.setCharge(15);
-                    tileEntityBarril.setContenu("bière rousse");
+                    tileEntityBarril.setContenu("biere rousse");
                     itemStack.shrink(1);
                     playerIn.addItemStackToInventory(new ItemStack(Items.BUCKET));
                 } else if (itemStack.getItem() == ModItems.SEAU_DE_BIERRE_BLONDE && tileEntityBarril.getCharge() == 0) {
                     tileEntityBarril.setCharge(15);
-                    tileEntityBarril.setContenu("bière blonde");
+                    tileEntityBarril.setContenu("biere blonde");
                     itemStack.shrink(1);
                     playerIn.addItemStackToInventory(new ItemStack(Items.BUCKET));
                 } else if (itemStack.getItem() == ModItems.SEAU_DE_VIN_BLANC && tileEntityBarril.getCharge() == 0) {
@@ -106,11 +106,11 @@ public class BlockBarril extends Block implements ITileEntityProvider {
                             playerIn.addItemStackToInventory(new ItemStack(ModItems.VERRE_A_PIED_EAU, 1, 0));
                         } else if (tileEntityBarril.getContenu().equals("lait")) {
                             playerIn.addItemStackToInventory(new ItemStack(ModItems.VERRE_A_PIED_LAIT));
-                        } else if (tileEntityBarril.getContenu().equals("bière brune")) {
+                        } else if (tileEntityBarril.getContenu().equals("biere brune")) {
                             playerIn.addItemStackToInventory(new ItemStack(ModItems.VERRE_A_PIED_BIERE_BRUNE));
-                        } else if (tileEntityBarril.getContenu().equals("bière rousse")) {
+                        } else if (tileEntityBarril.getContenu().equals("biere rousse")) {
                             playerIn.addItemStackToInventory(new ItemStack(ModItems.VERRE_A_PIED_BIERE_ROUSSE));
-                        } else if (tileEntityBarril.getContenu().equals("bière blonde")) {
+                        } else if (tileEntityBarril.getContenu().equals("biere blonde")) {
                             playerIn.addItemStackToInventory(new ItemStack(ModItems.VERRE_A_PIED_BIERRE_BLONDE));
                         } else if (tileEntityBarril.getContenu().equals("vin blanc")) {
                             playerIn.addItemStackToInventory(new ItemStack(ModItems.VERRE_A_PIED_VIN_BLANC));
@@ -135,11 +135,11 @@ public class BlockBarril extends Block implements ITileEntityProvider {
                             playerIn.addItemStackToInventory(new ItemStack(ModItems.CHOPPE_EN_VERRE_EAU, 1, 0));
                         } else if (tileEntityBarril.getContenu().equals("lait")) {
                             playerIn.addItemStackToInventory(new ItemStack(ModItems.CHOPPE_EN_VERRE_LAIT));
-                        } else if (tileEntityBarril.getContenu().equals("bière brune")) {
+                        } else if (tileEntityBarril.getContenu().equals("biere brune")) {
                             playerIn.addItemStackToInventory(new ItemStack(ModItems.CHOPPE_EN_VERRE_BIERE_BRUNE));
-                        } else if (tileEntityBarril.getContenu().equals("bière rousse")) {
+                        } else if (tileEntityBarril.getContenu().equals("biere rousse")) {
                             playerIn.addItemStackToInventory(new ItemStack(ModItems.CHOPPE_EN_VERRE_BIERE_ROUSSE));
-                        } else if (tileEntityBarril.getContenu().equals("bière blonde")) {
+                        } else if (tileEntityBarril.getContenu().equals("biere blonde")) {
                             playerIn.addItemStackToInventory(new ItemStack(ModItems.CHOPPE_EN_VERRE_BIERRE_BLONDE));
                         } else if (tileEntityBarril.getContenu().equals("vin blanc")) {
                             playerIn.addItemStackToInventory(new ItemStack(ModItems.CHOPPE_EN_VERRE_VIN_BLANC));
@@ -154,6 +154,9 @@ public class BlockBarril extends Block implements ITileEntityProvider {
                         playerIn.sendMessage(new TextComponentString("Le baril est vide"));
                     }
 
+
+
+
             } else if (itemStack.getItem() == ModItems.CHOPPE_EN_ARGILE) {
                     if (tileEntityBarril.getCharge() > 0) {
                         tileEntityBarril.setCharge(tileEntityBarril.getCharge() - 1);
@@ -162,11 +165,11 @@ public class BlockBarril extends Block implements ITileEntityProvider {
                             playerIn.addItemStackToInventory(new ItemStack(ModItems.CHOPPE_EN_ARGILE_EAU, 1, 0));
                         } else if (tileEntityBarril.getContenu().equals("lait")) {
                             playerIn.addItemStackToInventory(new ItemStack(ModItems.CHOPPE_EN_ARGILE_LAIT));
-                        } else if (tileEntityBarril.getContenu().equals("bière brune")) {
+                        } else if (tileEntityBarril.getContenu().equals("biere brune")) {
                             playerIn.addItemStackToInventory(new ItemStack(ModItems.CHOPPE_EN_ARGILE_BIERE_BRUNE));
-                        } else if (tileEntityBarril.getContenu().equals("bière rousse")) {
+                        } else if (tileEntityBarril.getContenu().equals("biere rousse")) {
                             playerIn.addItemStackToInventory(new ItemStack(ModItems.CHOPPE_EN_ARGILE_BIERE_ROUSSE));
-                        } else if (tileEntityBarril.getContenu().equals("bière blonde")) {
+                        } else if (tileEntityBarril.getContenu().equals("biere blonde")) {
                             playerIn.addItemStackToInventory(new ItemStack(ModItems.CHOPPE_EN_ARGILE_BIERRE_BLONDE));
                         } else if (tileEntityBarril.getContenu().equals("vin blanc")) {
                             playerIn.addItemStackToInventory(new ItemStack(ModItems.CHOPPE_EN_ARGILE_VIN_BLANC));
@@ -181,10 +184,8 @@ public class BlockBarril extends Block implements ITileEntityProvider {
                     } else {
                         playerIn.sendMessage(new TextComponentString("Le baril est vide"));
                     }
-
-                }
-
-                }
+            }
+            }
         }
         return true;
     }

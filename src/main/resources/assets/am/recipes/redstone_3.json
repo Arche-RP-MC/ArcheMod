@@ -12,7 +12,8 @@
   {
     "G":
     {
-      "item": "am:bobine_de_cuivre"
+      "item": "am:bobine_de_cuivre",
+      "data": 32767
     },
     "N":
     {

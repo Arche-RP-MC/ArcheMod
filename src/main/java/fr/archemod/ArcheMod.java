@@ -14,6 +14,7 @@ import fr.archemod.chat.capabilities.indicator.IArcheChat;
 import fr.archemod.chat.network.indicator.PacketArcheChat;
 import fr.archemod.cmd.HRPCommand;
 import fr.archemod.init.ModRecipes;
+import fr.archemod.init.ModSounds;
 import fr.archemod.init.SechoirViandeRecipe;
 import fr.archemod.network.ArcheNetwork;
 import fr.archemod.proxy.CommonProxy;
@@ -95,6 +96,7 @@ public class ArcheMod {
 
 
 
+
     }
 
     /**
@@ -104,6 +106,7 @@ public class ArcheMod {
     public void init(FMLInitializationEvent event) {
         ArcheNetwork.init();
         ModRecipes.instance.initRecipes();
+        ModSounds.registerSounds();
 
     }
 
