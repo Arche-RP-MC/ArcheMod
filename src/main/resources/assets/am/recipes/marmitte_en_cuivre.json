@@ -1,38 +1,33 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "  M",
     "P T",
     " FF"
   ],
-
-  "key":
-  {
-    "M":
-    {
-      "item": "am:marteau_en_bronze",
-      "data": 32767
-    },
-    "P":
-    {
+  "key": {
+    "M": [
+      {
+        "item": "am:marteau_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_en_acier",
+        "data": 32767
+      }
+    ],
+    "P": {
       "item": "am:pinces",
       "data": 32767
-
     },
-    "F":
-    {
+    "F": {
       "item": "am:plaque_de_cuivre"
     },
-    "T":
-    {
+    "T": {
       "item": "am:barre_cuivre"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:marmitte_en_cuivre",
     "count": 1
   }

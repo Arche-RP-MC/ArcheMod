@@ -1,37 +1,33 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     "JMJ",
     "I G"
   ],
-
-  "key":
-  {
-    "J":
-    {
+  "key": {
+    "J": {
       "item": "am:marmite_en_cuivre"
     },
-    "M":
-    {
+    "M": {
       "item": "am:barre_cuivre"
     },
-    "I":
-    {
+    "I": {
       "item": "am:pinces",
       "data": 32767
     },
-    "G":
-    {
-      "item": "am:marteau_en_bronze",
-      "data": 32767
-    }
+    "G": [
+      {
+        "item": "am:marteau_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_en_acier",
+        "data": 32767
+      }
+    ]
   },
-
-  "result":
-  {
+  "result": {
     "item": "minecraft:brewing_stand",
     "count": 1
   }

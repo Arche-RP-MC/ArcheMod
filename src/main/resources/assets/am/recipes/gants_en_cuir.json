@@ -1,32 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "BCB",
     "T T",
     "   "
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "am:bobine_de_fil"
     },
-    "C":
-    {
+    "C": {
       "item": "am:ciseaux_de_couture",
       "data": 32767
     },
-    "T":
-    {
+    "T": {
       "item": "am:cuir_tanne"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:gants_en_cuir",
     "count": 1
   }

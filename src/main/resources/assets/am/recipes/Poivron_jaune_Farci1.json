@@ -1,53 +1,36 @@
 {
-  "type": "minecraft:crafting_shaped", 
-  "pattern": 
- [ 
- "CDR", 
- "FAB",
- "EEE" 
- ], 
-
-
- "key": 
- { 
- "A": 
- { 
- "item": "am:viande_de_volaille_crue"
- 
-},
- "B": 
- { 
- "item": "minecraft:egg"
- 
-},
- "C": 
- { 
- "item": "am:ail"
-
-},
-  "F":
-  {
-   "item": "am:hachoir",
-   "data": 32767
-
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CDR",
+    "FAB",
+    "EEE"
+  ],
+  "key": {
+    "A": {
+      "item": "am:viande_de_volaille_crue"
+    },
+    "B": {
+      "item": "minecraft:egg"
+    },
+    "C": {
+      "item": "am:ail"
+    },
+    "F": {
+      "item": "am:hachoir",
+      "data": 32767
+    },
+    "D": {
+      "item": "am:sel"
+    },
+    "E": {
+      "item": "am:poivron_jaune_m_cru"
+    },
+    "R": {
+      "item": "am:romarin"
+    }
   },
-"D": 
- { 
- "item": "am:sel"
-
-},
-"E": 
- { 
- "item": "am:poivron_jaune_m_cru"
-},
-"R":
- {
- "item": "am:romarin"
-}
-},
- "result": 
- { 
- "item": "am:poivron_jaune_farci_cru",
- "count": 3
-}
+  "result": {
+    "item": "am:poivron_jaune_farci_cru",
+    "count": 3
+  }
 }

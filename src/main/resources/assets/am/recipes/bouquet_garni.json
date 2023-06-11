@@ -1,35 +1,103 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     "BCD",
     " E "
   ],
-
-  "key":
-  {
-    "B":
-    {
-      "item": "am:buisson_etrange"
-    },
-    "C":
-    {
-      "item": "am:romarin"
-    },
-    "D":
-    {
-      "item": "am:laurier"
-    },
-    "E":
-    {
+  "key": {
+    "B": [
+      {
+        "item": "am:laurier"
+      },
+      {
+        "item": "am:estragon"
+      },
+      {
+        "item": "am:basilic"
+      },
+      {
+        "item": "am:persil"
+      },
+      {
+        "item": "am:romarin"
+      },
+      {
+        "item": "am:aneth"
+      },
+      {
+        "item": "am:menthe"
+      },
+      {
+        "item": "am:clou_de_girofle"
+      },
+      {
+        "item": "am:sauge"
+      }
+    ],
+    "C": [
+      {
+        "item": "am:laurier"
+      },
+      {
+        "item": "am:estragon"
+      },
+      {
+        "item": "am:basilic"
+      },
+      {
+        "item": "am:persil"
+      },
+      {
+        "item": "am:romarin"
+      },
+      {
+        "item": "am:aneth"
+      },
+      {
+        "item": "am:menthe"
+      },
+      {
+        "item": "am:clou_de_girofle"
+      },
+      {
+        "item": "am:sauge"
+      }
+    ],
+    "D": [
+      {
+        "item": "am:laurier"
+      },
+      {
+        "item": "am:estragon"
+      },
+      {
+        "item": "am:basilic"
+      },
+      {
+        "item": "am:persil"
+      },
+      {
+        "item": "am:romarin"
+      },
+      {
+        "item": "am:aneth"
+      },
+      {
+        "item": "am:menthe"
+      },
+      {
+        "item": "am:clou_de_girofle"
+      },
+      {
+        "item": "am:sauge"
+      }
+    ],
+    "E": {
       "item": "minecraft:string"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:bouquet_garni",
     "count": 3
   }

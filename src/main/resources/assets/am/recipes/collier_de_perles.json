@@ -1,32 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "LLL",
     "LCL",
     " F "
   ],
-
-  "key":
-  {
-    "C":
-    {
+  "key": {
+    "C": {
       "item": "minecraft:string"
     },
-    "F":
-    {
+    "F": {
       "item": "am:loupe",
       "data": 32767
     },
-    "L":
-    {
+    "L": {
       "item": "am:perle"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:collier_de_perles",
     "count": 1
   }

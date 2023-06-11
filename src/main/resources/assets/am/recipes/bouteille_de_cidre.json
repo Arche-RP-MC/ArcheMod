@@ -1,34 +1,30 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "BBB",
     "BOB",
     "ME "
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "minecraft:apple"
     },
-    "O":
-    {
+    "O": {
       "item": "minecraft:sugar"
     },
-    "M":
-    {
-      "item": "am:seau_d_eau_en_bois"
-    },
+    "M": [
+      {
+        "item": "am:seau_d_eau_en_bois"
+      },
+      {
+        "item": "minecraft:water_bucket"
+      }
+    ],
     "E": {
       "item": "am:bouteille_vide"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:bouteille_de_cidre",
     "count": 1
   }

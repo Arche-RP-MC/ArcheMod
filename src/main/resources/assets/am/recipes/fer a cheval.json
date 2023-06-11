@@ -1,35 +1,30 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "  G",
     "  T",
     "  P"
   ],
-
-  "key":
-  {
-
-    "T":
-    {
+  "key": {
+    "T": {
       "item": "minecraft:iron_ingot"
     },
-
-    "G":
-    {
-      "item": "am:marteau_en_fer",
-      "data": 32767
-    },
-    "P":
-    {
+    "G": [
+      {
+        "item": "marteau_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_en_acier",
+        "data": 32767
+      }
+    ],
+    "P": {
       "item": "am:pinces",
       "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:fer_a_cheval",
     "count": 2
   }

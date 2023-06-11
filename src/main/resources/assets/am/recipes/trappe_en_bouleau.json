@@ -1,41 +1,30 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "GTM",
     "VVH",
     "   "
   ],
-
-  "key":
-  {
-    "V":
-    {
+  "key": {
+    "V": {
       "item": "am:planche_bouleau"
     },
-    "H":
-    {
+    "H": {
       "item": "am:pepite_fer"
     },
-    "M":
-    {
+    "M": {
       "item": "am:clous"
     },
-    "T":
-    {
+    "T": {
       "item": "am:ciseaux_a_bois",
       "data": 32767
     },
-    "G":
-    {
+    "G": {
       "item": "am:maillet",
       "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:trappe_en_bouleau",
     "count": 1
   }

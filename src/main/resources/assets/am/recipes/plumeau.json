@@ -1,37 +1,26 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "K  ",
     "FFF",
     "CB "
   ],
-
-  "key":
-  {
-
-    "K":
-    {
+  "key": {
+    "K": {
       "item": "am:pinces",
       "data": 32767
     },
-    "F":
-    {
+    "F": {
       "item": "minecraft:feather"
     },
-    "C":
-    {
+    "C": {
       "item": "am:clous"
     },
-    "B":
-    {
+    "B": {
       "item": "am:manche"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:plumeau",
     "count": 1
   }

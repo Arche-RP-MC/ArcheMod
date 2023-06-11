@@ -1,33 +1,29 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " P ",
     " C ",
     " M "
   ],
-
-  "key":
-  {
-
-    "P":
-    {
-        "item": "am:bouteille_de_vin_rouge"
+  "key": {
+    "P": {
+      "item": "am:bouteille_de_vin_rouge"
     },
-    "C":
-    {
+    "C": {
       "item": "minecraft:brown_mushroom"
     },
-    "M":
-    {
-      "item": "am:mortier_pilon_en_pierre",
-      "data": 32767
-    }
+    "M": [
+      {
+        "item": "am:mortier_pilon_en_pierre",
+        "data": 32767
+      },
+      {
+        "item": "am:mortier_pilon_en_bois",
+        "data": 32767
+      }
+    ]
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:bouteille_vinaigre",
     "count": 1
   }

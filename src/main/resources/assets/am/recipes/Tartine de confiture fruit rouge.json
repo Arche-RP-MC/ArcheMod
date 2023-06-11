@@ -1,30 +1,20 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "I  ",
     "B  ",
     "   "
   ],
-
-  "key":
-  {
-
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "am:tranche_de_brioche"
     },
-    "I":
-    {
+    "I": {
       "item": "am:pot_de_confiture_de_fruits_rouges",
       "data": 32767
     }
-
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:tartine_de_confiture",
     "count": 1
   }

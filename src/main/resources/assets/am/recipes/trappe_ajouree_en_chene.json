@@ -1,28 +1,20 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "T  ",
     "V  ",
     "   "
   ],
-
-  "key":
-  {
-    "V":
-    {
+  "key": {
+    "V": {
       "item": "am:trappe_en_bouleau"
     },
-    "T":
-    {
+    "T": {
       "item": "am:ciseaux_a_bois",
       "data": 32767
     }
-   },
-
-  "result":
-  {
+  },
+  "result": {
     "item": "am:trappe_ajouree_en_chene",
     "count": 1
   }

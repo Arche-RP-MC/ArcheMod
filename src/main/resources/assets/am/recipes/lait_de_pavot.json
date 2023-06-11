@@ -1,31 +1,27 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " M ",
     " C ",
     " G "
   ],
-
-  "key":
-  {
-    "C":
-    {
-      "item": "minecraft:water_bucket"
-    },
-    "G":
-    {
+  "key": {
+    "C": [
+      {
+        "item": "am:seau_d_eau_en_bois"
+      },
+      {
+        "item": "minecraft:water_bucket"
+      }
+    ],
+    "G": {
       "item": "am:bocal"
     },
-    "M":
-    {
+    "M": {
       "item": "am:extrait_de_pavot_concentre"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:lait_de_pavot",
     "count": 1
   }

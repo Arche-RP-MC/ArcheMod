@@ -1,28 +1,20 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     " F ",
     " L "
   ],
-
-  "key":
-  {
-    "F":
-    {
-      "item": "am:grosse_bouteille_vin_rouge",
+  "key": {
+    "F": {
+      "item": "am:bouteille_vin_rouge",
       "data": 32767
     },
-    "L":
-    {
+    "L": {
       "item": "am:choppe_en_verre"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:choppe_en_verre_vin_rouge",
     "count": 1
   }

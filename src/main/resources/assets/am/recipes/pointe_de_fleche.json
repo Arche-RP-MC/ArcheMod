@@ -1,33 +1,30 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     "TT ",
     "HB "
   ],
-
-  "key":
-  {
-    "T":
-    {
+  "key": {
+    "T": {
       "item": "am:bronze_fondu"
     },
-    "H":
-    {
-      "item": "am:marteau_en_bronze",
-      "data": 32767
-    },
-    "B":
-    {
+    "H": [
+      {
+        "item": "am:marteau_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_en_acier",
+        "data": 32767
+      }
+    ],
+    "B": {
       "item": "am:pinces",
       "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:pointe_de_fleche",
     "count": 3
   }

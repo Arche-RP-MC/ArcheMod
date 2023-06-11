@@ -1,33 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " C ",
     " L ",
     "LVL"
   ],
-
-  "key":
-  {
-    "C":
-    {
+  "key": {
+    "C": {
       "item": "am:ciseaux_a_bois",
       "data": 32767
     },
-    "V":
-    {
+    "V": {
       "item": "minecraft:string"
-
     },
-    "L":
-    {
+    "L": {
       "item": "minecraft:stick"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:lance_caillou",
     "count": 1
   }

@@ -1,32 +1,31 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "GT ",
     "BB ",
     "   "
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "am:laniere_de_cuir"
     },
-    "T":
-    {
-      "item": "am:bobine_de_chanvre"
-    },
-    "G":
-    {
+    "T": [
+      {
+        "item": "am:bobine_de_chanvre"
+      },
+      {
+        "item": "am:bobine_de_lin"
+      },
+      {
+        "item": "am:bobine_de_laine"
+      }
+    ],
+    "G": {
       "item": "am:ciseaux_de_couture",
       "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "minecraft:lead",
     "count": 1
   }

@@ -1,41 +1,29 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "P  ",
     "LPL",
     "CRK"
   ],
-
-  "key":
-  {
-    "C":
-    {
+  "key": {
+    "C": {
       "item": "am:ciseaux_de_couture",
       "data": 32767
     },
-    "K":
-    {
+    "K": {
       "item": "am:fibre_vegetale"
     },
-    "R":
-    {
+    "R": {
       "item": "am:laniere_de_cuir"
     },
-    "P":
-    {
+    "P": {
       "item": "am:couronne_de_fleurs"
     },
-    "L":
-    {
+    "L": {
       "item": "am:paille"
     }
-
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:chapeau_fleuri",
     "count": 1
   }

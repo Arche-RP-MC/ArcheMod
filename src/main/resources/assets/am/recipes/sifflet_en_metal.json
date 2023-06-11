@@ -1,40 +1,48 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "K D",
     "F C",
     "   "
   ],
-
-  "key":
-  {
-
-    "K":
-    {
+  "key": {
+    "K": {
       "item": "am:pinces",
       "data": 32767
     },
-    "F":
-    {
-      "item": "am:fer_fondu"
-    },
-    "C":
-    {
+    "F": [
+      {
+        "item": "am:fer_fondu"
+      },
+      {
+        "item": "am:cuivre_fondu"
+      },
+      {
+        "item": "am:etain_fondu"
+      },
+      {
+        "item": "am:bronze_fondu"
+      },
+      {
+        "item": "am:acier_fondu"
+      }
+    ],
+    "C": {
       "item": "am:loupe",
       "data": 32767
     },
-    "D":
-    {
-      "item": "am:marteau_en_fer",
-      "data": 32767
-    }
-
+    "D": [
+      {
+        "item": "am:marteau_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_en_acier",
+        "data": 32767
+      }
+    ]
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:sifflet_metal",
     "count": 1
   }

@@ -1,28 +1,31 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "NNN",
     "NFN",
     "   "
   ],
-
-  "key":
-  {
-    "N":
-    {
-      "item": "am:graine_ble"
-    },
-    "F":
-    {
-      "item": "am:mortier_pilon_en_bois",
-      "data": 32767
-    }
+  "key": {
+    "N": [
+      {
+        "item": "am:graine_ble"
+      },
+      {
+        "item": "am:graine_orge"
+      }
+    ],
+    "F": [
+      {
+        "item": "am:mortier_pilon_en_bois",
+        "data": 32767
+      },
+      {
+        "item": "am:mortier_pilon_en_pierre",
+        "data": 32767
+      }
+    ]
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:farine",
     "count": 3
   }

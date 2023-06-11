@@ -1,48 +1,41 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "P B",
     "CSO",
     " GM"
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "am:lavande"
     },
-    "P":
-    {
+    "P": {
       "item": "am:pivoine"
     },
-    "C":
-    {
+    "C": {
       "item": "am:glycine"
     },
-    "S":
-    {
+    "S": {
       "item": "am:cassis"
     },
-    "O":
-    {
+    "O": {
       "item": "am:gingembre"
     },
-    "G":
-    {
+    "G": {
       "item": "am:bocal"
     },
-    "M":
-    {
-      "item": "am:mortier_pilon_en_pierre",
-      "data": 32767
-    }
+    "M": [
+      {
+        "item": "am:mortier_pilon_en_pierre",
+        "data": 32767
+      },
+      {
+        "item": "am:mortier_pilon_en_bois",
+        "data": 32767
+      }
+    ]
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:contrepoison_leger",
     "count": 1
   }

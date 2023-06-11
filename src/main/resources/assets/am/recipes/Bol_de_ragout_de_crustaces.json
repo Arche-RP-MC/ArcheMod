@@ -1,49 +1,33 @@
 {
-  "type": "minecraft:crafting_shaped", 
-  "pattern": 
- [ 
- " AF",
- "BED", 
- "CCC" 
- ], 
-
-
- "key": 
- { 
- "A": 
- { 
- "item": "am:tomate_cru"
- 
-},
- "B": 
- { 
- "item": "minecraft:carrot"
- 
-},
- "C": 
- { 
- "item": "minecraft:bowl"
-
-},
-  "F":
-  {
-   "item": "am:hachoir",
-   "data": 32767
-
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " AF",
+    "BED",
+    "CCC"
+  ],
+  "key": {
+    "A": {
+      "item": "am:tomate_cru"
+    },
+    "B": {
+      "item": "minecraft:carrot"
+    },
+    "C": {
+      "item": "minecraft:bowl"
+    },
+    "F": {
+      "item": "am:hachoir",
+      "data": 32767
+    },
+    "D": {
+      "item": "am:crabe"
+    },
+    "E": {
+      "item": "am:pomme_de_terre_cru"
+    }
   },
-"D": 
- { 
- "item": "am:crabe"
-
-},
-"E": 
- { 
- "item": "am:pomme_de_terre_cru"
-}
-},
- "result": 
- { 
- "item": "am:bol_de_ragout_de_crustaces_cru",
- "count": 3
-}
+  "result": {
+    "item": "am:bol_de_ragout_de_crustaces_cru",
+    "count": 3
+  }
 }

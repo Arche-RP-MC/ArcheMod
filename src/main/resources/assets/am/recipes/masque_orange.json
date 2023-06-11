@@ -1,32 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " C ",
     " TB",
     "   "
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "am:etoffe_orange"
     },
-    "C":
-    {
+    "C": {
       "item": "am:ciseaux_de_couture",
       "data": 32767
     },
-    "T":
-    {
+    "T": {
       "item": "am:cuir_tanne"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:masque_orange",
     "count": 1
   }

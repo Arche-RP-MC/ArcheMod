@@ -1,40 +1,35 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " B ",
     "CSC",
     " EM"
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "am:emplatre"
     },
-    "C":
-    {
+    "C": {
       "item": "am:geranium"
     },
-    "S":
-    {
+    "S": {
       "item": "am:camomille"
     },
-    "E":
-    {
+    "E": {
       "item": "am:lavande"
     },
-    "M":
-    {
-      "item": "am:mortier_pilon_en_pierre",
-      "data": 32767
-    }
+    "M": [
+      {
+        "item": "am:mortier_pilon_en_pierre",
+        "data": 32767
+      },
+      {
+        "item": "am:mortier_pilon_en_bois",
+        "data": 32767
+      }
+    ]
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:emplatre_a_brulure",
     "count": 1
   }

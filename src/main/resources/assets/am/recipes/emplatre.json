@@ -1,36 +1,27 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " P ",
     "ALA",
     " M "
   ],
-
-  "key":
-  {
-    "M":
-    {
-      "item": "am:mortier_pilon_en_pierre"
+  "key": {
+    "M": {
+      "item": "am:mortier_pilon_en_pierre",
+      "data": 32767
     },
-    "P":
-    {
+    "P": {
       "item": "am:huile_essentielle",
       "data": 32767
     },
-    "A":
-    {
+    "A": {
       "item": "minecraft:clay_ball"
     },
-    "L":
-    {
+    "L": {
       "item": "minecraft:bone"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:emplatre",
     "count": 1
   }

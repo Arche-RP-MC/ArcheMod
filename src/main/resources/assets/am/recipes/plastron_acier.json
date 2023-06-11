@@ -1,32 +1,29 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "PMP",
     "LPL",
     "PPP"
   ],
-
-  "key":
-  {
-    "L":
-    {
+  "key": {
+    "L": {
       "item": "am:laniere_de_cuir"
     },
-    "P":
-    {
+    "P": {
       "item": "am:plaque_d_acier"
     },
-    "M":
-    {
-      "item": "am:marteau_en_fer",
-      "data": 32767
-    }
+    "M": [
+      {
+        "item": "am:marteau_en_acier",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_en_fer",
+        "data": 32767
+      }
+    ]
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:plastron_acier",
     "count": 1
   }

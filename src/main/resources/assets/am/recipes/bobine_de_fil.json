@@ -1,28 +1,28 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     "LPL",
     "   "
   ],
-
-  "key":
-  {
-    "L":
-    {
-      "item": "am:bobine_de_chanvre"
-    },
-    "P":
-    {
+  "key": {
+    "L": [
+      {
+        "item": "am:bobine_de_chanvre"
+      },
+      {
+        "item": "am:bobine_de_lin"
+      },
+      {
+        "item": "am:bobine_de_laine"
+      }
+    ],
+    "P": {
       "item": "am:ciseaux_de_couture",
       "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:bobine_de_fil",
     "count": 8
   }

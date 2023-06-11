@@ -1,38 +1,26 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "N P",
     "LML",
     "   "
   ],
-
-  "key":
-  {
-
-    "N":
-    {
+  "key": {
+    "N": {
       "item": "am:ciseaux_de_couture",
       "data": 32767
     },
-
-    "L":
-    {
+    "L": {
       "item": "am:laniere_de_cuir"
     },
-    "P":
-    {
+    "P": {
       "item": "am:pepite_fer"
     },
-    "M":
-    {
+    "M": {
       "item": "am:cuir_tanne"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:fourreau_court",
     "count": 1
   }

@@ -1,32 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     "CL ",
     "FLL"
   ],
-
-  "key":
-  {
-    "F":
-    {
+  "key": {
+    "F": {
       "item": "am:"
     },
-    "C":
-    {
+    "C": {
       "item": "am:spatule",
       "data": 32767
     },
-    "L":
-    {
+    "L": {
       "item": "minecraft:clay_ball"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:choppe_en_argile_crue",
     "count": 2
   }

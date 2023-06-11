@@ -1,33 +1,29 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "TTF",
     "FFP",
     "TT "
   ],
-
-  "key":
-  {
-    "F":
-    {
+  "key": {
+    "F": {
       "item": "am:clous"
-
     },
-    "P":
-    {
-      "item": "am:marteau_en_fer",
-      "data": 32767
-    },
-    "T":
-    {
+    "P": [
+      {
+        "item": "marteau_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_en_acier",
+        "data": 32767
+      }
+    ],
+    "T": {
       "item": "am:planche_chene"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:plancher_chene_cloue",
     "count": 1
   }

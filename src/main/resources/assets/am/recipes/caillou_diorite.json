@@ -1,22 +1,28 @@
 {
- "type": "minecraft:crafting_shaped",
- "pattern": [
-  "   ",
-  "AB ",
-  "   "
- ],
- "key": {
-  "A": {
-   "item": "am:marteau_en_bronze",
-   "data": 32767
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "AB ",
+    "   "
+  ],
+  "key": {
+    "A": [
+      {
+        "item": "am:marteau_en_acier",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_en_fer",
+        "data": 32767
+      }
+    ],
+    "B": {
+      "item": "minecraft:stone",
+      "data": 3
+    }
   },
-  "B": {
-   "item": "minecraft:stone",
-   "data" : 3
-  }
- },
   "result": {
-   "item": "am:caillou_diorite",
-   "count": 6
+    "item": "am:caillou_diorite",
+    "count": 6
   }
- }
+}

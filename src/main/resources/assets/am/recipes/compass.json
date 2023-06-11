@@ -1,49 +1,36 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " S ",
     "YTP",
     "RKL"
   ],
-
-  "key":
-  {
-    "T":
-    {
+  "key": {
+    "T": {
       "item": "am:aiguille"
     },
-    "K":
-    {
+    "K": {
       "item": "am:plaque_de_bronze"
     },
-    "R":
-    {
+    "R": {
       "item": "am:rouage"
     },
-    "S":
-    {
+    "S": {
       "item": "minecraft:glass_pane"
     },
-    "Y":
-    {
+    "Y": {
       "item": "am:clous"
     },
-    "L":
-    {
-        "item": "am:loupe",
-        "data": 32767
+    "L": {
+      "item": "am:loupe",
+      "data": 32767
     },
-    "P":
-    {
-        "item": "am:pinces",
-        "data": 32767
+    "P": {
+      "item": "am:pinces",
+      "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "minecraft:compass",
     "count": 1
   }

@@ -1,38 +1,28 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "L  ",
     "CEF",
     "   "
   ],
-
-  "key":
-  {
-    "C":
-    {
+  "key": {
+    "C": {
       "item": "am:pinces",
       "data": 32767
     },
-    "E":
-    {
+    "E": {
       "item": "am:lime_en_acier",
       "data": 32767
     },
-    "F":
-    {
+    "F": {
       "item": "am:loupe",
       "data": 32767
     },
-    "L":
-    {
+    "L": {
       "item": "am:barre_cuivre"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:collier_en_cuivre",
     "count": 1
   }

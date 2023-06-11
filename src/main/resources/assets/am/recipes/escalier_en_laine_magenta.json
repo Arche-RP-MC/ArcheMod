@@ -1,29 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     " PT",
     "   "
   ],
-
-  "key":
-  {
-    "P":
-    {
-        "item": "am:ciseaux_de_couture",
-        "data": 32767
+  "key": {
+    "P": {
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
     },
-    "T":
-    {
+    "T": {
       "item": "minecraft:wool",
       "data": 2
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:woolmagentastair",
     "count": 1
   }

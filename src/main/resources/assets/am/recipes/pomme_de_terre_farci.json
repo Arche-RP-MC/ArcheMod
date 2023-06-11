@@ -1,53 +1,36 @@
 {
-  "type": "minecraft:crafting_shaped", 
-  "pattern": 
- [ 
- "CDR", 
- "FAB",
- "EEE" 
- ], 
-
-
- "key": 
- { 
- "A": 
- { 
- "item": "am:viande_crue"
- 
-},
- "B": 
- { 
- "item": "minecraft:egg"
- 
-},
-  "F":
-  {
-   "item": "am:hachoir",
-   "data": 32767
-
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CDR",
+    "FAB",
+    "EEE"
+  ],
+  "key": {
+    "A": {
+      "item": "am:viande_crue"
+    },
+    "B": {
+      "item": "minecraft:egg"
+    },
+    "F": {
+      "item": "am:hachoir",
+      "data": 32767
+    },
+    "C": {
+      "item": "am:ail"
+    },
+    "D": {
+      "item": "am:sel"
+    },
+    "E": {
+      "item": "am:pomme_de_terre_cru"
+    },
+    "R": {
+      "item": "am:romarin"
+    }
   },
- "C": 
- { 
- "item": "am:ail"
-
-},
-"D": 
- { 
- "item": "am:sel"
-
-},
-"E": 
- { 
- "item": "am:pomme_de_terre_cru"
-},
-"R":
- {
- "item": "am:romarin"
-}
-},
- "result": 
- { 
- "item": "am:pomme_de_terre_farcie_cru",
- "count": 3
-}
+  "result": {
+    "item": "am:pomme_de_terre_farcie_cru",
+    "count": 3
+  }
 }

@@ -1,41 +1,29 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "PBC",
     "VIV",
     " I "
   ],
-
-  "key":
-  {
-
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "am:cadre_en_bois"
     },
-    "P":
-    {
+    "P": {
       "item": "am:pinces",
       "data": 32767
     },
-    "C":
-    {
+    "C": {
       "item": "am:clous"
     },
-    "V":
-    {
+    "V": {
       "item": "am:verre_en_fusion"
     },
-    "I":
-    {
+    "I": {
       "item": "am:plaque_d_etain"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:grand_miroir",
     "count": 1
   }

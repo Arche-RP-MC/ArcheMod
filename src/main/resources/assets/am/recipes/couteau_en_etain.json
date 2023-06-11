@@ -1,41 +1,36 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     "HD ",
     "MCG"
   ],
-
-  "key":
-  {
-    "H":
-    {
+  "key": {
+    "H": {
       "item": "am:tete_couteau_etain"
     },
-    "C":
-    {
+    "C": {
       "item": "am:pinces",
       "data": 32767
     },
-    "M":
-    {
+    "M": {
       "item": "am:manche"
     },
-    "D":
-    {
+    "D": {
       "item": "am:clous"
     },
-    "G":
-    {
-      "item": "am:marteau_en_bronze",
-      "data": 32767
-    }
+    "G": [
+      {
+        "item": "am:marteau_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_en_acier",
+        "data": 32767
+      }
+    ]
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:couteau_en_etain",
     "count": 1
   }

@@ -1,36 +1,26 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "  M",
     " B ",
     "T L"
   ],
-
-  "key":
-  {
-    "M":
-    {
+  "key": {
+    "M": {
       "item": "am:manche"
     },
-    "B":
-    {
+    "B": {
       "item": "am:bobine_de_fil"
     },
-    "T":
-    {
+    "T": {
       "item": "am:plume_d_ecriture_en_bronze"
     },
-    "L":
-    {
+    "L": {
       "item": "am:loupe",
       "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:stylet_en_bronze",
     "count": 1
   }

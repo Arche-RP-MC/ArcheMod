@@ -1,28 +1,26 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     "FN ",
     "   "
   ],
-
-  "key":
-  {
-    "N":
-    {
+  "key": {
+    "N": {
       "item": "am:caillou"
     },
-    "F":
-    {
-      "item": "am:lime_en_bronze",
-      "data": 32767
-    }
+    "F": [
+      {
+        "item": "am:lime_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:lime_en_acier",
+        "data": 32767
+      }
+    ]
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:brique_de_pierre",
     "count": 1
   }

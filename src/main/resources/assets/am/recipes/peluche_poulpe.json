@@ -1,36 +1,26 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "BCB",
     "TST",
     "   "
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "am:bobine_de_fil"
     },
-    "S":
-    {
+    "S": {
       "item": "am:laine_brute"
     },
-    "C":
-    {
+    "C": {
       "item": "am:ciseaux_de_couture",
       "data": 32767
     },
-    "T":
-    {
+    "T": {
       "item": "am:etoffe_bleu_ciel"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:peluche_poulpe",
     "count": 1
   }

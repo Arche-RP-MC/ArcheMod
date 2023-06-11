@@ -1,29 +1,26 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     " P ",
     "L  "
   ],
-
-  "key":
-  {
-    "P":
-    {
+  "key": {
+    "P": {
       "item": "minecraft:cobblestone"
     },
-    "L":
-    {
-      "item": "am:marteau_burin_en_acier",
-      "data": 32767
-    }
-
+    "L": [
+      {
+        "item": "am:marteau_burin_en_acier",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_burin_en_fer",
+        "data": 32767
+      }
+    ]
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:statuette_pierre",
     "count": 1
   }

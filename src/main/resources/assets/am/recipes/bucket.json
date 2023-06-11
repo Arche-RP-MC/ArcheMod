@@ -1,37 +1,33 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "JHG",
     "B B",
     " B "
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "am:plaque_de_fer"
     },
-    "H":
-    {
+    "H": {
       "item": "am:barre_fer"
     },
-    "J":
-    {
+    "J": {
       "item": "am:pinces",
       "data": 32767
     },
-    "G":
-    {
-      "item": "am:marteau_en_bronze",
-      "data": 32767
-    }
+    "G": [
+      {
+        "item": "am:marteau_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_en_acier",
+        "data": 32767
+      }
+    ]
   },
-
-  "result":
-  {
+  "result": {
     "item": "minecraft:bucket",
     "count": 1
   }

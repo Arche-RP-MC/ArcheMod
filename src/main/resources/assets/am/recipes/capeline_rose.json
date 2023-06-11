@@ -1,32 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "FNG",
     "NNN",
     "   "
   ],
-
-  "key":
-  {
-    "N":
-    {
+  "key": {
+    "N": {
       "item": "am:etoffe_rose"
     },
-    "G":
-    {
+    "G": {
       "item": "am:laniere_de_cuir"
     },
-    "F":
-    {
+    "F": {
       "item": "am:ciseaux_de_couture",
       "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:capeline_rose",
     "count": 1
   }

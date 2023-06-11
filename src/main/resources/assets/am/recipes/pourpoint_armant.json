@@ -1,44 +1,32 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "LBL",
     "EPE",
     "A C"
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "am:bobine_de_fil"
     },
-    "L":
-    {
+    "L": {
       "item": "am:laniere_de_cuir"
     },
-    "E":
-    {
+    "E": {
       "item": "am:etoffe"
     },
-    "P":
-    {
+    "P": {
       "item": "am:pourpoint"
     },
-    "A":
-    {
+    "A": {
       "item": "am:aiguille"
     },
-    "C":
-    {
+    "C": {
       "item": "am:ciseaux_de_couture",
       "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:pourpoint_armant",
     "count": 1
   }

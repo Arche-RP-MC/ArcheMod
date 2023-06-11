@@ -1,34 +1,24 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "PC ",
     " V ",
     "   "
   ],
-
-  "key":
-  {
-    "P":
-    {
+  "key": {
+    "P": {
       "item": "am:pinces",
       "data": 32767
     },
-    "C":
-    {
+    "C": {
       "item": "am:canne_de_verrier",
       "data": 32767
     },
-
-    "V":
-    {
+    "V": {
       "item": "am:verre_en_fusion"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:verre_a_pied",
     "count": 1
   }

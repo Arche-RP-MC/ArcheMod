@@ -1,28 +1,20 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     " F ",
     " L "
   ],
-
-  "key":
-  {
-    "F":
-    {
+  "key": {
+    "F": {
       "item": "am:bocal_d_eau",
       "data": 32767
     },
-    "L":
-    {
+    "L": {
       "item": "am:choppe_en_verre"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:choppe_en_verre_eau",
     "count": 1
   }

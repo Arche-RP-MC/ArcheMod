@@ -1,36 +1,31 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " T ",
     " FH",
     " V "
   ],
-
-  "key":
-  {
-    "H":
-    {
+  "key": {
+    "H": {
       "item": "minecraft:sand",
       "data": 0
     },
-    "F":
-    {
+    "F": {
       "item": "minecraft:clay_ball"
     },
-    "T":
-    {
+    "T": {
       "item": "minecraft:stick"
     },
-    "V":
-    {
-      "item": "minecraft:water_bucket"
-    }
+    "V": [
+      {
+        "item": "am:seau_d_eau_en_bois"
+      },
+      {
+        "item": "minecraft:water_bucket"
+      }
+    ]
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:mortier",
     "count": 16
   }

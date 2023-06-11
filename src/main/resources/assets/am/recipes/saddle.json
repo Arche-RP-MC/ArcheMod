@@ -1,40 +1,37 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "MMN",
     "LLC",
     "GG "
   ],
-
-  "key":
-  {
-    "C":
-    {
+  "key": {
+    "C": {
       "item": "am:clous"
     },
-    "G":
-    {
-      "item": "am:barre_bronze"
-    },
-    "N":
-    {
+    "G": [
+      {
+        "item": "am:barre_bronze"
+      },
+      {
+        "item": "am:barre_fer"
+      },
+      {
+        "item": "am:barre_acier"
+      }
+    ],
+    "N": {
       "item": "am:ciseaux_de_couture",
       "data": 32767
     },
-    "L":
-    {
+    "L": {
       "item": "am:laniere_de_cuir"
     },
-    "M":
-    {
+    "M": {
       "item": "am:cuir_tanne"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "minecraft:saddle",
     "count": 1
   }

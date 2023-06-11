@@ -1,30 +1,20 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "HHH",
     "HCH",
     "HHH"
   ],
-
-  "key":
-  {
-
-    "C":
-    {
+  "key": {
+    "C": {
       "item": "am:ciseaux_de_couture",
       "data": 32767
-
     },
-    "H":
-    {
+    "H": {
       "item": "am:etoffe_marron"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "zawa:grizzly_plush",
     "count": 1
   }

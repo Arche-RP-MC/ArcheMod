@@ -1,33 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "PP ",
     "PP ",
     "WC "
   ],
-
-  "key":
-  {
-    "W":
-    {
+  "key": {
+    "W": {
       "item": "am:cire"
     },
-    "P":
-    {
+    "P": {
       "item": "minecraft:paper"
     },
-
-    "C":
-    {
+    "C": {
       "item": "am:spatule",
       "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:papier_a_plan",
     "count": 1
   }

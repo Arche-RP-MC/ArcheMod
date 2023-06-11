@@ -1,32 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " NG",
     "FNN",
     "NNN"
   ],
-
-  "key":
-  {
-    "N":
-    {
+  "key": {
+    "N": {
       "item": "am:etoffe_jaune"
     },
-    "G":
-    {
+    "G": {
       "item": "am:cuir_tanne"
     },
-    "F":
-    {
+    "F": {
       "item": "am:ciseaux_de_couture",
       "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:cape_jaune",
     "count": 1
   }

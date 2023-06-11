@@ -1,27 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     "PJP",
     "   "
   ],
-
-  "key":
-  {
-    "J":
-    {
+  "key": {
+    "J": {
       "item": "minecraft:string"
     },
-    "P":
-    {
-        "item": "am:cire"
+    "P": {
+      "item": "am:cire"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:candle",
     "count": 6
   }

@@ -1,36 +1,26 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     "GHH",
     "BT "
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "am:cuir_tanne"
     },
-    "T":
-    {
+    "T": {
       "item": "am:laniere_de_cuir"
     },
-    "H":
-    {
+    "H": {
       "item": "am:barre_fer"
     },
-    "G":
-    {
+    "G": {
       "item": "am:pinces",
       "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:trousse_d_ingenieur_en_fer",
     "count": 1
   }

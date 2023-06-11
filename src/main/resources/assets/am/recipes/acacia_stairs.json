@@ -1,32 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "G F",
     " B ",
     "BB "
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "am:planche_acacia"
     },
-    "G":
-    {
+    "G": {
       "item": "am:maillet",
       "data": 32767
     },
-    "F":
-    {
+    "F": {
       "item": "am:clous"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "minecraft:acacia_stairs",
     "count": 1
   }

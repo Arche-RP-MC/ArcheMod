@@ -1,31 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     "CL ",
     "   "
   ],
-
-  "key":
-  {
-
-    "C":
-    {
+  "key": {
+    "C": {
       "item": "am:sous_vetement_feminin_blanc"
     },
-    "L":
-    {
+    "L": {
       "item": "minecraft:dye",
       "data": 10
     }
-
   },
-
-  "result":
-  {
-    "item":"am:sous_vetement_feminin_vert_clair",
+  "result": {
+    "item": "am:sous_vetement_feminin_vert_clair",
     "count": 1
   }
 }

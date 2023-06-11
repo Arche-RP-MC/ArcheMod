@@ -1,40 +1,29 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "BEB",
     "ELE",
     "AEC"
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "am:bobine_de_fil"
     },
-    "E":
-    {
+    "E": {
       "item": "am:etoffe_rose"
     },
-    "L":
-    {
+    "L": {
       "item": "am:laine_brute"
     },
-    "A":
-    {
+    "A": {
       "item": "am:aiguille"
     },
-    "C":
-    {
+    "C": {
       "item": "am:ciseaux_de_couture",
       "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:lapin_rose_en_peluche",
     "count": 1
   }

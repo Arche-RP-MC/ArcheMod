@@ -1,49 +1,36 @@
 {
-  "type": "minecraft:crafting_shaped", 
-  "pattern": 
- [ 
- "  E",
- "B D",
- "AFC"
- ], 
-
-
- "key": 
- { 
- "A": 
- { 
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  E",
+    "B D",
+    "AFC"
+  ],
+  "key": {
+    "A": {
       "item": "am:pinces",
       "data": 32767
-
-},
- "B": 
- { 
- "item": "am:canne_de_verrier" ,
-  "data": 32767
-},
-  "D":
-  {
-   "item": "am:clou"
+    },
+    "B": {
+      "item": "am:canne_de_verrier",
+      "data": 32767
+    },
+    "D": {
+      "item": "am:clou"
+    },
+    "F": {
+      "item": "am:bobine_d_argent",
+      "data": 32767
+    },
+    "E": {
+      "item": "am:etoffe"
+    },
+    "C": {
+      "item": "am:verre_en_fusion"
+    }
   },
-  "F":
-  {
-   "item": "am:bobine_d_argent",
-   "data": 32767
-  },
-
-  "E":
-  {
-   "item": "am:etoffe"
-  },
- "C": 
- { 
-"item": "am:verre_en_fusion"
-}
-},
- "result": 
- { 
- "item": "am:monocle",
- "count": 1
-}
+  "result": {
+    "item": "am:monocle",
+    "count": 1
+  }
 }
 

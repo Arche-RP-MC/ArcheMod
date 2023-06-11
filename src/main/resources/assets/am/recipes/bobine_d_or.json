@@ -1,31 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " G ",
     "LP ",
     "   "
   ],
-
-  "key":{
-    "P":
-    {
+  "key": {
+    "P": {
       "item": "am:bobine_en_bois"
     },
-    "G":
-    {
+    "G": {
       "item": "am:pinces",
       "data": 32767
     },
-    "L":
-    {
+    "L": {
       "item": "am:barre_or"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:bobine_d_or",
     "count": 1
   }

@@ -1,40 +1,35 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "P P",
     "BCB",
     " GM"
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "am:ail"
     },
-    "P":
-    {
+    "P": {
       "item": "am:sauge"
     },
-    "C":
-    {
+    "C": {
       "item": "am:pivoine"
     },
-    "G":
-    {
+    "G": {
       "item": "am:bocal"
     },
-    "M":
-    {
-      "item": "am:mortier_pilon_en_pierre",
-      "data": 32767
-    }
+    "M": [
+      {
+        "item": "am:mortier_pilon_en_pierre",
+        "data": 32767
+      },
+      {
+        "item": "am:mortier_pilon_en_bois",
+        "data": 32767
+      }
+    ]
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:filtrat_contre_les_maux_estomac",
     "count": 1
   }

@@ -1,29 +1,20 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     "FP ",
     "   "
   ],
-
-  "key":
-  {
-
-    "F":
-    {
+  "key": {
+    "F": {
       "item": "minecraft:shears",
       "data": 32767
     },
-    "P":
-    {
+    "P": {
       "item": "minecraft:paper"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:ticket",
     "count": 4
   }

@@ -9,9 +9,14 @@
     "B": {
       "item": "am:abricot"
     },
-    "E": {
-      "item": "minecraft:water_bucket"
-    },
+    "E": [
+      {
+        "item": "am:seau_d_eau_en_bois"
+      },
+      {
+        "item": "minecraft:water_bucket"
+      }
+    ],
     "M": {
       "item": "minecraft:sugar"
     },
@@ -19,8 +24,8 @@
       "item": "am:bouteille_vide"
     }
   },
-    "result": {
-      "item": "am:bouteille_de_jus_de_fruit_orange",
-      "count": 1
-    }
+  "result": {
+    "item": "am:bouteille_de_jus_de_fruit_orange",
+    "count": 1
   }
+}

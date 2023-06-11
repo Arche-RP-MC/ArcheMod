@@ -1,43 +1,35 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "LCL",
     "GAG",
     "LOL"
   ],
-
-  "key":
-  {
-
-    "A":
-    {
+  "key": {
+    "A": {
       "item": "am:rouage"
     },
-    "C":
-    {
+    "C": {
       "item": "am:clous"
     },
-    "O":
-    {
-      "item": "am:marteau_en_fer",
-      "data": 32767
-    },
-    "G":
-    {
+    "O": [
+      {
+        "item": "marteau_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_en_acier",
+        "data": 32767
+      }
+    ],
+    "G": {
       "item": "am:planche"
     },
-
-    "L":
-     {
+    "L": {
       "item": "minecraft:stick"
-
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "astikorcarts:wheel",
     "count": 1
   }

@@ -1,27 +1,26 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     "LP ",
     "P  "
   ],
-
-  "key":{
-    "P":
-    {
+  "key": {
+    "P": {
       "item": "am:planche_acajou"
     },
-    "L":
-    {
-      "item": "am:scie_en_bronze",
-      "data": 32767
-    }
+    "L": [
+      {
+        "item": "am:scie_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:scie_en_acier",
+        "data": 32767
+      }
+    ]
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:baton_acajou",
     "count": 8
   }

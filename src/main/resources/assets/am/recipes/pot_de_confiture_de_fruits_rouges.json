@@ -1,39 +1,28 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "III",
     "BCD",
     " E "
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "am:cassis"
     },
-    "I":
-    {
+    "I": {
       "item": "minecraft:sugar"
     },
-    "C":
-    {
+    "C": {
       "item": "am:framboise"
     },
-    "D":
-    {
+    "D": {
       "item": "am:groseille"
     },
-    "E":
-    {
+    "E": {
       "item": "am:bocal"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:pot_de_confiture_de_fruits_rouges",
     "count": 1
   }

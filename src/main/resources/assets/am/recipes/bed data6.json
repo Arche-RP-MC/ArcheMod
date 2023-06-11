@@ -1,40 +1,29 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "RT ",
     "GLL",
     "P P"
   ],
-
-  "key":
-  {
-    "R":
-    {
+  "key": {
+    "R": {
       "item": "am:drap_rose"
     },
-    "T":
-    {
+    "T": {
       "item": "am:couverture_rose"
     },
-    "P":
-    {
+    "P": {
       "item": "am:planche"
     },
-    "L":
-    {
+    "L": {
       "item": "am:laine_brute"
     },
-    "G":
-    {
+    "G": {
       "item": "am:ciseaux_de_couture",
       "data": 32767
     }
-
   },
-  "result":
-  {
+  "result": {
     "item": "minecraft:bed",
     "data": 6,
     "count": 1

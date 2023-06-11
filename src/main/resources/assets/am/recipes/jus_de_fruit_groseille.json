@@ -1,35 +1,30 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " BB",
     " BB",
     "OEM"
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "am:groseille"
     },
-    "E":
-    {
-      "item": "minecraft:water_bucket"
-    },
-    "M":
-    {
+    "E": [
+      {
+        "item": "am:seau_d_eau_en_bois"
+      },
+      {
+        "item": "minecraft:water_bucket"
+      }
+    ],
+    "M": {
       "item": "minecraft:sugar"
     },
-    "O":
-    {
+    "O": {
       "item": "am:bouteille_vide"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:bouteille_de_jus_de_fruit_rouge",
     "count": 1
   }

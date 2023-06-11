@@ -1,34 +1,24 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "G F",
     "LLL",
     "LLL"
   ],
-
-  "key":
-  {
-    "L":
-    {
+  "key": {
+    "L": {
       "item": "minecraft:log2",
       "data": 0
     },
-
-    "G":
-    {
+    "G": {
       "item": "am:maillet",
       "data": 32767
     },
-    "F":
-    {
+    "F": {
       "item": "am:clous"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:acacia_wall",
     "count": 3
   }

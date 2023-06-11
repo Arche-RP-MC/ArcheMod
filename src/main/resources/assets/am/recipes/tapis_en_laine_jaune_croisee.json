@@ -1,29 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     "GP ",
     " G "
   ],
-
-  "key":
-  {
-    "P":
-    {
+  "key": {
+    "P": {
       "item": "am:ciseaux_de_couture",
       "data": 32767
     },
-    "G":
-    {
+    "G": {
       "item": "minecraft:carpet",
       "data": 4
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:tapis_en_laine_jaune_croisee",
     "count": 1
   }

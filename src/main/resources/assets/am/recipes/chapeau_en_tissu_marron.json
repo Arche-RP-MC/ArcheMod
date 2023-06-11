@@ -1,33 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     "CK ",
     "KRK"
   ],
-
-  "key":
-  {
-    "C":
-    {
+  "key": {
+    "C": {
       "item": "am:ciseaux_de_couture",
       "data": 32767
     },
-    "K":
-    {
+    "K": {
       "item": "am:etoffe_marron"
     },
-    "R":
-    {
+    "R": {
       "item": "am:laniere_de_cuir"
     }
-
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:chapeau_en_tissu_marron",
     "count": 1
   }

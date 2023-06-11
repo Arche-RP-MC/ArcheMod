@@ -1,30 +1,20 @@
 {
-  "type": "minecraft:crafting_shaped", 
-  "pattern": 
- [ 
- "E  ",
- "C  ",
- "   "
- ], 
-
-
- "key": 
- {
-
- "C": 
- { 
- "item": "am:coquille_d_oeuf"
-
-},
-
-"E": 
- { 
- "item": "am:oeuf_a_plat_cru"
-}
-},
- "result": 
- { 
- "item": "am:oeuf_a_la_coque_cru",
- "count": 1
-}
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "E  ",
+    "C  ",
+    "   "
+  ],
+  "key": {
+    "C": {
+      "item": "am:coquille_d_oeuf"
+    },
+    "E": {
+      "item": "am:oeuf_a_plat_cru"
+    }
+  },
+  "result": {
+    "item": "am:oeuf_a_la_coque_cru",
+    "count": 1
+  }
 }

@@ -1,36 +1,26 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "G F",
     "LBL",
     "LBL"
   ],
-
-  "key":
-  {
-    "L":
-    {
+  "key": {
+    "L": {
       "item": "am:planche_chene"
     },
-    "B":
-    {
+    "B": {
       "item": "minecraft:stick"
     },
-    "G":
-    {
+    "G": {
       "item": "am:maillet",
       "data": 32767
     },
-    "F":
-    {
+    "F": {
       "item": "am:clous"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "minecraft:fence",
     "count": 1
   }

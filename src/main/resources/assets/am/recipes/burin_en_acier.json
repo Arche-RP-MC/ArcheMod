@@ -1,41 +1,36 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " G ",
     "FHT",
     " B "
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "am:manche"
     },
-    "T":
-    {
+    "T": {
       "item": "am:clous"
     },
-    "H":
-    {
+    "H": {
       "item": "am:tete_burin_acier"
     },
-    "G":
-    {
-      "item": "am:marteau_en_bronze",
-      "data": 32767
-    },
-    "F":
-    {
+    "G": [
+      {
+        "item": "am:marteau_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_en_acier",
+        "data": 32767
+      }
+    ],
+    "F": {
       "item": "am:marteau_en_acier",
       "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:marteau_burin_en_acier",
     "count": 1
   }

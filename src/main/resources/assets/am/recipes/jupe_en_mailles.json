@@ -1,28 +1,20 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " C ",
     " L ",
     "L L"
   ],
-
-  "key":
-  {
-    "C":
-    {
+  "key": {
+    "C": {
       "item": "am:pinces",
       "data": 32767
     },
-    "L":
-    {
+    "L": {
       "item": "am:maille_de_fer"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:jupe_en_maille_de_fer",
     "count": 1
   }

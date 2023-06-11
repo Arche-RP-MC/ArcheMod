@@ -1,33 +1,24 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " G ",
     "BBL",
     "BB "
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "am:verre_en_fusion"
     },
-    "L":
-    {
+    "L": {
       "item": "am:pinces",
       "data": 32767
     },
-    "G":
-    {
+    "G": {
       "item": "am:canne_de_verrier",
       "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "minecraft:glass",
     "count": 1
   }

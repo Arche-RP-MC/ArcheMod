@@ -1,36 +1,26 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     "LNL",
     "MCM"
   ],
-
-  "key":
-  {
-    "C":
-    {
+  "key": {
+    "C": {
       "item": "am:clous"
     },
-    "N":
-    {
+    "N": {
       "item": "am:ciseaux_de_couture",
       "data": 32767
     },
-    "L":
-    {
+    "L": {
       "item": "am:laniere_de_cuir"
     },
-    "M":
-    {
+    "M": {
       "item": "am:cuir_tanne"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:bottes",
     "count": 1
   }

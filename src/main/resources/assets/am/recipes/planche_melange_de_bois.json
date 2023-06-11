@@ -1,45 +1,38 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "TV ",
     "FFP",
     "XY "
   ],
-
-  "key":
-  {
-    "F":
-    {
+  "key": {
+    "F": {
       "item": "am:clous"
     },
-
-    "P":
-    {
-      "item": "am:marteau_en_fer",
-      "data": 32767
-    },
-    "X":
-    {
+    "P": [
+      {
+        "item": "marteau_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_en_acier",
+        "data": 32767
+      }
+    ],
+    "X": {
       "item": "am:planche_bouleau"
     },
-    "V":
-    {
+    "V": {
       "item": "am:planche_chene"
     },
-    "Y":
-    {
+    "Y": {
       "item": "am:planche_acajou"
     },
-    "T":
-    {
+    "T": {
       "item": "am:planche_sapin"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:planche_melange_de_bois",
     "count": 1
   }

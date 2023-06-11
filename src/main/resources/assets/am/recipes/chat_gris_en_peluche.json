@@ -1,32 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " L ",
     "LCL",
     "P  "
   ],
-
-  "key":
-  {
-    "P":
-    {
+  "key": {
+    "P": {
       "item": "am:ciseaux_de_couture",
       "data": 32767
     },
-    "C":
-    {
+    "C": {
       "item": "am:laine_brute"
     },
-    "L":
-    {
+    "L": {
       "item": "am:etoffe_grise"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:chat_gris_en_peluche",
     "count": 1
   }

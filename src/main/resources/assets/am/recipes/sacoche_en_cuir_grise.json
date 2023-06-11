@@ -1,37 +1,27 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "TTT",
     "LCL",
     "TPT"
   ],
-
-  "key":
-  {
-    "T":
-    {
+  "key": {
+    "T": {
       "item": "am:cuir_tanne"
     },
-    "L":
-    {
+    "L": {
       "item": "am:laniere_de_cuir"
     },
-    "P":
-    {
-       "item": "minecraft:dye", 
-   "data": 8
+    "P": {
+      "item": "minecraft:dye",
+      "data": 8
     },
-    "C":
-    {
+    "C": {
       "item": "am:ciseaux_de_couture",
       "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:sacoche_en_cuir_grise",
     "count": 1
   }

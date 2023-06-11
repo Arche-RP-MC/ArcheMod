@@ -1,27 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "T  ",
     "F  ",
     "TT "
   ],
-
-  "key":
-  {
-    "F":
-    {
+  "key": {
+    "F": {
       "item": "am:mortier"
     },
-    "T":
-    {
+    "T": {
       "item": "am:brique_d_andesite"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:andesitsmoothstair",
     "count": 1
   }

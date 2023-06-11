@@ -1,28 +1,20 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "  G",
     " H ",
     "   "
   ],
-
-  "key":
-  {
-    "H":
-    {
+  "key": {
+    "H": {
       "item": "am:barre_or"
     },
-    "G":
-    {
+    "G": {
       "item": "am:pinces",
       "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:fourchette_en_or",
     "count": 2
   }

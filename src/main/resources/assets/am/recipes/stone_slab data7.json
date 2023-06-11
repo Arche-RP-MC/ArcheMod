@@ -1,28 +1,26 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     " PT",
     "   "
   ],
-
-  "key":
-  {
-    "T":
-    {
+  "key": {
+    "T": {
       "item": "minecraft:quartz_block"
     },
-    "P":
-    {
-        "item": "am:marteau_burin_en_bronze",
+    "P": [
+      {
+        "item": "am:marteau_burin_en_acier",
         "data": 32767
-    }
+      },
+      {
+        "item": "am:marteau_burin_en_fer",
+        "data": 32767
+      }
+    ]
   },
-
-  "result":
-  {
+  "result": {
     "item": "minecraft:stone_slab",
     "data": 7,
     "count": 2

@@ -1,37 +1,33 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "LLL",
     "GNP",
     "LLL"
   ],
-
-  "key":
-  {
-    "N":
-    {
+  "key": {
+    "N": {
       "item": "am:clous"
     },
-    "P":
-    {
-      "item": "am:marteau_en_bronze",
-      "data": 32767
-    },
-    "L":
-    {
+    "P": [
+      {
+        "item": "am:marteau_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_en_acier",
+        "data": 32767
+      }
+    ],
+    "L": {
       "item": "minecraft:stick"
     },
-    "G":
-    {
+    "G": {
       "item": "am:pinces",
       "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:casier_a_poisson",
     "count": 1
   }

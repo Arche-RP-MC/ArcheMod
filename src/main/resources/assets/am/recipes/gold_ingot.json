@@ -1,37 +1,33 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "JJJ",
     "JJJ",
     "IBG"
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "am:moule"
     },
-    "J":
-    {
+    "J": {
       "item": "am:or_fondu"
     },
-    "I":
-    {
+    "I": {
       "item": "am:pinces",
       "data": 32767
     },
-    "G":
-    {
-      "item": "am:marteau_en_bronze",
-      "data": 32767
-    }
+    "G": [
+      {
+        "item": "am:marteau_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_en_acier",
+        "data": 32767
+      }
+    ]
   },
-
-  "result":
-  {
+  "result": {
     "item": "minecraft:gold_ingot",
     "count": 1
   }

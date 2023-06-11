@@ -1,38 +1,28 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "IG ",
     "BBL",
     "   "
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "am:verre_en_fusion"
     },
-    "L":
-    {
+    "L": {
       "item": "am:pinces",
       "data": 32767
     },
-    "I":
-    {
+    "I": {
       "item": "minecraft:dye",
       "data": 4
     },
-    "G":
-    {
+    "G": {
       "item": "am:canne_de_verrier",
       "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "minecraft:stained_glass_pane",
     "data": 11,
     "count": 1

@@ -1,38 +1,34 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "MF ",
     " V ",
     "PF "
   ],
-
-  "key":
-  {
-    "M":
-    {
-      "item": "am:marteau_en_fer",
-      "data": 32767
-    },
-    "P":
-    {
+  "key": {
+    "M": [
+      {
+        "item": "marteau_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_en_acier",
+        "data": 32767
+      }
+    ],
+    "P": {
       "item": "am:pinces",
       "data": 32767
     },
-    "V":
-    {
+    "V": {
       "item": "am:tete_epee_fer",
       "data": 32767
     },
-    "F":
-    {
+    "F": {
       "item": "am:barre_fer"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:tete_flameberge_fer",
     "count": 1
   }

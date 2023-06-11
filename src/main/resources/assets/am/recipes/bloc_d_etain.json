@@ -1,34 +1,31 @@
 {
-  "type": "minecraft:crafting_shaped", 
-  "pattern": 
- [ 
- "BBB", 
- "BBB", 
- "A C" 
- ], 
-
-
- "key": 
- { 
- "A": 
- { 
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "BBB",
+    "A C"
+  ],
+  "key": {
+    "A": {
       "item": "am:pinces",
       "data": 32767
-
-},
- "B": 
- { 
- "item": "am:lingot_etain"
-},
- "C": 
- { 
-"item": "am:marteau_en_bronze",
- "data": 32767 
-}
-},
- "result": 
- { 
- "item": "am:bloc_etain",
- "count": 1
-}
+    },
+    "B": {
+      "item": "am:lingot_etain"
+    },
+    "C": [
+      {
+        "item": "am:marteau_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_en_acier",
+        "data": 32767
+      }
+    ]
+  },
+  "result": {
+    "item": "am:bloc_etain",
+    "count": 1
+  }
 }

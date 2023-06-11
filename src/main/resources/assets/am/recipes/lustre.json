@@ -1,36 +1,26 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " G ",
     " HT",
     " B "
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "am:manche"
     },
-    "T":
-    {
+    "T": {
       "item": "am:clous"
     },
-    "H":
-    {
+    "H": {
       "item": "am:tete_epee_longue_acier"
     },
-    "G":
-    {
+    "G": {
       "item": "am:marteau_en_acier",
       "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:epee_longue_en_acier",
     "count": 1
   }

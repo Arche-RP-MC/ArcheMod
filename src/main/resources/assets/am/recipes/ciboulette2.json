@@ -1,31 +1,28 @@
 {
-    "type": "minecraft:crafting_shaped",
-  
-    "pattern":
-    [
-      "   ",
-      " P ",
-      " M "
-    ],
-  
-    "key":
-    {
-      "M":
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " P ",
+    " M "
+  ],
+  "key": {
+    "M": [
       {
         "item": "am:mortier_pilon_en_bois",
         "data": 32767
       },
-      "P":
       {
-        "item": "am:ciboulette2"
+        "item": "am:mortier_pilon_en_pierre",
+        "data": 32767
       }
-      
-    },
-  
-    "result":
-    {
-      "item": "am:graine_ciboulette",
-      "data": 0,
-      "count": 2
+    ],
+    "P": {
+      "item": "am:ciboulette2"
     }
+  },
+  "result": {
+    "item": "am:graine_ciboulette",
+    "data": 0,
+    "count": 2
   }
+}

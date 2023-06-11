@@ -1,32 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "TTT",
     "TTT",
     "HB "
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "am:moule"
     },
-    "T":
-    {
+    "T": {
       "item": "am:etain_fondu"
     },
-    "H":
-    {
+    "H": {
       "item": "am:pinces",
       "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:lingot_etain",
     "count": 1
   }

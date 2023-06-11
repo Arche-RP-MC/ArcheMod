@@ -1,28 +1,26 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " L ",
     "BB ",
     "BB "
   ],
-
-  "key":
-  {
-    "L":
-    {
-      "item": "am:marteau_burin_en_bronze",
-      "data": 32767
-    },
-    "I":
-    {
+  "key": {
+    "L": [
+      {
+        "item": "am:marteau_burin_en_acier",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_burin_en_fer",
+        "data": 32767
+      }
+    ],
+    "I": {
       "item": "am:caillou_d_andesite"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:andesite",
     "count": 1
   }

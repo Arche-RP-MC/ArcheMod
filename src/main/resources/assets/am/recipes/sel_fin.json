@@ -1,21 +1,32 @@
 {
- "type": "minecraft:crafting_shaped",
- "pattern": [
-  "   ",
-  "AB ",
-  "   "
- ],
- "key": {
-  "A": {
-   "item": "am:mortier_pilon_en_bois",
-   "data": 32767
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "AB ",
+    "   "
+  ],
+  "key": {
+    "A": [
+      {
+        "item": "am:mortier_pilon_en_pierre",
+        "data": 32767
+      },
+      {
+        "item": "am:mortier_pilon_en_bois",
+        "data": 32767
+      }
+    ],
+    "B": [
+      {
+        "item": "am:cristal_de_sel"
+      },
+      {
+        "item": "am:salicorne"
+      }
+    ]
   },
-  "B": {
-   "item": "am:cristal_de_sel"
+  "result": {
+    "item": "am:sel",
+    "count": 3
   }
- },
- "result": {
-  "item": "am:sel",
-  "count": 3
- }
 }

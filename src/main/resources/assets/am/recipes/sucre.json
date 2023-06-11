@@ -1,29 +1,27 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     " B ",
     " E "
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "minecraft:beetroot"
     },
-    "E":
-    {
-      "item": "am:mortier_pilon_en_bois",
-      "data": 32767
-    }
+    "E": [
+      {
+        "item": "am:mortier_pilon_en_bois",
+        "data": 32767
+      },
+      {
+        "item": "am:mortier_pilon_en_pierre",
+        "data": 32767
+      }
+    ]
   },
-
-  "result":
-  {
+  "result": {
     "item": "minecraft:sugar",
-    "count": 4
+    "count": 2
   }
 }

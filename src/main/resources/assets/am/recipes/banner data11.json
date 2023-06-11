@@ -1,32 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "BFF",
     "BFF",
     "G  "
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "am:planche"
     },
-    "G":
-    {
+    "G": {
       "item": "am:ciseaux_de_couture",
       "data": 32767
     },
-    "F":
-    {
+    "F": {
       "item": "am:etoffe_jaune"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "minecraft:banner",
     "data": 11,
     "count": 1

@@ -1,32 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "BM ",
     "BBE",
     "BBB"
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "am:caillou_granite"
     },
-    "E":
-    {
+    "E": {
       "item": "am:mortier"
     },
-    "M":
-    {
+    "M": {
       "item": "am:marteau_burin_en_bronze",
       "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:granitesmoothmossystair",
     "count": 2
   }

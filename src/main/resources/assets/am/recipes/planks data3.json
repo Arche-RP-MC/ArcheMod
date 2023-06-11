@@ -1,37 +1,27 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "GTP",
     "BB ",
     "BB "
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "am:planche_acajou"
     },
-    "P":
-    {
+    "P": {
       "item": "am:clous"
     },
-    "T":
-    {
+    "T": {
       "item": "am:ciseaux_a_bois",
       "data": 32767
     },
-    "G":
-    {
+    "G": {
       "item": "am:maillet",
       "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "minecraft:planks",
     "data": 3,
     "count": 1

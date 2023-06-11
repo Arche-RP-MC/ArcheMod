@@ -1,40 +1,40 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "BBB",
     " C ",
     "LGM"
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "am:graine_lin"
     },
-    "L":
-    {
+    "L": {
       "item": "am:etoffe"
     },
-    "C":
-    {
-      "item": "minecraft:water_bucket"
-    },
-    "G":
-    {
+    "C": [
+      {
+        "item": "am:seau_d_eau_en_bois"
+      },
+      {
+        "item": "minecraft:water_bucket"
+      }
+    ],
+    "G": {
       "item": "am:bocal"
     },
-    "M":
-    {
-      "item": "am:mortier_pilon_en_pierre",
-      "data": 32767
-    }
+    "M": [
+      {
+        "item": "am:mortier_pilon_en_pierre",
+        "data": 32767
+      },
+      {
+        "item": "am:mortier_pilon_en_bois",
+        "data": 32767
+      }
+    ]
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:huile_de_lin",
     "count": 1
   }

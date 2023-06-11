@@ -1,46 +1,39 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " M ",
     "HCG",
     " SP"
   ],
-
-  "key":
-  {
-    "M":
-    {
+  "key": {
+    "M": {
       "item": "am:moule"
     },
-    "H":
-    {
+    "H": {
       "item": "am:huile_essentielle",
       "data": 32767
     },
-    "C":
-    {
+    "C": {
       "item": "am:cendres"
     },
-    "G":
-    {
+    "G": {
       "item": "am:bouteille_huile_olive",
       "data": 32767
     },
-    "S":
-    {
-      "item": "minecraft:water_bucket"
-    },
-    "P":
-    {
+    "S": [
+      {
+        "item": "am:seau_d_eau_en_bois"
+      },
+      {
+        "item": "minecraft:water_bucket"
+      }
+    ],
+    "P": {
       "item": "am:spatule",
       "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:savon",
     "count": 1
   }

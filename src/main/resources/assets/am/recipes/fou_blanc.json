@@ -1,32 +1,29 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " C ",
     " LF",
     "   "
   ],
-
-  "key":
-  {
-    "F":
-    {
+  "key": {
+    "F": {
       "item": "am:gouache_blanche"
     },
-    "C":
-    {
-      "item": "am:lime_en_bronze",
-      "data": 32767
-    },
-    "L":
-    {
+    "C": [
+      {
+        "item": "am:lime_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:lime_en_acier",
+        "data": 32767
+      }
+    ],
+    "L": {
       "item": "minecraft:stick"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:fou_blanc",
     "count": 1
   }

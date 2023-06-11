@@ -1,23 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     " P ",
     "   "
   ],
-
-  "key":
-  {
-    "P":
-    {
+  "key": {
+    "P": {
       "item": "am:peaudelapin"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:poils",
     "count": 12
   }

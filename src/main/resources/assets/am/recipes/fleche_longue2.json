@@ -1,36 +1,32 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " L ",
     "FBP",
     "   "
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "minecraft:stick"
     },
-    "F":
-    {
+    "F": {
       "item": "am:pointe_de_fleche_longue"
     },
-    "L":
-    {
-      "item": "am:lime_en_fer",
-      "data": 32767
-    },
-    "P":
-    {
+    "L": [
+      {
+        "item": "am:lime_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:lime_en_acier",
+        "data": 32767
+      }
+    ],
+    "P": {
       "item": "minecraft:feather"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:fleche_pointe_longue",
     "count": 1
   }

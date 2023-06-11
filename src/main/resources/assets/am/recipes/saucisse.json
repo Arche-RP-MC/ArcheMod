@@ -1,35 +1,24 @@
 {
-  "type": "minecraft:crafting_shaped", 
-  "pattern": 
- [ 
- " P ",
- " A ", 
- " D "
- ], 
-
-
- "key": 
- { 
- "D": 
- { 
- "item": "am:hachoir",
-  "data": 32767
- 
-},
-  "P":
-  {
-   "item": "am:tripes"
-
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " P ",
+    " A ",
+    " D "
+  ],
+  "key": {
+    "D": {
+      "item": "am:hachoir",
+      "data": 32767
+    },
+    "P": {
+      "item": "am:tripes"
+    },
+    "A": {
+      "item": "am:lambeau_de_viande_cru"
+    }
   },
- "A":
- {
- "item": "am:viande_crue"
-
-}
-},
- "result": 
- { 
- "item": "am:saucisse_cru",
- "count": 1
-}
+  "result": {
+    "item": "am:saucisse_cru",
+    "count": 1
+  }
 }

@@ -1,41 +1,29 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " B ",
     "C L",
     " EM"
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "am:cire"
     },
-    "C":
-    {
+    "C": {
       "item": "am:miel"
     },
-    "L":
-    {
-    "item": "am:sel"
+    "L": {
+      "item": "am:sel"
     },
-    "E":
-    {
+    "E": {
       "item": "am:huile_essentielle",
       "data": 32767
     },
-    "M":
-    {
+    "M": {
       "item": "am:boite_a_poudre"
-
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:baume_exfoliant",
     "count": 1
   }

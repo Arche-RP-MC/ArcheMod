@@ -1,29 +1,27 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     "TP ",
     "   "
   ],
-
-  "key":
-  {
-    "P":
-    {
-      "item": "am:marteau_burin_en_fer",
-      "data": 32767
-    },
-    "T":
-    {
+  "key": {
+    "P": [
+      {
+        "item": "am:marteau_burin_en_acier",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_burin_en_fer",
+        "data": 32767
+      }
+    ],
+    "T": {
       "item": "minecraft:concrete",
       "data": 14
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:concreteredstair",
     "count": 1
   }

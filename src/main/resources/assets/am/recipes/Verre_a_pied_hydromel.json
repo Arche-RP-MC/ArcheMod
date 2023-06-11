@@ -1,28 +1,20 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     " F ",
     " L "
   ],
-
-  "key":
-  {
-    "F":
-    {
+  "key": {
+    "F": {
       "item": "am:bouteille_de_hydromel",
       "data": 32767
     },
-    "L":
-    {
+    "L": {
       "item": "am:verre_a_pied"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:verre_a_pied_hydromel",
     "count": 1
   }

@@ -1,28 +1,20 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     "BHH",
     "   "
   ],
-
-  "key":
-  {
-    "H":
-    {
+  "key": {
+    "H": {
       "item": "am:planche_bouleau"
     },
-    "B":
-    {
+    "B": {
       "item": "am:ciseaux_a_bois",
       "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:peigne_en_bouleau_long",
     "count": 1
   }

@@ -1,41 +1,36 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "HTC",
     "PM ",
     "MC "
   ],
-
-  "key":
-  {
-    "H":
-    {
-      "item": "am:marteau_en_fer",
-      "data": 32767
-    },
-    "T":
-    {
+  "key": {
+    "H": [
+      {
+        "item": "marteau_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_en_acier",
+        "data": 32767
+      }
+    ],
+    "T": {
       "item": "am:tete_hache_armes_fer"
     },
-    "C":
-    {
+    "C": {
       "item": "am:clous"
     },
-    "P":
-    {
+    "P": {
       "item": "am:pinces",
       "data": 32767
     },
-    "M":
-    {
+    "M": {
       "item": "am:manche"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:hache_d_armes_en_fer",
     "count": 1
   }

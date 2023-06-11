@@ -1,35 +1,40 @@
 {
-  "type": "minecraft:crafting_shaped", 
-  "pattern": 
- [ 
- "   ", 
- "DCD", 
- " B " 
- ], 
-
-
- "key": 
- {
- "B": 
- { 
- "item": "am:pate_diverse"
- 
-},
- "C": 
- { 
- "item": "am:myrtilles"
-
-
-},
-"D": 
- { 
- "item": "minecraft:sugar"
-
-}
-},
- "result": 
- { 
- "item": "am:patisseries_colorees_cru",
- "count": 3
-}
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "DCD",
+    " B "
+  ],
+  "key": {
+    "B": {
+      "item": "am:pate_diverse"
+    },
+    "C": [
+      {
+        "item": "am:cerise"
+      },
+      {
+        "item": "am:fraise"
+      },
+      {
+        "item": "am:orange"
+      },
+      {
+        "item": "am:myrtilles"
+      },
+      {
+        "item": "am:citron"
+      },
+      {
+        "item": "am:poire"
+      }
+    ],
+    "D": {
+      "item": "minecraft:sugar"
+    }
+  },
+  "result": {
+    "item": "am:patisseries_colorees_cru",
+    "count": 3
+  }
 }

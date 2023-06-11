@@ -1,37 +1,27 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "A  ",
     "CB ",
     " M "
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "minecraft:stick"
     },
-    "A":
-    {
+    "A": {
       "item": "am:ciseaux_a_bois",
       "data": 32767
     },
-    "C":
-    {
+    "C": {
       "item": "am:vernis",
       "data": 32767
     },
-    "M":
-    {
+    "M": {
       "item": "am:fibre_vegetale"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:balai",
     "count": 1
   }

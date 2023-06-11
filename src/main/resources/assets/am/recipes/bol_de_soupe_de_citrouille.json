@@ -1,39 +1,26 @@
 {
-  "type": "minecraft:crafting_shaped", 
-  "pattern": 
- [ 
- "BED", 
- "B D",
- "CCC" 
- ], 
-
-
- "key": 
- { 
-
- "B": 
- { 
- "item": "minecraft:carrot"
- 
-},
- "C": 
- { 
- "item": "minecraft:bowl"
-
-},
-"D": 
- { 
- "item": "minecraft:pumpkin"
-
-},
-"E": 
- { 
- "item": "am:courge_cru"
-}
-},
- "result": 
- { 
- "item": "am:bol_de_soupe_de_citrouille_cru",
- "count": 3
-}
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BED",
+    "B D",
+    "CCC"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:carrot"
+    },
+    "C": {
+      "item": "minecraft:bowl"
+    },
+    "D": {
+      "item": "minecraft:pumpkin"
+    },
+    "E": {
+      "item": "am:courge_cru"
+    }
+  },
+  "result": {
+    "item": "am:bol_de_soupe_de_citrouille_cru",
+    "count": 3
+  }
 }

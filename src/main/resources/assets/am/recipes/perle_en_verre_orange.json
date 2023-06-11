@@ -1,38 +1,28 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " B ",
     " HT",
     " C "
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "am:canne_de_verrier",
       "data": 32767
     },
-    "H":
-    {
+    "H": {
       "item": "am:verre_en_fusion"
     },
-    "C":
-    {
+    "C": {
       "item": "minecraft:dye",
       "data": 14
     },
-    "T":
-    {
+    "T": {
       "item": "am:pinces",
       "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:perle_en_verre_orange",
     "count": 3
   }

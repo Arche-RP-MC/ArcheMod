@@ -1,27 +1,24 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "B B",
     " B ",
     " S "
   ],
-
-  "key":
-  {
-    "S":
-    {
-      "item": "minecraft:water_bucket"
-    },
-    "B":
-    {
+  "key": {
+    "S": [
+      {
+        "item": "am:seau_d_eau_en_bois"
+      },
+      {
+        "item": "minecraft:water_bucket"
+      }
+    ],
+    "B": {
       "item": "minecraft:clay_ball"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:pot_de_fleur_cru",
     "count": 3
   }

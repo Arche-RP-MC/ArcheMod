@@ -1,40 +1,29 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "MBC",
     " P ",
     " V "
   ],
-
-  "key":
-  {
-    "M":
-    {
+  "key": {
+    "M": {
       "item": "am:pinces",
       "data": 32767
     },
-    "B":
-    {
+    "B": {
       "item": "am:cadre_en_bois"
     },
-    "C":
-    {
+    "C": {
       "item": "am:clous"
     },
-    "P":
-    {
+    "P": {
       "item": "plaque_d_etain"
     },
-    "V":
-    {
+    "V": {
       "item": "am:verre_en_fusion"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:petit_miroir",
     "count": 1
   }

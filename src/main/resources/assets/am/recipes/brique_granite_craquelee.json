@@ -1,28 +1,26 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     "TF ",
     "   "
   ],
-
-  "key":
-  {
-    "F":
-    {
-      "item": "am:marteau_en_fer",
-      "data": 32767
-    },
-    "T":
-    {
+  "key": {
+    "F": [
+      {
+        "item": "marteau_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_en_acier",
+        "data": 32767
+      }
+    ],
+    "T": {
       "item": "am:brique_granite"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:brique_granite_craquelee",
     "count": 1
   }

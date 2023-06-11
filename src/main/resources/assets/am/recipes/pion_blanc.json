@@ -1,44 +1,31 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "  L",
     " B ",
     "ETV"
   ],
-
-  "key":
-  {
-    "E":
-    {
+  "key": {
+    "E": {
       "item": "am:etoffe"
     },
-    "T":
-    {
+    "T": {
       "item": "minecraft:dye",
-      "data" : 0
+      "data": 0
     },
-    "V":
-    {
+    "V": {
       "item": "am:vernis",
       "data": 32767
     },
-
-
-    "B":
-    {
+    "B": {
       "item": "am:planche"
     },
-    "L":
-    {
+    "L": {
       "item": "am:ciseaux_a_bois",
       "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:pion_blanc",
     "count": 3
   }

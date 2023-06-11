@@ -1,31 +1,27 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "E  ",
     " P ",
     "  S"
   ],
-
-  "key":
-  {
-    "E":
-    {
+  "key": {
+    "E": {
       "item": "am:etoffe"
     },
-    "P":
-    {
+    "P": {
       "item": "am:perle_naturelle"
     },
-    "S":
-    {
-      "item": "am:seau_d_eau_en_bois"
-    }
+    "S": [
+      {
+        "item": "am:seau_d_eau_en_bois"
+      },
+      {
+        "item": "minecraft:water_bucket"
+      }
+    ]
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:perle",
     "count": 1
   }

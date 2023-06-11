@@ -1,44 +1,32 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "RT ",
     "GLL",
     "P P"
   ],
-
-  "key":
-  {
-    "R":
-    {
+  "key": {
+    "R": {
       "item": "am:drap_magenta"
     },
-    "T":
-    {
+    "T": {
       "item": "am:couverture_magenta"
     },
-    "P":
-    {
+    "P": {
       "item": "am:planche"
     },
-    "L":
-    {
+    "L": {
       "item": "am:laine_brute"
     },
-    "G":
-    {
+    "G": {
       "item": "am:ciseaux_de_couture",
       "data": 32767
     },
-    "F":
-    {
+    "F": {
       "item": "am:etoffe_magenta"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "minecraft:bed",
     "data": 2,
     "count": 1

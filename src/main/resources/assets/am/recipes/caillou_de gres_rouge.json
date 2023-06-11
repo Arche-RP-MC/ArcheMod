@@ -1,22 +1,28 @@
 {
- "type": "minecraft:crafting_shaped",
- "pattern": [
-  "   ",
-  "AB ",
-  "   "
- ],
- "key": {
-  "A": {
-   "item": "am:marteau_en_bronze",
-   "data": 32767
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "AB ",
+    "   "
+  ],
+  "key": {
+    "A": [
+      {
+        "item": "am:marteau_en_acier",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_en_fer",
+        "data": 32767
+      }
+    ],
+    "B": {
+      "item": "minecraft:red_sandstone",
+      "data": 0
+    }
   },
-  "B": {
-   "item": "minecraft:red_sandstone",
-   "data" : 0
-  }
- },
   "result": {
-   "item": "am:caillou_de_gres_rouge",
-   "count": 6
+    "item": "am:caillou_de_gres_rouge",
+    "count": 6
   }
- }
+}

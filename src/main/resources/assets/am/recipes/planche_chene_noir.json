@@ -1,29 +1,27 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     " FL",
     "   "
   ],
-
-  "key":
-  {
-    "F":
-    {
+  "key": {
+    "F": {
       "item": "minecraft:log2",
       "data": 1
     },
-    "L":
-    {
-      "item": "am:scie_en_bronze",
-      "data": 32767
-    }
+    "L": [
+      {
+        "item": "am:scie_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:scie_en_acier",
+        "data": 32767
+      }
+    ]
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:planche_sciure_chene_noir",
     "count": 4
   }

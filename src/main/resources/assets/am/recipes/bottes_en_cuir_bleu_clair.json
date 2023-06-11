@@ -1,41 +1,30 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "P  ",
     "LNL",
     "MCM"
   ],
-
-  "key":
-  {
-    "C":
-    {
+  "key": {
+    "C": {
       "item": "am:clous"
     },
-    "N":
-    {
+    "N": {
       "item": "am:ciseaux_de_couture",
       "data": 32767
     },
-    "P":
-    {
+    "P": {
       "item": "minecraft:dye",
       "data": 12
     },
-    "L":
-    {
+    "L": {
       "item": "am:laniere_de_cuir"
     },
-    "M":
-    {
+    "M": {
       "item": "am:cuir_tanne"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:bottes_en_cuir_bleu_clair",
     "count": 1
   }

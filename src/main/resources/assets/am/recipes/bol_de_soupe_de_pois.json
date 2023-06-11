@@ -1,39 +1,26 @@
 {
-  "type": "minecraft:crafting_shaped", 
-  "pattern": 
- [ 
- "   ", 
- "BAD", 
- "CCC" 
- ], 
-
-
- "key": 
- { 
-
- "B": 
- { 
- "item": "haricot_vert_cru"
- 
-},
- "C": 
- { 
- "item": "minecraft:bowl"
-
-},
-"D": 
- { 
- "item": "am:brocoli_cru"
-
-},
-"A": 
- { 
- "item": "am:petits_pois_cru"
-}
-},
- "result": 
- { 
- "item": "am:bol_de_soupe_de_pois_cru",
- "count": 3
-}
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "BAD",
+    "CCC"
+  ],
+  "key": {
+    "B": {
+      "item": "haricot_vert_cru"
+    },
+    "C": {
+      "item": "minecraft:bowl"
+    },
+    "D": {
+      "item": "am:brocoli_cru"
+    },
+    "A": {
+      "item": "am:petits_pois_cru"
+    }
+  },
+  "result": {
+    "item": "am:bol_de_soupe_de_pois_cru",
+    "count": 3
+  }
 }

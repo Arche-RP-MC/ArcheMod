@@ -1,27 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " T ",
     "H H",
     " H "
   ],
-
-  "key":
-  {
-    "H":
-    {
+  "key": {
+    "H": {
       "item": "am:lot_de_papiers"
     },
-    "T":
-    {
+    "T": {
       "item": "am:barre_etain"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:lanterne_papier_blanche",
     "count": 1
   }

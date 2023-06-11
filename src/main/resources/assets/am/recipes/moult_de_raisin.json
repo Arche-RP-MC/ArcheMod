@@ -1,29 +1,35 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "FFF",
     "FFF",
-    " R "
+    " RL"
   ],
-
-  "key":
-  {
-    "F":
-    {
-      "item": "am:raisin_blanc"
-    },
-    "R":
-    {
-      "item": "am:mortier_pilon_en_pierre",
-      "data": 32767
-    }
+  "key": {
+    "F": [
+      {
+        "item": "am:raisin_blanc"
+      },
+      {
+        "item": "am:raisin_noir"
+      }
+    ],
+    "R": [
+      {
+        "item": "am:mortier_pilon_en_pierre",
+        "data": 32767
+      },
+      {
+        "item": "am:mortier_pilon_en_bois",
+        "data": 32767
+      }
+    ]
   },
-
-  "result":
-  {
+  "L": {
+    "item": "am:levure"
+  },
+  "result": {
     "item": "am:moult_de_raisin",
-    "count": 3
+    "count": 2
   }
 }

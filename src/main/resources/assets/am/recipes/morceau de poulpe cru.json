@@ -1,31 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped", 
-  "pattern": 
- [ 
- "   ",
- "FA ",
- "   "
- ], 
-
-
- "key": 
- { 
- "A": 
- { 
- "item": "am:poulpe_mort"
- 
-},
-  "F":
-  {
-   "item": "am:hachoir",
-   "data": 32767
-
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "FA ",
+    "   "
+  ],
+  "key": {
+    "A": {
+      "item": "am:poulpe_mort"
+    },
+    "F": {
+      "item": "am:hachoir",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:morceau_de_poulpe_cru",
+    "count": 8
   }
-
-},
- "result": 
- { 
- "item": "am:morceau_de_poulpe_cru",
- "count": 8
-}
 }

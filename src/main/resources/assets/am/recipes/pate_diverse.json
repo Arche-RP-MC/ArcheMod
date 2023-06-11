@@ -1,35 +1,25 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     "RFG",
     "LLL"
   ],
-
-  "key":
-  {
-    "F":
-    {
+  "key": {
+    "F": {
       "item": "am:levure"
     },
-    "R":
-    {
+    "R": {
       "item": "minecraft:sugar"
     },
-    "G":
-    {
+    "G": {
       "item": "minecraft:egg"
     },
-    "L":
-    {
+    "L": {
       "item": "am:farine"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:pate_diverse",
     "count": 1
   }

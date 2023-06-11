@@ -1,37 +1,26 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "G L",
     "G F",
     "P  "
   ],
-
-  "key":
-  {
-
-    "L":
-    {
+  "key": {
+    "L": {
       "item": "am:pinces",
       "data": 32767
     },
-    "G":
-    {
+    "G": {
       "item": "am:plaque_de_fer"
     },
-    "P":
-    {
+    "P": {
       "item": "am:manche"
     },
-    "F":
-    {
+    "F": {
       "item": "am:clous"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:casserole",
     "count": 1
   }

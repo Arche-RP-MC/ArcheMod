@@ -1,38 +1,26 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "HHH",
     "QCQ",
     "GGG"
   ],
-
-  "key":
-  {
-    "H":
-    {
+  "key": {
+    "H": {
       "item": "am:etoffe"
     },
-    "Q":
-    {
+    "Q": {
       "item": "am:etoffe_marron"
     },
-
-    "C":
-    {
+    "C": {
       "item": "am:ciseaux_de_couture",
       "data": 32767
-
     },
-    "G":
-    {
+    "G": {
       "item": "am:etoffe_jaune"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "zawa:bald_eagle_plush",
     "count": 1
   }

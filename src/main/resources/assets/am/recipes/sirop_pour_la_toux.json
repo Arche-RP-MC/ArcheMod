@@ -1,44 +1,38 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "B C",
     "P L",
     " GM"
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "am:sauge"
     },
-    "P":
-    {
+    "P": {
       "item": "am:miel"
     },
-    "L":
-    {
+    "L": {
       "item": "am:extrait_de_pavot_concentre"
     },
-    "C":
-    {
+    "C": {
       "item": "am:ronces"
     },
-    "G":
-    {
+    "G": {
       "item": "am:bocal"
     },
-    "M":
-    {
-      "item": "am:mortier_pilon_en_pierre",
-      "data": 32767
-    }
+    "M": [
+      {
+        "item": "am:mortier_pilon_en_pierre",
+        "data": 32767
+      },
+      {
+        "item": "am:mortier_pilon_en_bois",
+        "data": 32767
+      }
+    ]
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:sirop_pour_la_toux",
     "count": 1
   }

@@ -1,28 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
-     "   ",
+  "pattern": [
+    "   ",
     "BBB",
     " E "
   ],
-
-  "key":
-  {
-
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "am:miel"
     },
-    "E":
-    {
+    "E": {
       "item": "am:bocal"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:pot_de_miel",
     "count": 1
   }

@@ -1,36 +1,31 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " GI",
     "BLB",
     "BBB"
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "minecraft:concrete_powder",
       "data": 2
     },
-    "L":
-    {
-      "item": "minecraft:water_bucket"
-    },
-    "I":
-    {
+    "L": [
+      {
+        "item": "am:seau_d_eau_en_bois"
+      },
+      {
+        "item": "minecraft:water_bucket"
+      }
+    ],
+    "I": {
       "item": "minecraft:stick"
     },
-    "G":
-    {
+    "G": {
       "item": "am:mortier"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "minecraft:concrete",
     "data": 2,
     "count": 5

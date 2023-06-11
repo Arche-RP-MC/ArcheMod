@@ -1,32 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " NN",
     "FNP",
     " N "
   ],
-
-  "key":
-  {
-    "N":
-    {
+  "key": {
+    "N": {
       "item": "minecraft:feather"
     },
-    "P":
-    {
+    "P": {
       "item": "minecraft:bone"
     },
-    "F":
-    {
+    "F": {
       "item": "am:ciseaux_de_couture",
       "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:canard_leurre",
     "count": 1
   }

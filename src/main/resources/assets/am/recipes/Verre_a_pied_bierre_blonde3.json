@@ -1,28 +1,20 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     " F ",
     " L "
   ],
-
-  "key":
-  {
-    "F":
-    {
+  "key": {
+    "F": {
       "item": "am:bocal_de_bierre_blonde",
       "data": 32767
     },
-    "L":
-    {
+    "L": {
       "item": "am:verre_a_pied"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:verre_a_pied_bierre_blonde",
     "count": 1
   }

@@ -1,26 +1,24 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "FFF",
     "FPF",
     "FFF"
   ],
-
-  "key":{
-    "P":
-    {
-      "item": "minecraft:water_bucket"
-    },
-    "F":
-    {
+  "key": {
+    "P": [
+      {
+        "item": "am:seau_d_eau_en_bois"
+      },
+      {
+        "item": "minecraft:water_bucket"
+      }
+    ],
+    "F": {
       "item": "am:bocal"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:bocal_d_eau",
     "count": 8
   }

@@ -1,33 +1,24 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " P ",
     "HTH",
     " H "
   ],
-
-  "key":
-  {
-    "H":
-    {
+  "key": {
+    "H": {
       "item": "minecraft:stained_glass",
       "data": 1
     },
-    "T":
-    {
+    "T": {
       "item": "am:etoffe"
     },
-    "P":
-    {
-        "item": "am:pinces",
-        "data": 32767
+    "P": {
+      "item": "am:pinces",
+      "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:bloc_de_verre_poli_orange",
     "count": 3
   }

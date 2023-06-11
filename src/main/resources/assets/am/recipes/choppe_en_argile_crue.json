@@ -1,32 +1,28 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     "CL ",
     "FLL"
   ],
-
-  "key":
-  {
-    "F":
-    {
-      "item": "minecraft:water_bucket"
-    },
-    "C":
-    {
+  "key": {
+    "F": [
+      {
+        "item": "am:seau_d_eau_en_bois"
+      },
+      {
+        "item": "minecraft:water_bucket"
+      }
+    ],
+    "C": {
       "item": "am:spatule",
       "data": 32767
     },
-    "L":
-    {
+    "L": {
       "item": "minecraft:clay_ball"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:choppe_en_argile_crue",
     "count": 2
   }

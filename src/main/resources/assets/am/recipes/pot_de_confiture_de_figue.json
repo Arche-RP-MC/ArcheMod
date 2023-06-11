@@ -1,33 +1,22 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "III",
     "CCC",
     " E "
   ],
-
-  "key":
-  {
-
-    "C":
-    {
+  "key": {
+    "C": {
       "item": "am:figue"
     },
-    "I":
-    {
+    "I": {
       "item": "minecraft:sugar"
     },
-
-    "E":
-    {
+    "E": {
       "item": "am:bocal"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:pot_de_confiture_de_myrtilles",
     "count": 1
   }

@@ -1,32 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     "PGT",
     " TT"
   ],
-
-  "key":
-  {
-    "G":
-    {
+  "key": {
+    "G": {
       "item": "am:clous"
     },
-    "P":
-    {
-        "item": "am:maillet",
-        "data": 32767
+    "P": {
+      "item": "am:maillet",
+      "data": 32767
     },
-    "T":
-    {
+    "T": {
       "item": "am:planche_acacia_vernie"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:escalier_en_planche_acacia_vernie",
     "count": 1
   }

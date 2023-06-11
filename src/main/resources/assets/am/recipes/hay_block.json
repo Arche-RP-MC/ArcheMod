@@ -1,28 +1,26 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " B ",
     "GG ",
     "GG "
   ],
-
-  "key":
-  {
-    "B":
-    {
-      "item": "am:fourche_en_bronze",
-      "data": 32767
-    },
-    "G":
-    {
+  "key": {
+    "B": [
+      {
+        "item": "fourche_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:fourche_en_acier",
+        "data": 32767
+      }
+    ],
+    "G": {
       "item": "minecraft:wheat"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "minecraft:hay_block",
     "count": 1
   }

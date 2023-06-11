@@ -1,41 +1,36 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "PVL",
     " A ",
     " E "
   ],
-
-  "key":
-  {
-    "P":
-    {
+  "key": {
+    "P": {
       "item": "am:pinces",
       "data": 32767
     },
-    "V":
-    {
+    "V": {
       "item": "minecraft:glass"
     },
-    "L":
-    {
-      "item": "am:lime_en_fer",
-      "data": 32767
-    },
-    "A":
-    {
+    "L": [
+      {
+        "item": "am:lime_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:lime_en_acier",
+        "data": 32767
+      }
+    ],
+    "A": {
       "item": "am:plaque_d_or"
     },
-    "E":
-    {
+    "E": {
       "item": "am:etoffe"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:peigne_en_or",
     "count": 1
   }

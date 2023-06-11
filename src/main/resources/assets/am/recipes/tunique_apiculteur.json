@@ -1,40 +1,29 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "AWB",
     " P ",
     " C "
   ],
-
-  "key":
-  {
-    "W":
-    {
+  "key": {
+    "W": {
       "item": "am:cire"
     },
-    "A":
-    {
+    "A": {
       "item": "am:aiguille"
     },
-    "P":
-    {
+    "P": {
       "item": "am:tunique"
     },
-    "B":
-    {
+    "B": {
       "item": "am:bobine_de_laine"
     },
-    "C":
-    {
+    "C": {
       "item": "am:ciseaux_de_couture",
       "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:tunique_apiculteur",
     "count": 1
   }

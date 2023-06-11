@@ -1,32 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " C ",
     " BT",
     " B "
   ],
-
-  "key":
-  {
-    "T":
-    {
+  "key": {
+    "T": {
       "item": "am:bobine_de_fil"
     },
-    "C":
-    {
+    "C": {
       "item": "am:ciseaux_de_couture",
       "data": 32767
     },
-    "B":
-    {
+    "B": {
       "item": "am:etoffe_bleu_clair"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:bourse_bleu_clair",
     "count": 1
   }

@@ -1,33 +1,24 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " H ",
     " AP",
     "   "
   ],
-
-  "key":
-  {
-    "H":
-    {
+  "key": {
+    "H": {
       "item": "am:flacon"
     },
-    "A":
-    {
+    "A": {
       "item": "am:pinces",
       "data": 32767
     },
-    "P":
-    {
+    "P": {
       "item": "am:canne_de_verrier",
       "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:bouteille_de_parfum_vide",
     "count": 1
   }

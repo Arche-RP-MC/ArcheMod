@@ -1,34 +1,24 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     "AP ",
     " C "
   ],
-
-  "key":
-  {
-    "C":
-    {
+  "key": {
+    "C": {
       "item": "am:pinceau",
       "data": 32767
     },
-    "A":
-    {
+    "A": {
       "item": "am:tasse_en_porcelaine"
     },
-
-    "P":
-    {
+    "P": {
       "item": "minecraft:dye",
-      "data" : 9
+      "data": 9
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:tasse_en_porcelaine_rose",
     "count": 1
   }

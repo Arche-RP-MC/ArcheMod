@@ -1,31 +1,27 @@
 {
- "type": "minecraft:crafting_shaped",
- "pattern": [
-  "   ",
-  " B ",
-  "  A"
- ],
-
-
- "key":
- {
-  "A": {
-   "item": "minecraft:water_bucket"
-
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " B ",
+    "  A"
+  ],
+  "key": {
+    "A": [
+      {
+        "item": "am:seau_d_eau_en_bois"
+      },
+      {
+        "item": "minecraft:water_bucket"
+      }
+    ],
+    "B": {
+      "item": "minecraft:dye",
+      "data": 0
+    }
   },
-
-  "B":
-
-  {
-   "item": "minecraft:dye",
-   "data": 0
+  "result": {
+    "item": "am:gouache_noire",
+    "count": 5
   }
- },
-
-  "result":
-  {
-   "item": "am:gouache_noire",
-   "count": 5
-  }
- }
+}
 

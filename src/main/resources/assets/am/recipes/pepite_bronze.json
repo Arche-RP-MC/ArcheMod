@@ -1,27 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     "HFH",
     "   "
   ],
-
-  "key":
-  {
-    "H":
-    {
+  "key": {
+    "H": {
       "item": "am:pepite_etain"
     },
-    "F":
-    {
+    "F": {
       "item": "am:pepite_cuivre"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:pepite_bronze",
     "count": 3
   }

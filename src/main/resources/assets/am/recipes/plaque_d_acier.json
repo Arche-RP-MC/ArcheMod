@@ -1,33 +1,30 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " PP",
     " PP",
     " CM"
   ],
-
-  "key":
-  {
-    "C":
-    {
+  "key": {
+    "C": {
       "item": "am:pinces",
       "data": 32767
     },
-    "P":
-    {
+    "P": {
       "item": "am:acier_fondu"
     },
-    "M":
-    {
-      "item": "am:marteau_en_fer",
-      "data": 32767
-    }
+    "M": [
+      {
+        "item": "am:marteau_en_acier",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_en_fer",
+        "data": 32767
+      }
+    ]
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:plaque_d_acier",
     "count": 1
   }

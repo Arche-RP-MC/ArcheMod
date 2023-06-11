@@ -1,29 +1,20 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     " B ",
     " C "
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "am:brioche"
     },
-
-    "C":
-    {
+    "C": {
       "item": "am:hachoir",
-      "data":32767
+      "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:tranche_de_brioche",
     "count": 4
   }

@@ -1,29 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "  P",
     " T ",
     "   "
   ],
-
-  "key":
-  {
-    "T":
-    {
+  "key": {
+    "T": {
       "item": "minecraft:sandstone",
       "data": 0
     },
-    "P":
-    {
-        "item": "am:marteau_burin_en_acier",
-        "data": 32767
+    "P": {
+      "item": "am:marteau_burin_en_acier",
+      "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "minecraft:sandstone_stairs",
     "count": 1
   }

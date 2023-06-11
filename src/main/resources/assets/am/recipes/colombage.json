@@ -1,41 +1,34 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "EG ",
     "FFL",
     " C "
   ],
-
-  "key":
-  {
-    "C":
-    {
+  "key": {
+    "C": {
       "item": "am:mortier"
-
     },
-    "E":
-    {
+    "E": {
       "item": "am:paille"
     },
-    "F":
-    {
+    "F": {
       "item": "minecraft:clay_ball"
     },
-    "G":
-    {
+    "G": {
       "item": "minecraft:sand",
       "data": 0
     },
-    "L":
-    {
-      "item": "minecraft:water_bucket"
-    }
+    "L": [
+      {
+        "item": "am:seau_d_eau_en_bois"
+      },
+      {
+        "item": "minecraft:water_bucket"
+      }
+    ]
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:colombage",
     "count": 4
   }

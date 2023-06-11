@@ -1,32 +1,28 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " T ",
     " HG",
     "   "
   ],
-
-  "key":
-  {
-    "H":
-    {
-      "item": "minecraft:water_bucket"
-    },
-    "T":
-    {
+  "key": {
+    "H": [
+      {
+        "item": "am:seau_d_eau_en_bois"
+      },
+      {
+        "item": "minecraft:water_bucket"
+      }
+    ],
+    "T": {
       "item": "am:cendres"
     },
-    "G":
-    {
+    "G": {
       "item": "am:spatule",
       "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:soude",
     "count": 1
   }

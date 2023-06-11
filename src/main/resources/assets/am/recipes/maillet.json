@@ -1,36 +1,26 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     "GHT",
     " B "
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "am:manche"
     },
-    "T":
-    {
+    "T": {
       "item": "am:clous"
     },
-    "H":
-    {
+    "H": {
       "item": "am:planche"
     },
-    "G":
-    {
+    "G": {
       "item": "am:ciseaux_a_bois",
       "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:maillet",
     "count": 1
   }

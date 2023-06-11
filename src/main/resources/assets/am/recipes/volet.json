@@ -1,32 +1,28 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "THH",
     "THH",
     "G  "
   ],
-
-  "key":
-  {
-    "H":
-    {
+  "key": {
+    "H": {
       "item": "am:planche"
     },
-    "T":
-    {
-      "item": "am:pepite_fer"
-    },
-    "G":
-    {
+    "T": [
+      {
+        "item": "am:pepite_fer"
+      },
+      {
+        "item": "am:pepite_bronze"
+      }
+    ],
+    "G": {
       "item": "am:ciseaux_a_bois",
       "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:volet",
     "count": 1
   }

@@ -1,28 +1,20 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     " B ",
     " M "
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "am:andesite_polie"
     },
-    "M":
-    {
+    "M": {
       "item": "am:marteau_burin_en_bronze",
       "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "minecraft:stonebrick",
     "data": 3,
     "count": 1

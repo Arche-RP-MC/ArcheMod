@@ -1,41 +1,30 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "IGF",
     "BLB",
     "BBB"
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "am:planche"
     },
-    "L":
-    {
+    "L": {
       "item": "am:barre_fer"
     },
-    "F":
-    {
+    "F": {
       "item": "am:clous"
     },
-    "I":
-    {
+    "I": {
       "item": "minecraft:dye",
       "data": 6
     },
-    "G":
-    {
+    "G": {
       "item": "am:maillet",
       "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "minecraft:cyan_shulker_box",
     "count": 1
   }

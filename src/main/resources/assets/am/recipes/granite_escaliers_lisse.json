@@ -1,32 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "BM ",
     "BBE",
     "BBB"
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "am:brique_de_granite"
     },
-    "E":
-    {
+    "E": {
       "item": "am:mortier"
     },
-    "M":
-    {
+    "M": {
       "item": "am:spatule",
       "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:granitesmooth2stair",
     "count": 2
   }

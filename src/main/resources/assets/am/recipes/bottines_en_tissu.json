@@ -1,36 +1,26 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     "LNL",
     "FMF"
   ],
-
-  "key":
-  {
-    "F":
-    {
+  "key": {
+    "F": {
       "item": "am:etoffe"
     },
-    "N":
-    {
+    "N": {
       "item": "am:ciseaux_de_couture",
       "data": 32767
     },
-    "L":
-    {
+    "L": {
       "item": "am:laniere_de_cuir"
     },
-    "M":
-    {
+    "M": {
       "item": "am:cuir_tanne"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:bottines_en_tissu",
     "count": 1
   }

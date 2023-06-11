@@ -1,29 +1,20 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     " B ",
     " E "
   ],
-
-  "key":
-  {
-    
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "am:poisson_chat"
     },
-    "E":
-    {
+    "E": {
       "item": "am:hachoir",
       "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:morceau_de_poisson",
     "count": 1
   }

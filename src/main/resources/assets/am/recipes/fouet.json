@@ -1,32 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " CT",
     " TT",
     "I  "
   ],
-
-  "key":
-  {
-    "C":
-    {
+  "key": {
+    "C": {
       "item": "am:ciseaux_de_couture",
       "data": 32767
     },
-    "T":
-    {
+    "T": {
       "item": "am:laniere_de_cuir"
     },
-    "I":
-    {
+    "I": {
       "item": "am:manche"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:fouet",
     "count": 1
   }

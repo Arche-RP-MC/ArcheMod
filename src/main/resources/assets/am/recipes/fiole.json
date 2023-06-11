@@ -1,34 +1,24 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "PL ",
     " F ",
     " F "
   ],
-
-  "key":
-  {
-    "P":
-    {
+  "key": {
+    "P": {
       "item": "am:pinces",
       "data": 32767
-
     },
-    "F":
-    {
+    "F": {
       "item": "am:verre_en_fusion"
     },
-    "L":
-    {
+    "L": {
       "item": "am:canne_de_verrier",
       "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:fiole",
     "count": 2
   }

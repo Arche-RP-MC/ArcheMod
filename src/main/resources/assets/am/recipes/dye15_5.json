@@ -1,32 +1,29 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     "APA",
     " M "
   ],
-
-  "key":
-  {
-    "M":
-    {
-      "item": "am:mortier_pilon_en_pierre",
-      "data": 32767
-    },
-    "P":
-    {
+  "key": {
+    "M": [
+      {
+        "item": "mortier_pilon_en_pierre",
+        "data": 32767
+      },
+      {
+        "item": "am:mortier_pilon_en_bois",
+        "data": 32767
+      }
+    ],
+    "P": {
       "item": "am:poussiere_minerale"
     },
-    "A":
-    {
+    "A": {
       "item": "am:lys"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "minecraft:dye",
     "data": 15,
     "count": 2

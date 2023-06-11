@@ -1,33 +1,24 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " P ",
     "HT ",
     "   "
   ],
-
-  "key":
-  {
-    "H":
-    {
+  "key": {
+    "H": {
       "item": "minecraft:stained_glass_pane",
       "data": 1
     },
-    "T":
-    {
+    "T": {
       "item": "minecraft:stick"
     },
-    "P":
-    {
-        "item": "am:pinces",
-        "data": 32767
+    "P": {
+      "item": "am:pinces",
+      "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:lucarne_orange",
     "count": 1
   }

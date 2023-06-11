@@ -1,41 +1,30 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "GTP",
     "BVB",
     "BVB"
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "am:planche"
     },
-    "V":
-    {
+    "V": {
       "item": "minecraft:stick"
     },
-    "P":
-    {
+    "P": {
       "item": "am:clous"
     },
-    "T":
-    {
+    "T": {
       "item": "am:ciseaux_a_bois",
       "data": 32767
     },
-    "G":
-    {
+    "G": {
       "item": "am:maillet",
       "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "minecraft:ladder",
     "count": 2
   }

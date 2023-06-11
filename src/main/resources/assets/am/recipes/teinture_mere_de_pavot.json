@@ -1,36 +1,26 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "P C",
     " G ",
     " M "
   ],
-
-  "key":
-  {
-    "P":
-    {
+  "key": {
+    "P": {
       "item": "am:miel"
     },
-    "C":
-    {
+    "C": {
       "item": "am:extrait_de_pavot_concentre"
     },
-    "G":
-    {
+    "G": {
       "item": "am:bocal"
     },
-    "M":
-    {
+    "M": {
       "item": "am:bouteille_de_vin_rouge",
       "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:teinture_mere_de_pavot",
     "count": 1
   }

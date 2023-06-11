@@ -1,36 +1,32 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "  P",
     "RTT",
     "YTT"
   ],
-
-  "key":
-  {
-    "T":
-    {
+  "key": {
+    "T": {
       "item": "am:plaque_de_fer"
     },
-    "R":
-    {
+    "R": {
       "item": "am:rouage"
     },
-    "Y":
-    {
+    "Y": {
       "item": "am:clous"
     },
-    "P":
-    {
-        "item": "am:marteau_en_bronze",
+    "P": [
+      {
+        "item": "am:marteau_en_fer",
         "data": 32767
-    }
+      },
+      {
+        "item": "am:marteau_en_acier",
+        "data": 32767
+      }
+    ]
   },
-
-  "result":
-  {
+  "result": {
     "item": "minecraft:iron_door",
     "count": 1
   }

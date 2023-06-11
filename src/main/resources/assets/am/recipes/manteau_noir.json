@@ -1,36 +1,26 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "BC ",
     " D ",
     "EEE"
   ],
-
-  "key":
-  {
-    "C":
-    {
+  "key": {
+    "C": {
       "item": "am:ciseaux_de_couture",
       "data": 32767
     },
-    "E":
-    {
+    "E": {
       "item": "am:etoffe_noire"
     },
-    "D":
-    {
+    "D": {
       "item": "am:veste_blanc"
     },
-    "B":
-    {
+    "B": {
       "item": "am:bobine_de_fil"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:manteau_noir",
     "count": 1
   }

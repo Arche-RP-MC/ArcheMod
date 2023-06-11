@@ -1,38 +1,26 @@
 {
-  "type": "minecraft:crafting_shaped", 
-  "pattern": 
- [ 
- "   ", 
- "OHS", 
- "FFF" 
- ], 
-
-
- "key": 
- { 
- "S": 
- { 
- "item": "am:sel"
- 
-},
- "O": 
- { 
- "item": "minecraft:egg"
- 
-},
- "H": 
- { 
- "item": "am:graisse_animale"
-
-},
-"F": 
- { 
- "item": "am:farine"
-}
-},
- "result": 
- { 
- "item": "am:beignet_cru",
- "count": 6
-}
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "OHS",
+    "FFF"
+  ],
+  "key": {
+    "S": {
+      "item": "am:sel"
+    },
+    "O": {
+      "item": "minecraft:egg"
+    },
+    "H": {
+      "item": "am:graisse_animale"
+    },
+    "F": {
+      "item": "am:farine"
+    }
+  },
+  "result": {
+    "item": "am:beignet_cru",
+    "count": 6
+  }
 }

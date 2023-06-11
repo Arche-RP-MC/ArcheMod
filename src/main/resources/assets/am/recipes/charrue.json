@@ -1,52 +1,43 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "OLC",
     "AGP",
     "BLB"
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "astikorcarts:wheel"
     },
-    "A":
-    {
+    "A": {
       "item": "am:rouage"
     },
-    "C":
-    {
+    "C": {
       "item": "am:clous"
     },
-    "O":
-    {
-      "item": "am:marteau_en_fer",
-      "data": 32767
-    },
-    "G":
-    {
+    "O": [
+      {
+        "item": "marteau_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_en_acier",
+        "data": 32767
+      }
+    ],
+    "G": {
       "item": "minecraft:planks",
       "data": 0
     },
-    "P":
-    {
+    "P": {
       "item": "am:vernis",
       "data": 32767
-
     },
-    "L":
-     {
+    "L": {
       "item": "am:barre_fer"
-
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "astikorcarts:plowcart",
     "count": 1
   }

@@ -1,32 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " Z ",
     " H ",
     "BH "
   ],
-
-  "key":
-  {
-    "H":
-    {
+  "key": {
+    "H": {
       "item": "am:planche"
     },
-    "Z":
-    {
+    "Z": {
       "item": "am:tete_couteau_fer"
     },
-    "B":
-    {
+    "B": {
       "item": "am:ciseaux_a_bois",
       "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:javelot_en_fer",
     "count": 1
   }

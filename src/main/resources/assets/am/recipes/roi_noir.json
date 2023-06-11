@@ -1,33 +1,30 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "L V",
     " P ",
     "   "
   ],
-
-  "key":
-  {
-    "P":
-    {
+  "key": {
+    "P": {
       "item": "am:pion_noir"
     },
-    "L":
-    {
-      "item": "am:lime_en_fer",
-      "data": 32767
-    },
-    "V":
-    {
+    "L": [
+      {
+        "item": "am:lime_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:lime_en_acier",
+        "data": 32767
+      }
+    ],
+    "V": {
       "item": "am:vernis",
       "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:roi_noir",
     "count": 1
   }

@@ -1,27 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     " L ",
     " BB"
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "minecraft:milk_bucket"
     },
-    "L":
-    {
+    "L": {
       "item": "am:moule"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:bleu_entier",
     "count": 1
   }

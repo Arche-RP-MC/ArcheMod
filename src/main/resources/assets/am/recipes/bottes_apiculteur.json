@@ -1,36 +1,26 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     "LNL",
     "FMF"
   ],
-
-  "key":
-  {
-    "F":
-    {
+  "key": {
+    "F": {
       "item": "am:cire"
     },
-    "N":
-    {
+    "N": {
       "item": "am:ciseaux_de_couture",
       "data": 32767
     },
-    "L":
-    {
+    "L": {
       "item": "am:etoffe"
     },
-    "M":
-    {
+    "M": {
       "item": "am:bottines_en_tissu"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:bottes_apiculteur",
     "count": 1
   }

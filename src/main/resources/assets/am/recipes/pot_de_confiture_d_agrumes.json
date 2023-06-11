@@ -1,39 +1,28 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "III",
     "BCD",
     " E "
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "am:abricot"
     },
-    "C":
-    {
+    "C": {
       "item": "am:clementine"
     },
-    "D":
-    {
+    "D": {
       "item": "am:orange"
     },
-    "I":
-    {
+    "I": {
       "item": "minecraft:sugar"
     },
-    "E":
-    {
+    "E": {
       "item": "am:bocal"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:pot_de_confiture_d_agrumes",
     "count": 1
   }

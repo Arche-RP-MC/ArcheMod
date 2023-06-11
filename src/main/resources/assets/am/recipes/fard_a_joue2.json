@@ -1,51 +1,44 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " B ",
     "SCO",
     "GHM"
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "am:boite_a_poudre"
     },
-    "S":
-    {
+    "S": {
       "item": "am:cire"
     },
-    "C":
-    {
+    "C": {
       "item": "am:miel"
     },
-    "O":
-    {
+    "O": {
       "item": "minecraft:dye",
       "data": 1
     },
-    "G":
-    {
+    "G": {
       "item": "am:bouteille_huile_olive",
       "data": 32767
     },
-    "H":
-    {
+    "H": {
       "item": "am:huile_essentielle",
       "data": 32767
     },
-    "M":
-    {
-      "item": "am:mortier_pilon_en_pierre",
-      "data": 32767
-    }
+    "M": [
+      {
+        "item": "am:mortier_pilon_en_pierre",
+        "data": 32767
+      },
+      {
+        "item": "am:mortier_pilon_en_bois",
+        "data": 32767
+      }
+    ]
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:fard_a_joue",
     "count": 1
   }

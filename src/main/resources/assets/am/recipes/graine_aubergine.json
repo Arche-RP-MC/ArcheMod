@@ -1,29 +1,26 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     " P ",
     " M "
   ],
-
-  "key":
-  {
-    "M":
-    {
-      "item": "am:mortier_pilon_en_pierre",
-      "data": 32767
-    },
-    "P":
-    {
+  "key": {
+    "M": [
+      {
+        "item": "mortier_pilon_en_pierre",
+        "data": 32767
+      },
+      {
+        "item": "am:mortier_pilon_en_bois",
+        "data": 32767
+      }
+    ],
+    "P": {
       "item": "am:aubergine_cru"
     }
-    
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:graine_aubergine",
     "data": 0,
     "count": 6

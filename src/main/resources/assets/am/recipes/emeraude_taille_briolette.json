@@ -1,43 +1,37 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "P L",
     " G ",
     "O E"
   ],
-
-  "key":
-  {
-    "E":
-    {
+  "key": {
+    "E": {
       "item": "am:etoffe"
     },
-    "O":
-    {
+    "O": {
       "item": "am:loupe",
       "data": 32767
     },
-    "G":
-    {
+    "G": {
       "item": "am:geode_emeraude"
     },
-    "P":
-    {
+    "P": {
       "item": "am:pinces",
       "data": 32767
-
     },
-    "L":
-     {
-      "item": "am:lime_en_fer",
-      "data": 32767
-    }
+    "L": [
+      {
+        "item": "am:lime_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:lime_en_acier",
+        "data": 32767
+      }
+    ]
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:emeraude_taille_briolette",
     "count": 1
   }

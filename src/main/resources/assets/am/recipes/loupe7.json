@@ -1,42 +1,38 @@
 {
-  "type": "minecraft:crafting_shaped", 
-  "pattern": 
- [ 
- "AHC", 
- " Z ", 
- " D " 
- ], 
-
-
- "key": 
- { 
- "A": 
- { 
-  "item": "am:lime_en_acier",
-  "data": 32767
- },
- "D": 
- { 
-  "item": "am:barre_bronze"
- },
- "Z": 
- { 
-  "item": "am:verre_en_fusion"
- },
- "H": 
- { 
-  "item": "am:pinces",
-  "data": 32767
- },
- "C": 
- { 
-"item": "am:marteau_en_bronze",
- "data": 32767 
-}
-},
- "result": 
- { 
- "item": "am:loupe", 
- "count": 1
-}
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AHC",
+    " Z ",
+    " D "
+  ],
+  "key": {
+    "A": {
+      "item": "am:lime_en_acier",
+      "data": 32767
+    },
+    "D": {
+      "item": "am:barre_bronze"
+    },
+    "Z": {
+      "item": "am:verre_en_fusion"
+    },
+    "H": {
+      "item": "am:pinces",
+      "data": 32767
+    },
+    "C": [
+      {
+        "item": "am:marteau_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_en_acier",
+        "data": 32767
+      }
+    ]
+  },
+  "result": {
+    "item": "am:loupe",
+    "count": 1
+  }
 }

@@ -1,32 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     "FNG",
     "   "
   ],
-
-  "key":
-  {
-    "N":
-    {
+  "key": {
+    "N": {
       "item": "am:etoffe_grise"
     },
-    "G":
-    {
+    "G": {
       "item": "am:bobine_de_laine"
     },
-    "F":
-    {
+    "F": {
       "item": "am:ciseaux_de_couture",
       "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:ruban_gris",
     "count": 3
   }

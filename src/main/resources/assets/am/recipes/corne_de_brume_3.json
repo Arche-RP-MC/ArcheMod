@@ -1,36 +1,26 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " E ",
     "LCG",
     "   "
   ],
-
-  "key":
-  {
-    "C":
-    {
+  "key": {
+    "C": {
       "item": "am:corne"
     },
-    "E":
-    {
+    "E": {
       "item": "am:etoffe"
     },
-    "L":
-    {
+    "L": {
       "item": "am:laniere_de_cuir"
     },
-    "G":
-    {
+    "G": {
       "item": "am:lime_en_acier",
       "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:corne_de_brume",
     "count": 1
   }

@@ -1,16 +1,12 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "BGB",
     "BFB",
     "BBB"
   ],
-
   "key": {
-    "B":
-    {
+    "B": {
       "item": "am:bobine_de_laine"
     },
     "G": {
@@ -22,8 +18,7 @@
       "data": 0
     }
   },
-  "result":
-  {
+  "result": {
     "item": "minecraft:wool",
     "data": 15,
     "count": 3

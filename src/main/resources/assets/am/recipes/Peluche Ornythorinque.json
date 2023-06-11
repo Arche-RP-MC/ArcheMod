@@ -1,33 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "HHH",
     "GCG",
     "GGG"
   ],
-
-  "key":
-  {
-    "H":
-    {
+  "key": {
+    "H": {
       "item": "am:etoffe_noire"
     },
-    "C":
-    {
+    "C": {
       "item": "am:ciseaux_de_couture",
       "data": 32767
-
     },
-    "G":
-    {
+    "G": {
       "item": "am:etoffe_grise"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "zawa:platypus_plush",
     "count": 1
   }

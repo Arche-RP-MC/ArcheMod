@@ -1,41 +1,36 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "B V",
     "LPT",
     "V B"
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "am:barre_cuivre"
     },
-    "V":
-    {
+    "V": {
       "item": "minecraft:glass"
     },
-    "T":
-    {
-      "item": "am:trousse_d_ingenieur_en_fer",
-      "data": 32767
-    },
-    "P":
-    {
+    "T": [
+      {
+        "item": "am:trousse_d_ingenieur_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:trousse_d_ingenieur_en_acier",
+        "data": 32767
+      }
+    ],
+    "P": {
       "item": "am:pepite_cuivre"
     },
-    "L":
-    {
+    "L": {
       "item": "am:loupe",
       "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:sablier_en_cuivre",
     "count": 1
   }

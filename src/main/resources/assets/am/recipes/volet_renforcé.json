@@ -1,36 +1,31 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "THH",
     "THH",
     "GJ "
   ],
-
-  "key":
-  {
-    "H":
-    {
+  "key": {
+    "H": {
       "item": "am:planche"
     },
-    "J":
-    {
-      "item": "am:barre_fer"
-    },
-    "T":
-    {
+    "J": [
+      {
+        "item": "am:pepite_fer"
+      },
+      {
+        "item": "am:pepite_bronze"
+      }
+    ],
+    "T": {
       "item": "am:pepite_bronze"
     },
-    "G":
-    {
+    "G": {
       "item": "am:ciseaux_a_bois",
       "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:volet_renforce",
     "count": 1
   }

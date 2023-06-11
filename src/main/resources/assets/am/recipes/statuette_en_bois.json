@@ -1,30 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     " P ",
     "L  "
   ],
-
-  "key":
-  {
-    "P":
-    {
+  "key": {
+    "P": {
       "item": "minecraft:log",
       "data": 0
     },
-    "L":
-    {
+    "L": {
       "item": "am:ciseaux_a_bois",
       "data": 32767
     }
-
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:statuette_en_bois",
     "count": 1
   }

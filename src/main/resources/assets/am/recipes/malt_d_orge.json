@@ -1,29 +1,24 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     "CL ",
     "   "
   ],
-
-  "key":
-  {
-
-    "C":
-    {
+  "key": {
+    "C": {
       "item": "am:graine_orge"
     },
-    "L":
-    {
-      "item": "minecraft:water_bucket"
-    }
-
+    "L": [
+      {
+        "item": "am:seau_d_eau_en_bois"
+      },
+      {
+        "item": "minecraft:water_bucket"
+      }
+    ]
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:malt_orge",
     "count": 1
   }

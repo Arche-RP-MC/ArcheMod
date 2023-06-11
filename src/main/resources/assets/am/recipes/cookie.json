@@ -1,27 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     " G ",
     "BBB"
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "am:pate_diverse"
     },
-    "G":
-    {
+    "G": {
       "item": "am:chocolat"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "minecraft:cookie",
     "count": 4
   }

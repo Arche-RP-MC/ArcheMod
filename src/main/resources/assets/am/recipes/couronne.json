@@ -1,33 +1,30 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     "CCG",
     "  H"
   ],
-
-  "key":
-  {
-    "C":
-    {
+  "key": {
+    "C": {
       "item": "am:plaque_d_or"
     },
-    "H":
-    {
+    "H": {
       "item": "am:loupe",
       "data": 32767
     },
-    "G":
-    {
-      "item": "am:lime_en_fer",
-      "data": 32767
-    }
+    "G": [
+      {
+        "item": "am:lime_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:lime_en_acier",
+        "data": 32767
+      }
+    ]
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:couronne",
     "count": 1
   }

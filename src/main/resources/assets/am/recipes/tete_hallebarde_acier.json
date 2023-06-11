@@ -1,37 +1,33 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " M ",
     "PFL",
     "   "
   ],
-
-  "key":
-  {
-    "M":
-    {
-      "item": "am:marteau_en_acier",
-      "data": 32767
-    },
-    "P":
-    {
+  "key": {
+    "M": [
+      {
+        "item": "marteau_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_en_acier",
+        "data": 32767
+      }
+    ],
+    "P": {
       "item": "am:pinces",
       "data": 32767
     },
-    "L":
-    {
+    "L": {
       "item": "am:tete_lance_acier"
     },
-    "F":
-    {
+    "F": {
       "item": "am:tete_masse_acier"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:tete_hallebarde_acier",
     "count": 1
   }

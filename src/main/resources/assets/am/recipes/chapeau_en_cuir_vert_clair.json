@@ -1,38 +1,27 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     "CRR",
     "LK "
   ],
-
-  "key":
-  {
-    "C":
-    {
+  "key": {
+    "C": {
       "item": "am:ciseaux_de_couture",
       "data": 32767
     },
-    "K":
-    {
+    "K": {
       "item": "am:etoffe"
     },
-    "R":
-    {
+    "R": {
       "item": "am:cuir_tanne"
     },
-    "L":
-    {
+    "L": {
       "item": "minecraft:dye",
       "data": 10
     }
-
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:chapeau_en_cuir_vert_clair",
     "count": 1
   }

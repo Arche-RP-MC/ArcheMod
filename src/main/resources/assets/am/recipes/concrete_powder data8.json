@@ -1,36 +1,26 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " GF",
     " BL",
     " BL"
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "minecraft:sand"
     },
-    "L":
-    {
+    "L": {
       "item": "minecraft:gravel"
     },
-    "G":
-    {
+    "G": {
       "item": "am:mortier"
     },
-    "F":
-    {
+    "F": {
       "item": "minecraft:dye",
       "data": 7
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "minecraft:concrete_powder",
     "data": 8,
     "count": 1

@@ -1,29 +1,20 @@
 {
-  "type": "minecraft:crafting_shaped", 
-  "pattern": 
- [ 
- "   ", 
- " C ", 
- "PPP" 
- ], 
-
-
- "key": 
- { 
- "P": 
- { 
- "item": "am:pate_a_pain"
- 
-},
- "C": 
- { 
- "item": "am:chocolat"
- 
-}
-},
- "result": 
- { 
- "item": "am:biscuit_au_chocolat_cru",
- "count": 3
-}
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " C ",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "am:pate_a_pain"
+    },
+    "C": {
+      "item": "am:chocolat"
+    }
+  },
+  "result": {
+    "item": "am:biscuit_au_chocolat_cru",
+    "count": 3
+  }
 }

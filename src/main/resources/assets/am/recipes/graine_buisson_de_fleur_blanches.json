@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " P ",
+    " M "
+  ],
+  "key": {
+    "M": [
+      {
+        "item": "am:mortier_pilon_en_pierre",
+        "data": 32767
+      },
+      {
+        "item": "am:mortier_pilon_en_bois",
+        "data": 32767
+      }
+    ],
+    "P": {
+      "item": "am:buisson_de_fleurs_blanches2"
+    }
+  },
+  "result": {
+    "item": "am:graine_buisson_de_fleurs_blanches",
+    "data": 0,
+    "count": 2
+  }
+}

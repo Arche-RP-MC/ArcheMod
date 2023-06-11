@@ -1,39 +1,28 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " BB",
     "BCB",
     "OEM"
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "am:creme"
     },
-    "C":
-    {
+    "C": {
       "item": "minecraft:milk_bucket"
     },
-    "O":
-    {
+    "O": {
       "item": "am:farine"
     },
-   "E":
-    {
+    "E": {
       "item": "minecraft:milk_bucket"
     },
-    "M":
-    {
+    "M": {
       "item": "am:pate_diverse"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:chou_a_la_creme",
     "count": 3
   }

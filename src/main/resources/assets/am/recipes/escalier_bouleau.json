@@ -1,33 +1,29 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "T  ",
     "F P",
     "TT "
   ],
-
-  "key":
-  {
-    "F":
-    {
+  "key": {
+    "F": {
       "item": "am:clous"
     },
-
-    "P":
-    {
-      "item": "am:marteau_en_fer",
-      "data": 32767
-    },
-    "T":
-    {
+    "P": [
+      {
+        "item": "marteau_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_en_acier",
+        "data": 32767
+      }
+    ],
+    "T": {
       "item": "am:planche_bouleau"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:hiddenplanckbirchstair",
     "count": 1
   }

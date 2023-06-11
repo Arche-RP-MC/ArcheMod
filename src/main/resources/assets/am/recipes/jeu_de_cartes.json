@@ -1,44 +1,32 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " PK",
     "FPI",
     " PJ"
   ],
-
-  "key":
-  {
-    "I":
-    {
+  "key": {
+    "I": {
       "item": "am:pinceau",
       "data": 32767
     },
-    "J":
-    {
+    "J": {
       "item": "am:palette_de_peinture",
       "data": 32767
     },
-    "K":
-    {
+    "K": {
       "item": "am:vernis",
       "data": 32767
     },
-
-    "F":
-    {
+    "F": {
       "item": "minecraft:shears",
       "data": 32767
     },
-    "P":
-    {
+    "P": {
       "item": "am:lot_de_papiers"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:jeu_de_cartes",
     "count": 1
   }

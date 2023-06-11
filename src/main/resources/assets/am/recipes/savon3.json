@@ -1,55 +1,41 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "PML",
     "HCG",
     " SI"
   ],
-
-  "key":
-  {
-    "M":
-    {
+  "key": {
+    "M": {
       "item": "am:moule"
     },
-    "H":
-    {
+    "H": {
       "item": "am:huile_essentielle",
       "data": 32767
     },
-    "L":
-    {
+    "L": {
       "item": "am:bouteille_huile_olive",
       "data": 32767
     },
-    "C":
-    {
+    "C": {
       "item": "am:cendres"
     },
-    "P":
-    {
+    "P": {
       "item": "am:miel"
     },
-    "G":
-    {
+    "G": {
       "item": "am:cire"
     },
-    "S":
-    {
+    "S": {
       "item": "am:bouteille_d_lait",
       "data": 32767
     },
-    "I":
-    {
+    "I": {
       "item": "am:spatule",
       "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:savon",
     "count": 1
   }

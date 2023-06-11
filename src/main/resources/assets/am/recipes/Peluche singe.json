@@ -1,33 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "HHH",
     "GCG",
     "GGG"
   ],
-
-  "key":
-  {
-    "H":
-    {
+  "key": {
+    "H": {
       "item": "am:etoffe_gris_clair"
     },
-    "C":
-    {
+    "C": {
       "item": "am:ciseaux_de_couture",
       "data": 32767
-
     },
-    "G":
-    {
+    "G": {
       "item": "am:etoffe_marron"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "zawa:monkey_plush",
     "count": 1
   }

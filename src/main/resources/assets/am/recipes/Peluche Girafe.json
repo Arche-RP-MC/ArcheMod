@@ -1,33 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "HGH",
     "GCG",
     "HGH"
   ],
-
-  "key":
-  {
-    "H":
-    {
+  "key": {
+    "H": {
       "item": "am:etoffe_marron"
     },
-    "C":
-    {
+    "C": {
       "item": "am:ciseaux_de_couture",
       "data": 32767
-
     },
-    "G":
-    {
+    "G": {
       "item": "am:etoffe"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "zawa:giraffe_plush",
     "count": 1
   }

@@ -1,35 +1,24 @@
 {
-  "type": "minecraft:crafting_shaped", 
-  "pattern": 
- [ 
- " A ",
- "FAA",
- " D " 
- ], 
-
-
- "key": 
- { 
- "D": 
- { 
- "item": "am:tripes"
- 
-},
-  "F":
-  {
-   "item": "am:hachoir",
-   "data": 32767
-
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " A ",
+    "FAA",
+    " D "
+  ],
+  "key": {
+    "D": {
+      "item": "am:tripes"
+    },
+    "F": {
+      "item": "am:hachoir",
+      "data": 32767
+    },
+    "A": {
+      "item": "am:sang"
+    }
   },
- "A":
- {
- "item": "am:sang"
-
-}
-},
- "result": 
- { 
- "item": "am:boudin_cru",
- "count": 1
-}
+  "result": {
+    "item": "am:boudin_cru",
+    "count": 1
+  }
 }

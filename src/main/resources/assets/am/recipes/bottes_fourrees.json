@@ -1,40 +1,46 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " F ",
     "LNL",
     "MCM"
   ],
-
-  "key":
-  {
-    "C":
-    {
+  "key": {
+    "C": {
       "item": "am:clous"
     },
-    "F":
-    {
-      "item": "am:fourrure_blanche"
-    },
-    "N":
-    {
+    "F": [
+      {
+        "item": "am:fourrure_blanche"
+      },
+      {
+        "item": "am:fourrure_rousse"
+      },
+      {
+        "item": "am:fourrure_rayee"
+      },
+      {
+        "item": "am:fourrure_mouchetee"
+      },
+      {
+        "item": "am:fourrure_grise"
+      },
+      {
+        "item": "am:fourrure_brune"
+      }
+    ],
+    "N": {
       "item": "am:ciseaux_de_couture",
       "data": 32767
     },
-    "L":
-    {
+    "L": {
       "item": "am:laniere_de_cuir"
     },
-    "M":
-    {
+    "M": {
       "item": "am:cuir_tanne"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:bottes_fourrees",
     "count": 1
   }

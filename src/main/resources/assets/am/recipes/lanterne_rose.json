@@ -1,33 +1,24 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " P ",
     "HTH",
     "   "
   ],
-
-  "key":
-  {
-    "H":
-    {
+  "key": {
+    "H": {
       "item": "minecraft:stained_glass_pane",
       "data": 6
     },
-    "T":
-    {
+    "T": {
       "item": "am:barre_etain"
     },
-    "P":
-    {
-        "item": "am:pinces",
-        "data": 32767
+    "P": {
+      "item": "am:pinces",
+      "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:lanterne_rose",
     "count": 1
   }

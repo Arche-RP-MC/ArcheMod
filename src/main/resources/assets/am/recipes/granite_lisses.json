@@ -1,32 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "BBB",
     "OBO",
     " M "
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "am:brique_de_granite"
     },
-    "O":
-    {
+    "O": {
       "item": "am:mortier"
     },
-    "M":
-    {
+    "M": {
       "item": "am:spatule",
       "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:granite_polie",
     "count": 1
   }

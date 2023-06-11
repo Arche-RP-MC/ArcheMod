@@ -1,33 +1,30 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "  M",
     " PF",
     "   "
   ],
-
-  "key":
-  {
-    "M":
-    {
-      "item": "am:marteau_en_acier",
-      "data": 32767
-    },
-    "P":
-    {
+  "key": {
+    "M": [
+      {
+        "item": "marteau_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_en_acier",
+        "data": 32767
+      }
+    ],
+    "P": {
       "item": "am:pinces",
       "data": 32767
     },
-    "F":
-    {
+    "F": {
       "item": "am:barre_or"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:tete_couteau_acier",
     "count": 1
   }

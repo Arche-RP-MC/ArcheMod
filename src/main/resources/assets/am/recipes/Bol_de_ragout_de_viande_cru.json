@@ -1,44 +1,30 @@
 {
-  "type": "minecraft:crafting_shaped", 
-  "pattern": 
- [ 
- "FA ",
- "BE ",
- "CCC" 
- ], 
-
-
- "key": 
- { 
- "A": 
- { 
- "item": "am:viande_crue"
- 
-},
- "B": 
- { 
- "item": "am:ail"
- 
-},
- "C": 
- { 
- "item": "minecraft:bowl"
-
-},
-  "F":
-  {
-   "item": "am:hachoir",
-   "data": 32767
-
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "FA ",
+    "BE ",
+    "CCC"
+  ],
+  "key": {
+    "A": {
+      "item": "am:lambeau-de-viande-crue"
+    },
+    "B": {
+      "item": "am:ail"
+    },
+    "C": {
+      "item": "minecraft:bowl"
+    },
+    "F": {
+      "item": "am:hachoir",
+      "data": 32767
+    },
+    "E": {
+      "item": "am:pomme_de_terre_cru"
+    }
   },
-"E": 
- { 
- "item": "am:pomme_de_terre_cru"
-}
-},
- "result": 
- { 
- "item": "am:bol_de_ragout_de_viande_cru",
- "count": 3
-}
+  "result": {
+    "item": "am:bol_de_ragout_de_viande_cru",
+    "count": 3
+  }
 }

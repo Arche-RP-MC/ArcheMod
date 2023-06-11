@@ -1,44 +1,43 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " C ",
     "L P",
     "BGM"
   ],
-
-  "key":
-  {
-    "B":
-    {
-      "item": "minecraft:water_bucket"
-    },
-    "P":
-    {
+  "key": {
+    "B": [
+      {
+        "item": "am:seau_d_eau_en_bois"
+      },
+      {
+        "item": "minecraft:water_bucket"
+      }
+    ],
+    "P": {
       "item": "am:cassis"
     },
-    "L":
-    {
+    "L": {
       "item": "am:lavande"
     },
-    "C":
-    {
+    "C": {
       "item": "am:ronces"
     },
-    "G":
-    {
+    "G": {
       "item": "am:bocal"
     },
-    "M":
-    {
-      "item": "am:mortier_pilon_en_pierre",
-      "data": 32767
-    }
+    "M": [
+      {
+        "item": "am:mortier_pilon_en_pierre",
+        "data": 32767
+      },
+      {
+        "item": "am:mortier_pilon_en_bois",
+        "data": 32767
+      }
+    ]
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:antiparasitaire",
     "count": 1
   }

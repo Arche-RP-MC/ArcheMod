@@ -1,33 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "G F",
     "LLL",
     "LLL"
   ],
-
-  "key":
-  {
-    "L":
-    {
+  "key": {
+    "L": {
       "item": "am:granite"
     },
-
-    "G":
-    {
+    "G": {
       "item": "am:maillet",
       "data": 32767
     },
-    "F":
-    {
+    "F": {
       "item": "am:clous"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:granite_wall",
     "count": 3
   }

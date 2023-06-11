@@ -1,21 +1,27 @@
 {
- "type": "minecraft:crafting_shaped",
- "pattern": [
-  "   ",
-  "AB ",
-  "   "
- ],
- "key": {
-  "A": {
-   "item": "am:marteau_en_bronze",
-   "data": 32767
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "AB ",
+    "   "
+  ],
+  "key": {
+    "A": [
+      {
+        "item": "am:marteau_en_acier",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_en_fer",
+        "data": 32767
+      }
+    ],
+    "B": {
+      "item": "am:bloc_minerai_cuivre"
+    }
   },
-  "B": {
-   "item": "am:bloc_minerai_cuivre"
-  }
- },
   "result": {
-   "item": "am:pepite_cuivre",
-   "count": 2
+    "item": "am:pepite_cuivre",
+    "count": 2
   }
- }
+}

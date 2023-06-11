@@ -1,44 +1,38 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " B ",
     "CSP",
     " GM"
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "am:narcisses"
     },
-    "P":
-    {
+    "P": {
       "item": "am:chardon"
     },
-    "C":
-    {
+    "C": {
       "item": "am:glycine"
     },
-    "S":
-    {
+    "S": {
       "item": "am:ronces"
     },
-    "G":
-    {
+    "G": {
       "item": "am:bocal"
     },
-    "M":
-    {
-      "item": "am:mortier_pilon_en_pierre",
-      "data": 32767
-    }
+    "M": [
+      {
+        "item": "am:mortier_pilon_en_pierre",
+        "data": 32767
+      },
+      {
+        "item": "am:mortier_pilon_en_bois",
+        "data": 32767
+      }
+    ]
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:soin_reparateur_interne",
     "count": 1
   }

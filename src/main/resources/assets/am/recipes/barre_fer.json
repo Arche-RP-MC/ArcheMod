@@ -1,32 +1,30 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " MP",
     "LP ",
     "P  "
   ],
-
-  "key":{
-    "P":
-    {
+  "key": {
+    "P": {
       "item": "am:fer_fondu"
     },
-    "M":
-    {
-      "item": "am:marteau_en_bronze",
-      "data": 32767
-    },
-    "L":
-    {
+    "M": [
+      {
+        "item": "am:marteau_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_en_acier",
+        "data": 32767
+      }
+    ],
+    "L": {
       "item": "am:pinces",
       "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:barre_fer",
     "count": 1
   }

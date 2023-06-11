@@ -1,32 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "FFF",
     "FPN",
     "FFF"
   ],
-
-  "key":
-  {
-    "F":
-    {
+  "key": {
+    "F": {
       "item": "minecraft:paper"
     },
-    "P":
-    {
-      "item": "am:fusain"
+    "P": {
+      "item": "am:plume_et_encrier"
     },
-    "N":
-    {
+    "N": {
       "item": "minecraft:dye",
       "data": 0
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "minecraft:map",
     "count": 1
   }

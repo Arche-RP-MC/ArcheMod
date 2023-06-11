@@ -1,41 +1,33 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     "IHJ",
     "G  "
   ],
-
-  "key":
-  {
-    "H":
-    {
+  "key": {
+    "H": {
       "item": "am:balle_en_bois"
     },
-    "J":
-    {
+    "J": {
       "item": "am:gouache_noire"
     },
-    "G":
-    {
-
-      "item": "am:lime_en_fer",
-      "data": 32767
-
-    },
-    "I":
-    {
-
+    "G": [
+      {
+        "item": "am:lime_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:lime_en_acier",
+        "data": 32767
+      }
+    ],
+    "I": {
       "item": "am:pinceau",
       "data": 32767
-
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:de",
     "count": 1
   }

@@ -1,32 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "HP ",
     "TTT",
     "TTT"
   ],
-
-  "key":
-  {
-    "H":
-    {
+  "key": {
+    "H": {
       "item": "am:clous"
     },
-    "T":
-    {
+    "T": {
       "item": "minecraft:stick"
     },
-    "P":
-    {
-        "item": "am:maillet",
+    "P": {
+      "item": "am:maillet",
       "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:bloc_de_treillage",
     "count": 1
   }

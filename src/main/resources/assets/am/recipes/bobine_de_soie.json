@@ -1,26 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     "LPL",
     "   "
   ],
-
-  "key":{
-    "P":
-    {
+  "key": {
+    "P": {
       "item": "am:bobine_en_bois"
     },
-    "L":
-    {
+    "L": {
       "item": "dawnoftimebuilder:silk_cocoons"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:bobine_de_soie",
     "count": 4
   }

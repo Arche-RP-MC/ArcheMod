@@ -1,54 +1,52 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "FVS",
     "CEM",
     "COL"
   ],
-
-  "key":
-  {
-    "F":
-    {
+  "key": {
+    "F": {
       "item": "am:pepite_fer"
     },
-    "V":
-    {
+    "V": {
       "item": "minecraft:glass_pane"
     },
-    "C":
-    {
+    "C": {
       "item": "am:clous"
     },
-    "S":
-    {
+    "S": {
       "item": "am:scie_en_fer",
       "data": 32767
     },
-    "E":
-    {
+    "E": {
       "item": "am:etoffe"
     },
-    "M":
-    {
-      "item": "am:marteau_en_fer",
-      "data": 32767
-    },
-    "L":
-    {
-      "item": "am:lime_en_fer",
-      "data": 32767
-    },
-    "O":
-    {
+    "M": [
+      {
+        "item": "marteau_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_en_acier",
+        "data": 32767
+      }
+    ],
+    "L": [
+      {
+        "item": "am:lime_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:lime_en_acier",
+        "data": 32767
+      }
+    ],
+    "O": {
       "item": "minecraft:chest"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:showcase",
     "count": 1
   }

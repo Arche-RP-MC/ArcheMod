@@ -1,28 +1,26 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     " P ",
     "FP "
   ],
-
-  "key":
-  {
-    "F":
-    {
-      "item": "am:lime_en_bronze",
-      "data": 32767
-    },
-    "P":
-    {
+  "key": {
+    "F": [
+      {
+        "item": "am:lime_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:lime_en_acier",
+        "data": 32767
+      }
+    ],
+    "P": {
       "item": "am:planche"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:boite_a_poudre",
     "count": 1
   }

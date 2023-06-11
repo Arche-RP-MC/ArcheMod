@@ -1,33 +1,30 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " N ",
     "LGL",
     "   "
   ],
-
-  "key":
-  {
-    "G":
-    {
+  "key": {
+    "G": {
       "item": "am:bobine_de_cuivre",
       "data": 32767
     },
-    "N":
-    {
-      "item": "am:trousse_d_ingenieur_en_bronze",
-      "data": 32767
-    },
-    "L":
-    {
+    "N": [
+      {
+        "item": "am:trousse_d_ingenieur_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:trousse_d_ingenieur_en_acier",
+        "data": 32767
+      }
+    ],
+    "L": {
       "item": "am:laniere_de_cuir"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "minecraft:redstone",
     "count": 2
   }

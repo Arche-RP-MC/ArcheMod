@@ -1,33 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
-     "   ",
+  "pattern": [
+    "   ",
     " B ",
     " EM"
   ],
-
-  "key":
-  {
-    
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "minecraft:fish",
-      "data" : 2
+      "data": 2
     },
-    "E":
-    {
+    "E": {
       "item": "minecraft:stick"
     },
-    "M":
-    {
+    "M": {
       "item": "am:farine"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:poisson_grille",
     "count": 1
   }

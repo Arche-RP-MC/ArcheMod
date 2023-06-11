@@ -1,40 +1,35 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "SBS",
     "C C",
     " EM"
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "am:emplatre"
     },
-    "C":
-    {
+    "C": {
       "item": "am:lys"
     },
-    "S":
-    {
+    "S": {
       "item": "am:sauge"
     },
-    "E":
-    {
+    "E": {
       "item": "am:buisson_de_fleurs_blanches"
     },
-    "M":
-    {
-      "item": "am:mortier_pilon_en_pierre",
-      "data": 32767
-    }
+    "M": [
+      {
+        "item": "am:mortier_pilon_en_pierre",
+        "data": 32767
+      },
+      {
+        "item": "am:mortier_pilon_en_bois",
+        "data": 32767
+      }
+    ]
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:emplatre_de_lys",
     "count": 1
   }

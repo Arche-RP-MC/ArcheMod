@@ -1,27 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     "FNF",
     "   "
   ],
-
-  "key":
-  {
-    "N":
-    {
+  "key": {
+    "N": {
       "item": "am:fibre_vegetale"
     },
-    "F":
-    {
+    "F": {
       "item": "minecraft:string"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:bouquet_de_fleur",
     "count": 1
   }

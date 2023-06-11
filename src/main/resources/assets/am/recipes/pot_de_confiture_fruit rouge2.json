@@ -1,31 +1,22 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "BIB",
     "IBI",
     " S "
   ],
-
-  "key":
-  {
-    "S":
-    {
+  "key": {
+    "S": {
       "item": "am:bocal"
     },
-    "I":
-    {
+    "I": {
       "item": "minecraft:sugar"
     },
-    "B":
-    {
+    "B": {
       "item": "am:fraise"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:pot_de_confiture_de_fruits_rouges",
     "count": 1
   }

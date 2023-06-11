@@ -1,32 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "BBB",
     "OBM",
     "   "
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "am:caillou_diorite"
     },
-    "O":
-    {
+    "O": {
       "item": "am:mortier"
     },
-    "M":
-    {
+    "M": {
       "item": "am:marteau_burin_en_bronze",
       "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "minecraft:stone",
     "data": 4,
     "count": 1

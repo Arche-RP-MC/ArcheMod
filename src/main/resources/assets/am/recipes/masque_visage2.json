@@ -1,35 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " B ",
     " O ",
     " H "
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "minecraft:clay_ball"
     },
-
-    "O":
-    {
+    "O": {
       "item": "minecraft:coal",
       "data": 0
     },
-
-    "H":
-    {
+    "H": {
       "item": "am:boite_a_poudre"
     }
-
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:masque_argile",
     "count": 1
   }

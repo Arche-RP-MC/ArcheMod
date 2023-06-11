@@ -1,38 +1,33 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " G ",
     " MB",
     " P "
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "am:barre_fer"
     },
-    "M":
-    {
-      "item": "am:marteau_en_bronze",
-      "data": 32767
-    },
-    "G":
-    {
+    "M": [
+      {
+        "item": "am:marteau_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_en_acier",
+        "data": 32767
+      }
+    ],
+    "G": {
       "item": "am:pinces",
       "data": 32767
     },
-    "P":
-    {
+    "P": {
       "item": "am:plaque_de_fer"
     }
-
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:arrosoir",
     "count": 1
   }

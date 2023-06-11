@@ -1,32 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "DCD",
     "L L",
     "   "
   ],
-
-  "key":
-  {
-    "C":
-    {
+  "key": {
+    "C": {
       "item": "am:ciseaux_de_couture",
       "data": 32767
     },
-    "D":
-    {
+    "D": {
       "item": "am:bobine_de_fil"
     },
-    "L":
-    {
+    "L": {
       "item": "am:etoffe_verte"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:gants_vert",
     "count": 1
   }
