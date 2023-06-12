@@ -2078,22 +2078,22 @@ public class ModItems {
     public static final Item JUPE_VIOLET = new ItemBase("jupe_violet");
     public static final Item JUPE_VERT_CLAIR = new ItemBase("jupe_vert_clair");
 
-    public static final Item SERVIETTE_NOIR = new ItemBase("serviette_noir");
-    public static final Item SERVIETTE_BLEU = new ItemBase("serviette_bleu");
-    public static final Item SERVIETTE_MARRON = new ItemBase("serviette_marron");
-    public static final Item SERVIETTE_CYAN = new ItemBase("serviette_cyan");
-    public static final Item SERVIETTE_GRIS = new ItemBase("serviette_gris");
-    public static final Item SERVIETTE_BLEU_CLAIR = new ItemBase("serviette_bleu_clair");
-    public static final Item SERVIETTE_VERT = new ItemBase("serviette_vert");
-    public static final Item SERVIETTE_MAGENTA = new ItemBase("serviette_magenta");
-    public static final Item SERVIETTE_ORANGE = new ItemBase("serviette_orange");
-    public static final Item SERVIETTE_ROSE = new ItemBase("serviette_rose");
-    public static final Item SERVIETTE_ROUGE = new ItemBase("serviette_rouge");
-    public static final Item SERVIETTE_BLANC = new ItemBase("serviette_blanc");
-    public static final Item SERVIETTE_JAUNE = new ItemBase("serviette_jaune");
-    public static final Item SERVIETTE_GRIS_CLAIR = new ItemBase("serviette_gris_clair");
-    public static final Item SERVIETTE_VIOLET = new ItemBase("serviette_violet");
-    public static final Item SERVIETTE_VERT_CLAIR = new ItemBase("serviette_vert_clair");
+    public static final Item SERVIETTE_NOIR = new Consomable2("serviette_noir");
+    public static final Item SERVIETTE_BLEU = new Consomable2("serviette_bleu");
+    public static final Item SERVIETTE_MARRON = new Consomable2("serviette_marron");
+    public static final Item SERVIETTE_CYAN = new Consomable2("serviette_cyan");
+    public static final Item SERVIETTE_GRIS = new Consomable2("serviette_gris");
+    public static final Item SERVIETTE_BLEU_CLAIR = new Consomable2("serviette_bleu_clair");
+    public static final Item SERVIETTE_VERT = new Consomable2("serviette_vert");
+    public static final Item SERVIETTE_MAGENTA = new Consomable2("serviette_magenta");
+    public static final Item SERVIETTE_ORANGE = new Consomable2("serviette_orange");
+    public static final Item SERVIETTE_ROSE = new Consomable2("serviette_rose");
+    public static final Item SERVIETTE_ROUGE = new Consomable2("serviette_rouge");
+    public static final Item SERVIETTE_BLANC = new Consomable2("serviette_blanc");
+    public static final Item SERVIETTE_JAUNE = new Consomable2("serviette_jaune");
+    public static final Item SERVIETTE_GRIS_CLAIR = new Consomable2("serviette_gris_clair");
+    public static final Item SERVIETTE_VIOLET = new Consomable2("serviette_violet");
+    public static final Item SERVIETTE_VERT_CLAIR = new Consomable2("serviette_vert_clair");
 
     public static final Item SOUS_VETEMENT_FEMININ_NOIR = new ItemBase("sous_vetement_feminin_noir");
     public static final Item SOUS_VETEMENT_FEMININ_BLEU = new ItemBase("sous_vetement_feminin_bleu");
@@ -2204,7 +2204,7 @@ public class ModItems {
     public static final Item BAUME_EXFOLIANT = new ItemBase("baume_exfoliant");
     public static final Item BOUGIE = new ItemBase("candle");
     public static final Item BOUTEILLE_ALCOOL_PUR = new BouteilleDeVin("bouteille_alcool_pur",0,0.2F,false);
-    public static final Item BOUTEILLE_DE_PARFUM = new ItemBase("bouteille_de_parfum");
+    public static final Item BOUTEILLE_DE_PARFUM = new Savon("bouteille_de_parfum");
     public static final Item CANNE_BEQUILLE = new ItemBase("canne_bequille");
     public static final Item COLLE = new ItemBase("colle");
     public static final Item EMPLATRE = new ItemBase("emplatre");
@@ -2225,7 +2225,7 @@ public class ModItems {
     public static final Item POUDRE_DE_TEINT = new Savon ("poudre_de_teint");
     public static final Item POUDRE_QUELCONQUE = new ItemBase("poudre_quelconque");
     public static final Item ROUGE_A_LEVRES = new Savon ("rouge_a_levres");
-    public static final Item SAVON = new ItemBase("savon");
+    public static final Item SAVON = new Savon("savon");
     public static final Item SEAU_DE_COLLE = new ItemBase ("seau_de_colle");
     public static final Item SOUDE = new ItemBase("soude");
     public static final Item TABAC = new Savon("tabac");
