@@ -4,15 +4,12 @@ import fr.archemod.init.ModItems;
 import fr.archemod.items.ItemBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
-import net.minecraft.init.Items;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.world.World;
-import net.minecraft.init.Items;
 
 import java.util.Random;
 
@@ -40,7 +37,7 @@ public class CustomFishingRod extends ItemBase {
                     int itemIndex = rand.nextInt(NUM_ITEMS);
                     switch (itemIndex) {
                         case 0:
-                            playerIn.addItemStackToInventory(new ItemStack(ModItems.CALAMAR,1));
+                            playerIn.addItemStackToInventory(new ItemStack(ModItems.CALAMAR, 1));
                             break;
                         case 1:
                             playerIn.addItemStackToInventory(new ItemStack(ModItems.POULPE, 1));
@@ -97,7 +94,7 @@ public class CustomFishingRod extends ItemBase {
                             playerIn.addItemStackToInventory(new ItemStack(ModItems.GUPPY, 1));
                             break;
                         case 19:
-                            playerIn.addItemStackToInventory(new ItemStack(ModItems.MEROU,1));
+                            playerIn.addItemStackToInventory(new ItemStack(ModItems.MEROU, 1));
                             break;
                         case 20:
                             playerIn.addItemStackToInventory(new ItemStack(ModItems.NAPOLEON, 1));

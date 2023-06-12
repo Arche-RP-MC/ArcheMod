@@ -7,7 +7,7 @@ import net.minecraft.item.Item;
 
 public class PieceBase extends Item implements IHasModel {
 
-    public PieceBase(String name){
+    public PieceBase(String name) {
         setTranslationKey(name);
         setRegistryName(name);
 
@@ -16,7 +16,7 @@ public class PieceBase extends Item implements IHasModel {
 
     @Override
     public void registerModels() {
-        ArcheMod.proxy.registerItemRenderer(this,0,"inventory");
+        ArcheMod.proxy.registerItemRenderer(this, 0, "inventory");
     }
 
 }

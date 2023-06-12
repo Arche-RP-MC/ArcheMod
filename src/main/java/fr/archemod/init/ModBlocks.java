@@ -4,25 +4,17 @@ import fr.archemod.ArcheMod;
 import fr.archemod.blocks.*;
 import fr.archemod.blocks.agriculture.BlockPlanLin;
 import fr.archemod.blocks.agriculture.BlockPlanLin2;
-import fr.archemod.blocks.baril.LiquideType;
-//import fr.archemod.blocks.bloc3D.Baril3D;
-import fr.archemod.blocks.bloc3D.BlocChaise2;
-//import fr.archemod.blocks.dalles.DalleLaineBleu;
-//import fr.archemod.blocks.dalles.DalleLaineMagenta;
 import fr.archemod.blocks.gateau.*;
-import fr.archemod.blocks.plante.BlockMushroom;
-import fr.archemod.blocks.plante.PlantBlock;
 import fr.archemod.items.agriculture.ItemGraine;
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockSign;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
-import net.minecraft.item.ItemSlab;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -35,9 +27,8 @@ public class ModBlocks {
 
     public static final Block FISH_CASE = new BlockFishCase("casier_a_poisson", Material.WOOD, 0.5F, 0.5F, SoundType.WOOD);
 
-    public static final Block BLOC_DE_PIERRE_PRECIEUSE = new PierrePrecieuseOre("bloc_de_pierre_precieuse",Material.IRON);
+    public static final Block BLOC_DE_PIERRE_PRECIEUSE = new PierrePrecieuseOre("bloc_de_pierre_precieuse", Material.IRON);
     public static final Block PLACARD_HRP = new PlacardHRP("placard_hrp", Material.WOOD, 0.5F, 0.5F, SoundType.WOOD);
-
 
 
     //public static final Block SHOWCASE = new Showcase("showcase",Material.WOOD);
@@ -52,18 +43,18 @@ public class ModBlocks {
 
     //Blocs
 
-        //Métaux
+    //Métaux
     public static final Block BLOC_D_ACIER = new BlockBase("bloc_d_acier", Material.IRON, 5F, 5F, SoundType.METAL);
-    public static final Block BLOC_D_ARGENT = new BlockBase("bloc_d_argent",  Material.IRON, 5F, 5F, SoundType.METAL);
-    public static final Block BLOC_DE_BRONZE = new BlockBase("bloc_de_bronze",  Material.IRON, 5F, 5F, SoundType.METAL);
+    public static final Block BLOC_D_ARGENT = new BlockBase("bloc_d_argent", Material.IRON, 5F, 5F, SoundType.METAL);
+    public static final Block BLOC_DE_BRONZE = new BlockBase("bloc_de_bronze", Material.IRON, 5F, 5F, SoundType.METAL);
     public static final Block BLOC_DE_CENDRES = new BlockBase("bloc_de_cendres", Material.SAND, 5F, 5F, SoundType.SAND);
     public static final Block BLOC_DE_CHAUME = new BlockBase("bloc_de_chaume", Material.GRASS, 5F, 5F, SoundType.GROUND);
-    public static final Block BLOC_DE_CUIVRE = new BlockBase("bloc_de_cuivre",  Material.IRON, 5F, 5F, SoundType.METAL);
+    public static final Block BLOC_DE_CUIVRE = new BlockBase("bloc_de_cuivre", Material.IRON, 5F, 5F, SoundType.METAL);
     public static final Block BLOC_DE_PAILLE = new BlockBase("bloc_de_paille", Material.ROCK, 5F, 5F, SoundType.STONE);
-    public static final Block BLOC_DE_PLOMB = new BlockBase("bloc_de_plomb",  Material.IRON, 5F, 5F, SoundType.METAL);
-    public static final Block BLOC_ETAIN = new BlockBase("bloc_etain",  Material.IRON, 5F, 5F, SoundType.METAL);
+    public static final Block BLOC_DE_PLOMB = new BlockBase("bloc_de_plomb", Material.IRON, 5F, 5F, SoundType.METAL);
+    public static final Block BLOC_ETAIN = new BlockBase("bloc_etain", Material.IRON, 5F, 5F, SoundType.METAL);
 
-        //Pierre
+    //Pierre
     public static final Block ANDESITE_PAVE_MOUSSU = new BlockBase("andesite_pave_moussu", Material.ROCK, 5F, 5F, SoundType.STONE);
     public static final Block ANDESITE_POLIE = new BlockBase("andesite_polie", Material.ROCK, 5F, 5F, SoundType.STONE);
     public static final Block ANDESITE_SCULPTEE = new BlockBase("andesite_sculptee", Material.ROCK, 5F, 5F, SoundType.STONE);
@@ -110,39 +101,39 @@ public class ModBlocks {
     public static final Block TUILE_EN_ARDOISE_TRAVAILLEE = new BlockBase("tuile_en_ardoise_travaillee", Material.ROCK, 5F, 5F, SoundType.STONE);
 
 
-        //Bois
+    //Bois
     public static final Block JONC_DE_MER = new BlockBase("jonc_de_mer", Material.GRASS, 5F, 5F, SoundType.GROUND);
     public static final Block PLANCHE_ACACIA_VERNIE = new BlockBase("planche_acacia_vernie", Material.WOOD, 5F, 5F, SoundType.WOOD);
     public static final Block PLANCHE_BOULEAU_VERNIE = new BlockBase("planche_bouleau_vernie", Material.WOOD, 5F, 5F, SoundType.WOOD);
     public static final Block PLANCHE_CHENE_NOIR_VERNIE = new BlockBase("planche_chene_noir_vernie", Material.WOOD, 5F, 5F, SoundType.WOOD);
-    public static final Block PLANCHE_CHENE_VERNIE = new BlockBase("planche_chene_vernie",Material.WOOD, 5F, 5F, SoundType.WOOD);
+    public static final Block PLANCHE_CHENE_VERNIE = new BlockBase("planche_chene_vernie", Material.WOOD, 5F, 5F, SoundType.WOOD);
     public static final Block PLANCHE_MELANGE_DE_BOIS = new BlockBase("planche_melange_de_bois", Material.WOOD, 5F, 5F, SoundType.WOOD);
     public static final Block PLANCHE_SAPIN_VERNIE = new BlockBase("planche_sapin_vernie", Material.WOOD, 5F, 5F, SoundType.WOOD);
-    public static final Block PLANCHER_ACACIA_CHEVRON = new BlockBase("plancher_acacia_chevron",Material.WOOD, 5F, 5F, SoundType.WOOD);
+    public static final Block PLANCHER_ACACIA_CHEVRON = new BlockBase("plancher_acacia_chevron", Material.WOOD, 5F, 5F, SoundType.WOOD);
     public static final Block PLANCHER_ACACIA_CIRE = new BlockBase("plancher_acacia_cire", Material.WOOD, 5F, 5F, SoundType.WOOD);
     public static final Block PLANCHER_ACACIA_CLOUE = new BlockBase("plancher_acacia_cloue", Material.WOOD, 5F, 5F, SoundType.WOOD);
     public static final Block PLANCHER_ACACIA_CRAQUELE = new BlockBase("plancher_acacia_craquele", Material.WOOD, 5F, 5F, SoundType.WOOD);
     public static final Block PLANCHER_ACACIA_CROISE = new BlockBase("plancher_acacia_croise", Material.WOOD, 5F, 5F, SoundType.WOOD);
     public static final Block PLANCHER_ACACIA_MOUSSU = new BlockBase("plancher_acacia_moussu", Material.WOOD, 5F, 5F, SoundType.WOOD);
     public static final Block PLANCHER_ACAJOU_CHEVRON = new BlockBase("plancher_acajou_chevron", Material.WOOD, 5F, 5F, SoundType.WOOD);
-    public static final Block PLANCHER_ACAJOU_CIRE = new BlockBase("plancher_acajou_cire",Material.WOOD, 5F, 5F, SoundType.WOOD);
+    public static final Block PLANCHER_ACAJOU_CIRE = new BlockBase("plancher_acajou_cire", Material.WOOD, 5F, 5F, SoundType.WOOD);
     public static final Block PLANCHER_ACAJOU_CLOUE = new BlockBase("plancher_acajou_cloue", Material.WOOD, 5F, 5F, SoundType.WOOD);
     public static final Block PLANCHER_ACAJOU_CRAQUELE = new BlockBase("plancher_acajou_craquele", Material.WOOD, 5F, 5F, SoundType.WOOD);
     public static final Block PLANCHER_ACAJOU_CROISE = new BlockBase("plancher_acajou_croise", Material.WOOD, 5F, 5F, SoundType.WOOD);
     public static final Block PLANCHER_ACAJOU_MOUSSU = new BlockBase("plancher_acajou_moussu", Material.WOOD, 5F, 5F, SoundType.WOOD);
     public static final Block PLANCHER_BAMBOU = new BlockBase("plancher_bambou", Material.WOOD, 5F, 5F, SoundType.WOOD);
-    public static final Block PLANCHER_BOULEAU_CHEVRON = new BlockBase("plancher_bouleau_chevron",Material.WOOD, 5F, 5F, SoundType.WOOD);
+    public static final Block PLANCHER_BOULEAU_CHEVRON = new BlockBase("plancher_bouleau_chevron", Material.WOOD, 5F, 5F, SoundType.WOOD);
     public static final Block PLANCHER_BOULEAU_CIRE = new BlockBase("plancher_bouleau_cire", Material.WOOD, 5F, 5F, SoundType.WOOD);
     public static final Block PLANCHER_BOULEAU_CLOUE = new BlockBase("plancher_bouleau_cloue", Material.WOOD, 5F, 5F, SoundType.WOOD);
     public static final Block PLANCHER_BOULEAU_CRAQUELE = new BlockBase("plancher_bouleau_craquele", Material.WOOD, 5F, 5F, SoundType.WOOD);
-    public static final Block PLANCHER_BOULEAU_CROISE = new BlockBase("plancher_bouleau_croise",Material.WOOD, 5F, 5F, SoundType.WOOD);
+    public static final Block PLANCHER_BOULEAU_CROISE = new BlockBase("plancher_bouleau_croise", Material.WOOD, 5F, 5F, SoundType.WOOD);
     public static final Block PLANCHER_BOULEAU_MOUSSU = new BlockBase("plancher_bouleau_moussu", Material.WOOD, 5F, 5F, SoundType.WOOD);
     public static final Block PLANCHER_CHENE_CHEVRON = new BlockBase("plancher_chene_chevron", Material.WOOD, 5F, 5F, SoundType.WOOD);
     public static final Block PLANCHER_CHENE_CIRE = new BlockBase("plancher_chene_cire", Material.WOOD, 5F, 5F, SoundType.WOOD);
     public static final Block PLANCHER_CHENE_CLOUE = new BlockBase("plancher_chene_cloue", Material.WOOD, 5F, 5F, SoundType.WOOD);
     public static final Block PLANCHER_CHENE_CRAQUELE = new BlockBase("plancher_chene_craquele", Material.WOOD, 5F, 5F, SoundType.WOOD);
     public static final Block PLANCHER_CHENE_CROISE = new BlockBase("plancher_chene_croise", Material.WOOD, 5F, 5F, SoundType.WOOD);
-    public static final Block PLANCHER_CHENE_MOUSSU = new BlockBase("plancher_chene_moussu",Material.WOOD, 5F, 5F, SoundType.WOOD);
+    public static final Block PLANCHER_CHENE_MOUSSU = new BlockBase("plancher_chene_moussu", Material.WOOD, 5F, 5F, SoundType.WOOD);
     public static final Block PLANCHER_CHENE_NOIR_CHEVRON = new BlockBase("plancher_chene_noir_chevron", Material.WOOD, 5F, 5F, SoundType.WOOD);
     public static final Block PLANCHER_CHENE_NOIR_CIRE = new BlockBase("plancher_chene_noir_cire", Material.WOOD, 5F, 5F, SoundType.WOOD);
     public static final Block PLANCHER_CHENE_NOIR_CLOUE = new BlockBase("plancher_chene_noir_cloue", Material.WOOD, 5F, 5F, SoundType.WOOD);
@@ -153,109 +144,105 @@ public class ModBlocks {
     public static final Block PLANCHER_SAPIN_CIRE = new BlockBase("plancher_sapin_cire", Material.WOOD, 5F, 5F, SoundType.WOOD);
     public static final Block PLANCHER_SAPIN_CLOUE = new BlockBase("plancher_sapin_cloue", Material.WOOD, 5F, 5F, SoundType.WOOD);
     public static final Block PLANCHER_SAPIN_CRAQUELE = new BlockBase("plancher_sapin_craquele", Material.WOOD, 5F, 5F, SoundType.WOOD);
-    public static final Block PLANCHER_SAPIN_CROISE = new BlockBase("plancher_sapin_croise",Material.WOOD, 5F, 5F, SoundType.WOOD);
+    public static final Block PLANCHER_SAPIN_CROISE = new BlockBase("plancher_sapin_croise", Material.WOOD, 5F, 5F, SoundType.WOOD);
     public static final Block PLANCHER_SAPIN_MOUSSU = new BlockBase("plancher_sapin_moussu", Material.WOOD, 5F, 5F, SoundType.WOOD);
-
 
 
     //ESCALIER
 
-        //LAINE
-    public static final Block ESCALIER_EN_JONC_DE_MER = new BlockEscalier("escalier_en_jonc_de_mer",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_LAINE_BLANCHE_CROISEE = new BlockEscalier("escalier_en_laine_blanche_croisee",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_LAINE_BLEUE_CIEL_CROISEE = new BlockEscalier("escalier_en_laine_bleue_ciel_croisee",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_LAINE_BLEUE_CROISEE = new BlockEscalier("escalier_en_laine_bleue_croisee",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_LAINE_CYAN_CROISEE = new BlockEscalier("escalier_en_laine_cyan_croisee",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_LAINE_GRIS_CROISEE = new BlockEscalier("escalier_en_laine_gris_croisee",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_LAINE_JAUNE_CROISEE = new BlockEscalier("escalier_en_laine_jaune_croisee",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_LAINE_MAGENTA_CROISEE = new BlockEscalier("escalier_en_laine_magenta_croisee",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_LAINE_MARRON_CROISEE = new BlockEscalier("escalier_en_laine_marron_croisee",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_LAINE_NOIRE_CROISEE = new BlockEscalier("escalier_en_laine_noire_croisee",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_LAINE_ORANGE_CROISEE = new BlockEscalier("escalier_en_laine_orange_croisee",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_LAINE_ROSE_CROISEE = new BlockEscalier("escalier_en_laine_rose_croisee",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_LAINE_ROUGE_CROISEE = new BlockEscalier("escalier_en_laine_rouge_croisee",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_LAINE_VERTE_CLAIRE_CROISEE = new BlockEscalier("escalier_en_laine_verte_claire_croisee",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_LAINE_VERTE_CROISEE = new BlockEscalier("escalier_en_laine_verte_croisee",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_LAINE_VIOLETTE_CROISEE = new BlockEscalier("escalier_en_laine_violette_croisee",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block WOOLBLACKSTAIR  = new BlockEscalier("woolblackstair",3F,3F, SoundType.CLOTH, Block.getStateById(35));
-    public static final Block WOOLBLUESTAIR  = new BlockEscalier("woolbluestair",3F,3F, SoundType.CLOTH, Block.getStateById(35));
-    public static final Block WOOLBROWNSTAIR  = new BlockEscalier("woolbrownstair",3F,3F, SoundType.CLOTH, Block.getStateById(35));
-    public static final Block WOOLCYANSTAIR  = new BlockEscalier("woolcyanstair",3F,3F, SoundType.CLOTH, Block.getStateById(35));
-    public static final Block WOOLGRAYSTAIRS  = new BlockEscalier("woolgraystairs",3F,3F, SoundType.CLOTH, Block.getStateById(35));
-    public static final Block WOOLGREENSTAIR  = new BlockEscalier("woolgreenstair",3F,3F, SoundType.CLOTH, Block.getStateById(35));
-    public static final Block WOOLLIGHTBLUESTAIR  = new BlockEscalier("woollightbluestair",3F,3F, SoundType.CLOTH, Block.getStateById(35));
-    public static final Block WOOLLIMESTAIR  = new BlockEscalier("woollimestair",3F,3F, SoundType.CLOTH, Block.getStateById(35));
-    public static final Block WOOLMAGENTASTAIR  = new BlockEscalier("woolmagentastair",3F,3F, SoundType.CLOTH, Block.getStateById(35));
-    public static final Block WOOLORANGESTAIR  = new BlockEscalier("woolorangestair",3F,3F, SoundType.CLOTH, Block.getStateById(35));
-    public static final Block WOOLPEURPLESTAIR  = new BlockEscalier("woolpeurplestair",3F,3F, SoundType.CLOTH, Block.getStateById(35));
-    public static final Block WOOLPINKSTAIR  = new BlockEscalier("woolpinkstair",3F,3F, SoundType.CLOTH, Block.getStateById(35));
-    public static final Block WOOLREDSTAIR  = new BlockEscalier("woolredstair",3F,3F, SoundType.CLOTH, Block.getStateById(35));
-    public static final Block WOOLSILVERSTAIR  = new BlockEscalier("woolsilverstair",3F,3F, SoundType.CLOTH, Block.getStateById(35));
-    public static final Block WOOLWHITESTAIR  = new BlockEscalier("woolwhitestair",3F,3F, SoundType.CLOTH, Block.getStateById(35));
-    public static final Block WOOLYELLOWSTAIR  = new BlockEscalier("woolyellowstair",3F,3F, SoundType.CLOTH, Block.getStateById(35));
-    public static final Block WOOL_COLORED_MAGENTA_STAIRS = new BlockEscalier("wool_colored_magenta_stairs",3F,3F, SoundType.CLOTH, Block.getStateById(35));
+    //LAINE
+    public static final Block ESCALIER_EN_JONC_DE_MER = new BlockEscalier("escalier_en_jonc_de_mer", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_LAINE_BLANCHE_CROISEE = new BlockEscalier("escalier_en_laine_blanche_croisee", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_LAINE_BLEUE_CIEL_CROISEE = new BlockEscalier("escalier_en_laine_bleue_ciel_croisee", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_LAINE_BLEUE_CROISEE = new BlockEscalier("escalier_en_laine_bleue_croisee", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_LAINE_CYAN_CROISEE = new BlockEscalier("escalier_en_laine_cyan_croisee", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_LAINE_GRIS_CROISEE = new BlockEscalier("escalier_en_laine_gris_croisee", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_LAINE_JAUNE_CROISEE = new BlockEscalier("escalier_en_laine_jaune_croisee", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_LAINE_MAGENTA_CROISEE = new BlockEscalier("escalier_en_laine_magenta_croisee", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_LAINE_MARRON_CROISEE = new BlockEscalier("escalier_en_laine_marron_croisee", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_LAINE_NOIRE_CROISEE = new BlockEscalier("escalier_en_laine_noire_croisee", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_LAINE_ORANGE_CROISEE = new BlockEscalier("escalier_en_laine_orange_croisee", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_LAINE_ROSE_CROISEE = new BlockEscalier("escalier_en_laine_rose_croisee", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_LAINE_ROUGE_CROISEE = new BlockEscalier("escalier_en_laine_rouge_croisee", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_LAINE_VERTE_CLAIRE_CROISEE = new BlockEscalier("escalier_en_laine_verte_claire_croisee", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_LAINE_VERTE_CROISEE = new BlockEscalier("escalier_en_laine_verte_croisee", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_LAINE_VIOLETTE_CROISEE = new BlockEscalier("escalier_en_laine_violette_croisee", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block WOOLBLACKSTAIR = new BlockEscalier("woolblackstair", 3F, 3F, SoundType.CLOTH, Block.getStateById(35));
+    public static final Block WOOLBLUESTAIR = new BlockEscalier("woolbluestair", 3F, 3F, SoundType.CLOTH, Block.getStateById(35));
+    public static final Block WOOLBROWNSTAIR = new BlockEscalier("woolbrownstair", 3F, 3F, SoundType.CLOTH, Block.getStateById(35));
+    public static final Block WOOLCYANSTAIR = new BlockEscalier("woolcyanstair", 3F, 3F, SoundType.CLOTH, Block.getStateById(35));
+    public static final Block WOOLGRAYSTAIRS = new BlockEscalier("woolgraystairs", 3F, 3F, SoundType.CLOTH, Block.getStateById(35));
+    public static final Block WOOLGREENSTAIR = new BlockEscalier("woolgreenstair", 3F, 3F, SoundType.CLOTH, Block.getStateById(35));
+    public static final Block WOOLLIGHTBLUESTAIR = new BlockEscalier("woollightbluestair", 3F, 3F, SoundType.CLOTH, Block.getStateById(35));
+    public static final Block WOOLLIMESTAIR = new BlockEscalier("woollimestair", 3F, 3F, SoundType.CLOTH, Block.getStateById(35));
+    public static final Block WOOLMAGENTASTAIR = new BlockEscalier("woolmagentastair", 3F, 3F, SoundType.CLOTH, Block.getStateById(35));
+    public static final Block WOOLORANGESTAIR = new BlockEscalier("woolorangestair", 3F, 3F, SoundType.CLOTH, Block.getStateById(35));
+    public static final Block WOOLPEURPLESTAIR = new BlockEscalier("woolpeurplestair", 3F, 3F, SoundType.CLOTH, Block.getStateById(35));
+    public static final Block WOOLPINKSTAIR = new BlockEscalier("woolpinkstair", 3F, 3F, SoundType.CLOTH, Block.getStateById(35));
+    public static final Block WOOLREDSTAIR = new BlockEscalier("woolredstair", 3F, 3F, SoundType.CLOTH, Block.getStateById(35));
+    public static final Block WOOLSILVERSTAIR = new BlockEscalier("woolsilverstair", 3F, 3F, SoundType.CLOTH, Block.getStateById(35));
+    public static final Block WOOLWHITESTAIR = new BlockEscalier("woolwhitestair", 3F, 3F, SoundType.CLOTH, Block.getStateById(35));
+    public static final Block WOOLYELLOWSTAIR = new BlockEscalier("woolyellowstair", 3F, 3F, SoundType.CLOTH, Block.getStateById(35));
+    public static final Block WOOL_COLORED_MAGENTA_STAIRS = new BlockEscalier("wool_colored_magenta_stairs", 3F, 3F, SoundType.CLOTH, Block.getStateById(35));
 
-        //BOIS
-    public static final Block ESCALIER_EN_PLANCHER_BAMBOU = new BlockEscalier("escalier_en_plancher_bambou",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_PLANCHE_ACACIA_VERNIE = new BlockEscalier("escalier_en_planche_acacia_vernie",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_PLANCHE_BOULEAU_VERNIE = new BlockEscalier("escalier_en_planche_bouleau_vernie",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_PLANCHE_CHENE_NOIR_VERNIE = new BlockEscalier("escalier_en_planche_chene_noir_vernie",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_PLANCHE_CHENE_VERNIE = new BlockEscalier("escalier_en_planche_chene_vernie",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_PLANCHE_SAPIN_VERNIE = new BlockEscalier("escalier_en_planche_sapin_vernie",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block HIDDENPLANKACACIASTAIR  = new BlockEscalier("hiddenplankacaciastair",4F,4F, SoundType.WOOD, Block.getStateById(35));
-    public static final Block HIDDENPLANKBIGOAKSTAIR  = new BlockEscalier("hiddenplankbigoakstair",4F,4F, SoundType.WOOD, Block.getStateById(35));
-    public static final Block HIDDENPLANKBIRCHSTAIR  = new BlockEscalier("hiddenplankbirchstair",4F,4F, SoundType.WOOD, Block.getStateById(35));
-    public static final Block HIDDENPLANKJUNGLESTAIR  = new BlockEscalier("hiddenplankjunglestair",4F,4F, SoundType.WOOD, Block.getStateById(35));
-    public static final Block HIDDENPLANKOAKSTAIR  = new BlockEscalier("hiddenplankoakstair",4F,4F, SoundType.WOOD, Block.getStateById(35));
-    public static final Block HIDDENPLANKSACACIASTAIR  = new BlockEscalier("hiddenplanksacaciastair",4F,4F, SoundType.WOOD, Block.getStateById(35));
-
-
-        //PIERRE
-    public static final Block ADESITSMOOTHMOSSYSTAIR = new BlockEscalier("adesitsmoothmossystair",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ANDESITECRACKEDBRICKSTAIRS  = new BlockEscalier("andesitecrackedbrickstairs",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ANDESITMOSSYBRICKSTAIR  = new BlockEscalier("andesitmossybrickstair",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ANDESITSMOOTH2STAIR  = new BlockEscalier("andesitsmooth2stair",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ANDESITSMOOTHSTAIR  = new BlockEscalier("andesitsmoothstair",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block CONCRETEBLACKSTAIR  = new BlockEscalier("concreteblackstair",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block CONCRETEBLUESTAIR  = new BlockEscalier("concretebluestair",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block CONCRETEBROWNSTAIR  = new BlockEscalier("concretebrownstair",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block CONCRETECYANSTAIR  = new BlockEscalier("concretecyanstair",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block CONCRETEGRAYSTAIR  = new BlockEscalier("concretegraystair",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block CONCRETEGREENSTAIR  = new BlockEscalier("concretegreenstair",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block CONCRETELIGHTBLUESTAIR  = new BlockEscalier("concretelightbluestair",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block CONCRETELIMESTAIR  = new BlockEscalier("concretelimestair",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block CONCRETEMAGENTASTAIR  = new BlockEscalier("concretemagentastair",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block CONCRETEORANGESTAIR  = new BlockEscalier("concreteorangestair",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block CONCRETEPINKSTAIR  = new BlockEscalier("concretepinkstair",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block CONCRETEPURPLESTAIR  = new BlockEscalier("concretepurplestair",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block CONCRETEREDSTAIR  = new BlockEscalier("concreteredstair",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block CONCRETESILVERSTAIR  = new BlockEscalier("concretesilverstair",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block CONCRETEYELLOWSTAIR  = new BlockEscalier("concreteyellowstair",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block DIORITECRACKEDBRICKSTAIR  = new BlockEscalier("dioritecrackedbrickstair",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block DIORITEMOSSYSTAIR  = new BlockEscalier("dioritemossystair",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block DIORITESMOOTH2STAIR  = new BlockEscalier("dioritesmooth2stair",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block DIORITESMOOTHBRICKSTAIR  = new BlockEscalier("dioritesmoothbrickstair",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block DIORITESMOOTHMOSSYSTAIRS  = new BlockEscalier("dioritesmoothmossystairs",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_ECAILLE_EN_ARDOISE = new BlockEscalier("escalier_en_ecaille_en_ardoise",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_ECAILLE_EN_ARDOISE_CYAN = new BlockEscalier("escalier_en_ecaille_en_ardoise_cyan",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_ECAILLE_EN_ARDOISE_VERTE = new BlockEscalier("escalier_en_ecaille_en_ardoise_verte",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_ECAILLE_EN_ARDOISE_VERTE_CLAIRE = new BlockEscalier("escalier_en_ecaille_en_ardoise_verte_claire",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_TUILE = new BlockEscalier("escalier_en_tuile",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_TUILE_EN_ARDOISE = new BlockEscalier("escalier_en_tuile_en_ardoise",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_TUILE_EN_ARDOISE_TAILLEE = new BlockEscalier("escalier_en_tuile_en_ardoise_taillee",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_TUILE_EN_ARDOISE_TRAVAILLEE = new BlockEscalier("escalier_en_tuile_en_ardoise_travaillee",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block GRANITECRACKEDBRICKSTAIR  = new BlockEscalier("granitecrackedbrickstair",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block GRANITEMOSSYSTAIR  = new BlockEscalier("granitemossystair",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block GRANITESMOOTH2STAIR  = new BlockEscalier("granitesmooth2stair",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block GRANITESMOOTHBRICKSTAIR  = new BlockEscalier("granitesmoothbrickstair",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block GRANITESMOOTHMOSSYSTAIR  = new BlockEscalier("granitesmoothmossystair",5F,5F, SoundType.STONE, Block.getStateById(35));
-
-        //AUTRES
-    public static final Block ESCALIER_EN_BLOC_DE_CHAUME = new BlockEscalier("escalier_en_bloc_de_chaume",5F,5F, SoundType.STONE, Block.getStateById(35));
-    public static final Block ESCALIER_EN_BLOC_DE_PAILLE = new BlockEscalier("escalier_en_bloc_de_paille",5F,5F, SoundType.STONE, Block.getStateById(35));
+    //BOIS
+    public static final Block ESCALIER_EN_PLANCHER_BAMBOU = new BlockEscalier("escalier_en_plancher_bambou", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_PLANCHE_ACACIA_VERNIE = new BlockEscalier("escalier_en_planche_acacia_vernie", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_PLANCHE_BOULEAU_VERNIE = new BlockEscalier("escalier_en_planche_bouleau_vernie", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_PLANCHE_CHENE_NOIR_VERNIE = new BlockEscalier("escalier_en_planche_chene_noir_vernie", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_PLANCHE_CHENE_VERNIE = new BlockEscalier("escalier_en_planche_chene_vernie", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_PLANCHE_SAPIN_VERNIE = new BlockEscalier("escalier_en_planche_sapin_vernie", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block HIDDENPLANKACACIASTAIR = new BlockEscalier("hiddenplankacaciastair", 4F, 4F, SoundType.WOOD, Block.getStateById(35));
+    public static final Block HIDDENPLANKBIGOAKSTAIR = new BlockEscalier("hiddenplankbigoakstair", 4F, 4F, SoundType.WOOD, Block.getStateById(35));
+    public static final Block HIDDENPLANKBIRCHSTAIR = new BlockEscalier("hiddenplankbirchstair", 4F, 4F, SoundType.WOOD, Block.getStateById(35));
+    public static final Block HIDDENPLANKJUNGLESTAIR = new BlockEscalier("hiddenplankjunglestair", 4F, 4F, SoundType.WOOD, Block.getStateById(35));
+    public static final Block HIDDENPLANKOAKSTAIR = new BlockEscalier("hiddenplankoakstair", 4F, 4F, SoundType.WOOD, Block.getStateById(35));
+    public static final Block HIDDENPLANKSACACIASTAIR = new BlockEscalier("hiddenplanksacaciastair", 4F, 4F, SoundType.WOOD, Block.getStateById(35));
 
 
+    //PIERRE
+    public static final Block ADESITSMOOTHMOSSYSTAIR = new BlockEscalier("adesitsmoothmossystair", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ANDESITECRACKEDBRICKSTAIRS = new BlockEscalier("andesitecrackedbrickstairs", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ANDESITMOSSYBRICKSTAIR = new BlockEscalier("andesitmossybrickstair", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ANDESITSMOOTH2STAIR = new BlockEscalier("andesitsmooth2stair", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ANDESITSMOOTHSTAIR = new BlockEscalier("andesitsmoothstair", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block CONCRETEBLACKSTAIR = new BlockEscalier("concreteblackstair", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block CONCRETEBLUESTAIR = new BlockEscalier("concretebluestair", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block CONCRETEBROWNSTAIR = new BlockEscalier("concretebrownstair", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block CONCRETECYANSTAIR = new BlockEscalier("concretecyanstair", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block CONCRETEGRAYSTAIR = new BlockEscalier("concretegraystair", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block CONCRETEGREENSTAIR = new BlockEscalier("concretegreenstair", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block CONCRETELIGHTBLUESTAIR = new BlockEscalier("concretelightbluestair", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block CONCRETELIMESTAIR = new BlockEscalier("concretelimestair", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block CONCRETEMAGENTASTAIR = new BlockEscalier("concretemagentastair", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block CONCRETEORANGESTAIR = new BlockEscalier("concreteorangestair", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block CONCRETEPINKSTAIR = new BlockEscalier("concretepinkstair", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block CONCRETEPURPLESTAIR = new BlockEscalier("concretepurplestair", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block CONCRETEREDSTAIR = new BlockEscalier("concreteredstair", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block CONCRETESILVERSTAIR = new BlockEscalier("concretesilverstair", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block CONCRETEYELLOWSTAIR = new BlockEscalier("concreteyellowstair", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block DIORITECRACKEDBRICKSTAIR = new BlockEscalier("dioritecrackedbrickstair", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block DIORITEMOSSYSTAIR = new BlockEscalier("dioritemossystair", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block DIORITESMOOTH2STAIR = new BlockEscalier("dioritesmooth2stair", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block DIORITESMOOTHBRICKSTAIR = new BlockEscalier("dioritesmoothbrickstair", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block DIORITESMOOTHMOSSYSTAIRS = new BlockEscalier("dioritesmoothmossystairs", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_ECAILLE_EN_ARDOISE = new BlockEscalier("escalier_en_ecaille_en_ardoise", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_ECAILLE_EN_ARDOISE_CYAN = new BlockEscalier("escalier_en_ecaille_en_ardoise_cyan", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_ECAILLE_EN_ARDOISE_VERTE = new BlockEscalier("escalier_en_ecaille_en_ardoise_verte", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_ECAILLE_EN_ARDOISE_VERTE_CLAIRE = new BlockEscalier("escalier_en_ecaille_en_ardoise_verte_claire", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_TUILE = new BlockEscalier("escalier_en_tuile", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_TUILE_EN_ARDOISE = new BlockEscalier("escalier_en_tuile_en_ardoise", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_TUILE_EN_ARDOISE_TAILLEE = new BlockEscalier("escalier_en_tuile_en_ardoise_taillee", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_TUILE_EN_ARDOISE_TRAVAILLEE = new BlockEscalier("escalier_en_tuile_en_ardoise_travaillee", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block GRANITECRACKEDBRICKSTAIR = new BlockEscalier("granitecrackedbrickstair", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block GRANITEMOSSYSTAIR = new BlockEscalier("granitemossystair", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block GRANITESMOOTH2STAIR = new BlockEscalier("granitesmooth2stair", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block GRANITESMOOTHBRICKSTAIR = new BlockEscalier("granitesmoothbrickstair", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block GRANITESMOOTHMOSSYSTAIR = new BlockEscalier("granitesmoothmossystair", 5F, 5F, SoundType.STONE, Block.getStateById(35));
 
+    //AUTRES
+    public static final Block ESCALIER_EN_BLOC_DE_CHAUME = new BlockEscalier("escalier_en_bloc_de_chaume", 5F, 5F, SoundType.STONE, Block.getStateById(35));
+    public static final Block ESCALIER_EN_BLOC_DE_PAILLE = new BlockEscalier("escalier_en_bloc_de_paille", 5F, 5F, SoundType.STONE, Block.getStateById(35));
 
 
     //DALLES \!/ block de base, dalle et double dalle + méthode init & register en bas de ce code.
@@ -267,19 +254,19 @@ public class ModBlocks {
     //public static DalleLaineMagenta.Double DALLE_LAINE_BLEU_DOUBLE_SLAB ;
     public static final Block LAINE_BLANCHE_CROISEE = new BlockBase("laine_blanche_croisee", Material.CLOTH, 5F, 5F, SoundType.CLOTH);
     public static final Block LAINE_BLEUE_CIEL_CROISEE = new BlockBase("laine_bleue_ciel_croisee", Material.CLOTH, 5F, 5F, SoundType.CLOTH);
-    public static final Block LAINE_BLEUE_CROISEE = new BlockBase("laine_bleue_croisee",  Material.CLOTH, 5F, 5F, SoundType.CLOTH);
-    public static final Block LAINE_CYAN_CROISEE = new BlockBase("laine_cyan_croisee",  Material.CLOTH, 5F, 5F, SoundType.CLOTH);
-    public static final Block LAINE_GRIS_CROISEE = new BlockBase("laine_gris_croisee",  Material.CLOTH, 5F, 5F, SoundType.CLOTH);
-    public static final Block LAINE_JAUNE_CROISEE = new BlockBase("laine_jaune_croisee",  Material.CLOTH, 5F, 5F, SoundType.CLOTH);
-    public static final Block LAINE_MAGENTA_CROISEE = new BlockBase("laine_magenta_croisee",  Material.CLOTH, 5F, 5F, SoundType.CLOTH);
-    public static final Block LAINE_MARRON_CROISEE = new BlockBase("laine_marron_croisee",  Material.CLOTH, 5F, 5F, SoundType.CLOTH);
-    public static final Block LAINE_NOIRE_CROISEE = new BlockBase("laine_noire_croisee",  Material.CLOTH, 5F, 5F, SoundType.CLOTH);
+    public static final Block LAINE_BLEUE_CROISEE = new BlockBase("laine_bleue_croisee", Material.CLOTH, 5F, 5F, SoundType.CLOTH);
+    public static final Block LAINE_CYAN_CROISEE = new BlockBase("laine_cyan_croisee", Material.CLOTH, 5F, 5F, SoundType.CLOTH);
+    public static final Block LAINE_GRIS_CROISEE = new BlockBase("laine_gris_croisee", Material.CLOTH, 5F, 5F, SoundType.CLOTH);
+    public static final Block LAINE_JAUNE_CROISEE = new BlockBase("laine_jaune_croisee", Material.CLOTH, 5F, 5F, SoundType.CLOTH);
+    public static final Block LAINE_MAGENTA_CROISEE = new BlockBase("laine_magenta_croisee", Material.CLOTH, 5F, 5F, SoundType.CLOTH);
+    public static final Block LAINE_MARRON_CROISEE = new BlockBase("laine_marron_croisee", Material.CLOTH, 5F, 5F, SoundType.CLOTH);
+    public static final Block LAINE_NOIRE_CROISEE = new BlockBase("laine_noire_croisee", Material.CLOTH, 5F, 5F, SoundType.CLOTH);
     public static final Block LAINE_ORANGE_CROISEE = new BlockBase("laine_orange_croisee", Material.CLOTH, 5F, 5F, SoundType.CLOTH);
-    public static final Block LAINE_ROSE_CROISEE = new BlockBase("laine_rose_croisee",  Material.CLOTH, 5F, 5F, SoundType.CLOTH);
-    public static final Block LAINE_ROUGE_CROISEE = new BlockBase("laine_rouge_croisee",  Material.CLOTH, 5F, 5F, SoundType.CLOTH);
+    public static final Block LAINE_ROSE_CROISEE = new BlockBase("laine_rose_croisee", Material.CLOTH, 5F, 5F, SoundType.CLOTH);
+    public static final Block LAINE_ROUGE_CROISEE = new BlockBase("laine_rouge_croisee", Material.CLOTH, 5F, 5F, SoundType.CLOTH);
     public static final Block LAINE_VERTE_CLAIRE_CROISEE = new BlockBase("laine_verte_claire_croisee", Material.CLOTH, 5F, 5F, SoundType.CLOTH);
-    public static final Block LAINE_VERTE_CROISEE = new BlockBase("laine_verte_croisee",  Material.CLOTH, 5F, 5F, SoundType.CLOTH);
-    public static final Block LAINE_VIOLETTE_CROISEE = new BlockBase("laine_violette_croisee",  Material.CLOTH, 5F, 5F, SoundType.CLOTH);
+    public static final Block LAINE_VERTE_CROISEE = new BlockBase("laine_verte_croisee", Material.CLOTH, 5F, 5F, SoundType.CLOTH);
+    public static final Block LAINE_VIOLETTE_CROISEE = new BlockBase("laine_violette_croisee", Material.CLOTH, 5F, 5F, SoundType.CLOTH);
 
     /*public static final Block WOOLMAGENTA = new BlockBase("wool_colored_magenta",Material.CLOTH,2F,2F,SoundType.CLOTH);
     public static BlockDalleWoolColoredMagenta.Half ANDESITECRACKEDBRICKSLAB;
@@ -388,7 +375,6 @@ public class ModBlocks {
     public static BlockDalleWoolColoredMagenta.Double WOOLPURPLE_DOUBLE_SLAB ;*/
 
 
-
     //PLANTES
     public static final Block BASILIC = new BlockPlante("basilic");
     public static final Block ALGUES = new BlockPlante("algues");
@@ -468,183 +454,177 @@ public class ModBlocks {
     public static final Block VOLET_RENFORCE = new BlockPorte("volet_renforce", Material.WOOD, SoundType.WOOD, 4F);
 
     //TRAPPE
-    public static final Block TRAPPE_EN_ACAJOU = new BlockTrappe("trappe_en_acajou",2F,Material.WOOD);
-    public static final Block TRAPPE_AJOUREE_EN_ACACIA = new BlockTrappe("trappe_ajouree_en_acacia",2F,Material.WOOD);
-    public static final Block TRAPPE_AJOUREE_EN_BOULEAU = new BlockTrappe("trappe_ajouree_en_bouleau",2F,Material.WOOD);
-    public static final Block TRAPPE_AJOUREE_EN_CHENE = new BlockTrappe("trappe_ajouree_en_chene",2F,Material.WOOD);
-    public static final Block TRAPPE_AJOUREE_EN_SAPIN = new BlockTrappe("trappe_ajouree_en_sapin",2F,Material.WOOD);
-    public static final Block TRAPPE_EN_ACACIA = new BlockTrappe("trappe_en_acacia",2F,Material.WOOD);
-    public static final Block TRAPPE_EN_BOULEAU = new BlockTrappe("trappe_en_bouleau",2F,Material.WOOD);
-    public static final Block TRAPPE_EN_CHENE_NOIR = new BlockTrappe("trappe_en_chene_noir",2F,Material.WOOD);
-    public static final Block TRAPPE_EN_SAPIN = new BlockTrappe("trappe_en_sapin",2F,Material.WOOD);
-    public static final Block TRAPPE_TRAVAILLEE_EN_CHENE_NOIR = new BlockTrappe("trappe_travaillee_en_chene_noir",2F,Material.WOOD);
-    public static final Block TRAPPE_TRAVAILLEE_EN_SAPIN = new BlockTrappe("trappe_travaillee_en_sapin",2F,Material.WOOD);
+    public static final Block TRAPPE_EN_ACAJOU = new BlockTrappe("trappe_en_acajou", 2F, Material.WOOD);
+    public static final Block TRAPPE_AJOUREE_EN_ACACIA = new BlockTrappe("trappe_ajouree_en_acacia", 2F, Material.WOOD);
+    public static final Block TRAPPE_AJOUREE_EN_BOULEAU = new BlockTrappe("trappe_ajouree_en_bouleau", 2F, Material.WOOD);
+    public static final Block TRAPPE_AJOUREE_EN_CHENE = new BlockTrappe("trappe_ajouree_en_chene", 2F, Material.WOOD);
+    public static final Block TRAPPE_AJOUREE_EN_SAPIN = new BlockTrappe("trappe_ajouree_en_sapin", 2F, Material.WOOD);
+    public static final Block TRAPPE_EN_ACACIA = new BlockTrappe("trappe_en_acacia", 2F, Material.WOOD);
+    public static final Block TRAPPE_EN_BOULEAU = new BlockTrappe("trappe_en_bouleau", 2F, Material.WOOD);
+    public static final Block TRAPPE_EN_CHENE_NOIR = new BlockTrappe("trappe_en_chene_noir", 2F, Material.WOOD);
+    public static final Block TRAPPE_EN_SAPIN = new BlockTrappe("trappe_en_sapin", 2F, Material.WOOD);
+    public static final Block TRAPPE_TRAVAILLEE_EN_CHENE_NOIR = new BlockTrappe("trappe_travaillee_en_chene_noir", 2F, Material.WOOD);
+    public static final Block TRAPPE_TRAVAILLEE_EN_SAPIN = new BlockTrappe("trappe_travaillee_en_sapin", 2F, Material.WOOD);
 
     //BARRIERE
     public static final Block ANDESITE_FENCE = new BlockBarriere("andesite_fence", Material.ROCK, MapColor.STONE, 5F, 5F);
-    public static final Block ANDESITEFENCE  = new BlockBarriere("andesitefence", Material.ROCK, MapColor.STONE, 5F, 5F);
-    public static final Block DIORITEFENCE  = new BlockBarriere("dioritefence", Material.ROCK, MapColor.STONE, 5F, 5F);
-    public static final Block GRANITEFENCE  = new BlockBarriere("granitefence", Material.ROCK, MapColor.STONE, 5F, 5F);
-    public static final Block LOGACACIAFENCE  = new BlockBarriere("logacaciafence", Material.WOOD, MapColor.WOOD, 4F, 4F);
-    public static final Block LOGBIGOAKFENCE  = new BlockBarriere("logbigoakfence", Material.WOOD, MapColor.WOOD, 4F, 4F);
-    public static final Block LOGBIRCHFENCE  = new BlockBarriere("logbirchfence",  Material.WOOD, MapColor.WOOD, 4F, 4F);
-    public static final Block LOGJUNGLEFENCE  = new BlockBarriere("logjunglefence",  Material.WOOD, MapColor.WOOD, 4F, 4F);
-    public static final Block LOGOAKFENCE  = new BlockBarriere("logoakfence",  Material.WOOD, MapColor.WOOD, 4F, 4F);
-    public static final Block LOGSPRUCEFENCE  = new BlockBarriere("logsprucefence",  Material.WOOD, MapColor.WOOD, 4F, 4F);
+    public static final Block ANDESITEFENCE = new BlockBarriere("andesitefence", Material.ROCK, MapColor.STONE, 5F, 5F);
+    public static final Block DIORITEFENCE = new BlockBarriere("dioritefence", Material.ROCK, MapColor.STONE, 5F, 5F);
+    public static final Block GRANITEFENCE = new BlockBarriere("granitefence", Material.ROCK, MapColor.STONE, 5F, 5F);
+    public static final Block LOGACACIAFENCE = new BlockBarriere("logacaciafence", Material.WOOD, MapColor.WOOD, 4F, 4F);
+    public static final Block LOGBIGOAKFENCE = new BlockBarriere("logbigoakfence", Material.WOOD, MapColor.WOOD, 4F, 4F);
+    public static final Block LOGBIRCHFENCE = new BlockBarriere("logbirchfence", Material.WOOD, MapColor.WOOD, 4F, 4F);
+    public static final Block LOGJUNGLEFENCE = new BlockBarriere("logjunglefence", Material.WOOD, MapColor.WOOD, 4F, 4F);
+    public static final Block LOGOAKFENCE = new BlockBarriere("logoakfence", Material.WOOD, MapColor.WOOD, 4F, 4F);
+    public static final Block LOGSPRUCEFENCE = new BlockBarriere("logsprucefence", Material.WOOD, MapColor.WOOD, 4F, 4F);
 
     //MUR \!/ Créer le block de même composition avant
     public static final Block ANDESITE = new BlockBase("andesite", Material.ROCK, 5F, 5F, SoundType.STONE);
-    public static final Block ANDESITEWALL  = new BlockMur("andesite_wall", Material.ROCK, 5F, 5F, SoundType.STONE);
+    public static final Block ANDESITEWALL = new BlockMur("andesite_wall", Material.ROCK, 5F, 5F, SoundType.STONE);
     public static final Block DIORITE = new BlockBase("diorite", Material.ROCK, 5F, 5F, SoundType.STONE);
-    public static final Block DIORITEWALL  = new BlockMur("diorite_wall", Material.ROCK, 5F, 5F, SoundType.STONE);
+    public static final Block DIORITEWALL = new BlockMur("diorite_wall", Material.ROCK, 5F, 5F, SoundType.STONE);
     public static final Block GRANITE = new BlockBase("granite", Material.ROCK, 5F, 5F, SoundType.STONE);
-    public static final Block GRANITEWALL  = new BlockMur("granite_wall", Material.ROCK, 5F, 5F, SoundType.STONE);
+    public static final Block GRANITEWALL = new BlockMur("granite_wall", Material.ROCK, 5F, 5F, SoundType.STONE);
     public static final Block ACACIA = new BlockBase("acacia", Material.WOOD, 5F, 5F, SoundType.WOOD);
-    public static final Block WALLLEGACACIA  = new BlockMur("acacia_wall", Material.WOOD, 5F, 5F, SoundType.WOOD);
+    public static final Block WALLLEGACACIA = new BlockMur("acacia_wall", Material.WOOD, 5F, 5F, SoundType.WOOD);
     public static final Block BIGOAK = new BlockBase("bigoak", Material.WOOD, 5F, 5F, SoundType.WOOD);
-    public static final Block WALLLEGBIGOAK  = new BlockMur("bigoak_wall", Material.WOOD, 5F, 5F, SoundType.WOOD);
+    public static final Block WALLLEGBIGOAK = new BlockMur("bigoak_wall", Material.WOOD, 5F, 5F, SoundType.WOOD);
     public static final Block BIRCH = new BlockBase("birch", Material.WOOD, 5F, 5F, SoundType.WOOD);
-    public static final Block WALLLEGBIRCH  = new BlockMur("birch_wall", Material.WOOD, 5F, 5F, SoundType.WOOD);
+    public static final Block WALLLEGBIRCH = new BlockMur("birch_wall", Material.WOOD, 5F, 5F, SoundType.WOOD);
     public static final Block JUNGLE = new BlockBase("jungle", Material.WOOD, 5F, 5F, SoundType.WOOD);
-    public static final Block WALLLEGJUNGLE  = new BlockMur("jungle_wall", Material.WOOD, 5F, 5F, SoundType.WOOD);
+    public static final Block WALLLEGJUNGLE = new BlockMur("jungle_wall", Material.WOOD, 5F, 5F, SoundType.WOOD);
     public static final Block OAK = new BlockBase("oak", Material.WOOD, 5F, 5F, SoundType.WOOD);
-    public static final Block WALLLEGOAK  = new BlockMur("oak_wall", Material.WOOD, 5F, 5F, SoundType.WOOD);
+    public static final Block WALLLEGOAK = new BlockMur("oak_wall", Material.WOOD, 5F, 5F, SoundType.WOOD);
     public static final Block SPRUCE = new BlockBase("spruce", Material.WOOD, 5F, 5F, SoundType.WOOD);
-    public static final Block WALLLEGSPRUCE  = new BlockMur("spruce_wall", Material.WOOD, 5F, 5F, SoundType.WOOD);
+    public static final Block WALLLEGSPRUCE = new BlockMur("spruce_wall", Material.WOOD, 5F, 5F, SoundType.WOOD);
 
 
     //TÂCHES
-    public static final Block TACHE_DE_SANG = new BlockTache("tache_de_sang", Material.WOOD,0.5F,5F,SoundType.WOOD);
+    public static final Block TACHE_DE_SANG = new BlockTache("tache_de_sang", Material.WOOD, 0.5F, 5F, SoundType.WOOD);
     public static final Block TACHE_EAU = new BlockTache("tache_d_eau", Material.WOOD, 0.5F, 0.5F, SoundType.WOOD);
     public static final Block TACHE_DE_BOUE = new BlockTache("tache_de_boue", Material.WOOD, 0.5F, 0.5F, SoundType.WOOD);
     public static final Block TACHE_DE_VOMI = new BlockTache("tache_de_vomi", Material.WOOD, 0.5F, 0.5F, SoundType.WOOD);
     public static final Block TACHE_D_URINE = new BlockTache("tache_d_urine", Material.WOOD, 0.5F, 0.5F, SoundType.WOOD);
 
     //PLANTATION \!/ Allez changer la graine correspondant dans init.ModItems en ItemGraine (faire ctrl+f pour la trouver) + register l'item ici, dans init() et register();
-    public static final Block PLAN_DE_LIN = new BlockPlanLin("plan_de_lin",ModItems.GRAINE_LIN, ModItems.LIN);
-    public static final Block PLAN_CELERI = new BlockPlanLin2("plan_celeri",ModItems.GRAINE_CELERI, ModItems.CELERI_BRANCHE_CRU,2,2,2);
-    public static final Block PLAN_FENOUIL = new BlockPlanLin2("plan_fenouil",ModItems.GRAINE_FENOUIL, ModItems.FENOUIL_CRU,2,2,2);
-    public static final Block PLAN_MAIS = new BlockPlanLin("plan_mais",ModItems.GRAINE_MAIS, ModItems.MAIS_CRU);
-    public static final Block PLAN_NAVET = new BlockPlanLin2("plan_navet",ModItems.GRAINE_NAVET, ModItems.NAVET_CRU,2,2,2);
-    public static final Block PLAN_ORGE = new BlockPlanLin("plan_orge",ModItems.GRAINE_ORGE, ModItems.ORGE);
-    public static final Block PLAN_FRAISE = new BlockPlanLin2("plan_fraise",ModItems.GRAINE_FRAISE, ModItems.FRAISE,2,2,2);
-    public static final Block PLAN_FRAMBOISE = new BlockPlanLin2("plan_framboise",ModItems.GRAINE_FRAMBOISE, ModItems.FRAMBOISE,2,2,2);
-    public static final Block PLAN_MYRTILLE = new BlockPlanLin2("plan_myrtille",ModItems.GRAINE_MYRTILLE, ModItems.MYRTILLES,2,2,2);
-    public static final Block PLAN_POIREAU = new BlockPlanLin2("plan_poireau",ModItems.GRAINE_POIREAU, ModItems.POIREAU_CRU,2,2,2);
-    public static final Block PLAN_RADIS = new BlockPlanLin2("plan_radis",ModItems.GRAINE_RADIS, ModItems.RADIS,2,2,2);
-    public static final Block PLAN_SALSIFI = new BlockPlanLin2("plan_salsifi",ModItems.GRAINE_SALSIFI, ModItems.SALSIFI_CRU,2,2,2);
-    public static final Block PLAN_TOMATE = new BlockPlanLin2("plan_tomate",ModItems.GRAINE_TOMATE, ModItems.TOMATE_CRU,2,2,2);
-    public static final Block PLAN_VIGNE_NOIRE = new BlockPlanLin2("plan_vigne_noire",ModItems.GRAINE_VIGNE_NOIRE, ModItems.RAISIN_NOIR,2,2,2);
-    public static final Block PLAN_VIGNE_BLANCHE = new BlockPlanLin2("plan_vigne_blanche",ModItems.GRAINE_VIGNE_BLANCHE, ModItems.RAISIN_BLANC,2,2,2);
-    public static final Block PLAN_EPINARD = new BlockPlanLin2("plan_epinard",ModItems.GRAINE_EPINARD, ModItems.EPINARD_CRU,2,2,2);
-    public static final Block PLAN_CHOU = new BlockPlanLin2("plan_chou",ModItems.GRAINE_CHOU, ModItems.CHOU_VERT_CRU,2,2,2);
-    public static final Block PLAN_THE = new BlockPlanLin2("plan_the",ModItems.GRAINE_DE_THE, ModItems.FEUILLE_DE_THE,2,2,2);
-    public static final Block PLAN_SALADE = new BlockPlanLin2("plan_salade",ModItems.GRAINE_SALADE, ModItems.SALADE,2,2,2);
-    public static final Block PLAN_ARTICHAUT = new BlockPlanLin2("plan_artichaut",ModItems.GRAINE_ARTICHAUT, ModItems.ARTICHAUT_CRU,2,2,2);
-    public static final Block PLAN_BROCOLIS = new BlockPlanLin2("plan_brocolis",ModItems.GRAINE_BROCOLIS, ModItems.BROCOLI_CRU,2,2,2);
-    public static final Block PLAN_ASPERGE = new BlockPlanLin2("plan_asperge",ModItems.GRAINE_ASPERGE, ModItems.ASPERGE_CRU,2,2,2);
-    public static final Block PLAN_ENDIVE = new BlockPlanLin2("plan_endive",ModItems.GRAINE_ENDIVE, ModItems.ENDIVE_CRU,1,2,3);
-    public static final Block PLAN_RIZ = new BlockPlanLin2("plan_riz",ModItems.GRAINE_RIZ, ModItems.RIZ_CRU,2,2,2);
-    public static final Block PLAN_CHANVRE = new BlockPlanLin2("plan_chanvre",ModItems.GRAINE_CHANVRE, ModItems.CHANVRE,2,2,2);
-    public static final Block PLAN_BLE = new BlockPlanLin("plan_ble",ModItems.GRAINE_BLE, ModItems.BLE);
-    public static final Block PLAN_THYM = new BlockPlanLin2("plan_thym",ModItems.GRAINE_THYM, ModItems.THYM,2,2,2);
+    public static final Block PLAN_DE_LIN = new BlockPlanLin("plan_de_lin", ModItems.GRAINE_LIN, ModItems.LIN);
+    public static final Block PLAN_CELERI = new BlockPlanLin2("plan_celeri", ModItems.GRAINE_CELERI, ModItems.CELERI_BRANCHE_CRU, 2, 2, 2);
+    public static final Block PLAN_FENOUIL = new BlockPlanLin2("plan_fenouil", ModItems.GRAINE_FENOUIL, ModItems.FENOUIL_CRU, 2, 2, 2);
+    public static final Block PLAN_MAIS = new BlockPlanLin("plan_mais", ModItems.GRAINE_MAIS, ModItems.MAIS_CRU);
+    public static final Block PLAN_NAVET = new BlockPlanLin2("plan_navet", ModItems.GRAINE_NAVET, ModItems.NAVET_CRU, 2, 2, 2);
+    public static final Block PLAN_ORGE = new BlockPlanLin("plan_orge", ModItems.GRAINE_ORGE, ModItems.ORGE);
+    public static final Block PLAN_FRAISE = new BlockPlanLin2("plan_fraise", ModItems.GRAINE_FRAISE, ModItems.FRAISE, 2, 2, 2);
+    public static final Block PLAN_FRAMBOISE = new BlockPlanLin2("plan_framboise", ModItems.GRAINE_FRAMBOISE, ModItems.FRAMBOISE, 2, 2, 2);
+    public static final Block PLAN_MYRTILLE = new BlockPlanLin2("plan_myrtille", ModItems.GRAINE_MYRTILLE, ModItems.MYRTILLES, 2, 2, 2);
+    public static final Block PLAN_POIREAU = new BlockPlanLin2("plan_poireau", ModItems.GRAINE_POIREAU, ModItems.POIREAU_CRU, 2, 2, 2);
+    public static final Block PLAN_RADIS = new BlockPlanLin2("plan_radis", ModItems.GRAINE_RADIS, ModItems.RADIS, 2, 2, 2);
+    public static final Block PLAN_SALSIFI = new BlockPlanLin2("plan_salsifi", ModItems.GRAINE_SALSIFI, ModItems.SALSIFI_CRU, 2, 2, 2);
+    public static final Block PLAN_TOMATE = new BlockPlanLin2("plan_tomate", ModItems.GRAINE_TOMATE, ModItems.TOMATE_CRU, 2, 2, 2);
+    public static final Block PLAN_VIGNE_NOIRE = new BlockPlanLin2("plan_vigne_noire", ModItems.GRAINE_VIGNE_NOIRE, ModItems.RAISIN_NOIR, 2, 2, 2);
+    public static final Block PLAN_VIGNE_BLANCHE = new BlockPlanLin2("plan_vigne_blanche", ModItems.GRAINE_VIGNE_BLANCHE, ModItems.RAISIN_BLANC, 2, 2, 2);
+    public static final Block PLAN_EPINARD = new BlockPlanLin2("plan_epinard", ModItems.GRAINE_EPINARD, ModItems.EPINARD_CRU, 2, 2, 2);
+    public static final Block PLAN_CHOU = new BlockPlanLin2("plan_chou", ModItems.GRAINE_CHOU, ModItems.CHOU_VERT_CRU, 2, 2, 2);
+    public static final Block PLAN_THE = new BlockPlanLin2("plan_the", ModItems.GRAINE_DE_THE, ModItems.FEUILLE_DE_THE, 2, 2, 2);
+    public static final Block PLAN_SALADE = new BlockPlanLin2("plan_salade", ModItems.GRAINE_SALADE, ModItems.SALADE, 2, 2, 2);
+    public static final Block PLAN_ARTICHAUT = new BlockPlanLin2("plan_artichaut", ModItems.GRAINE_ARTICHAUT, ModItems.ARTICHAUT_CRU, 2, 2, 2);
+    public static final Block PLAN_BROCOLIS = new BlockPlanLin2("plan_brocolis", ModItems.GRAINE_BROCOLIS, ModItems.BROCOLI_CRU, 2, 2, 2);
+    public static final Block PLAN_ASPERGE = new BlockPlanLin2("plan_asperge", ModItems.GRAINE_ASPERGE, ModItems.ASPERGE_CRU, 2, 2, 2);
+    public static final Block PLAN_ENDIVE = new BlockPlanLin2("plan_endive", ModItems.GRAINE_ENDIVE, ModItems.ENDIVE_CRU, 1, 2, 3);
+    public static final Block PLAN_RIZ = new BlockPlanLin2("plan_riz", ModItems.GRAINE_RIZ, ModItems.RIZ_CRU, 2, 2, 2);
+    public static final Block PLAN_CHANVRE = new BlockPlanLin2("plan_chanvre", ModItems.GRAINE_CHANVRE, ModItems.CHANVRE, 2, 2, 2);
+    public static final Block PLAN_BLE = new BlockPlanLin("plan_ble", ModItems.GRAINE_BLE, ModItems.BLE);
+    public static final Block PLAN_THYM = new BlockPlanLin2("plan_thym", ModItems.GRAINE_THYM, ModItems.THYM, 2, 2, 2);
 
     //public static final Block PLAN_TEST = new BlockMushroom("plan_test" );
 
-    public static final Block PLAN_BASILIC= new BlockPlanLin2("plan_basilic",ModItems.GRAINE_BASILIC, ModItems.BASILIC2,2,2,2);
-    public static final Block PLAN_ANETH= new BlockPlanLin2("plan_aneth",ModItems.GRAINE_ANETH, ModItems.ANETH2,2,2,2);
-    public static final Block PLAN_ANIS= new BlockPlanLin2("plan_anis",ModItems.GRAINE_ANIS, ModItems.ANIS2,2,2,2);
-    public static final Block PLAN_BELLE_DE_NUIT= new BlockPlanLin2("plan_belle_de_nuit",ModItems.GRAINE_BELLE_DE_NUIT, ModItems.BELLE_DE_NUIT2,2,2,2);
-    public static final Block PLAN_BLEUETS= new BlockPlanLin2("plan_bleuets",ModItems.GRAINE_BLEUETS, ModItems.BLEUETS2,2,2,2);
-    public static final Block PLAN_BUISSON= new BlockPlanLin2("plan_buisson",ModItems.GRAINE_BUISSON, ModItems.BUISSON2,2,2,2);
-    public static final Block PLAN_BUISSON_DE_FLEURS_BLANCHES= new BlockPlanLin2("plan_buisson_de_fleurs_blanches",ModItems.GRAINE_BUISSON_DE_FLEURS_BLANCHES, ModItems.BUISSON_DE_FLEURS_BLANCHES2,2,2,2);
-    public static final Block PLAN_BUISSON_ETRANGE= new BlockPlanLin2("plan_buisson_etrange",ModItems.GRAINE_BUISSON_ETRANGE, ModItems.BUISSON_ETRANGE2,2,2,2);
-    public static final Block PLAN_BUISSON_HERBEUX= new BlockPlanLin2("plan_buisson_herbeux",ModItems.GRAINE_BUISSON_HERBEUX, ModItems.BUISSON_HERBEUX2,2,2,2);
-    public static final Block PLAN_CAMOMILLE= new BlockPlanLin2("plan_camomille",ModItems.GRAINE_CAMOMILLE, ModItems.CAMOMILLE2,2,2,2);
-    public static final Block PLAN_CHARDON= new BlockPlanLin2("plan_chardon",ModItems.GRAINE_CHARDON, ModItems.CHARDON2,2,2,2);
-    public static final Block PLAN_CIBOULETTE= new BlockPlanLin2("plan_ciboulette",ModItems.GRAINE_CIBOULETTE, ModItems.CIBOULETTE2,2,2,2);
-    public static final Block PLAN_CLOCHETTES= new BlockPlanLin2("plan_clochettes",ModItems.GRAINE_CLOCHETTES, ModItems.CLOCHETTES2,2,2,2);
-    public static final Block PLAN_COSMOS= new BlockPlanLin2("plan_cosmos",ModItems.GRAINE_COSMOS, ModItems.COSMOS2,2,2,2);
-    public static final Block PLAN_ETOILE_DES_GLACIERS= new BlockPlanLin2("plan_etoile_des_glaciers",ModItems.GRAINE_ETOILE_DES_GLACIERS, ModItems.ETOILE_DES_GLACIERS2,2,2,2);
-    public static final Block PLAN_GERANIUM= new BlockPlanLin2("plan_geranium",ModItems.GRAINE_GERANIUM, ModItems.GERANIUM2,2,2,2);
-    public static final Block PLAN_GLYCINE= new BlockPlanLin2("plan_glycine",ModItems.GRAINE_GLYCINE, ModItems.GLYCINE2,2,2,2);
-    public static final Block PLAN_GUI= new BlockPlanLin2("plan_gui",ModItems.GRAINE_GUI, ModItems.GUI2,2,2,2);
-    public static final Block PLAN_GUZMANIAS= new BlockPlanLin2("plan_guzmanias",ModItems.GRAINE_GUZMANIAS, ModItems.GUZMANIAS2,2,2,2);
-    public static final Block PLAN_HIBISCUS= new BlockPlanLin2("plan_hibiscus",ModItems.GRAINE_HIBISCUS, ModItems.HIBISCUS2,2,2,2);
-    public static final Block PLAN_HORTENSIAS= new BlockPlanLin2("plan_hortensias",ModItems.GRAINE_HORTENSIAS, ModItems.HORTENSIAS2,2,2,2);
-    public static final Block PLAN_HOUX= new BlockPlanLin2("plan_houx",ModItems.GRAINE_HOUX, ModItems.HOUX2,2,2,2);
-    public static final Block PLAN_HYDRANGEE= new BlockPlanLin2("plan_hydrangee",ModItems.GRAINE_HYDRANGEE, ModItems.HYDRANGEE2,2,2,2);
-    public static final Block PLAN_IRIS= new BlockPlanLin2("plan_iris",ModItems.GRAINE_IRIS, ModItems.IRIS2,2,2,2);
-    public static final Block PLAN_JACINTHE_DES_BOIS= new BlockPlanLin2("plan_jacinthe_des_bois",ModItems.GRAINE_JACINTHE_DES_BOIS, ModItems.JACINTHE_DES_BOIS2,2,2,2);
-    public static final Block PLAN_JASMIN= new BlockPlanLin2("plan_jasmin",ModItems.GRAINE_JASMIN, ModItems.JASMIN2,2,2,2);
-    public static final Block PLAN_JOLI_BUISSON= new BlockPlanLin2("plan_joli_buisson",ModItems.GRAINE_JOLI_BUISSON, ModItems.JOLI_BUISSON2,2,2,2);
-    public static final Block PLAN_JONQUILLE= new BlockPlanLin2("plan_jonquille",ModItems.GRAINE_JONQUILLE, ModItems.JONQUILLE2,2,2,2);
-    public static final Block PLAN_LAURIER= new BlockPlanLin2("plan_laurier",ModItems.GRAINE_LAURIER, ModItems.LAURIER2,2,2,2);
-    public static final Block PLAN_LAVANDE= new BlockPlanLin2("plan_lavande",ModItems.GRAINE_LAVANDE, ModItems.LAVANDE2,2,2,2);
-    public static final Block PLAN_LYS= new BlockPlanLin2("plan_lys",ModItems.GRAINE_LYS, ModItems.LYS2,2,2,2);
-    public static final Block PLAN_MANDRAGORE= new BlockPlanLin2("plan_mandragore",ModItems.GRAINE_MANDRAGORE, ModItems.MANDRAGORE2,2,2,2);
-    public static final Block PLAN_MENTHE= new BlockPlanLin2("plan_menthe",ModItems.GRAINE_MENTHE, ModItems.MENTHE2,2,2,2);
-    public static final Block PLAN_MUGUET= new BlockPlanLin2("plan_muguet",ModItems.GRAINE_MUGUET, ModItems.MUGUET2,2,2,2);
-    public static final Block PLAN_MYOSOTIS= new BlockPlanLin2("plan_myosotis",ModItems.GRAINE_MYOSOTIS, ModItems.MYOSOTIS2,2,2,2);
-    public static final Block PLAN_NARCISSES= new BlockPlanLin2("plan_narcisses",ModItems.GRAINE_NARCISSES, ModItems.NARCISSES2,2,2,2);
-    public static final Block PLAN_RONCES= new BlockPlanLin2("plan_ronces",ModItems.GRAINE_RONCES, ModItems.RONCES2,2,2,2);
-    public static final Block PLAN_OEILLETS= new BlockPlanLin2("plan_oeillets",ModItems.GRAINE_OEILLETS, ModItems.OEILLETS2,2,2,2);
-    public static final Block PLAN_ORCHIDEE_ROSE= new BlockPlanLin2("plan_orchidee_rose",ModItems.GRAINE_ORCHIDEE_ROSE, ModItems.ORCHIDEE_ROSE2,2,2,2);
-    public static final Block PLAN_PENSEES= new BlockPlanLin2("plan_pensees",ModItems.GRAINE_PENSEES, ModItems.PENSEES2,2,2,2);
-    public static final Block PLAN_PERSIL= new BlockPlanLin2("plan_persil",ModItems.GRAINE_PERSIL, ModItems.PERSIL2,2,2,2);
-    public static final Block PLAN_PIVOINE= new BlockPlanLin2("plan_pivoine",ModItems.GRAINE_PIVOINE, ModItems.PIVOINE2,2,2,2);
-    public static final Block PLAN_PLANTE_ETRANGE= new BlockPlanLin2("plan_plante_etrange",ModItems.GRAINE_PLANTE_ETRANGE, ModItems.PLANTE_ETRANGE2,2,2,2);
-    public static final Block PLAN_PLANTE_GRASSE_COLOREE= new BlockPlanLin2("plan_plante_grasse_coloree",ModItems.GRAINE_PLANTE_GRASSE_COLOREE, ModItems.PLANTE_GRASSE_COLOREE2,2,2,2);
-    public static final Block PLAN_POIVRON_JAUNE= new BlockPlanLin2("plan_poivron_jaune",ModItems.GRAINE_POIVRON_JAUNE, ModItems.POIVRON_JAUNE_M_CRU,2,2,2);
-    public static final Block PLAN_POIVRON_ORANGE= new BlockPlanLin2("plan_poivron_orange",ModItems.GRAINE_POIVRON_ORANGE, ModItems.POIVRON_ORANGE2,2,2,2);
-    public static final Block PLAN_POIVRON_ROUGE= new BlockPlanLin2("plan_poivron_rouge",ModItems.GRAINE_POIVRON_ROUGE, ModItems.POIVRON_ROUGE_M_CRU,2,2,2);
-    public static final Block PLAN_POIVRON_VERT= new BlockPlanLin2("plan_poivron_vert",ModItems.GRAINE_POIVRON_VERT, ModItems.POIVRON_VERT_M_CRU,2,2,2);
-    public static final Block PLAN_ROMARIN= new BlockPlanLin2("plan_romarin",ModItems.GRAINE_ROMARIN, ModItems.ROMARIN2,2,2,2);
-    public static final Block PLAN_SALICORNE= new BlockPlanLin2("plan_salicorne",ModItems.GRAINE_SALICORNE, ModItems.SALICORNE2,2,2,2);
-    public static final Block PLAN_VERGE_D_OR= new BlockPlanLin2("plan_verge_d_or",ModItems.GRAINE_VERGE_D_OR, ModItems.VERGE_D_OR2,2,2,2);
-    public static final Block PLAN_VERVEINE= new BlockPlanLin2("plan_verveine",ModItems.GRAINE_VERVEINE, ModItems.VERVEINE2,2,2,2);
-    public static final Block PLAN_VIOLETTES= new BlockPlanLin2("plan_violettes",ModItems.GRAINE_VIOLETTES, ModItems.VIOLETTES2,2,2,2);
-    public static final Block PLAN_ESTRAGON= new BlockPlanLin2("plan_estragon",ModItems.GRAINE_ESTRAGON, ModItems.ESTRAGON,2,2,2);
-    public static final Block PLAN_FLEUR_DE_PAVOT= new BlockPlanLin2("plan_fleur_de_pavot",ModItems.GRAINE_FLEUR_DE_PAVOT, ModItems.GRAINE_DE_PAVOT,2,2,2);
-    public static final Block PLAN_GIROFLIER= new BlockPlanLin2("plan_giroflier",ModItems.GRAINE_GIROFLIER, ModItems.CLOU_DE_GIROFLE,2,2,2);
-    public static final Block PLAN_RHUBARBE= new BlockPlanLin2("plan_rhubarbe",ModItems.GRAINE_RHUBARBE, ModItems.RHUBARBE,2,2,2);
-    public static final Block PLAN_SAUGE= new BlockPlanLin2("plan_sauge",ModItems.GRAINE_SAUGE, ModItems.SAUGE,2,2,2);
-    public static final Block PLAN_SUREAU= new BlockPlanLin2("plan_sureau",ModItems.GRAINE_SUREAU, ModItems.SUREAU,2,2,2);
-
-
-
-
-
+    public static final Block PLAN_BASILIC = new BlockPlanLin2("plan_basilic", ModItems.GRAINE_BASILIC, ModItems.BASILIC2, 2, 2, 2);
+    public static final Block PLAN_ANETH = new BlockPlanLin2("plan_aneth", ModItems.GRAINE_ANETH, ModItems.ANETH2, 2, 2, 2);
+    public static final Block PLAN_ANIS = new BlockPlanLin2("plan_anis", ModItems.GRAINE_ANIS, ModItems.ANIS2, 2, 2, 2);
+    public static final Block PLAN_BELLE_DE_NUIT = new BlockPlanLin2("plan_belle_de_nuit", ModItems.GRAINE_BELLE_DE_NUIT, ModItems.BELLE_DE_NUIT2, 2, 2, 2);
+    public static final Block PLAN_BLEUETS = new BlockPlanLin2("plan_bleuets", ModItems.GRAINE_BLEUETS, ModItems.BLEUETS2, 2, 2, 2);
+    public static final Block PLAN_BUISSON = new BlockPlanLin2("plan_buisson", ModItems.GRAINE_BUISSON, ModItems.BUISSON2, 2, 2, 2);
+    public static final Block PLAN_BUISSON_DE_FLEURS_BLANCHES = new BlockPlanLin2("plan_buisson_de_fleurs_blanches", ModItems.GRAINE_BUISSON_DE_FLEURS_BLANCHES, ModItems.BUISSON_DE_FLEURS_BLANCHES2, 2, 2, 2);
+    public static final Block PLAN_BUISSON_ETRANGE = new BlockPlanLin2("plan_buisson_etrange", ModItems.GRAINE_BUISSON_ETRANGE, ModItems.BUISSON_ETRANGE2, 2, 2, 2);
+    public static final Block PLAN_BUISSON_HERBEUX = new BlockPlanLin2("plan_buisson_herbeux", ModItems.GRAINE_BUISSON_HERBEUX, ModItems.BUISSON_HERBEUX2, 2, 2, 2);
+    public static final Block PLAN_CAMOMILLE = new BlockPlanLin2("plan_camomille", ModItems.GRAINE_CAMOMILLE, ModItems.CAMOMILLE2, 2, 2, 2);
+    public static final Block PLAN_CHARDON = new BlockPlanLin2("plan_chardon", ModItems.GRAINE_CHARDON, ModItems.CHARDON2, 2, 2, 2);
+    public static final Block PLAN_CIBOULETTE = new BlockPlanLin2("plan_ciboulette", ModItems.GRAINE_CIBOULETTE, ModItems.CIBOULETTE2, 2, 2, 2);
+    public static final Block PLAN_CLOCHETTES = new BlockPlanLin2("plan_clochettes", ModItems.GRAINE_CLOCHETTES, ModItems.CLOCHETTES2, 2, 2, 2);
+    public static final Block PLAN_COSMOS = new BlockPlanLin2("plan_cosmos", ModItems.GRAINE_COSMOS, ModItems.COSMOS2, 2, 2, 2);
+    public static final Block PLAN_ETOILE_DES_GLACIERS = new BlockPlanLin2("plan_etoile_des_glaciers", ModItems.GRAINE_ETOILE_DES_GLACIERS, ModItems.ETOILE_DES_GLACIERS2, 2, 2, 2);
+    public static final Block PLAN_GERANIUM = new BlockPlanLin2("plan_geranium", ModItems.GRAINE_GERANIUM, ModItems.GERANIUM2, 2, 2, 2);
+    public static final Block PLAN_GLYCINE = new BlockPlanLin2("plan_glycine", ModItems.GRAINE_GLYCINE, ModItems.GLYCINE2, 2, 2, 2);
+    public static final Block PLAN_GUI = new BlockPlanLin2("plan_gui", ModItems.GRAINE_GUI, ModItems.GUI2, 2, 2, 2);
+    public static final Block PLAN_GUZMANIAS = new BlockPlanLin2("plan_guzmanias", ModItems.GRAINE_GUZMANIAS, ModItems.GUZMANIAS2, 2, 2, 2);
+    public static final Block PLAN_HIBISCUS = new BlockPlanLin2("plan_hibiscus", ModItems.GRAINE_HIBISCUS, ModItems.HIBISCUS2, 2, 2, 2);
+    public static final Block PLAN_HORTENSIAS = new BlockPlanLin2("plan_hortensias", ModItems.GRAINE_HORTENSIAS, ModItems.HORTENSIAS2, 2, 2, 2);
+    public static final Block PLAN_HOUX = new BlockPlanLin2("plan_houx", ModItems.GRAINE_HOUX, ModItems.HOUX2, 2, 2, 2);
+    public static final Block PLAN_HYDRANGEE = new BlockPlanLin2("plan_hydrangee", ModItems.GRAINE_HYDRANGEE, ModItems.HYDRANGEE2, 2, 2, 2);
+    public static final Block PLAN_IRIS = new BlockPlanLin2("plan_iris", ModItems.GRAINE_IRIS, ModItems.IRIS2, 2, 2, 2);
+    public static final Block PLAN_JACINTHE_DES_BOIS = new BlockPlanLin2("plan_jacinthe_des_bois", ModItems.GRAINE_JACINTHE_DES_BOIS, ModItems.JACINTHE_DES_BOIS2, 2, 2, 2);
+    public static final Block PLAN_JASMIN = new BlockPlanLin2("plan_jasmin", ModItems.GRAINE_JASMIN, ModItems.JASMIN2, 2, 2, 2);
+    public static final Block PLAN_JOLI_BUISSON = new BlockPlanLin2("plan_joli_buisson", ModItems.GRAINE_JOLI_BUISSON, ModItems.JOLI_BUISSON2, 2, 2, 2);
+    public static final Block PLAN_JONQUILLE = new BlockPlanLin2("plan_jonquille", ModItems.GRAINE_JONQUILLE, ModItems.JONQUILLE2, 2, 2, 2);
+    public static final Block PLAN_LAURIER = new BlockPlanLin2("plan_laurier", ModItems.GRAINE_LAURIER, ModItems.LAURIER2, 2, 2, 2);
+    public static final Block PLAN_LAVANDE = new BlockPlanLin2("plan_lavande", ModItems.GRAINE_LAVANDE, ModItems.LAVANDE2, 2, 2, 2);
+    public static final Block PLAN_LYS = new BlockPlanLin2("plan_lys", ModItems.GRAINE_LYS, ModItems.LYS2, 2, 2, 2);
+    public static final Block PLAN_MANDRAGORE = new BlockPlanLin2("plan_mandragore", ModItems.GRAINE_MANDRAGORE, ModItems.MANDRAGORE2, 2, 2, 2);
+    public static final Block PLAN_MENTHE = new BlockPlanLin2("plan_menthe", ModItems.GRAINE_MENTHE, ModItems.MENTHE2, 2, 2, 2);
+    public static final Block PLAN_MUGUET = new BlockPlanLin2("plan_muguet", ModItems.GRAINE_MUGUET, ModItems.MUGUET2, 2, 2, 2);
+    public static final Block PLAN_MYOSOTIS = new BlockPlanLin2("plan_myosotis", ModItems.GRAINE_MYOSOTIS, ModItems.MYOSOTIS2, 2, 2, 2);
+    public static final Block PLAN_NARCISSES = new BlockPlanLin2("plan_narcisses", ModItems.GRAINE_NARCISSES, ModItems.NARCISSES2, 2, 2, 2);
+    public static final Block PLAN_RONCES = new BlockPlanLin2("plan_ronces", ModItems.GRAINE_RONCES, ModItems.RONCES2, 2, 2, 2);
+    public static final Block PLAN_OEILLETS = new BlockPlanLin2("plan_oeillets", ModItems.GRAINE_OEILLETS, ModItems.OEILLETS2, 2, 2, 2);
+    public static final Block PLAN_ORCHIDEE_ROSE = new BlockPlanLin2("plan_orchidee_rose", ModItems.GRAINE_ORCHIDEE_ROSE, ModItems.ORCHIDEE_ROSE2, 2, 2, 2);
+    public static final Block PLAN_PENSEES = new BlockPlanLin2("plan_pensees", ModItems.GRAINE_PENSEES, ModItems.PENSEES2, 2, 2, 2);
+    public static final Block PLAN_PERSIL = new BlockPlanLin2("plan_persil", ModItems.GRAINE_PERSIL, ModItems.PERSIL2, 2, 2, 2);
+    public static final Block PLAN_PIVOINE = new BlockPlanLin2("plan_pivoine", ModItems.GRAINE_PIVOINE, ModItems.PIVOINE2, 2, 2, 2);
+    public static final Block PLAN_PLANTE_ETRANGE = new BlockPlanLin2("plan_plante_etrange", ModItems.GRAINE_PLANTE_ETRANGE, ModItems.PLANTE_ETRANGE2, 2, 2, 2);
+    public static final Block PLAN_PLANTE_GRASSE_COLOREE = new BlockPlanLin2("plan_plante_grasse_coloree", ModItems.GRAINE_PLANTE_GRASSE_COLOREE, ModItems.PLANTE_GRASSE_COLOREE2, 2, 2, 2);
+    public static final Block PLAN_POIVRON_JAUNE = new BlockPlanLin2("plan_poivron_jaune", ModItems.GRAINE_POIVRON_JAUNE, ModItems.POIVRON_JAUNE_M_CRU, 2, 2, 2);
+    public static final Block PLAN_POIVRON_ORANGE = new BlockPlanLin2("plan_poivron_orange", ModItems.GRAINE_POIVRON_ORANGE, ModItems.POIVRON_ORANGE2, 2, 2, 2);
+    public static final Block PLAN_POIVRON_ROUGE = new BlockPlanLin2("plan_poivron_rouge", ModItems.GRAINE_POIVRON_ROUGE, ModItems.POIVRON_ROUGE_M_CRU, 2, 2, 2);
+    public static final Block PLAN_POIVRON_VERT = new BlockPlanLin2("plan_poivron_vert", ModItems.GRAINE_POIVRON_VERT, ModItems.POIVRON_VERT_M_CRU, 2, 2, 2);
+    public static final Block PLAN_ROMARIN = new BlockPlanLin2("plan_romarin", ModItems.GRAINE_ROMARIN, ModItems.ROMARIN2, 2, 2, 2);
+    public static final Block PLAN_SALICORNE = new BlockPlanLin2("plan_salicorne", ModItems.GRAINE_SALICORNE, ModItems.SALICORNE2, 2, 2, 2);
+    public static final Block PLAN_VERGE_D_OR = new BlockPlanLin2("plan_verge_d_or", ModItems.GRAINE_VERGE_D_OR, ModItems.VERGE_D_OR2, 2, 2, 2);
+    public static final Block PLAN_VERVEINE = new BlockPlanLin2("plan_verveine", ModItems.GRAINE_VERVEINE, ModItems.VERVEINE2, 2, 2, 2);
+    public static final Block PLAN_VIOLETTES = new BlockPlanLin2("plan_violettes", ModItems.GRAINE_VIOLETTES, ModItems.VIOLETTES2, 2, 2, 2);
+    public static final Block PLAN_ESTRAGON = new BlockPlanLin2("plan_estragon", ModItems.GRAINE_ESTRAGON, ModItems.ESTRAGON, 2, 2, 2);
+    public static final Block PLAN_FLEUR_DE_PAVOT = new BlockPlanLin2("plan_fleur_de_pavot", ModItems.GRAINE_FLEUR_DE_PAVOT, ModItems.GRAINE_DE_PAVOT, 2, 2, 2);
+    public static final Block PLAN_GIROFLIER = new BlockPlanLin2("plan_giroflier", ModItems.GRAINE_GIROFLIER, ModItems.CLOU_DE_GIROFLE, 2, 2, 2);
+    public static final Block PLAN_RHUBARBE = new BlockPlanLin2("plan_rhubarbe", ModItems.GRAINE_RHUBARBE, ModItems.RHUBARBE, 2, 2, 2);
+    public static final Block PLAN_SAUGE = new BlockPlanLin2("plan_sauge", ModItems.GRAINE_SAUGE, ModItems.SAUGE, 2, 2, 2);
+    public static final Block PLAN_SUREAU = new BlockPlanLin2("plan_sureau", ModItems.GRAINE_SUREAU, ModItems.SUREAU, 2, 2, 2);
 
 
     //LUMINEUX
-    public static final Block LANTERNE_JAUNE_ETEINTE = new BlockLantern("lanterne_jaune",false,Material.GLASS,0.5F,3F,SoundType.GLASS);
-    public static final Block LANTERNE_JAUNE_ALLUMEE = new BlockLantern("lanterne_jaune",true,Material.GLASS,0.5F,3F,SoundType.GLASS);
+    public static final Block LANTERNE_JAUNE_ETEINTE = new BlockLantern("lanterne_jaune", false, Material.GLASS, 0.5F, 3F, SoundType.GLASS);
+    public static final Block LANTERNE_JAUNE_ALLUMEE = new BlockLantern("lanterne_jaune", true, Material.GLASS, 0.5F, 3F, SoundType.GLASS);
     //public static final Block LUSTRE_ETEINT = new BlockLustre("lustre_eteint",false,Material.GLASS,0.5F,3F,SoundType.GLASS);
-    public static final Block LUSTRE_ALUME = new BlockLustreTest("lustre_alume",Material.GLASS);
+    public static final Block LUSTRE_ALUME = new BlockLustreTest("lustre_alume", Material.GLASS);
 
 
     //FLOWER POT \!/ Venir ajouter les plantes ici pour pouvoir les planter dans ces nouveaux pots ! (ctrl+f BASILIC dans le fichier BlockFlowerPot ;) ) + BlockStates et model à ajuster
-   // public static final Block FLOWER_POT = new BlockFlowerPot("flower_pot_am");
+    // public static final Block FLOWER_POT = new BlockFlowerPot("flower_pot_am");
 
     //BARIL \!/ Ajouter les interactions avec d'autres objets et liquides dans la classe directement en suivant l'exemple de l'eau
-    public static final Block BARIL_VIDE = new BlockBarril("baril_vide",Material.WOOD, 1.5F, 1.5f, SoundType.WOOD);
+    public static final Block BARIL_VIDE = new BlockBarril("baril_vide", Material.WOOD, 1.5F, 1.5f, SoundType.WOOD);
 
 
     //CONTENEUR \!/ Il faut recréer Block, TileEntity, Container, Inventory, GUI, Registry dans util.handlers.RegistryHandler et gérer le GUIid du Block (onBlockActivated) dans le switch case du GUIHandler
     public static final Block ECRIN_A_BIJOUX = new BlockEcrinABijoux("ecrin_a_bijoux", Material.WOOD, 1.5F, 1.5F, SoundType.WOOD);
 
-   // BLOCS CONTENEUR 3D
+    // BLOCS CONTENEUR 3D
 
     //public static final Block BIBLIOTHEQUE = new BlockBase2("bibliotheque", Material.ROCK, 5F, 5F, SoundType.STONE);
     // static final Block ETAGERE_A_ROULEAUX = new BlockBase2("etagere_a_rouleaux", Material.ROCK, 5F, 5F, SoundType.STONE);
-   //public static final Block RANGE_BOUTEILLE = new BlockBase2("range_bouteille", Material.ROCK, 5F, 5F, SoundType.STONE);
+    //public static final Block RANGE_BOUTEILLE = new BlockBase2("range_bouteille", Material.ROCK, 5F, 5F, SoundType.STONE);
     //public static final Block RATELIER_DROIT = new BlockBase2("ratelier_droit", Material.ROCK, 5F, 5F, SoundType.STONE);
 
     // BLOC 3D JEU
 
     //public static final Block JEU_D_ECHEC = new BlockBase2("jeu_d_echec", Material.ROCK, 5F, 5F, SoundType.STONE);
-
 
 
     //Minerai
@@ -657,13 +637,11 @@ public class ModBlocks {
     public static final Block BLOC_MINERAI_OR = new BlockBase("bloc_minerai_or", Material.ROCK, 5F, 5F, SoundType.STONE);
 
 
-
-
     // bloc 3d simple
 
     public static final Block PIEGE_A_LOUP = new BlockBase2("piege_a_loup", Material.ROCK, 5F, 5F, SoundType.STONE);
     public static final Block PORTE_MANTEAUX = new BlockBase2("porte_manteaux", Material.ROCK, 5F, 5F, SoundType.STONE);
-   // public static final Block AMPHORE = new BlockBase2("amphore", Material.ROCK, 5F, 5F, SoundType.STONE);
+    // public static final Block AMPHORE = new BlockBase2("amphore", Material.ROCK, 5F, 5F, SoundType.STONE);
     //public static final Block ARMOIRE = new BlockBase2("armoire", Material.WOOD, 5F, 5F, SoundType.WOOD);
     //public static final Block COFFRE_EN_BOIS = new BlockBase2("coffre_en_bois", Material.WOOD, 5F, 5F, SoundType.WOOD);
     //public static final Block COUPE_DE_FRUITS = new BlockBase2("coupe_de_fruits", Material.WOOD, 5F, 5F, SoundType.WOOD);
@@ -691,8 +669,6 @@ public class ModBlocks {
     //public static final Block SECHOIR_POISSON = new BlockBase2("sechoir_poisson", Material.ROCK, 5F, 5F, SoundType.STONE);
     //public static final Block SECHOIR_SIMPLE_PAPIER = new BlockBase2("sechoir_simple_papier", Material.ROCK, 5F, 5F, SoundType.STONE);
     //public static final Block SECHOIR_VIANDES = new BlockBase2("sechoir_viandes", Material.ROCK, 5F, 5F, SoundType.STONE);
-
-
 
 
 //GATEAU
@@ -743,132 +719,125 @@ public class ModBlocks {
     */
 
 
-
-
-
-
-
-
     /*public static final Block CHAISE_CHENE = new BlocChaise("chaise_chene", Material.WOOD, SoundType.WOOD);
     /**
      * Init the blocks
      */
-    public static void init(){
+    public static void init() {
         //dalles
-       // DALLE_LAINE_MAGENTA = new DalleLaineMagenta.Half("dalle_laine_magenta",1F,1F, Material.CLOTH, SoundType.CLOTH);
+        // DALLE_LAINE_MAGENTA = new DalleLaineMagenta.Half("dalle_laine_magenta",1F,1F, Material.CLOTH, SoundType.CLOTH);
         //DALLE_LAINE_MAGENTA_DOUBLE_SLAB = new DalleLaineMagenta.Double("dalle_laine_magenta_double_slab",1F,1F, Material.CLOTH, SoundType.CLOTH);
         /*DALLE_LAINE_BLEU = new DalleLaineBleu.Half("dalle_laine_bleu",1F,1F, Material.CLOTH, SoundType.CLOTH);
         DALLE_LAINE_BLEU_DOUBLE_SLAB = new DalleLaineBleu.Double("dalle_laine_bleu_double_slab",1F,1F, Material.CLOTH, SoundType.CLOTH);*/
 
 
         //cultures
-        ModItems.GRAINE_LIN = new ItemGraine("graine_lin",ModBlocks.PLAN_DE_LIN, Blocks.FARMLAND);
-        ModItems.GRAINE_CELERI = new ItemGraine("graine_celeri",ModBlocks.PLAN_CELERI, Blocks.FARMLAND);
-        ModItems.GRAINE_FENOUIL = new ItemGraine("graine_fenouil",ModBlocks.PLAN_FENOUIL, Blocks.FARMLAND);
-        ModItems.GRAINE_FRAISE = new ItemGraine("graine_fraise",ModBlocks.PLAN_FRAISE, Blocks.FARMLAND);
-        ModItems.GRAINE_FRAMBOISE = new ItemGraine("graine_framboise",ModBlocks.PLAN_FRAMBOISE, Blocks.FARMLAND);
-        ModItems.GRAINE_MAIS = new ItemGraine("graine_mais",ModBlocks.PLAN_MAIS, Blocks.FARMLAND);
-        ModItems.GRAINE_MYRTILLE = new ItemGraine("graine_myrtille",ModBlocks.PLAN_MYRTILLE, Blocks.FARMLAND);
-        ModItems.GRAINE_NAVET = new ItemGraine("graine_navet",ModBlocks.PLAN_NAVET, Blocks.FARMLAND);
-        ModItems.GRAINE_ORGE = new ItemGraine("graine_orge",ModBlocks.PLAN_ORGE, Blocks.FARMLAND);
-        ModItems.GRAINE_POIREAU = new ItemGraine("graine_poireau",ModBlocks.PLAN_POIREAU, Blocks.FARMLAND);
-        ModItems.GRAINE_RADIS = new ItemGraine("graine_radis",ModBlocks.PLAN_RADIS, Blocks.FARMLAND);
-        ModItems.GRAINE_SALSIFI = new ItemGraine("graine_salsifi",ModBlocks.PLAN_SALSIFI, Blocks.FARMLAND);
-        ModItems.GRAINE_TOMATE = new ItemGraine("graine_tomate",ModBlocks.PLAN_TOMATE, Blocks.FARMLAND);
-        ModItems.GRAINE_VIGNE_NOIRE = new ItemGraine("graine_vigne_noire",ModBlocks.PLAN_VIGNE_NOIRE, Blocks.FARMLAND);
-        ModItems.GRAINE_VIGNE_BLANCHE = new ItemGraine("graine_vigne_blanche",ModBlocks.PLAN_VIGNE_BLANCHE, Blocks.FARMLAND);
-        ModItems.GRAINE_CHOU = new ItemGraine("graine_chou",ModBlocks.PLAN_CHOU, Blocks.FARMLAND);
-        ModItems.GRAINE_EPINARD = new ItemGraine("graine_epinard",ModBlocks.PLAN_EPINARD, Blocks.FARMLAND);
-        ModItems.GRAINE_DE_THE = new ItemGraine("graine_the",ModBlocks.PLAN_THE, Blocks.FARMLAND);
-        ModItems.GRAINE_SALADE = new ItemGraine("graine_salade",ModBlocks.PLAN_SALADE, Blocks.FARMLAND);
-        ModItems.GRAINE_ARTICHAUT = new ItemGraine("graine_artichaut",ModBlocks.PLAN_ARTICHAUT, Blocks.FARMLAND);
-        ModItems.GRAINE_BROCOLIS = new ItemGraine("graine_brocolis",ModBlocks.PLAN_BROCOLIS, Blocks.FARMLAND);
-        ModItems.GRAINE_ASPERGE = new ItemGraine("graine_asperge",ModBlocks.PLAN_ASPERGE, Blocks.FARMLAND);
-        ModItems.GRAINE_ENDIVE = new ItemGraine("graine_endive",ModBlocks.PLAN_ENDIVE, Blocks.FARMLAND);
-        ModItems.GRAINE_RIZ = new ItemGraine("graine_riz",ModBlocks.PLAN_RIZ, Blocks.FARMLAND);
-        ModItems.GRAINE_BLE = new ItemGraine("graine_ble",ModBlocks.PLAN_BLE, Blocks.FARMLAND);
-        ModItems.GRAINE_THYM = new ItemGraine("graine_thym",ModBlocks.PLAN_THYM, Blocks.FARMLAND);
-        ModItems.GRAINE_CHANVRE = new ItemGraine("GRAINE_CHANVRE",ModBlocks.PLAN_CHANVRE, Blocks.FARMLAND);
-        ModItems.GRAINE_BASILIC = new ItemGraine("graine_basilic",ModBlocks.PLAN_BASILIC, Blocks.FARMLAND);
-        ModItems.GRAINE_ANETH = new ItemGraine("graine_aneth",ModBlocks.PLAN_ANETH, Blocks.FARMLAND);
-        ModItems.GRAINE_ANIS = new ItemGraine("graine_anis",ModBlocks.PLAN_ANIS, Blocks.FARMLAND);
-        ModItems.GRAINE_BELLE_DE_NUIT = new ItemGraine("graine_belle_de_nuit",ModBlocks.PLAN_BELLE_DE_NUIT, Blocks.FARMLAND);
-        ModItems.GRAINE_BLEUETS = new ItemGraine("graine_bleuets",ModBlocks.PLAN_BLEUETS, Blocks.FARMLAND);
-        ModItems.GRAINE_BUISSON = new ItemGraine("graine_buisson",ModBlocks.PLAN_BUISSON, Blocks.FARMLAND);
-        ModItems.GRAINE_BUISSON_DE_FLEURS_BLANCHES = new ItemGraine("graine_buisson_de_fleurs_blanches",ModBlocks.PLAN_BUISSON_DE_FLEURS_BLANCHES, Blocks.FARMLAND);
-        ModItems.GRAINE_BUISSON_ETRANGE = new ItemGraine("graine_buisson_etrange",ModBlocks.PLAN_BUISSON_ETRANGE, Blocks.FARMLAND);
-        ModItems.GRAINE_BUISSON_HERBEUX = new ItemGraine("graine_buisson_herbeux",ModBlocks.PLAN_BUISSON_HERBEUX, Blocks.FARMLAND);
-        ModItems.GRAINE_CAMOMILLE = new ItemGraine("graine_camomille",ModBlocks.PLAN_CAMOMILLE, Blocks.FARMLAND);
-        ModItems.GRAINE_CHARDON = new ItemGraine("graine_chardon",ModBlocks.PLAN_CHARDON, Blocks.FARMLAND);
-        ModItems.GRAINE_CIBOULETTE = new ItemGraine("graine_ciboulette",ModBlocks.PLAN_CIBOULETTE, Blocks.FARMLAND);
-        ModItems.GRAINE_CLOCHETTES = new ItemGraine("graine_clochettes",ModBlocks.PLAN_CLOCHETTES, Blocks.FARMLAND);
-        ModItems.GRAINE_COSMOS = new ItemGraine("graine_cosmos",ModBlocks.PLAN_COSMOS, Blocks.FARMLAND);
-        ModItems.GRAINE_ETOILE_DES_GLACIERS = new ItemGraine("graine_etoile_des_glaciers",ModBlocks.PLAN_ETOILE_DES_GLACIERS, Blocks.FARMLAND);
-        ModItems.GRAINE_GERANIUM = new ItemGraine("graine_geranium",ModBlocks.PLAN_GERANIUM, Blocks.FARMLAND);
-        ModItems.GRAINE_GLYCINE = new ItemGraine("graine_glycine",ModBlocks.PLAN_GLYCINE, Blocks.FARMLAND);
-        ModItems.GRAINE_GUI = new ItemGraine("graine_gui",ModBlocks.PLAN_GUI, Blocks.FARMLAND);
-        ModItems.GRAINE_GUZMANIAS = new ItemGraine("graine_guzmanias",ModBlocks.PLAN_GUZMANIAS, Blocks.FARMLAND);
-        ModItems.GRAINE_HIBISCUS = new ItemGraine("graine_hibiscus",ModBlocks.PLAN_HIBISCUS, Blocks.FARMLAND);
-        ModItems.GRAINE_HORTENSIAS = new ItemGraine("graine_hortensias",ModBlocks.PLAN_HORTENSIAS, Blocks.FARMLAND);
-        ModItems.GRAINE_HOUX = new ItemGraine("graine_houx",ModBlocks.PLAN_HOUX, Blocks.FARMLAND);
-        ModItems.GRAINE_HYDRANGEE = new ItemGraine("graine_hydrangee",ModBlocks.PLAN_HYDRANGEE, Blocks.FARMLAND);
-        ModItems.GRAINE_IRIS = new ItemGraine("graine_iris",ModBlocks.PLAN_IRIS, Blocks.FARMLAND);
-        ModItems.GRAINE_JACINTHE_DES_BOIS = new ItemGraine("graine_jacinthe_des_bois",ModBlocks.PLAN_JACINTHE_DES_BOIS, Blocks.FARMLAND);
-        ModItems.GRAINE_JASMIN = new ItemGraine("graine_jasmin",ModBlocks.PLAN_JASMIN, Blocks.FARMLAND);
-        ModItems.GRAINE_JOLI_BUISSON = new ItemGraine("graine_joli_buisson",ModBlocks.PLAN_JOLI_BUISSON, Blocks.FARMLAND);
-        ModItems.GRAINE_JONQUILLE = new ItemGraine("graine_jonquille",ModBlocks.PLAN_JONQUILLE, Blocks.FARMLAND);
-        ModItems.GRAINE_LAURIER = new ItemGraine("graine_laurier",ModBlocks.PLAN_LAURIER, Blocks.FARMLAND);
-        ModItems.GRAINE_LAVANDE = new ItemGraine("graine_lavande",ModBlocks.PLAN_LAVANDE, Blocks.FARMLAND);
-        ModItems.GRAINE_LYS = new ItemGraine("graine_lys",ModBlocks.PLAN_LYS, Blocks.FARMLAND);
-        ModItems.GRAINE_MANDRAGORE = new ItemGraine("graine_mandragore",ModBlocks.PLAN_MANDRAGORE, Blocks.FARMLAND);
-        ModItems.GRAINE_MENTHE = new ItemGraine("graine_menthe",ModBlocks.PLAN_MENTHE, Blocks.FARMLAND);
-        ModItems.GRAINE_MUGUET = new ItemGraine("graine_muguet",ModBlocks.PLAN_MUGUET, Blocks.FARMLAND);
-        ModItems.GRAINE_MYOSOTIS = new ItemGraine("graine_myosotis",ModBlocks.PLAN_MYOSOTIS, Blocks.FARMLAND);
-        ModItems.GRAINE_NARCISSES = new ItemGraine("graine_narcisses",ModBlocks.PLAN_NARCISSES, Blocks.FARMLAND);
-        ModItems.GRAINE_OEILLETS = new ItemGraine("graine_oeillets",ModBlocks.PLAN_OEILLETS, Blocks.FARMLAND);
-        ModItems.GRAINE_ORCHIDEE_ROSE = new ItemGraine("graine_orchidee_rose",ModBlocks.PLAN_ORCHIDEE_ROSE, Blocks.FARMLAND);
-        ModItems.GRAINE_PENSEES = new ItemGraine("graine_pensees",ModBlocks.PLAN_PENSEES, Blocks.FARMLAND);
-        ModItems.GRAINE_PERSIL = new ItemGraine("graine_persil",ModBlocks.PLAN_PERSIL, Blocks.FARMLAND);
-        ModItems.GRAINE_PIVOINE = new ItemGraine("graine_pivoine",ModBlocks.PLAN_PIVOINE, Blocks.FARMLAND);
-        ModItems.GRAINE_PLANTE_ETRANGE = new ItemGraine("graine_plante_etrange",ModBlocks.PLAN_PLANTE_ETRANGE, Blocks.FARMLAND);
-        ModItems.GRAINE_PLANTE_GRASSE_COLOREE = new ItemGraine("graine_plante_grasse_coloree",ModBlocks.PLAN_PLANTE_GRASSE_COLOREE, Blocks.FARMLAND);
-        ModItems.GRAINE_POIVRON_JAUNE = new ItemGraine("graine_poivron_jaune",ModBlocks.PLAN_POIVRON_JAUNE, Blocks.FARMLAND);
-        ModItems.GRAINE_POIVRON_ORANGE = new ItemGraine("graine_poivron_orange",ModBlocks.PLAN_POIVRON_ORANGE, Blocks.FARMLAND);
-        ModItems.GRAINE_POIVRON_ROUGE = new ItemGraine("graine_poivron_rouge",ModBlocks.PLAN_POIVRON_ROUGE, Blocks.FARMLAND);
-        ModItems.GRAINE_POIVRON_VERT = new ItemGraine("graine_poivron_vert",ModBlocks.PLAN_POIVRON_VERT, Blocks.FARMLAND);
-        ModItems.GRAINE_ROMARIN = new ItemGraine("graine_romarin",ModBlocks.PLAN_ROMARIN, Blocks.FARMLAND);
-        ModItems.GRAINE_RONCES = new ItemGraine("graine_ronces",ModBlocks.PLAN_RONCES, Blocks.FARMLAND);
-        ModItems.GRAINE_SALICORNE = new ItemGraine("graine_salicorne",ModBlocks.PLAN_SALICORNE, Blocks.FARMLAND);
-        ModItems.GRAINE_VERGE_D_OR = new ItemGraine("graine_verge_d_or",ModBlocks.PLAN_VERGE_D_OR, Blocks.FARMLAND);
-        ModItems.GRAINE_VERVEINE = new ItemGraine("graine_verveine",ModBlocks.PLAN_VERVEINE, Blocks.FARMLAND);
-        ModItems.GRAINE_VIOLETTES = new ItemGraine("graine_violettes",ModBlocks.PLAN_VIOLETTES, Blocks.FARMLAND);
-        ModItems.GRAINE_ESTRAGON = new ItemGraine("graine_estragon",ModBlocks.PLAN_ESTRAGON, Blocks.FARMLAND);
-        ModItems.GRAINE_FLEUR_DE_PAVOT = new ItemGraine("graine_fleur_de_pavot",ModBlocks.PLAN_FLEUR_DE_PAVOT, Blocks.FARMLAND);
-        ModItems.GRAINE_GIROFLIER = new ItemGraine("graine_giroflier",ModBlocks.PLAN_GIROFLIER, Blocks.FARMLAND);
-        ModItems.GRAINE_RHUBARBE = new ItemGraine("graine_rhubarbe",ModBlocks.PLAN_RHUBARBE, Blocks.FARMLAND);
-        ModItems.GRAINE_SAUGE = new ItemGraine("graine_sauge",ModBlocks.PLAN_SAUGE, Blocks.FARMLAND);
-        ModItems.GRAINE_SUREAU = new ItemGraine("graine_sureau",ModBlocks.PLAN_SUREAU, Blocks.FARMLAND);
-        ModItems.GRAINE_THYM = new ItemGraine("graine_thym",ModBlocks.PLAN_THYM, Blocks.FARMLAND);
-        ModItems.GRAINE_MANDRAGORE = new ItemGraine("graine_mandragore",ModBlocks.PLAN_MANDRAGORE, Blocks.FARMLAND);
+        ModItems.GRAINE_LIN = new ItemGraine("graine_lin", ModBlocks.PLAN_DE_LIN, Blocks.FARMLAND);
+        ModItems.GRAINE_CELERI = new ItemGraine("graine_celeri", ModBlocks.PLAN_CELERI, Blocks.FARMLAND);
+        ModItems.GRAINE_FENOUIL = new ItemGraine("graine_fenouil", ModBlocks.PLAN_FENOUIL, Blocks.FARMLAND);
+        ModItems.GRAINE_FRAISE = new ItemGraine("graine_fraise", ModBlocks.PLAN_FRAISE, Blocks.FARMLAND);
+        ModItems.GRAINE_FRAMBOISE = new ItemGraine("graine_framboise", ModBlocks.PLAN_FRAMBOISE, Blocks.FARMLAND);
+        ModItems.GRAINE_MAIS = new ItemGraine("graine_mais", ModBlocks.PLAN_MAIS, Blocks.FARMLAND);
+        ModItems.GRAINE_MYRTILLE = new ItemGraine("graine_myrtille", ModBlocks.PLAN_MYRTILLE, Blocks.FARMLAND);
+        ModItems.GRAINE_NAVET = new ItemGraine("graine_navet", ModBlocks.PLAN_NAVET, Blocks.FARMLAND);
+        ModItems.GRAINE_ORGE = new ItemGraine("graine_orge", ModBlocks.PLAN_ORGE, Blocks.FARMLAND);
+        ModItems.GRAINE_POIREAU = new ItemGraine("graine_poireau", ModBlocks.PLAN_POIREAU, Blocks.FARMLAND);
+        ModItems.GRAINE_RADIS = new ItemGraine("graine_radis", ModBlocks.PLAN_RADIS, Blocks.FARMLAND);
+        ModItems.GRAINE_SALSIFI = new ItemGraine("graine_salsifi", ModBlocks.PLAN_SALSIFI, Blocks.FARMLAND);
+        ModItems.GRAINE_TOMATE = new ItemGraine("graine_tomate", ModBlocks.PLAN_TOMATE, Blocks.FARMLAND);
+        ModItems.GRAINE_VIGNE_NOIRE = new ItemGraine("graine_vigne_noire", ModBlocks.PLAN_VIGNE_NOIRE, Blocks.FARMLAND);
+        ModItems.GRAINE_VIGNE_BLANCHE = new ItemGraine("graine_vigne_blanche", ModBlocks.PLAN_VIGNE_BLANCHE, Blocks.FARMLAND);
+        ModItems.GRAINE_CHOU = new ItemGraine("graine_chou", ModBlocks.PLAN_CHOU, Blocks.FARMLAND);
+        ModItems.GRAINE_EPINARD = new ItemGraine("graine_epinard", ModBlocks.PLAN_EPINARD, Blocks.FARMLAND);
+        ModItems.GRAINE_DE_THE = new ItemGraine("graine_the", ModBlocks.PLAN_THE, Blocks.FARMLAND);
+        ModItems.GRAINE_SALADE = new ItemGraine("graine_salade", ModBlocks.PLAN_SALADE, Blocks.FARMLAND);
+        ModItems.GRAINE_ARTICHAUT = new ItemGraine("graine_artichaut", ModBlocks.PLAN_ARTICHAUT, Blocks.FARMLAND);
+        ModItems.GRAINE_BROCOLIS = new ItemGraine("graine_brocolis", ModBlocks.PLAN_BROCOLIS, Blocks.FARMLAND);
+        ModItems.GRAINE_ASPERGE = new ItemGraine("graine_asperge", ModBlocks.PLAN_ASPERGE, Blocks.FARMLAND);
+        ModItems.GRAINE_ENDIVE = new ItemGraine("graine_endive", ModBlocks.PLAN_ENDIVE, Blocks.FARMLAND);
+        ModItems.GRAINE_RIZ = new ItemGraine("graine_riz", ModBlocks.PLAN_RIZ, Blocks.FARMLAND);
+        ModItems.GRAINE_BLE = new ItemGraine("graine_ble", ModBlocks.PLAN_BLE, Blocks.FARMLAND);
+        ModItems.GRAINE_THYM = new ItemGraine("graine_thym", ModBlocks.PLAN_THYM, Blocks.FARMLAND);
+        ModItems.GRAINE_CHANVRE = new ItemGraine("GRAINE_CHANVRE", ModBlocks.PLAN_CHANVRE, Blocks.FARMLAND);
+        ModItems.GRAINE_BASILIC = new ItemGraine("graine_basilic", ModBlocks.PLAN_BASILIC, Blocks.FARMLAND);
+        ModItems.GRAINE_ANETH = new ItemGraine("graine_aneth", ModBlocks.PLAN_ANETH, Blocks.FARMLAND);
+        ModItems.GRAINE_ANIS = new ItemGraine("graine_anis", ModBlocks.PLAN_ANIS, Blocks.FARMLAND);
+        ModItems.GRAINE_BELLE_DE_NUIT = new ItemGraine("graine_belle_de_nuit", ModBlocks.PLAN_BELLE_DE_NUIT, Blocks.FARMLAND);
+        ModItems.GRAINE_BLEUETS = new ItemGraine("graine_bleuets", ModBlocks.PLAN_BLEUETS, Blocks.FARMLAND);
+        ModItems.GRAINE_BUISSON = new ItemGraine("graine_buisson", ModBlocks.PLAN_BUISSON, Blocks.FARMLAND);
+        ModItems.GRAINE_BUISSON_DE_FLEURS_BLANCHES = new ItemGraine("graine_buisson_de_fleurs_blanches", ModBlocks.PLAN_BUISSON_DE_FLEURS_BLANCHES, Blocks.FARMLAND);
+        ModItems.GRAINE_BUISSON_ETRANGE = new ItemGraine("graine_buisson_etrange", ModBlocks.PLAN_BUISSON_ETRANGE, Blocks.FARMLAND);
+        ModItems.GRAINE_BUISSON_HERBEUX = new ItemGraine("graine_buisson_herbeux", ModBlocks.PLAN_BUISSON_HERBEUX, Blocks.FARMLAND);
+        ModItems.GRAINE_CAMOMILLE = new ItemGraine("graine_camomille", ModBlocks.PLAN_CAMOMILLE, Blocks.FARMLAND);
+        ModItems.GRAINE_CHARDON = new ItemGraine("graine_chardon", ModBlocks.PLAN_CHARDON, Blocks.FARMLAND);
+        ModItems.GRAINE_CIBOULETTE = new ItemGraine("graine_ciboulette", ModBlocks.PLAN_CIBOULETTE, Blocks.FARMLAND);
+        ModItems.GRAINE_CLOCHETTES = new ItemGraine("graine_clochettes", ModBlocks.PLAN_CLOCHETTES, Blocks.FARMLAND);
+        ModItems.GRAINE_COSMOS = new ItemGraine("graine_cosmos", ModBlocks.PLAN_COSMOS, Blocks.FARMLAND);
+        ModItems.GRAINE_ETOILE_DES_GLACIERS = new ItemGraine("graine_etoile_des_glaciers", ModBlocks.PLAN_ETOILE_DES_GLACIERS, Blocks.FARMLAND);
+        ModItems.GRAINE_GERANIUM = new ItemGraine("graine_geranium", ModBlocks.PLAN_GERANIUM, Blocks.FARMLAND);
+        ModItems.GRAINE_GLYCINE = new ItemGraine("graine_glycine", ModBlocks.PLAN_GLYCINE, Blocks.FARMLAND);
+        ModItems.GRAINE_GUI = new ItemGraine("graine_gui", ModBlocks.PLAN_GUI, Blocks.FARMLAND);
+        ModItems.GRAINE_GUZMANIAS = new ItemGraine("graine_guzmanias", ModBlocks.PLAN_GUZMANIAS, Blocks.FARMLAND);
+        ModItems.GRAINE_HIBISCUS = new ItemGraine("graine_hibiscus", ModBlocks.PLAN_HIBISCUS, Blocks.FARMLAND);
+        ModItems.GRAINE_HORTENSIAS = new ItemGraine("graine_hortensias", ModBlocks.PLAN_HORTENSIAS, Blocks.FARMLAND);
+        ModItems.GRAINE_HOUX = new ItemGraine("graine_houx", ModBlocks.PLAN_HOUX, Blocks.FARMLAND);
+        ModItems.GRAINE_HYDRANGEE = new ItemGraine("graine_hydrangee", ModBlocks.PLAN_HYDRANGEE, Blocks.FARMLAND);
+        ModItems.GRAINE_IRIS = new ItemGraine("graine_iris", ModBlocks.PLAN_IRIS, Blocks.FARMLAND);
+        ModItems.GRAINE_JACINTHE_DES_BOIS = new ItemGraine("graine_jacinthe_des_bois", ModBlocks.PLAN_JACINTHE_DES_BOIS, Blocks.FARMLAND);
+        ModItems.GRAINE_JASMIN = new ItemGraine("graine_jasmin", ModBlocks.PLAN_JASMIN, Blocks.FARMLAND);
+        ModItems.GRAINE_JOLI_BUISSON = new ItemGraine("graine_joli_buisson", ModBlocks.PLAN_JOLI_BUISSON, Blocks.FARMLAND);
+        ModItems.GRAINE_JONQUILLE = new ItemGraine("graine_jonquille", ModBlocks.PLAN_JONQUILLE, Blocks.FARMLAND);
+        ModItems.GRAINE_LAURIER = new ItemGraine("graine_laurier", ModBlocks.PLAN_LAURIER, Blocks.FARMLAND);
+        ModItems.GRAINE_LAVANDE = new ItemGraine("graine_lavande", ModBlocks.PLAN_LAVANDE, Blocks.FARMLAND);
+        ModItems.GRAINE_LYS = new ItemGraine("graine_lys", ModBlocks.PLAN_LYS, Blocks.FARMLAND);
+        ModItems.GRAINE_MANDRAGORE = new ItemGraine("graine_mandragore", ModBlocks.PLAN_MANDRAGORE, Blocks.FARMLAND);
+        ModItems.GRAINE_MENTHE = new ItemGraine("graine_menthe", ModBlocks.PLAN_MENTHE, Blocks.FARMLAND);
+        ModItems.GRAINE_MUGUET = new ItemGraine("graine_muguet", ModBlocks.PLAN_MUGUET, Blocks.FARMLAND);
+        ModItems.GRAINE_MYOSOTIS = new ItemGraine("graine_myosotis", ModBlocks.PLAN_MYOSOTIS, Blocks.FARMLAND);
+        ModItems.GRAINE_NARCISSES = new ItemGraine("graine_narcisses", ModBlocks.PLAN_NARCISSES, Blocks.FARMLAND);
+        ModItems.GRAINE_OEILLETS = new ItemGraine("graine_oeillets", ModBlocks.PLAN_OEILLETS, Blocks.FARMLAND);
+        ModItems.GRAINE_ORCHIDEE_ROSE = new ItemGraine("graine_orchidee_rose", ModBlocks.PLAN_ORCHIDEE_ROSE, Blocks.FARMLAND);
+        ModItems.GRAINE_PENSEES = new ItemGraine("graine_pensees", ModBlocks.PLAN_PENSEES, Blocks.FARMLAND);
+        ModItems.GRAINE_PERSIL = new ItemGraine("graine_persil", ModBlocks.PLAN_PERSIL, Blocks.FARMLAND);
+        ModItems.GRAINE_PIVOINE = new ItemGraine("graine_pivoine", ModBlocks.PLAN_PIVOINE, Blocks.FARMLAND);
+        ModItems.GRAINE_PLANTE_ETRANGE = new ItemGraine("graine_plante_etrange", ModBlocks.PLAN_PLANTE_ETRANGE, Blocks.FARMLAND);
+        ModItems.GRAINE_PLANTE_GRASSE_COLOREE = new ItemGraine("graine_plante_grasse_coloree", ModBlocks.PLAN_PLANTE_GRASSE_COLOREE, Blocks.FARMLAND);
+        ModItems.GRAINE_POIVRON_JAUNE = new ItemGraine("graine_poivron_jaune", ModBlocks.PLAN_POIVRON_JAUNE, Blocks.FARMLAND);
+        ModItems.GRAINE_POIVRON_ORANGE = new ItemGraine("graine_poivron_orange", ModBlocks.PLAN_POIVRON_ORANGE, Blocks.FARMLAND);
+        ModItems.GRAINE_POIVRON_ROUGE = new ItemGraine("graine_poivron_rouge", ModBlocks.PLAN_POIVRON_ROUGE, Blocks.FARMLAND);
+        ModItems.GRAINE_POIVRON_VERT = new ItemGraine("graine_poivron_vert", ModBlocks.PLAN_POIVRON_VERT, Blocks.FARMLAND);
+        ModItems.GRAINE_ROMARIN = new ItemGraine("graine_romarin", ModBlocks.PLAN_ROMARIN, Blocks.FARMLAND);
+        ModItems.GRAINE_RONCES = new ItemGraine("graine_ronces", ModBlocks.PLAN_RONCES, Blocks.FARMLAND);
+        ModItems.GRAINE_SALICORNE = new ItemGraine("graine_salicorne", ModBlocks.PLAN_SALICORNE, Blocks.FARMLAND);
+        ModItems.GRAINE_VERGE_D_OR = new ItemGraine("graine_verge_d_or", ModBlocks.PLAN_VERGE_D_OR, Blocks.FARMLAND);
+        ModItems.GRAINE_VERVEINE = new ItemGraine("graine_verveine", ModBlocks.PLAN_VERVEINE, Blocks.FARMLAND);
+        ModItems.GRAINE_VIOLETTES = new ItemGraine("graine_violettes", ModBlocks.PLAN_VIOLETTES, Blocks.FARMLAND);
+        ModItems.GRAINE_ESTRAGON = new ItemGraine("graine_estragon", ModBlocks.PLAN_ESTRAGON, Blocks.FARMLAND);
+        ModItems.GRAINE_FLEUR_DE_PAVOT = new ItemGraine("graine_fleur_de_pavot", ModBlocks.PLAN_FLEUR_DE_PAVOT, Blocks.FARMLAND);
+        ModItems.GRAINE_GIROFLIER = new ItemGraine("graine_giroflier", ModBlocks.PLAN_GIROFLIER, Blocks.FARMLAND);
+        ModItems.GRAINE_RHUBARBE = new ItemGraine("graine_rhubarbe", ModBlocks.PLAN_RHUBARBE, Blocks.FARMLAND);
+        ModItems.GRAINE_SAUGE = new ItemGraine("graine_sauge", ModBlocks.PLAN_SAUGE, Blocks.FARMLAND);
+        ModItems.GRAINE_SUREAU = new ItemGraine("graine_sureau", ModBlocks.PLAN_SUREAU, Blocks.FARMLAND);
+        ModItems.GRAINE_THYM = new ItemGraine("graine_thym", ModBlocks.PLAN_THYM, Blocks.FARMLAND);
+        ModItems.GRAINE_MANDRAGORE = new ItemGraine("graine_mandragore", ModBlocks.PLAN_MANDRAGORE, Blocks.FARMLAND);
 
     }
 
     /**
      * Register the blocks
      */
-    public static void register(){
+    public static void register() {
 
 
         //dalles
 
 
         //registerBlock(DALLE_LAINE_MAGENTA, new ItemSlab(DALLE_LAINE_MAGENTA,DALLE_LAINE_MAGENTA,DALLE_LAINE_MAGENTA_DOUBLE_SLAB));
-       // ForgeRegistries.BLOCKS.register(DALLE_LAINE_MAGENTA_DOUBLE_SLAB);
+        // ForgeRegistries.BLOCKS.register(DALLE_LAINE_MAGENTA_DOUBLE_SLAB);
         //registerBlock(DALLE_LAINE_BLEU, new ItemSlab(DALLE_LAINE_BLEU,DALLE_LAINE_BLEU,DALLE_LAINE_BLEU_DOUBLE_SLAB));
-       // ForgeRegistries.BLOCKS.register(DALLE_LAINE_BLEU_DOUBLE_SLAB);
+        // ForgeRegistries.BLOCKS.register(DALLE_LAINE_BLEU_DOUBLE_SLAB);
 
         //cultures
-
 
 
         registerItem(ModItems.GRAINE_LIN);
@@ -963,42 +932,40 @@ public class ModBlocks {
         registerItem(ModItems.GRAINE_MANDRAGORE);
 
 
-
-
     }
 
-    public static void registerBlock(Block block){
+    public static void registerBlock(Block block) {
         ForgeRegistries.BLOCKS.register(block);
         block.setCreativeTab(ArcheMod.archeCreativeTabs);
         ItemBlock item = new ItemBlock(block);
         item.setRegistryName(block.getRegistryName());
         ForgeRegistries.ITEMS.register(item);
 
-        ArcheMod.proxy.registerItemRenderer(Item.getItemFromBlock(block),0,"inventory");
+        ArcheMod.proxy.registerItemRenderer(Item.getItemFromBlock(block), 0, "inventory");
     }
 
-    public static void registerBlock(Block block, ItemBlock itemBlock){
+    public static void registerBlock(Block block, ItemBlock itemBlock) {
         ForgeRegistries.BLOCKS.register(block);
         block.setCreativeTab(ArcheMod.archeCreativeTabs);
         itemBlock.setRegistryName(block.getRegistryName());
         ForgeRegistries.ITEMS.register(itemBlock);
 
-        ArcheMod.proxy.registerItemRenderer(Item.getItemFromBlock(block),0,"inventory");
+        ArcheMod.proxy.registerItemRenderer(Item.getItemFromBlock(block), 0, "inventory");
     }
 
-    public static void registerB(Block block, ItemBlock itemBlock){
+    public static void registerB(Block block, ItemBlock itemBlock) {
         ForgeRegistries.BLOCKS.register(block);
         block.setCreativeTab(ArcheMod.archeCreativeTabs);
         itemBlock.setRegistryName(block.getRegistryName());
         ForgeRegistries.ITEMS.register(itemBlock);
 
-        ArcheMod.proxy.registerItemRenderer(Item.getItemFromBlock(block),0,"inventory");
+        ArcheMod.proxy.registerItemRenderer(Item.getItemFromBlock(block), 0, "inventory");
     }
 
 
-    public static void registerItem(Item item){
+    public static void registerItem(Item item) {
         ForgeRegistries.ITEMS.register(item);
-        ArcheMod.proxy.registerItemRenderer(item,0,"inventory");
+        ArcheMod.proxy.registerItemRenderer(item, 0, "inventory");
     }
 
 }

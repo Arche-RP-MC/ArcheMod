@@ -3,12 +3,11 @@ package fr.archemod.items.tools;
 import fr.archemod.ArcheMod;
 import fr.archemod.init.ModItems;
 import fr.archemod.util.IHasModel;
-import net.minecraft.item.ItemAxe;
 import net.minecraft.item.ItemPickaxe;
 
 public class Toolpickaxe extends ItemPickaxe implements IHasModel {
 
-    public Toolpickaxe(String name, ToolMaterial material){
+    public Toolpickaxe(String name, ToolMaterial material) {
         super(material);
         setTranslationKey(name);
         setRegistryName(name);
@@ -19,6 +18,6 @@ public class Toolpickaxe extends ItemPickaxe implements IHasModel {
 
     @Override
     public void registerModels() {
-        ArcheMod.proxy.registerItemRenderer(this,0,"inventory");
+        ArcheMod.proxy.registerItemRenderer(this, 0, "inventory");
     }
 }

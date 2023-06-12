@@ -6,7 +6,6 @@ import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.init.SoundEvents;
-import net.minecraft.item.EnumAction;
 import net.minecraft.item.ItemStack;
 import net.minecraft.stats.StatList;
 import net.minecraft.util.SoundCategory;
@@ -22,19 +21,16 @@ public class BouteilleHuile extends FoodBase {
     }
 
     @Override
-    public ItemStack onItemUseFinish(ItemStack stack, World worldIn, EntityLivingBase entityLiving)
-    {
-        if (entityLiving instanceof EntityPlayer)
-        {
-            EntityPlayer entityplayer = (EntityPlayer)entityLiving;
+    public ItemStack onItemUseFinish(ItemStack stack, World worldIn, EntityLivingBase entityLiving) {
+        if (entityLiving instanceof EntityPlayer) {
+            EntityPlayer entityplayer = (EntityPlayer) entityLiving;
             entityplayer.getFoodStats().addStats(this, stack);
-            worldIn.playSound((EntityPlayer)null, entityplayer.posX, entityplayer.posY, entityplayer.posZ, SoundEvents.ENTITY_PLAYER_BURP, SoundCategory.PLAYERS, 0.5F, worldIn.rand.nextFloat() * 0.1F + 0.9F);
+            worldIn.playSound(null, entityplayer.posX, entityplayer.posY, entityplayer.posZ, SoundEvents.ENTITY_PLAYER_BURP, SoundCategory.PLAYERS, 0.5F, worldIn.rand.nextFloat() * 0.1F + 0.9F);
             this.onFoodEaten(stack, worldIn, entityplayer);
             entityplayer.addStat(StatList.getObjectUseStats(this));
 
-            if (entityplayer instanceof EntityPlayerMP)
-            {
-                CriteriaTriggers.CONSUME_ITEM.trigger((EntityPlayerMP)entityplayer, stack);
+            if (entityplayer instanceof EntityPlayerMP) {
+                CriteriaTriggers.CONSUME_ITEM.trigger((EntityPlayerMP) entityplayer, stack);
             }
         }
 
@@ -44,27 +40,27 @@ public class BouteilleHuile extends FoodBase {
     @Override
     protected void onFoodEaten(ItemStack stack, World worldIn, EntityPlayer player) {
         super.onFoodEaten(stack, worldIn, player);
-        if (!worldIn.isRemote)
-        {
-            if(stack.getItemDamage()==stack.getMaxDamage()){
-                player.dropItem(ModItems.GROSSE_BOUTEILLE_VIDE,1);
+        if (!worldIn.isRemote) {
+            if (stack.getItemDamage() == stack.getMaxDamage()) {
+                player.dropItem(ModItems.GROSSE_BOUTEILLE_VIDE, 1);
             }
-            stack.damageItem(1,player);
+            stack.damageItem(1, player);
         }
     }
 
 
     @Override
     public ItemStack getContainerItem(ItemStack itemStack) {
-        if(itemStack.getItemDamage()==itemStack.getMaxDamage()){
+        if (itemStack.getItemDamage() == itemStack.getMaxDamage()) {
             return ItemStack.EMPTY;
         }
         ItemStack itemCopy = itemStack.copy();
-        itemCopy.setItemDamage(itemCopy.getItemDamage()+1);
+        itemCopy.setItemDamage(itemCopy.getItemDamage() + 1);
         return itemCopy;
     }
+
     @Override
-    public boolean hasContainerItem(ItemStack itemStack){
+    public boolean hasContainerItem(ItemStack itemStack) {
         return true;
     }
 }

@@ -7,7 +7,7 @@ import net.minecraft.item.Item;
 
 public class ItemBase extends Item implements IHasModel {
 
-    public ItemBase(String name){
+    public ItemBase(String name) {
         setTranslationKey(name);
         setRegistryName(name);
         setCreativeTab(ArcheMod.archeCreativeTabs);
@@ -17,6 +17,6 @@ public class ItemBase extends Item implements IHasModel {
 
     @Override
     public void registerModels() {
-        ArcheMod.proxy.registerItemRenderer(this,0,"inventory");
+        ArcheMod.proxy.registerItemRenderer(this, 0, "inventory");
     }
 }

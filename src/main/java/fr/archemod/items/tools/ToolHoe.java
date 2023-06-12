@@ -4,11 +4,10 @@ import fr.archemod.ArcheMod;
 import fr.archemod.init.ModItems;
 import fr.archemod.util.IHasModel;
 import net.minecraft.item.ItemHoe;
-import net.minecraft.item.ItemPickaxe;
 
 public class ToolHoe extends ItemHoe implements IHasModel {
 
-    public ToolHoe(String name, ToolMaterial material){
+    public ToolHoe(String name, ToolMaterial material) {
         super(material);
         setTranslationKey(name);
         setRegistryName(name);
@@ -18,6 +17,6 @@ public class ToolHoe extends ItemHoe implements IHasModel {
 
     @Override
     public void registerModels() {
-        ArcheMod.proxy.registerItemRenderer(this,0,"inventory");
+        ArcheMod.proxy.registerItemRenderer(this, 0, "inventory");
     }
 }

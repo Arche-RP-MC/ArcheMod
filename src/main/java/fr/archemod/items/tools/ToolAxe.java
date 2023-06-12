@@ -7,7 +7,7 @@ import net.minecraft.item.ItemAxe;
 
 public class ToolAxe extends ItemAxe implements IHasModel {
 
-    public ToolAxe(String name, ToolMaterial material){
+    public ToolAxe(String name, ToolMaterial material) {
         super(material);
         setTranslationKey(name);
         setRegistryName(name);
@@ -18,6 +18,6 @@ public class ToolAxe extends ItemAxe implements IHasModel {
 
     @Override
     public void registerModels() {
-        ArcheMod.proxy.registerItemRenderer(this,0,"inventory");
+        ArcheMod.proxy.registerItemRenderer(this, 0, "inventory");
     }
 }

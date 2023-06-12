@@ -18,12 +18,12 @@ public class Huitre extends ItemBase {
     @Override
     public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) {
 
-        if(!worldIn.isRemote && handIn==EnumHand.MAIN_HAND){
+        if (!worldIn.isRemote && handIn == EnumHand.MAIN_HAND) {
             playerIn.getHeldItem(handIn).shrink(1);
-            int rnd = (int)(Math.random()*5);
-            switch (rnd){
+            int rnd = (int) (Math.random() * 5);
+            switch (rnd) {
                 case 0:
-                    playerIn.dropItem(ModItems.PERLE_NATURELLE,1);
+                    playerIn.dropItem(ModItems.PERLE_NATURELLE, 1);
                     break;
                 case 1:
 
@@ -39,7 +39,7 @@ public class Huitre extends ItemBase {
                     break;
 
             }
-            playerIn.dropItem(ModItems.HUITRE_OUVERTE,1);
+            playerIn.dropItem(ModItems.HUITRE_OUVERTE, 1);
         }
         return new ActionResult<>(EnumActionResult.SUCCESS, playerIn.getHeldItem(handIn));
     }

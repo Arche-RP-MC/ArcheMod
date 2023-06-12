@@ -55,7 +55,7 @@ public class ContainerPanierEnOsier extends Container {
     @Override
     public ItemStack transferStackInSlot(EntityPlayer player, int index) {
         ItemStack itemstack = ItemStack.EMPTY;
-        Slot slot = (Slot) this.inventorySlots.get(index);
+        Slot slot = this.inventorySlots.get(index);
 
         if (slot != null && slot.getHasStack()) {
             ItemStack itemstack1 = slot.getStack();
@@ -66,8 +66,11 @@ public class ContainerPanierEnOsier extends Container {
             if (itemstack.getItem() instanceof PanierEnOsier) return ItemStack.EMPTY;
 
             if (index < this.inventoryPanierEnOsier.getSizeInventory()) {
-                if (!this.mergeItemStack(itemstack1, this.inventoryPanierEnOsier.getSizeInventory(), this.inventorySlots.size(), true)) return ItemStack.EMPTY;
-            } else if (!this.mergeItemStack(itemstack1, 0, this.inventoryPanierEnOsier.getSizeInventory(), false)) { return ItemStack.EMPTY; }
+                if (!this.mergeItemStack(itemstack1, this.inventoryPanierEnOsier.getSizeInventory(), this.inventorySlots.size(), true))
+                    return ItemStack.EMPTY;
+            } else if (!this.mergeItemStack(itemstack1, 0, this.inventoryPanierEnOsier.getSizeInventory(), false)) {
+                return ItemStack.EMPTY;
+            }
 
             if (itemstack1.getCount() == 0)
                 slot.putStack(ItemStack.EMPTY);
@@ -83,7 +86,8 @@ public class ContainerPanierEnOsier extends Container {
     public ItemStack slotClick(int slotId, int dragType, ClickType clickTypeIn, EntityPlayer player) {
         // Prevents from removing current backpack
         if (clickTypeIn == ClickType.SWAP && dragType == player.inventory.currentItem) return ItemStack.EMPTY;
-        if (slotId - this.inventoryPanierEnOsier.getSizeInventory() - 27 == player.inventory.currentItem) return ItemStack.EMPTY;
+        if (slotId - this.inventoryPanierEnOsier.getSizeInventory() - 27 == player.inventory.currentItem)
+            return ItemStack.EMPTY;
         return super.slotClick(slotId, dragType, clickTypeIn, player);
     }
 

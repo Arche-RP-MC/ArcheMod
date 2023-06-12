@@ -18,17 +18,13 @@ public class Sciure_Chene extends ItemBase {
     @Override
     public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) {
 
-        if(!worldIn.isRemote && handIn==EnumHand.MAIN_HAND){
+        if (!worldIn.isRemote && handIn == EnumHand.MAIN_HAND) {
             playerIn.getHeldItem(handIn).shrink(1);
-            int rnd = (int)(Math.random()*1);
-            switch (rnd){
-                case 0:
-                    playerIn.dropItem(ModItems.SCIURE,1);
-                    break;
-
-
+            int rnd = (int) (Math.random() * 1);
+            if (rnd == 0) {
+                playerIn.dropItem(ModItems.SCIURE, 1);
             }
-            playerIn.dropItem(ModItems.PLANCHE_CHENE,1);
+            playerIn.dropItem(ModItems.PLANCHE_CHENE, 1);
         }
         return new ActionResult<>(EnumActionResult.SUCCESS, playerIn.getHeldItem(handIn));
     }

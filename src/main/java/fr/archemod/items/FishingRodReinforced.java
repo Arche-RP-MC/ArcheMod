@@ -21,8 +21,7 @@ import javax.annotation.Nullable;
 
 public class FishingRodReinforced extends ItemFishingRod implements IHasModel {
 
-    public FishingRodReinforced(String name)
-    {
+    public FishingRodReinforced(String name) {
 
         this.setMaxDamage(64);
         this.setMaxStackSize(1);
@@ -31,28 +30,21 @@ public class FishingRodReinforced extends ItemFishingRod implements IHasModel {
         ModItems.ITEMS.add(this);
 
 
-
-        this.addPropertyOverride(new ResourceLocation("cast"), new IItemPropertyGetter()
-        {
+        this.addPropertyOverride(new ResourceLocation("cast"), new IItemPropertyGetter() {
             @SideOnly(Side.CLIENT)
             @Override
-            public float apply(ItemStack stack, @Nullable World worldIn, @Nullable EntityLivingBase entityIn)
-            {
-                if (entityIn == null)
-                {
+            public float apply(ItemStack stack, @Nullable World worldIn, @Nullable EntityLivingBase entityIn) {
+                if (entityIn == null) {
                     return 0.0F;
-                }
-                else
-                {
+                } else {
                     boolean flag = entityIn.getHeldItemMainhand() == stack;
                     boolean flag1 = entityIn.getHeldItemOffhand() == stack;
 
-                    if (entityIn.getHeldItemMainhand().getItem() instanceof FishingRodReinforced)
-                    {
+                    if (entityIn.getHeldItemMainhand().getItem() instanceof FishingRodReinforced) {
                         flag1 = false;
                     }
 
-                    return (flag || flag1) && entityIn instanceof EntityPlayer && ((EntityPlayer)entityIn).fishEntity != null ? 1.0F : 0.0F;
+                    return (flag || flag1) && entityIn instanceof EntityPlayer && ((EntityPlayer) entityIn).fishEntity != null ? 1.0F : 0.0F;
                 }
             }
         });
@@ -60,48 +52,39 @@ public class FishingRodReinforced extends ItemFishingRod implements IHasModel {
 
     @SideOnly(Side.CLIENT)
     @Override
-    public boolean isFull3D()
-    {
+    public boolean isFull3D() {
         return true;
     }
 
     @SideOnly(Side.CLIENT)
     @Override
-    public boolean shouldRotateAroundWhenRendering()
-    {
+    public boolean shouldRotateAroundWhenRendering() {
         return true;
     }
 
     @Override
-    public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn)
-    {
+    public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) {
         ItemStack itemstack = playerIn.getHeldItem(handIn);
 
-        if (playerIn.fishEntity != null)
-        {
+        if (playerIn.fishEntity != null) {
             int i = playerIn.fishEntity.handleHookRetraction();
             itemstack.damageItem(i, playerIn);
             playerIn.swingArm(handIn);
-            worldIn.playSound((EntityPlayer)null, playerIn.posX, playerIn.posY, playerIn.posZ, SoundEvents.ENTITY_BOBBER_RETRIEVE, SoundCategory.NEUTRAL, 1.0F, 0.4F / (itemRand.nextFloat() * 0.4F + 0.8F));
-        }
-        else
-        {
-            worldIn.playSound((EntityPlayer)null, playerIn.posX, playerIn.posY, playerIn.posZ, SoundEvents.ENTITY_BOBBER_THROW, SoundCategory.NEUTRAL, 0.5F, 0.4F / (itemRand.nextFloat() * 0.4F + 0.8F));
+            worldIn.playSound(null, playerIn.posX, playerIn.posY, playerIn.posZ, SoundEvents.ENTITY_BOBBER_RETRIEVE, SoundCategory.NEUTRAL, 1.0F, 0.4F / (itemRand.nextFloat() * 0.4F + 0.8F));
+        } else {
+            worldIn.playSound(null, playerIn.posX, playerIn.posY, playerIn.posZ, SoundEvents.ENTITY_BOBBER_THROW, SoundCategory.NEUTRAL, 0.5F, 0.4F / (itemRand.nextFloat() * 0.4F + 0.8F));
 
-            if (!worldIn.isRemote)
-            {
+            if (!worldIn.isRemote) {
                 EntityReinforcedFishHook entityfishhook = new EntityReinforcedFishHook(worldIn, playerIn);
                 int j = EnchantmentHelper.getFishingSpeedBonus(itemstack);
 
-                if (j > 0)
-                {
+                if (j > 0) {
                     entityfishhook.setLureSpeed(j);
                 }
 
                 int k = EnchantmentHelper.getFishingLuckBonus(itemstack);
 
-                if (k > 0)
-                {
+                if (k > 0) {
                     entityfishhook.setLuck(k);
                 }
 
@@ -116,12 +99,12 @@ public class FishingRodReinforced extends ItemFishingRod implements IHasModel {
     }
 
     @Override
-    public int getItemEnchantability()
-    {
+    public int getItemEnchantability() {
         return 1;
     }
+
     @Override
     public void registerModels() {
-        ArcheMod.proxy.registerItemRenderer(this,0,"inventory");
+        ArcheMod.proxy.registerItemRenderer(this, 0, "inventory");
     }
 }

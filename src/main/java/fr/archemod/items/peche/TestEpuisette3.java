@@ -25,12 +25,12 @@ public class TestEpuisette3 extends ItemBase {
     @Override
     public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) {
         RayTraceResult result = rayTrace(worldIn, playerIn, true);
-        if(result != null && result.typeOfHit == RayTraceResult.Type.BLOCK) {
+        if (result != null && result.typeOfHit == RayTraceResult.Type.BLOCK) {
             BlockPos pos = result.getBlockPos();
             IBlockState state = worldIn.getBlockState(pos);
             Block block = state.getBlock();
-            if(block == Blocks.WATER) {
-                if(!worldIn.isRemote && handIn==EnumHand.MAIN_HAND){
+            if (block == Blocks.WATER) {
+                if (!worldIn.isRemote && handIn == EnumHand.MAIN_HAND) {
                     ItemStack itemStack = playerIn.getHeldItem(handIn);
                     itemStack.setItemDamage(itemStack.getItemDamage() + 1);
                     int rnd = (int) (Math.random() * 6);

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " B ",
+    " E "
+  ],
+  "key": {
+    "B": {
+      "item": "am:petite_viande_crue"
+    },
+    "E": {
+      "item": "am:hachoir",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:lambeau_de_viande_crue",
+    "count": 1
+  }
+}

@@ -1,22 +1,21 @@
 package fr.archemod.items.peche;
 
 import fr.archemod.ArcheMod;
+import fr.archemod.init.ModItems;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemFishingRod;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.EnumHand;
 import net.minecraft.world.World;
-import fr.archemod.init.ModItems;
 
-public class CanneaPeche extends ItemFishingRod
-{
+public class CanneaPeche extends ItemFishingRod {
     public CanneaPeche(String name) {
         setTranslationKey(name);
         setRegistryName(name);
-        setCreativeTab(ArcheMod.archeCreativeTabs);  ModItems.ITEMS.add(this);
+        setCreativeTab(ArcheMod.archeCreativeTabs);
+        ModItems.ITEMS.add(this);
     }
 
     @Override

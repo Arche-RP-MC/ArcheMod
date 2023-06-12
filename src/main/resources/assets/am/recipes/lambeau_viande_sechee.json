@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "EEE",
+    "BBB",
+    "EEE"
+  ],
+  "key": {
+    "B":
+      {"item": "am:lambeau_de_viande_crue"},
+    "E": {
+      "item": "am:sciure"
+    }
+  },
+  "result": {
+    "item": "am:jambon_sec",
+    "count": 1
+  }
+}

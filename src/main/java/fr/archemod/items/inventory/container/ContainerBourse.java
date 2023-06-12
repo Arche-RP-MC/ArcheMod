@@ -55,7 +55,7 @@ public class ContainerBourse extends Container {
     @Override
     public ItemStack transferStackInSlot(EntityPlayer player, int index) {
         ItemStack itemstack = ItemStack.EMPTY;
-        Slot slot = (Slot) this.inventorySlots.get(index);
+        Slot slot = this.inventorySlots.get(index);
 
         if (slot != null && slot.getHasStack()) {
             ItemStack itemstack1 = slot.getStack();
@@ -66,8 +66,11 @@ public class ContainerBourse extends Container {
             if (itemstack.getItem() instanceof Bourse) return ItemStack.EMPTY;
 
             if (index < this.invBourse.getSizeInventory()) {
-                if (!this.mergeItemStack(itemstack1, this.invBourse.getSizeInventory(), this.inventorySlots.size(), true)) return ItemStack.EMPTY;
-            } else if (!this.mergeItemStack(itemstack1, 0, this.invBourse.getSizeInventory(), false)) { return ItemStack.EMPTY; }
+                if (!this.mergeItemStack(itemstack1, this.invBourse.getSizeInventory(), this.inventorySlots.size(), true))
+                    return ItemStack.EMPTY;
+            } else if (!this.mergeItemStack(itemstack1, 0, this.invBourse.getSizeInventory(), false)) {
+                return ItemStack.EMPTY;
+            }
 
             if (itemstack1.getCount() == 0)
                 slot.putStack(ItemStack.EMPTY);
