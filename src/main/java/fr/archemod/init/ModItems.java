@@ -2204,7 +2204,7 @@ public class ModItems {
     public static final Item BAUME_EXFOLIANT = new ItemBase("baume_exfoliant");
     public static final Item BOUGIE = new ItemBase("candle");
     public static final Item BOUTEILLE_ALCOOL_PUR = new BouteilleDeVin("bouteille_alcool_pur",0,0.2F,false);
-    public static final Item BOUTEILLE_DE_PARFUM = new Savon("bouteille_de_parfum");
+    public static final Item BOUTEILLE_DE_PARFUM = new ItemBase("bouteille_de_parfum");
     public static final Item CANNE_BEQUILLE = new ItemBase("canne_bequille");
     public static final Item COLLE = new ItemBase("colle");
     public static final Item EMPLATRE = new ItemBase("emplatre");
@@ -2225,7 +2225,7 @@ public class ModItems {
     public static final Item POUDRE_DE_TEINT = new Savon ("poudre_de_teint");
     public static final Item POUDRE_QUELCONQUE = new ItemBase("poudre_quelconque");
     public static final Item ROUGE_A_LEVRES = new Savon ("rouge_a_levres");
-    public static final Item SAVON = new Savon("savon");
+    public static final Item SAVON = new ItemBase("savon");
     public static final Item SEAU_DE_COLLE = new ItemBase ("seau_de_colle");
     public static final Item SOUDE = new ItemBase("soude");
     public static final Item TABAC = new Savon("tabac");
