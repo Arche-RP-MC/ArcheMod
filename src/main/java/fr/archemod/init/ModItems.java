@@ -1366,7 +1366,7 @@ public class ModItems {
     // Bijoux SERTIS
 
     //Torque ajouté pour test
-    //public static final Item TORQUE_OR_SERTIE=new BijouSerti("torque_or_sertie");
+    public static final Item TORQUE_OR_SERTIE=new BijouSerti("torque_or_sertie");
     /*
     public static final Item TORQUE_ARGENT_SERTIE=new BijouSerti("torque_argent_sertie");
     public static final Item TORQUE_ACIER_SERTIE=new BijouSerti("torque_acier_sertie");
@@ -1478,7 +1478,7 @@ public class ModItems {
 
     //seaux et verres pleins
 
-    public static final Item SEAU_D_EAU_EN_BOIS = new ItemBase("seau_d_eau_en_bois");
+    public static final Item SEAU_D_EAU_EN_BOIS = new SeauBois(Blocks.FLOWING_WATER,"seau_d_eau_en_bois");
     public static final Item SEAU_EN_BOIS = new SeauBois(Blocks.AIR, "seau_en_bois");
 
 
