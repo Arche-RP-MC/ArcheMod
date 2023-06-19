@@ -191,6 +191,7 @@ public class ModItems {
     public static final Item CADRE_TANNAGE = new OutilsEnBronze("cadre_tannage");
 
     //FOODS
+
     public static final Item ABRICOT = new FoodBase("abricot", 2, 0.2F, false);
     public static final Item AIL = new FoodBase("ail", 1, 0.2F, false);
     public static final Item AMANDES = new FoodBase("amandes", 1, 0.2F, false);
@@ -310,6 +311,9 @@ public class ModItems {
     public static final Item POIVRON_VERT_M = new FoodBase("poivron_vert_m", 2, 0.2F, false);
     public static final Item POMME_DE_TERRE = new FoodBase("pomme_de_terre", 2, 0.2F, false);
     public static final Item POMME_DE_TERRE_FARCIE = new FoodBase("pomme_de_terre_farcie", 4, 0.2F, false);
+
+
+
     public static final Item POT_DE_CONFITURE_DE_FRUITS_ROUGES = new Consommables("pot_de_confiture_de_fruits_rouges");
     public static final Item POT_DE_CONFITURE_DE_MYRTILLES = new Consommables("pot_de_confiture_de_myrtilles");
     public static final Item POT_DE_CONFITURE_D_AGRUMES = new Consommables("pot_de_confiture_d_agrumes");
@@ -2346,6 +2350,9 @@ public class ModItems {
     public static final Item SAUGE = new ItemBase("sauge");
     public static final Item SUREAU = new ItemBase("sureau");
     public static final Item THYM = new ItemBase("thym");
+
+        // \/ A ajouter aux plantes quand tu veux :p \/
+
 
     // Divers - Plantes
     public static final Item BOUQUET_DE_FLEURS = new Bourse("bouquet_de_fleurs");
