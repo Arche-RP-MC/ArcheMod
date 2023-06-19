@@ -182,6 +182,7 @@ public class ModItems {
     public static final Item PIOLET = new OutilsEnFer("piolet");
     public static final Item SCIE_EN_ACIER = new OutilsEnAcier("scie_en_acier");
     public static final Item SCIE_EN_FER = new OutilsEnFer("scie_en_fer");
+    public static final Item PETITE_CISAILLE = new OutilsEnBronze("petite_cisaille");
     public static final Item SERPE_EN_ACIER = new OutilsEnAcier("serpe_en_acier");
     public static final Item SERPE_EN_FER = new OutilsEnFer("serpe_en_fer");
     public static final Item SPATULE = new OutilsEnFer("spatule");
