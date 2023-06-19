@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " P ",
+    " M "
+  ],
+  "key": {
+    "M": [
+      {
+        "item": "am:mortier_pilon_en_pierre",
+        "data": 32767
+      },
+      {
+        "item": "am:mortier_pilon_en_bois",
+        "data": 32767
+      }
+    ],
+    "P": {
+      "item": "am:hibiscus"
+    }
+  },
+  "result": {
+    "item": "am:graine_hibiscus",
+    "data": 0,
+    "count": 2
+  }
+}
