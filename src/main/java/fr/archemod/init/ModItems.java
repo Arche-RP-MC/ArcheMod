@@ -442,6 +442,7 @@ public class ModItems {
     //public static final Item BATON_DE_MARCHE = new ToolSword("baton_de_marche",Item.ToolMaterial.IRON);
     public static final Item ARAKH_EN_ACIER = new ToolSword("arakh_en_acier", Item.ToolMaterial.IRON);
     public static final Item ARAKH_EN_FER = new ToolSword("arakh_en_fer", Item.ToolMaterial.IRON);
+    public static final Item LANCE_FOUDRE = new ToolSword("lance_foudre",Item.ToolMaterial.IRON);
     public static final Item BATON_DE_COMBAT = new ToolSword("baton_de_combat", Item.ToolMaterial.IRON);
     public static final Item DAGUE_A_ROUELLES = new ItemBase("dague_a_rouelles");
     public static final Item DAGUE_A_ROUELLES_EN_ACIER = new ItemBase("dague_a_rouelles_en_acier");
