@@ -5,13 +5,13 @@ import fr.archemod.init.ModBlocks;
 import net.minecraft.block.BlockCrops;
 import net.minecraft.item.Item;
 
-public class BlockPlanLin extends BlockCrops {
+public class BlocPlantesAgriculture extends BlockCrops {
 
     private final Item seed;
     private final Item crop;
 
 
-    public BlockPlanLin(String name, Item seed, Item crop) {
+    public BlocPlantesAgriculture(String name, Item seed, Item crop) {
         setTranslationKey(name);
         setRegistryName(name);
         setCreativeTab(ArcheMod.archeCreativeTabs);

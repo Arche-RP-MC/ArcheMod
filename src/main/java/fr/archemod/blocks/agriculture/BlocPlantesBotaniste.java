@@ -16,7 +16,7 @@ import net.minecraft.world.World;
 import java.util.Random;
 
 
-public class BlockPlanLin2 extends BlockCrops {
+public class BlocPlantesBotaniste extends BlockCrops {
 
     private final Item seed;
     private final Item crop;
@@ -24,7 +24,7 @@ public class BlockPlanLin2 extends BlockCrops {
     private final int dropsWhenRightClicked;
     private final int dropsWhenBroken;
 
-    public BlockPlanLin2(String name, Item seed, Item crop, int dropsWhenMature, int dropsWhenRightClicked, int dropsWhenBroken) {
+    public BlocPlantesBotaniste(String name, Item seed, Item crop, int dropsWhenMature, int dropsWhenRightClicked, int dropsWhenBroken) {
         setTranslationKey(name);
         setRegistryName(name);
         setCreativeTab(ArcheMod.archeCreativeTabs);
