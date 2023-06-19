@@ -2,17 +2,16 @@ package fr.archemod.blocks.agriculture;
 
 import fr.archemod.ArcheMod;
 import fr.archemod.init.ModBlocks;
-import fr.archemod.init.ModItems;
 import net.minecraft.block.BlockCrops;
 import net.minecraft.item.Item;
 
 public class BlockPlanLin extends BlockCrops {
 
-    private Item seed;
-    private Item crop;
+    private final Item seed;
+    private final Item crop;
 
 
-    public BlockPlanLin(String name, Item seed, Item crop){
+    public BlockPlanLin(String name, Item seed, Item crop) {
         setTranslationKey(name);
         setRegistryName(name);
         setCreativeTab(ArcheMod.archeCreativeTabs);
@@ -24,12 +23,12 @@ public class BlockPlanLin extends BlockCrops {
     }
 
     @Override
-    protected Item getSeed(){
+    protected Item getSeed() {
         return this.seed;
     }
 
     @Override
-    protected Item getCrop(){
+    protected Item getCrop() {
         return this.crop;
     }
 }

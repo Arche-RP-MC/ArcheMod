@@ -18,13 +18,13 @@ import java.util.Random;
 
 public class BlockPlanLin2 extends BlockCrops {
 
-    private Item seed;
-    private Item crop;
-    private int dropsWhenMature;
-    private int dropsWhenRightClicked;
-    private int dropsWhenBroken;
+    private final Item seed;
+    private final Item crop;
+    private final int dropsWhenMature;
+    private final int dropsWhenRightClicked;
+    private final int dropsWhenBroken;
 
-    public BlockPlanLin2 (String name, Item seed, Item crop, int dropsWhenMature, int dropsWhenRightClicked, int dropsWhenBroken) {
+    public BlockPlanLin2(String name, Item seed, Item crop, int dropsWhenMature, int dropsWhenRightClicked, int dropsWhenBroken) {
         setTranslationKey(name);
         setRegistryName(name);
         setCreativeTab(ArcheMod.archeCreativeTabs);
@@ -52,7 +52,7 @@ public class BlockPlanLin2 extends BlockCrops {
     public void getDrops(net.minecraft.util.NonNullList<ItemStack> drops, net.minecraft.world.IBlockAccess world, BlockPos pos, IBlockState state, int fortune) {
         super.getDrops(drops, world, pos, state, fortune);
         int age = getAge(state);
-        Random rand = world instanceof World ? ((World)world).rand : new Random();
+        Random rand = world instanceof World ? ((World) world).rand : new Random();
 
         if (age >= getMaxAge()) {
             drops.add(new ItemStack(seed, dropsWhenMature + rand.nextInt(dropsWhenBroken + 1), 0));
@@ -69,20 +69,14 @@ public class BlockPlanLin2 extends BlockCrops {
                 if (age >= getMaxAge()) {
                     worldIn.setBlockState(pos, withAge(0));
                     spawnAsEntity(worldIn, pos, new ItemStack(crop, dropsWhenRightClicked));
+                    heldItem.damageItem(1, player);
                 }
             }
-
-            heldItem.damageItem(1, player);
             return true;
         }
 
         return super.onBlockActivated(worldIn, pos, state, player, hand, facing, hitX, hitY, hitZ);
     }
-
-
-
-
-
 
 
 }
