@@ -1,6 +1,6 @@
 {
-"parent": "item/generated",
-"textures": {
-"layer0": "am:items/bol_de_potage_cru"
-}
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "am:items/bol_de_potage_cru"
+  }
 }

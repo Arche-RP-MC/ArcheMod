@@ -1,6 +1,6 @@
 {
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "am:blocks/menthe"
-    }
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "am:blocks/menthe"
+  }
 }

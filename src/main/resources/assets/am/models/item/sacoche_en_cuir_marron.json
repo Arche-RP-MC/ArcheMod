@@ -1,6 +1,6 @@
 {
-"parent": "item/generated",
-"textures": {
-"layer0": "am:items/sacoche_en_cuir_marron"
-}
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "am:items/sacoche_en_cuir_marron"
+  }
 }

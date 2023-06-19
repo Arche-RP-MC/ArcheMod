@@ -1,7 +1,7 @@
 {
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "am:items/lambeau_de_viande_sechee"
-    }
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "am:items/lambeau_de_viande_sechee"
+  }
 }
 

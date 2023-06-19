@@ -1,6 +1,6 @@
 {
-"parent": "item/generated",
-"textures": {
-"layer0": "am:items/biscuit_au_chocolat_cru"
-}
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "am:items/biscuit_au_chocolat_cru"
+  }
 }

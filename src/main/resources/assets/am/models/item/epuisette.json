@@ -1,7 +1,7 @@
 {
-    "parent": "item/handheld",
-    "textures": {
-        "layer0": "am:items/epuisette"
-    }
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "am:items/epuisette"
+  }
 }
 

@@ -1,6 +1,6 @@
 {
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "am:blocks/belle_de_nuit"
-    }
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "am:blocks/belle_de_nuit"
+  }
 }

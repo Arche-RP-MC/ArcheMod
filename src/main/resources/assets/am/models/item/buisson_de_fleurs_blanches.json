@@ -1,6 +1,6 @@
 {
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "am:blocks/buisson_de_fleurs_blanches"
-    }
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "am:blocks/buisson_de_fleurs_blanches"
+  }
 }

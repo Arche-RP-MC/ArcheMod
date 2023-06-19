@@ -1,6 +1,6 @@
 {
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "am:blocks/plante_etrange"
-    }
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "am:blocks/plante_etrange"
+  }
 }

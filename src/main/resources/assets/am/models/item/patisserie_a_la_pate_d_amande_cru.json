@@ -1,6 +1,6 @@
 {
-"parent": "item/generated",
-"textures": {
-"layer0": "am:items/patisserie_a_la_pate_d_amande_cru"
-}
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "am:items/patisserie_a_la_pate_d_amande_cru"
+  }
 }

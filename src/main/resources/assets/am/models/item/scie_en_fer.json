@@ -1,7 +1,7 @@
 {
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "am:items/scie_en_fer"
-    }
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "am:items/scie_en_fer"
+  }
 }
 

@@ -1,7 +1,6 @@
-
 {
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "am:minerais_de_fer"
-    }
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "am:minerais_de_fer"
+  }
 }

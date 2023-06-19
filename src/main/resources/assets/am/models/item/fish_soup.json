@@ -1,7 +1,7 @@
 {
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "am:items/fish_soup"
-    }
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "am:items/fish_soup"
+  }
 }
 

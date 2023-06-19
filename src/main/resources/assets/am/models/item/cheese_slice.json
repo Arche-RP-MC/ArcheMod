@@ -1,7 +1,7 @@
 {
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "am:items/cheese_slice"
-    }
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "am:items/cheese_slice"
+  }
 }
 

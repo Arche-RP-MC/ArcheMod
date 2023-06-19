@@ -1,6 +1,6 @@
 {
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "am:blocks/geranium"
-    }
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "am:blocks/geranium"
+  }
 }

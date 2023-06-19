@@ -1,6 +1,6 @@
 {
-"parent": "item/generated",
-"textures": {
-"layer0": "am:items/pain_noir_cru"
-}
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "am:items/pain_noir_cru"
+  }
 }

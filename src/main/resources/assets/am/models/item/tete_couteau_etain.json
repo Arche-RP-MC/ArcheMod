@@ -1,6 +1,6 @@
 {
-"parent": "item/generated",
-"textures": {
-"layer0": "am:items/tete_couteau_etain"
-}
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "am:items/tete_couteau_etain"
+  }
 }

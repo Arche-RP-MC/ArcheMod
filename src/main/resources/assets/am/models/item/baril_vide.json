@@ -1,4 +1,3 @@
-
 {
-    "parent": "am:items/barrel_none_front"
+  "parent": "am:items/barrel_none_front"
 }

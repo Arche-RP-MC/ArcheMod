@@ -1,6 +1,6 @@
 {
-"parent": "item/generated",
-"textures": {
-"layer0": "am:items/pomme_de_terre_farcie_cru"
-}
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "am:items/pomme_de_terre_farcie_cru"
+  }
 }

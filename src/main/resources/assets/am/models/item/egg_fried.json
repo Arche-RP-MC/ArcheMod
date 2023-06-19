@@ -1,7 +1,7 @@
 {
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "am:items/egg_fried"
-    }
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "am:items/egg_fried"
+  }
 }
 

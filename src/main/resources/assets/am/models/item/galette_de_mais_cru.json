@@ -1,6 +1,6 @@
 {
-"parent": "item/generated",
-"textures": {
-"layer0": "am:items/galette_de_mais_cru"
-}
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "am:items/galette_de_mais_cru"
+  }
 }

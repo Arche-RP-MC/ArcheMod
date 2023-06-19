@@ -1,7 +1,7 @@
 {
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "am:items/poivron_vert_farci"
-    }
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "am:items/poivron_vert_farci"
+  }
 }
 

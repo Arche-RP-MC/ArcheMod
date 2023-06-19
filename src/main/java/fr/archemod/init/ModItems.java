@@ -945,7 +945,6 @@ public class ModItems {
     public static final Item GOUACHE_JAUNE = new ItemBase("gouache_jaune");
     public static final Item GOUACHE_MAGENTA = new ItemBase("gouache_magenta");
     public static final Item GOUACHE_NOIRE = new ItemBase("gouache_noire");
-    public static final Item PLUME_D_ECRITURE_EN_ACIER = new ItemBase("plume_d_ecriture_en_acier");
     public static final Item PLUME_D_ECRITURE_EN_ARGENT = new ItemBase("plume_d_ecriture_en_argent");
     public static final Item PLUME_D_ECRITURE_EN_BRONZE = new ItemBase("plume_d_ecriture_en_bronze");
     public static final Item PLUME_D_ECRITURE_EN_FER = new ItemBase("plume_d_ecriture_en_fer");
@@ -2279,7 +2278,7 @@ public class ModItems {
     public static final Item BOUTEILLE_VIDE = new ItemBase("bouteille_vide");
     public static final Item GROSSE_BOUTEILLE_VIDE = new ItemBase("grosse_bouteille_vide");
     public static final Item CHOPPE_EN_VERRE = new ItemBase("choppe_en_verre");
-    public static final Item ENCRIER_EN_VERRE = new Consommables("encrier_en_verre");
+    public static final Item ENCRIER_EN_VERRE = new ItemBase("encrier_en_verre");
     public static final Item ETUI_EN_VERRE = new ItemBase("etui_en_verre");
     public static final Item FLACON = new ItemBase("flacon");
     public static final Item GRAND_MIROIR = new ItemBase("grand_miroir");
