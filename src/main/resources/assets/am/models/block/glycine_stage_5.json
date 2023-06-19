@@ -1,6 +1,6 @@
 {
     "parent": "block/cross",
     "textures": {
-        "cross": "am:blocks/geranium_stage_5"
+        "cross": "am:blocks/glycine_stage_5"
     }
 }

@@ -314,7 +314,6 @@ public class ModItems {
     public static final Item POMME_DE_TERRE_FARCIE = new FoodBase("pomme_de_terre_farcie", 4, 0.2F, false);
 
 
-
     public static final Item POT_DE_CONFITURE_DE_FRUITS_ROUGES = new Consommables("pot_de_confiture_de_fruits_rouges");
     public static final Item POT_DE_CONFITURE_DE_MYRTILLES = new Consommables("pot_de_confiture_de_myrtilles");
     public static final Item POT_DE_CONFITURE_D_AGRUMES = new Consommables("pot_de_confiture_d_agrumes");
@@ -480,38 +479,51 @@ public class ModItems {
     public static final Item STYLET_EN_OR = new Consommables("stylet_en_or");
     public static final ItemAxe HACHE_D_ARMES_EN_ACIER = new ToolAxe("hache_d_armes_en_acier", Item.ToolMaterial.IRON);
 
-    // Graines
+    // Graines Plantes botaniste
 
+    public static Item GRAINE_PLANTE_GRASSE;
+    public static Item GRAINE_BUIS;
+    public static Item GRAINE_LIERRE_TERRESTRE;
+    public static Item GRAINE_COQUELICOT;
+    public static Item GRAINE_BOUTON_D_OR;
+    public static Item GRAINE_TULIPE_ROUGE;
+    public static Item GRAINE_TULIPE_ORANGE;
+    public static Item GRAINE_TULIPE_ROSE;
+    public static Item GRAINE_TULIPE_BLANCHE;
+    public static Item GRAINE_AIL;
+    public static Item GRAINE_OIGNON;
+    public static Item GRAINE_ORCHIDEE_BLEUE;
+    public static Item GRAINE_ROSIER;
+    public static Item GRAINE_LIERRE_FLEURI;
+    public static Item GRAINE_HAIE;
+    public static Item GRAINE_BUISSON_VER_A_SOIE;
+    public static Item GRAINE_PISSENLIT;
+    public static Item GRAINE_LILAS;
+    public static Item GRAINE_TOURNESOL;
+    public static Item GRAINE_ALLIUM;
+    public static Item GRAINE_HOUSTONIE_BLEUE;
+
+    // /\Ajouts/\
     public static Item GRAINE_ANETH;
     public static Item GRAINE_ANIS;
-    public static Item GRAINE_ARTICHAUT;
-    public static Item GRAINE_ASPERGE;
-    public static Item GRAINE_AUBERGINE;
     public static Item GRAINE_BASILIC;
     public static Item GRAINE_BELLE_DE_NUIT;
-    public static Item GRAINE_BLE;
     public static Item GRAINE_BLEUETS;
-    public static Item GRAINE_BROCOLIS;
     public static Item GRAINE_BUISSON;
     public static Item GRAINE_BUISSON_DE_FLEURS_BLANCHES;
     public static Item GRAINE_BUISSON_ETRANGE;
     public static Item GRAINE_BUISSON_HERBEUX;
     public static Item GRAINE_CAMOMILLE;
-    public static Item GRAINE_CELERI;
-    public static Item GRAINE_CHANVRE;
     public static Item GRAINE_CHARDON;
-    public static Item GRAINE_CHOU;
     public static Item GRAINE_CIBOULETTE;
     public static Item GRAINE_CLOCHETTES;
     public static Item GRAINE_COSMOS;
     public static Item GRAINE_DE_THE;
-    public static Item GRAINE_ENDIVE;
-    public static Item GRAINE_EPINARD;
+    public static Item GRAINE_ESTRAGON;
     public static Item GRAINE_ETOILE_DES_GLACIERS;
-    public static Item GRAINE_FENOUIL;
-    public static Item GRAINE_FRAISE;
-    public static Item GRAINE_FRAMBOISE;
+    public static Item GRAINE_FLEUR_DE_PAVOT;
     public static Item GRAINE_GERANIUM;
+    public static Item GRAINE_GIROFLIER;
     public static Item GRAINE_GLYCINE;
     public static Item GRAINE_GUI;
     public static Item GRAINE_GUZMANIAS;
@@ -526,27 +538,53 @@ public class ModItems {
     public static Item GRAINE_JONQUILLE;
     public static Item GRAINE_LAURIER;
     public static Item GRAINE_LAVANDE;
-    public static Item GRAINE_LIN;
     public static Item GRAINE_LYS;
-    public static Item GRAINE_MAIS;
     public static Item GRAINE_MANDRAGORE;
     public static Item GRAINE_MENTHE;
     public static Item GRAINE_MUGUET;
     public static Item GRAINE_MYOSOTIS;
-    public static Item GRAINE_MYRTILLE;
     public static Item GRAINE_NARCISSES;
-    public static Item GRAINE_NAVET;
     public static Item GRAINE_OEILLETS;
-    public static Item GRAINE_OIGNON;
-    public static Item GRAINE_ORANGE;
     public static Item GRAINE_ORCHIDEE_ROSE;
-    public static Item GRAINE_ORGE;
     public static Item GRAINE_PAVOT;
     public static Item GRAINE_PENSEES;
     public static Item GRAINE_PERSIL;
     public static Item GRAINE_PIVOINE;
     public static Item GRAINE_PLANTE_ETRANGE;
     public static Item GRAINE_PLANTE_GRASSE_COLOREE;
+    public static Item GRAINE_RHUBARBE;
+    public static Item GRAINE_ROMARIN;
+    public static Item GRAINE_RONCES;
+    public static Item GRAINE_SALICORNE;
+    public static Item GRAINE_SAUGE;
+    public static Item GRAINE_SUREAU;
+    public static Item GRAINE_THYM;
+    public static Item GRAINE_VERGE_D_OR;
+    public static Item GRAINE_VERVEINE;
+    public static Item GRAINE_VIOLETTES;
+    public static final Item GRAINE_DE_PAVOT = new ItemBase("graine_de_pavot");
+
+
+    // Graines Plantes agriculture
+    public static Item GRAINE_ARTICHAUT;
+    public static Item GRAINE_ASPERGE;
+    public static Item GRAINE_AUBERGINE;
+    public static Item GRAINE_BLE;
+    public static Item GRAINE_BROCOLIS;
+    public static Item GRAINE_CELERI;
+    public static Item GRAINE_CHANVRE;
+    public static Item GRAINE_CHOU;
+    public static Item GRAINE_ENDIVE;
+    public static Item GRAINE_EPINARD;
+    public static Item GRAINE_FENOUIL;
+    public static Item GRAINE_FRAISE;
+    public static Item GRAINE_FRAMBOISE;
+    public static Item GRAINE_LIN;
+    public static Item GRAINE_MAIS;
+    public static Item GRAINE_MYRTILLE;
+    public static Item GRAINE_NAVET;
+    public static Item GRAINE_ORANGE;
+    public static Item GRAINE_ORGE;
     public static Item GRAINE_POIREAU;
     public static Item GRAINE_POIVRON_JAUNE;
     public static Item GRAINE_POIVRON_ORANGE;
@@ -554,25 +592,11 @@ public class ModItems {
     public static Item GRAINE_POIVRON_VERT;
     public static Item GRAINE_RADIS;
     public static Item GRAINE_RIZ;
-    public static Item GRAINE_ROMARIN;
-    public static Item GRAINE_RONCES;
     public static Item GRAINE_SALADE;
-    public static Item GRAINE_SALICORNE;
     public static Item GRAINE_SALSIFI;
-    public static Item GRAINE_THYM;
     public static Item GRAINE_TOMATE;
-    public static Item GRAINE_VERGE_D_OR;
-    public static Item GRAINE_VERVEINE;
     public static Item GRAINE_VIGNE_BLANCHE;
     public static Item GRAINE_VIGNE_NOIRE;
-    public static Item GRAINE_VIOLETTES;
-    public static final Item GRAINE_DE_PAVOT = new ItemBase("graine_de_pavot");
-    public static Item GRAINE_ESTRAGON;
-    public static Item GRAINE_FLEUR_DE_PAVOT;
-    public static Item GRAINE_GIROFLIER;
-    public static Item GRAINE_RHUBARBE;
-    public static Item GRAINE_SAUGE;
-    public static Item GRAINE_SUREAU;
 
 
     // Ingé - rouages - serrures - mécanique
@@ -1371,7 +1395,7 @@ public class ModItems {
     // Bijoux SERTIS
 
     //Torque ajouté pour test
-    public static final Item TORQUE_OR_SERTIE=new BijouSerti("torque_or_sertie");
+    public static final Item TORQUE_OR_SERTIE = new BijouSerti("torque_or_sertie");
     /*
     public static final Item TORQUE_ARGENT_SERTIE=new BijouSerti("torque_argent_sertie");
     public static final Item TORQUE_ACIER_SERTIE=new BijouSerti("torque_acier_sertie");
@@ -1483,16 +1507,15 @@ public class ModItems {
 
     //seaux et verres pleins
 
-    public static final Item SEAU_D_EAU_EN_BOIS = new SeauBois(Blocks.FLOWING_WATER,"seau_d_eau_en_bois");
+    public static final Item SEAU_D_EAU_EN_BOIS = new SeauBois(Blocks.FLOWING_WATER, "seau_d_eau_en_bois");
     public static final Item SEAU_EN_BOIS = new SeauBois(Blocks.AIR, "seau_en_bois");
 
 
-
-    public static final Item VERRE_A_PIED_EAU = new VerrePlein("verre_a_pied_eau",0,0.2F,false);
-    public static final Item CHOPPE_EN_VERRE_EAU = new ChoppePleine("choppe_en_verre_eau",0,0.2F,false);
-    public static final Item CHOPPE_EN_ARGILE_EAU = new ChoppeArPleine("choppe_en_argile_eau",0,0.2F,false);
-    public static final Item BOUTEILLE_D_EAU= new BouteilleDeVin("bouteille_d_eau",0,0.2F,false);
-    public static final Item BOCAL_D_EAU = new BocalPlein("bocal_d_eau",0,0.2F,false);
+    public static final Item VERRE_A_PIED_EAU = new VerrePlein("verre_a_pied_eau", 0, 0.2F, false);
+    public static final Item CHOPPE_EN_VERRE_EAU = new ChoppePleine("choppe_en_verre_eau", 0, 0.2F, false);
+    public static final Item CHOPPE_EN_ARGILE_EAU = new ChoppeArPleine("choppe_en_argile_eau", 0, 0.2F, false);
+    public static final Item BOUTEILLE_D_EAU = new BouteilleDeVin("bouteille_d_eau", 0, 0.2F, false);
+    public static final Item BOCAL_D_EAU = new BocalPlein("bocal_d_eau", 0, 0.2F, false);
 
     public static final Item SEAU_DE_LAIT_EN_BOIS = new ItemBase("seau_de_lait_en_bois");
     public static final Item VERRE_A_PIED_LAIT = new VerrePlein("verre_a_pied_lait", 0, 0.2F, false);
@@ -2352,7 +2375,7 @@ public class ModItems {
     public static final Item SUREAU = new ItemBase("sureau");
     public static final Item THYM = new ItemBase("thym");
 
-        // \/ A ajouter aux plantes quand tu veux :p \/
+    // \/ A ajouter aux plantes quand tu veux :p \/
 
 
     // Divers - Plantes
