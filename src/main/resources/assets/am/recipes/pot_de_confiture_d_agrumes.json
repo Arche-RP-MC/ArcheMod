@@ -1,19 +1,46 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "III",
-    "BCD",
-    " E "
+    "BBB",
+    "IBI",
+    "IEH"
   ],
   "key": {
-    "B": {
-      "item": "am:abricot"
-    },
-    "C": {
-      "item": "am:clementine"
-    },
-    "D": {
-      "item": "am:orange"
+    "B": [
+      {
+        "item": "am:abricot"
+      },
+      {
+        "item": "am:ananas"
+      },
+      {
+        "item": "am:citron"
+      },
+      {
+        "item": "am:clementine"
+      },
+      {
+        "item": "am:groseille_a_macro"
+      },
+      {
+        "item": "am:kiwi"
+      },
+      {
+        "item": "am:orange"
+      },
+      {
+        "item": "am:peche"
+      },
+      {
+        "item": "am:poire"
+      },
+      {
+        "item": "am:raisin_blanc"
+      }
+    ],
+    "H": {
+      "item": "am:hachoir",
+      "data": 32767
     },
     "I": {
       "item": "minecraft:sugar"

@@ -3,7 +3,7 @@
   "pattern": [
     "   ",
     "BCD",
-    " E "
+    " EJ"
   ],
   "key": {
     "B": [
@@ -95,10 +95,13 @@
     ],
     "E": {
       "item": "minecraft:string"
+    },
+    "J": {
+      "item": "am:petite_cisaille"
     }
   },
   "result": {
     "item": "am:bouquet_garni",
-    "count": 3
+    "count": 1
   }
 }

@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "MA ",
+    "PCR",
+    "BBB"
+  ],
+  "key": {
+    "A": {
+      "item": "am:petit_pain"
+    },
+    "C": {
+      "item": "minecraft:carrot"
+    },
+    "B": {
+      "item": "minecraft:bowl"
+    },
+    "P": {
+      "item": "am:pomme_de_terre_cru"
+    },
+    "R": {
+      "item": "am:poireau_cru"
+    },
+    "M": {
+      "item": "am:hachoir",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:bol_de_soupe_avec_croutons_cru",
+    "count": 3
+  }
+}

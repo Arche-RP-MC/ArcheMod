@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "   ",
-    " P ",
+    "VPE",
     "FP "
   ],
   "key": {
@@ -16,8 +16,12 @@
         "data": 32767
       }
     ],
-    "P": {
-      "item": "am:planche"
+    "E": {
+      "item": "am:eponge"
+    },
+    "V": {
+      "item": "am:vernis",
+      "data": 32767
     }
   },
   "result": {

@@ -9,10 +9,16 @@
     "B": {
       "item": "am:granite_polie"
     },
-    "M": {
-      "item": "am:marteau_burin_en_bronze",
-      "data": 32767
-    }
+    "M": [
+      {
+        "item": "am:marteau_burin_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_burin_en_acier",
+        "data": 32767
+      }
+    ]
   },
   "result": {
     "item": "am:granite_sculptee",

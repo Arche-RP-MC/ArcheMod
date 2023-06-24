@@ -6,10 +6,14 @@
     "EEE"
   ],
   "key": {
-    "B": [{
-      "item": "am:grosse_viande_crue"
-    },
-      {"item": "am:viande_de_gibier_crue"}],
+    "B": [
+      {
+        "item": "am:grosse_viande_crue"
+      },
+      {
+        "item": "am:viande_de_gibier_crue"
+      }
+    ],
     "T": {
       "item": "am:bouquet_garni"
     },

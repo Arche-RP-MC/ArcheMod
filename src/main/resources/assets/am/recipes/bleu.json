@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " T ",
+    "DJY",
+    " P "
+  ],
+  "key": {
+    "J": [
+      {
+        "item": "am:seau_de_lait_en_bois"
+      },
+      {
+        "item": "minecraft:milk_bucket"
+      }
+    ],
+    "P": {
+      "item": "am:moule_fromage"
+    },
+    "D": {
+      "item": "am:cepes_cru"
+    },
+    "Y": {
+      "item": "am:levure"
+    },
+    "T": {
+      "item": "am:spatule",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:bleu",
+    "count": 1
+  }
+}

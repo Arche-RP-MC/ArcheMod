@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " T ",
+    " J ",
+    " P "
+  ],
+  "key": {
+    "J": {
+      "item": "minecraft:log"
+    },
+    "P": [
+      {
+        "item": "minecraft:bowl"
+      },
+      {
+        "item": "am:bol_en_argile"
+      }
+    ],
+    "T": {
+      "item": "am:spatule",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:seve",
+    "count": 5
+  }
+}

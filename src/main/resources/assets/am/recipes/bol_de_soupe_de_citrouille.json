@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "BED",
-    "B D",
+    "BMD",
     "CCC"
   ],
   "key": {
@@ -17,6 +17,10 @@
     },
     "E": {
       "item": "am:courge_cru"
+    },
+    "M": {
+      "item": "am:hachoir",
+      "data": 32767
     }
   },
   "result": {

@@ -6,10 +6,16 @@
     "   "
   ],
   "key": {
-    "A": {
-      "item": "am:marteau_burin_en_bronze",
-      "data": 32767
-    },
+    "A": [
+      {
+        "item": "am:marteau_burin_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_burin_en_acier",
+        "data": 32767
+      }
+    ],
     "B": {
       "item": "am:diorite_polie"
     }

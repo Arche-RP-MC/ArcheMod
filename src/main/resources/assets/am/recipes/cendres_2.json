@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "PPP",
+    " M "
+  ],
+  "key": {
+    "P": {
+      "item": "minecraft:sapling"
+    },
+    "M": {
+      "item": "minecraft:flint_and_steel",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:cendres",
+    "count": 2
+  }
+}

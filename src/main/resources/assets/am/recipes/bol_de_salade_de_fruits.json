@@ -1,0 +1,95 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "AAF",
+    "EEE"
+  ],
+  "key": {
+    "A": [
+      {
+        "item": "am:abricot"
+      },
+      {
+        "item": "am:ananas"
+      },
+      {
+        "item": "am:banane"
+      },
+      {
+        "item": "am:cassis"
+      },
+      {
+        "item": "am:cerise"
+      },
+      {
+        "item": "am:citron"
+      },
+      {
+        "item": "am:clementine"
+      },
+      {
+        "item": "am:dattes"
+      },
+      {
+        "item": "am:figue"
+      },
+      {
+        "item": "am:fraise"
+      },
+      {
+        "item": "am:framboise"
+      },
+      {
+        "item": "am:groseille"
+      },
+      {
+        "item": "am:groseille_a_macro"
+      },
+      {
+        "item": "am:kiwi"
+      },
+      {
+        "item": "am:mures"
+      },
+      {
+        "item": "am:myrtilles"
+      },
+      {
+        "item": "am:orange"
+      },
+      {
+        "item": "am:peche"
+      },
+      {
+        "item": "am:poire"
+      },
+      {
+        "item": "am:pruneau"
+      },
+      {
+        "item": "am:raisin_blanc"
+      },
+      {
+        "item": "am:raisin_noir"
+      },
+      {
+        "item": "am:tranche_de_melon"
+      },
+      {
+        "item": "am:tranche_de_pasteque"
+      }
+    ],
+    "F": {
+      "item": "am:hachoir",
+      "data": 32767
+    },
+    "E": {
+      "item": "minecraft:bowl"
+    }
+  },
+  "result": {
+    "item": "am:bol_de_salade_de_fruits",
+    "count": 3
+  }
+}

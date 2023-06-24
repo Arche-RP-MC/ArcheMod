@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " P ",
+    " M "
+  ],
+  "key": {
+    "P": {
+      "item": "am:sciure"
+    },
+    "M": [
+      {
+        "item": "am:serpe_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:serpe_en_acier",
+        "data": 32767
+      }
+    ]
+  },
+  "result": {
+    "item": "am:ecorce",
+    "count": 3
+  }
+}

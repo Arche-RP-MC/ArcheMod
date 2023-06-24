@@ -1,18 +1,25 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "   ",
-    " B ",
-    " EM"
+    "EBM",
+    "BEB",
+    "FHE"
   ],
   "key": {
     "B": {
-      "item": "am:merou"
+      "item": "am:morceau_de_poisson_cru"
     },
     "E": {
       "item": "minecraft:stick"
     },
     "M": {
+      "item": "am:hachoir",
+      "data": 32767
+    },
+    "H": {
+      "item": "am:bouquet_garni"
+    },
+    "F": {
       "item": "am:farine"
     }
   },

@@ -591,7 +591,7 @@ public class ModBlocks {
     public static final Block PLAN_VERVEINE = new BlocPlantesBotaniste("plan_verveine", ModItems.GRAINE_VERVEINE, ModItems.VERVEINE2, 2, 2, 2);
     public static final Block PLAN_VIOLETTES = new BlocPlantesBotaniste("plan_violettes", ModItems.GRAINE_VIOLETTES, ModItems.VIOLETTES2, 2, 2, 2);
     public static final Block PLAN_ESTRAGON = new BlocPlantesBotaniste("plan_estragon", ModItems.GRAINE_ESTRAGON, ModItems.ESTRAGON, 2, 2, 2);
-    public static final Block PLAN_FLEUR_DE_PAVOT = new BlocPlantesBotaniste("plan_fleur_de_pavot", ModItems.GRAINE_FLEUR_DE_PAVOT, ModItems.GRAINE_DE_PAVOT, 2, 2, 2);
+    public static final Block PLAN_PAVOT = new BlocPlantesBotaniste("plan_pavot", ModItems.GRAINE_PAVOT, ModItems.FLEUR_DE_PAVOT, 2, 2, 2);
     public static final Block PLAN_GIROFLIER = new BlocPlantesBotaniste("plan_giroflier", ModItems.GRAINE_GIROFLIER, ModItems.CLOU_DE_GIROFLE, 2, 2, 2);
     public static final Block PLAN_RHUBARBE = new BlocPlantesBotaniste("plan_rhubarbe", ModItems.GRAINE_RHUBARBE, ModItems.RHUBARBE, 2, 2, 2);
     public static final Block PLAN_SAUGE = new BlocPlantesBotaniste("plan_sauge", ModItems.GRAINE_SAUGE, ModItems.SAUGE, 2, 2, 2);
@@ -813,7 +813,7 @@ public class ModBlocks {
         ModItems.GRAINE_VERVEINE = new ItemGraine("graine_verveine", ModBlocks.PLAN_VERVEINE, Blocks.FARMLAND);
         ModItems.GRAINE_VIOLETTES = new ItemGraine("graine_violettes", ModBlocks.PLAN_VIOLETTES, Blocks.FARMLAND);
         ModItems.GRAINE_ESTRAGON = new ItemGraine("graine_estragon", ModBlocks.PLAN_ESTRAGON, Blocks.FARMLAND);
-        ModItems.GRAINE_FLEUR_DE_PAVOT = new ItemGraine("graine_fleur_de_pavot", ModBlocks.PLAN_FLEUR_DE_PAVOT, Blocks.FARMLAND);
+        ModItems.GRAINE_PAVOT = new ItemGraine("graine_pavot", ModBlocks.PLAN_PAVOT, Blocks.FARMLAND);
         ModItems.GRAINE_GIROFLIER = new ItemGraine("graine_giroflier", ModBlocks.PLAN_GIROFLIER, Blocks.FARMLAND);
         ModItems.GRAINE_RHUBARBE = new ItemGraine("graine_rhubarbe", ModBlocks.PLAN_RHUBARBE, Blocks.FARMLAND);
         ModItems.GRAINE_SAUGE = new ItemGraine("graine_sauge", ModBlocks.PLAN_SAUGE, Blocks.FARMLAND);
@@ -923,7 +923,7 @@ public class ModBlocks {
         registerItem(ModItems.GRAINE_VERVEINE);
         registerItem(ModItems.GRAINE_VIOLETTES);
         registerItem(ModItems.GRAINE_ESTRAGON);
-        registerItem(ModItems.GRAINE_FLEUR_DE_PAVOT);
+        registerItem(ModItems.GRAINE_PAVOT);
         registerItem(ModItems.GRAINE_GIROFLIER);
         registerItem(ModItems.GRAINE_RHUBARBE);
         registerItem(ModItems.GRAINE_SAUGE);

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " T ",
+    " Y ",
+    "   "
+  ],
+  "key": {
+    "Y": {
+      "item": "am:fromage"
+    },
+    "T": {
+      "item": "am:hachoir",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:tranche_de_fromage",
+    "count": 4
+  }
+}

@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "   ",
+    " M ",
     "BAD",
     "CCC"
   ],
@@ -17,6 +17,10 @@
     },
     "A": {
       "item": "am:petits_pois_cru"
+    },
+    "M": {
+      "item": "am:hachoir",
+      "data": 32767
     }
   },
   "result": {

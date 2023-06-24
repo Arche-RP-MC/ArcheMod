@@ -1,9 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "BIB",
+    "BBB",
     "IBI",
-    " S "
+    "ISH"
   ],
   "key": {
     "S": {
@@ -12,9 +12,33 @@
     "I": {
       "item": "minecraft:sugar"
     },
-    "B": {
-      "item": "am:cassis"
-    }
+    "H": {
+      "item": "am:hachoir",
+      "data": 32767
+    },
+    "B": [
+      {
+        "item": "am:cassis"
+      },
+      {
+        "item": "am:dattes"
+      },
+      {
+        "item": "am:groseille"
+      },
+      {
+        "item": "am:mures"
+      },
+      {
+        "item": "am:myrtilles"
+      },
+      {
+        "item": "am:pruneau"
+      },
+      {
+        "item": "am:raisin_noir"
+      }
+    ]
   },
   "result": {
     "item": "am:pot_de_confiture_de_myrtilles",

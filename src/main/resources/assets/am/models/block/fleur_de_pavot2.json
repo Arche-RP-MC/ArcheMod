@@ -1,6 +1,0 @@
-{
-    "parent": "block/cross",
-    "textures": {
-        "cross": "am:blocks/fleur_de_pavot2"
-    }
-}

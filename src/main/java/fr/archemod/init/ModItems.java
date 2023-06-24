@@ -522,7 +522,6 @@ public class ModItems {
     public static Item GRAINE_DE_THE;
     public static Item GRAINE_ESTRAGON;
     public static Item GRAINE_ETOILE_DES_GLACIERS;
-    public static Item GRAINE_FLEUR_DE_PAVOT;
     public static Item GRAINE_GERANIUM;
     public static Item GRAINE_GIROFLIER;
     public static Item GRAINE_GLYCINE;
@@ -1521,7 +1520,7 @@ public class ModItems {
     public static final Item VERRE_A_PIED_LAIT = new VerrePlein("verre_a_pied_lait", 0, 0.2F, false);
     public static final Item CHOPPE_EN_VERRE_LAIT = new ChoppePleine("choppe_en_verre_lait", 0, 0.2F, false);
     public static final Item CHOPPE_EN_ARGILE_LAIT = new ChoppeArPleine("choppe_en_argile_lait", 0, 0.2F, false);
-    public static final Item BOUTEILLE_DE_LAIT = new BouteilleDeVin("bouteille_d_lait", 0, 0.2F, false);
+    public static final Item BOUTEILLE_DE_LAIT = new BouteilleDeVin("bouteille_de_lait", 0, 0.2F, false);
     public static final Item BOCAL_DE_LAIT = new BocalPlein("bocal_de_lait", 0, 0.2F, false);
 
     public static final Item SEAU_DE_BIERRE_BLONDE = new ItemBase("seau_de_bierre_blonde");
@@ -2308,9 +2307,10 @@ public class ModItems {
 
     //plantes
 
-    public static final Item BASILIC2 = new ItemBase("basilic2");
+
     public static final Item ANETH2 = new ItemBase("aneth2");
     public static final Item ANIS2 = new ItemBase("anis2");
+    public static final Item BASILIC2 = new ItemBase("basilic2");
     public static final Item BELLE_DE_NUIT2 = new ItemBase("belle_de_nuit2");
     public static final Item BLEUETS2 = new ItemBase("bleuets2");
     public static final Item BUISSON2 = new ItemBase("buisson2");
@@ -2323,6 +2323,7 @@ public class ModItems {
     public static final Item CLOCHETTES2 = new ItemBase("clochettes2");
     public static final Item COSMOS2 = new ItemBase("cosmos2");
     public static final Item ETOILE_DES_GLACIERS2 = new ItemBase("etoile_des_glaciers2");
+    public static final Item FLEUR_DE_PAVOT = new ItemBase("fleur_de_pavot");
     public static final Item GERANIUM2 = new ItemBase("geranium2");
     public static final Item GLYCINE2 = new ItemBase("glycine2");
     public static final Item GUI2 = new ItemBase("gui2");
@@ -2360,8 +2361,6 @@ public class ModItems {
     public static final Item VERVEINE2 = new ItemBase("verveine2");
     public static final Item VIOLETTES2 = new ItemBase("violettes2");
 
-
-    // \/ A ajouter aux plantes quand tu veux :p \/
     public static final Item BLE = new GraineBle("ble");
     public static final Item CANNELLE = new ItemBase("cannelle");
     public static final Item CHANVRE = new ItemBase("chanvre");
@@ -2375,7 +2374,6 @@ public class ModItems {
     public static final Item SUREAU = new ItemBase("sureau");
     public static final Item THYM = new ItemBase("thym");
 
-    // \/ A ajouter aux plantes quand tu veux :p \/
 
 
     // Divers - Plantes
@@ -2399,4 +2397,5 @@ public class ModItems {
     public static final Item SEVE = new ItemBase("seve");
     public static final Item ESTRAGON = new ItemBase("estragon");
     public static final Item RHUBARBE = new ItemBase("rhubarbe");
+
 }
