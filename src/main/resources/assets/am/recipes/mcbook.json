@@ -1,26 +1,26 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "PLP",
-    "PPP",
-    "GJ "
+    "G  ",
+    "BFL",
+    "BBF"
   ],
   "key": {
-    "L": {
+    "B": {
+      "item": "am:lot_de_papiers"
+    },
+    "F": {
       "item": "am:cuir_tanne"
     },
-    "P": {
-      "item": "am:lot_de_papiers"
+    "L": {
+      "item": "am:bobine_de_fil"
     },
     "G": {
       "item": "am:aiguille"
-    },
-    "J": {
-      "item": "am:bobine_de_fil"
     }
   },
   "result": {
-    "item": "am:grimoire",
+    "item": "minecraft:book",
     "count": 1
   }
 }

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "BF ",
+    "   "
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:book"
+    },
+    "F": {
+      "item": "am:encrier_et_plume"
+    }
+  },
+  "result": {
+    "item": "minecraft:writable_book",
+    "count": 1
+  }
+}

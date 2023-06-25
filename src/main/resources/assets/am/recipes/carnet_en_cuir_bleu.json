@@ -2,8 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "   ",
-    "L G",
-    "PPP"
+    "LG ",
+    "PT "
   ],
   "key": {
     "G": {
@@ -11,10 +11,14 @@
       "data": 4
     },
     "P": {
-      "item": "am:lot_de_papiers"
+      "item": "minecraft:book"
+    },
+    "T": {
+      "item": "am:pinceau",
+      "data": 32767
     },
     "L": {
-      "item": "am:cuir_tanne"
+      "item": "am:fusain"
     }
   },
   "result": {

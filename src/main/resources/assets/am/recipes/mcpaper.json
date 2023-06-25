@@ -2,16 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "   ",
-    "PPP",
-    "PPP"
+    " P ",
+    "   "
   ],
   "key": {
     "P": {
-      "item": "minecraft:paper"
+      "item": "am:lot_de_papiers"
     }
   },
   "result": {
-    "item": "am:lot_de_papiers",
-    "count": 2
+    "item": "minecraft:paper",
+    "count": 3
   }
 }
