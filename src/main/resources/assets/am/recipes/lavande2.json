@@ -7,11 +7,11 @@
   ],
   "key": {
     "P": {
-      "item": "am:salicorne2"
+      "item": "am:lavande"
     }
   },
   "result": {
-    "item": "am:salicorne",
+    "item": "am:lavande2",
     "count": 1
   }
 }

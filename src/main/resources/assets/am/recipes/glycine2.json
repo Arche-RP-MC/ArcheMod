@@ -7,11 +7,11 @@
   ],
   "key": {
     "P": {
-      "item": "am:salicorne2"
+      "item": "am:glycine"
     }
   },
   "result": {
-    "item": "am:salicorne",
+    "item": "am:glycine2",
     "count": 1
   }
 }

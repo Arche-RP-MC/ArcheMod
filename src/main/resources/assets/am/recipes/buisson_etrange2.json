@@ -7,11 +7,11 @@
   ],
   "key": {
     "P": {
-      "item": "am:salicorne2"
+      "item": "am:buisson_etrange"
     }
   },
   "result": {
-    "item": "am:salicorne",
+    "item": "am:buisson_etrange2",
     "count": 1
   }
 }
