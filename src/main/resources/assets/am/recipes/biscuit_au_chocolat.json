@@ -2,19 +2,23 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "   ",
-    " C ",
-    "PPP"
+    "PCP",
+    "PFP"
   ],
   "key": {
     "P": {
-      "item": "am:pate_a_pain"
+      "item": "am:biscuit_cru"
     },
     "C": {
       "item": "am:chocolat"
+    },
+    "F": {
+      "item": "am:rouleau_a_patisserie",
+      "data": 32767
     }
   },
   "result": {
     "item": "am:biscuit_au_chocolat_cru",
-    "count": 3
+    "count": 4
   }
 }

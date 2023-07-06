@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "B R",
+    "LVL",
+    "AVA"
+  ],
+  "key": {
+    "A": {
+      "item": "am:pate_a_pain"
+    },
+    "V": {
+        "item": "am:lambeau_de_viande_cru"
+    },
+    "B": {
+        "item": "am:bouquet_garni"
+    },
+    "R": {
+      "item": "am:rouleau_a_patisserie",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:part_de_tarte_au_citron",
+    "count": 4
+  }
+}

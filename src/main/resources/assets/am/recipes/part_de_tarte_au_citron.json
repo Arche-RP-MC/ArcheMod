@@ -1,0 +1,71 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBC",
+    "AAL",
+    "AA "
+  ],
+  "key": {
+    "A": {
+      "item": "am:part_de_tarte"
+    },
+    "C": [
+      {
+        "item": "am:pot_de_confiture_de_fruits_rouges",
+        "data": 32767
+      },
+      {
+        "item": "am:pot_de_confiture_de_myrtilles",
+        "data": 32767
+      },
+      {
+        "item": "am:pot_de_miel",
+        "data": 32767
+      },
+      {
+        "item": "am:pot_de_confiture_d_agrumes",
+        "data": 32767
+      }
+    ],
+    "B": [
+      {
+        "item": "am:abricot"
+      },
+      {
+        "item": "am:ananas"
+      },
+      {
+        "item": "am:citron"
+      },
+      {
+        "item": "am:clementine"
+      },
+      {
+        "item": "am:groseille_a_macro"
+      },
+      {
+        "item": "am:kiwi"
+      },
+      {
+        "item": "am:orange"
+      },
+      {
+        "item": "am:peche"
+      },
+      {
+        "item": "am:poire"
+      },
+      {
+        "item": "am:raisin_blanc"
+      }
+    ],
+    "L": {
+      "item": "am:rouleau_a_patisserie",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:part_de_tarte_au_citron",
+    "count": 4
+  }
+}
