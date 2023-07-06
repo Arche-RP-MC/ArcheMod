@@ -34,7 +34,6 @@ public class Baril extends BlockContainer implements IHasModel {
         setHardness(hardness);
         setResistance(resistance);
         setCreativeTab(ArcheMod.archeCreativeTabs);
-
         ModBlocks.BLOCKS.add(this);
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
     }

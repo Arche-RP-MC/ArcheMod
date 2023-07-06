@@ -97,7 +97,8 @@
       "item": "minecraft:string"
     },
     "J": {
-      "item": "am:petite_cisaille"
+      "item": "am:petite_cisaille",
+      "data": 32767
     }
   },
   "result": {

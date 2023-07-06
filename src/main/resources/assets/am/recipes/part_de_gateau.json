@@ -2,12 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "   ",
-    "SBL",
-    "FAF"
+    "SBC",
+    "FAL"
   ],
   "key": {
     "A": {
       "item": "am:oeuf_a_plat_cru"
+    },
+    "C": {
+      "item": "am:creme_fraiche"
     },
     "F": {
       "item": "am:pate_a_pain"
@@ -24,7 +27,7 @@
     }
   },
   "result": {
-    "item": "am:croissant_cru",
-    "count": 6
+    "item": "am:part_de_gateau",
+    "count": 4
   }
 }

@@ -2,14 +2,14 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "   ",
-    " O ",
+    " A ",
     "BBB"
   ],
   "key": {
     "B": {
-        "item": "am:moule"
+      "item": "am:bocal"
     },
-    "O": [
+    "A": [
       {
         "item": "am:seau_de_lait_en_bois"
       },
@@ -19,7 +19,7 @@
     ]
   },
   "result": {
-    "item": "am:beurre",
+    "item": "am:creme_fraiche",
     "count": 3
   }
 }

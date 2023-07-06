@@ -1,22 +1,22 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "   ",
-    "SBL",
-    "FAF"
+    "FFP",
+    "AAC",
+    "AAL"
   ],
   "key": {
     "A": {
-      "item": "am:oeuf_a_plat_cru"
+      "item": "am:part_de_gateau"
+    },
+    "C": {
+      "item": "am:creme_fraiche"
+    },
+    "P": {
+      "item": "am:beurre"
     },
     "F": {
-      "item": "am:pate_a_pain"
-    },
-    "S": {
-      "item": "minecraft:sugar"
-    },
-    "B": {
-      "item": "am:beurre"
+      "item": "am:chocolat"
     },
     "L": {
       "item": "am:rouleau_a_patisserie",
@@ -24,7 +24,7 @@
     }
   },
   "result": {
-    "item": "am:croissant_cru",
-    "count": 6
+    "item": "am:religieuse_au_chocolat",
+    "count": 4
   }
 }

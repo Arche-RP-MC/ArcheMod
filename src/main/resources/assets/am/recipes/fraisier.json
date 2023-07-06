@@ -1,25 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    " C ",
-    "FSF",
-    "DBD"
+    "FFP",
+    "AAC",
+    "AAL"
   ],
   "key": {
-    "B": {
-      "item": "am:farine"
+    "A": {
+      "item": "am:part_de_gateau"
     },
     "C": {
-      "item": "am:rouleau_a_patisserie",
-      "data": 32767
+      "item": "am:creme_fraiche"
     },
-    "D": {
-      "item": "minecraft:sugar"
-    },
-    "F": {
-      "item": "am:riz_cru"
-    },
-    "S": [
+    "P": [
       {
         "item": "am:pot_de_confiture_de_fruits_rouges",
         "data": 32767
@@ -36,10 +29,22 @@
         "item": "am:pot_de_confiture_d_agrumes",
         "data": 32767
       }
-    ]
+    ],
+    "F": [
+      {
+        "item": "am:framboise"
+      },
+      {
+        "item": "am:fraise"
+      }
+    ],
+    "L": {
+      "item": "am:rouleau_a_patisserie",
+      "data": 32767
+    }
   },
   "result": {
-    "item": "am:patisserie_cru",
-    "count": 3
+    "item": "am:fraisier",
+    "count": 4
   }
 }

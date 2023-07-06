@@ -10,8 +10,7 @@
       "item": "am:sciure"
     },
     "M": {
-      "item": "minecraft:flint_and_steel",
-      "data": 32767
+      "item": "minecraft:torch"
     }
   },
   "result": {

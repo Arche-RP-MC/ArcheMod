@@ -204,7 +204,7 @@ public class ModItems {
     public static final Item BANANE = new FoodBase("banane", 2, 0.2F, false);
     public static final Item BEIGNET = new FoodBase("beignet", 2, 0.2F, false);
     public static final Item BEIGNET_DE_CRABE = new FoodBase("beignet_de_crabe", 5, 0.2F, false);
-    public static final Item BEURRE = new Consomable5("beurre");
+    public static final Item BEURRE = new ItemBase("beurre");
     public static final Item BISCUIT = new FoodBase("biscuit", 1, 0.2F, false);
     public static final Item BISCUIT_AU_CHOCOLAT = new FoodBase("biscuit_au_chocolat", 1, 0.2F, false);
     public static final Item BLEU = new FoodBase("bleu", 1, 0.2F, false);
@@ -244,6 +244,7 @@ public class ModItems {
     public static final Item CORNICHON = new FoodBase("cornichon", 1, 0.2F, false);
     public static final Item COURGE = new FoodBase("courge", 2, 0.2F, false);
     public static final Item COURGETTE = new FoodBase("courgette", 2, 0.2F, false);
+    public static final Item CREME_FRAICHE = new ItemBase("creme_fraiche");
     public static final Item CREPE = new FoodBase("crepe", 2, 0.2F, false);
     public static final Item CROISSANT = new FoodBase("croissant", 2, 0.2F, false);
     public static final Item CUISSE_DE_GRENOUILLE_CUITE = new FoodBase("cuisse_de_grenouille_cuite", 1, 0.2F, false);
@@ -291,7 +292,7 @@ public class ModItems {
     public static final Item PART_DE_TARTE_AUX_FRUITS_ROUGES = new FoodBase("part_de_tarte_aux_fruits_rouges", 3, 0.2F, false);
     public static final Item PART_DE_TARTE_AUX_MYRTILLES = new FoodBase("part_de_tarte_aux_myrtilles", 3, 0.2F, false);
     public static final Item PART_DE_TARTE_AU_CITRON = new FoodBase("part_de_tarte_au_citron", 3, 0.2F, false);
-    public static final Item PART_DE_TOURTE = new FoodBase("part_de_tourte", 4, 0.2F, false);
+    public static final Item PART_DE_TOURTE = new FoodBase("part_de_tarte.json", 4, 0.2F, false);
     public static final Item PATISSERIE = new FoodBase("patisserie", 2, 0.2F, false);
     public static final Item PATISSERIES_COLOREES = new FoodBase("patisseries_colorees", 4, 0.2F, false);
     public static final Item PATISSERIE_A_LA_PATE_D_AMANDE = new FoodBase("patisserie_a_la_pate_d_amande", 4, 0.2F, false);
@@ -1144,7 +1145,6 @@ public class ModItems {
 
     public static final Item PIPE = new ItemBase("pipe");
     public static final Item PIPE_DROITE = new ItemBase("pipe_droite");
-    public static final Item PIPE_ORNATE = new ItemBase("pipe_ornate");
 
     public static final Item BALLE_EN_BOIS = new ItemBase("balle_en_bois");
     public static final Item BOBINE_EN_BOIS = new ItemBase("bobine_en_bois");

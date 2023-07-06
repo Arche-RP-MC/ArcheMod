@@ -1,50 +1,14 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "BDG",
-    "FAL",
-    "EEE"
+    " E ",
+    "AAA",
+    "CBD"
   ],
   "key": {
-    "A": {
-      "item": "am:lambeau_de_viande"
-    },
-    "B": {
-      "item": "am:oeuf_a_plat_cru"
-    },
-    "G": {
-      "item": "am:bouquet_garni"
-    },
-    "L": [
-      {
-        "item": "am:oignon"
-      },
-      {
-        "item": "am:poireau_cru"
-      },
-      {
-        "item": "am:radis"
-      },
-      {
-        "item": "am:salade"
-      },
+    "A": [
       {
         "item": "am:artichaut_cru"
-      },
-      {
-        "item": "am:asperge_cru"
-      },
-      {
-        "item": "am:aubergine_cru"
-      },
-      {
-        "item": "am:brocoli_cru"
-      },
-      {
-        "item": "am:celeri_branche_cru"
-      },
-      {
-        "item": "am:cepes_cru"
       },
       {
         "item": "am:chou_fleur_cru"
@@ -56,66 +20,22 @@
         "item": "am:courgette_cru"
       },
       {
-        "item": "am:courge_cru"
-      },
-      {
-        "item": "am:endive_cru"
-      },
-      {
-        "item": "am:epinard_cru"
-      },
-      {
-        "item": "am:fenouil_cru"
-      },
-      {
-        "item": "am:haricot_blanc_cru"
-      },
-      {
-        "item": "am:haricot_rouge_cru"
-      },
-      {
-        "item": "am:haricot_vert_cru"
-      },
-      {
-        "item": "am:navet_cru"
-      },
-      {
-        "item": "am:petits_pois_cru"
-      },
-      {
-        "item": "am:poivron_jaune_m_cru"
-      },
-      {
-        "item": "am:poivron_rouge_m_cru"
-      },
-      {
         "item": "am:poivron_vert_m_cru"
-      },
-      {
-        "item": "am:pomme_de_terre_cru"
-      },
-      {
-        "item": "am:salsifi_cru"
-      },
-      {
-        "item": "am:tomate_cru"
       }
     ],
-    "F": {
+    "B": {
+      "item": "am:lambeau_de_viande_crue"
+    },
+    "C": {
+      "item": "am:oeuf_a_plat_cru"
+    },
+    "D": {
       "item": "am:hachoir",
       "data": 32767
     },
-    "D": {
-      "item": "am:sel"
-    },
-    "E": [
-      {
-        "item": "am:poivron_vert_m_cru"
-      },
-      {
-        "item": "am:chou_vert_cru"
-      }
-    ]
+    "E": {
+      "item": "am:bouquet_garni"
+    }
   },
   "result": {
     "item": "am:poivron_vert_farci_cru",

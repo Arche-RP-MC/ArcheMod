@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "   ",
-    "   ",
+    " E ",
     "OE "
   ],
   "key": {
@@ -14,7 +14,7 @@
     }
   },
   "result": {
-    "item": "am:bouteille_d_lait",
-    "count": 1
+    "item": "am:bouteille_de_lait",
+    "count": 2
   }
 }

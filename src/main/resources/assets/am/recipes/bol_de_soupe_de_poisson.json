@@ -1,9 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "   ",
     "BAD",
-    "CAM"
+    " AM",
+    "CCC"
   ],
   "key": {
     "A": {

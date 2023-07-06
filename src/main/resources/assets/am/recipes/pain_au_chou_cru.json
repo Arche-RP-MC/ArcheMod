@@ -1,30 +1,27 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    " E ",
-    "AAA",
-    "CBD"
+    "   ",
+    " D ",
+    "ABC"
   ],
   "key": {
     "A": {
-      "item": "am:pomme_de_terre_cru"
+      "item": "am:chou_vert_cru"
     },
     "B": {
       "item": "am:lambeau_de_viande_crue"
     },
     "C": {
-      "item": "am:oeuf_a_plat_cru"
+      "item": "am:bouquet_garni"
     },
     "D": {
       "item": "am:hachoir",
       "data": 32767
-    },
-    "E": {
-      "item": "am:bouquet_garni"
     }
   },
   "result": {
-    "item": "am:pomme_de_terre_farcie_cru",
+    "item": "am:pain_au_choux_cru",
     "count": 3
   }
 }

@@ -2,27 +2,10 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "   ",
-    "VPE",
-    "FP "
+    "C S",
+    "PPP"
   ],
   "key": {
-    "F": [
-      {
-        "item": "am:lime_en_fer",
-        "data": 32767
-      },
-      {
-        "item": "am:lime_en_acier",
-        "data": 32767
-      }
-    ],
-    "E": {
-      "item": "am:eponge"
-    },
-    "V": {
-      "item": "am:vernis",
-      "data": 32767
-    },
     "P": [
       {
         "item": "am:planche"
@@ -45,10 +28,17 @@
       {
         "item": "am:planche_sapin"
       }
-    ]
+    ],
+    "C": {
+      "item": "am:clous"
+    },
+    "S": {
+      "item": "am:ciseaux_a_bois",
+      "data": 32767
+    }
   },
   "result": {
-    "item": "am:boite_a_poudre",
+    "item": "am:moule_fromage",
     "count": 1
   }
 }
