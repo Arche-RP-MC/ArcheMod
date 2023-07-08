@@ -1,6 +1,6 @@
 {
-    "parent": "block/cross",
-    "textures": {
-        "cross": "am:blocks/houx"
-    }
+  "parent": "block/cross",
+  "textures": {
+    "cross": "am:blocks/houx"
+  }
 }

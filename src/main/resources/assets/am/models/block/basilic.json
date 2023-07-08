@@ -1,7 +1,7 @@
 {
-    "parent": "block/cross",
-    "textures": {
-        "cross": "am:blocks/basilic"
-    }
+  "parent": "block/cross",
+  "textures": {
+    "cross": "am:blocks/basilic"
+  }
 }
 

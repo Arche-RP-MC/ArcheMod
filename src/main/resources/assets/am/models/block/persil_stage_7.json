@@ -1,6 +1,6 @@
 {
-    "parent": "block/cross",
-    "textures": {
-        "cross": "am:blocks/persil_stage_7"
-    }
+  "parent": "block/cross",
+  "textures": {
+    "cross": "am:blocks/persil_stage_7"
+  }
 }

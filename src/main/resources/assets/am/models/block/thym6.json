@@ -1,6 +1,6 @@
 {
-    "parent": "block/cross",
-    "textures": {
-        "cross": "am:blocks/thym6"
-    }
+  "parent": "block/cross",
+  "textures": {
+    "cross": "am:blocks/thym6"
+  }
 }

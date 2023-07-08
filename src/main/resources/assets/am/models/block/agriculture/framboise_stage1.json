@@ -1,6 +1,6 @@
 {
-    "parent": "block/cross",
-    "textures": {
-        "cross": "am:blocks/agriculture/framboise_stage1"
-    }
+  "parent": "block/cross",
+  "textures": {
+    "cross": "am:blocks/agriculture/framboise_stage1"
+  }
 }

@@ -1,6 +1,6 @@
 {
-    "parent": "block/cross",
-    "textures": {
-        "cross": "am:blocks/verge_d_or"
-    }
+  "parent": "block/cross",
+  "textures": {
+    "cross": "am:blocks/verge_d_or"
+  }
 }

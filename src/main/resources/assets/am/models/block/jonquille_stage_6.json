@@ -1,6 +1,6 @@
 {
-    "parent": "block/cross",
-    "textures": {
-        "cross": "am:blocks/jonquille_stage_6"
-    }
+  "parent": "block/cross",
+  "textures": {
+    "cross": "am:blocks/jonquille_stage_6"
+  }
 }

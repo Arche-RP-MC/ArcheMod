@@ -4,12 +4,19 @@
     "bottom": "am:blocks/tourte_bottom",
     "top": "am:blocks/tourte_top",
     "side": "am:blocks/tourte_side"
-
   },
   "elements": [
     {
-      "from": [1, 0, 1],
-      "to": [15, 8, 15],
+      "from": [
+        1,
+        0,
+        1
+      ],
+      "to": [
+        15,
+        8,
+        15
+      ],
       "faces": {
         "down": {
           "texture": "#bottom",

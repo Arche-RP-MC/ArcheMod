@@ -1,6 +1,6 @@
 {
-    "parent": "block/cross",
-    "textures": {
-        "cross": "am:blocks/menthe_stage_3"
-    }
+  "parent": "block/cross",
+  "textures": {
+    "cross": "am:blocks/menthe_stage_3"
+  }
 }

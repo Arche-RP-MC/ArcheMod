@@ -1,6 +1,6 @@
 {
-    "parent": "block/cross",
-    "textures": {
-        "cross": "am:blocks/buisson_etrange_stage_6"
-    }
+  "parent": "block/cross",
+  "textures": {
+    "cross": "am:blocks/buisson_etrange_stage_6"
+  }
 }

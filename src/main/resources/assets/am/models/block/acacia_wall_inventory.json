@@ -1,6 +1,6 @@
 {
-    "parent": "block/wall_inventory",
-    "textures": {
-        "wall": "am:blocks/log_acacia"
-    }
+  "parent": "block/wall_inventory",
+  "textures": {
+    "wall": "am:blocks/log_acacia"
+  }
 }

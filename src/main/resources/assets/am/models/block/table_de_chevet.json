@@ -1,21 +1,80 @@
 {
-	"credit": "Made with Blockbench",
-	"texture_size": [32, 32],
-	"textures": {
-		"4": "am:blocks/table_de_chevet"
-	},
-	"elements": [
-		{
-			"from": [0, 0, 0],
-			"to": [16, 16, 16],
-			"faces": {
-				"north": {"uv": [0, 0, 8, 8], "texture": "#4"},
-				"east": {"uv": [0, 8, 8, 16], "texture": "#4"},
-				"south": {"uv": [0, 8, 8, 16], "texture": "#4"},
-				"west": {"uv": [0, 8, 8, 16], "texture": "#4"},
-				"up": {"uv": [8, 0, 16, 8], "texture": "#4"},
-				"down": {"uv": [8, 8, 16, 16], "texture": "#4"}
-			}
-		}
-	]
+  "credit": "Made with Blockbench",
+  "texture_size": [
+    32,
+    32
+  ],
+  "textures": {
+    "4": "am:blocks/table_de_chevet"
+  },
+  "elements": [
+    {
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        16,
+        16
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            8,
+            8
+          ],
+          "texture": "#4"
+        },
+        "east": {
+          "uv": [
+            0,
+            8,
+            8,
+            16
+          ],
+          "texture": "#4"
+        },
+        "south": {
+          "uv": [
+            0,
+            8,
+            8,
+            16
+          ],
+          "texture": "#4"
+        },
+        "west": {
+          "uv": [
+            0,
+            8,
+            8,
+            16
+          ],
+          "texture": "#4"
+        },
+        "up": {
+          "uv": [
+            8,
+            0,
+            16,
+            8
+          ],
+          "texture": "#4"
+        },
+        "down": {
+          "uv": [
+            8,
+            8,
+            16,
+            16
+          ],
+          "texture": "#4"
+        }
+      }
+    }
+  ]
 }

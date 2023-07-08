@@ -1,6 +1,6 @@
 {
-    "parent": "block/cross",
-    "textures": {
-        "cross": "am:blocks/chardon_stage_7"
-    }
+  "parent": "block/cross",
+  "textures": {
+    "cross": "am:blocks/chardon_stage_7"
+  }
 }
