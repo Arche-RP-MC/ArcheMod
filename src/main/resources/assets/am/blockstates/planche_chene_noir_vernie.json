@@ -1,6 +1,7 @@
 {
-  "variants": { 
-  "normal": {
-    "model": "am:planche_chene_noir_vernie"
+  "variants": {
+    "normal": {
+      "model": "am:planche_chene_noir_vernie"
+    }
   }
-}}
+}

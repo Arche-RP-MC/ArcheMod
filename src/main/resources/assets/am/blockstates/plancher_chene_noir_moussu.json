@@ -1,6 +1,7 @@
 {
-  "variants": { 
-  "normal": {
-    "model": "am:plancher_chene_noir_moussu"
+  "variants": {
+    "normal": {
+      "model": "am:plancher_chene_noir_moussu"
+    }
   }
-}}
+}

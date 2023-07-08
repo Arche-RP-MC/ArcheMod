@@ -1,6 +1,7 @@
 {
-  "variants": { 
-  "normal": {
-    "model": "am:planche_bouleau_vernie"
+  "variants": {
+    "normal": {
+      "model": "am:planche_bouleau_vernie"
+    }
   }
-}}
+}

@@ -1,6 +1,7 @@
 {
-  "variants": { 
-  "normal": {
-    "model": "am:tuile_en_ardoise_taillee"
+  "variants": {
+    "normal": {
+      "model": "am:tuile_en_ardoise_taillee"
+    }
   }
-}}
+}

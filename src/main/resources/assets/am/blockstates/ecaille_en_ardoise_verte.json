@@ -1,6 +1,7 @@
 {
-  "variants": { 
-  "normal": {
-    "model": "am:ecaille_en_ardoise_verte"
+  "variants": {
+    "normal": {
+      "model": "am:ecaille_en_ardoise_verte"
+    }
   }
-}}
+}

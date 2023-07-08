@@ -1,6 +1,7 @@
 {
-  "variants": { 
-  "normal": {
-    "model": "am:pierres_de_gres_naturelles"
+  "variants": {
+    "normal": {
+      "model": "am:pierres_de_gres_naturelles"
+    }
   }
-}}
+}
