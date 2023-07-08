@@ -10,22 +10,22 @@ import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 
-public class BlockBarriere  extends BlockFence implements IHasModel {
+public class BlockBarriere extends BlockFence implements IHasModel {
 
-  public BlockBarriere(String name, Material materialIn, MapColor mapColorIn, float hardness, float resistance) {
-    super(materialIn, mapColorIn);
-    setTranslationKey(name);
-    setRegistryName(name);
-    setHardness(hardness);
-    setResistance(resistance);
-    setCreativeTab(ArcheMod.archeCreativeTabs);
+    public BlockBarriere(String name, Material materialIn, MapColor mapColorIn, float hardness, float resistance) {
+        super(materialIn, mapColorIn);
+        setTranslationKey(name);
+        setRegistryName(name);
+        setHardness(hardness);
+        setResistance(resistance);
+        setCreativeTab(ArcheMod.archeCreativeTabs);
 
-    ModBlocks.BLOCKS.add(this);
-    ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
-  }
-  
+        ModBlocks.BLOCKS.add(this);
+        ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
+    }
 
-  public void registerModels() {
-      ArcheMod.proxy.registerItemRenderer(Item.getItemFromBlock(this),0,"inventory");
-  }
+
+    public void registerModels() {
+        ArcheMod.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
+    }
 }

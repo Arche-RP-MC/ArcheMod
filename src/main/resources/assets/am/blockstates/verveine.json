@@ -1,6 +1,7 @@
 {
-    "variants": {
-        "normal": {
-            "model": "am:verveine"}
+  "variants": {
+    "normal": {
+      "model": "am:verveine"
     }
+  }
 }

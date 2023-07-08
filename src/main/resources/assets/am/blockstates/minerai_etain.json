@@ -1,6 +1,7 @@
 {
-  "variants": { 
-  "normal": {
-    "model": "am:minerai_etain"
+  "variants": {
+    "normal": {
+      "model": "am:minerai_etain"
+    }
   }
-}}
+}

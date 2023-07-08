@@ -17,7 +17,7 @@ public class PacketDescription implements IMessage {
     public PacketDescription() {
     }
 
-    public PacketDescription(Description description){
+    public PacketDescription(Description description) {
         this.description = description;
     }
 
@@ -30,26 +30,26 @@ public class PacketDescription implements IMessage {
 
     @Override
     public void toBytes(ByteBuf buf) {
-        ByteBufUtils.writeUTF8String(buf,description.getDescription());
+        ByteBufUtils.writeUTF8String(buf, description.getDescription());
     }
 
-    public static class ServerHandler implements IMessageHandler<PacketDescription,IMessage>{
+    public static class ServerHandler implements IMessageHandler<PacketDescription, IMessage> {
 
         @Override
         public IMessage onMessage(PacketDescription message, MessageContext ctx) {
             System.out.println(String.format("Received %s from %s", message.description, ctx.getServerHandler().player.getDisplayName()));
-            Minecraft.getMinecraft().addScheduledTask(new ScheduledDescriptionPacketTask(ctx.getServerHandler().player,message));
+            Minecraft.getMinecraft().addScheduledTask(new ScheduledDescriptionPacketTask(ctx.getServerHandler().player, message));
             return null;
         }
     }
 
     @SideOnly(Side.CLIENT)
-    public static class ClientHandler implements IMessageHandler <PacketDescription, IMessage>{
+    public static class ClientHandler implements IMessageHandler<PacketDescription, IMessage> {
 
         @Override
         public IMessage onMessage(PacketDescription message, MessageContext ctx) {
             System.out.println(String.format("Received %s from server", message.description));
-            Minecraft.getMinecraft().addScheduledTask(new ScheduledDescriptionPacketTask(null,message));
+            Minecraft.getMinecraft().addScheduledTask(new ScheduledDescriptionPacketTask(null, message));
             return null;
         }
     }

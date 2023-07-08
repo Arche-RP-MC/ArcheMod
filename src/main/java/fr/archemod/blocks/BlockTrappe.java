@@ -11,18 +11,18 @@ import net.minecraft.item.ItemBlock;
 
 public class BlockTrappe extends BlockTrapDoor implements IHasModel {
 
-  public BlockTrappe(String name, float hardness, Material materialIn) {
-    super(materialIn);
-    setTranslationKey(name);
-    setRegistryName(name);
-    setCreativeTab(ArcheMod.archeCreativeTabs);
-    setHardness(hardness);
+    public BlockTrappe(String name, float hardness, Material materialIn) {
+        super(materialIn);
+        setTranslationKey(name);
+        setRegistryName(name);
+        setCreativeTab(ArcheMod.archeCreativeTabs);
+        setHardness(hardness);
 
-    ModBlocks.BLOCKS.add(this);
-    ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
-  }
-  
-  public void registerModels() {
-      ArcheMod.proxy.registerItemRenderer(Item.getItemFromBlock(this),0,"inventory");
-  }
+        ModBlocks.BLOCKS.add(this);
+        ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
+    }
+
+    public void registerModels() {
+        ArcheMod.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
+    }
 }

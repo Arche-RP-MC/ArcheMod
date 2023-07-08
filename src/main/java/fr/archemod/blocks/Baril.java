@@ -26,7 +26,7 @@ import net.minecraft.world.World;
 import javax.annotation.Nullable;
 
 public class Baril extends BlockContainer implements IHasModel {
-    public Baril(String name, Material material, float hardness, float resistance, SoundType soundType){
+    public Baril(String name, Material material, float hardness, float resistance, SoundType soundType) {
         super(material);
         setTranslationKey(name);
         setRegistryName(name);
@@ -47,33 +47,30 @@ public class Baril extends BlockContainer implements IHasModel {
 
     @Override
     public boolean hasTileEntity(IBlockState p_hasTileEntity_1_) {
-           return true;
+        return true;
     }
 
     @Override
-    public void breakBlock(World world, BlockPos pos, IBlockState state)
-    {
+    public void breakBlock(World world, BlockPos pos, IBlockState state) {
         TileEntity tileentity = world.getTileEntity(pos);
 
-        if(tileentity instanceof TileEntityBaril)
-        {
-            InventoryHelper.dropInventoryItems(world, pos, (TileEntityBaril)tileentity);
+        if (tileentity instanceof TileEntityBaril) {
+            InventoryHelper.dropInventoryItems(world, pos, (TileEntityBaril) tileentity);
 
         }
         super.breakBlock(world, pos, state);
     }
-    public void onBlockPlacedBy(World world, BlockPos pos, IBlockState state, EntityLivingBase placer, ItemStack stack)
-    {
-        if(stack.hasDisplayName())
-        {
+
+    public void onBlockPlacedBy(World world, BlockPos pos, IBlockState state, EntityLivingBase placer, ItemStack stack) {
+        if (stack.hasDisplayName()) {
             TileEntity tileentity = world.getTileEntity(pos);
 
-            if (tileentity instanceof TileEntityBaril)
-            {
-                ((TileEntityFurnace)tileentity).setCustomInventoryName(stack.getDisplayName());
+            if (tileentity instanceof TileEntityBaril) {
+                ((TileEntityFurnace) tileentity).setCustomInventoryName(stack.getDisplayName());
             }
         }
     }
+
     @Override
     public boolean onBlockActivated(World world, BlockPos pos, IBlockState state, EntityPlayer player, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
         if (world.isRemote) {
@@ -89,6 +86,7 @@ public class Baril extends BlockContainer implements IHasModel {
             return true;
         }
     }
+
     @Override
     public EnumBlockRenderType getRenderType(IBlockState state) {
         return EnumBlockRenderType.MODEL;
@@ -97,7 +95,7 @@ public class Baril extends BlockContainer implements IHasModel {
 
     @Override
     public void registerModels() {
-        ArcheMod.proxy.registerItemRenderer(Item.getItemFromBlock(this),0,"inventory");
+        ArcheMod.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
     }
 }
 

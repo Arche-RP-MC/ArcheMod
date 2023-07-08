@@ -1,6 +1,7 @@
 {
-    "variants": {
-        "normal": {
-            "model": "am:pivoine"}
+  "variants": {
+    "normal": {
+      "model": "am:pivoine"
     }
+  }
 }

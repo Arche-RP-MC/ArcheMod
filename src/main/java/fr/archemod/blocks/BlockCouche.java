@@ -29,7 +29,7 @@ public class BlockCouche extends BlockBase {
 
     public static final PropertyInteger LAYERS = PropertyInteger.create("layers", 1, 2);
 
-    protected static final AxisAlignedBB[] SNOW_AABB = new AxisAlignedBB[] { new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.0D, 1.0D), new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.125D, 1.0D), new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.25D, 1.0D), new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.375D, 1.0D), new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.5D, 1.0D), new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.625D, 1.0D), new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.75D, 1.0D), new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.875D, 1.0D), new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 1.0D, 1.0D) };
+    protected static final AxisAlignedBB[] SNOW_AABB = new AxisAlignedBB[]{new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.0D, 1.0D), new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.125D, 1.0D), new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.25D, 1.0D), new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.375D, 1.0D), new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.5D, 1.0D), new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.625D, 1.0D), new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.75D, 1.0D), new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.875D, 1.0D), new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 1.0D, 1.0D)};
 
     public Item itemDropped = null;
 
@@ -39,22 +39,22 @@ public class BlockCouche extends BlockBase {
     }
 
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
-        return SNOW_AABB[((Integer)state.getValue((IProperty)LAYERS)).intValue()];
+        return SNOW_AABB[((Integer) state.getValue((IProperty) LAYERS)).intValue()];
     }
 
     public boolean isPassable(IBlockAccess worldIn, BlockPos pos) {
-        return (((Integer)worldIn.getBlockState(pos).getValue((IProperty)LAYERS)).intValue() < 5);
+        return (((Integer) worldIn.getBlockState(pos).getValue((IProperty) LAYERS)).intValue() < 5);
     }
 
     public boolean isTopSolid(IBlockState state) {
-        return (((Integer)state.getValue((IProperty)LAYERS)).intValue() == 7);
+        return (((Integer) state.getValue((IProperty) LAYERS)).intValue() == 7);
     }
 
     public AxisAlignedBB getCollisionBoundingBox(IBlockState blockState, IBlockAccess worldIn, BlockPos pos) {
-        int i = ((Integer)blockState.getValue((IProperty)LAYERS)).intValue() - 1;
+        int i = ((Integer) blockState.getValue((IProperty) LAYERS)).intValue() - 1;
         float f = 0.125F;
         AxisAlignedBB axisalignedbb = blockState.getBoundingBox(worldIn, pos);
-        return new AxisAlignedBB(axisalignedbb.minX, axisalignedbb.minY, axisalignedbb.minZ, axisalignedbb. maxX, (i * 0.125F), axisalignedbb.maxZ);
+        return new AxisAlignedBB(axisalignedbb.minX, axisalignedbb.minY, axisalignedbb.minZ, axisalignedbb.maxX, (i * 0.125F), axisalignedbb.maxZ);
     }
 
     public boolean isOpaqueCube(IBlockState state) {
@@ -68,7 +68,7 @@ public class BlockCouche extends BlockBase {
     public boolean canPlaceBlockAt(World worldIn, BlockPos pos) {
         IBlockState iblockstate = worldIn.getBlockState(pos.down());
         Block block = iblockstate.getBlock();
-        return (block != Blocks.ICE && block != Blocks. PACKED_ICE) ? (iblockstate.getBlock().isLeaves(iblockstate, (IBlockAccess)worldIn, pos.down()) ? true : ((block == this && ((Integer)iblockstate.getValue((IProperty)LAYERS)).intValue() >= 7) ? true : ((iblockstate.isOpaqueCube() && iblockstate.getMaterial().blocksMovement())))) : false;
+        return (block != Blocks.ICE && block != Blocks.PACKED_ICE) ? (iblockstate.getBlock().isLeaves(iblockstate, (IBlockAccess) worldIn, pos.down()) ? true : ((block == this && ((Integer) iblockstate.getValue((IProperty) LAYERS)).intValue() >= 7) ? true : ((iblockstate.isOpaqueCube() && iblockstate.getMaterial().blocksMovement())))) : false;
     }
 
     public void neighborChanged(IBlockState state, World worldIn, BlockPos pos, Block blockIn, BlockPos fromPos) {
@@ -97,27 +97,27 @@ public class BlockCouche extends BlockBase {
         if (side == EnumFacing.UP)
             return true;
         IBlockState iblockstate = blockAccess.getBlockState(pos.offset(side));
-        return (iblockstate.getBlock() == this && ((Integer)iblockstate.getValue((IProperty)LAYERS)).intValue() >= ((Integer)blockState.getValue((IProperty)LAYERS)).intValue()) ? true : super.shouldSideBeRendered(blockState, blockAccess, pos, side);
+        return (iblockstate.getBlock() == this && ((Integer) iblockstate.getValue((IProperty) LAYERS)).intValue() >= ((Integer) blockState.getValue((IProperty) LAYERS)).intValue()) ? true : super.shouldSideBeRendered(blockState, blockAccess, pos, side);
     }
 
     public IBlockState getStateFromMeta(int meta) {
-        return getDefaultState().withProperty((IProperty)LAYERS, Integer.valueOf((meta & 0x7) + 1));
+        return getDefaultState().withProperty((IProperty) LAYERS, Integer.valueOf((meta & 0x7) + 1));
     }
 
     public boolean isReplaceable(IBlockAccess worldIn, BlockPos pos) {
-        return (((Integer)worldIn.getBlockState(pos).getValue((IProperty)LAYERS)).intValue() == 1);
+        return (((Integer) worldIn.getBlockState(pos).getValue((IProperty) LAYERS)).intValue() == 1);
     }
 
     public int getMetaFromState(IBlockState state) {
-        return ((Integer)state.getValue((IProperty)LAYERS)).intValue() - 1;
+        return ((Integer) state.getValue((IProperty) LAYERS)).intValue() - 1;
     }
 
     public int quantityDropped(IBlockState state, int fortune, Random random) {
-        return ((Integer)state.getValue((IProperty)LAYERS)).intValue() + 1;
+        return ((Integer) state.getValue((IProperty) LAYERS)).intValue() + 1;
     }
 
     protected BlockStateContainer createBlockState() {
-        return new BlockStateContainer(this, new IProperty[] { (IProperty)LAYERS });
+        return new BlockStateContainer(this, new IProperty[]{(IProperty) LAYERS});
     }
 
     @Nullable
@@ -131,8 +131,7 @@ public class BlockCouche extends BlockBase {
     }
 
     @SideOnly(Side.CLIENT)
-    public BlockRenderLayer getRenderLayer()
-    {
+    public BlockRenderLayer getRenderLayer() {
         return BlockRenderLayer.CUTOUT;
     }
 }

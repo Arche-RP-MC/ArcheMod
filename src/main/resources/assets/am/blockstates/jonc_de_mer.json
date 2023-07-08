@@ -1,6 +1,7 @@
 {
-  "variants": { 
-  "normal": {
-    "model": "am:jonc_de_mer"
+  "variants": {
+    "normal": {
+      "model": "am:jonc_de_mer"
+    }
   }
-}}
+}

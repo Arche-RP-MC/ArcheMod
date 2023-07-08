@@ -1,4 +1,3 @@
-
 package fr.archemod.blocks.tileentity;
 
 import net.minecraft.nbt.NBTTagCompound;

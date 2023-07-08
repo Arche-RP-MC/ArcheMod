@@ -23,26 +23,24 @@ public class Showcase extends BlockBase implements IHasModel {
 
     public static final ItemStack ITEM = ItemStack.EMPTY;
     public static final PropertyDirection FACING = BlockHorizontal.FACING;
-    private static final AxisAlignedBB AXIS_ALIGNED_BB =  new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.4D, 1.0D);
+    private static final AxisAlignedBB AXIS_ALIGNED_BB = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.4D, 1.0D);
 
 
     public Showcase(String name, Material material) {
-        super(name, material, 2F,3F, SoundType.WOOD);
-        setHarvestLevel("axe",0);
+        super(name, material, 2F, 3F, SoundType.WOOD);
+        setHarvestLevel("axe", 0);
         setLightLevel(0F);
         setLightOpacity(0);
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
     }
 
     @SideOnly(Side.CLIENT)
-    public BlockRenderLayer getRenderLayer()
-    {
+    public BlockRenderLayer getRenderLayer() {
         return BlockRenderLayer.CUTOUT;
     }
 
     @Override
-    public EnumBlockRenderType getRenderType(IBlockState state)
-    {
+    public EnumBlockRenderType getRenderType(IBlockState state) {
         return EnumBlockRenderType.MODEL;
     }
 

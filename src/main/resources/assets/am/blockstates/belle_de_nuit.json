@@ -1,7 +1,7 @@
 {
-    "variants": {
-        "normal": {
-            "model": "am:belle_de_nuit"}
-
+  "variants": {
+    "normal": {
+      "model": "am:belle_de_nuit"
     }
+  }
 }

@@ -1,6 +1,7 @@
 {
-  "variants": { 
-  "normal": {
-    "model": "am:colombage"
+  "variants": {
+    "normal": {
+      "model": "am:colombage"
+    }
   }
-}}
+}

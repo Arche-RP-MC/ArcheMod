@@ -15,25 +15,22 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
 public class ItemBlockDoor extends ItemBlock {
-    public ItemBlockDoor(Block block){
+    public ItemBlockDoor(Block block) {
         super(block);
     }
 
     @Override
-    public EnumActionResult onItemUse(EntityPlayer player, World worldIn, BlockPos pos, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ)
-    {
-        if(facing != EnumFacing.UP) return EnumActionResult.FAIL;
-        else
-        {
+    public EnumActionResult onItemUse(EntityPlayer player, World worldIn, BlockPos pos, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
+        if (facing != EnumFacing.UP) return EnumActionResult.FAIL;
+        else {
             IBlockState bottomDoorState = worldIn.getBlockState(pos);
             Block bottomDoorBlock = bottomDoorState.getBlock();
 
-            if(!block.isReplaceable(worldIn, pos)) pos = pos.offset(facing);
+            if (!block.isReplaceable(worldIn, pos)) pos = pos.offset(facing);
 
             ItemStack stack = player.getHeldItem(hand);
-            if(player.canPlayerEdit(pos, facing, stack) && this.block.canPlaceBlockAt(worldIn, pos))
-            {
-                EnumFacing playerFacing = EnumFacing.fromAngle((double)player.rotationYaw);
+            if (player.canPlayerEdit(pos, facing, stack) && this.block.canPlaceBlockAt(worldIn, pos)) {
+                EnumFacing playerFacing = EnumFacing.fromAngle((double) player.rotationYaw);
                 int x = playerFacing.getXOffset();
                 int z = playerFacing.getZOffset();
                 boolean flag = x < 0 && hitZ < 0.5f || x > 0 && hitZ > 0.5f || z < 0 && hitX < 0.5F || z > 0 && hitX > 0.5F;
@@ -44,13 +41,11 @@ public class ItemBlockDoor extends ItemBlock {
 
                 stack.shrink(1);
                 return EnumActionResult.SUCCESS;
-            }
-            else return EnumActionResult.FAIL;
+            } else return EnumActionResult.FAIL;
         }
     }
 
-    private static void placeDoor(World worldIn, BlockPos bottomDoorPos, EnumFacing playerFacing, Block door, boolean isRightHinge)
-    {
+    private static void placeDoor(World worldIn, BlockPos bottomDoorPos, EnumFacing playerFacing, Block door, boolean isRightHinge) {
         BlockPos posYClockwise = bottomDoorPos.offset(playerFacing.rotateY());
         BlockPos posYAntiClockwise = bottomDoorPos.offset(playerFacing.rotateYCCW());
 
@@ -60,11 +55,9 @@ public class ItemBlockDoor extends ItemBlock {
         boolean flag = worldIn.getBlockState(posYAntiClockwise).getBlock() == door || worldIn.getBlockState(posYAntiClockwise.up()).getBlock() == door;
         boolean flag1 = worldIn.getBlockState(posYClockwise).getBlock() == door || worldIn.getBlockState(posYClockwise.up()).getBlock() == door;
 
-        if((!flag || flag1) && j <= i)
-        {
-            if(flag1 && !flag || j < i) isRightHinge = false;
-        }
-        else isRightHinge = true;
+        if ((!flag || flag1) && j <= i) {
+            if (flag1 && !flag || j < i) isRightHinge = false;
+        } else isRightHinge = true;
 
         BlockPos topDoorPos = bottomDoorPos.up();
         boolean powered = worldIn.isBlockPowered(bottomDoorPos) || worldIn.isBlockPowered(topDoorPos);

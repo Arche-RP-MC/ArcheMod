@@ -1,6 +1,7 @@
 {
-  "variants": { 
-  "normal": {
-    "model": "am:stuc"
+  "variants": {
+    "normal": {
+      "model": "am:stuc"
+    }
   }
-}}
+}

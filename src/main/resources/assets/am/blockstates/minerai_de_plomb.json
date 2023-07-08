@@ -1,6 +1,7 @@
 {
-  "variants": { 
-  "normal": {
-    "model": "am:minerai_de_plomb"
+  "variants": {
+    "normal": {
+      "model": "am:minerai_de_plomb"
+    }
   }
-}}
+}

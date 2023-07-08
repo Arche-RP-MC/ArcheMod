@@ -1,6 +1,7 @@
 {
-    "variants": {
-        "normal": {
-            "model": "am:glycine"}
+  "variants": {
+    "normal": {
+      "model": "am:glycine"
     }
+  }
 }

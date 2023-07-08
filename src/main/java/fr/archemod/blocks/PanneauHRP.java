@@ -27,7 +27,7 @@ import javax.annotation.Nullable;
 
 public class PanneauHRP extends BlockSign implements ITileEntityProvider, IHasModel {
 
-    public PanneauHRP(String name, Material material){
+    public PanneauHRP(String name, Material material) {
         super();
         this.setRegistryName(name);
         this.setTranslationKey(name);
@@ -44,14 +44,10 @@ public class PanneauHRP extends BlockSign implements ITileEntityProvider, IHasMo
     }
 
 
-    public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ)
-    {
-        if (worldIn.isRemote)
-        {
+    public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
+        if (worldIn.isRemote) {
             return true;
-        }
-        else
-        {
+        } else {
             playerIn.openGui(ArcheMod.INSTANCE, 2, worldIn, pos.getX(), pos.getY(), pos.getZ());
 
             return true;
@@ -59,14 +55,11 @@ public class PanneauHRP extends BlockSign implements ITileEntityProvider, IHasMo
     }
 
     @Override
-    public void onBlockPlacedBy(World worldIn, BlockPos pos, IBlockState state, EntityLivingBase placer, ItemStack stack)
-    {
+    public void onBlockPlacedBy(World worldIn, BlockPos pos, IBlockState state, EntityLivingBase placer, ItemStack stack) {
         TileEntity tile = worldIn.getTileEntity(pos);
-        if(tile instanceof TileEntityHrpSign)
-        {
-            if(stack.hasDisplayName())
-            {
-                ((TileEntityHrpSign)tile).setCustomName(stack.getDisplayName());
+        if (tile instanceof TileEntityHrpSign) {
+            if (stack.hasDisplayName()) {
+                ((TileEntityHrpSign) tile).setCustomName(stack.getDisplayName());
             }
         }
     }
@@ -81,8 +74,6 @@ public class PanneauHRP extends BlockSign implements ITileEntityProvider, IHasMo
     }
 
 
-
-
     public void harvestBlock(World worldIn, EntityPlayer player, BlockPos pos, IBlockState state, @Nullable TileEntity te, @Nullable ItemStack stack) {
         super.harvestBlock(worldIn, player, pos, state, te, stack);
         worldIn.setBlockToAir(pos);
@@ -91,7 +82,7 @@ public class PanneauHRP extends BlockSign implements ITileEntityProvider, IHasMo
 
     @Override
     public void registerModels() {
-        ArcheMod.proxy.registerItemRenderer(Item.getItemFromBlock(this),0,"inventory");
+        ArcheMod.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
     }
 
 

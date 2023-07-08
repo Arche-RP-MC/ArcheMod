@@ -1,11 +1,9 @@
 package fr.archemod.blocks.tileentity;
 
-import fr.archemod.blocks.container.ContainerBaril;
 import fr.archemod.init.ModItems;
 import fr.archemod.recipies.RecipesBaril;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
-import net.minecraft.init.Items;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.ItemStackHelper;
 import net.minecraft.item.ItemStack;
@@ -13,15 +11,12 @@ import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntityLockable;
 import net.minecraft.util.ITickable;
 import net.minecraft.util.NonNullList;
-import net.minecraftforge.oredict.OreDictionary;
 
-public class TileEntityBaril extends TileEntityLockable implements ITickable
-
-{
+public class TileEntityBaril extends TileEntityLockable implements ITickable {
     private NonNullList<ItemStack> stacks = NonNullList.withSize(3, ItemStack.EMPTY);
     private String customName;
-    private int	timePassed = 0;
-    private int	burningTimeLeft	= 0;
+    private int timePassed = 0;
+    private int burningTimeLeft = 0;
 
 
     @Override
@@ -92,6 +87,7 @@ public class TileEntityBaril extends TileEntityLockable implements ITickable
     public int getFieldCount() {
         return 2;
     }
+
     @Override
     public int getSizeInventory() {
         return this.stacks.size();
@@ -128,7 +124,7 @@ public class TileEntityBaril extends TileEntityLockable implements ITickable
 
     @Override
     public boolean isEmpty() {
-        for(ItemStack stack : this.stacks) {
+        for (ItemStack stack : this.stacks) {
             if (!stack.isEmpty()) {
                 return false;
             }
@@ -138,15 +134,18 @@ public class TileEntityBaril extends TileEntityLockable implements ITickable
 
     @Override
     public void clear() {
-        for(int i = 0; i < this.stacks.size(); i++) {
+        for (int i = 0; i < this.stacks.size(); i++) {
             this.stacks.set(i, ItemStack.EMPTY);
         }
     }
-    @Override
-    public void openInventory(EntityPlayer player) {}
 
     @Override
-    public void closeInventory(EntityPlayer player) {}
+    public void openInventory(EntityPlayer player) {
+    }
+
+    @Override
+    public void closeInventory(EntityPlayer player) {
+    }
 
     @Override
     public Container createContainer(InventoryPlayer playerInventory, EntityPlayer playerIn) {
@@ -162,11 +161,13 @@ public class TileEntityBaril extends TileEntityLockable implements ITickable
     public boolean isItemValidForSlot(int index, ItemStack stack) {
         // Le slot 1 soit le slot ou l'on depose de la levure  n'autorise que la levure
         if (index == 1)
-            return stack.getItem() == ModItems.LEVURE ;
+            return stack.getItem() == ModItems.LEVURE;
         return true;
     }
 
-    /** Vérifie que le joueur peut tjrs toucher a sont inventaire */
+    /**
+     * Vérifie que le joueur peut tjrs toucher a sont inventaire
+     */
     public boolean isUsableByPlayer(EntityPlayer player) {
         return this.world.getTileEntity(this.pos) != this ? false : player
                 .getDistanceSq((double) this.pos.getX() + 0.5D,
@@ -177,13 +178,14 @@ public class TileEntityBaril extends TileEntityLockable implements ITickable
     public boolean hasFuelEmpty() {
         return this.getStackInSlot(1).isEmpty();
     }
+
     public ItemStack getRecipeResult() {
-        return RecipesBaril.getRecipeResult(new ItemStack[] {
-                this.getStackInSlot(1) });
+        return RecipesBaril.getRecipeResult(new ItemStack[]{
+                this.getStackInSlot(1)});
     }
 
 
-//Cette fonction renvoie vrai si on peut faire cuire les ingrédients, c’est à dire que les ingrédients sont bons et que le résultat de la recette
+    //Cette fonction renvoie vrai si on peut faire cuire les ingrédients, c’est à dire que les ingrédients sont bons et que le résultat de la recette
 //peut être mis dans le slot du résultat
     public boolean canSmelt() {
         // On récupère le résultat de la recette
@@ -200,7 +202,6 @@ public class TileEntityBaril extends TileEntityLockable implements ITickable
                 return true;
 
 
-
             // Sinon on vérifie que ce soit le même objet, les même métadata et que la taille finale ne sera pas trop grande
             //Ici nous allons verifié si il y'a bien le nombre que l'on veut
             if (slot4.getItem() == result.getItem() && slot4.getItemDamage() == result.getItemDamage()) {
@@ -212,6 +213,7 @@ public class TileEntityBaril extends TileEntityLockable implements ITickable
         }
         return false;
     }
+
     public void smelt() {
         // Cette fonction n'est appelée que si result != null, c'est pourquoi on ne fait pas de null check
         ItemStack result = this.getRecipeResult();
@@ -229,20 +231,27 @@ public class TileEntityBaril extends TileEntityLockable implements ITickable
         }
     }
 
-    /** Temps de cuisson de la recette */
+    /**
+     * Temps de cuisson de la recette
+     */
     public int getFullRecipeTime() {
         return 200;
     }
 
-    /** Temps que dure 1 unité de carburant (ici : 1 planche + 1 blé) */
+    /**
+     * Temps que dure 1 unité de carburant (ici : 1 planche + 1 blé)
+     */
     public int getFullBurnTime() {
         return 300;
     }
 
-    /** Renvoie vrai si le feu est allumé */
+    /**
+     * Renvoie vrai si le feu est allumé
+     */
     public boolean isBurning() {
         return burningTimeLeft > 0;
     }
+
     @Override
     public void update() {
         if (!this.world.isRemote) {

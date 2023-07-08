@@ -1,6 +1,7 @@
 {
-    "variants": {
-        "normal": {
-            "model": "am:jacinthe_des_bois"}
+  "variants": {
+    "normal": {
+      "model": "am:jacinthe_des_bois"
     }
+  }
 }

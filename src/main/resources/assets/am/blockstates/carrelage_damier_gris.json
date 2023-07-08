@@ -1,6 +1,7 @@
 {
-  "variants": { 
-  "normal": {
-    "model": "am:carrelage_damier_gris"
+  "variants": {
+    "normal": {
+      "model": "am:carrelage_damier_gris"
+    }
   }
-}}
+}

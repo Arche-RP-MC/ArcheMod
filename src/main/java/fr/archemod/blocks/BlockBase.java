@@ -12,7 +12,7 @@ import net.minecraft.item.ItemBlock;
 
 public class BlockBase extends Block implements IHasModel {
 
-    public BlockBase(String name, Material material, float hardness, float resistance, SoundType soundType){
+    public BlockBase(String name, Material material, float hardness, float resistance, SoundType soundType) {
         super(material);
         setTranslationKey(name);
         setRegistryName(name);
@@ -27,7 +27,7 @@ public class BlockBase extends Block implements IHasModel {
 
     @Override
     public void registerModels() {
-        ArcheMod.proxy.registerItemRenderer(Item.getItemFromBlock(this),0,"inventory");
+        ArcheMod.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
     }
 }
 

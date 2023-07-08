@@ -18,32 +18,32 @@ import net.minecraft.world.World;
 
 import java.util.Random;
 
-public class BlockPorte extends BlockDoor implements IHasModel{
+public class BlockPorte extends BlockDoor implements IHasModel {
 
-  public BlockPorte(String name, Material materialIn, SoundType sound, float hardness) {
-    super(materialIn);
-    setSoundType(sound);
-    setHardness(hardness);
-    setTranslationKey(name);
-    setRegistryName(name);
-    setCreativeTab(ArcheMod.archeCreativeTabs);
+    public BlockPorte(String name, Material materialIn, SoundType sound, float hardness) {
+        super(materialIn);
+        setSoundType(sound);
+        setHardness(hardness);
+        setTranslationKey(name);
+        setRegistryName(name);
+        setCreativeTab(ArcheMod.archeCreativeTabs);
 
-    ModBlocks.BLOCKS.add(this);
-    ModItems.ITEMS.add(new ItemBlockDoor(this).setRegistryName(this.getRegistryName()));
+        ModBlocks.BLOCKS.add(this);
+        ModItems.ITEMS.add(new ItemBlockDoor(this).setRegistryName(this.getRegistryName()));
 
-  }
+    }
 
-  @Override
-  public Item getItemDropped(IBlockState state, Random rand, int fortune) {
-    return Item.getItemFromBlock(this);
-  }
+    @Override
+    public Item getItemDropped(IBlockState state, Random rand, int fortune) {
+        return Item.getItemFromBlock(this);
+    }
 
-  @Override
-  public ItemStack getPickBlock(IBlockState state, RayTraceResult target, World world, BlockPos pos, EntityPlayer player) {
-    return new ItemStack(this);
-  }
+    @Override
+    public ItemStack getPickBlock(IBlockState state, RayTraceResult target, World world, BlockPos pos, EntityPlayer player) {
+        return new ItemStack(this);
+    }
 
-  public void registerModels() {
-      ArcheMod.proxy.registerItemRenderer(Item.getItemFromBlock(this),0,"inventory");
-  }
+    public void registerModels() {
+        ArcheMod.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
+    }
 }

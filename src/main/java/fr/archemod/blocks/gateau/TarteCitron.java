@@ -31,13 +31,13 @@ public class TarteCitron extends BlockCake {
     }
 
     public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
-        int i = ((Integer)state.getValue((IProperty)BITES)).intValue();
+        int i = ((Integer) state.getValue((IProperty) BITES)).intValue();
         if (i < 6) {
-            worldIn.setBlockState(pos, state.withProperty((IProperty)BITES, Integer.valueOf(i + 1)), 3);
+            worldIn.setBlockState(pos, state.withProperty((IProperty) BITES, Integer.valueOf(i + 1)), 3);
         } else {
             worldIn.setBlockToAir(pos);
         }
-        playerIn.addItemStackToInventory(new ItemStack((Item)ModItems.PART_DE_TARTE_AU_CITRON));
+        playerIn.addItemStackToInventory(new ItemStack((Item) ModItems.PART_DE_TARTE_AU_CITRON));
         return true;
     }
 }

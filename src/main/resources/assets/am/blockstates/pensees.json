@@ -1,6 +1,7 @@
 {
-    "variants": {
-        "normal": {
-            "model": "am:pensees"}
+  "variants": {
+    "normal": {
+      "model": "am:pensees"
     }
+  }
 }

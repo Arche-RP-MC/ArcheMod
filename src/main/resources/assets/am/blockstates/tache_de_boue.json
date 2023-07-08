@@ -1,7 +1,7 @@
 {
-    "variants": {
-        "normal": {
-            "model": "am:tache_de_boue"
-        }
+  "variants": {
+    "normal": {
+      "model": "am:tache_de_boue"
     }
+  }
 }

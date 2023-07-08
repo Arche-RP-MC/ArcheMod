@@ -1,28 +1,28 @@
 {
-    "variants": {
-        "age=0": {
-            "model": "am:sauge1"
-        },
-        "age=1": {
-            "model": "am:sauge2"
-        },
-        "age=2": {
-            "model": "am:sauge3"
-        },
-        "age=3": {
-            "model": "am:sauge4"
-        },
-        "age=4": {
-            "model": "am:sauge5"
-        },
-        "age=5": {
-            "model": "am:sauge6"
-        },
-        "age=6": {
-            "model": "am:sauge7"
-        },
-        "age=7": {
-            "model": "am:sauge8"
-        }
+  "variants": {
+    "age=0": {
+      "model": "am:sauge1"
+    },
+    "age=1": {
+      "model": "am:sauge2"
+    },
+    "age=2": {
+      "model": "am:sauge3"
+    },
+    "age=3": {
+      "model": "am:sauge4"
+    },
+    "age=4": {
+      "model": "am:sauge5"
+    },
+    "age=5": {
+      "model": "am:sauge6"
+    },
+    "age=6": {
+      "model": "am:sauge7"
+    },
+    "age=7": {
+      "model": "am:sauge8"
     }
+  }
 }

@@ -1,6 +1,7 @@
 {
-  "variants": { 
-  "normal": {
-    "model": "am:granite_poli"
+  "variants": {
+    "normal": {
+      "model": "am:granite_poli"
+    }
   }
-}}
+}

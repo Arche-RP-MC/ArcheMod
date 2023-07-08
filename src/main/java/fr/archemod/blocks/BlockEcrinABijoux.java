@@ -29,10 +29,10 @@ import java.util.Random;
 public class BlockEcrinABijoux extends BlockBase implements ITileEntityProvider {
 
     public static final PropertyDirection FACING = BlockHorizontal.FACING;
-    private static final AxisAlignedBB AXIS_ALIGNED_BB_SOUTH =  new AxisAlignedBB(0.25D, 0.0D, 0.17D, 0.75D, 0.4D, 0.67D); //OK
-    private static final AxisAlignedBB AXIS_ALIGNED_BB_NORTH =  new AxisAlignedBB(0.25D, 0.0D, 0.37D, 0.75D, 0.4D, 0.87D); //OK
-    private static final AxisAlignedBB AXIS_ALIGNED_BB_EAST =  new AxisAlignedBB(0.17D, 0.0D, 0.25D, 0.67D, 0.4D, 0.75D); //OK
-    private static final AxisAlignedBB AXIS_ALIGNED_BB_WEST =  new AxisAlignedBB(0.37D, 0.0D, 0.25D, 0.87D, 0.4D, 0.75D); //OK
+    private static final AxisAlignedBB AXIS_ALIGNED_BB_SOUTH = new AxisAlignedBB(0.25D, 0.0D, 0.17D, 0.75D, 0.4D, 0.67D); //OK
+    private static final AxisAlignedBB AXIS_ALIGNED_BB_NORTH = new AxisAlignedBB(0.25D, 0.0D, 0.37D, 0.75D, 0.4D, 0.87D); //OK
+    private static final AxisAlignedBB AXIS_ALIGNED_BB_EAST = new AxisAlignedBB(0.17D, 0.0D, 0.25D, 0.67D, 0.4D, 0.75D); //OK
+    private static final AxisAlignedBB AXIS_ALIGNED_BB_WEST = new AxisAlignedBB(0.37D, 0.0D, 0.25D, 0.87D, 0.4D, 0.75D); //OK
 
     public BlockEcrinABijoux(String name, Material material, float hardness, float resistance, SoundType soundType) {
         super(name, material, hardness, resistance, soundType);
@@ -55,13 +55,13 @@ public class BlockEcrinABijoux extends BlockBase implements ITileEntityProvider 
 
     @Override
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
-        if(state.getValue(FACING) == EnumFacing.SOUTH){
+        if (state.getValue(FACING) == EnumFacing.SOUTH) {
             return AXIS_ALIGNED_BB_SOUTH;
-        } else if(state.getValue(FACING) == EnumFacing.NORTH){
+        } else if (state.getValue(FACING) == EnumFacing.NORTH) {
             return AXIS_ALIGNED_BB_NORTH;
-        } else if(state.getValue(FACING) == EnumFacing.EAST){
+        } else if (state.getValue(FACING) == EnumFacing.EAST) {
             return AXIS_ALIGNED_BB_EAST;
-        } else if(state.getValue(FACING) == EnumFacing.WEST){
+        } else if (state.getValue(FACING) == EnumFacing.WEST) {
             return AXIS_ALIGNED_BB_WEST;
         }
         return AXIS_ALIGNED_BB_NORTH;
@@ -76,14 +76,10 @@ public class BlockEcrinABijoux extends BlockBase implements ITileEntityProvider 
         super.breakBlock(world, pos, state);
     }
 
-    public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ)
-    {
-        if (worldIn.isRemote)
-        {
+    public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
+        if (worldIn.isRemote) {
             return true;
-        }
-        else
-        {
+        } else {
             playerIn.openGui(ArcheMod.INSTANCE, 5, worldIn, pos.getX(), pos.getY(), pos.getZ());
 
             return true;
@@ -91,27 +87,22 @@ public class BlockEcrinABijoux extends BlockBase implements ITileEntityProvider 
     }
 
     @Override
-    public void onBlockPlacedBy(World worldIn, BlockPos pos, IBlockState state, EntityLivingBase placer, ItemStack stack)
-    {
+    public void onBlockPlacedBy(World worldIn, BlockPos pos, IBlockState state, EntityLivingBase placer, ItemStack stack) {
         TileEntity tile = worldIn.getTileEntity(pos);
-        if(tile instanceof TileEntityTable)
-        {
-            if(stack.hasDisplayName())
-            {
-                ((TileEntityTable)tile).setCustomName(stack.getDisplayName());
+        if (tile instanceof TileEntityTable) {
+            if (stack.hasDisplayName()) {
+                ((TileEntityTable) tile).setCustomName(stack.getDisplayName());
             }
         }
     }
 
     @SideOnly(Side.CLIENT)
-    public BlockRenderLayer getRenderLayer()
-    {
+    public BlockRenderLayer getRenderLayer() {
         return BlockRenderLayer.CUTOUT;
     }
 
     @Override
-    public EnumBlockRenderType getRenderType(IBlockState state)
-    {
+    public EnumBlockRenderType getRenderType(IBlockState state) {
         return EnumBlockRenderType.MODEL;
     }
 
@@ -162,8 +153,7 @@ public class BlockEcrinABijoux extends BlockBase implements ITileEntityProvider 
     }
 
     @Override
-    public int quantityDropped(Random random)
-    {
+    public int quantityDropped(Random random) {
         return 1;
     }
 

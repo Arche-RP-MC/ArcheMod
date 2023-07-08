@@ -1,54 +1,52 @@
-
-
 {
-    "variants": {
-        "size=0": {
-            "model": "am:baril_biere_rousse"
-        },
-        "size=1": {
-            "model": "am:baril_biere_rousse"
-        },
-        "size=2": {
-            "model": "am:baril_biere_rousse"
-        },
-        "size=3": {
-            "model": "am:baril_biere_rousse"
-        },
-        "size=4": {
-            "model": "am:baril_biere_rousse"
-        },
-        "size=5": {
-            "model": "am:baril_biere_rousse"
-        },
-        "size=6": {
-            "model": "am:baril_biere_rousse"
-        },
-        "size=7": {
-            "model": "am:baril_biere_rousse"
-        },
-        "size=8": {
-            "model": "am:baril_biere_rousse"
-        },
-        "size=9": {
-            "model": "am:baril_biere_rousse"
-        },
-        "size=10": {
-            "model": "am:baril_biere_rousse"
-        },
-        "size=11": {
-            "model": "am:baril_biere_rousse"
-        },
-        "size=12": {
-            "model": "am:baril_biere_rousse"
-        },
-        "size=13": {
-            "model": "am:baril_biere_rousse"
-        },
-        "size=14": {
-            "model": "am:baril_biere_rousse"
-        },
-        "size=15": {
-            "model": "am:baril_biere_rousse"
-        }
+  "variants": {
+    "size=0": {
+      "model": "am:baril_biere_rousse"
+    },
+    "size=1": {
+      "model": "am:baril_biere_rousse"
+    },
+    "size=2": {
+      "model": "am:baril_biere_rousse"
+    },
+    "size=3": {
+      "model": "am:baril_biere_rousse"
+    },
+    "size=4": {
+      "model": "am:baril_biere_rousse"
+    },
+    "size=5": {
+      "model": "am:baril_biere_rousse"
+    },
+    "size=6": {
+      "model": "am:baril_biere_rousse"
+    },
+    "size=7": {
+      "model": "am:baril_biere_rousse"
+    },
+    "size=8": {
+      "model": "am:baril_biere_rousse"
+    },
+    "size=9": {
+      "model": "am:baril_biere_rousse"
+    },
+    "size=10": {
+      "model": "am:baril_biere_rousse"
+    },
+    "size=11": {
+      "model": "am:baril_biere_rousse"
+    },
+    "size=12": {
+      "model": "am:baril_biere_rousse"
+    },
+    "size=13": {
+      "model": "am:baril_biere_rousse"
+    },
+    "size=14": {
+      "model": "am:baril_biere_rousse"
+    },
+    "size=15": {
+      "model": "am:baril_biere_rousse"
     }
+  }
 }

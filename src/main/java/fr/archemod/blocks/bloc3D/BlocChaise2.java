@@ -14,7 +14,6 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
-import net.minecraft.util.EnumBlockRenderType;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.Mirror;
 import net.minecraft.util.Rotation;
@@ -27,13 +26,13 @@ public class BlocChaise2 extends Block implements IHasModel {
 
 
     public static final PropertyDirection FACING = BlockHorizontal.FACING;
-    private static final AxisAlignedBB AXIS_ALIGNED_BB_SOUTH =  new AxisAlignedBB(0.25D, 0.0D, 0.17D, 0.75D, 0.4D, 0.67D); //OK
-    private static final AxisAlignedBB AXIS_ALIGNED_BB_NORTH =  new AxisAlignedBB(0.25D, 0.0D, 0.37D, 0.75D, 0.4D, 0.87D); //OK
-    private static final AxisAlignedBB AXIS_ALIGNED_BB_EAST =  new AxisAlignedBB(0.17D, 0.0D, 0.25D, 0.67D, 0.4D, 0.75D); //OK
-    private static final AxisAlignedBB AXIS_ALIGNED_BB_WEST =  new AxisAlignedBB(0.37D, 0.0D, 0.25D, 0.87D, 0.4D, 0.75D); //OK
+    private static final AxisAlignedBB AXIS_ALIGNED_BB_SOUTH = new AxisAlignedBB(0.25D, 0.0D, 0.17D, 0.75D, 0.4D, 0.67D); //OK
+    private static final AxisAlignedBB AXIS_ALIGNED_BB_NORTH = new AxisAlignedBB(0.25D, 0.0D, 0.37D, 0.75D, 0.4D, 0.87D); //OK
+    private static final AxisAlignedBB AXIS_ALIGNED_BB_EAST = new AxisAlignedBB(0.17D, 0.0D, 0.25D, 0.67D, 0.4D, 0.75D); //OK
+    private static final AxisAlignedBB AXIS_ALIGNED_BB_WEST = new AxisAlignedBB(0.37D, 0.0D, 0.25D, 0.87D, 0.4D, 0.75D); //OK
 
 
-    public BlocChaise2(String name, Material material, float hardness, float resistance, SoundType soundType){
+    public BlocChaise2(String name, Material material, float hardness, float resistance, SoundType soundType) {
         super(material);
         setTranslationKey(name);
         setRegistryName(name);
@@ -49,13 +48,13 @@ public class BlocChaise2 extends Block implements IHasModel {
 
     @Override
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
-        if(state.getValue(FACING) == EnumFacing.SOUTH){
+        if (state.getValue(FACING) == EnumFacing.SOUTH) {
             return AXIS_ALIGNED_BB_SOUTH;
-        } else if(state.getValue(FACING) == EnumFacing.NORTH){
+        } else if (state.getValue(FACING) == EnumFacing.NORTH) {
             return AXIS_ALIGNED_BB_NORTH;
-        } else if(state.getValue(FACING) == EnumFacing.EAST){
+        } else if (state.getValue(FACING) == EnumFacing.EAST) {
             return AXIS_ALIGNED_BB_EAST;
-        } else if(state.getValue(FACING) == EnumFacing.WEST){
+        } else if (state.getValue(FACING) == EnumFacing.WEST) {
             return AXIS_ALIGNED_BB_WEST;
         }
         return AXIS_ALIGNED_BB_NORTH;
@@ -63,15 +62,13 @@ public class BlocChaise2 extends Block implements IHasModel {
 
     @Override
     public void registerModels() {
-        ArcheMod.proxy.registerItemRenderer(Item.getItemFromBlock(this),0,"inventory");
+        ArcheMod.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
     }
 
     @Override
-    public boolean isOpaqueCube (IBlockState state)
-    {
+    public boolean isOpaqueCube(IBlockState state) {
         return false;
     }
-
 
 
     @Override

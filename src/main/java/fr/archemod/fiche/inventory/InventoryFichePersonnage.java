@@ -30,8 +30,7 @@ public class InventoryFichePersonnage implements IInventory {
     /**
      * This methods reads the content of the NBTTagCompound inside the container
      *
-     * @param comp
-     *            the container NBTTagCompound
+     * @param comp the container NBTTagCompound
      */
     public void readFromNBT(NBTTagCompound comp) {
         NBTTagList nbtlist = comp.getTagList("Inventory", Constants.NBT.TAG_COMPOUND);
@@ -45,8 +44,7 @@ public class InventoryFichePersonnage implements IInventory {
     /**
      * This methods saves the content inside the container
      *
-     * @param comp
-     *            the NBTTagCompound to write in
+     * @param comp the NBTTagCompound to write in
      */
     public void writeToNBT(NBTTagCompound comp) {
         NBTTagList nbtlist = new NBTTagList();
@@ -67,10 +65,8 @@ public class InventoryFichePersonnage implements IInventory {
 
     @Override
     public boolean isEmpty() {
-        for (ItemStack itemstack : this.content)
-        {
-            if (!itemstack.isEmpty())
-            {
+        for (ItemStack itemstack : this.content) {
+            if (!itemstack.isEmpty()) {
                 return false;
             }
         }
@@ -89,9 +85,9 @@ public class InventoryFichePersonnage implements IInventory {
         if (stack != null) {
             if (stack.getCount() > amount) {
                 stack = stack.splitStack(amount);
-                if (stack.getCount() == 0) this.content.set(index,ItemStack.EMPTY);
+                if (stack.getCount() == 0) this.content.set(index, ItemStack.EMPTY);
             } else {
-                this.content.set(index,ItemStack.EMPTY);
+                this.content.set(index, ItemStack.EMPTY);
             }
         }
         return stack;
@@ -100,13 +96,13 @@ public class InventoryFichePersonnage implements IInventory {
     @Override
     public ItemStack removeStackFromSlot(int index) {
         ItemStack ret = this.content.get(index);
-        this.content.set(index,ItemStack.EMPTY);
+        this.content.set(index, ItemStack.EMPTY);
         return ret;
     }
 
     @Override
     public void setInventorySlotContents(int index, ItemStack stack) {
-        this.content.set(index,stack);
+        this.content.set(index, stack);
     }
 
     @Override
@@ -121,7 +117,7 @@ public class InventoryFichePersonnage implements IInventory {
 
     @Override
     public ITextComponent getDisplayName() {
-        return (ITextComponent)(this.hasCustomName() ? new TextComponentString(this.getName()) : new TextComponentTranslation(this.getName(), new Object[0]));
+        return (ITextComponent) (this.hasCustomName() ? new TextComponentString(this.getName()) : new TextComponentTranslation(this.getName(), new Object[0]));
     }
 
     @Override
@@ -130,7 +126,8 @@ public class InventoryFichePersonnage implements IInventory {
     }
 
     @Override
-    public void markDirty() {}
+    public void markDirty() {
+    }
 
     @Override
     public boolean isUsableByPlayer(EntityPlayer player) {
@@ -138,10 +135,12 @@ public class InventoryFichePersonnage implements IInventory {
     }
 
     @Override
-    public void openInventory(EntityPlayer player) {}
+    public void openInventory(EntityPlayer player) {
+    }
 
     @Override
-    public void closeInventory(EntityPlayer player) {}
+    public void closeInventory(EntityPlayer player) {
+    }
 
     /**
      * Prevents backpack-ception
@@ -152,23 +151,21 @@ public class InventoryFichePersonnage implements IInventory {
     }
 
     @Override
-    public int getField(int id)
-    {
+    public int getField(int id) {
         return 0;
     }
 
     @Override
-    public void setField(int id, int value) {}
+    public void setField(int id, int value) {
+    }
 
     @Override
-    public int getFieldCount()
-    {
+    public int getFieldCount() {
         return 0;
     }
 
     @Override
-    public void clear()
-    {
+    public void clear() {
         this.content.clear();
     }
 }

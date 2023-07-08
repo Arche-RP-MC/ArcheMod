@@ -1,6 +1,7 @@
 {
-  "variants": { 
-  "normal": {
-    "model": "am:marbrage_sol_gres"
+  "variants": {
+    "normal": {
+      "model": "am:marbrage_sol_gres"
+    }
   }
-}}
+}

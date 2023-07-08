@@ -1,6 +1,7 @@
 {
-    "variants": {
-        "normal": {
-            "model": "am:camomille"}
+  "variants": {
+    "normal": {
+      "model": "am:camomille"
     }
+  }
 }

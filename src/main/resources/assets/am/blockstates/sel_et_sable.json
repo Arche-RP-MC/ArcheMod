@@ -1,6 +1,7 @@
 {
-  "variants": { 
-  "normal": {
-    "model": "am:sel_et_sable"
+  "variants": {
+    "normal": {
+      "model": "am:sel_et_sable"
+    }
   }
-}}
+}

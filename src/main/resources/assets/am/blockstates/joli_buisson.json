@@ -1,6 +1,7 @@
 {
-    "variants": {
-        "normal": {
-            "model": "am:joli_buisson"}
+  "variants": {
+    "normal": {
+      "model": "am:joli_buisson"
     }
+  }
 }

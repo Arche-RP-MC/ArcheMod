@@ -1,6 +1,7 @@
 {
   "variants": {
-  "normal": {
-    "model": "am:sechoir_poisson"
+    "normal": {
+      "model": "am:sechoir_poisson"
+    }
   }
-}}
+}

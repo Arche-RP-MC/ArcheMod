@@ -1,28 +1,28 @@
 {
-    "variants": {
-        "age=0": {
-            "model": "am:thym1"
-        },
-        "age=1": {
-            "model": "am:thym2"
-        },
-        "age=2": {
-            "model": "am:thym3"
-        },
-        "age=3": {
-            "model": "am:thym4"
-        },
-        "age=4": {
-            "model": "am:thym5"
-        },
-        "age=5": {
-            "model": "am:thym6"
-        },
-        "age=6": {
-            "model": "am:thym7"
-        },
-        "age=7": {
-            "model": "am:thym8"
-        }
+  "variants": {
+    "age=0": {
+      "model": "am:thym1"
+    },
+    "age=1": {
+      "model": "am:thym2"
+    },
+    "age=2": {
+      "model": "am:thym3"
+    },
+    "age=3": {
+      "model": "am:thym4"
+    },
+    "age=4": {
+      "model": "am:thym5"
+    },
+    "age=5": {
+      "model": "am:thym6"
+    },
+    "age=6": {
+      "model": "am:thym7"
+    },
+    "age=7": {
+      "model": "am:thym8"
     }
+  }
 }

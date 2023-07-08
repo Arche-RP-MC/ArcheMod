@@ -1,7 +1,7 @@
-
 {
-    "variants": {
-        "normal": {
-            "model": "am:plan_test" }
+  "variants": {
+    "normal": {
+      "model": "am:plan_test"
     }
+  }
 }

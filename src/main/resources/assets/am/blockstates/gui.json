@@ -1,6 +1,7 @@
 {
-    "variants": {
-        "normal": {
-            "model": "am:gui"}
+  "variants": {
+    "normal": {
+      "model": "am:gui"
     }
+  }
 }
