@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " O ",
+    " F ",
+    "EEE"
+  ],
+  "key": {
+    "O": [
+      {
+        "item": "am:seau_de_vin_rouge"
+      },
+      {
+        "item": "am:seau_de_vin_rouge_en_bois"
+      }
+    ],
+    "E": {
+      "item": "am:bouteille_vide"
+    },
+    "M": {
+      "item": "am:etoffe"
+    }
+  },
+  "result": {
+    "item": "am:bouteille_vin_rouge",
+    "count": 3
+  }
+}

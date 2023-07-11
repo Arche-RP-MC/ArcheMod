@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "BB ",
+    " S "
+  ],
+  "key": {
+    "B": {
+      "item": "am:mout_raisin_noir"
+    },
+    "S": {
+      "item": "minecraft:water_bucket"
+    }
+  },
+  "result": {
+    "item": "am:seau_de_vin_rouge",
+    "count": 1
+  }
+}

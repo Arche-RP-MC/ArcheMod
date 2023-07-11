@@ -1,31 +1,25 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "BBB",
-    "BBB",
-    "MEO"
+    "   ",
+    " O ",
+    "EEE"
   ],
   "key": {
-    "B": {
-      "item": "am:miel"
-    },
     "O": [
       {
-        "item": "am:seau_d_eau_en_bois"
+        "item": "am:seau_de_hydromel"
       },
       {
-        "item": "minecraft:water_bucket"
+        "item": "am:seau_de_hydromel_en_bois"
       }
     ],
-    "M": {
-      "item": "am:levure"
-    },
     "E": {
       "item": "am:bouteille_vide"
     }
   },
   "result": {
     "item": "am:bouteille_de_hydromel",
-    "count": 1
+    "count": 3
   }
 }

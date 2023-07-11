@@ -2,19 +2,24 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "   ",
-    " E ",
+    "EE ",
     "OE "
   ],
   "key": {
-    "O": {
-      "item": "minecraft:milk_bucket"
-    },
+    "O": [
+      {
+        "item": "minecraft:milk_bucket"
+      },
+      {
+        "item": "am:seau_de_lait_en_bois"
+      }
+    ],
     "E": {
       "item": "am:bouteille_vide"
     }
   },
   "result": {
     "item": "am:bouteille_de_lait",
-    "count": 2
+    "count": 3
   }
 }

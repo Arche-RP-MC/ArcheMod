@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " L ",
+    "LCM",
+    " S "
+  ],
+  "key": {
+    "L": {
+      "item": "am:miel"
+    },"C": {
+      "item": "am:canelle"
+    },
+    "M": {
+      "item": "am:gingembre"
+    },
+    "S": [
+      {
+        "item": "am:seau_de_vin_rouge_en_bois"
+      },
+      {
+        "item": "am:seau_de_vin_blanc_en_bois"
+      }
+    ]
+  },
+  "result": {
+    "item": "am:seau_hypocras_en_bois",
+    "count": 1
+  }
+}

@@ -2,19 +2,19 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "   ",
-    " L ",
-    " BB"
+    "BB ",
+    " S "
   ],
   "key": {
     "B": {
-      "item": "minecraft:milk_bucket"
+      "item": "am:vesou"
     },
-    "L": {
-      "item": "am:moule"
+    "S": {
+      "item": "am:seau_d_eau_en_bois"
     }
   },
   "result": {
-    "item": "am:bleu_entier",
+    "item": "am:seau_de_rhum_en_bois",
     "count": 1
   }
 }

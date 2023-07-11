@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  T",
+    "PLR",
+    " PJ"
+  ],
+  "key": {
+    "T": [
+      {
+        "item": "am:trousse_d_ingenieur_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:trousse_d_ingenieur_en_acier",
+        "data": 32767
+      }
+    ],
+    "P": {
+      "item": "am:bocal"
+    },
+    "J": {
+      "item": "am:bol_en_argile"
+    },
+    "L": {
+      "item": "am:etui_en_verre"
+    },
+    "R": {
+      "item": "am:rouage"
+    }
+  },
+  "result": {
+    "item": "am:alambic",
+    "count": 1
+  }
+}

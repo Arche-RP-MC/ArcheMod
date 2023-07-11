@@ -1,9 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "   ",
-    "CL ",
-    "   "
+    "CCC",
+    "CLC",
+    " MJ"
   ],
   "key": {
     "C": {
@@ -15,6 +15,19 @@
       },
       {
         "item": "minecraft:water_bucket"
+      }
+    ],
+    "J": {
+      "item": "am:levure"
+    },
+    "M": [
+      {
+        "item": "am:mortier_pilon_en_bois",
+        "data": 32767
+      },
+      {
+        "item": "am:mortier_pilon_en_pierre",
+        "data": 32767
       }
     ]
   },

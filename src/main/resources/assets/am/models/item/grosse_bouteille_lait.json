@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "am:items/grosse_bouteille_lait"
+    "layer0": "am:items/grosse_bouteille_de_lait"
   }
 }

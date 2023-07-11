@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " S ",
+    " S ",
+    " L "
+  ],
+  "key": {
+    "L": {
+      "item": "am:seau_alcool_pur_en_bois"
+    },
+    "S": [
+      {
+        "item": "am:mout_fruit_blanc"
+      },
+      {
+        "item": "am:mout_fruit_rouge"
+      },
+      {
+        "item": "am:mout_fruit_orange"
+      },
+      {
+        "item": "am:mout_fruit_vert"
+      },
+      {
+        "item": "am:mout_fruit_jaune"
+      }
+    ]
+  },
+  "result": {
+    "item": "am:seau_liqueur_fruit_en_bois",
+    "count": 1
+  }
+}

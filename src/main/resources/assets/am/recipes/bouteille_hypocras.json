@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " O ",
+    " F ",
+    "EEE"
+  ],
+  "key": {
+    "O": [
+      {
+        "item": "am:seau_hypocras"
+      },
+      {
+        "item": "am:seau_hypocras_en_bois"
+      }
+    ],
+    "E": {
+      "item": "am:bouteille_vide"
+    },
+    "M": {
+      "item": "am:etoffe"
+    }
+  },
+  "result": {
+    "item": "am:bouteille_hypocras",
+    "count": 3
+  }
+}

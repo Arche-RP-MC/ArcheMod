@@ -1,0 +1,62 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CJC",
+    "CJC",
+    " M "
+  ],
+  "key": {
+    "C": [
+      {
+        "item": "am:cerise"
+      },
+      {
+        "item": "am:fraise"
+      },
+      {
+        "item": "am:framboise"
+      },
+      {
+        "item": "am:figue"
+      },
+      {
+        "item": "am:groseille"
+      },
+      {
+        "item": "am:tranche_de_pasteque"
+      },
+      {
+        "item": "am:cassis"
+      },
+      {
+        "item": "am:mures"
+      },
+      {
+        "item": "am:myrtilles"
+      },
+      {
+        "item": "am:pruneau"
+      },
+      {
+        "item": "am:raisin_noir"
+      }
+    ],
+    "J": {
+      "item": "minecraft:sucre"
+    },
+    "M": [
+      {
+        "item": "am:mortier_pilon_en_bois",
+        "data": 32767
+      },
+      {
+        "item": "am:mortier_pilon_en_pierre",
+        "data": 32767
+      }
+    ]
+  },
+  "result": {
+    "item": "am:mout_fruit_rouge",
+    "count": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " O ",
+    " F ",
+    "EEE"
+  ],
+  "key": {
+    "O": [
+      {
+        "item": "am:seau_jus_de_fruit_jaune"
+      },
+      {
+        "item": "am:seau_jus_de_fruit_jaune_en_bois"
+      }
+    ],
+    "E": {
+      "item": "am:bouteille_vide"
+    },
+    "M": {
+      "item": "am:etoffe"
+    }
+  },
+  "result": {
+    "item": "am:bouteille_de_jus_de_fruit_jaune",
+    "count": 3
+  }
+}
