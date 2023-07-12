@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "am:items/aigue_marine_taille_asscher"
+    "layer0": "am:items/mout_raisin_noir"
   }
 }
