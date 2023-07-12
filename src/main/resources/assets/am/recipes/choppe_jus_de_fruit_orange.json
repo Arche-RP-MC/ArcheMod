@@ -7,15 +7,15 @@
   ],
   "key": {
     "F": {
-      "item": "am:bouteille_de_jus_de_fruit_jaune",
+      "item": "am:bouteille_de_jus_de_fruit_orange",
       "data": 32767
     },
     "L": {
-      "item": "am:choppe_en_argile"
+      "item": "am:choppe_en_verre"
     }
   },
   "result": {
-    "item": "am:choppe_en_argile_jus_de_fruit_jaune",
+    "item": "am:choppe_en_verre_jus_de_fruit_orange",
     "count": 1
   }
 }

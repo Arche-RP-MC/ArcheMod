@@ -9,10 +9,9 @@
     "L": {
       "item": "am:seau_alcool_pur"
     },
-    "S":
-      {
-        "item": "am:bouquet_garni"
-      }
+    "S": {
+      "item": "am:bouquet_garni"
+    }
   },
   "result": {
     "item": "am:seau_jagermeister",

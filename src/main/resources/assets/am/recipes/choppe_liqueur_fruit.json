@@ -7,15 +7,15 @@
   ],
   "key": {
     "F": {
-      "item": "am:bocal_de_biere_rousse",
+      "item": "am:bouteille_liqueur_fruit",
       "data": 32767
     },
     "L": {
-      "item": "am:verre_a_pied"
+      "item": "am:choppe_en_verre"
     }
   },
   "result": {
-    "item": "am:verre_a_pied_biere_rousse",
+    "item": "am:choppe_en_verre_liqueur_fruit",
     "count": 1
   }
 }

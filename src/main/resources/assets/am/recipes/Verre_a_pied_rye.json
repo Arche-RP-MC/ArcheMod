@@ -7,7 +7,7 @@
   ],
   "key": {
     "F": {
-      "item": "am:bocal_de_biere_brune",
+      "item": "am:bouteille_rye",
       "data": 32767
     },
     "L": {
@@ -15,7 +15,7 @@
     }
   },
   "result": {
-    "item": "am:verre_a_pied_biere_brune",
+    "item": "am:verre_a_pied_rye",
     "count": 1
   }
 }

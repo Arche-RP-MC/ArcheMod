@@ -1,8 +1,8 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    " O ",
-    "   ",
+    "O E",
+    "EEE",
     "EEE"
   ],
   "key": {
@@ -15,11 +15,11 @@
       }
     ],
     "E": {
-      "item": "am:bouteille_vide"
+      "item": "am:bocal_vide"
     }
   },
   "result": {
-    "item": "am:bouteille_alcool_pur",
-    "count": 3
+    "item": "am:bocal_alcool_pur",
+    "count": 7
   }
 }

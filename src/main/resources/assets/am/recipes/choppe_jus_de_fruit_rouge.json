@@ -7,15 +7,15 @@
   ],
   "key": {
     "F": {
-      "item": "am:bocal_de_rhum",
+      "item": "am:bouteille_de_jus_de_fruit_rouge",
       "data": 32767
     },
     "L": {
-      "item": "am:verre_a_pied"
+      "item": "am:choppe_en_verre"
     }
   },
   "result": {
-    "item": "am:verre_a_pied_rhum",
+    "item": "am:choppe_en_verre_jus_de_fruit_rouge",
     "count": 1
   }
 }

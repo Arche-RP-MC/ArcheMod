@@ -11,11 +11,11 @@
       "data": 32767
     },
     "L": {
-      "item": "am:choppe_en_argile"
+      "item": "am:choppe_en_verre"
     }
   },
   "result": {
-    "item": "am:choppe_en_argile_jus_de_fruit_jaune",
+    "item": "am:choppe_en_verre_jus_de_fruit_jaune",
     "count": 1
   }
 }

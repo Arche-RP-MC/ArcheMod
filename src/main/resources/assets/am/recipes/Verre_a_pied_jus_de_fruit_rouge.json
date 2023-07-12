@@ -7,7 +7,7 @@
   ],
   "key": {
     "F": {
-      "item": "am:bocal_de_vin_blanc",
+      "item": "am:bouteille_de_jus_de_fruit_rouge",
       "data": 32767
     },
     "L": {
@@ -15,7 +15,7 @@
     }
   },
   "result": {
-    "item": "am:verre_a_pied_vin_blanc",
+    "item": "am:verre_a_pied_jus_de_fruit_rouge",
     "count": 1
   }
 }

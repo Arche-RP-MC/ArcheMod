@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " EA",
+    "   "
+  ],
+  "key": {
+    "A": {
+      "item": "am:bandage_ensanglante"
+    },
+    "E": [
+      {
+        "item": "am:soude"
+      },
+      {
+        "item": "am:bocal_alcool-pur",
+        "data": 32767
+      },
+      {
+        "item": "am:bouteille_vinaigre",
+        "data": 32767
+      }
+    ]
+  },
+  "result": {
+    "item": "am:bandage",
+    "count": 1
+  }
+}

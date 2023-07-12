@@ -1591,8 +1591,11 @@ public class ModItems {
     public static final Item BOUTEILLE_DE_JUS_DE_FRUIT_JAUNE = new BouteilleDeVin("bouteille_de_jus_de_fruit_jaune", 0, 0.2F, false);
 
     // AJOUT BRASSEURS juillet 23
-
     public static final Item ALAMBIC = new OutilsEnBronze("alambic");
+
+    public static final Item SEAU_ALCOOL_PUR = new ItemBase("seau_alcool_pur");
+    public static final Item SEAU_ALCOOL_PUR_EN_BOIS = new ItemBase("seau_alcool_pur_en_bois");
+    public static final Item BOCAL_ALCOOL_PUR = new BocalPlein("bocal_alcool_pur",0,0.2F,false);
 
     public static final Item VESOU = new ItemBase("vesou");
     public static final Item MOUT_RAISIN_BLANC = new ItemBase("mout_raisin_blanc");
@@ -2238,6 +2241,7 @@ public class ModItems {
 
     // Apothicaire - médecin - beauté
     public static final Item BANDAGE = new ItemBase("bandage");
+    public static final Item BANDAGE_ENSANGLANTE = new ItemBase("bandage_ensanglante");
     public static final Item BAUME_A_LA_CAMOMILLE = new ItemBase("baume_a_la_camomille");
     public static final Item BAUME_EXFOLIANT = new ItemBase("baume_exfoliant");
     public static final Item BOUGIE = new ItemBase("candle");

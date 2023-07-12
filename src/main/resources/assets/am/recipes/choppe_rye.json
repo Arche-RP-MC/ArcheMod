@@ -7,15 +7,15 @@
   ],
   "key": {
     "F": {
-      "item": "am:bocal_de_vin_rouge",
+      "item": "am:bouteille_rye",
       "data": 32767
     },
     "L": {
-      "item": "am:verre_a_pied"
+      "item": "am:choppe_en_verre"
     }
   },
   "result": {
-    "item": "am:verre_a_pied_vin_rouge",
+    "item": "am:choppe_en_verre_rye",
     "count": 1
   }
 }
