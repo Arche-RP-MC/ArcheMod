@@ -1,8 +1,8 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "   ",
     " D ",
+    "EEE",
     "ABC"
   ],
   "key": {
@@ -18,6 +18,9 @@
     "D": {
       "item": "am:hachoir",
       "data": 32767
+    },
+    "E": {
+      "item": "am:pain_au_choux"
     }
   },
   "result": {
