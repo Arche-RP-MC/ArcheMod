@@ -16,7 +16,7 @@ public class Savon extends ItemBase {
         setMaxStackSize(1);
     }
 
-    @Override
+    /*@Override
     public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) {
 
         if (!worldIn.isRemote && handIn == EnumHand.MAIN_HAND) {
@@ -24,5 +24,5 @@ public class Savon extends ItemBase {
             //TODO : Clean player
         }
         return new ActionResult<>(EnumActionResult.SUCCESS, playerIn.getHeldItem(handIn));
-    }
+    }*/
 }
