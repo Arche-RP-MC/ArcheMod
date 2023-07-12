@@ -88,7 +88,8 @@
       "item": "minecraft:sugar"
     },
     "F": {
-      "item": "am:beurre"
+      "item": "am:beurre",
+      "data": 32767
     },
     "G": {
       "item": "am:patisserie_a_la_pate_d_amande_cru"

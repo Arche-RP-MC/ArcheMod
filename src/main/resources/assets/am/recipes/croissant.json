@@ -16,7 +16,8 @@
       "item": "minecraft:sugar"
     },
     "B": {
-      "item": "am:beurre"
+      "item": "am:beurre",
+      "data": 32767
     },
     "L": {
       "item": "am:rouleau_a_patisserie",

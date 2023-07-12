@@ -3,7 +3,7 @@
   "pattern": [
     " G ",
     "FHT",
-    " B "
+    "PBT"
   ],
   "key": {
     "B": {
@@ -15,12 +15,18 @@
     "H": {
       "item": "am:tete_burin_fer"
     },
-    "G": {
-      "item": "am:marteau_en_bronze",
-      "data": 32767
-    },
+    "G": [
+      {
+        "item": "am:marteau_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_en_acier",
+        "data": 32767
+      }
+    ],
     "F": {
-      "item": "am:marteau_en_fer"
+      "item": "am:tete_marteau_en_fer"
     }
   },
   "result": {

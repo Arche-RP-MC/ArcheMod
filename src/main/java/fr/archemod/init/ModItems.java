@@ -1774,8 +1774,6 @@ public class ModItems {
     public static final Item MANTEAU = new ItemBase("manteau");
     public static final Item MANTEAU_COURT_FOURRE = new ItemBase("manteau_court_fourre");
     public static final Item MASQUE = new ItemBase("masque");
-    public static final Item MASQUE_ARGILE = new ItemBase("masque_argile");
-    public static final Item MASQUE_CHEVEUX = new ItemBase("masque_cheveux");
     public static final Item MOUCHOIR = new ItemBase("mouchoir");
     public static final Item OURSON_EN_PELUCHE = new ItemBase("ourson_en_peluche");
     public static final Item OURS_BRUN_EN_PELUCHE = new ItemBase("ours_brun_en_peluche");
@@ -2240,10 +2238,11 @@ public class ModItems {
     public static final Item TEINTURE_MERE_DE_PAVOT = new SolutionBuvable("teinture_mere_de_pavot", 0, 0.2F, false);
 
     // Apothicaire - médecin - beauté
+
     public static final Item BANDAGE = new ItemBase("bandage");
     public static final Item BANDAGE_ENSANGLANTE = new ItemBase("bandage_ensanglante");
-    public static final Item BAUME_A_LA_CAMOMILLE = new ItemBase("baume_a_la_camomille");
-    public static final Item BAUME_EXFOLIANT = new ItemBase("baume_exfoliant");
+    public static final Item BAUME_A_LA_CAMOMILLE = new Savon("baume_a_la_camomille");
+    public static final Item BAUME_EXFOLIANT = new Savon("baume_exfoliant");
     public static final Item BOUGIE = new ItemBase("candle");
     public static final Item BOUTEILLE_ALCOOL_PUR = new BouteilleDeVin("bouteille_alcool_pur", 0, 0.2F, false);
     public static final Item BOUTEILLE_DE_PARFUM = new Savon("bouteille_de_parfum");
@@ -2258,6 +2257,8 @@ public class ModItems {
     public static final Item FARD_A_JOUE = new Savon("fard_a_joue");
     public static final Item HUILE_ESSENTIELLE = new Consommables("huile_essentielle");
     public static final Item LEVURE = new ItemBase("levure");
+    public static final Item MASQUE_ARGILE = new Savon("masque_argile");
+    public static final Item MASQUE_CHEVEUX = new Savon("masque_cheveux");
     public static final Item NOIR_CHARBON = new Savon("noir_charbon");
     public static final Item ONCE_DE_POISON_LEGER = new ItemBase("once_de_poison_leger");
     public static final Item ONCE_D_HERBORISTE = new ItemBase("once_d_herboriste");
@@ -2265,7 +2266,7 @@ public class ModItems {
     public static final Item PATE_A_DENT = new Savon("pate_a_dent");
     public static final Item PATE_DIVERSE = new ItemBase("pate_diverse");
     public static final Item POUDRE_DE_TEINT = new Savon("poudre_de_teint");
-    public static final Item POUDRE_QUELCONQUE = new ItemBase("poudre_quelconque");
+    public static final Item POUDRE_QUELCONQUE = new Savon("poudre_quelconque");
     public static final Item ROUGE_A_LEVRES = new Savon("rouge_a_levres");
     public static final Item SAVON = new Savon("savon");
     public static final Item SEAU_DE_COLLE = new ItemBase("seau_de_colle");

@@ -13,7 +13,8 @@
       "item": "am:creme_fraiche"
     },
     "P": {
-      "item": "am:beurre"
+      "item": "am:beurre",
+      "data": 32767
     },
     "O": {
       "item": "am:oeuf_a_plat_cru"
