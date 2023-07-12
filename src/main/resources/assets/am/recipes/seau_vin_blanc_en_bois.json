@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "BB ",
+    " S "
+  ],
+  "key": {
+    "B": {
+      "item": "am:mout_raisin_blanc"
+    },
+    "S": {
+      "item": "am:seau_d_eau_en_bois"
+    }
+  },
+  "result": {
+    "item": "am:seau_de_vin_blanc_en_bois",
+    "count": 1
+  }
+}

@@ -10,7 +10,7 @@ import net.minecraft.util.ResourceLocation;
 import org.lwjgl.opengl.GL11;
 
 public class GuiFichePersonnage extends GuiContainer {
-    public static final ResourceLocation texture = new ResourceLocation(Reference.MOD_ID,"textures/gui/container/fiche_identite.png");
+    public static final ResourceLocation texture = new ResourceLocation(Reference.MOD_ID, "textures/gui/container/fiche_identite.png");
     protected InventoryFichePersonnage inventoryFichePersonnage;
     protected InventoryPlayer playerInv;
     public int rows;

@@ -1,6 +1,6 @@
 {
-    "parent": "block/cross",
-    "textures": {
-        "cross": "am:blocks/agriculture/myrtille_stage3"
-    }
+  "parent": "block/cross",
+  "textures": {
+    "cross": "am:blocks/agriculture/myrtille_stage3"
+  }
 }

@@ -4,7 +4,6 @@ import fr.archemod.ArcheMod;
 import fr.archemod.blocks.tileentity.TileEntityFourSechoir;
 import fr.archemod.init.ModBlocks;
 import fr.archemod.init.ModItems;
-import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -20,11 +19,8 @@ import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
-public class BlockFourSechoir extends BlockContainer
-{
+public class BlockFourSechoir extends BlockContainer {
    /* @SubscribeEvent
 
     public static void registerBlocks(RegistryEvent.Register<Block> event)
@@ -34,7 +30,7 @@ public class BlockFourSechoir extends BlockContainer
     }*/
 
 
-    public BlockFourSechoir(String name, Material material, float hardness, float resistance, SoundType soundType){
+    public BlockFourSechoir(String name, Material material, float hardness, float resistance, SoundType soundType) {
         super(material);
         setTranslationKey(name);
         setRegistryName(name);
@@ -44,17 +40,17 @@ public class BlockFourSechoir extends BlockContainer
         setCreativeTab(ArcheMod.archeCreativeTabs);
 
         ModBlocks.BLOCKS.add(this);
-        ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));}
+        ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
+    }
 
     @Override
-    public boolean hasTileEntity(){
+    public boolean hasTileEntity() {
 
         return true;
     }
 
     @Override
-    public TileEntity createNewTileEntity(World world, int metadata)
-    {
+    public TileEntity createNewTileEntity(World world, int metadata) {
         return new TileEntityFourSechoir();
     }
 

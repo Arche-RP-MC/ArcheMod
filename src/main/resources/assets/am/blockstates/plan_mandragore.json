@@ -1,28 +1,28 @@
 {
-    "variants": {
-        "age=0": {
-            "model": "am:mandragore1"
-        },
-        "age=1": {
-            "model": "am:mandragore2"
-        },
-        "age=2": {
-            "model": "am:mandragore3"
-        },
-        "age=3": {
-            "model": "am:mandragore4"
-        },
-        "age=4": {
-            "model": "am:mandragore5"
-        },
-        "age=5": {
-            "model": "am:mandragore6"
-        },
-        "age=6": {
-            "model": "am:mandragore7"
-        },
-        "age=7": {
-            "model": "am:mandragore8"
-        }
+  "variants": {
+    "age=0": {
+      "model": "am:mandragore1"
+    },
+    "age=1": {
+      "model": "am:mandragore2"
+    },
+    "age=2": {
+      "model": "am:mandragore3"
+    },
+    "age=3": {
+      "model": "am:mandragore4"
+    },
+    "age=4": {
+      "model": "am:mandragore5"
+    },
+    "age=5": {
+      "model": "am:mandragore6"
+    },
+    "age=6": {
+      "model": "am:mandragore7"
+    },
+    "age=7": {
+      "model": "am:mandragore8"
     }
+  }
 }

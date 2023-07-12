@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "BB ",
+    " S "
+  ],
+  "key": {
+    "B": {
+      "item": "am:vesou"
+    },
+    "S": {
+      "item": "minecraft:water_bucket"
+    }
+  },
+  "result": {
+    "item": "am:seau_de_rhum",
+    "count": 1
+  }
+}

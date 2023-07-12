@@ -1,6 +1,7 @@
 {
-    "variants": {
-        "normal": {
-            "model": "am:buisson_de_fleurs_blanches"}
+  "variants": {
+    "normal": {
+      "model": "am:buisson_de_fleurs_blanches"
     }
+  }
 }

@@ -1,6 +1,6 @@
 {
-    "parent": "block/cross",
-    "textures": {
-        "cross": "am:blocks/narcisses_stage_6"
-    }
+  "parent": "block/cross",
+  "textures": {
+    "cross": "am:blocks/narcisses_stage_6"
+  }
 }

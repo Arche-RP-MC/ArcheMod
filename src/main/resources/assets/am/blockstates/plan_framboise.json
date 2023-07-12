@@ -1,28 +1,28 @@
 {
-    "variants": {
-        "age=0": {
-            "model": "am:agriculture/framboise_stage0"
-        },
-        "age=1": {
-            "model": "am:agriculture/framboise_stage0"
-        },
-        "age=2": {
-            "model": "am:agriculture/framboise_stage1"
-        },
-        "age=3": {
-            "model": "am:agriculture/framboise_stage1"
-        },
-        "age=4": {
-            "model": "am:agriculture/framboise_stage2"
-        },
-        "age=5": {
-            "model": "am:agriculture/framboise_stage2"
-        },
-        "age=6": {
-            "model": "am:agriculture/framboise_stage3"
-        },
-        "age=7": {
-            "model": "am:agriculture/framboise_stage3"
-        }
+  "variants": {
+    "age=0": {
+      "model": "am:agriculture/framboise_stage0"
+    },
+    "age=1": {
+      "model": "am:agriculture/framboise_stage0"
+    },
+    "age=2": {
+      "model": "am:agriculture/framboise_stage1"
+    },
+    "age=3": {
+      "model": "am:agriculture/framboise_stage1"
+    },
+    "age=4": {
+      "model": "am:agriculture/framboise_stage2"
+    },
+    "age=5": {
+      "model": "am:agriculture/framboise_stage2"
+    },
+    "age=6": {
+      "model": "am:agriculture/framboise_stage3"
+    },
+    "age=7": {
+      "model": "am:agriculture/framboise_stage3"
     }
+  }
 }

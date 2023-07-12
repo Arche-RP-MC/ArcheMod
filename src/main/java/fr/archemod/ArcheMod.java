@@ -2,8 +2,6 @@ package fr.archemod;
 
 
 import fr.archemod.blocks.tileentity.TileEntityBarril;
-import fr.archemod.blocks.tileentity.TileEntityFourSechoir;
-//import fr.archemod.blocks.tileentity.TileEntityFourSechoir2;
 import fr.archemod.chat.GuiChatListener;
 import fr.archemod.chat.capabilities.description.Description;
 import fr.archemod.chat.capabilities.description.DescriptionStorage;
@@ -15,14 +13,12 @@ import fr.archemod.chat.network.indicator.PacketArcheChat;
 import fr.archemod.cmd.HRPCommand;
 import fr.archemod.init.ModRecipes;
 import fr.archemod.init.ModSounds;
-import fr.archemod.init.SechoirViandeRecipe;
 import fr.archemod.network.ArcheNetwork;
 import fr.archemod.proxy.CommonProxy;
 import fr.archemod.util.ArcheCreativeTabs;
 import fr.archemod.util.Reference;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
-import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.capabilities.CapabilityManager;
 import net.minecraftforge.fml.common.Mod;
@@ -31,12 +27,10 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
-import net.minecraftforge.fml.common.network.NetworkRegistry;
-import net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
-import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
 @Mod(
         modid = Reference.MOD_ID,
         name = Reference.MOD_NAME,
@@ -45,10 +39,14 @@ import org.apache.logging.log4j.Logger;
 public class ArcheMod {
 
 
-    /** This is used to keep track of GUIs that we make*/
+    /**
+     * This is used to keep track of GUIs that we make
+     */
     public static int modGuiIndex = 0;
 
-    /** Set our custom inventory Gui index to the next available Gui index */
+    /**
+     * Set our custom inventory Gui index to the next available Gui index
+     */
     public static final int GUI_ITEM_INV = modGuiIndex++;
     public static CreativeTabs archeCreativeTabs = new ArcheCreativeTabs("arche_creative_tabs");
     /**
@@ -59,7 +57,7 @@ public class ArcheMod {
     @SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.COMMON_PROXY_CLASS)
     public static CommonProxy proxy;
 
-    public static Logger logger ;
+    public static Logger logger;
 
 
     /**
@@ -84,17 +82,14 @@ public class ArcheMod {
         //networkDescription.registerMessage(PacketDescription.ServerHandler.class, PacketDescription.class, 4, Side.SERVER);
         //networkDescription.registerMessage(PacketDescription.ClientHandler.class, PacketDescription.class, 5, Side.CLIENT);
         //GameRegistry.registerTileEntity(TileEntityFourSechoir2.class,"am:TileEntityFourSechoir2");
-        GameRegistry.registerTileEntity(TileEntityBarril.class,"am:TileEntityBarril");
+        GameRegistry.registerTileEntity(TileEntityBarril.class, "am:TileEntityBarril");
 
     }
+
     @Mod.EventHandler
-    public void init(FMLServerStartingEvent event)
-    {
+    public void init(FMLServerStartingEvent event) {
         logger.info("initalise FMLServerStartingEvent :" + Reference.MOD_NAME);
         event.registerServerCommand(new HRPCommand());
-
-
-
 
 
     }
@@ -117,9 +112,11 @@ public class ArcheMod {
     public void postinit(FMLPostInitializationEvent event) {
 
     }
+
     public static Logger getLogger() {
         return logger;
     }
 
-    public void registerItemRenderer(Item item, int meta, String id) {}
+    public void registerItemRenderer(Item item, int meta, String id) {
+    }
 }

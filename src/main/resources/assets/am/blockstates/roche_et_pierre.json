@@ -1,6 +1,7 @@
 {
-  "variants": { 
-  "normal": {
-    "model": "am:roche_et_pierre"
+  "variants": {
+    "normal": {
+      "model": "am:roche_et_pierre"
+    }
   }
-}}
+}

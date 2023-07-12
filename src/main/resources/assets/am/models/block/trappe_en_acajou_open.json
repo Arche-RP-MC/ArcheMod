@@ -1,6 +1,6 @@
 {
-    "parent": "am:block/trapdoor_open",
-    "textures": {
-        "texture": "am:blocks/trappe_en_acajou"
-    }
+  "parent": "am:block/trapdoor_open",
+  "textures": {
+    "texture": "am:blocks/trappe_en_acajou"
+  }
 }

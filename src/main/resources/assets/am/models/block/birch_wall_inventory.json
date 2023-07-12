@@ -1,6 +1,6 @@
 {
-    "parent": "block/wall_inventory",
-    "textures": {
-        "wall": "am:blocks/log_birch"
-    }
+  "parent": "block/wall_inventory",
+  "textures": {
+    "wall": "am:blocks/log_birch"
+  }
 }

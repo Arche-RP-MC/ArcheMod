@@ -15,7 +15,6 @@ import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
@@ -29,7 +28,6 @@ import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-import java.util.Date;
 import java.util.Random;
 
 public class BlockLantern extends BlockBase implements ITileEntityProvider {
@@ -43,7 +41,7 @@ public class BlockLantern extends BlockBase implements ITileEntityProvider {
 
     public BlockLantern(String name, boolean burning, Material material, float hardness, float resistance, SoundType soundType) {
         super(name + (!burning ? "_off" : ""), material, hardness, resistance, soundType);
-        setDefaultState(this.blockState.getBaseState().withProperty((IProperty)ORIENTATION, Integer.valueOf(0)).withProperty((IProperty)POSITION, EnumPosition.BOTTOM));
+        setDefaultState(this.blockState.getBaseState().withProperty((IProperty) ORIENTATION, Integer.valueOf(0)).withProperty((IProperty) POSITION, EnumPosition.BOTTOM));
 
         if (burning) {
             setLightLevel(1.0F);
@@ -60,14 +58,14 @@ public class BlockLantern extends BlockBase implements ITileEntityProvider {
         if (this.burning && playerIn.getHeldItemMainhand().getItem() == Item.getByNameOrId("water_bucket")) {
             int slot = playerIn.inventory.getSlotFor(new ItemStack(Item.getByNameOrId("water_bucket")));
             playerIn.inventory.setInventorySlotContents(slot, new ItemStack(Item.getByNameOrId("bucket")));
-            worldIn.setBlockState(pos, ModBlocks.LANTERNE_JAUNE_ETEINTE.getDefaultState().withProperty((IProperty)ORIENTATION, state.getValue((IProperty)ORIENTATION)).withProperty((IProperty)POSITION, state.getValue((IProperty)POSITION)));
+            worldIn.setBlockState(pos, ModBlocks.LANTERNE_JAUNE_ETEINTE.getDefaultState().withProperty((IProperty) ORIENTATION, state.getValue((IProperty) ORIENTATION)).withProperty((IProperty) POSITION, state.getValue((IProperty) POSITION)));
         } else if (playerIn.getHeldItemMainhand() != ItemStack.EMPTY
                 &&
                 playerIn.getHeldItemMainhand().getItem() == ModItems.BOUGIE) {
             if (!playerIn.isCreative())
                 playerIn.getHeldItemMainhand().shrink(1);
-            worldIn.setBlockState(pos, ModBlocks.LANTERNE_JAUNE_ALLUMEE.getDefaultState().withProperty((IProperty)ORIENTATION, state.getValue((IProperty)ORIENTATION)).withProperty((IProperty)POSITION, state.getValue((IProperty)POSITION)));
-            ((TileEntityLightBlock)worldIn.getTileEntity(pos)).setDate();
+            worldIn.setBlockState(pos, ModBlocks.LANTERNE_JAUNE_ALLUMEE.getDefaultState().withProperty((IProperty) ORIENTATION, state.getValue((IProperty) ORIENTATION)).withProperty((IProperty) POSITION, state.getValue((IProperty) POSITION)));
+            ((TileEntityLightBlock) worldIn.getTileEntity(pos)).setDate();
         }
         return true;
     }
@@ -75,7 +73,7 @@ public class BlockLantern extends BlockBase implements ITileEntityProvider {
     public IBlockState getStateForPlacement(World world, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer) {
         EnumPosition position = EnumPosition.fromFacing(facing);
         int face = position.isOnWall() ? facing.getHorizontalIndex() : getFacingIndex(placer);
-        return super.getStateForPlacement(world, pos, facing, hitX, hitY, hitZ, meta, placer).withProperty((IProperty)POSITION, position).withProperty((IProperty)ORIENTATION, Integer.valueOf(face));
+        return super.getStateForPlacement(world, pos, facing, hitX, hitY, hitZ, meta, placer).withProperty((IProperty) POSITION, position).withProperty((IProperty) ORIENTATION, Integer.valueOf(face));
     }
 
     public void neighborChanged(IBlockState state, World worldIn, BlockPos pos, Block blockIn, BlockPos fromPos) {
@@ -96,11 +94,11 @@ public class BlockLantern extends BlockBase implements ITileEntityProvider {
 
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
         double f = 0.25D, h = 0.5D;
-        if (state.getValue((IProperty)POSITION) == EnumPosition.BOTTOM)
+        if (state.getValue((IProperty) POSITION) == EnumPosition.BOTTOM)
             return new AxisAlignedBB(h - f, 0.0D, h - f, h + f, 0.5625D, h + f);
-        if (state.getValue((IProperty)POSITION) == EnumPosition.TOP)
+        if (state.getValue((IProperty) POSITION) == EnumPosition.TOP)
             return new AxisAlignedBB(h - f, 0.4375D, h - f, h + f, 1.0D, h + f);
-        switch (((Integer)state.getValue((IProperty)ORIENTATION)).intValue()) {
+        switch (((Integer) state.getValue((IProperty) ORIENTATION)).intValue()) {
             case 0:
                 return new AxisAlignedBB(h - f, 0.2D, 0.0D, h + f, 0.8D, h);
             case 1:
@@ -122,15 +120,15 @@ public class BlockLantern extends BlockBase implements ITileEntityProvider {
     }
 
     protected BlockStateContainer createBlockState() {
-        return new BlockStateContainer(this, new IProperty[] { (IProperty)POSITION, (IProperty)ORIENTATION });
+        return new BlockStateContainer(this, new IProperty[]{(IProperty) POSITION, (IProperty) ORIENTATION});
     }
 
     public IBlockState getStateFromMeta(int meta) {
-        return getDefaultState().withProperty((IProperty)ORIENTATION, Integer.valueOf(meta & 0x3)).withProperty((IProperty)POSITION, EnumPosition.fromIndex((meta & 0xC) >> 2));
+        return getDefaultState().withProperty((IProperty) ORIENTATION, Integer.valueOf(meta & 0x3)).withProperty((IProperty) POSITION, EnumPosition.fromIndex((meta & 0xC) >> 2));
     }
 
     public int getMetaFromState(IBlockState state) {
-        return ((EnumPosition)state.getValue((IProperty)POSITION)).ordinal() << 2 | ((Integer)state.getValue((IProperty)ORIENTATION)).intValue() & 0x3;
+        return ((EnumPosition) state.getValue((IProperty) POSITION)).ordinal() << 2 | ((Integer) state.getValue((IProperty) ORIENTATION)).intValue() & 0x3;
     }
 
     public BlockRenderLayer getBlockLayer() {
@@ -138,7 +136,7 @@ public class BlockLantern extends BlockBase implements ITileEntityProvider {
     }
 
     public TileEntity createNewTileEntity(World worldIn, int meta) {
-        return (TileEntity)new TileEntityLightBlock();
+        return (TileEntity) new TileEntityLightBlock();
     }
 
     public BlockFaceShape getBlockFaceShape(IBlockAccess worldIn, IBlockState state, BlockPos pos, EnumFacing face) {

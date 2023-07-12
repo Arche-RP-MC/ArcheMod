@@ -4,7 +4,6 @@ import fr.archemod.blocks.container.ContainerPlacardHRP;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Container;
-import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.ItemStackHelper;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
@@ -16,6 +15,7 @@ import net.minecraft.util.NonNullList;
 public class TileEntityPlacardHRP extends TileEntityLockableLoot {
 
     private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(9, ItemStack.EMPTY);
+
     @Override
     public int getSizeInventory() {
         return 9;
@@ -92,7 +92,7 @@ public class TileEntityPlacardHRP extends TileEntityLockableLoot {
 
     @Override
     public Container createContainer(InventoryPlayer playerInventory, EntityPlayer playerIn) {
-        return new ContainerPlacardHRP(playerInventory,this);
+        return new ContainerPlacardHRP(playerInventory, this);
     }
 
     @Override

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " F ",
+    " L "
+  ],
+  "key": {
+    "F": {
+      "item": "am:bouteille_jus_de_fruit_jaune",
+      "data": 32767
+    },
+    "L": {
+      "item": "am:choppe_en_argile"
+    }
+  },
+  "result": {
+    "item": "am:choppe_en_argile_jus_de_fruit_jaune",
+    "count": 1
+  }
+}

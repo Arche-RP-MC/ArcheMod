@@ -1,6 +1,7 @@
 {
-  "variants": { 
-  "normal": {
-    "model": "am:plancher_bambou"
+  "variants": {
+    "normal": {
+      "model": "am:plancher_bambou"
+    }
   }
-}}
+}

@@ -30,7 +30,7 @@ public class Table extends BlockBase implements ITileEntityProvider {
 
     public Table(String name, Material material) {
         super(name, material, 2F, 3F, SoundType.WOOD);
-        setHarvestLevel("axe",0);
+        setHarvestLevel("axe", 0);
         setLightOpacity(0);
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
     }
@@ -56,14 +56,10 @@ public class Table extends BlockBase implements ITileEntityProvider {
         super.breakBlock(world, pos, state);
     }
 
-    public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ)
-    {
-        if (worldIn.isRemote)
-        {
+    public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
+        if (worldIn.isRemote) {
             return true;
-        }
-        else
-        {
+        } else {
             playerIn.openGui(ArcheMod.INSTANCE, 3, worldIn, pos.getX(), pos.getY(), pos.getZ());
 
             return true;
@@ -71,27 +67,22 @@ public class Table extends BlockBase implements ITileEntityProvider {
     }
 
     @Override
-    public void onBlockPlacedBy(World worldIn, BlockPos pos, IBlockState state, EntityLivingBase placer, ItemStack stack)
-    {
+    public void onBlockPlacedBy(World worldIn, BlockPos pos, IBlockState state, EntityLivingBase placer, ItemStack stack) {
         TileEntity tile = worldIn.getTileEntity(pos);
-        if(tile instanceof TileEntityTable)
-        {
-            if(stack.hasDisplayName())
-            {
-                ((TileEntityTable)tile).setCustomName(stack.getDisplayName());
+        if (tile instanceof TileEntityTable) {
+            if (stack.hasDisplayName()) {
+                ((TileEntityTable) tile).setCustomName(stack.getDisplayName());
             }
         }
     }
 
     @SideOnly(Side.CLIENT)
-    public BlockRenderLayer getRenderLayer()
-    {
+    public BlockRenderLayer getRenderLayer() {
         return BlockRenderLayer.CUTOUT;
     }
 
     @Override
-    public EnumBlockRenderType getRenderType(IBlockState state)
-    {
+    public EnumBlockRenderType getRenderType(IBlockState state) {
         return EnumBlockRenderType.MODEL;
     }
 
@@ -142,8 +133,7 @@ public class Table extends BlockBase implements ITileEntityProvider {
     }
 
     @Override
-    public int quantityDropped(Random random)
-    {
+    public int quantityDropped(Random random) {
         return 1;
     }
 

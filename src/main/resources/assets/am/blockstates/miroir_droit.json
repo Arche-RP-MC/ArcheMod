@@ -1,6 +1,7 @@
 {
   "variants": {
-  "normal": {
-    "model": "am:miroir_droit"
+    "normal": {
+      "model": "am:miroir_droit"
+    }
   }
-}}
+}

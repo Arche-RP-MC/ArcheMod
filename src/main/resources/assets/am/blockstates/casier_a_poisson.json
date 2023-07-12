@@ -1,6 +1,7 @@
 {
   "variants": {
-  "normal": {
-    "model": "am:casier_a_poisson"
+    "normal": {
+      "model": "am:casier_a_poisson"
+    }
   }
-}}
+}

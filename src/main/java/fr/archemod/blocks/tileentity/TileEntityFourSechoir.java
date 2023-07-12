@@ -12,14 +12,12 @@ import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntityLockable;
 import net.minecraft.util.ITickable;
 import net.minecraft.util.NonNullList;
-import net.minecraftforge.oredict.OreDictionary;
 
-public class TileEntityFourSechoir extends TileEntityLockable implements ITickable
-{
+public class TileEntityFourSechoir extends TileEntityLockable implements ITickable {
     private NonNullList<ItemStack> stacks = NonNullList.withSize(5, ItemStack.EMPTY);
     private String customName;
-    private int	timePassed = 0;
-    private int	burningTimeLeft	= 0;
+    private int timePassed = 0;
+    private int burningTimeLeft = 0;
 
 
     @Override
@@ -128,7 +126,7 @@ public class TileEntityFourSechoir extends TileEntityLockable implements ITickab
 
     @Override
     public boolean isEmpty() {
-        for(ItemStack stack : this.stacks) {
+        for (ItemStack stack : this.stacks) {
             if (!stack.isEmpty()) {
                 return false;
             }
@@ -138,16 +136,18 @@ public class TileEntityFourSechoir extends TileEntityLockable implements ITickab
 
     @Override
     public void clear() {
-        for(int i = 0; i < this.stacks.size(); i++) {
+        for (int i = 0; i < this.stacks.size(); i++) {
             this.stacks.set(i, ItemStack.EMPTY);
         }
     }
 
     @Override
-    public void openInventory(EntityPlayer player) {}
+    public void openInventory(EntityPlayer player) {
+    }
 
     @Override
-    public void closeInventory(EntityPlayer player) {}
+    public void closeInventory(EntityPlayer player) {
+    }
 
     @Override
     public Container createContainer(InventoryPlayer playerInventory, EntityPlayer playerIn) {
@@ -183,7 +183,9 @@ public class TileEntityFourSechoir extends TileEntityLockable implements ITickab
     }
 
 
-    /** Vérifie la distance entre le joueur et le bloc et que le bloc soit toujours présent */
+    /**
+     * Vérifie la distance entre le joueur et le bloc et que le bloc soit toujours présent
+     */
     public boolean isUsableByPlayer(EntityPlayer player) {
         return this.world.getTileEntity(this.pos) != this ? false : player
                 .getDistanceSq((double) this.pos.getX() + 0.5D,
@@ -197,8 +199,8 @@ public class TileEntityFourSechoir extends TileEntityLockable implements ITickab
     }
 
     public ItemStack getRecipeResult() {
-        return RecipesCustomFurnace.getRecipeResult(new ItemStack[] {
-                this.getStackInSlot(0), this.getStackInSlot(1) });
+        return RecipesCustomFurnace.getRecipeResult(new ItemStack[]{
+                this.getStackInSlot(0), this.getStackInSlot(1)});
     }
 
 
@@ -250,21 +252,26 @@ public class TileEntityFourSechoir extends TileEntityLockable implements ITickab
     }
 
 
-    /** Temps de cuisson de la recette */
+    /**
+     * Temps de cuisson de la recette
+     */
     public int getFullRecipeTime() {
         return 200;
     }
 
-    /** Temps que dure 1 unité de carburant (ici : 1 planche + 1 blé) */
+    /**
+     * Temps que dure 1 unité de carburant (ici : 1 planche + 1 blé)
+     */
     public int getFullBurnTime() {
         return 300;
     }
 
-    /** Renvoie vrai si le feu est allumé */
+    /**
+     * Renvoie vrai si le feu est allumé
+     */
     public boolean isBurning() {
         return burningTimeLeft > 0;
     }
-
 
 
     @Override

@@ -1,31 +1,28 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "BBB",
-    "MBB",
-    "BEO"
+    " O ",
+    " F ",
+    "EEE"
   ],
   "key": {
-    "B": {
-      "item": "am:orge"
-    },
     "O": [
       {
-        "item": "am:seau_d_eau_en_bois"
+        "item": "am:seau_de_biere_rousse"
       },
       {
-        "item": "minecraft:water_bucket"
+        "item": "am:seau_de_biere_rousse_en_bois"
       }
     ],
-    "M": {
-      "item": "am:levure"
-    },
     "E": {
       "item": "am:bouteille_vide"
+    },
+    "M": {
+      "item": "am:etoffe"
     }
   },
   "result": {
     "item": "am:bouteille_de_biere_rousse",
-    "count": 1
+    "count": 3
   }
 }

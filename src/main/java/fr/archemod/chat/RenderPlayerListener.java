@@ -21,49 +21,49 @@ public class RenderPlayerListener {
 
     @SideOnly(Side.CLIENT)
     @SubscribeEvent
-    public static void onPlayerRender(RenderPlayerEvent.Pre event){
+    public static void onPlayerRender(RenderPlayerEvent.Pre event) {
 
-        if(event.getEntityPlayer().hasCapability(ArcheChatStorage.I_ARCHE_CHAT_CAPABILITY,null)) {
+        if (event.getEntityPlayer().hasCapability(ArcheChatStorage.I_ARCHE_CHAT_CAPABILITY, null)) {
             int indicator = event.getEntityPlayer().getCapability(ArcheChatStorage.I_ARCHE_CHAT_CAPABILITY, null).getIndicator();
-            if(indicator!=0){
+            if (indicator != 0) {
                 EntityPlayer player = event.getEntityPlayer();
-                boolean isThirdPersonFrontal = ((event.getRenderer().getRenderManager()).options.thirdPersonView==2);
+                boolean isThirdPersonFrontal = ((event.getRenderer().getRenderManager()).options.thirdPersonView == 2);
                 FontRenderer fontRendererIn = event.getRenderer().getFontRendererFromRenderManager();
 
                 GlStateManager.pushMatrix();
-                GlStateManager.translate(event.getX(),event.getY()+ (double)event.getEntity().height + 0.5D, event.getZ());
-                GlStateManager.glNormal3f(0.0F,1.0F,0.0F);
+                GlStateManager.translate(event.getX(), event.getY() + (double) event.getEntity().height + 0.5D, event.getZ());
+                GlStateManager.glNormal3f(0.0F, 1.0F, 0.0F);
                 GlStateManager.rotate(-event.getRenderer().getRenderManager().playerViewY, 0.0F, 1.0F, 0.0F);
-                GlStateManager.rotate((float)(isThirdPersonFrontal ? -1 : 1)*(event.getRenderer().getRenderManager().playerViewX),1.0F,0.0F,0.0F);
+                GlStateManager.rotate((float) (isThirdPersonFrontal ? -1 : 1) * (event.getRenderer().getRenderManager().playerViewX), 1.0F, 0.0F, 0.0F);
                 GlStateManager.scale(-0.025F, -0.025F, 0.025F);
                 GlStateManager.disableLighting();
                 GlStateManager.disableTexture2D();
                 Tessellator tessellator = Tessellator.getInstance();
                 BufferBuilder vertexBuffer = tessellator.getBuffer();
-                switch (indicator){
+                switch (indicator) {
                     case 1:
-                        Minecraft.getMinecraft().getTextureManager().bindTexture(new ResourceLocation(Reference.MOD_ID,"textures/icones/icone_speaking.png"));
+                        Minecraft.getMinecraft().getTextureManager().bindTexture(new ResourceLocation(Reference.MOD_ID, "textures/icones/icone_speaking.png"));
                         break;
                     case 2:
-                        Minecraft.getMinecraft().getTextureManager().bindTexture(new ResourceLocation(Reference.MOD_ID,"textures/icones/icone_emote.png"));
+                        Minecraft.getMinecraft().getTextureManager().bindTexture(new ResourceLocation(Reference.MOD_ID, "textures/icones/icone_emote.png"));
                         break;
                     case 3:
-                        Minecraft.getMinecraft().getTextureManager().bindTexture(new ResourceLocation(Reference.MOD_ID,"textures/icones/icone_hrp.png"));
+                        Minecraft.getMinecraft().getTextureManager().bindTexture(new ResourceLocation(Reference.MOD_ID, "textures/icones/icone_hrp.png"));
                         break;
                 }
                 vertexBuffer.begin(7, DefaultVertexFormats.POSITION_TEX_NORMAL);
-                vertexBuffer.pos(-12.0D,-12.0D,0.0D).tex(0.0D,0.0D).color(255,255,255,100).endVertex();
-                vertexBuffer.pos(-12.0D,12.0D,0.0D).tex(0.0D,1.0D).color(255,255,255,100).endVertex();
-                vertexBuffer.pos(12.0D,12.0D,0.0D).tex(1.0D,1.0D).color(255,255,255,100).endVertex();
-                vertexBuffer.pos(12.0D,-12.0D,0.0D).tex(1.0D,0.0D).color(255,255,255,100).endVertex();
+                vertexBuffer.pos(-12.0D, -12.0D, 0.0D).tex(0.0D, 0.0D).color(255, 255, 255, 100).endVertex();
+                vertexBuffer.pos(-12.0D, 12.0D, 0.0D).tex(0.0D, 1.0D).color(255, 255, 255, 100).endVertex();
+                vertexBuffer.pos(12.0D, 12.0D, 0.0D).tex(1.0D, 1.0D).color(255, 255, 255, 100).endVertex();
+                vertexBuffer.pos(12.0D, -12.0D, 0.0D).tex(1.0D, 0.0D).color(255, 255, 255, 100).endVertex();
                 GlStateManager.enableTexture2D();
                 tessellator.draw();
-                if(!player.isSneaking()){
+                if (!player.isSneaking()) {
                     GlStateManager.enableDepth();
                 }
                 GlStateManager.enableLighting();
                 GlStateManager.disableBlend();
-                GlStateManager.color(1.0F,1.0F,1.0F,1.0F);
+                GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
                 GlStateManager.popMatrix();
             }
         }

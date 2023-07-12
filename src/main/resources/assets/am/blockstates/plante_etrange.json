@@ -1,6 +1,7 @@
 {
-    "variants": {
-        "normal": {
-            "model": "am:plante_etrange"}
+  "variants": {
+    "normal": {
+      "model": "am:plante_etrange"
     }
+  }
 }

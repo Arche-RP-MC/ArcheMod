@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CJC",
+    "CJC",
+    " M "
+  ],
+  "key": {
+    "C": [
+      {
+        "item": "am:groseille_a_macro"
+      },
+      {
+        "item": "am:poire"
+      },
+      {
+        "item": "am:dattes"
+      },
+      {
+        "item": "am:amandes"
+      }
+    ],
+    "J": {
+      "item": "minecraft:sucre"
+    },
+    "M": [
+      {
+        "item": "am:mortier_pilon_en_bois",
+        "data": 32767
+      },
+      {
+        "item": "am:mortier_pilon_en_pierre",
+        "data": 32767
+      }
+    ]
+  },
+  "result": {
+    "item": "am:mout_fruit_blanc",
+    "count": 1
+  }
+}

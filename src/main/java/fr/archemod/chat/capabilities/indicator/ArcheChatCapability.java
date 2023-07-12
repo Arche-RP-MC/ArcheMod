@@ -12,7 +12,7 @@ public class ArcheChatCapability implements ICapabilitySerializable<NBTBase> {
 
     protected IArcheChat archeChat;
 
-    public ArcheChatCapability(){
+    public ArcheChatCapability() {
         archeChat = new ArcheChat();
     }
 
@@ -24,17 +24,17 @@ public class ArcheChatCapability implements ICapabilitySerializable<NBTBase> {
     @Nullable
     @Override
     public <T> T getCapability(@Nonnull Capability<T> capability, @Nullable EnumFacing facing) {
-        return this.hasCapability(capability,facing) ? ArcheChatStorage.I_ARCHE_CHAT_CAPABILITY.cast(this.archeChat) : null;
+        return this.hasCapability(capability, facing) ? ArcheChatStorage.I_ARCHE_CHAT_CAPABILITY.cast(this.archeChat) : null;
     }
 
     @Override
     public NBTBase serializeNBT() {
-        return ArcheChatStorage.I_ARCHE_CHAT_CAPABILITY.writeNBT(this.archeChat,null);
+        return ArcheChatStorage.I_ARCHE_CHAT_CAPABILITY.writeNBT(this.archeChat, null);
     }
 
     @Override
     public void deserializeNBT(NBTBase nbt) {
-        ArcheChatStorage.I_ARCHE_CHAT_CAPABILITY.readNBT(this.archeChat,null,nbt);
+        ArcheChatStorage.I_ARCHE_CHAT_CAPABILITY.readNBT(this.archeChat, null, nbt);
     }
 
 }

@@ -1,6 +1,7 @@
 {
-  "variants": { 
-  "normal": {
-    "model": "am:planche_melange_de_bois"
+  "variants": {
+    "normal": {
+      "model": "am:planche_melange_de_bois"
+    }
   }
-}}
+}

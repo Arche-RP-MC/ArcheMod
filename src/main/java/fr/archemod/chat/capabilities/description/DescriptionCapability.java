@@ -12,7 +12,7 @@ public class DescriptionCapability implements ICapabilitySerializable<NBTBase> {
 
     protected IDescription description;
 
-    public DescriptionCapability(){
+    public DescriptionCapability() {
         description = new Description();
     }
 
@@ -24,17 +24,17 @@ public class DescriptionCapability implements ICapabilitySerializable<NBTBase> {
     @Nullable
     @Override
     public <T> T getCapability(@Nonnull Capability<T> capability, @Nullable EnumFacing facing) {
-        return this.hasCapability(capability,facing) ? DescriptionStorage.I_DESCRIPTION_CAPABILITY.cast(this.description) : null;
+        return this.hasCapability(capability, facing) ? DescriptionStorage.I_DESCRIPTION_CAPABILITY.cast(this.description) : null;
     }
 
     @Override
     public NBTBase serializeNBT() {
-        return DescriptionStorage.I_DESCRIPTION_CAPABILITY.writeNBT(this.description,null);
+        return DescriptionStorage.I_DESCRIPTION_CAPABILITY.writeNBT(this.description, null);
     }
 
     @Override
     public void deserializeNBT(NBTBase nbt) {
-        DescriptionStorage.I_DESCRIPTION_CAPABILITY.readNBT(this.description,null,nbt);
+        DescriptionStorage.I_DESCRIPTION_CAPABILITY.readNBT(this.description, null, nbt);
     }
 
 }

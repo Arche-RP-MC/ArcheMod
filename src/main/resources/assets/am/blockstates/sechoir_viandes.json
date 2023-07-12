@@ -1,15 +1,35 @@
 {
-    "variants":
-    {
-
-        "burning=false,facing=north":{ "model": "am:sechoir_viandes"},
-        "burning=false,facing=east":{ "model": "am:sechoir_viandes","y": 90},
-        "burning=false,facing=south":{ "model": "am:sechoir_viandes","y": 180},
-        "burning=false,facing=west":{ "model": "am:sechoir_viandes","y" :  270},
-        "burning=true,facing=north":{ "model": "am:sechoir_viandes"},
-        "burning=true,facing=east":{ "model": "am:sechoir_viandes","y": 90},
-        "burning=true,facing=south":{ "model": "am:sechoir_viandes","y": 180},
-        "burning=true,facing=west":{ "model": "am:sechoir_viandes","y" :  270}
+  "variants": {
+    "burning=false,facing=north": {
+      "model": "am:sechoir_viandes"
+    },
+    "burning=false,facing=east": {
+      "model": "am:sechoir_viandes",
+      "y": 90
+    },
+    "burning=false,facing=south": {
+      "model": "am:sechoir_viandes",
+      "y": 180
+    },
+    "burning=false,facing=west": {
+      "model": "am:sechoir_viandes",
+      "y": 270
+    },
+    "burning=true,facing=north": {
+      "model": "am:sechoir_viandes"
+    },
+    "burning=true,facing=east": {
+      "model": "am:sechoir_viandes",
+      "y": 90
+    },
+    "burning=true,facing=south": {
+      "model": "am:sechoir_viandes",
+      "y": 180
+    },
+    "burning=true,facing=west": {
+      "model": "am:sechoir_viandes",
+      "y": 270
     }
-    }
+  }
+}
 

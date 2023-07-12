@@ -1,6 +1,6 @@
 {
-    "parent": "block/cross",
-    "textures": {
-        "cross": "am:blocks/geranium"
-    }
+  "parent": "block/cross",
+  "textures": {
+    "cross": "am:blocks/geranium"
+  }
 }

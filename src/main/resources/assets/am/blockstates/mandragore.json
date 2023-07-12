@@ -1,6 +1,7 @@
 {
-    "variants": {
-        "normal": {
-            "model": "am:mandragore"}
+  "variants": {
+    "normal": {
+      "model": "am:mandragore"
     }
+  }
 }

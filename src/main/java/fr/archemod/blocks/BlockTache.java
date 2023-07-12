@@ -1,11 +1,9 @@
 package fr.archemod.blocks;
 
-import fr.archemod.init.ModBlocks;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.BlockRenderLayer;
@@ -20,7 +18,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import javax.annotation.Nullable;
 import java.util.Random;
 
-public class BlockTache extends BlockBase{
+public class BlockTache extends BlockBase {
 
     protected static final AxisAlignedBB BLOCK_TACHE_HRP_AABB = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.0D, 1.0D);
 
@@ -50,39 +48,33 @@ public class BlockTache extends BlockBase{
     }
 
     @SideOnly(Side.CLIENT)
-    public BlockRenderLayer getRenderLayer()
-    {
+    public BlockRenderLayer getRenderLayer() {
         return BlockRenderLayer.CUTOUT;
     }
 
 
     @Override
-    public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)
-    {
+    public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
         return BLOCK_TACHE_HRP_AABB;
     }
 
 
     @Override
-    public boolean isTranslucent(IBlockState state){
+    public boolean isTranslucent(IBlockState state) {
         return true;
     }
 
-    private boolean checkAndDropBlock(World worldIn, BlockPos pos, IBlockState state)
-    {
+    private boolean checkAndDropBlock(World worldIn, BlockPos pos, IBlockState state) {
         if (!this.canPlaceBlockAt(worldIn, pos)) {
             worldIn.setBlockToAir(pos);
             return false;
-        }
-        else
-        {
+        } else {
             return true;
         }
     }
 
     @Override
-    public int quantityDropped(Random random)
-    {
+    public int quantityDropped(Random random) {
         return 1;
     }
 }

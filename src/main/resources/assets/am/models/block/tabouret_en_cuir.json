@@ -1,29 +1,108 @@
 {
-	"credit": "Made with Blockbench",
-	"texture_size": [32, 32],
-	"textures": {
-		"3": "am:blocks/tabouret_en_cuir"
-	},
-	"elements": [
-		{
-			"from": [3, 0, 3],
-			"to": [13, 7, 13],
-			"rotation": {"angle": 0, "axis": "y", "origin": [10, 10, 11]},
-			"faces": {
-				"north": {"uv": [0, 7, 7, 11.5], "texture": "#3"},
-				"east": {"uv": [0, 7, 7, 11.5], "texture": "#3"},
-				"south": {"uv": [0, 7, 7, 11.5], "texture": "#3"},
-				"west": {"uv": [0, 7, 7, 11.5], "texture": "#3"},
-				"up": {"uv": [7, 0, 14, 7], "texture": "#3"},
-				"down": {"uv": [0, 0, 7, 7], "texture": "#3"}
-			}
-		}
-	],
-	"display": {
-		"thirdperson_righthand": {
-			"rotation": [65, 0, 0],
-			"translation": [-1.75, 2.5, 2.25],
-			"scale": [0.5, 0.5, 0.5]
-		}
-	}
+  "credit": "Made with Blockbench",
+  "texture_size": [
+    32,
+    32
+  ],
+  "textures": {
+    "3": "am:blocks/tabouret_en_cuir"
+  },
+  "elements": [
+    {
+      "from": [
+        3,
+        0,
+        3
+      ],
+      "to": [
+        13,
+        7,
+        13
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          10,
+          10,
+          11
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            7,
+            7,
+            11.5
+          ],
+          "texture": "#3"
+        },
+        "east": {
+          "uv": [
+            0,
+            7,
+            7,
+            11.5
+          ],
+          "texture": "#3"
+        },
+        "south": {
+          "uv": [
+            0,
+            7,
+            7,
+            11.5
+          ],
+          "texture": "#3"
+        },
+        "west": {
+          "uv": [
+            0,
+            7,
+            7,
+            11.5
+          ],
+          "texture": "#3"
+        },
+        "up": {
+          "uv": [
+            7,
+            0,
+            14,
+            7
+          ],
+          "texture": "#3"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            7,
+            7
+          ],
+          "texture": "#3"
+        }
+      }
+    }
+  ],
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [
+        65,
+        0,
+        0
+      ],
+      "translation": [
+        -1.75,
+        2.5,
+        2.25
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    }
+  }
 }

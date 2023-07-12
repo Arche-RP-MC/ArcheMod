@@ -33,6 +33,7 @@ public class MessageUpdateSign implements IMessage {
         this.text = TileEntitySignHrp.signText;
 
     }
+
     @Override
     public void fromBytes(ByteBuf buf) {
         PacketBuffer packetBuf = new PacketBuffer(buf);
@@ -54,7 +55,6 @@ public class MessageUpdateSign implements IMessage {
     public void toBytes(ByteBuf buf) {
         PacketBuffer packetBuf = new PacketBuffer(buf);
         packetBuf.writeBlockPos(this.pos);
-
 
 
         for (int i = 0; i < 4; i++) {

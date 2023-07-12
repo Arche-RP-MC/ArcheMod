@@ -1,6 +1,7 @@
 {
   "variants": {
-  "normal": {
-    "model": "am:cloche"
+    "normal": {
+      "model": "am:cloche"
+    }
   }
-}}
+}

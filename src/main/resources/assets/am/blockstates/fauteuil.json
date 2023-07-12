@@ -1,6 +1,7 @@
 {
   "variants": {
-  "normal": {
-    "model": "am:fauteuil"
+    "normal": {
+      "model": "am:fauteuil"
+    }
   }
-}}
+}

@@ -1,6 +1,7 @@
 {
-  "variants": { 
-  "normal": {
-    "model": "am:brique_diorite_moussue"
+  "variants": {
+    "normal": {
+      "model": "am:brique_diorite_moussue"
+    }
   }
-}}
+}

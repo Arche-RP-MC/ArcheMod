@@ -1,6 +1,7 @@
 {
   "variants": {
-  "normal": {
-    "model": "am:piege_a_loup"
+    "normal": {
+      "model": "am:piege_a_loup"
+    }
   }
-}}
+}

@@ -1,6 +1,7 @@
 {
-    "variants": {
-        "normal": {
-            "model": "am:hydrangee"}
+  "variants": {
+    "normal": {
+      "model": "am:hydrangee"
     }
+  }
 }

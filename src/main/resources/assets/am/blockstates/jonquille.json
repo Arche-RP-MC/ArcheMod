@@ -1,6 +1,7 @@
 {
-    "variants": {
-        "normal": {
-            "model": "am:jonquille"}
+  "variants": {
+    "normal": {
+      "model": "am:jonquille"
     }
+  }
 }

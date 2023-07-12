@@ -443,7 +443,7 @@ public class ModItems {
     //public static final Item BATON_DE_MARCHE = new ToolSword("baton_de_marche",Item.ToolMaterial.IRON);
     public static final Item ARAKH_EN_ACIER = new ToolSword("arakh_en_acier", Item.ToolMaterial.IRON);
     public static final Item ARAKH_EN_FER = new ToolSword("arakh_en_fer", Item.ToolMaterial.IRON);
-    public static final Item LANCE_FOUDRE = new ToolSword("lance_foudre",Item.ToolMaterial.IRON);
+    public static final Item LANCE_FOUDRE = new ToolSword("lance_foudre", Item.ToolMaterial.IRON);
     public static final Item BATON_DE_COMBAT = new ToolSword("baton_de_combat", Item.ToolMaterial.IRON);
     public static final Item DAGUE_A_ROUELLES = new ItemBase("dague_a_rouelles");
     public static final Item DAGUE_A_ROUELLES_EN_ACIER = new ItemBase("dague_a_rouelles_en_acier");
@@ -1579,89 +1579,102 @@ public class ModItems {
     public static final Item BOUTEILLE_DE_HYDROMEL = new BouteilleDeVin("bouteille_de_hydromel", 0, 0.2F, false);
     public static final Item BOCAL_DE_HYDROMEL = new BocalPlein("bocal_de_hydromel", 0, 0.2F, false);
 
-   /* public static final Item SEAU_DE_LIQUIDE_JAUNE = new ItemBase("seau_de_liquide_jaune");
-    public static final Item SEAU_DE_LIQUIDE_JAUNE_EN_BOIS = new ItemBase("seau_de_liquide_jaune_en_bois");
-    public static final Item VERRE_A_PIED_LIQUIDE_JAUNE = new VerrePlein("verre_a_pied_liquide_jaune",0,0.2F,false);
-    public static final Item CHOPPE_EN_VERRE_LIQUIDE_JAUNE = new ChoppePleine("choppe_en_verre_liquide_jaune",0,0.2F,false);
-    public static final Item CHOPPE_EN_ARGILE_LIQUIDE_JAUNE = new ChoppeArPleine("choppe_en_argile_liquide_jaune",0,0.2F,false);
-    public static final Item BOUTEILLE_DE_LIQUIDE_JAUNE= new BouteilleDeVin("bouteille_de_liquide_jaune",0,0.2F,false);
-    public static final Item BOCAL_DE_LIQUIDE_JAUNE = new BocalPlein("bocal_de_liquide_jaune",0,0.2F,false);
-
-    public static final Item SEAU_DE_LIQUIDE_ROUGE = new ItemBase("seau_de_liquide_rouge");
-    public static final Item SEAU_DE_LIQUIDE_ROUGE_EN_BOIS = new ItemBase("seau_de_liquide_rouge_en_bois");
-    public static final Item VERRE_A_PIED_LIQUIDE_ROUGE = new VerrePlein("verre_a_pied_liquide_rouge",0,0.2F,false);
-    public static final Item CHOPPE_EN_VERRE_LIQUIDE_ROUGE = new ChoppePleine("choppe_en_verre_liquide_rouge",0,0.2F,false);
-    public static final Item CHOPPE_EN_ARGILE_LIQUIDE_ROUGE = new ChoppeArPleine("choppe_en_argile_liquide_rouge",0,0.2F,false);
-    public static final Item BOUTEILLE_DE_LIQUIDE_ROUGE= new BouteilleDeVin("bouteille_de_liquide_rouge",0,0.2F,false);
-    public static final Item BOCAL_DE_LIQUIDE_ROUGE = new BocalPlein("bocal_de_liquide_rouge",0,0.2F,false);
-
-    public static final Item SEAU_DE_LIQUIDE_VERT = new ItemBase("seau_de_liquide_vert");
-    public static final Item SEAU_DE_LIQUIDE_VERT_EN_BOIS = new ItemBase("seau_de_liquide_vert_en_bois");
-    public static final Item VERRE_A_PIED_LIQUIDE_VERT = new VerrePlein("verre_a_pied_liquide_vert",0,0.2F,false);
-    public static final Item CHOPPE_EN_VERRE_LIQUIDE_VERT = new ChoppePleine("choppe_en_verre_liquide_vert",0,0.2F,false);
-    public static final Item CHOPPE_EN_ARGILE_LIQUIDE_VERT = new ChoppeArPleine("choppe_en_argile_liquide_vert",0,0.2F,false);
-    public static final Item BOUTEILLE_DE_LIQUIDE_VERT= new BouteilleDeVin("bouteille_de_liquide_vert",0,0.2F,false);
-    public static final Item BOCAL_DE_LIQUIDE_VERT = new BocalPlein("bocal_de_liquide_vert",0,0.2F,false);
-
-    public static final Item SEAU_DE_LIQUIDE_ORANGE = new ItemBase("seau_de_liquide_orange");
-    public static final Item SEAU_DE_LIQUIDE_ORANGE_EN_BOIS = new ItemBase("seau_de_liquide_orange_en_bois");
-    public static final Item VERRE_A_PIED_LIQUIDE_ORANGE = new VerrePlein("verre_a_pied_liquide_orange",0,0.2F,false);
-    public static final Item CHOPPE_EN_VERRE_LIQUIDE_ORANGE = new ChoppePleine("choppe_en_verre_liquide_orange",0,0.2F,false);
-    public static final Item CHOPPE_EN_ARGILE_LIQUIDE_ORANGE = new ChoppeArPleine("choppe_en_argile_liquide_orange",0,0.2F,false);
-    public static final Item BOUTEILLE_DE_LIQUIDE_ORANGE= new BouteilleDeVin("bouteille_de_liquide_orange",0,0.2F,false);
-    public static final Item BOCAL_DE_LIQUIDE_ORANGE = new BocalPlein("bocal_de_liquide_orange",0,0.2F,false);
-
-    public static final Item SEAU_DE_LIQUIDE_BRUN = new ItemBase("seau_de_liquide_brun");
-    public static final Item SEAU_DE_LIQUIDE_BRUN_EN_BOIS = new ItemBase("seau_de_liquide_brun_en_bois");
-    public static final Item VERRE_A_PIED_LIQUIDE_BRUN = new VerrePlein("verre_a_pied_liquide_brun",0,0.2F,false);
-    public static final Item CHOPPE_EN_VERRE_LIQUIDE_BRUN = new ChoppePleine("choppe_en_verre_liquide_brun",0,0.2F,false);
-    public static final Item CHOPPE_EN_ARGILE_LIQUIDE_BRUN = new ChoppeArPleine("choppe_en_argile_liquide_brun",0,0.2F,false);
-    public static final Item BOUTEILLE_DE_LIQUIDE_BRUN= new BouteilleDeVin("bouteille_de_liquide_brun",0,0.2F,false);
-    public static final Item BOCAL_DE_LIQUIDE_BRUN = new BocalPlein("bocal_de_liquide_brun",0,0.2F,false);
-
-    public static final Item SEAU_DE_LIQUIDE_VIOLET = new ItemBase("seau_de_liquide_violet");
-    public static final Item SEAU_DE_LIQUIDE_VIOLET_EN_BOIS = new ItemBase("seau_de_liquide_violet_en_bois");
-    public static final Item VERRE_A_PIED_LIQUIDE_VIOLET = new VerrePlein("verre_a_pied_liquide_violet",0,0.2F,false);
-    public static final Item CHOPPE_EN_VERRE_LIQUIDE_VIOLET = new ChoppePleine("choppe_en_verre_liquide_violet",0,0.2F,false);
-    public static final Item CHOPPE_EN_ARGILE_LIQUIDE_VIOLET = new ChoppeArPleine("choppe_en_argile_liquide_violet",0,0.2F,false);
-    public static final Item BOUTEILLE_DE_LIQUIDE_VIOLET= new BouteilleDeVin("bouteille_de_liquide_violet",0,0.2F,false);
-    public static final Item BOCAL_DE_LIQUIDE_VIOLET = new BocalPlein("bocal_de_liquide_violet",0,0.2F,false);
-
-    public static final Item SEAU_DE_LIQUIDE_ROSE = new ItemBase("seau_de_liquide_rose");
-    public static final Item SEAU_DE_LIQUIDE_ROSE_EN_BOIS = new ItemBase("seau_de_liquide_rose_en_bois");
-    public static final Item VERRE_A_PIED_LIQUIDE_ROSE = new VerrePlein("verre_a_pied_liquide_rose",0,0.2F,false);
-    public static final Item CHOPPE_EN_VERRE_LIQUIDE_ROSE = new ChoppePleine("choppe_en_verre_liquide_rose",0,0.2F,false);
-    public static final Item CHOPPE_EN_ARGILE_LIQUIDE_ROSE = new ChoppeArPleine("choppe_en_argile_liquide_rose",0,0.2F,false);
-    public static final Item BOUTEILLE_DE_LIQUIDE_ROSE= new BouteilleDeVin("bouteille_de_liquide_rose",0,0.2F,false);
-    public static final Item BOCAL_DE_LIQUIDE_ROSE = new BocalPlein("bocal_de_liquide_rose",0,0.2F,false);
-
-    public static final Item SEAU_DE_LIQUIDE_INCOLORE = new ItemBase("seau_de_liquide_incolore");
-    public static final Item SEAU_DE_LIQUIDE_INCOLORE_EN_BOIS = new ItemBase("seau_de_liquide_incolore_en_bois");
-    public static final Item VERRE_A_PIED_LIQUIDE_INCOLORE = new VerrePlein("verre_a_pied_liquide_incolore",0,0.2F,false);
-    public static final Item CHOPPE_EN_VERRE_LIQUIDE_INCOLORE = new ChoppePleine("choppe_en_verre_liquide_incolore",0,0.2F,false);
-    public static final Item CHOPPE_EN_ARGILE_LIQUIDE_INCOLORE = new ChoppeArPleine("choppe_en_argile_liquide_incolore",0,0.2F,false);
-    public static final Item BOUTEILLE_DE_LIQUIDE_INCOLORE= new BouteilleDeVin("bouteille_de_liquide_incolore",0,0.2F,false);
-    public static final Item BOCAL_DE_LIQUIDE_INCOLORE = new BocalPlein("bocal_de_liquide_incolore",0,0.2F,false);
-
-    public static final Item SEAU_DE_LIQUIDE_NOIR = new ItemBase("seau_de_liquide_noir");
-    public static final Item SEAU_DE_LIQUIDE_NOIR_EN_BOIS = new ItemBase("seau_de_liquide_noir_en_bois");
-    public static final Item VERRE_A_PIED_LIQUIDE_NOIR = new VerrePlein("verre_a_pied_liquide_noir",0,0.2F,false);
-    public static final Item CHOPPE_EN_VERRE_LIQUIDE_NOIR = new ChoppePleine("choppe_en_verre_liquide_noir",0,0.2F,false);
-    public static final Item CHOPPE_EN_ARGILE_LIQUIDE_NOIR = new ChoppeArPleine("choppe_en_argile_liquide_noir",0,0.2F,false);
-    public static final Item BOUTEILLE_DE_LIQUIDE_NOIR= new BouteilleDeVin("bouteille_de_liquide_noir",0,0.2F,false);
-    public static final Item BOCAL_DE_LIQUIDE_NOIR = new BocalPlein("bocal_de_liquide_noir",0,0.2F,false);*/
-
     public static final Item BOUTEILLE_HUILE_OLIVE = new GrosseBouteille("bouteille_huile_olive", 0, 0.2F, false);
     public static final Item BOUTEILLE_HUILE_TOURNESOL = new GrosseBouteille("bouteille_huile_tournesol", 0, 0.2F, false);
     public static final Item BOUTEILLE_HUILE_NOIX = new GrosseBouteille("bouteille_huile_noix", 0, 0.2F, false);
     public static final Item BOUTEILLE_VINAIGRE = new GrosseBouteille("bouteille_vinaigre", 0, 0.2F, false);
-
 
     public static final Item BOUTEILLE_DE_JUS_DE_FRUIT_VERT = new BouteilleDeVin("bouteille_de_jus_de_fruit_vert", 0, 0.2F, false);
     public static final Item BOUTEILLE_DE_JUS_DE_FRUIT_ROUGE = new BouteilleDeVin("bouteille_de_jus_de_fruit_rouge", 0, 0.2F, false);
     public static final Item BOUTEILLE_DE_JUS_DE_FRUIT_BLANC = new BouteilleDeVin("bouteille_de_jus_de_fruit_blanc", 0, 0.2F, false);
     public static final Item BOUTEILLE_DE_JUS_DE_FRUIT_ORANGE = new BouteilleDeVin("bouteille_de_jus_de_fruit_orange", 0, 0.2F, false);
     public static final Item BOUTEILLE_DE_JUS_DE_FRUIT_JAUNE = new BouteilleDeVin("bouteille_de_jus_de_fruit_jaune", 0, 0.2F, false);
+
+    // AJOUT BRASSEURS juillet 23
+
+    public static final Item ALAMBIC = new OutilsEnBronze("alambic");
+
+    public static final Item VESOU = new ItemBase("vesou");
+    public static final Item MOUT_RAISIN_BLANC = new ItemBase("mout_raisin_blanc");
+    public static final Item MOUT_RAISIN_NOIR = new ItemBase("mout_raisin_noir");
+
+    public static final Item CHOPPE_EN_ARGILE_JUS_DE_FRUIT_VERT = new ChoppeArPleine("choppe_en_argile_jus_de_fruit_vert", 0, 0.2F, false);
+    public static final Item CHOPPE_EN_VERRE_JUS_DE_FRUIT_VERT = new ChoppePleine("choppe_en_verre_jus_de_fruit_vert", 0, 0.2F, false);
+    public static final Item MOUT_FRUIT_VERT = new ItemBase("mout_fruit_vert");
+    public static final Item SEAU_JUS_DE_FRUIT_VERT = new ItemBase("seau_jus_de_fruit_vert");
+    public static final Item SEAU_JUS_DE_FRUIT_VERT_EN_BOIS = new ItemBase("seau_jus_de_fruit_vert_en_bois");
+    public static final Item VERRE_A_PIED_JUS_DE_FRUIT_VERT = new VerrePlein("verre_a_pied_jus_de_fruit_vert", 0, 0.2F, false);
+
+    public static final Item CHOPPE_EN_ARGILE_JUS_DE_FRUIT_ROUGE = new ChoppeArPleine("choppe_en_argile_jus_de_fruit_rouge", 0, 0.2F, false);
+    public static final Item CHOPPE_EN_VERRE_JUS_DE_FRUIT_ROUGE = new ChoppePleine("choppe_en_verre_jus_de_fruit_rouge", 0, 0.2F, false);
+    public static final Item MOUT_FRUIT_ROUGE = new ItemBase("mout_fruit_rouge");
+    public static final Item SEAU_JUS_DE_FRUIT_ROUGE = new ItemBase("seau_jus_de_fruit_rouge");
+    public static final Item SEAU_JUS_DE_FRUIT_ROUGE_EN_BOIS = new ItemBase("seau_jus_de_fruit_rouge_en_bois");
+    public static final Item VERRE_A_PIED_JUS_DE_FRUIT_ROUGE = new VerrePlein("verre_a_pied_jus_de_fruit_rouge", 0, 0.2F, false);
+
+    public static final Item CHOPPE_EN_ARGILE_JUS_DE_FRUIT_BLANC = new ChoppeArPleine("choppe_en_argile_jus_de_fruit_blanc", 0, 0.2F, false);
+    public static final Item CHOPPE_EN_VERRE_JUS_DE_FRUIT_BLANC = new ChoppePleine("choppe_en_verre_jus_de_fruit_blanc", 0, 0.2F, false);
+    public static final Item MOUT_FRUIT_BLANC = new ItemBase("mout_fruit_blanc");
+    public static final Item SEAU_JUS_DE_FRUIT_BLANC = new ItemBase("seau_jus_de_fruit_blanc");
+    public static final Item SEAU_JUS_DE_FRUIT_BLANC_EN_BOIS = new ItemBase("seau_jus_de_fruit_blanc_en_bois");
+    public static final Item VERRE_A_PIED_JUS_DE_FRUIT_BLANC = new VerrePlein("verre_a_pied_jus_de_fruit_blanc", 0, 0.2F, false);
+
+    public static final Item CHOPPE_EN_ARGILE_JUS_DE_FRUIT_ORANGE = new ChoppeArPleine("choppe_en_argile_jus_de_fruit_orange", 0, 0.2F, false);
+    public static final Item CHOPPE_EN_VERRE_JUS_DE_FRUIT_ORANGE = new ChoppePleine("choppe_en_verre_jus_de_fruit_orange", 0, 0.2F, false);
+    public static final Item MOUT_FRUIT_ORANGE = new ItemBase("mout_fruit_orange");
+    public static final Item SEAU_JUS_DE_FRUIT_ORANGE = new ItemBase("seau_jus_de_fruit_orange");
+    public static final Item SEAU_JUS_DE_FRUIT_ORANGE_EN_BOIS = new ItemBase("seau_jus_de_fruit_orange_en_bois");
+    public static final Item VERRE_A_PIED_JUS_DE_FRUIT_ORANGE = new VerrePlein("verre_a_pied_jus_de_fruit_orange", 0, 0.2F, false);
+
+    public static final Item CHOPPE_EN_ARGILE_JUS_DE_FRUIT_JAUNE = new ChoppeArPleine("choppe_en_argile_jus_de_fruit_jaune", 0, 0.2F, false);
+    public static final Item CHOPPE_EN_VERRE_JUS_DE_FRUIT_JAUNE = new ChoppePleine("choppe_en_verre_jus_de_fruit_jaune", 0, 0.2F, false);
+    public static final Item MOUT_FRUIT_JAUNE = new ItemBase("mout_fruit_jaune");
+    public static final Item SEAU_JUS_DE_FRUIT_JAUNE = new ItemBase("seau_jus_de_fruit_jaune");
+    public static final Item SEAU_JUS_DE_FRUIT_JAUNE_EN_BOIS = new ItemBase("seau_jus_de_fruit_jaune_en_bois");
+    public static final Item VERRE_A_PIED_JUS_DE_FRUIT_JAUNE = new VerrePlein("verre_a_pied_jus_de_fruit_jaune", 0, 0.2F, false);
+
+    public static final Item BOUTEILLE_HYPOCRAS = new BouteilleDeVin("bouteille_hypocras", 0, 0.2F, false);
+    public static final Item CHOPPE_EN_ARGILE_HYPOCRAS = new ChoppeArPleine("choppe_en_argile_hypocras", 0, 0.2F, false);
+    public static final Item CHOPPE_EN_VERRE_HYPOCRAS = new ChoppePleine("choppe_en_verre_hypocras", 0, 0.2F, false);
+    public static final Item SEAU_HYPOCRAS = new ItemBase("seau_hypocras");
+    public static final Item SEAU_HYPOCRAS_EN_BOIS = new ItemBase("seau_hypocras_en_bois");
+    public static final Item VERRE_A_PIED_HYPOCRAS = new VerrePlein("verre_a_pied_hypocras", 0, 0.2F, false);
+
+    public static final Item BOUTEILLE_LIQUEUR_FRUIT = new BouteilleDeVin("bouteille_liqueur_fruit", 0, 0.2F, false);
+    public static final Item CHOPPE_EN_ARGILE_LIQUEUR_FRUIT = new ChoppeArPleine("choppe_en_argile_liqueur_fruit", 0, 0.2F, false);
+    public static final Item CHOPPE_EN_VERRE_LIQUEUR_FRUIT = new ChoppePleine("choppe_en_verre_liqueur_fruit", 0, 0.2F, false);
+    public static final Item SEAU_LIQUEUR_FRUIT = new ItemBase("seau_liqueur_fruit");
+    public static final Item SEAU_LIQUEUR_FRUIT_EN_BOIS = new ItemBase("seau_liqueur_fruit_en_bois");
+    public static final Item VERRE_A_PIED_LIQUEUR_FRUIT = new VerrePlein("verre_a_pied_liqueur_fruit", 0, 0.2F, false);
+
+    public static final Item BOUTEILLE_JAGERMEISTER = new BouteilleDeVin("bouteille_jagermeister", 0, 0.2F, false);
+    public static final Item CHOPPE_EN_ARGILE_JAGERMEISTER = new ChoppeArPleine("choppe_en_argile_jagermeister", 0, 0.2F, false);
+    public static final Item CHOPPE_EN_VERRE_JAGERMEISTER = new ChoppePleine("choppe_en_verre_jagermeister", 0, 0.2F, false);
+    public static final Item SEAU_JAGERMEISTER = new ItemBase("seau_jagermeister");
+    public static final Item SEAU_JAGERMEISTER_EN_BOIS = new ItemBase("seau_jagermeister_en_bois");
+    public static final Item VERRE_A_PIED_JAGERMEISTER = new VerrePlein("verre_a_pied_jagermeister", 0, 0.2F, false);
+
+    public static final Item BOUTEILLE_VIPERINE = new BouteilleDeVin("bouteille_viperine", 0, 0.2F, false);
+    public static final Item CHOPPE_EN_ARGILE_VIPERINE = new ChoppeArPleine("choppe_en_argile_viperine", 0, 0.2F, false);
+    public static final Item CHOPPE_EN_VERRE_VIPERINE = new ChoppePleine("choppe_en_verre_viperine", 0, 0.2F, false);
+    public static final Item SEAU_VIPERINE = new ItemBase("seau_viperine");
+    public static final Item SEAU_VIPERINE_EN_BOIS = new ItemBase("seau_viperine_en_bois");
+    public static final Item VERRE_A_PIED_VIPERINE = new VerrePlein("verre_a_pied_viperine", 0, 0.2F, false);
+
+    public static final Item BOUTEILLE_NIGORIZAKE = new BouteilleDeVin("bouteille_nigorizake", 0, 0.2F, false);
+    public static final Item CHOPPE_EN_ARGILE_NIGORIZAKE = new ChoppeArPleine("choppe_en_argile_nigorizake", 0, 0.2F, false);
+    public static final Item CHOPPE_EN_VERRE_NIGORIZAKE = new ChoppePleine("choppe_en_verre_nigorizake", 0, 0.2F, false);
+    public static final Item SEAU_NIGORIZAKE = new ItemBase("seau_nigorizake");
+    public static final Item SEAU_NIGORIZAKE_EN_BOIS = new ItemBase("seau_nigorizake_en_bois");
+    public static final Item VERRE_A_PIED_NIGORIZAKE = new VerrePlein("verre_a_pied_nigorizake", 0, 0.2F, false);
+
+    public static final Item BOUTEILLE_RYE = new BouteilleDeVin("bouteille_rye", 0, 0.2F, false);
+    public static final Item CHOPPE_EN_ARGILE_RYE = new ChoppeArPleine("choppe_en_argile_rye", 0, 0.2F, false);
+    public static final Item CHOPPE_EN_VERRE_RYE = new ChoppePleine("choppe_en_verre_rye", 0, 0.2F, false);
+    public static final Item SEAU_RYE = new ItemBase("seau_rye");
+    public static final Item SEAU_RYE_EN_BOIS = new ItemBase("seau_rye_en_bois");
+    public static final Item VERRE_A_PIED_RYE = new VerrePlein("verre_a_pied_rye", 0, 0.2F, false);
+
 
     //Contenants : sacs, bourses, saccoches, panier
 
@@ -2375,7 +2388,6 @@ public class ModItems {
     public static final Item THYM = new ItemBase("thym");
 
 
-
     // Divers - Plantes
     public static final Item BOUQUET_DE_FLEURS = new Bourse("bouquet_de_fleurs");
     public static final Item BOUQUET_GARNI = new ItemBase("bouquet_garni");
@@ -2388,7 +2400,6 @@ public class ModItems {
     public static final Item GLAND = new ItemBase("gland");
     public static final Item MALT_BLE = new ItemBase("malt_ble");
     public static final Item MALT_ORGE = new ItemBase("malt_orge");
-    public static final Item MOULT_DE_RAISIN = new ItemBase("moult_de_raisin");
     public static final Item PAILLE = new ItemBase("paille");
     public static final Item PEDONCULE = new ItemBase("pedoncule");
     public static final Item PLANTES_SECHEES = new ItemBase("plantes_sechees");

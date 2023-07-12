@@ -38,6 +38,6 @@ public class BlockEscalier extends BlockStairs implements IHasModel {
 
     @Override
     public void registerModels() {
-        ArcheMod.proxy.registerItemRenderer(Item.getItemFromBlock(this),0,"inventory");
+        ArcheMod.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
     }
 }

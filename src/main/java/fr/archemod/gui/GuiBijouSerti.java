@@ -10,7 +10,7 @@ import net.minecraft.util.ResourceLocation;
 import org.lwjgl.opengl.GL11;
 
 public class GuiBijouSerti extends GuiContainer {
-    public static final ResourceLocation texture = new ResourceLocation(Reference.MOD_ID,"textures/gui/container/generic_36.png");
+    public static final ResourceLocation texture = new ResourceLocation(Reference.MOD_ID, "textures/gui/container/generic_36.png");
     protected InventoryBijouSerti inv;
     protected InventoryPlayer playerInv;
     public int rows;

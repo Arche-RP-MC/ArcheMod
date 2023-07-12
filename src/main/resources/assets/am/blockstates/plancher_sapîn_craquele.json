@@ -1,6 +1,7 @@
 {
-  "variants": { 
-  "normal": {
-    "model": "am:plancher_sapîn_craquele"
+  "variants": {
+    "normal": {
+      "model": "am:plancher_sapîn_craquele"
+    }
   }
-}}
+}

@@ -78,13 +78,12 @@ public class TileEntityLightBlock extends TileEntity implements ITickable {
     public void update() {
         World worldIn = this.getWorld();
 
-        if(!worldIn.isRemote)
-        {
+        if (!worldIn.isRemote) {
             ticks++;
 
             IBlockState state = world.getBlockState(this.getPos());
             BlockLantern block = (BlockLantern) state.getBlock();
-            if(ticks == 20){
+            if (ticks == 20) {
 
 
                 if (block.burning) {
@@ -101,14 +100,14 @@ public class TileEntityLightBlock extends TileEntity implements ITickable {
 
 */
                     if (worldIn.getTileEntity(pos) != null) {
-                        Date date_begin = ((TileEntityLightBlock)worldIn.getTileEntity(pos)).getDate();
+                        Date date_begin = ((TileEntityLightBlock) worldIn.getTileEntity(pos)).getDate();
                         if (date_begin == null)
                             return;
                         long timer = (((new Date()).getTime() - date_begin.getTime()));
 
                         if (timer >= 864000000L) {
-                            worldIn.setBlockState(pos, ModBlocks.LANTERNE_JAUNE_ETEINTE.getDefaultState().withProperty((IProperty)ORIENTATION, state.getValue((IProperty)ORIENTATION)).withProperty((IProperty)POSITION, state.getValue((IProperty)POSITION)));
-                            ((TileEntityLightBlock)worldIn.getTileEntity(pos)).setDate(new Date());
+                            worldIn.setBlockState(pos, ModBlocks.LANTERNE_JAUNE_ETEINTE.getDefaultState().withProperty((IProperty) ORIENTATION, state.getValue((IProperty) ORIENTATION)).withProperty((IProperty) POSITION, state.getValue((IProperty) POSITION)));
+                            ((TileEntityLightBlock) worldIn.getTileEntity(pos)).setDate(new Date());
                         }
                     }
                 }

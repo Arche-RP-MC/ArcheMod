@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " O ",
+    " F ",
+    "EEE"
+  ],
+  "key": {
+    "O": [
+      {
+        "item": "am:seau_jagermeister"
+      },
+      {
+        "item": "am:seau_jagermeister_en_bois"
+      }
+    ],
+    "E": {
+      "item": "am:bouteille_vide"
+    },
+    "M": {
+      "item": "am:etoffe"
+    }
+  },
+  "result": {
+    "item": "am:bouteille_jagermeister",
+    "count": 3
+  }
+}

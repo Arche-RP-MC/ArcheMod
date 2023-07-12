@@ -1,6 +1,6 @@
 {
-    "parent": "block/cross",
-    "textures": {
-        "cross": "am:blocks/giroflier6"
-    }
+  "parent": "block/cross",
+  "textures": {
+    "cross": "am:blocks/giroflier6"
+  }
 }

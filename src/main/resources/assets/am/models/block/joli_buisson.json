@@ -1,6 +1,6 @@
 {
-    "parent": "block/cross",
-    "textures": {
-        "cross": "am:blocks/joli_buisson"
-    }
+  "parent": "block/cross",
+  "textures": {
+    "cross": "am:blocks/joli_buisson"
+  }
 }

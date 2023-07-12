@@ -1,6 +1,7 @@
 {
-  "variants": { 
-  "normal": {
-    "model": "am:plancher_acajou_craquele"
+  "variants": {
+    "normal": {
+      "model": "am:plancher_acajou_craquele"
+    }
   }
-}}
+}

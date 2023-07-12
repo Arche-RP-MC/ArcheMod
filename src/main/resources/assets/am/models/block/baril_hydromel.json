@@ -1,7 +1,7 @@
 {
-    "parent": "block/cube_column",
-    "textures": {
-        "end": "am:blocks/barrel_top",
-        "side": "am:blocks/barrel_hydromel_front"
-    }
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "am:blocks/barrel_top",
+    "side": "am:blocks/barrel_hydromel_front"
+  }
 }

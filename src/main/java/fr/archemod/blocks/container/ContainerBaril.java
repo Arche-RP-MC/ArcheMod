@@ -6,13 +6,11 @@ import fr.archemod.blocks.tileentity.TileEntityBaril;
 import fr.archemod.init.ModItems;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
-import net.minecraft.init.Blocks;
-import net.minecraft.init.Items;
-import net.minecraft.inventory.*;
+import net.minecraft.inventory.Container;
+import net.minecraft.inventory.IContainerListener;
+import net.minecraft.inventory.Slot;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.crafting.FurnaceRecipes;
-import net.minecraft.tileentity.TileEntityFurnace;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
@@ -25,7 +23,7 @@ public class ContainerBaril extends Container {
     private int burnTimeLeft = 0;
     private int fuel = 0;
 
-    public ContainerBaril (InventoryPlayer playerInventory, TileEntityBaril tile) {
+    public ContainerBaril(InventoryPlayer playerInventory, TileEntityBaril tile) {
         this.tile = tile;
 
         int i;
@@ -33,7 +31,7 @@ public class ContainerBaril extends Container {
             this.addSlotToContainer(new Slot(tile, i, 48 + i * 18, 7 * 3 + 2));
         }
         for (i = 0; i < 1; i++) {
-            this.addSlotToContainer(new SlotSingleItem(tile, i + 1, 42 +6, 40 + i * 18 +6, Arrays.asList(new Item[]{ModItems.LEVURE})));
+            this.addSlotToContainer(new SlotSingleItem(tile, i + 1, 42 + 6, 40 + i * 18 + 6, Arrays.asList(new Item[]{ModItems.LEVURE})));
         }
         this.addSlotToContainer(new SlotOutput(tile, 2, 98, 34));
 

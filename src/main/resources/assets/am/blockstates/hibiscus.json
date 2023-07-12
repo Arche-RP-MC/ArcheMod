@@ -1,6 +1,7 @@
 {
-    "variants": {
-        "normal": {
-            "model": "am:hibiscus"}
+  "variants": {
+    "normal": {
+      "model": "am:hibiscus"
     }
+  }
 }

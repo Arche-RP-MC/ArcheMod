@@ -1,6 +1,7 @@
 {
-  "variants": { 
-  "normal": {
-    "model": "am:granite_sculptee"
+  "variants": {
+    "normal": {
+      "model": "am:granite_sculptee"
+    }
   }
-}}
+}

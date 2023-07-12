@@ -1,7 +1,7 @@
 {
-    "parent": "block/cube_column",
-    "textures": {
-        "end": "am:blocks/barrel_top",
-        "side": "am:blocks/barrel_vin_rouge_front"
-    }
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "am:blocks/barrel_top",
+    "side": "am:blocks/barrel_vin_rouge_front"
+  }
 }

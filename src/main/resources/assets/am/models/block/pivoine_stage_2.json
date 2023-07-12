@@ -1,6 +1,6 @@
 {
-    "parent": "block/cross",
-    "textures": {
-        "cross": "am:blocks/pivoine_stage_2"
-    }
+  "parent": "block/cross",
+  "textures": {
+    "cross": "am:blocks/pivoine_stage_2"
+  }
 }

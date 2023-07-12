@@ -1,6 +1,7 @@
 {
   "variants": {
-  "normal": {
-    "model": "am:coin_lit_baldaquin_rideau_ouverts"
+    "normal": {
+      "model": "am:coin_lit_baldaquin_rideau_ouverts"
+    }
   }
-}}
+}

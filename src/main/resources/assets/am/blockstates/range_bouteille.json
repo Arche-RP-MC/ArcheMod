@@ -1,6 +1,7 @@
 {
   "variants": {
-  "normal": {
-    "model": "am:range_bouteille"
+    "normal": {
+      "model": "am:range_bouteille"
+    }
   }
-}}
+}

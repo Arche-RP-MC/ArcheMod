@@ -29,7 +29,7 @@ public class GuiFishCase extends GuiContainer {
     @Override
     protected void drawGuiContainerForegroundLayer(int x, int y) {
         //super.drawGuiContainerForegroundLayer(x, y);
-        this.renderHoveredToolTip(x , y);
+        this.renderHoveredToolTip(x, y);
         this.fontRenderer.drawString(I18n.format(this.inv.getName(), new Object[0]), 8, 6, 4210752);
         this.fontRenderer.drawString(this.playerInv.hasCustomName() ? this.playerInv.getName() : I18n.format(this.playerInv.getName(), new Object[0]), 8, this.ySize - 96 + 2, 4210752);
     }

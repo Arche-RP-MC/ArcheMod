@@ -1,6 +1,7 @@
 {
-  "variants": { 
-  "normal": {
-    "model": "am:planche_acacia_vernie"
+  "variants": {
+    "normal": {
+      "model": "am:planche_acacia_vernie"
+    }
   }
-}}
+}

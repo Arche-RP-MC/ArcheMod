@@ -1,8 +1,6 @@
 package fr.archemod.recipies;
 
-import akka.dispatch.CachingConfig;
 import fr.archemod.init.ModItems;
-
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -10,9 +8,6 @@ import net.minecraft.item.ItemStack;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
-
-
-import static net.minecraftforge.common.brewing.BrewingRecipeRegistry.addRecipe;
 
 public class RecipesBaril {
 

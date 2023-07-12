@@ -1,53 +1,53 @@
 {
-    "variants": {
-        "size=0": {
-            "model": "am:baril_vin_blanc"
-        },
-        "size=1": {
-            "model": "am:baril_vin_blanc"
-        },
-        "size=2": {
-            "model": "am:baril_vin_blanc"
-        },
-        "size=3": {
-            "model": "am:baril_vin_blanc"
-        },
-        "size=4": {
-            "model": "am:baril_vin_blanc"
-        },
-        "size=5": {
-            "model": "am:baril_vin_blanc"
-        },
-        "size=6": {
-            "model": "am:baril_vin_blanc"
-        },
-        "size=7": {
-            "model": "am:baril_vin_blanc"
-        },
-        "size=8": {
-            "model": "am:baril_vin_blanc"
-        },
-        "size=9": {
-            "model": "am:baril_vin_blanc"
-        },
-        "size=10": {
-            "model": "am:baril_vin_blanc"
-        },
-        "size=11": {
-            "model": "am:baril_vin_blanc"
-        },
-        "size=12": {
-            "model": "am:baril_vin_blanc"
-        },
-        "size=13": {
-            "model": "am:baril_vin_blanc"
-        },
-        "size=14": {
-            "model": "am:baril_vin_blanc"
-        },
-        "size=15": {
-            "model": "am:baril_vin_blanc"
-        }
+  "variants": {
+    "size=0": {
+      "model": "am:baril_vin_blanc"
+    },
+    "size=1": {
+      "model": "am:baril_vin_blanc"
+    },
+    "size=2": {
+      "model": "am:baril_vin_blanc"
+    },
+    "size=3": {
+      "model": "am:baril_vin_blanc"
+    },
+    "size=4": {
+      "model": "am:baril_vin_blanc"
+    },
+    "size=5": {
+      "model": "am:baril_vin_blanc"
+    },
+    "size=6": {
+      "model": "am:baril_vin_blanc"
+    },
+    "size=7": {
+      "model": "am:baril_vin_blanc"
+    },
+    "size=8": {
+      "model": "am:baril_vin_blanc"
+    },
+    "size=9": {
+      "model": "am:baril_vin_blanc"
+    },
+    "size=10": {
+      "model": "am:baril_vin_blanc"
+    },
+    "size=11": {
+      "model": "am:baril_vin_blanc"
+    },
+    "size=12": {
+      "model": "am:baril_vin_blanc"
+    },
+    "size=13": {
+      "model": "am:baril_vin_blanc"
+    },
+    "size=14": {
+      "model": "am:baril_vin_blanc"
+    },
+    "size=15": {
+      "model": "am:baril_vin_blanc"
     }
+  }
 }
 

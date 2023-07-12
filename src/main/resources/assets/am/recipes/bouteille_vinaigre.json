@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  ",
+    "BT ",
+    "EM "
+  ],
+  "key": {
+    "B": [
+      {
+        "item": "am:mout_raisin_noir"
+      },
+      {
+        "item": "am:mout_raisin_blanc"
+      }
+    ],
+    "T": {
+      "item": "am:cepes_cru"
+    },
+    "M": {
+      "item": "am:levure"
+    },
+    "E": {
+      "item": "am:grosse_bouteille_vide"
+    }
+  },
+  "result": {
+    "item": "am:bouteille_vinaigre",
+    "count": 1
+  }
+}

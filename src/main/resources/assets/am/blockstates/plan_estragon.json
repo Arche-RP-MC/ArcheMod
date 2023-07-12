@@ -1,28 +1,28 @@
 {
-    "variants": {
-        "age=0": {
-            "model": "am:estragon1"
-        },
-        "age=1": {
-            "model": "am:estragon2"
-        },
-        "age=2": {
-            "model": "am:estragon3"
-        },
-        "age=3": {
-            "model": "am:estragon4"
-        },
-        "age=4": {
-            "model": "am:estragon5"
-        },
-        "age=5": {
-            "model": "am:estragon6"
-        },
-        "age=6": {
-            "model": "am:estragon7"
-        },
-        "age=7": {
-            "model": "am:estragon8"
-        }
+  "variants": {
+    "age=0": {
+      "model": "am:estragon1"
+    },
+    "age=1": {
+      "model": "am:estragon2"
+    },
+    "age=2": {
+      "model": "am:estragon3"
+    },
+    "age=3": {
+      "model": "am:estragon4"
+    },
+    "age=4": {
+      "model": "am:estragon5"
+    },
+    "age=5": {
+      "model": "am:estragon6"
+    },
+    "age=6": {
+      "model": "am:estragon7"
+    },
+    "age=7": {
+      "model": "am:estragon8"
     }
+  }
 }

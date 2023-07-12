@@ -1,7 +1,7 @@
 {
-    "parent": "block/wall_side",
-    "textures": {
-        "wall": "am:blocks/stone_diorite_smooth"
-    }
+  "parent": "block/wall_side",
+  "textures": {
+    "wall": "am:blocks/stone_diorite_smooth"
+  }
 }
 

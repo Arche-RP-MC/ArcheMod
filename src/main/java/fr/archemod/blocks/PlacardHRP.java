@@ -60,14 +60,10 @@ public class PlacardHRP extends BlockBase implements ITileEntityProvider {
         super.breakBlock(world, pos, state);
     }
 
-    public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ)
-    {
-        if (worldIn.isRemote)
-        {
+    public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
+        if (worldIn.isRemote) {
             return true;
-        }
-        else
-        {
+        } else {
             playerIn.openGui(ArcheMod.INSTANCE, 2, worldIn, pos.getX(), pos.getY(), pos.getZ());
 
             return true;
@@ -76,14 +72,11 @@ public class PlacardHRP extends BlockBase implements ITileEntityProvider {
 
 
     @Override
-    public void onBlockPlacedBy(World worldIn, BlockPos pos, IBlockState state, EntityLivingBase placer, ItemStack stack)
-    {
+    public void onBlockPlacedBy(World worldIn, BlockPos pos, IBlockState state, EntityLivingBase placer, ItemStack stack) {
         TileEntity tile = worldIn.getTileEntity(pos);
-        if(tile instanceof TileEntityPlacardHRP)
-        {
-            if(stack.hasDisplayName())
-            {
-                ((TileEntityPlacardHRP)tile).setCustomName(stack.getDisplayName());
+        if (tile instanceof TileEntityPlacardHRP) {
+            if (stack.hasDisplayName()) {
+                ((TileEntityPlacardHRP) tile).setCustomName(stack.getDisplayName());
             }
         }
     }
@@ -107,45 +100,38 @@ public class PlacardHRP extends BlockBase implements ITileEntityProvider {
     }
 
     @SideOnly(Side.CLIENT)
-    public BlockRenderLayer getRenderLayer()
-    {
+    public BlockRenderLayer getRenderLayer() {
         return BlockRenderLayer.CUTOUT;
     }
 
 
     @Override
-    public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)
-    {
+    public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
         return PLACARD_HRP_AABB;
     }
 
 
     @Override
-    public boolean isTranslucent(IBlockState state){
+    public boolean isTranslucent(IBlockState state) {
         return true;
     }
 
-    private boolean checkAndDropBlock(World worldIn, BlockPos pos, IBlockState state)
-    {
+    private boolean checkAndDropBlock(World worldIn, BlockPos pos, IBlockState state) {
         if (!this.canPlaceBlockAt(worldIn, pos)) {
             worldIn.setBlockToAir(pos);
             return false;
-        }
-        else
-        {
+        } else {
             return true;
         }
     }
 
     @Override
-    public Item getItemDropped(IBlockState state, Random rand, int fortune)
-    {
+    public Item getItemDropped(IBlockState state, Random rand, int fortune) {
         return Item.getItemFromBlock(ModBlocks.PLACARD_HRP);
     }
 
     @Override
-    public int quantityDropped(Random random)
-    {
+    public int quantityDropped(Random random) {
         return 1;
     }
 

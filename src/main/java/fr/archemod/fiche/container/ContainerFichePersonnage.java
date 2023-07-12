@@ -25,10 +25,8 @@ public class ContainerFichePersonnage extends Container {
         int k;
 
         //Adding fiche personnage slot
-        for (j = 0; j < this.rows; ++j)
-        {
-            for (k = 0; k < 3; ++k)
-            {
+        for (j = 0; j < this.rows; ++j) {
+            for (k = 0; k < 3; ++k) {
                 this.addSlotToContainer(new SlotInventoryFichePersonnage(inv, k + j * 9, 8 + k * 18, 18 + j * 18));
             }
         }
@@ -69,8 +67,11 @@ public class ContainerFichePersonnage extends Container {
             if (itemstack.getItem() instanceof Bourse) return ItemStack.EMPTY;
 
             if (index < this.inventoryFichePersonnage.getSizeInventory()) {
-                if (!this.mergeItemStack(itemstack1, this.inventoryFichePersonnage.getSizeInventory(), this.inventorySlots.size(), true)) return ItemStack.EMPTY;
-            } else if (!this.mergeItemStack(itemstack1, 0, this.inventoryFichePersonnage.getSizeInventory(), false)) { return ItemStack.EMPTY; }
+                if (!this.mergeItemStack(itemstack1, this.inventoryFichePersonnage.getSizeInventory(), this.inventorySlots.size(), true))
+                    return ItemStack.EMPTY;
+            } else if (!this.mergeItemStack(itemstack1, 0, this.inventoryFichePersonnage.getSizeInventory(), false)) {
+                return ItemStack.EMPTY;
+            }
 
             if (itemstack1.getCount() == 0)
                 slot.putStack(ItemStack.EMPTY);
@@ -86,7 +87,8 @@ public class ContainerFichePersonnage extends Container {
     public ItemStack slotClick(int slotId, int dragType, ClickType clickTypeIn, EntityPlayer player) {
         // Prevents from removing current backpack
         if (clickTypeIn == ClickType.SWAP && dragType == player.inventory.currentItem) return ItemStack.EMPTY;
-        if (slotId - this.inventoryFichePersonnage.getSizeInventory() - 27 == player.inventory.currentItem) return ItemStack.EMPTY;
+        if (slotId - this.inventoryFichePersonnage.getSizeInventory() - 27 == player.inventory.currentItem)
+            return ItemStack.EMPTY;
         return super.slotClick(slotId, dragType, clickTypeIn, player);
     }
 

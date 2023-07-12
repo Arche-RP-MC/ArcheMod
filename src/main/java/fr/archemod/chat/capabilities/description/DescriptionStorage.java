@@ -8,7 +8,7 @@ import net.minecraftforge.common.capabilities.CapabilityInject;
 
 import javax.annotation.Nullable;
 
-public class DescriptionStorage implements Capability.IStorage<IDescription>{
+public class DescriptionStorage implements Capability.IStorage<IDescription> {
 
     @CapabilityInject(IDescription.class)
     public static final Capability<IDescription> I_DESCRIPTION_CAPABILITY = null;
@@ -21,8 +21,8 @@ public class DescriptionStorage implements Capability.IStorage<IDescription>{
 
     @Override
     public void readNBT(Capability<IDescription> capability, IDescription instance, EnumFacing side, NBTBase nbt) {
-        if(!(instance instanceof Description))
+        if (!(instance instanceof Description))
             throw new IllegalArgumentException("Can not deserialize to an instance that isn't the default implementation");
-        instance.setDescription(((NBTTagString)nbt).getString());
+        instance.setDescription(((NBTTagString) nbt).getString());
     }
 }

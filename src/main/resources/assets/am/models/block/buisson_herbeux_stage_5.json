@@ -1,6 +1,6 @@
 {
-    "parent": "block/cross",
-    "textures": {
-        "cross": "am:blocks/buisson_herbeux_stage_5"
-    }
+  "parent": "block/cross",
+  "textures": {
+    "cross": "am:blocks/buisson_herbeux_stage_5"
+  }
 }

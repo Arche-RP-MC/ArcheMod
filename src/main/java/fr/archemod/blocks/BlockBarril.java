@@ -23,8 +23,6 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.TextComponentString;
 import net.minecraft.world.World;
 
-import javax.annotation.Nullable;
-
 public class BlockBarril extends Block implements ITileEntityProvider {
 
     public static final PropertyInteger ORIENTATION = PropertyInteger.create("orientation", 0, 3);
@@ -125,9 +123,7 @@ public class BlockBarril extends Block implements ITileEntityProvider {
                     } else {
                         playerIn.sendMessage(new TextComponentString("Le baril est vide"));
                     }
-                }
-
-                     else if (itemStack.getItem() == ModItems.CHOPPE_EN_VERRE) {
+                } else if (itemStack.getItem() == ModItems.CHOPPE_EN_VERRE) {
                     if (tileEntityBarril.getCharge() > 0) {
                         tileEntityBarril.setCharge(tileEntityBarril.getCharge() - 1);
                         itemStack.shrink(1);
@@ -155,9 +151,7 @@ public class BlockBarril extends Block implements ITileEntityProvider {
                     }
 
 
-
-
-            } else if (itemStack.getItem() == ModItems.CHOPPE_EN_ARGILE) {
+                } else if (itemStack.getItem() == ModItems.CHOPPE_EN_ARGILE) {
                     if (tileEntityBarril.getCharge() > 0) {
                         tileEntityBarril.setCharge(tileEntityBarril.getCharge() - 1);
                         itemStack.shrink(1);
@@ -184,7 +178,7 @@ public class BlockBarril extends Block implements ITileEntityProvider {
                     } else {
                         playerIn.sendMessage(new TextComponentString("Le baril est vide"));
                     }
-            }
+                }
             }
         }
         return true;

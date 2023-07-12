@@ -1,6 +1,7 @@
 {
-    "variants": {
-        "normal": {
-            "model": "am:muguet"}
+  "variants": {
+    "normal": {
+      "model": "am:muguet"
     }
+  }
 }

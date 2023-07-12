@@ -1,6 +1,7 @@
 {
-  "variants": { 
-  "normal": {
-    "model": "am:plancher_sapin_chevron"
+  "variants": {
+    "normal": {
+      "model": "am:plancher_sapin_chevron"
+    }
   }
-}}
+}

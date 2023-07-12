@@ -1,6 +1,7 @@
 {
-    "variants": {
-        "normal": {
-            "model": "am:narcisses"}
+  "variants": {
+    "normal": {
+      "model": "am:narcisses"
     }
+  }
 }

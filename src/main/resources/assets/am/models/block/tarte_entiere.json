@@ -7,8 +7,16 @@
   },
   "elements": [
     {
-      "from": [1, 0, 1],
-      "to": [15, 8, 15],
+      "from": [
+        1,
+        0,
+        1
+      ],
+      "to": [
+        15,
+        8,
+        15
+      ],
       "faces": {
         "down": {
           "texture": "#bottom",

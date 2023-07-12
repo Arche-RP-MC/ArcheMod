@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all" : "am:blocks/bloc_verre_vert_clair"
+    "all": "am:blocks/bloc_verre_vert_clair"
   }
 }

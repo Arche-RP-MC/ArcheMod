@@ -1,6 +1,6 @@
 {
-    "parent": "am:block/trapdoor_bottom",
-    "textures": {
-        "texture": "am:blocks/trappe_ajouree_en_acacia"
-    }
+  "parent": "am:block/trapdoor_bottom",
+  "textures": {
+    "texture": "am:blocks/trappe_ajouree_en_acacia"
+  }
 }

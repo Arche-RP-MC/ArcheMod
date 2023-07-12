@@ -1,6 +1,7 @@
 {
   "variants": {
-  "normal": {
-    "model": "am:sechoir_plantes"
+    "normal": {
+      "model": "am:sechoir_plantes"
+    }
   }
-}}
+}

@@ -2,7 +2,6 @@ package fr.archemod.network.server;
 
 import fr.archemod.blocks.tileentity.TileEntitySignHrp;
 import io.netty.buffer.ByteBuf;
-import net.minecraft.client.Minecraft;
 import net.minecraft.network.PacketBuffer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.math.BlockPos;

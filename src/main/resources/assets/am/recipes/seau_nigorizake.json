@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "LLL",
+    "LLL",
+    " SM"
+  ],
+  "key": {
+    "L": {
+      "item": "am:riz"
+    },
+    "M": {
+      "item": "am:malt_ble"
+    },
+    "S": {
+      "item": "minecraft:water_bucket"
+    }
+  },
+  "result": {
+    "item": "am:seau_nigorizake",
+    "count": 1
+  }
+}

@@ -1,6 +1,6 @@
 {
-    "parent": "block/cross",
-    "textures": {
-        "cross": "am:blocks/pensees_stage_0"
-    }
+  "parent": "block/cross",
+  "textures": {
+    "cross": "am:blocks/pensees_stage_0"
+  }
 }

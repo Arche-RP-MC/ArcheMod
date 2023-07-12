@@ -30,7 +30,7 @@ import javax.annotation.Nullable;
 
 public class TileEntityHrpSign extends TileEntityLockableLoot {
 
-    public final ITextComponent[] signText = new ITextComponent[] {new TextComponentString(""), new TextComponentString(""), new TextComponentString(""), new TextComponentString("")};
+    public final ITextComponent[] signText = new ITextComponent[]{new TextComponentString(""), new TextComponentString(""), new TextComponentString(""), new TextComponentString("")};
     public int lineBeingEdited = -1;
     private boolean isEditable = true;
     private EntityPlayer player;
@@ -38,12 +38,10 @@ public class TileEntityHrpSign extends TileEntityLockableLoot {
     private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(9, ItemStack.EMPTY);
 
 
-    public NBTTagCompound writeToNBT(NBTTagCompound compound)
-    {
+    public NBTTagCompound writeToNBT(NBTTagCompound compound) {
         super.writeToNBT(compound);
 
-        for (int i = 0; i < 4; ++i)
-        {
+        for (int i = 0; i < 4; ++i) {
             String s = ITextComponent.Serializer.componentToJson(this.signText[i]);
             compound.setString("Text" + (i + 1), s);
         }
@@ -52,58 +50,50 @@ public class TileEntityHrpSign extends TileEntityLockableLoot {
         return compound;
     }
 
-    protected void setWorldCreate(World worldIn)
-    {
+    protected void setWorldCreate(World worldIn) {
         this.setWorld(worldIn);
     }
 
-    public void readFromNBT(NBTTagCompound compound)
-    {
+    public void readFromNBT(NBTTagCompound compound) {
         this.isEditable = false;
         super.readFromNBT(compound);
 
         if (!this.checkLootAndWrite(compound))
             ItemStackHelper.saveAllItems(compound, this.stacks);
 
-        ICommandSender icommandsender = new ICommandSender()
-        {
-            public String getName()
-            {
+        ICommandSender icommandsender = new ICommandSender() {
+            public String getName() {
                 return "Sign";
             }
-            public boolean canUseCommand(int permLevel, String commandName)
-            {
+
+            public boolean canUseCommand(int permLevel, String commandName) {
                 return permLevel <= 2; //Forge: Fixes  MC-75630 - Exploit with signs and command blocks
             }
-            public BlockPos getPosition()
-            {
+
+            public BlockPos getPosition() {
                 return TileEntityHrpSign.this.pos;
             }
-            public Vec3d getPositionVector()
-            {
-                return new Vec3d((double)TileEntityHrpSign.this.pos.getX() + 0.5D, (double)TileEntityHrpSign.this.pos.getY() + 0.5D, (double)TileEntityHrpSign.this.pos.getZ() + 0.5D);
+
+            public Vec3d getPositionVector() {
+                return new Vec3d((double) TileEntityHrpSign.this.pos.getX() + 0.5D, (double) TileEntityHrpSign.this.pos.getY() + 0.5D, (double) TileEntityHrpSign.this.pos.getZ() + 0.5D);
             }
-            public World getEntityWorld()
-            {
+
+            public World getEntityWorld() {
                 return TileEntityHrpSign.this.world;
             }
-            public MinecraftServer getServer()
-            {
+
+            public MinecraftServer getServer() {
                 return TileEntityHrpSign.this.world.getMinecraftServer();
             }
         };
 
-        for (int i = 0; i < 4; ++i)
-        {
+        for (int i = 0; i < 4; ++i) {
             String s = compound.getString("Text" + (i + 1));
             ITextComponent itextcomponent = ITextComponent.Serializer.jsonToComponent(s);
 
-            try
-            {
-                this.signText[i] = TextComponentUtils.processComponent(icommandsender, itextcomponent, (Entity)null);
-            }
-            catch (CommandException var7)
-            {
+            try {
+                this.signText[i] = TextComponentUtils.processComponent(icommandsender, itextcomponent, (Entity) null);
+            } catch (CommandException var7) {
                 this.signText[i] = itextcomponent;
             }
         }
@@ -112,109 +102,94 @@ public class TileEntityHrpSign extends TileEntityLockableLoot {
     }
 
     @Nullable
-    public SPacketUpdateTileEntity getUpdatePacket()
-    {
+    public SPacketUpdateTileEntity getUpdatePacket() {
         return new SPacketUpdateTileEntity(this.pos, 9, this.getUpdateTag());
     }
 
-    public NBTTagCompound getUpdateTag()
-    {
+    public NBTTagCompound getUpdateTag() {
         return this.writeToNBT(new NBTTagCompound());
     }
 
-    public boolean onlyOpsCanSetNbt()
-    {
+    public boolean onlyOpsCanSetNbt() {
         return true;
     }
 
-    public boolean getIsEditable()
-    {
+    public boolean getIsEditable() {
         return this.isEditable;
     }
 
     @SideOnly(Side.CLIENT)
-    public void setEditable(boolean isEditableIn)
-    {
+    public void setEditable(boolean isEditableIn) {
         this.isEditable = isEditableIn;
 
-        if (!isEditableIn)
-        {
+        if (!isEditableIn) {
             this.player = null;
         }
     }
 
-    public void setPlayer(EntityPlayer playerIn)
-    {
+    public void setPlayer(EntityPlayer playerIn) {
         this.player = playerIn;
     }
 
-    public EntityPlayer getPlayer()
-    {
+    public EntityPlayer getPlayer() {
         return this.player;
     }
 
-    public boolean executeCommand(final EntityPlayer playerIn)
-    {
-        ICommandSender icommandsender = new ICommandSender()
-        {
-            public String getName()
-            {
+    public boolean executeCommand(final EntityPlayer playerIn) {
+        ICommandSender icommandsender = new ICommandSender() {
+            public String getName() {
                 return playerIn.getName();
             }
-            public ITextComponent getDisplayName()
-            {
+
+            public ITextComponent getDisplayName() {
                 return playerIn.getDisplayName();
             }
-            public void sendMessage(ITextComponent component)
-            {
+
+            public void sendMessage(ITextComponent component) {
             }
-            public boolean canUseCommand(int permLevel, String commandName)
-            {
+
+            public boolean canUseCommand(int permLevel, String commandName) {
                 return permLevel <= 2;
             }
-            public BlockPos getPosition()
-            {
+
+            public BlockPos getPosition() {
                 return TileEntityHrpSign.this.pos;
             }
-            public Vec3d getPositionVector()
-            {
-                return new Vec3d((double)TileEntityHrpSign.this.pos.getX() + 0.5D, (double)TileEntityHrpSign.this.pos.getY() + 0.5D, (double)TileEntityHrpSign.this.pos.getZ() + 0.5D);
+
+            public Vec3d getPositionVector() {
+                return new Vec3d((double) TileEntityHrpSign.this.pos.getX() + 0.5D, (double) TileEntityHrpSign.this.pos.getY() + 0.5D, (double) TileEntityHrpSign.this.pos.getZ() + 0.5D);
             }
-            public World getEntityWorld()
-            {
+
+            public World getEntityWorld() {
                 return playerIn.getEntityWorld();
             }
-            public Entity getCommandSenderEntity()
-            {
+
+            public Entity getCommandSenderEntity() {
                 return playerIn;
             }
-            public boolean sendCommandFeedback()
-            {
+
+            public boolean sendCommandFeedback() {
                 return false;
             }
-            public void setCommandStat(CommandResultStats.Type type, int amount)
-            {
-                if (TileEntityHrpSign.this.world != null && !TileEntityHrpSign.this.world.isRemote)
-                {
+
+            public void setCommandStat(CommandResultStats.Type type, int amount) {
+                if (TileEntityHrpSign.this.world != null && !TileEntityHrpSign.this.world.isRemote) {
                     TileEntityHrpSign.this.stats.setCommandStatForSender(TileEntityHrpSign.this.world.getMinecraftServer(), this, type, amount);
                 }
             }
-            public MinecraftServer getServer()
-            {
+
+            public MinecraftServer getServer() {
                 return playerIn.getServer();
             }
         };
 
-        for (ITextComponent itextcomponent : this.signText)
-        {
+        for (ITextComponent itextcomponent : this.signText) {
             Style style = itextcomponent == null ? null : itextcomponent.getStyle();
 
-            if (style != null && style.getClickEvent() != null)
-            {
+            if (style != null && style.getClickEvent() != null) {
                 ClickEvent clickevent = style.getClickEvent();
 
-                if (clickevent.getAction() == ClickEvent.Action.RUN_COMMAND)
-                {
+                if (clickevent.getAction() == ClickEvent.Action.RUN_COMMAND) {
                     playerIn.getServer().getCommandManager().executeCommand(icommandsender, clickevent.getValue());
                 }
             }
@@ -224,8 +199,7 @@ public class TileEntityHrpSign extends TileEntityLockableLoot {
     }
 
 
-    public CommandResultStats getStats()
-    {
+    public CommandResultStats getStats() {
         return this.stats;
     }
 

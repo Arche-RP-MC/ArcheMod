@@ -1,6 +1,7 @@
 {
-  "variants": { 
-  "normal": {
-    "model": "am:pave_craquele"
+  "variants": {
+    "normal": {
+      "model": "am:pave_craquele"
+    }
   }
-}}
+}

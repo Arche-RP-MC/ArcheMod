@@ -1,7 +1,6 @@
-
 {
-    "parent": "block/wall_inventory",
-    "textures": {
-        "wall": "am:blocks/log_jungle"
-    }
+  "parent": "block/wall_inventory",
+  "textures": {
+    "wall": "am:blocks/log_jungle"
+  }
 }

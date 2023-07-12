@@ -1,9 +1,9 @@
 {
-	"parent": "am:custom/showcase_left",
-	"textures": {
-		"all": "am:blocks/showcase",
-		"particle": "am:blocks/showcase",
-		"0": "am:blocks/showcase",
-		"texture": "am:blocks/showcase"
-	}
+  "parent": "am:custom/showcase_left",
+  "textures": {
+    "all": "am:blocks/showcase",
+    "particle": "am:blocks/showcase",
+    "0": "am:blocks/showcase",
+    "texture": "am:blocks/showcase"
+  }
 }

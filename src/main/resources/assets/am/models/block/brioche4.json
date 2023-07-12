@@ -1,5 +1,5 @@
 {
- "textures": {
+  "textures": {
     "particle": "am:blocks/brioche_side",
     "bottom": "am:blocks/brioche_bottom",
     "top": "am:blocks/brioche_top",
@@ -8,8 +8,16 @@
   },
   "elements": [
     {
-      "from": [9, 0, 1],
-      "to": [15, 8, 15],
+      "from": [
+        9,
+        0,
+        1
+      ],
+      "to": [
+        15,
+        8,
+        15
+      ],
       "faces": {
         "down": {
           "texture": "#bottom",

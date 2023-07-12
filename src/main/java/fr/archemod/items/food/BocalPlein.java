@@ -43,7 +43,7 @@ public class BocalPlein extends FoodBase {
         super.onFoodEaten(stack, worldIn, player);
         if (!worldIn.isRemote) {
             if (stack.getItemDamage() == stack.getMaxDamage()) {
-                player.dropItem(ModItems.BOCAL, 1);
+                player.dropItem(ModItems.BOCAL, 0); //Retour du bocal désactivé : mettre à 1 pour récupérer un bocal de nouveau
             }
             stack.damageItem(1, player);
         }

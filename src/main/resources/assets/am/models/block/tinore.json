@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all" : "am:blocks/tinore"
+    "all": "am:blocks/tinore"
   }
 }

@@ -1,6 +1,7 @@
 {
-    "variants": {
-        "normal": {
-            "model": "am:clochettes"}
+  "variants": {
+    "normal": {
+      "model": "am:clochettes"
     }
+  }
 }

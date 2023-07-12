@@ -4,7 +4,7 @@ import net.minecraft.entity.player.EntityPlayer;
 
 public interface IDescription {
 
-   String getDescription();
+    String getDescription();
 
     void setDescription(String description);
 
