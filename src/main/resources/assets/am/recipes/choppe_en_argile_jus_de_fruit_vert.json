@@ -7,15 +7,15 @@
   ],
   "key": {
     "F": {
-      "item": "am:bocal_de_bierre_blonde",
+      "item": "am:bouteille_jus_de_fruit_vert",
       "data": 32767
     },
     "L": {
-      "item": "am:choppe_en_verre"
+      "item": "am:choppe_en_argile"
     }
   },
   "result": {
-    "item": "am:choppe_en_verre_bierre_blonde",
+    "item": "am:choppe_en_argile_jus_de_fruit_vert",
     "count": 1
   }
 }

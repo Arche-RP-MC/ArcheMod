@@ -7,7 +7,7 @@
   ],
   "key": {
     "F": {
-      "item": "am:bocal_de_rhum",
+      "item": "am:bouteille_nigorizake",
       "data": 32767
     },
     "L": {
@@ -15,7 +15,7 @@
     }
   },
   "result": {
-    "item": "am:choppe_en_argile_rhum",
+    "item": "am:choppe_en_argile_nigorizake",
     "count": 1
   }
 }

@@ -7,15 +7,15 @@
   ],
   "key": {
     "F": {
-      "item": "am:bocal_de_lait",
+      "item": "am:bouteille_jus_de_fruit_blanc",
       "data": 32767
     },
     "L": {
-      "item": "am:choppe_en_verre"
+      "item": "am:choppe_en_argile"
     }
   },
   "result": {
-    "item": "am:choppe_en_verre_lait",
+    "item": "am:choppe_en_argile_jus_de_fruit_blanc",
     "count": 1
   }
 }

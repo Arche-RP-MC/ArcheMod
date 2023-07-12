@@ -7,15 +7,15 @@
   ],
   "key": {
     "F": {
-      "item": "am:bouteille_de_hydromel",
+      "item": "am:bouteille_jus_de_fruit_rouge",
       "data": 32767
     },
     "L": {
-      "item": "am:choppe_en_verre"
+      "item": "am:choppe_en_argile"
     }
   },
   "result": {
-    "item": "am:choppe_en_verre_hydromel",
+    "item": "am:choppe_en_argile_jus_de_fruit_rouge",
     "count": 1
   }
 }

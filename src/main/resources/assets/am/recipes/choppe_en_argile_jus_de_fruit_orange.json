@@ -7,15 +7,15 @@
   ],
   "key": {
     "F": {
-      "item": "am:bocal_de_vin_rouge",
+      "item": "am:bouteille_jus_de_fruit_orange",
       "data": 32767
     },
     "L": {
-      "item": "am:choppe_en_verre"
+      "item": "am:choppe_en_argile"
     }
   },
   "result": {
-    "item": "am:choppe_en_verre_vin_rouge",
+    "item": "am:choppe_en_argile_jus_de_fruit_orange",
     "count": 1
   }
 }
