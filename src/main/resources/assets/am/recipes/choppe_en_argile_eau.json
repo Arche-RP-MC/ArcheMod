@@ -1,15 +1,20 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "   ",
-    " F ",
-    " L "
+    "F",
+    "L"
   ],
   "key": {
-    "F": {
-      "item": "am:bouteille_d_eau",
-      "data": 32767
-    },
+    "F": [
+      {
+        "item": "am:bouteille_d_eau",
+        "data": 32767
+      },
+      {
+        "item": "am:bocal_d_eau",
+        "data": 32767
+      }
+    ],
     "L": {
       "item": "am:choppe_en_argile"
     }
