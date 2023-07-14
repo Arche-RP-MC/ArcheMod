@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " G ",
+    "MJI",
+    "   "
+  ],
+  "key": {
+    "J": {
+      "item": "am:cadre_en_bois"
+    },
+    "M": {
+      "item": "am:clous"
+    },
+    "I": {
+      "item": "am:maillet",
+      "data": 32767
+    },
+    "G": {
+      "item": "am:tripes"
+    }
+  },
+  "result": {
+    "item": "am:cadre_tannage",
+    "count": 1
+  }
+}

@@ -6,9 +6,32 @@
     " M "
   ],
   "key": {
-    "P": {
-      "item": "am:sciure"
-    },
+    "P": [
+      {
+        "item": "minecraft:log",
+        "data": 0
+      },
+      {
+        "item": "minecraft:log",
+        "data": 1
+      },
+      {
+        "item": "minecraft:log",
+        "data": 2
+      },
+      {
+        "item": "minecraft:log",
+        "data": 3
+      },
+      {
+        "item": "minecraft:log2",
+        "data": 0
+      },
+      {
+        "item": "minecraft:log2",
+        "data": 1
+      }
+    ],
     "M": [
       {
         "item": "am:serpe_en_fer",

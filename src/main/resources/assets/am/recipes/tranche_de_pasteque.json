@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " YY",
+    "   "
+  ],
+  "key": {
+    "Y": {
+      "item": "minecraft:melon"
+    }
+  },
+  "result": {
+    "item": "am:tranche_de_pasteque",
+    "count": 2
+  }
+}

@@ -13,14 +13,17 @@
       "item": "am:cuir"
     },
     "C": {
-      "item": "am:huile_de_tannage"
+      "item": "am:cadre_tannage",
+      "data": 32767
     },
     "G": [
       {
-        "item": "am:couteau_en_fer"
+        "item": "am:couteau_en_fer",
+        "data": 32767
       },
       {
-        "item": "am:couteau_en_acier"
+        "item": "am:couteau_acier",
+        "data": 32767
       }
     ]
   },
