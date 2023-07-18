@@ -152,7 +152,7 @@ public class ModItems {
 
     //OUTILS
 
-    public static final Item RASOIR = new Savon("rasoir");
+    public static final Item RASOIR = new Consomable6("rasoir");
     public static final Item AIGUILLE = new ItemBase("aiguille");
     public static final Item ARROSOIR = new ItemBase("arrosoir");
     public static final Item BALAI = new Consomable2("balai");
@@ -2241,37 +2241,37 @@ public class ModItems {
 
     public static final Item BANDAGE = new ItemBase("bandage");
     public static final Item BANDAGE_ENSANGLANTE = new ItemBase("bandage_ensanglante");
-    public static final Item BAUME_A_LA_CAMOMILLE = new Savon("baume_a_la_camomille");
-    public static final Item BAUME_EXFOLIANT = new Savon("baume_exfoliant");
+    public static final Item BAUME_A_LA_CAMOMILLE = new Consomable6("baume_a_la_camomille");
+    public static final Item BAUME_EXFOLIANT = new Consomable6("baume_exfoliant");
     public static final Item BOUGIE = new ItemBase("candle");
     public static final Item BOUTEILLE_ALCOOL_PUR = new BouteilleDeVin("bouteille_alcool_pur", 0, 0.2F, false);
-    public static final Item BOUTEILLE_DE_PARFUM = new Savon("bouteille_de_parfum");
+    public static final Item BOUTEILLE_DE_PARFUM = new Consomable6("bouteille_de_parfum");
     public static final Item CANNE_BEQUILLE = new ItemBase("canne_bequille");
     public static final Item COLLE = new ItemBase("colle");
     public static final Item EMPLATRE = new ItemBase("emplatre");
     public static final Item EMPLATRE_A_BRULURE = new ItemBase("emplatre_a_brulure");
     public static final Item EMPLATRE_CONTRE_LA_GRATTE = new ItemBase("emplatre_contre_la_gratte");
     public static final Item EMPLATRE_DE_LYS = new ItemBase("emplatre_de_lys");
-    public static final Item ENCENS = new Savon("encens");
+    public static final Item ENCENS = new Consomable6("encens");
     public static final Item EXTRAIT_DE_PAVOT_CONCENTRE = new ItemBase("extrait_de_pavot_concentre");
-    public static final Item FARD_A_JOUE = new Savon("fard_a_joue");
+    public static final Item FARD_A_JOUE = new Consomable6("fard_a_joue");
     public static final Item HUILE_ESSENTIELLE = new Consommables("huile_essentielle");
     public static final Item LEVURE = new ItemBase("levure");
-    public static final Item MASQUE_ARGILE = new Savon("masque_argile");
-    public static final Item MASQUE_CHEVEUX = new Savon("masque_cheveux");
-    public static final Item NOIR_CHARBON = new Savon("noir_charbon");
+    public static final Item MASQUE_ARGILE = new Consomable6("masque_argile");
+    public static final Item MASQUE_CHEVEUX = new Consomable6("masque_cheveux");
+    public static final Item NOIR_CHARBON = new Consomable6("noir_charbon");
     public static final Item ONCE_DE_POISON_LEGER = new ItemBase("once_de_poison_leger");
     public static final Item ONCE_D_HERBORISTE = new ItemBase("once_d_herboriste");
-    public static final Item OPIUM_A_FUMER = new Savon("opium_a_fumer");
-    public static final Item PATE_A_DENT = new Savon("pate_a_dent");
+    public static final Item OPIUM_A_FUMER = new Consomable6("opium_a_fumer");
+    public static final Item PATE_A_DENT = new Consomable6("pate_a_dent");
     public static final Item PATE_DIVERSE = new ItemBase("pate_diverse");
-    public static final Item POUDRE_DE_TEINT = new Savon("poudre_de_teint");
-    public static final Item POUDRE_QUELCONQUE = new Savon("poudre_quelconque");
-    public static final Item ROUGE_A_LEVRES = new Savon("rouge_a_levres");
-    public static final Item SAVON = new Savon("savon");
+    public static final Item POUDRE_DE_TEINT = new Consomable6("poudre_de_teint");
+    public static final Item POUDRE_QUELCONQUE = new Consomable6("poudre_quelconque");
+    public static final Item ROUGE_A_LEVRES = new Consomable6("rouge_a_levres");
+    public static final Item SAVON = new Consomable5("savon");
     public static final Item SEAU_DE_COLLE = new ItemBase("seau_de_colle");
     public static final Item SOUDE = new ItemBase("soude");
-    public static final Item TABAC = new Savon("tabac");
+    public static final Item TABAC = new Consomable6("tabac");
     public static final Item VERNIS = new Consommables("vernis");
 
     // Porcelaine
