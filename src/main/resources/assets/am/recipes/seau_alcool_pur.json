@@ -13,7 +13,8 @@
       "item": "am:levure"
     },
     "D": {
-      "item": "am:alambic"
+      "item": "am:alambic",
+      "data": 32767
     },
     "S": {
       "item": "minecraft:water_bucket"
