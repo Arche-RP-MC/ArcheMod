@@ -7,9 +7,4 @@ public class Reference {
     public static final String ACCEPTED_VERSIONS = "[1.12.2]";
     public static final String CLIENT_PROXY_CLASS = "fr.archemod.proxy.ClientProxy";
     public static final String COMMON_PROXY_CLASS = "fr.archemod.proxy.CommonProxy";
-
-
-    public static final int GUI_SIMPLE_TABLE = 3;
-
-    public static final int GUI_FOUR_SECHOIR = 0;
 }

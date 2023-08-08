@@ -1,12 +1,12 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    " P ",
-    "PPP",
+    " J ",
+    "JJJ",
     " M "
   ],
   "key": {
-    "P": [
+    "J": [
       {
         "item": "minecraft:log",
         "data": 0
