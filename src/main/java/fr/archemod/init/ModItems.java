@@ -2414,4 +2414,8 @@ public class ModItems {
     public static final Item ESTRAGON = new ItemBase("estragon");
     public static final Item RHUBARBE = new ItemBase("rhubarbe");
 
+    // Cadenas
+    public static final Item CADENAS_BRONZE = new Cadenas("cadenas_bronze");
+    public static final Item CADENAS_FER = new Cadenas("cadenas_fer");
+    public static final Item CADENAS_ACIER = new Cadenas("cadenas_acier");
 }
