@@ -6,16 +6,39 @@
     " M "
   ],
   "key": {
-    "P": {
-      "item": "minecraft:log"
-    },
+    "P": [
+      {
+        "item": "minecraft:log",
+        "data": 0
+      },
+      {
+        "item": "minecraft:log",
+        "data": 1
+      },
+      {
+        "item": "minecraft:log",
+        "data": 2
+      },
+      {
+        "item": "minecraft:log",
+        "data": 3
+      },
+      {
+        "item": "minecraft:log2",
+        "data": 0
+      },
+      {
+        "item": "minecraft:log2",
+        "data": 1
+      }
+    ],
     "M": {
-      "item": "minecraft:flint_and_steel",
-      "data": 32767
+      "item": "minecraft:torch"
     }
   },
   "result": {
-    "item": "minecraft:charcoal",
+    "item": "minecraft:coal",
+    "data": 1,
     "count": 12
   }
 }
