@@ -1,6 +1,5 @@
 package fr.archemod.items;
 
-import fr.archemod.ArcheMod;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockDoor;
 import net.minecraft.client.Minecraft;
@@ -13,7 +12,6 @@ import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.world.World;
 
 public class Cadenas extends ItemBase {
-
     public Cadenas(String name) {
         super(name);
         setMaxStackSize(1);
