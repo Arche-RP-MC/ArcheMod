@@ -1470,6 +1470,11 @@ public class ModItems {
     public static final Item MANCHETTE_FER_SERTIE=new BijouSerti("manchette_fer_sertie");
     */
 
+    public static final Item BOUCLE_CEINTURE_ETAIN = new ItemBase("boucle_ceinture_etain");
+    public static final Item BOUCLE_CEINTURE_CUIVRE = new ItemBase("boucle_ceinture_cuivre");
+    public static final Item BOUCLE_CEINTURE_BRONZE = new ItemBase("boucle_ceinture_bronze");
+    public static final Item BOUCLE_CEINTURE_FER = new ItemBase("boucle_ceinture_fer");
+
     //Potier - Tailleur pierre
 
     public static final Item BOL_EN_ARGILE = new ItemBase("bol_en_argile");
