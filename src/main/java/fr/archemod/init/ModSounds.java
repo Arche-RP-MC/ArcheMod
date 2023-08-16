@@ -7,18 +7,15 @@ import net.minecraftforge.fml.common.registry.ForgeRegistries;
 
 public class ModSounds {
     // Déclarer les SoundEvents ici
-    public static SoundEvent SIFFLET;
+    public static SoundEvent ADD_KEY_KEYRING;
 
     public static void registerSounds() {
         // Initialiser les SoundEvents ici
-        SIFFLET = registerSound("sifflet");
-
+        ADD_KEY_KEYRING = registerSound("key_ring");
     }
 
     private static SoundEvent registerSound(String soundName) {
-        ResourceLocation location = new ResourceLocation(Reference.MOD_ID, soundName);
-        SoundEvent soundEvent = new SoundEvent(location);
-        soundEvent.setRegistryName(location);
+        SoundEvent soundEvent = new SoundEvent(new ResourceLocation(Reference.MOD_ID, soundName)).setRegistryName(soundName);
         ForgeRegistries.SOUND_EVENTS.register(soundEvent);
         return soundEvent;
     }

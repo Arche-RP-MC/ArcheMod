@@ -102,7 +102,6 @@ public class ArcheMod {
         ArcheNetwork.init();
         ModRecipes.instance.initRecipes();
         ModSounds.registerSounds();
-
     }
 
     /**

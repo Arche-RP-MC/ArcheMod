@@ -28,7 +28,7 @@ public class ItemSifflet extends Item implements IHasModel {
 
         if (!world.isRemote) {
             // Jouer le son du sifflet sur le serveur
-            world.playSound(null, player.getPosition(), ModSounds.SIFFLET, player.getSoundCategory(), 1.0F, 1.0F);
+            //world.playSound(null, player.getPosition(), ModSounds.SIFFLET, player.getSoundCategory(), 1.0F, 1.0F);
         }
 
         return new ActionResult<>(EnumActionResult.SUCCESS, heldItem);

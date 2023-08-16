@@ -1,6 +1,7 @@
 package fr.archemod.items;
 
 import fr.archemod.ArcheMod;
+import fr.archemod.init.ModSounds;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ActionResult;
@@ -17,7 +18,7 @@ public class PorteClef extends ItemBase {
     @Override
     public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) {
         playerIn.openGui(ArcheMod.INSTANCE, 13, worldIn, (int) playerIn.posX, (int) playerIn.posY, (int) playerIn.posZ);
-        //worldIn.playSound(playerIn, playerIn.getPosition(), LocksSoundEvents.LOCK_RATTLE.get(), SoundCategory.BLOCKS, 1f, 1f);
+        worldIn.playSound(playerIn, playerIn.getPosition(), ModSounds.ADD_KEY_KEYRING, SoundCategory.PLAYERS, 1f, 1f);
         return new ActionResult<>(EnumActionResult.SUCCESS, playerIn.getHeldItem(handIn));
     }
 

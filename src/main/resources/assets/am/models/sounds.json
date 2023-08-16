@@ -1,0 +1,10 @@
+{
+  "key_ring":
+  {
+    "subtitle": "key_ring.jangled",
+    "sounds": {
+      "name": "am:jangled.ogg",
+      "stream": true
+    }
+  }
+}

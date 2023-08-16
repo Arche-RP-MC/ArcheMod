@@ -7,6 +7,7 @@ import fr.archemod.chat.capabilities.indicator.ArcheChatCapability;
 import fr.archemod.gui.GuiHandler;
 import fr.archemod.init.ModBlocks;
 import fr.archemod.init.ModItems;
+import fr.archemod.init.ModSounds;
 import fr.archemod.util.IHasModel;
 import fr.archemod.util.Reference;
 import net.minecraft.block.Block;
