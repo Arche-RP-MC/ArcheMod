@@ -14,30 +14,42 @@ import net.minecraft.util.EnumHand;
 public class ItemContainer extends Container {
     private ItemContainerInventory inv;
     private int rows;
+    private int offset;
 
     public ItemContainer(InventoryPlayer playerInv, ItemContainerInventory inv) {
         this.inv = inv;
-        this.rows = inv.getSizeInventory() / 6;
+        this.rows = inv.getSizeInventory() / inv.getSlotInRow();
         int i = (this.rows - 4) * 18;
         int j;
         int k;
 
+        switch(inv.getSlotInRow()) {
+            case 3:
+                offset = 62;
+                break;
+            case 9:
+                offset = 0;
+                break;
+            default:
+                offset = 35;
+        }
+
         // Adding slots to the backpack //26 ou 25
         for (j = 0; j < this.rows; ++j) {
-            for (k = 0; k < 6; ++k) {
-                this.addSlotToContainer(inv.getNewSlot(inv, k + j * 6, 26 + k * 18, 18 + j * 18));
+            for (k = 0; k < inv.getSlotInRow(); ++k) {
+                this.addSlotToContainer(inv.getNewSlot(inv, k + j * 6, offset + k * 18, 18 + j * 18));
             }
         }
 
         // Adding player's slots
         for (j = 0; j < 3; ++j) {
             for (k = 0; k < 9; ++k) {
-                this.addSlotToContainer(new Slot(playerInv, k + j * 9 + 9, 8 + k * 18, 103 + j * 18 + i));
+                this.addSlotToContainer(new Slot(playerInv, k + j * 9 + 9, 8 + k * 18, 106 + j * 18 + i));
             }
         }
 
         for (j = 0; j < 9; ++j) {
-            this.addSlotToContainer(new Slot(playerInv, j, 8 + j * 18, 161 + i));
+            this.addSlotToContainer(new Slot(playerInv, j, 8 + j * 18, 164 + i));
         }
     }
 

@@ -14,6 +14,7 @@ import net.minecraftforge.common.util.Constants;
 
 public class ItemContainerInventory implements IInventory {
     private int size;
+    private int slotInRow;
     private final NonNullList<ItemStack> content;
     private String name = "Conteneur";
     private int inventoryStackLimit = 50;
@@ -25,7 +26,8 @@ public class ItemContainerInventory implements IInventory {
         this.readFromNBT(container.getTagCompound());
     }
 
-    public ItemContainerInventory(ItemStack container, int size, String name, int inventoryStackLimit) {
+    public ItemContainerInventory(ItemStack container, int size, String name, int inventoryStackLimit, int slotInRow) {
+        this.slotInRow = slotInRow;
         this.inventoryStackLimit = inventoryStackLimit;
         this.name = name;
         this.size = size;
@@ -58,6 +60,8 @@ public class ItemContainerInventory implements IInventory {
     public Slot getNewSlot(IInventory inv, int index, int x, int y) {
         return new Slot(inv, index, x, y);
     }
+
+    public int getSlotInRow() { return slotInRow; }
 
     @Override
     public boolean isEmpty() {

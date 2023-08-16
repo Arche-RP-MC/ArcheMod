@@ -960,7 +960,7 @@ public class ModItems {
     public static final Item PLUME_D_ECRITURE_EN_FER = new ItemBase("plume_d_ecriture_en_fer");
     public static final Item PLUME_D_ECRITURE_EN_OR = new ItemBase("plume_d_ecriture_en_or");
 
-    public static final Item ENVELOPPE = new ItemBase("enveloppe");
+    public static final Item ENVELOPPE = new Enveloppe("enveloppe");
     public static final Item GRIMOIRE = new ItemBase("grimoire");
     public static final Item LOT_DE_PAPIERS = new ItemBase("lot_de_papiers");
     public static final Item PALETTE_DE_PEINTURE = new Consommables("palette_de_peinture");

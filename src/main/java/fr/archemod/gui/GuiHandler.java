@@ -7,24 +7,28 @@ import fr.archemod.fiche.gui.GuiFichePersonnage;
 import fr.archemod.fiche.inventory.InventoryFichePersonnage;
 import fr.archemod.items.*;
 import fr.archemod.items.inventory.*;
+import fr.archemod.util.Reference;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.EnumHand;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.common.network.IGuiHandler;
 
 public class GuiHandler implements IGuiHandler {
+    public static final ResourceLocation GUI36 = new ResourceLocation(Reference.MOD_ID, "textures/gui/container/generic_36.png");
+    public static final ResourceLocation GUI3 = new ResourceLocation(Reference.MOD_ID, "textures/gui/container/generic_3.png");
 
     @Override
     public Object getServerGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) {
         switch (ID) {
             case 0: //Bourse
                 if (!(player.getHeldItem(EnumHand.MAIN_HAND).getItem() instanceof Bourse)) return null;
-                return new ItemContainer(player.inventory, new ItemContainerInventory(player.getHeldItem(EnumHand.MAIN_HAND), 6, "Bourse", 20));
+                return new ItemContainer(player.inventory, new ItemContainerInventory(player.getHeldItem(EnumHand.MAIN_HAND), 6, "Bourse", 20, 6));
             case 1: //Panier en osier
                 if (!(player.getHeldItem(EnumHand.MAIN_HAND).getItem() instanceof PanierEnOsier)) return null;
-                return new ItemContainer(player.inventory, new ItemContainerInventory(player.getHeldItem(EnumHand.MAIN_HAND), 12, "Panier en osier", 10));
+                return new ItemContainer(player.inventory, new ItemContainerInventory(player.getHeldItem(EnumHand.MAIN_HAND), 12, "Panier en osier", 10, 6));
             case 2: //Placard  HRP
                 TileEntity tile = world.getTileEntity(new BlockPos(x, y, z));
                 if (tile instanceof TileEntityPlacardHRP) {
@@ -61,10 +65,10 @@ public class GuiHandler implements IGuiHandler {
                 }
             case 8: //Sacoche
                 if (!(player.getHeldItem(EnumHand.MAIN_HAND).getItem() instanceof Sacoche)) return null;
-                return new ItemContainer(player.inventory, new ItemContainerInventory(player.getHeldItem(EnumHand.MAIN_HAND), 6, "Sacoche", 25));
+                return new ItemContainer(player.inventory, new ItemContainerInventory(player.getHeldItem(EnumHand.MAIN_HAND), 6, "Sacoche", 25, 6));
             case 9: //GrandSac
                 if (!(player.getHeldItem(EnumHand.MAIN_HAND).getItem() instanceof GrandSac)) return null;
-                return new ItemContainer(player.inventory, new ItemContainerInventory(player.getHeldItem(EnumHand.MAIN_HAND), 6, "Grand sac", 50));
+                return new ItemContainer(player.inventory, new ItemContainerInventory(player.getHeldItem(EnumHand.MAIN_HAND), 6, "Grand sac", 50, 6));
 
          /*case 10: //SechoirViande
                 TileEntity TileSechoirViande2 = world.getTileEntity(new BlockPos(x,y,z));
@@ -81,8 +85,10 @@ public class GuiHandler implements IGuiHandler {
                 return new ContainerBijouSerti(player.inventory, new InventoryBijouSerti(player.getHeldItem(EnumHand.MAIN_HAND), 6));
             case 13: //Porte Clef
                 if (!(player.getHeldItem(EnumHand.MAIN_HAND).getItem() instanceof PorteClef)) return null;
-                return new ItemContainer(player.inventory, new ItemContainerInventory(player.getHeldItem(EnumHand.MAIN_HAND), 12, "Porte-clef", 1));
-
+                return new ItemContainer(player.inventory, new ItemContainerInventory(player.getHeldItem(EnumHand.MAIN_HAND), 12, "Porte-clef", 1, 6));
+            case 14: //Enveloppe
+                if (!(player.getHeldItem(EnumHand.MAIN_HAND).getItem() instanceof Enveloppe)) return null;
+                return new ItemContainer(player.inventory, new ItemContainerInventory(player.getHeldItem(EnumHand.MAIN_HAND), 3, "Enveloppe", 1, 3));
         }
         return null;
     }
@@ -92,10 +98,10 @@ public class GuiHandler implements IGuiHandler {
         switch (ID) {
             case 0:
                 if (!(player.getHeldItem(EnumHand.MAIN_HAND).getItem() instanceof Bourse)) return null;
-                return new ItemContainerGUI(player.inventory, new ItemContainerInventory(player.getHeldItem(EnumHand.MAIN_HAND), 6, "Bourse", 20));
+                return new ItemContainerGUI36(player.inventory, new ItemContainerInventory(player.getHeldItem(EnumHand.MAIN_HAND), 6, "Bourse", 20, 6), GUI36);
             case 1: //Panier en osier
                 if (!(player.getHeldItem(EnumHand.MAIN_HAND).getItem() instanceof PanierEnOsier)) return null;
-                return new ItemContainerGUI(player.inventory, new ItemContainerInventory(player.getHeldItem(EnumHand.MAIN_HAND), 12, "Panier en osier", 10));
+                return new ItemContainerGUI36(player.inventory, new ItemContainerInventory(player.getHeldItem(EnumHand.MAIN_HAND), 12, "Panier en osier", 10, 6), GUI36);
             case 2: //Placard  HRP
                 TileEntity tile = world.getTileEntity(new BlockPos(x, y, z));
                 if (tile instanceof TileEntityPlacardHRP) {
@@ -135,10 +141,10 @@ public class GuiHandler implements IGuiHandler {
                 }
             case 8:
                 if (!(player.getHeldItem(EnumHand.MAIN_HAND).getItem() instanceof Sacoche)) return null;
-                return new ItemContainerGUI(player.inventory, new ItemContainerInventory(player.getHeldItem(EnumHand.MAIN_HAND), 6, "Sacoche", 25));
+                return new ItemContainerGUI36(player.inventory, new ItemContainerInventory(player.getHeldItem(EnumHand.MAIN_HAND), 6, "Sacoche", 25, 6), GUI36);
             case 9:
                 if (!(player.getHeldItem(EnumHand.MAIN_HAND).getItem() instanceof GrandSac)) return null;
-                return new ItemContainerGUI(player.inventory, new ItemContainerInventory(player.getHeldItem(EnumHand.MAIN_HAND), 6, "Grand sac", 50));
+                return new ItemContainerGUI36(player.inventory, new ItemContainerInventory(player.getHeldItem(EnumHand.MAIN_HAND), 6, "Grand sac", 50, 6), GUI36);
             /*case 10:
                 TileEntity TileSechoirViande2 = world.getTileEntity(new BlockPos(x,y,z));
                 if(TileSechoirViande2 instanceof TileEntityFourSechoir2){
@@ -155,7 +161,10 @@ public class GuiHandler implements IGuiHandler {
                 return new GuiBijouSerti(player.inventory, new InventoryBijouSerti(player.getHeldItem(EnumHand.MAIN_HAND), 6));
             case 13: //Porte Clef
                 if (!(player.getHeldItem(EnumHand.MAIN_HAND).getItem() instanceof PorteClef)) return null;
-                return new ItemContainerGUI(player.inventory, new ItemContainerInventory(player.getHeldItem(EnumHand.MAIN_HAND), 12, "Porte-clef", 1));
+                return new ItemContainerGUI36(player.inventory, new ItemContainerInventory(player.getHeldItem(EnumHand.MAIN_HAND), 12, "Porte-clef", 1, 6), GUI36);
+            case 14: //Enveloppe
+                if (!(player.getHeldItem(EnumHand.MAIN_HAND).getItem() instanceof Enveloppe)) return null;
+                return new ItemContainerGUI3(player.inventory, new ItemContainerInventory(player.getHeldItem(EnumHand.MAIN_HAND), 3, "Enveloppe", 1, 3), GUI3);
         }
         return null;
     }
