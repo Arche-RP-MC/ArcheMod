@@ -92,6 +92,10 @@ public class GuiHandler implements IGuiHandler {
                 player.getHeldItem(EnumHand.MAIN_HAND);
                 if (!(player.getHeldItem(EnumHand.MAIN_HAND).getItem() instanceof BijouSerti)) return null;
                 return new ContainerBijouSerti(player.inventory, new InventoryBijouSerti(player.getHeldItem(EnumHand.MAIN_HAND), 6));
+            case 13: //Porte Clef
+                if (!(player.getHeldItem(EnumHand.MAIN_HAND).getItem() instanceof PorteClef)) return null;
+                return new ContainerPorteClef(player.inventory, new InventoryPorteClef(player.getHeldItem(EnumHand.MAIN_HAND), 12));
+
         }
         return null;
     }
@@ -175,6 +179,9 @@ public class GuiHandler implements IGuiHandler {
                 player.getHeldItem(EnumHand.MAIN_HAND);
                 if (!(player.getHeldItem(EnumHand.MAIN_HAND).getItem() instanceof BijouSerti)) return null;
                 return new GuiBijouSerti(player.inventory, new InventoryBijouSerti(player.getHeldItem(EnumHand.MAIN_HAND), 6));
+            case 13: //Porte Clef
+                if (!(player.getHeldItem(EnumHand.MAIN_HAND).getItem() instanceof PorteClef)) return null;
+                return new GuiPorteClef(player.inventory, new InventoryPorteClef(player.getHeldItem(EnumHand.MAIN_HAND), 12));
 
         }
         return null;
