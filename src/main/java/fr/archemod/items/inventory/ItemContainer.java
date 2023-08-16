@@ -22,7 +22,7 @@ public class ItemContainer extends Container {
         int i = (this.rows - 4) * 18;
         int j;
         int k;
-
+        System.out.println(inv.getSlotInRow() + ", " + inv.getSizeInventory() + ", " + this.rows);
         switch(inv.getSlotInRow()) {
             case 3:
                 offset = 62;
@@ -34,10 +34,10 @@ public class ItemContainer extends Container {
                 offset = 35;
         }
 
-        // Adding slots to the backpack //26 ou 25
+        // Adding slots to the backpack
         for (j = 0; j < this.rows; ++j) {
             for (k = 0; k < inv.getSlotInRow(); ++k) {
-                this.addSlotToContainer(inv.getNewSlot(inv, k + j * 6, offset + k * 18, 18 + j * 18));
+                this.addSlotToContainer(inv.getNewSlot(inv, k + j * inv.getSlotInRow(), offset + k * 18, 18 + j * 18));
             }
         }
 

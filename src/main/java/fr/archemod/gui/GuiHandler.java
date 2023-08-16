@@ -151,7 +151,6 @@ public class GuiHandler implements IGuiHandler {
                 }*/
             //10 & 11 font crash le client
             case 12:
-                player.getHeldItem(EnumHand.MAIN_HAND);
                 if (!(player.getHeldItem(EnumHand.MAIN_HAND).getItem() instanceof BijouSerti)) return null;
                 return new ItemContainerGUI3(player.inventory, new ItemContainerInventory(player.getHeldItem(EnumHand.MAIN_HAND), 6,"Bijou Serti",3, 3), GUI3);
             case 13: //Porte Clef
