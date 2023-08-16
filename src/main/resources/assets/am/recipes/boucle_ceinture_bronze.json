@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " G ",
+    " L ",
+    "   "
+  ],
+  "key": {
+    "G": {
+      "item": "am:pinces",
+      "data": 32767
+    },
+    "L": {
+      "item": "am:barre_bronze"
+    }
+  },
+  "result": {
+    "item": "am:boucle_ceinture_bronze",
+    "count": 2
+  }
+}

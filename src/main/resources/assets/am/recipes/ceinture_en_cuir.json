@@ -8,19 +8,16 @@
   "key": {
     "N": [
       {
-        "item": "am:pepite_etain"
+        "item": "am:boucle_ceinture_etain"
       },
       {
-        "item": "am:pepite_fer"
+        "item": "am:boucle_ceinture_cuivre"
       },
       {
-        "item": "am:pepite_cuivre"
+        "item": "am:boucle_ceinture_fer"
       },
       {
-        "item": "am:pepite_bronze"
-      },
-      {
-        "item": "am:pepite_acier"
+        "item": "am:boucle_ceinture_bronze"
       }
     ],
     "P": {

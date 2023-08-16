@@ -3350,3 +3350,37 @@ tile.woolredstair.name=Escalier en laine rouge
 tile.woolsilverstair.name=Escalier en laine gris clair
 tile.woolwhitestair.name=Escalier en laine blanche
 tile.woolyellowstair.name=Escalier en laine jaune
+
+
+item.boucle_ceinture_etain.name=Boucle de ceinture en étain
+item.boucle_ceinture_cuivre.name=Boucle de ceinture en cuivre
+item.boucle_ceinture_fer.name=Boucle de ceinture en fer
+item.boucle_ceinture_bronze.name=Boucle de ceinture en bronze
+
+item.peluche_raie_manta.name= Raie manta en peluche
+item.peluche_corgi.name= Corgi en peluche
+item.peluche_flamant_rose.name= Flamant rose en peluche
+item.peluche_chevre.name= Chèvre en peluche
+
+item.ancre_marine.name=Ancre Marine
+item.moule_crustace.name=Moule
+item.moule_mariniere.name=Moule marinière
+item.moule_mariniere_cuite.name=Moule marinière cuite
+item.tempura_cru.name=Tempura cru
+item.tempura_cuit.name=Tempura cuit
+item.oeuf_mimosa.name=Oeuf mimosa
+item.brochette_calamar.name=Brochette de calamar
+item.brochette_calamar_cuite.name=Brochette de calamar cuite
+item.anguille_cuite.name=Anguille cuite
+
+
+
+
+
+
+
+
+
+
+
+

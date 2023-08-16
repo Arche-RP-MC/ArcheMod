@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ABA",
+    "CDC",
+    " C "
+  ],
+  "key": {
+    "A": {
+      "item": "am:bobine_de_fil"
+    },
+    "B": {
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
+    },
+    "C": {
+      "item": "am:etoffe_marron"
+    },
+    "D": {
+      "item": "am:laine_brute"
+    }
+  },
+  "result": {
+    "item": "am:chevre_peluche",
+    "count": 1
+  }
+}

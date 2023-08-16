@@ -350,11 +350,15 @@ public class ModItems {
     public static final Item HOMARD_CUIT = new FoodBase("homard_cuit", 6, 0.2F, false);
     public static final Item PALOURDE_CUITE = new FoodBase("palourde_cuite", 2, 0.2F, false);
 
+    public static final Item ANGUILLE_CUITE = new FoodBase("anguille_cuite", 4, 0.2F, false);
+    public static final Item BROCHETTE_CALAMAR_CUITE = new FoodBase("brochette_calamar_cuite", 6, 0.2F, false);
+    public static final Item MOULE_MARINIERE_CUITE = new FoodBase("moule_mariniere_cuite", 12, 0.2F, false);
+    public static final Item OEUF_MIMOSA = new FoodBase("oeuf_mimosa", 4, 0.2F, false);
+    public static final Item TEMPURA_CUIT = new FoodBase("tempura_cuit", 2, 0.2F, false);
 
     //FOODS CRU
     //public static final Item PART_DE_TOURTE_CRU = new ItemBase("part_de_tourte_cru");
     //public static final Item PETIT_PAIN_CRU = new ItemBase("petit_pain_cru");
-    public static final Item ANGUILLE = new ItemBase("anguille");
     public static final Item ARTICHAUT_CRU = new ItemBase("artichaut_cru");
     public static final Item ASPERGE_CRU = new ItemBase("asperge_cru");
     public static final Item AUBERGINE_CRU = new ItemBase("aubergine_cru");
@@ -439,6 +443,12 @@ public class ModItems {
     public static final Item VIANDE_DE_RAT = new ItemBase("viande_de_rat");
     public static final Item VIANDE_DE_VOLAILLE_CRUE = new ItemBase("viande_de_volaille_crue");
 
+
+    public static final Item TEMPURA_CRU = new ItemBase("tempura_cru");
+    public static final Item MOULE_MARINIERE = new ItemBase("moule_mariniere");
+    public static final Item BROCHETTE_CALAMAR = new ItemBase("brochette_calamar");
+
+    
     //Armes - TOOLS
     //public static final Item BATON_DE_MARCHE = new ToolSword("baton_de_marche",Item.ToolMaterial.IRON);
     public static final Item ARAKH_EN_ACIER = new ToolSword("arakh_en_acier", Item.ToolMaterial.IRON);
@@ -968,6 +978,8 @@ public class ModItems {
 
     //Métaux fondus - lingots - barres - plaques - clous
 
+    public static final Item ANCRE_MARINE = new ItemBase("ancre_marine");
+
     public static final Item FER_FONDU = new ItemBase("fer_fondu");
     public static final Item BARRE_FER = new ItemBase("barre_fer");
     public static final Item PLAQUE_DE_FER = new ItemBase("plaque_de_fer");
@@ -1220,6 +1232,7 @@ public class ModItems {
 
     // public static final Item fishing_rod_reinforced = new FishingRodReinforced("fishing_rod_reinforced");
     // public static final Item filet_de_poisson = new FoodBase("filet_de_poisson", 1, 1.0F, true);
+    public static final Item ANGUILLE = new ItemBase("anguille");
     public static final Item ANGE_ROYAL = new ItemBase("ange_royal");
     public static final Item CALAMAR = new Calamar("calamar");
     public static final Item CALAMAR_MORT = new ItemBase("calamar_mort");
@@ -1274,6 +1287,9 @@ public class ModItems {
     public static final Item THON = new Poisson("thon");
     public static final Item ZANCLUS_CORNUTUS = new ItemBase("zanclus_cornutus");
 
+
+    public static final Item MOULE_CRUSTACE = new ItemBase("moule_crustace");
+    
 
     // Bijoux
 
@@ -1801,6 +1817,11 @@ public class ModItems {
     public static final Item TUNIQUE_APICULTEUR = new ItemBase("tunique_apiculteur");
     public static final Item VESTE = new ItemBase("veste");
     public static final Item BOUTON = new ItemBase("bouton");
+
+    public static final Item PELUCHE_FLAMANT_ROSE = new ItemBase("peluche_flamant_rose");
+    public static final Item PELUCHE_CORGI = new ItemBase("peluche_corgi");
+    public static final Item PELUCHE_CHEVRE = new ItemBase("peluche_chevre");
+    public static final Item PELUCHE_RAIE_MANTA = new ItemBase("peluche_raie_manta");
 
     // Vetements colorées
 
