@@ -78,11 +78,8 @@ public class GuiHandler implements IGuiHandler {
                     return null;
                 }*/
             case 12: //BijouSerti
-                // The last parameter must be a multiple of 9 (e.g: 9, 18, 27, 54)
-                // Condition to check if the player has the right item in hand
-                player.getHeldItem(EnumHand.MAIN_HAND);
                 if (!(player.getHeldItem(EnumHand.MAIN_HAND).getItem() instanceof BijouSerti)) return null;
-                return new ContainerBijouSerti(player.inventory, new InventoryBijouSerti(player.getHeldItem(EnumHand.MAIN_HAND), 6));
+                return new ItemContainer(player.inventory, new ItemContainerInventory(player.getHeldItem(EnumHand.MAIN_HAND), 6,"Bijou Serti", 3,3));
             case 13: //Porte Clef
                 if (!(player.getHeldItem(EnumHand.MAIN_HAND).getItem() instanceof PorteClef)) return null;
                 return new ItemContainer(player.inventory, new ItemContainerInventory(player.getHeldItem(EnumHand.MAIN_HAND), 12, "Porte-clef", 1, 6));
@@ -154,11 +151,9 @@ public class GuiHandler implements IGuiHandler {
                 }*/
             //10 & 11 font crash le client
             case 12:
-                // The last parameter must be a multiple of 9 (e.g: 9, 18, 27, 54)
-                // Condition to check if the player has the right item in hand
                 player.getHeldItem(EnumHand.MAIN_HAND);
                 if (!(player.getHeldItem(EnumHand.MAIN_HAND).getItem() instanceof BijouSerti)) return null;
-                return new GuiBijouSerti(player.inventory, new InventoryBijouSerti(player.getHeldItem(EnumHand.MAIN_HAND), 6));
+                return new ItemContainerGUI3(player.inventory, new ItemContainerInventory(player.getHeldItem(EnumHand.MAIN_HAND), 6,"Bijou Serti",3, 3), GUI3);
             case 13: //Porte Clef
                 if (!(player.getHeldItem(EnumHand.MAIN_HAND).getItem() instanceof PorteClef)) return null;
                 return new ItemContainerGUI36(player.inventory, new ItemContainerInventory(player.getHeldItem(EnumHand.MAIN_HAND), 12, "Porte-clef", 1, 6), GUI36);
