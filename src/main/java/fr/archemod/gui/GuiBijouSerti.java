@@ -1,7 +1,7 @@
 package fr.archemod.gui;
 
 import fr.archemod.items.inventory.InventoryBijouSerti;
-import fr.archemod.items.inventory.container.ContainerBijouSerti;
+import fr.archemod.items.inventory.ContainerBijouSerti;
 import fr.archemod.util.Reference;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.resources.I18n;

@@ -25,10 +25,8 @@ public class GuiPlacardHRP extends GuiContainer {
         this.ySize = 114 + this.rows * 18;
     }
 
-
     @Override
     protected void drawGuiContainerForegroundLayer(int x, int y) {
-        this.renderHoveredToolTip(x, y);
         this.fontRenderer.drawString(I18n.format(this.inv.getName(), new Object[0]), 8, 6, 4210752);
         this.fontRenderer.drawString(this.playerInv.hasCustomName() ? this.playerInv.getName() : I18n.format(this.playerInv.getName(), new Object[0]), 8, this.ySize - 96 + 2, 4210752);
     }
@@ -46,5 +44,11 @@ public class GuiPlacardHRP extends GuiContainer {
         this.drawTexturedModalRect(k, l, 0, 0, this.xSize, this.rows * 18 + 17);
         // And after the slots from the player's inventory
         this.drawTexturedModalRect(k, l + this.rows * 18 + 17, 0, 126, this.xSize, 96);
+    }
+
+    public void drawScreen(int mouseX, int mouseY, float partialTicks) {
+        this.drawDefaultBackground();
+        super.drawScreen(mouseX, mouseY, partialTicks);
+        this.renderHoveredToolTip(mouseX, mouseY);
     }
 }

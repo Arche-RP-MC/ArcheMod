@@ -1,8 +1,8 @@
 package fr.archemod.items.inventory;
 
-import fr.archemod.items.Sacoche;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
+import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
@@ -12,22 +12,28 @@ import net.minecraft.util.text.TextComponentString;
 import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraftforge.common.util.Constants;
 
-public class InventorySacoche implements IInventory {
+public class ItemContainerInventory implements IInventory {
+    private int size;
     private final NonNullList<ItemStack> content;
-    public int size;
+    private String name = "Conteneur";
+    private int inventoryStackLimit = 50;
 
-    public InventorySacoche(ItemStack container, int size) {
+    public ItemContainerInventory(ItemStack container, int size) {
         this.size = size;
         this.content = NonNullList.withSize(size, ItemStack.EMPTY);
         if (!container.hasTagCompound()) container.setTagCompound(new NBTTagCompound());
         this.readFromNBT(container.getTagCompound());
     }
 
-    /**
-     * This methods reads the content of the NBTTagCompound inside the container
-     *
-     * @param comp the container NBTTagCompound
-     */
+    public ItemContainerInventory(ItemStack container, int size, String name, int inventoryStackLimit) {
+        this.inventoryStackLimit = inventoryStackLimit;
+        this.name = name;
+        this.size = size;
+        this.content = NonNullList.withSize(size, ItemStack.EMPTY);
+        if (!container.hasTagCompound()) container.setTagCompound(new NBTTagCompound());
+        this.readFromNBT(container.getTagCompound());
+    }
+
     public void readFromNBT(NBTTagCompound comp) {
         NBTTagList nbtlist = comp.getTagList("Inventory", Constants.NBT.TAG_COMPOUND);
         for (int i = 0; i < nbtlist.tagCount(); i++) {
@@ -37,11 +43,6 @@ public class InventorySacoche implements IInventory {
         }
     }
 
-    /**
-     * This methods saves the content inside the container
-     *
-     * @param comp the NBTTagCompound to write in
-     */
     public void writeToNBT(NBTTagCompound comp) {
         NBTTagList nbtlist = new NBTTagList();
 
@@ -54,9 +55,8 @@ public class InventorySacoche implements IInventory {
         comp.setTag("Inventory", nbtlist);
     }
 
-    @Override
-    public int getSizeInventory() {
-        return this.size;
+    public Slot getNewSlot(IInventory inv, int index, int x, int y) {
+        return new Slot(inv, index, x, y);
     }
 
     @Override
@@ -66,14 +66,11 @@ public class InventorySacoche implements IInventory {
                 return false;
             }
         }
-
         return true;
     }
 
     @Override
-    public ItemStack getStackInSlot(int index) {
-        return this.content.get(index);
-    }
+    public ItemStack getStackInSlot(int index) { return this.content.get(index); }
 
     @Override
     public ItemStack decrStackSize(int index, int amount) {
@@ -97,71 +94,51 @@ public class InventorySacoche implements IInventory {
     }
 
     @Override
-    public void setInventorySlotContents(int index, ItemStack stack) {
-        this.content.set(index, stack);
+    public ITextComponent getDisplayName() { return this.hasCustomName() ? new TextComponentString(this.getName()) : new TextComponentTranslation(this.getName(), new Object[0]); }
+
+    @Override
+    public void setInventorySlotContents(int index, ItemStack stack) { this.content.set(index, stack); }
+
+    @Override
+    public boolean hasCustomName() { return false; }
+
+    @Override
+    public void markDirty() {}
+
+    @Override
+    public boolean isUsableByPlayer(EntityPlayer player) { return true; }
+
+    @Override
+    public void openInventory(EntityPlayer player) {}
+
+    @Override
+    public void closeInventory(EntityPlayer player) {}
+
+    @Override
+    public int getSizeInventory() { return this.size; }
+
+    @Override
+    public int getFieldCount() { return 0; }
+
+    @Override
+    public int getField(int id) { return 0; }
+
+    @Override
+    public void setField(int id, int value) {}
+
+    @Override
+    public void clear() { this.content.clear(); }
+
+    @Override
+    public int getInventoryStackLimit() {
+        return this.inventoryStackLimit;
     }
 
     @Override
     public String getName() {
-        return "Sacoche";
+        return this.name;
     }
 
     @Override
-    public boolean hasCustomName() {
-        return false;
-    }
-
-    @Override
-    public ITextComponent getDisplayName() {
-        return this.hasCustomName() ? new TextComponentString(this.getName()) : new TextComponentTranslation(this.getName(), new Object[0]);
-    }
-
-    @Override
-    public int getInventoryStackLimit() {
-        return 25;
-    }
-
-    @Override
-    public void markDirty() {
-    }
-
-    @Override
-    public boolean isUsableByPlayer(EntityPlayer player) {
-        return true;
-    }
-
-    @Override
-    public void openInventory(EntityPlayer player) {
-    }
-
-    @Override
-    public void closeInventory(EntityPlayer player) {
-    }
-
-    /**
-     * Prevents backpack-ception
-     */
-    @Override
-    public boolean isItemValidForSlot(int index, ItemStack stack) {
-        return !(stack.getItem() instanceof Sacoche);
-    }
-
-    @Override
-    public int getField(int id) {
-        return 0;
-    }
-
-    @Override
-    public void setField(int id, int value) {
-    }
-
-    @Override
-    public int getFieldCount() {
-        return 0;
-    }
-
-    @Override
-    public void clear() {
-        this.content.clear();
-    }
+    public boolean isItemValidForSlot(int index, ItemStack stack) { return true; }
 }

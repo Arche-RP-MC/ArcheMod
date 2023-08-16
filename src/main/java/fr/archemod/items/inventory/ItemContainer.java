@@ -1,8 +1,7 @@
-package fr.archemod.items.inventory.container;
+package fr.archemod.items.inventory;
 
-import fr.archemod.items.Sacoche;
-import fr.archemod.items.inventory.InventorySacoche;
-import fr.archemod.items.inventory.slot.SlotSacoche;
+import fr.archemod.items.GrandSac;
+import fr.archemod.items.inventory.ItemContainerInventory;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.ClickType;
@@ -12,12 +11,12 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.EnumHand;
 
-public class ContainerSacoche extends Container {
-    public InventorySacoche invSacoche;
-    public int rows;
+public class ItemContainer extends Container {
+    private ItemContainerInventory inv;
+    private int rows;
 
-    public ContainerSacoche(InventoryPlayer playerInv, InventorySacoche inv) {
-        this.invSacoche = inv;
+    public ItemContainer(InventoryPlayer playerInv, ItemContainerInventory inv) {
+        this.inv = inv;
         this.rows = inv.getSizeInventory() / 6;
         int i = (this.rows - 4) * 18;
         int j;
@@ -26,7 +25,7 @@ public class ContainerSacoche extends Container {
         // Adding slots to the backpack //26 ou 25
         for (j = 0; j < this.rows; ++j) {
             for (k = 0; k < 6; ++k) {
-                this.addSlotToContainer(new SlotSacoche(inv, k + j * 6, 26 + k * 18, 18 + j * 18));
+                this.addSlotToContainer(inv.getNewSlot(inv, k + j * 6, 26 + k * 18, 18 + j * 18));
             }
         }
 
@@ -49,7 +48,7 @@ public class ContainerSacoche extends Container {
 
     public void writeToNBT(ItemStack stack) {
         if (!stack.hasTagCompound()) stack.setTagCompound(new NBTTagCompound());
-        invSacoche.writeToNBT(stack.getTagCompound());
+        inv.writeToNBT(stack.getTagCompound());
     }
 
     @Override
@@ -63,12 +62,12 @@ public class ContainerSacoche extends Container {
 
             // Prevents backpack-ception (backpack inside backpack) with
             // shift-click
-            if (itemstack.getItem() instanceof Sacoche) return ItemStack.EMPTY;
+            if (itemstack.getItem() instanceof GrandSac) return ItemStack.EMPTY;
 
-            if (index < this.invSacoche.getSizeInventory()) {
-                if (!this.mergeItemStack(itemstack1, this.invSacoche.getSizeInventory(), this.inventorySlots.size(), true))
+            if (index < this.inv.getSizeInventory()) {
+                if (!this.mergeItemStack(itemstack1, this.inv.getSizeInventory(), this.inventorySlots.size(), true))
                     return ItemStack.EMPTY;
-            } else if (!this.mergeItemStack(itemstack1, 0, this.invSacoche.getSizeInventory(), false)) {
+            } else if (!this.mergeItemStack(itemstack1, 0, this.inv.getSizeInventory(), false)) {
                 return ItemStack.EMPTY;
             }
 
@@ -86,7 +85,7 @@ public class ContainerSacoche extends Container {
     public ItemStack slotClick(int slotId, int dragType, ClickType clickTypeIn, EntityPlayer player) {
         // Prevents from removing current backpack
         if (clickTypeIn == ClickType.SWAP && dragType == player.inventory.currentItem) return ItemStack.EMPTY;
-        if (slotId - this.invSacoche.getSizeInventory() - 27 == player.inventory.currentItem) return ItemStack.EMPTY;
+        if (slotId - this.inv.getSizeInventory() - 27 == player.inventory.currentItem) return ItemStack.EMPTY;
         return super.slotClick(slotId, dragType, clickTypeIn, player);
     }
 
@@ -98,5 +97,4 @@ public class ContainerSacoche extends Container {
         this.writeToNBT(player.getHeldItem(EnumHand.MAIN_HAND));
         super.onContainerClosed(player);
     }
-
 }

@@ -1,12 +1,12 @@
-package fr.archemod.items.inventory.slot;
+package fr.archemod.items.inventory;
 
-import fr.archemod.items.Bourse;
+import fr.archemod.items.BijouSerti;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
 
-public class SlotSac extends Slot {
-    public SlotSac(IInventory inv, int index, int x, int y) {
+public class SlotBijouSerti extends Slot {
+    public SlotBijouSerti(IInventory inv, int index, int x, int y) {
         super(inv, index, x, y);
     }
 
@@ -15,6 +15,6 @@ public class SlotSac extends Slot {
      */
     @Override
     public boolean isItemValid(ItemStack stack) {
-        return !(stack.getItem() instanceof Bourse);
+        return !(stack.getItem() instanceof BijouSerti);
     }
 }

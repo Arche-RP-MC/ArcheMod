@@ -1,8 +1,6 @@
-package fr.archemod.items.inventory.container;
+package fr.archemod.items.inventory;
 
 import fr.archemod.items.BijouSerti;
-import fr.archemod.items.inventory.InventoryBijouSerti;
-import fr.archemod.items.inventory.slot.SlotBijouSerti;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.ClickType;
@@ -90,13 +88,9 @@ public class ContainerBijouSerti extends Container {
         return super.slotClick(slotId, dragType, clickTypeIn, player);
     }
 
-    /**
-     * Used to save content
-     */
     @Override
     public void onContainerClosed(EntityPlayer player) {
         this.writeToNBT(player.getHeldItem(EnumHand.MAIN_HAND));
         super.onContainerClosed(player);
     }
-
 }
