@@ -12,21 +12,14 @@ import net.minecraft.util.text.TextComponentString;
 import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraftforge.common.util.Constants;
 
-public class ItemContainerInventory implements IInventory {
+public class ContainerInventory implements IInventory {
     private int size;
     private int slotInRow;
     private final NonNullList<ItemStack> content;
-    private String name = "Conteneur";
-    private int inventoryStackLimit = 50;
+    private String name;
+    private int inventoryStackLimit;
 
-    public ItemContainerInventory(ItemStack container, int size) {
-        this.size = size;
-        this.content = NonNullList.withSize(size, ItemStack.EMPTY);
-        if (!container.hasTagCompound()) container.setTagCompound(new NBTTagCompound());
-        this.readFromNBT(container.getTagCompound());
-    }
-
-    public ItemContainerInventory(ItemStack container, int size, String name, int inventoryStackLimit, int slotInRow) {
+    public ContainerInventory(ItemStack container, int size, String name, int inventoryStackLimit, int slotInRow) {
         this.slotInRow = slotInRow;
         this.inventoryStackLimit = inventoryStackLimit;
         this.name = name;

@@ -1,21 +1,20 @@
 package fr.archemod.gui;
 
-import fr.archemod.items.inventory.ItemContainerInventory;
-import fr.archemod.items.inventory.ItemContainer;
+import fr.archemod.items.inventory.ContainerInventory;
+import fr.archemod.items.inventory.ContainerSlot;
 import net.minecraft.client.gui.inventory.GuiContainer;
-import net.minecraft.client.resources.I18n;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.util.ResourceLocation;
 import org.lwjgl.opengl.GL11;
 
 public class ItemContainerGUI36 extends GuiContainer {
     private ResourceLocation texture;
-    protected ItemContainerInventory inv;
+    protected ContainerInventory inv;
     protected InventoryPlayer playerInv;
     public int rows;
 
-    public ItemContainerGUI36(InventoryPlayer playerInv, ItemContainerInventory inv, ResourceLocation pathGUI) {
-        super(new ItemContainer(playerInv, inv));
+    public ItemContainerGUI36(InventoryPlayer playerInv, ContainerInventory inv, ResourceLocation pathGUI) {
+        super(new ContainerSlot(playerInv, inv));
         this.texture = pathGUI;
         this.playerInv = playerInv;
         this.inv = inv;

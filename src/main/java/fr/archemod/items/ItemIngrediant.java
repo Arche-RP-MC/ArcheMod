@@ -2,13 +2,12 @@ package fr.archemod.items;
 
 import net.minecraft.item.ItemStack;
 
-public class Consomable2 extends ItemBase {
-
-    public Consomable2(String name) {
+public class ItemIngrediant extends ItemBase {
+    public ItemIngrediant(String name, int durability) {
         super(name);
         setNoRepair();
         setMaxStackSize(1);
-        setMaxDamage(50);
+        setMaxDamage(durability);
     }
 
     @Override

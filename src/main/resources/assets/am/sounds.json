@@ -1,0 +1,12 @@
+{
+  "key_ring_jangled":
+  {
+    "subtitle": "am.subtitle.key_ring_jangled",
+    "sounds": [ "am:jangled" ]
+  },
+  "sifflet":
+  {
+    "subtitle": "am.subtitle.sifflet",
+    "sounds": [ "am:sifflet" ]
+  }
+}

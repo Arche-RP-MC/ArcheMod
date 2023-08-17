@@ -1,7 +1,5 @@
 package fr.archemod.items.inventory;
 
-import fr.archemod.items.GrandSac;
-import fr.archemod.items.inventory.ItemContainerInventory;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.ClickType;
@@ -11,18 +9,18 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.EnumHand;
 
-public class ItemContainer extends Container {
-    private ItemContainerInventory inv;
+public class ContainerSlot extends Container {
+    private ContainerInventory inv;
     private int rows;
     private int offset;
 
-    public ItemContainer(InventoryPlayer playerInv, ItemContainerInventory inv) {
+    public ContainerSlot(InventoryPlayer playerInv, ContainerInventory inv) {
         this.inv = inv;
         this.rows = inv.getSizeInventory() / inv.getSlotInRow();
         int i = (this.rows - 4) * 18;
         int j;
         int k;
-        System.out.println(inv.getSlotInRow() + ", " + inv.getSizeInventory() + ", " + this.rows);
+
         switch(inv.getSlotInRow()) {
             case 3:
                 offset = 62;
@@ -74,7 +72,7 @@ public class ItemContainer extends Container {
 
             // Prevents backpack-ception (backpack inside backpack) with
             // shift-click
-            if (itemstack.getItem() instanceof GrandSac) return ItemStack.EMPTY;
+            if (itemstack.getItem() instanceof fr.archemod.items.ItemContainer) return ItemStack.EMPTY;
 
             if (index < this.inv.getSizeInventory()) {
                 if (!this.mergeItemStack(itemstack1, this.inv.getSizeInventory(), this.inventorySlots.size(), true))

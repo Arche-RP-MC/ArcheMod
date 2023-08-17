@@ -152,11 +152,11 @@ public class ModItems {
 
     //OUTILS
 
-    public static final Item RASOIR = new Consomable6("rasoir");
+    public static final Item RASOIR = new ItemConsomable("rasoir", 7);
     public static final Item AIGUILLE = new ItemBase("aiguille");
     public static final Item ARROSOIR = new ItemBase("arrosoir");
-    public static final Item BALAI = new Consomable2("balai");
-    public static final Item PLUMEAU = new Consomable2("plumeau");
+    public static final Item BALAI = new ItemConsomable("balai", 50);
+    public static final Item PLUMEAU = new ItemConsomable("plumeau", 50);
     public static final Item CANNE_A_PECHE_TEST = new CustomFishingRod("canne_a_peche_test");
     public static final Item CANNE_DE_VERRIER = new OutilsEnFer("canne_de_verrier");
     public static final Item CISEAUX_A_BOIS = new OutilsEnFer("ciseaux_a_bois");
@@ -315,10 +315,10 @@ public class ModItems {
     public static final Item POMME_DE_TERRE_FARCIE = new FoodBase("pomme_de_terre_farcie", 12, 0.2F, false);
 
 
-    public static final Item POT_DE_CONFITURE_DE_FRUITS_ROUGES = new Consommables("pot_de_confiture_de_fruits_rouges");
-    public static final Item POT_DE_CONFITURE_DE_MYRTILLES = new Consommables("pot_de_confiture_de_myrtilles");
-    public static final Item POT_DE_CONFITURE_D_AGRUMES = new Consommables("pot_de_confiture_d_agrumes");
-    public static final Item POT_DE_MIEL = new Consommables("pot_de_miel");
+    public static final Item POT_DE_CONFITURE_DE_FRUITS_ROUGES = new ItemIngrediant("pot_de_confiture_de_fruits_rouges", 7);
+    public static final Item POT_DE_CONFITURE_DE_MYRTILLES = new ItemIngrediant("pot_de_confiture_de_myrtilles", 7);
+    public static final Item POT_DE_CONFITURE_D_AGRUMES = new ItemIngrediant("pot_de_confiture_d_agrumes", 7);
+    public static final Item POT_DE_MIEL = new ItemIngrediant("pot_de_miel", 7);
     public static final Item POULET_ROTI = new FoodBase("poulet_roti", 8, 0.2F, false);
     public static final Item PRUNEAU = new FoodBase("pruneau", 1, 0.2F, false);
     public static final Item RADIS = new FoodBase("radis", 1, 0.2F, false);
@@ -486,9 +486,9 @@ public class ModItems {
     public static final Item SABRE_EN_BOIS = new ItemBase("sabre_en_bois");
     public static final Item SABRE_EN_FER = new ToolSword("sabre_en_fer", Item.ToolMaterial.IRON);
     public static final Item SCEPTRE_EN_OS = new ItemBase("sceptre_en_os");
-    public static final Item STYLET_EN_ARGENT = new Consommables("stylet_en_argent");
-    public static final Item STYLET_EN_BRONZE = new Consommables("stylet_en_bronze");
-    public static final Item STYLET_EN_OR = new Consommables("stylet_en_or");
+    public static final Item STYLET_EN_ARGENT = new ItemIngrediant("stylet_en_argent", 7);
+    public static final Item STYLET_EN_BRONZE = new ItemIngrediant("stylet_en_bronze", 7);
+    public static final Item STYLET_EN_OR = new ItemIngrediant("stylet_en_or", 7);
     public static final ItemAxe HACHE_D_ARMES_EN_ACIER = new ToolAxe("hache_d_armes_en_acier", Item.ToolMaterial.IRON);
 
     // Graines Plantes botaniste
@@ -948,8 +948,8 @@ public class ModItems {
     public static final Item CARNET_EN_CUIR_VERT_CLAIR = new ItemBase("carnet_en_cuir_vert_clair");
     public static final Item CARNET_EN_CUIR_VIOLET = new ItemBase("carnet_en_cuir_violet");
 
-    public static final Item ENCRIER_ET_PLUME = new Consomable4("encrier_et_plume");
-    public static final Item FUSAIN = new Consommables("fusain");
+    public static final Item ENCRIER_ET_PLUME = new ItemIngrediant("encrier_et_plume", 45);
+    public static final Item FUSAIN = new ItemIngrediant("fusain", 7);
     public static final Item GOUACHE_BLANCHE = new ItemBase("gouache_blanche");
     public static final Item GOUACHE_CYAN = new ItemBase("gouache_cyan");
     public static final Item GOUACHE_JAUNE = new ItemBase("gouache_jaune");
@@ -960,17 +960,17 @@ public class ModItems {
     public static final Item PLUME_D_ECRITURE_EN_FER = new ItemBase("plume_d_ecriture_en_fer");
     public static final Item PLUME_D_ECRITURE_EN_OR = new ItemBase("plume_d_ecriture_en_or");
 
-    public static final Item ENVELOPPE = new Enveloppe("enveloppe");
+    public static final Item ENVELOPPE = new ItemContainer("enveloppe", 14);
     public static final Item GRIMOIRE = new ItemBase("grimoire");
     public static final Item LOT_DE_PAPIERS = new ItemBase("lot_de_papiers");
-    public static final Item PALETTE_DE_PEINTURE = new Consommables("palette_de_peinture");
+    public static final Item PALETTE_DE_PEINTURE = new ItemIngrediant("palette_de_peinture", 7);
     public static final Item PAPIER_A_PLAN = new ItemBase("papier_a_plan");
     public static final Item PAPIER_ECRIT = new ItemBase("papier_ecrit");
     public static final Item PAPIER_HUMIDE = new ItemBase("papier_humide");
     public static final Item PARCHEMIN = new Parchemin("parchemin");
     public static final Item PARCHEMIN_DESCELLE = new ItemBase("parchemin_descelle");
     public static final Item PATE_A_PAPIER = new ItemBase("pate_a_papier");
-    public static final Item PINCEAU = new Consommables("pinceau");
+    public static final Item PINCEAU = new ItemIngrediant("pinceau", 7);
     public static final Item PINCEAU_BROSSE = new OutilsEnFer("pinceau_brosse");
     public static final Item TICKET = new ItemBase("ticket");
     public static final Item JEU_DE_CARTES = new ItemBase("jeu_de_cartes");
@@ -983,13 +983,13 @@ public class ModItems {
     public static final Item FER_FONDU = new ItemBase("fer_fondu");
     public static final Item BARRE_FER = new ItemBase("barre_fer");
     public static final Item PLAQUE_DE_FER = new ItemBase("plaque_de_fer");
-    public static final Item BOBINE_DE_FER = new Consommables("bobine_de_fer");
+    public static final Item BOBINE_DE_FER = new ItemIngrediant("bobine_de_fer", 7);
 
     public static final Item CUIVRE_FONDU = new ItemBase("cuivre_fondu");
     public static final Item BARRE_CUIVRE = new ItemBase("barre_cuivre");
     public static final Item PLAQUE_DE_CUIVRE = new ItemBase("plaque_de_cuivre");
     public static final Item LINGOT_CUIVRE = new ItemBase("lingot_cuivre");
-    public static final Item BOBINE_DE_CUIVRE = new Consommables("bobine_de_cuivre");
+    public static final Item BOBINE_DE_CUIVRE = new ItemIngrediant("bobine_de_cuivre", 7);
 
     public static final Item PLOMB_FONDU = new ItemBase("plomb_fondu");
     public static final Item BARRE_PLOMB = new ItemBase("barre_plomb");
@@ -1005,28 +1005,28 @@ public class ModItems {
     public static final Item BARRE_BRONZE = new ItemBase("barre_bronze");
     public static final Item PLAQUE_DE_BRONZE = new ItemBase("plaque_de_bronze");
     public static final Item LINGOT_BRONZE = new ItemBase("lingot_bronze");
-    public static final Item BOBINE_DE_BRONZE = new Consommables("bobine_de_bronze");
+    public static final Item BOBINE_DE_BRONZE = new ItemIngrediant("bobine_de_bronze", 7);
 
     public static final Item ACIER_FONDU = new ItemBase("acier_fondu");
     public static final Item BARRE_ACIER = new ItemBase("barre_acier");
     public static final Item PLAQUE_D_ACIER = new ItemBase("plaque_d_acier");
     public static final Item LINGOT_ACIER = new ItemBase("lingot_acier");
-    public static final Item BOBINE_D_ACIER = new Consommables("bobine_d_acier");
+    public static final Item BOBINE_D_ACIER = new ItemIngrediant("bobine_d_acier", 7);
 
     public static final Item ARGENT_FONDU = new ItemBase("argent_fondu");
     public static final Item BARRE_ARGENT = new ItemBase("barre_argent");
     public static final Item PLAQUE_D_ARGENT = new ItemBase("plaque_d_argent");
     public static final Item LINGOT_ARGENT = new ItemBase("lingot_argent");
-    public static final Item BOBINE_D_ARGENT = new Consommables("bobine_d_argent");
+    public static final Item BOBINE_D_ARGENT = new ItemIngrediant("bobine_d_argent", 7);
 
     public static final Item OR_FONDU = new ItemBase("or_fondu");
     public static final Item BARRE_OR = new ItemBase("barre_or");
     public static final Item PLAQUE_D_OR = new ItemBase("plaque_d_or");
-    public static final Item BOBINE_D_OR = new Consommables("bobine_d_or");
+    public static final Item BOBINE_D_OR = new ItemIngrediant("bobine_d_or", 7);
 
     public static final Item CLOUS = new ItemBase("clous");
-    public static final Item SIFFLET = new ItemSifflet("sifflet");
-    public static final Item SIFFLET_METAL = new ItemSifflet("sifflet_metal");
+    public static final Item SIFFLET = new ItemSound("sifflet", ModSounds.SIFFLET);
+    public static final Item SIFFLET_METAL = new ItemSound("sifflet_metal", ModSounds.SIFFLET);
 
     //Têtes d'outils
 
@@ -1410,7 +1410,7 @@ public class ModItems {
     // Bijoux SERTIS
 
     //Torque ajouté pour test
-    public static final Item TORQUE_OR_SERTIE = new BijouSerti("torque_or_sertie");
+    public static final Item TORQUE_OR_SERTIE = new ItemContainer("torque_or_sertie", 12);
     /*
     public static final Item TORQUE_ARGENT_SERTIE=new BijouSerti("torque_argent_sertie");
     public static final Item TORQUE_ACIER_SERTIE=new BijouSerti("torque_acier_sertie");
@@ -1702,40 +1702,40 @@ public class ModItems {
 
     //Contenants : sacs, bourses, saccoches, panier
 
-    public static final Item PANIER_EN_OSIER = new PanierEnOsier("panier_en_osier");
+    public static final Item PANIER_EN_OSIER = new ItemContainer("panier_en_osier", 1);
 
-    public static final Item Grand_Sac = new GrandSac("grand_sac");
+    public static final Item Grand_Sac = new ItemContainer("grand_sac", 9);
 
-    public static final Item BOURSE_EN_CUIR = new Bourse("bourse_en_cuir");
-    public static final Item BOURSE_NOIRE = new Bourse("bourse_noire");
-    public static final Item BOURSE_MARRON = new Bourse("bourse_marron");
-    public static final Item BOURSE_CYAN = new Bourse("bourse_cyan");
-    public static final Item BOURSE_GRISE = new Bourse("bourse_grise");
-    public static final Item BOURSE_BLEU_CLAIR = new Bourse("bourse_bleu_clair");
-    public static final Item BOURSE_VERTE = new Bourse("bourse_verte");
-    public static final Item BOURSE_ROSE = new Bourse("bourse_rose");
-    public static final Item BOURSE_MAGENTA = new Bourse("bourse_magenta");
-    public static final Item BOURSE_ORANGE = new Bourse("bourse_orange");
-    public static final Item BOURSE_VIOLETTE = new Bourse("bourse_violette");
-    public static final Item BOURSE_ROUGE = new Bourse("bourse_rouge");
-    public static final Item BOURSE_BLANCHE = new Bourse("bourse_blanche");
-    public static final Item BOURSE_GRISE_CLAIR = new Bourse("bourse_grise_clair");
+    public static final Item BOURSE_EN_CUIR = new ItemContainer("bourse_en_cuir", 0);
+    public static final Item BOURSE_NOIRE = new ItemContainer("bourse_noire", 0);
+    public static final Item BOURSE_MARRON = new ItemContainer("bourse_marron", 0);
+    public static final Item BOURSE_CYAN = new ItemContainer("bourse_cyan", 0);
+    public static final Item BOURSE_GRISE = new ItemContainer("bourse_grise", 0);
+    public static final Item BOURSE_BLEU_CLAIR = new ItemContainer("bourse_bleu_clair", 0);
+    public static final Item BOURSE_VERTE = new ItemContainer("bourse_verte", 0);
+    public static final Item BOURSE_ROSE = new ItemContainer("bourse_rose", 0);
+    public static final Item BOURSE_MAGENTA = new ItemContainer("bourse_magenta", 0);
+    public static final Item BOURSE_ORANGE = new ItemContainer("bourse_orange", 0);
+    public static final Item BOURSE_VIOLETTE = new ItemContainer("bourse_violette", 0);
+    public static final Item BOURSE_ROUGE = new ItemContainer("bourse_rouge", 0);
+    public static final Item BOURSE_BLANCHE = new ItemContainer("bourse_blanche", 0);
+    public static final Item BOURSE_GRISE_CLAIR = new ItemContainer("bourse_grise_clair", 0);
 
-    public static final Item SACOCHE_EN_CUIR = new Sacoche("sacoche_en_cuir");
-    public static final Item SACOCHE_EN_CUIR_NOIR = new Sacoche("sacoche_en_cuir_noir");
-    public static final Item SACOCHE_EN_CUIR_BLEU = new Sacoche("sacoche_en_cuir_bleu");
-    public static final Item SACOCHE_EN_CUIR_MARRON = new Sacoche("sacoche_en_cuir_marron");
-    public static final Item SACOCHE_EN_CUIR_CYAN = new Sacoche("sacoche_en_cuir_cyan");
-    public static final Item SACOCHE_EN_CUIR_GRISE = new Sacoche("sacoche_en_cuir_grise");
-    public static final Item SACOCHE_EN_CUIR_BLEU_CLAIR = new Sacoche("sacoche_en_cuir_bleu_clair");
-    public static final Item SACOCHE_EN_CUIR_VERTE = new Sacoche("sacoche_en_cuir_verte");
-    public static final Item SACOCHE_EN_CUIR_MAGENTA = new Sacoche("sacoche_en_cuir_magenta");
-    public static final Item SACOCHE_EN_CUIR_ORANGE = new Sacoche("sacoche_en_cuir_orange");
-    public static final Item SACOCHE_EN_CUIR_ROSE = new Sacoche("sacoche_en_cuir_rose");
-    public static final Item SACOCHE_EN_CUIR_ROUGE = new Sacoche("sacoche_en_cuir_rouge");
-    public static final Item SACOCHE_EN_CUIR_BLANCHE = new Sacoche("sacoche_en_cuir_blanche");
-    public static final Item SACOCHE_EN_CUIR_JAUNE = new Sacoche("sacoche_en_cuir_jaune");
-    public static final Item SACOCHE_EN_CUIR_GRISE_CLAIR = new Sacoche("sacoche_en_cuir_gris_clair");
+    public static final Item SACOCHE_EN_CUIR = new ItemContainer("sacoche_en_cuir", 8);
+    public static final Item SACOCHE_EN_CUIR_NOIR = new ItemContainer("sacoche_en_cuir_noir", 8);
+    public static final Item SACOCHE_EN_CUIR_BLEU = new ItemContainer("sacoche_en_cuir_bleu", 8);
+    public static final Item SACOCHE_EN_CUIR_MARRON = new ItemContainer("sacoche_en_cuir_marron", 8);
+    public static final Item SACOCHE_EN_CUIR_CYAN = new ItemContainer("sacoche_en_cuir_cyan", 8);
+    public static final Item SACOCHE_EN_CUIR_GRISE = new ItemContainer("sacoche_en_cuir_grise", 8);
+    public static final Item SACOCHE_EN_CUIR_BLEU_CLAIR = new ItemContainer("sacoche_en_cuir_bleu_clair", 8);
+    public static final Item SACOCHE_EN_CUIR_VERTE = new ItemContainer("sacoche_en_cuir_verte", 8);
+    public static final Item SACOCHE_EN_CUIR_MAGENTA = new ItemContainer("sacoche_en_cuir_magenta", 8);
+    public static final Item SACOCHE_EN_CUIR_ORANGE = new ItemContainer("sacoche_en_cuir_orange", 8);
+    public static final Item SACOCHE_EN_CUIR_ROSE = new ItemContainer("sacoche_en_cuir_rose", 8);
+    public static final Item SACOCHE_EN_CUIR_ROUGE = new ItemContainer("sacoche_en_cuir_rouge", 8);
+    public static final Item SACOCHE_EN_CUIR_BLANCHE = new ItemContainer("sacoche_en_cuir_blanche", 8);
+    public static final Item SACOCHE_EN_CUIR_JAUNE = new ItemContainer("sacoche_en_cuir_jaune", 8);
+    public static final Item SACOCHE_EN_CUIR_GRISE_CLAIR = new ItemContainer("sacoche_en_cuir_gris_clair", 8);
 
     //Couturier
 
@@ -1803,11 +1803,9 @@ public class ModItems {
     public static final Item PANTALON_APICULTEUR = new ItemBase("pantalon_apiculteur");
     public static final Item PELUCHE_POULPE = new ItemBase("peluche_poulpe");
     public static final Item PELUCHE_SOURIS = new ItemBase("peluche_souris");
-    public static final Item PETITE_SERVIETTE = new Consomable3("petite_serviette");
     public static final Item POUPEE = new ItemBase("poupee");
     public static final Item ROBE = new ItemBase("robe");
     public static final Item SAC_DE_COUCHAGE = new ItemBase("sac_de_couchage");
-    public static final Item SERVIETTE = new Consomable2("serviette");
     public static final Item SOUS_VETEMENT_FEMININS = new ItemBase("sous_vetement_feminins");
     public static final Item SOUS_VETEMENT_MASCULIN = new ItemBase("sous_vetement_masculin");
     public static final Item TABLIER_EN_CUIR = new ItemBase("tablier_en_cuir");
@@ -2075,21 +2073,22 @@ public class ModItems {
     public static final Item PANTALON_VIOLET = new ItemBase("pantalon_violet");
     public static final Item PANTALON_VERT_CLAIR = new ItemBase("pantalon_vert_clair");
 
-    public static final Item PETITE_SERVIETTE_NOIR = new Consomable3("petite_serviette_noir");
-    public static final Item PETITE_SERVIETTE_BLEU = new Consomable3("petite_serviette_bleu");
-    public static final Item PETITE_SERVIETTE_MARRON = new Consomable3("petite_serviette_marron");
-    public static final Item PETITE_SERVIETTE_CYAN = new Consomable3("petite_serviette_cyan");
-    public static final Item PETITE_SERVIETTE_GRIS = new Consomable3("petite_serviette_gris");
-    public static final Item PETITE_SERVIETTE_BLEU_CLAIR = new Consomable3("petite_serviette_bleu_clair");
-    public static final Item PETITE_SERVIETTE_VERT = new Consomable3("petite_serviette_vert");
-    public static final Item PETITE_SERVIETTE_MAGENTA = new Consomable3("petite_serviette_magenta");
-    public static final Item PETITE_SERVIETTE_ORANGE = new Consomable3("petite_serviette_orange");
-    public static final Item PETITE_SERVIETTE_ROSE = new Consomable3("petite_serviette_rose");
-    public static final Item PETITE_SERVIETTE_ROUGE = new Consomable3("petite_serviette_rouge");
-    public static final Item PETITE_SERVIETTE_JAUNE = new Consomable3("petite_serviette_jaune");
-    public static final Item PETITE_SERVIETTE_GRIS_CLAIR = new Consomable3("petite_serviette_gris_clair");
-    public static final Item PETITE_SERVIETTE_VIOLET = new Consomable3("petite_serviette_violet");
-    public static final Item PETITE_SERVIETTE_VERT_CLAIR = new Consomable3("petite_serviette_vert_clair");
+    public static final Item PETITE_SERVIETTE = new ItemConsomable("petite_serviette", 30);
+    public static final Item PETITE_SERVIETTE_NOIR = new ItemConsomable("petite_serviette_noir", 30);
+    public static final Item PETITE_SERVIETTE_BLEU = new ItemConsomable("petite_serviette_bleu", 30);
+    public static final Item PETITE_SERVIETTE_MARRON = new ItemConsomable("petite_serviette_marron", 30);
+    public static final Item PETITE_SERVIETTE_CYAN = new ItemConsomable("petite_serviette_cyan", 30);
+    public static final Item PETITE_SERVIETTE_GRIS = new ItemConsomable("petite_serviette_gris", 30);
+    public static final Item PETITE_SERVIETTE_BLEU_CLAIR = new ItemConsomable("petite_serviette_bleu_clair", 30);
+    public static final Item PETITE_SERVIETTE_VERT = new ItemConsomable("petite_serviette_vert", 30);
+    public static final Item PETITE_SERVIETTE_MAGENTA = new ItemConsomable("petite_serviette_magenta", 30);
+    public static final Item PETITE_SERVIETTE_ORANGE = new ItemConsomable("petite_serviette_orange", 30);
+    public static final Item PETITE_SERVIETTE_ROSE = new ItemConsomable("petite_serviette_rose", 30);
+    public static final Item PETITE_SERVIETTE_ROUGE = new ItemConsomable("petite_serviette_rouge", 30);
+    public static final Item PETITE_SERVIETTE_JAUNE = new ItemConsomable("petite_serviette_jaune", 30);
+    public static final Item PETITE_SERVIETTE_GRIS_CLAIR = new ItemConsomable("petite_serviette_gris_clair", 30);
+    public static final Item PETITE_SERVIETTE_VIOLET = new ItemConsomable("petite_serviette_violet", 30);
+    public static final Item PETITE_SERVIETTE_VERT_CLAIR = new ItemConsomable("petite_serviette_vert_clair", 30);
 
     public static final Item ROBE_NOIR = new ItemBase("robe_noir");
     public static final Item ROBE_BLEU = new ItemBase("robe_bleu");
@@ -2143,22 +2142,23 @@ public class ModItems {
     public static final Item JUPE_VIOLET = new ItemBase("jupe_violet");
     public static final Item JUPE_VERT_CLAIR = new ItemBase("jupe_vert_clair");
 
-    public static final Item SERVIETTE_NOIR = new Consomable2("serviette_noir");
-    public static final Item SERVIETTE_BLEU = new Consomable2("serviette_bleu");
-    public static final Item SERVIETTE_MARRON = new Consomable2("serviette_marron");
-    public static final Item SERVIETTE_CYAN = new Consomable2("serviette_cyan");
-    public static final Item SERVIETTE_GRIS = new Consomable2("serviette_gris");
-    public static final Item SERVIETTE_BLEU_CLAIR = new Consomable2("serviette_bleu_clair");
-    public static final Item SERVIETTE_VERT = new Consomable2("serviette_vert");
-    public static final Item SERVIETTE_MAGENTA = new Consomable2("serviette_magenta");
-    public static final Item SERVIETTE_ORANGE = new Consomable2("serviette_orange");
-    public static final Item SERVIETTE_ROSE = new Consomable2("serviette_rose");
-    public static final Item SERVIETTE_ROUGE = new Consomable2("serviette_rouge");
-    public static final Item SERVIETTE_BLANC = new Consomable2("serviette_blanc");
-    public static final Item SERVIETTE_JAUNE = new Consomable2("serviette_jaune");
-    public static final Item SERVIETTE_GRIS_CLAIR = new Consomable2("serviette_gris_clair");
-    public static final Item SERVIETTE_VIOLET = new Consomable2("serviette_violet");
-    public static final Item SERVIETTE_VERT_CLAIR = new Consomable2("serviette_vert_clair");
+    public static final Item SERVIETTE = new ItemConsomable("serviette", 50);
+    public static final Item SERVIETTE_NOIR = new ItemConsomable("serviette_noir", 50);
+    public static final Item SERVIETTE_BLEU = new ItemConsomable("serviette_bleu", 50);
+    public static final Item SERVIETTE_MARRON = new ItemConsomable("serviette_marron", 50);
+    public static final Item SERVIETTE_CYAN = new ItemConsomable("serviette_cyan", 50);
+    public static final Item SERVIETTE_GRIS = new ItemConsomable("serviette_gris", 50);
+    public static final Item SERVIETTE_BLEU_CLAIR = new ItemConsomable("serviette_bleu_clair", 50);
+    public static final Item SERVIETTE_VERT = new ItemConsomable("serviette_vert", 50);
+    public static final Item SERVIETTE_MAGENTA = new ItemConsomable("serviette_magenta", 50);
+    public static final Item SERVIETTE_ORANGE = new ItemConsomable("serviette_orange", 50);
+    public static final Item SERVIETTE_ROSE = new ItemConsomable("serviette_rose", 50);
+    public static final Item SERVIETTE_ROUGE = new ItemConsomable("serviette_rouge", 50);
+    public static final Item SERVIETTE_BLANC = new ItemConsomable("serviette_blanc", 50);
+    public static final Item SERVIETTE_JAUNE = new ItemConsomable("serviette_jaune", 50);
+    public static final Item SERVIETTE_GRIS_CLAIR = new ItemConsomable("serviette_gris_clair", 50);
+    public static final Item SERVIETTE_VIOLET = new ItemConsomable("serviette_violet", 50);
+    public static final Item SERVIETTE_VERT_CLAIR = new ItemConsomable("serviette_vert_clair", 50);
 
     public static final Item SOUS_VETEMENT_FEMININ_NOIR = new ItemBase("sous_vetement_feminin_noir");
     public static final Item SOUS_VETEMENT_FEMININ_BLEU = new ItemBase("sous_vetement_feminin_bleu");
@@ -2267,38 +2267,38 @@ public class ModItems {
 
     public static final Item BANDAGE = new ItemBase("bandage");
     public static final Item BANDAGE_ENSANGLANTE = new ItemBase("bandage_ensanglante");
-    public static final Item BAUME_A_LA_CAMOMILLE = new Consomable6("baume_a_la_camomille");
-    public static final Item BAUME_EXFOLIANT = new Consomable6("baume_exfoliant");
+    public static final Item BAUME_A_LA_CAMOMILLE = new ItemConsomable("baume_a_la_camomille", 7);
+    public static final Item BAUME_EXFOLIANT = new ItemConsomable("baume_exfoliant", 7);
     public static final Item BOUGIE = new ItemBase("candle");
     public static final Item BOUTEILLE_ALCOOL_PUR = new BouteilleDeVin("bouteille_alcool_pur", 0, 0.2F, false);
-    public static final Item BOUTEILLE_DE_PARFUM = new Consomable6("bouteille_de_parfum");
+    public static final Item BOUTEILLE_DE_PARFUM = new ItemConsomable("bouteille_de_parfum", 7);
     public static final Item CANNE_BEQUILLE = new ItemBase("canne_bequille");
     public static final Item COLLE = new ItemBase("colle");
     public static final Item EMPLATRE = new ItemBase("emplatre");
     public static final Item EMPLATRE_A_BRULURE = new ItemBase("emplatre_a_brulure");
     public static final Item EMPLATRE_CONTRE_LA_GRATTE = new ItemBase("emplatre_contre_la_gratte");
     public static final Item EMPLATRE_DE_LYS = new ItemBase("emplatre_de_lys");
-    public static final Item ENCENS = new Consomable6("encens");
+    public static final Item ENCENS = new ItemIngrediant("encens", 7);
     public static final Item EXTRAIT_DE_PAVOT_CONCENTRE = new ItemBase("extrait_de_pavot_concentre");
-    public static final Item FARD_A_JOUE = new Consomable6("fard_a_joue");
-    public static final Item HUILE_ESSENTIELLE = new Consommables("huile_essentielle");
+    public static final Item FARD_A_JOUE = new ItemConsomable("fard_a_joue", 7);
+    public static final Item HUILE_ESSENTIELLE = new ItemIngrediant("huile_essentielle", 7);
     public static final Item LEVURE = new ItemBase("levure");
-    public static final Item MASQUE_ARGILE = new Consomable6("masque_argile");
-    public static final Item MASQUE_CHEVEUX = new Consomable6("masque_cheveux");
-    public static final Item NOIR_CHARBON = new Consomable6("noir_charbon");
+    public static final Item MASQUE_ARGILE = new ItemConsomable("masque_argile", 7);
+    public static final Item MASQUE_CHEVEUX = new ItemConsomable("masque_cheveux", 7);
+    public static final Item NOIR_CHARBON = new ItemConsomable("noir_charbon", 7);
     public static final Item ONCE_DE_POISON_LEGER = new ItemBase("once_de_poison_leger");
     public static final Item ONCE_D_HERBORISTE = new ItemBase("once_d_herboriste");
-    public static final Item OPIUM_A_FUMER = new Consomable6("opium_a_fumer");
-    public static final Item PATE_A_DENT = new Consomable6("pate_a_dent");
+    public static final Item OPIUM_A_FUMER = new ItemConsomable("opium_a_fumer", 7);
+    public static final Item PATE_A_DENT = new ItemConsomable("pate_a_dent", 7);
     public static final Item PATE_DIVERSE = new ItemBase("pate_diverse");
-    public static final Item POUDRE_DE_TEINT = new Consomable6("poudre_de_teint");
-    public static final Item POUDRE_QUELCONQUE = new Consomable6("poudre_quelconque");
-    public static final Item ROUGE_A_LEVRES = new Consomable6("rouge_a_levres");
-    public static final Item SAVON = new Consomable5("savon");
+    public static final Item POUDRE_DE_TEINT = new ItemConsomable("poudre_de_teint", 7);
+    public static final Item POUDRE_QUELCONQUE = new ItemConsomable("poudre_quelconque", 7);
+    public static final Item ROUGE_A_LEVRES = new ItemConsomable("rouge_a_levres", 7);
+    public static final Item SAVON = new ItemConsomable("savon", 7);
     public static final Item SEAU_DE_COLLE = new ItemBase("seau_de_colle");
     public static final Item SOUDE = new ItemBase("soude");
-    public static final Item TABAC = new Consomable6("tabac");
-    public static final Item VERNIS = new Consommables("vernis");
+    public static final Item TABAC = new ItemConsomable("tabac", 7);
+    public static final Item VERNIS = new ItemIngrediant("vernis", 7);
 
     // Porcelaine
     public static final Item TASSE_EN_PORCELAINE = new ItemBase("tasse_en_porcelaine");
@@ -2420,7 +2420,7 @@ public class ModItems {
 
 
     // Divers - Plantes
-    public static final Item BOUQUET_DE_FLEURS = new Bourse("bouquet_de_fleurs");
+    public static final Item BOUQUET_DE_FLEURS = new ItemContainer("bouquet_de_fleurs", 0);
     public static final Item BOUQUET_GARNI = new ItemBase("bouquet_garni");
     public static final Item ECORCE = new ItemBase("ecorce");
     public static final Item FARINE = new ItemBase("farine");

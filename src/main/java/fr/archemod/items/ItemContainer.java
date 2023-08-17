@@ -8,18 +8,18 @@ import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.EnumHand;
 import net.minecraft.world.World;
 
-public class Enveloppe extends ItemBase {
-    public Enveloppe(String name) {
+public class ItemContainer extends ItemBase {
+    private int modGuild;
+
+    public ItemContainer(String name, int guiNumberForGuiHandlerCase) {
         super(name);
         setMaxStackSize(1);
+        this.modGuild = guiNumberForGuiHandlerCase;
     }
 
-    /**
-     * Used to open the gui
-     */
     @Override
     public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) {
-        playerIn.openGui(ArcheMod.INSTANCE, 14, worldIn, (int) playerIn.posX, (int) playerIn.posY, (int) playerIn.posZ);
+        playerIn.openGui(ArcheMod.INSTANCE, modGuild, worldIn, (int) playerIn.posX, (int) playerIn.posY, (int) playerIn.posZ);
         return new ActionResult<>(EnumActionResult.SUCCESS, playerIn.getHeldItem(handIn));
     }
 }

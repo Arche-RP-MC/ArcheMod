@@ -10,16 +10,14 @@ import net.minecraft.util.EnumHand;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.world.World;
 
-public class PorteClef extends ItemBase {
+public class PorteClef extends ItemContainer {
     public PorteClef(String name) {
-        super(name);
+        super(name, 13);
     }
 
     @Override
     public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) {
-        playerIn.openGui(ArcheMod.INSTANCE, 13, worldIn, (int) playerIn.posX, (int) playerIn.posY, (int) playerIn.posZ);
-        worldIn.playSound(playerIn, playerIn.getPosition(), ModSounds.ADD_KEY_KEYRING, SoundCategory.PLAYERS, 1f, 1f);
-        return new ActionResult<>(EnumActionResult.SUCCESS, playerIn.getHeldItem(handIn));
+        return super.onItemRightClick(worldIn, playerIn, handIn);
     }
 
     /*@Override

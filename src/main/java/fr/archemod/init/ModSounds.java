@@ -8,10 +8,12 @@ import net.minecraftforge.fml.common.registry.ForgeRegistries;
 public class ModSounds {
     // Déclarer les SoundEvents ici
     public static SoundEvent ADD_KEY_KEYRING;
+    public static SoundEvent SIFFLET;
 
     public static void registerSounds() {
         // Initialiser les SoundEvents ici
-        ADD_KEY_KEYRING = registerSound("key_ring");
+        ADD_KEY_KEYRING = registerSound("key_ring_jangled");
+        SIFFLET = registerSound("sifflet");
     }
 
     private static SoundEvent registerSound(String soundName) {
