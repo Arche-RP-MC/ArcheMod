@@ -8,6 +8,7 @@ import net.minecraft.item.Item;
 public class ItemBase extends Item implements IHasModel {
 
     public ItemBase(String name) {
+        setMaxStackSize(50);
         setTranslationKey(name);
         setRegistryName(name);
         setCreativeTab(ArcheMod.archeCreativeTabs);

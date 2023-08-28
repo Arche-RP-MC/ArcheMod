@@ -100,6 +100,7 @@ public class ArcheMod {
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
         ArcheNetwork.init();
+        proxy.init();
         ModRecipes.instance.initRecipes();
         ModSounds.registerSounds();
     }

@@ -1,13 +1,13 @@
 package fr.archemod.gui;
 
-import fr.archemod.items.inventory.ContainerInventory;
+import fr.archemod.items.container.ContainerItemInventory;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.util.ResourceLocation;
 import org.lwjgl.opengl.GL11;
 
 public class ItemContainerGUI3 extends ItemContainerGUI36 {
 
-    public ItemContainerGUI3(InventoryPlayer playerInv, ContainerInventory inv, ResourceLocation pathGUI) {
+    public ItemContainerGUI3(InventoryPlayer playerInv, ContainerItemInventory inv, ResourceLocation pathGUI) {
         super(playerInv, inv, pathGUI);
     }
 

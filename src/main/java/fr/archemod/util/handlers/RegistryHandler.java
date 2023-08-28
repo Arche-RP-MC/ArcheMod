@@ -1,6 +1,7 @@
 package fr.archemod.util.handlers;
 
 import fr.archemod.ArcheMod;
+import fr.archemod.blocks.container.ContainerBlockInventory;
 import fr.archemod.blocks.tileentity.*;
 import fr.archemod.chat.capabilities.description.DescriptionCapability;
 import fr.archemod.chat.capabilities.indicator.ArcheChatCapability;
@@ -58,7 +59,7 @@ public class RegistryHandler {
         event.getRegistry().registerAll(ModBlocks.BLOCKS.toArray(new Block[0]));
         NetworkRegistry.INSTANCE.registerGuiHandler(ArcheMod.INSTANCE, new GuiHandler());
 
-        GameRegistry.registerTileEntity(TileEntityPlacardHRP.class, new ResourceLocation(Reference.MOD_ID, "TileEntityPlacardHRP"));
+        GameRegistry.registerTileEntity(ContainerBlockInventory.class, new ResourceLocation(Reference.MOD_ID, "TileEntityPlacardHRP"));
         GameRegistry.registerTileEntity(TileEntityTable.class, new ResourceLocation(Reference.MOD_ID, "TileEntityTable"));
         GameRegistry.registerTileEntity(TileEntityEcrinABijoux.class, new ResourceLocation(Reference.MOD_ID, "TileEntityEcrinABijoux"));
         GameRegistry.registerTileEntity(TileEntityLightBlock.class, new ResourceLocation(Reference.MOD_ID, "TileEntityLightBlock"));

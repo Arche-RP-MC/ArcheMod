@@ -1,4 +1,4 @@
-package fr.archemod.items.inventory;
+package fr.archemod.items.container;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
@@ -12,14 +12,14 @@ import net.minecraft.util.text.TextComponentString;
 import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraftforge.common.util.Constants;
 
-public class ContainerInventory implements IInventory {
+public class ContainerItemInventory implements IInventory {
     private int size;
     private int slotInRow;
     private final NonNullList<ItemStack> content;
     private String name;
     private int inventoryStackLimit;
 
-    public ContainerInventory(ItemStack container, int size, String name, int inventoryStackLimit, int slotInRow) {
+    public ContainerItemInventory(ItemStack container, int size, String name, int inventoryStackLimit, int slotInRow) {
         this.slotInRow = slotInRow;
         this.inventoryStackLimit = inventoryStackLimit;
         this.name = name;
@@ -38,7 +38,7 @@ public class ContainerInventory implements IInventory {
         }
     }
 
-    public void writeToNBT(NBTTagCompound comp) {
+    public NBTTagCompound writeToNBT(NBTTagCompound comp) {
         NBTTagList nbtlist = new NBTTagList();
 
         for (int i = 0; i < this.size; i++) {
@@ -48,6 +48,7 @@ public class ContainerInventory implements IInventory {
             nbtlist.appendTag(comp1);
         }
         comp.setTag("Inventory", nbtlist);
+        return comp;
     }
 
     public Slot getNewSlot(IInventory inv, int index, int x, int y) {

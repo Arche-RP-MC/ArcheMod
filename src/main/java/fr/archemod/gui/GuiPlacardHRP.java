@@ -1,5 +1,7 @@
 package fr.archemod.gui;
 
+import fr.archemod.blocks.container.ContainerBlockSlot;
+import fr.archemod.blocks.container.ContainerBlockInventory;
 import fr.archemod.blocks.container.ContainerPlacardHRP;
 import fr.archemod.blocks.tileentity.TileEntityPlacardHRP;
 import net.minecraft.client.gui.inventory.GuiContainer;

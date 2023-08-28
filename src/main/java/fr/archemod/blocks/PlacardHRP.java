@@ -1,6 +1,7 @@
 package fr.archemod.blocks;
 
 import fr.archemod.ArcheMod;
+import fr.archemod.blocks.container.ContainerBlockInventory;
 import fr.archemod.blocks.tileentity.TileEntityPlacardHRP;
 import fr.archemod.init.ModBlocks;
 import net.minecraft.block.ITileEntityProvider;
@@ -40,7 +41,7 @@ public class PlacardHRP extends BlockBase implements ITileEntityProvider {
 
     @Override
     public TileEntity createNewTileEntity(World worldIn, int meta) {
-        return new TileEntityPlacardHRP();
+        return new ContainerBlockInventory();
     }
 
     @Override
@@ -76,7 +77,7 @@ public class PlacardHRP extends BlockBase implements ITileEntityProvider {
         TileEntity tile = worldIn.getTileEntity(pos);
         if (tile instanceof TileEntityPlacardHRP) {
             if (stack.hasDisplayName()) {
-                ((TileEntityPlacardHRP) tile).setCustomName(stack.getDisplayName());
+                ((ContainerBlockInventory) tile).setCustomName(stack.getDisplayName());
             }
         }
     }

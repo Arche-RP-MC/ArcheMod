@@ -1,4 +1,4 @@
-package fr.archemod.items.inventory;
+package fr.archemod.items.container;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
@@ -9,12 +9,12 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.EnumHand;
 
-public class ContainerSlot extends Container {
-    private ContainerInventory inv;
+public class ContainerItemSlot extends Container {
+    private ContainerItemInventory inv;
     private int rows;
     private int offset;
 
-    public ContainerSlot(InventoryPlayer playerInv, ContainerInventory inv) {
+    public ContainerItemSlot(InventoryPlayer playerInv, ContainerItemInventory inv) {
         this.inv = inv;
         this.rows = inv.getSizeInventory() / inv.getSlotInRow();
         int i = (this.rows - 4) * 18;
