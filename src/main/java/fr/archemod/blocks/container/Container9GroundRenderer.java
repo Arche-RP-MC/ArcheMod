@@ -1,6 +1,5 @@
 package fr.archemod.blocks.container;
 
-import fr.archemod.blocks.tileentity.TileEntityPlacardHRP;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.OpenGlHelper;
