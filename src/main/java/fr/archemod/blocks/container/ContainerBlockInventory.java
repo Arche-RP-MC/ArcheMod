@@ -15,11 +15,21 @@ import net.minecraft.util.NonNullList;
 public class ContainerBlockInventory extends TileEntityLockableLoot {
 
     private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(9, ItemStack.EMPTY);
-    private int slotInRow = 3;
+    private String id;
+    private int size;
+    private int slotInRow;
+    private int invStackLimit;
+
+    public ContainerBlockInventory(String id, int size, int slotInRow, int invStackLimit) {
+        this.id = id;
+        this.size = size;
+        this.slotInRow = slotInRow;
+        this.invStackLimit = invStackLimit;
+    }
 
     @Override
     public int getSizeInventory() {
-        return 9;
+        return this.size;
     }
 
     @Override
@@ -42,7 +52,7 @@ public class ContainerBlockInventory extends TileEntityLockableLoot {
 
     @Override
     public String getName() {
-        return "Placard HRP";
+        return "Conteneur";
     }
 
     @Override
@@ -83,12 +93,12 @@ public class ContainerBlockInventory extends TileEntityLockableLoot {
 
     @Override
     public int getInventoryStackLimit() {
-        return 50;
+        return this.invStackLimit;
     }
 
     @Override
     public String getGuiID() {
-        return "am:placardhrp";
+        return this.id;
     }
 
     @Override

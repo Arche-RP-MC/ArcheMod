@@ -2,6 +2,7 @@ package fr.archemod.proxy;
 
 import fr.archemod.blocks.container.Container9GroundRenderer;
 import fr.archemod.blocks.container.ContainerBlockInventory;
+import fr.archemod.blocks.container.ContainerBlockInventoryVisible;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.model.ModelLoader;
@@ -15,6 +16,6 @@ public class ClientProxy extends CommonProxy {
 
     @Override
     public void init() {
-        ClientRegistry.bindTileEntitySpecialRenderer(ContainerBlockInventory.class, new Container9GroundRenderer());
+        ClientRegistry.bindTileEntitySpecialRenderer(ContainerBlockInventoryVisible.class, new Container9GroundRenderer());
     }
 }

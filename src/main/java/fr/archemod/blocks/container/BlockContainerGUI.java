@@ -1,20 +1,18 @@
-package fr.archemod.gui;
+package fr.archemod.blocks.container;
 
-import fr.archemod.items.container.ContainerItemInventory;
-import fr.archemod.items.container.ContainerItemSlot;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.util.ResourceLocation;
 import org.lwjgl.opengl.GL11;
 
-public class ItemContainerGUI36 extends GuiContainer {
+public class BlockContainerGUI extends GuiContainer {
     private ResourceLocation texture;
-    protected ContainerItemInventory inv;
+    protected ContainerBlockInventory inv;
     protected InventoryPlayer playerInv;
     public int rows;
 
-    public ItemContainerGUI36(InventoryPlayer playerInv, ContainerItemInventory inv, ResourceLocation pathGUI) {
-        super(new ContainerItemSlot(playerInv, inv));
+    public BlockContainerGUI(InventoryPlayer playerInv, ContainerBlockInventory inv, ResourceLocation pathGUI) {
+        super(new ContainerBlockSlot(playerInv, inv));
         this.texture = pathGUI;
         this.playerInv = playerInv;
         this.inv = inv;
@@ -24,8 +22,6 @@ public class ItemContainerGUI36 extends GuiContainer {
         // Height of the GUI using the number of rows
         this.ySize = 114 + this.rows * 18;
     }
-
-    public ResourceLocation getTexture() { return texture; }
 
     @Override
     protected void drawGuiContainerForegroundLayer(int x, int y) {}

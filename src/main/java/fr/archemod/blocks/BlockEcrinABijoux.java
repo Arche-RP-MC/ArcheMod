@@ -1,7 +1,7 @@
 package fr.archemod.blocks;
 
 import fr.archemod.ArcheMod;
-import fr.archemod.blocks.tileentity.TileEntityEcrinABijoux;
+import fr.archemod.blocks.container.ContainerBlockInventory;
 import fr.archemod.blocks.tileentity.TileEntityTable;
 import net.minecraft.block.BlockHorizontal;
 import net.minecraft.block.ITileEntityProvider;
@@ -43,7 +43,7 @@ public class BlockEcrinABijoux extends BlockBase implements ITileEntityProvider 
 
     @Override
     public TileEntity createNewTileEntity(World worldIn, int meta) {
-        return new TileEntityEcrinABijoux();
+        return new ContainerBlockInventory("am:ecrin_a_bijoux", 9, 9, 1);
     }
 
     @Override
@@ -70,8 +70,8 @@ public class BlockEcrinABijoux extends BlockBase implements ITileEntityProvider 
     @Override
     public void breakBlock(World world, BlockPos pos, IBlockState state) {
         TileEntity tileentity = world.getTileEntity(pos);
-        if (tileentity instanceof TileEntityEcrinABijoux)
-            InventoryHelper.dropInventoryItems(world, pos, (TileEntityEcrinABijoux) tileentity);
+        if (tileentity instanceof ContainerBlockInventory)
+            InventoryHelper.dropInventoryItems(world, pos, (ContainerBlockInventory) tileentity);
         world.removeTileEntity(pos);
         super.breakBlock(world, pos, state);
     }
@@ -156,6 +156,4 @@ public class BlockEcrinABijoux extends BlockBase implements ITileEntityProvider 
     public int quantityDropped(Random random) {
         return 1;
     }
-
-
 }

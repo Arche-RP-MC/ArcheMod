@@ -2,8 +2,7 @@ package fr.archemod.blocks;
 
 import fr.archemod.ArcheMod;
 import fr.archemod.blocks.container.ContainerBlockInventory;
-import fr.archemod.blocks.tileentity.TileEntityPlacardHRP;
-import fr.archemod.init.ModBlocks;
+import fr.archemod.blocks.container.ContainerBlockInventoryVisible;
 import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -11,7 +10,6 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.InventoryHelper;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.BlockRenderLayer;
@@ -35,13 +33,12 @@ public class PlacardHRP extends BlockBase implements ITileEntityProvider {
     public PlacardHRP(String name, Material material, float hardness, float resistance, SoundType soundType) {
         super(name, material, hardness, resistance, soundType);
         this.setLightOpacity(0);
-
     }
 
 
     @Override
     public TileEntity createNewTileEntity(World worldIn, int meta) {
-        return new ContainerBlockInventory();
+        return new ContainerBlockInventoryVisible("am:placardhrp", 9, 3, 50);
     }
 
     @Override
@@ -55,8 +52,8 @@ public class PlacardHRP extends BlockBase implements ITileEntityProvider {
     @Override
     public void breakBlock(World world, BlockPos pos, IBlockState state) {
         TileEntity tileentity = world.getTileEntity(pos);
-        if (tileentity instanceof TileEntityPlacardHRP)
-            InventoryHelper.dropInventoryItems(world, pos, (TileEntityPlacardHRP) tileentity);
+        if (tileentity instanceof ContainerBlockInventory)
+            InventoryHelper.dropInventoryItems(world, pos, (ContainerBlockInventory) tileentity);
         world.removeTileEntity(pos);
         super.breakBlock(world, pos, state);
     }
@@ -75,7 +72,7 @@ public class PlacardHRP extends BlockBase implements ITileEntityProvider {
     @Override
     public void onBlockPlacedBy(World worldIn, BlockPos pos, IBlockState state, EntityLivingBase placer, ItemStack stack) {
         TileEntity tile = worldIn.getTileEntity(pos);
-        if (tile instanceof TileEntityPlacardHRP) {
+        if (tile instanceof ContainerBlockInventory) {
             if (stack.hasDisplayName()) {
                 ((ContainerBlockInventory) tile).setCustomName(stack.getDisplayName());
             }
@@ -125,15 +122,4 @@ public class PlacardHRP extends BlockBase implements ITileEntityProvider {
             return true;
         }
     }
-
-    @Override
-    public Item getItemDropped(IBlockState state, Random rand, int fortune) {
-        return Item.getItemFromBlock(ModBlocks.PLACARD_HRP);
-    }
-
-    @Override
-    public int quantityDropped(Random random) {
-        return 1;
-    }
-
 }

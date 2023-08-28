@@ -2,13 +2,13 @@ package fr.archemod.util.handlers;
 
 import fr.archemod.ArcheMod;
 import fr.archemod.blocks.container.ContainerBlockInventory;
+import fr.archemod.blocks.container.ContainerBlockInventoryVisible;
 import fr.archemod.blocks.tileentity.*;
 import fr.archemod.chat.capabilities.description.DescriptionCapability;
 import fr.archemod.chat.capabilities.indicator.ArcheChatCapability;
 import fr.archemod.gui.GuiHandler;
 import fr.archemod.init.ModBlocks;
 import fr.archemod.init.ModItems;
-import fr.archemod.init.ModSounds;
 import fr.archemod.util.IHasModel;
 import fr.archemod.util.Reference;
 import net.minecraft.block.Block;
@@ -59,9 +59,9 @@ public class RegistryHandler {
         event.getRegistry().registerAll(ModBlocks.BLOCKS.toArray(new Block[0]));
         NetworkRegistry.INSTANCE.registerGuiHandler(ArcheMod.INSTANCE, new GuiHandler());
 
-        GameRegistry.registerTileEntity(ContainerBlockInventory.class, new ResourceLocation(Reference.MOD_ID, "TileEntityPlacardHRP"));
+        GameRegistry.registerTileEntity(ContainerBlockInventoryVisible.class, new ResourceLocation(Reference.MOD_ID, "ContainerVisible"));
+        GameRegistry.registerTileEntity(ContainerBlockInventory.class, new ResourceLocation(Reference.MOD_ID, "Container"));
         GameRegistry.registerTileEntity(TileEntityTable.class, new ResourceLocation(Reference.MOD_ID, "TileEntityTable"));
-        GameRegistry.registerTileEntity(TileEntityEcrinABijoux.class, new ResourceLocation(Reference.MOD_ID, "TileEntityEcrinABijoux"));
         GameRegistry.registerTileEntity(TileEntityLightBlock.class, new ResourceLocation(Reference.MOD_ID, "TileEntityLightBlock"));
         //GameRegistry.registerTileEntity(TileEntityLightBlock2.class, new ResourceLocation(Reference.MOD_ID,"TileEntityLightBlock2"));
         GameRegistry.registerTileEntity(TileEntityFishCase.class, new ResourceLocation(Reference.MOD_ID, "TileEntityFishCase"));
