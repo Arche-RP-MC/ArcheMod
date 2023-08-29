@@ -26,9 +26,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 import java.util.Random;
 
-public class BlockEcrinABijoux extends BlockBase implements ITileEntityProvider {
-
-    public static final PropertyDirection FACING = BlockHorizontal.FACING;
+public class BlockEcrinABijoux extends BlockBaseOriented implements ITileEntityProvider {
     private static final AxisAlignedBB AXIS_ALIGNED_BB_SOUTH = new AxisAlignedBB(0.25D, 0.0D, 0.17D, 0.75D, 0.4D, 0.67D); //OK
     private static final AxisAlignedBB AXIS_ALIGNED_BB_NORTH = new AxisAlignedBB(0.25D, 0.0D, 0.37D, 0.75D, 0.4D, 0.87D); //OK
     private static final AxisAlignedBB AXIS_ALIGNED_BB_EAST = new AxisAlignedBB(0.17D, 0.0D, 0.25D, 0.67D, 0.4D, 0.75D); //OK
@@ -36,21 +34,11 @@ public class BlockEcrinABijoux extends BlockBase implements ITileEntityProvider 
 
     public BlockEcrinABijoux(String name, Material material, float hardness, float resistance, SoundType soundType) {
         super(name, material, hardness, resistance, soundType);
-        setLightLevel(0F);
-        setLightOpacity(0);
-        this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
     }
 
     @Override
     public TileEntity createNewTileEntity(World worldIn, int meta) {
         return new ContainerBlockInventory("am:ecrin_a_bijoux", 9, 9, 1);
-    }
-
-    @Override
-    public boolean eventReceived(IBlockState state, World worldIn, BlockPos pos, int eventID, int eventParam) {
-        super.eventReceived(state, worldIn, pos, eventID, eventParam);
-        TileEntity tileentity = worldIn.getTileEntity(pos);
-        return tileentity == null ? false : tileentity.receiveClientEvent(eventID, eventParam);
     }
 
     @Override
@@ -96,64 +84,8 @@ public class BlockEcrinABijoux extends BlockBase implements ITileEntityProvider 
         }
     }
 
-    @SideOnly(Side.CLIENT)
-    public BlockRenderLayer getRenderLayer() {
-        return BlockRenderLayer.CUTOUT;
-    }
-
-    @Override
-    public EnumBlockRenderType getRenderType(IBlockState state) {
-        return EnumBlockRenderType.MODEL;
-    }
-
-    @Override
-    protected net.minecraft.block.state.BlockStateContainer createBlockState() {
-        return new net.minecraft.block.state.BlockStateContainer(this, new IProperty[]{FACING});
-    }
-
-    @Override
-    public IBlockState withRotation(IBlockState state, Rotation rot) {
-        return state.withProperty(FACING, rot.rotate((EnumFacing) state.getValue(FACING)));
-    }
-
-    @Override
-    public IBlockState withMirror(IBlockState state, Mirror mirrorIn) {
-        return state.withRotation(mirrorIn.toRotation((EnumFacing) state.getValue(FACING)));
-    }
-
-    @Override
-    public IBlockState getStateFromMeta(int meta) {
-        return this.getDefaultState().withProperty(FACING, EnumFacing.byIndex(meta));
-    }
-
-    @Override
-    public int getMetaFromState(IBlockState state) {
-        return ((EnumFacing) state.getValue(FACING)).getIndex();
-    }
-
-    @Override
-    public IBlockState getStateForPlacement(World worldIn, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta,
-                                            EntityLivingBase placer) {
-        return this.getDefaultState().withProperty(FACING, placer.getHorizontalFacing().getOpposite());
-    }
-
     @Override
     public boolean isOpaqueCube(IBlockState state) {
         return false;
-    }
-
-    @Override
-    public BlockFaceShape getBlockFaceShape(IBlockAccess world, IBlockState state, BlockPos pos, EnumFacing face) {
-        return BlockFaceShape.UNDEFINED;
-    }
-
-    @Override
-    public boolean canSilkHarvest(World world, BlockPos pos, IBlockState state, EntityPlayer player) {
-        return false;
-    }
-
-    @Override
-    public int quantityDropped(Random random) {
-        return 1;
     }
 }

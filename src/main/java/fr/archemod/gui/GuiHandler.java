@@ -121,6 +121,8 @@ public class GuiHandler implements IGuiHandler {
                 return new ItemContainerGUI(player.inventory, new ContainerItemInventory(player.getHeldItem(EnumHand.MAIN_HAND), 12, "Porte-clef", 1, 6), GUI6);
             case 14:
                 return new ItemContainerGUI(player.inventory, new ContainerItemInventory(player.getHeldItem(EnumHand.MAIN_HAND), 3, "Enveloppe", 1, 3), GUI3);
+            case 20:
+                return new FutGUI(player.inventory, (ContainerFut) world.getTileEntity(new BlockPos(x, y, z)));
         }
         return null;
     }

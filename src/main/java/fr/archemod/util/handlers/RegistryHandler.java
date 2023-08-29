@@ -3,6 +3,7 @@ package fr.archemod.util.handlers;
 import fr.archemod.ArcheMod;
 import fr.archemod.blocks.container.ContainerBlockInventory;
 import fr.archemod.blocks.container.ContainerBlockInventoryVisible;
+import fr.archemod.blocks.container.ContainerFut;
 import fr.archemod.blocks.tileentity.*;
 import fr.archemod.chat.capabilities.description.DescriptionCapability;
 import fr.archemod.chat.capabilities.indicator.ArcheChatCapability;
@@ -23,6 +24,8 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+
+import java.sql.Ref;
 
 /**
  * This is a special class that listens to registry events, to allow creation of mod blocks and items at the proper time.
@@ -61,6 +64,7 @@ public class RegistryHandler {
 
         GameRegistry.registerTileEntity(ContainerBlockInventoryVisible.class, new ResourceLocation(Reference.MOD_ID, "ContainerVisible"));
         GameRegistry.registerTileEntity(ContainerBlockInventory.class, new ResourceLocation(Reference.MOD_ID, "Container"));
+        GameRegistry.registerTileEntity(ContainerFut.class, new ResourceLocation(Reference.MOD_ID, "Fut"));
         GameRegistry.registerTileEntity(TileEntityTable.class, new ResourceLocation(Reference.MOD_ID, "TileEntityTable"));
         GameRegistry.registerTileEntity(TileEntityLightBlock.class, new ResourceLocation(Reference.MOD_ID, "TileEntityLightBlock"));
         //GameRegistry.registerTileEntity(TileEntityLightBlock2.class, new ResourceLocation(Reference.MOD_ID,"TileEntityLightBlock2"));

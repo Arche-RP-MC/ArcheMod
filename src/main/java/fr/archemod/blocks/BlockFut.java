@@ -1,48 +1,40 @@
 package fr.archemod.blocks;
 
 import fr.archemod.ArcheMod;
+import fr.archemod.blocks.container.ContainerFut;
 import fr.archemod.blocks.tileentity.TileEntityBarril;
-import fr.archemod.init.ModBlocks;
 import fr.archemod.init.ModItems;
-import net.minecraft.block.Block;
 import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
-import net.minecraft.block.properties.PropertyInteger;
+import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
-import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
+import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.TextComponentString;
+import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class BlockBarril extends Block implements ITileEntityProvider {
+import javax.annotation.Nullable;
 
-    public static final PropertyInteger ORIENTATION = PropertyInteger.create("orientation", 0, 3);
+public class BlockFut extends BlockBaseOriented implements ITileEntityProvider {
 
-    public BlockBarril(String name, Material material, float hardness, float resistance, SoundType soundType) {
-        super(material);
-        setTranslationKey(name);
-        setRegistryName(name);
-        setSoundType(soundType);
-        setHardness(hardness);
-        setResistance(resistance);
-        setCreativeTab(ArcheMod.archeCreativeTabs);
-
-        ModBlocks.BLOCKS.add(this);
-        ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
+    public BlockFut(String name, Material material, float hardness, float resistance, SoundType soundType) {
+        super(name, material, hardness, resistance, soundType);
     }
 
     @Override
     public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
-        if (!worldIn.isRemote) {
+        playerIn.openGui(ArcheMod.INSTANCE, 20, worldIn, pos.getX(), pos.getY(), pos.getZ());
+        /*if (!worldIn.isRemote) {
             TileEntity tileEntity = worldIn.getTileEntity(pos);
             if (tileEntity instanceof TileEntityBarril) {
                 TileEntityBarril tileEntityBarril = (TileEntityBarril) tileEntity;
@@ -180,35 +172,13 @@ public class BlockBarril extends Block implements ITileEntityProvider {
                     }
                 }
             }
-        }
-        return true;
-    }
-
-    @Override
-    public TileEntity createTileEntity(World world, IBlockState state) {
-        return new TileEntityBarril();
-    }
-
-    @Override
-    public boolean hasTileEntity(IBlockState state) {
+        }*/
         return true;
     }
 
     @Override
     public void onBlockPlacedBy(World worldIn, BlockPos pos, IBlockState state, EntityLivingBase placer, ItemStack stack) {
-        if (stack.hasTagCompound()) {
-            TileEntity tileEntity = worldIn.getTileEntity(pos);
-            if (tileEntity instanceof TileEntityBarril) {
-                TileEntityBarril tileEntityBarril = (TileEntityBarril) tileEntity;
-                NBTTagCompound compound = stack.getTagCompound();
-                if (compound.hasKey("contenu")) {
-                    tileEntityBarril.setContenu(compound.getString("contenu"));
-                }
-                if (compound.hasKey("charge")) {
-                    tileEntityBarril.setCharge(compound.getInteger("charge"));
-                }
-            }
-        }
+
     }
 
     @Override
@@ -231,7 +201,12 @@ public class BlockBarril extends Block implements ITileEntityProvider {
     }
 
     @Override
+    public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
+        return new AxisAlignedBB(0,0,0,1,1,1);
+    }
+
+    @Override
     public TileEntity createNewTileEntity(World worldIn, int meta) {
-        return null;
+        return new ContainerFut("fut_vide", 15);
     }
 }

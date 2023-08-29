@@ -8,7 +8,7 @@ import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.util.ResourceLocation;
 
 public class GuiBaril extends GuiContainer {
-    private static final ResourceLocation background = new ResourceLocation("am", "textures/gui/container/baril.png");
+    private static final ResourceLocation background = new ResourceLocation("am", "textures/gui/container/fut.png");
     private TileEntityBaril tile;
 
     public GuiBaril(TileEntityBaril tile, InventoryPlayer playerInv, EntityPlayer player) {
