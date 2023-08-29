@@ -26,7 +26,7 @@ public class GuiHandler implements IGuiHandler {
             case 1:
                 return new ContainerItemSlot(player.inventory, new ContainerItemInventory(player.getHeldItem(EnumHand.MAIN_HAND), 12, "Panier en osier", 10, 6));
             case 2:
-                return new ContainerBlockSlot(player.inventory, (ContainerBlockInventory) world.getTileEntity(new BlockPos(x, y, z)));
+                return new ContainerBlockSlot(player.inventory, (TileEntityBlockInventory) world.getTileEntity(new BlockPos(x, y, z)));
             case 3: //Table
                 TileEntity tileTable = world.getTileEntity(new BlockPos(x, y, z));
                 if (tileTable instanceof TileEntityTable) {
@@ -35,7 +35,7 @@ public class GuiHandler implements IGuiHandler {
                     return null;
                 }
             case 5:
-                return new ContainerBlockSlot(player.inventory, (ContainerBlockInventory) world.getTileEntity(new BlockPos(x, y, z)));
+                return new ContainerBlockSlot(player.inventory, (TileEntityBlockInventory) world.getTileEntity(new BlockPos(x, y, z)));
             case 6:
                 TileEntity fishCase = world.getTileEntity(new BlockPos(x, y, z));
                 if (fishCase instanceof TileEntityFishCase) {
@@ -79,7 +79,7 @@ public class GuiHandler implements IGuiHandler {
             case 1:
                 return new ItemContainerGUI(player.inventory, new ContainerItemInventory(player.getHeldItem(EnumHand.MAIN_HAND), 12, "Panier en osier", 10, 6), GUI6);
             case 2:
-                return new BlockContainerGUI(player.inventory, (ContainerBlockInventory) world.getTileEntity(new BlockPos(x, y, z)), GUI3);
+                return new BlockContainerGUI(player.inventory, (TileEntityBlockInventory) world.getTileEntity(new BlockPos(x, y, z)), GUI3);
             case 3: //Table
                 TileEntity tileTable = world.getTileEntity(new BlockPos(x, y, z));
                 if (tileTable instanceof TileEntityTable) {
@@ -88,7 +88,7 @@ public class GuiHandler implements IGuiHandler {
                     return null;
                 }
             case 5:
-                return new BlockContainerGUI(player.inventory, (ContainerBlockInventory) world.getTileEntity(new BlockPos(x, y, z)), GUI9);
+                return new BlockContainerGUI(player.inventory, (TileEntityBlockInventory) world.getTileEntity(new BlockPos(x, y, z)), GUI9);
             case 6:
                 TileEntity fishCase = world.getTileEntity(new BlockPos(x, y, z));
                 if (fishCase instanceof TileEntityFishCase) {
@@ -122,7 +122,7 @@ public class GuiHandler implements IGuiHandler {
             case 14:
                 return new ItemContainerGUI(player.inventory, new ContainerItemInventory(player.getHeldItem(EnumHand.MAIN_HAND), 3, "Enveloppe", 1, 3), GUI3);
             case 20:
-                return new FutGUI(player.inventory, (ContainerFut) world.getTileEntity(new BlockPos(x, y, z)));
+                return new FutGUI(player.inventory, (TileEntityFut) world.getTileEntity(new BlockPos(x, y, z)));
         }
         return null;
     }

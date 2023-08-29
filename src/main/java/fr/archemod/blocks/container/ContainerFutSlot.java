@@ -1,17 +1,17 @@
 package fr.archemod.blocks.container;
 
+import fr.archemod.blocks.tileentity.TileEntityFut;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
 
-public class ContainerFutSlot extends Container {
-    private final ContainerFut inventory;
+public class  ContainerFutSlot extends Container {
+    private final TileEntityFut inventory;
     private final int numRows;
-    private int offset;
 
-    public ContainerFutSlot(IInventory playerInventory, ContainerFut inv) {
+    public ContainerFutSlot(IInventory playerInventory, TileEntityFut inv) {
         this.inventory = inv;
         this.numRows = 3;
         int i = (this.numRows - 4) * 18;
@@ -28,9 +28,7 @@ public class ContainerFutSlot extends Container {
 
     }
 
-    public boolean canInteractWith(EntityPlayer playerIn) {
-        return this.inventory.isUsableByPlayer(playerIn);
-    }
+    public boolean canInteractWith(EntityPlayer playerIn) { return true; }
 
     @Override
     public ItemStack transferStackInSlot(EntityPlayer playerIn, int index) {
@@ -151,10 +149,5 @@ public class ContainerFutSlot extends Container {
             }
         }
         return flag;
-    }
-
-    public void onContainerClosed(EntityPlayer playerIn) {
-        super.onContainerClosed(playerIn);
-        this.inventory.closeInventory(playerIn);
     }
 }

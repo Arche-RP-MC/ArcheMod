@@ -1,5 +1,6 @@
 package fr.archemod.blocks.container;
 
+import fr.archemod.blocks.tileentity.TileEntityBlockInventory;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.IInventory;
@@ -11,7 +12,7 @@ public class ContainerBlockSlot extends Container {
     private final int numRows;
     private int offset;
 
-    public ContainerBlockSlot(IInventory playerInventory, ContainerBlockInventory inv) {
+    public ContainerBlockSlot(IInventory playerInventory, TileEntityBlockInventory inv) {
         this.inventory = inv;
         this.numRows = inventory.getSizeInventory() / inv.getSlotInRow();
         int j;

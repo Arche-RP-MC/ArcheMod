@@ -1,6 +1,5 @@
 package fr.archemod.init;
 
-
 import fr.archemod.items.*;
 import fr.archemod.items.agriculture.GraineBle;
 import fr.archemod.items.agriculture.GraineOrge;
@@ -87,9 +86,9 @@ public class ModItems {
     public static final Item CENDRES = new ItemBase("cendres");
     public static final Item ENTRAVES = new ItemBase("entraves");
     public static final Item PAIN_MOISI = new ItemBase("pain_moisi");
-    public static final Item PIECE_EN_ARGENT = new PieceBase("piece_en_argent");
-    public static final Item PIECE_EN_BRONZE = new PieceBase("piece_en_bronze");
-    public static final Item PIECE_EN_OR = new PieceBase("piece_en_or");
+    public static final Item PIECE_EN_ARGENT = new ItemBase("piece_en_argent", false);
+    public static final Item PIECE_EN_BRONZE = new ItemBase("piece_en_bronze", false);
+    public static final Item PIECE_EN_OR = new ItemBase("piece_en_or", false);
     public static final Item POURRITURE = new ItemBase("pourriture");
     public static final Item PRISME = new ItemBase("prisme");
     public static final Item SANG = new ItemBase("sang");

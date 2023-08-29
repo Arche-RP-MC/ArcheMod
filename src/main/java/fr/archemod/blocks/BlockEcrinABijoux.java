@@ -1,15 +1,11 @@
 package fr.archemod.blocks;
 
 import fr.archemod.ArcheMod;
-import fr.archemod.blocks.container.ContainerBlockInventory;
+import fr.archemod.blocks.tileentity.TileEntityBlockInventory;
 import fr.archemod.blocks.tileentity.TileEntityTable;
-import net.minecraft.block.BlockHorizontal;
 import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
-import net.minecraft.block.properties.IProperty;
-import net.minecraft.block.properties.PropertyDirection;
-import net.minecraft.block.state.BlockFaceShape;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
@@ -21,10 +17,6 @@ import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
-
-import java.util.Random;
 
 public class BlockEcrinABijoux extends BlockBaseOriented implements ITileEntityProvider {
     private static final AxisAlignedBB AXIS_ALIGNED_BB_SOUTH = new AxisAlignedBB(0.25D, 0.0D, 0.17D, 0.75D, 0.4D, 0.67D); //OK
@@ -38,7 +30,7 @@ public class BlockEcrinABijoux extends BlockBaseOriented implements ITileEntityP
 
     @Override
     public TileEntity createNewTileEntity(World worldIn, int meta) {
-        return new ContainerBlockInventory("am:ecrin_a_bijoux", 9, 9, 1);
+        return new TileEntityBlockInventory("am:ecrin_a_bijoux", 9, 9, 1);
     }
 
     @Override
@@ -58,8 +50,8 @@ public class BlockEcrinABijoux extends BlockBaseOriented implements ITileEntityP
     @Override
     public void breakBlock(World world, BlockPos pos, IBlockState state) {
         TileEntity tileentity = world.getTileEntity(pos);
-        if (tileentity instanceof ContainerBlockInventory)
-            InventoryHelper.dropInventoryItems(world, pos, (ContainerBlockInventory) tileentity);
+        if (tileentity instanceof TileEntityBlockInventory)
+            InventoryHelper.dropInventoryItems(world, pos, (TileEntityBlockInventory) tileentity);
         world.removeTileEntity(pos);
         super.breakBlock(world, pos, state);
     }

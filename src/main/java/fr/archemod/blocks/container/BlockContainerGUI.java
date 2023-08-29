@@ -1,5 +1,6 @@
 package fr.archemod.blocks.container;
 
+import fr.archemod.blocks.tileentity.TileEntityBlockInventory;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.util.ResourceLocation;
@@ -7,11 +8,11 @@ import org.lwjgl.opengl.GL11;
 
 public class BlockContainerGUI extends GuiContainer {
     private ResourceLocation texture;
-    protected ContainerBlockInventory inv;
+    protected TileEntityBlockInventory inv;
     protected InventoryPlayer playerInv;
     public int rows;
 
-    public BlockContainerGUI(InventoryPlayer playerInv, ContainerBlockInventory inv, ResourceLocation pathGUI) {
+    public BlockContainerGUI(InventoryPlayer playerInv, TileEntityBlockInventory inv, ResourceLocation pathGUI) {
         super(new ContainerBlockSlot(playerInv, inv));
         this.texture = pathGUI;
         this.playerInv = playerInv;

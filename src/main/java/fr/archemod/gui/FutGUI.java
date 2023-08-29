@@ -1,6 +1,6 @@
 package fr.archemod.gui;
 
-import fr.archemod.blocks.container.ContainerFut;
+import fr.archemod.blocks.tileentity.TileEntityFut;
 import fr.archemod.blocks.container.ContainerFutSlot;
 import fr.archemod.util.Reference;
 import net.minecraft.client.gui.inventory.GuiContainer;
@@ -10,10 +10,10 @@ import org.lwjgl.opengl.GL11;
 
 public class FutGUI extends GuiContainer {
     private static final ResourceLocation texture = new ResourceLocation(Reference.MOD_ID, "textures/gui/container/fut.png");
-    protected ContainerFut inv;
+    protected TileEntityFut inv;
     protected InventoryPlayer playerInv;
 
-    public FutGUI(InventoryPlayer playerInv, ContainerFut inv) {
+    public FutGUI(InventoryPlayer playerInv, TileEntityFut inv) {
         super(new ContainerFutSlot(playerInv, inv));
         this.playerInv = playerInv;
         this.inv = inv;

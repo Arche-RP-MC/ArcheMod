@@ -1,8 +1,8 @@
 package fr.archemod.blocks;
 
 import fr.archemod.ArcheMod;
-import fr.archemod.blocks.container.ContainerBlockInventory;
-import fr.archemod.blocks.container.ContainerBlockInventoryVisible;
+import fr.archemod.blocks.tileentity.TileEntityBlockInventory;
+import fr.archemod.blocks.tileentity.TileEntityBlockInventoryVisible;
 import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -24,7 +24,6 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 import javax.annotation.Nullable;
-import java.util.Random;
 
 public class PlacardHRP extends BlockBase implements ITileEntityProvider {
 
@@ -38,7 +37,7 @@ public class PlacardHRP extends BlockBase implements ITileEntityProvider {
 
     @Override
     public TileEntity createNewTileEntity(World worldIn, int meta) {
-        return new ContainerBlockInventoryVisible("am:placardhrp", 9, 3, 50);
+        return new TileEntityBlockInventoryVisible("am:placardhrp", 9, 3, 50);
     }
 
     @Override
@@ -52,8 +51,8 @@ public class PlacardHRP extends BlockBase implements ITileEntityProvider {
     @Override
     public void breakBlock(World world, BlockPos pos, IBlockState state) {
         TileEntity tileentity = world.getTileEntity(pos);
-        if (tileentity instanceof ContainerBlockInventory)
-            InventoryHelper.dropInventoryItems(world, pos, (ContainerBlockInventory) tileentity);
+        if (tileentity instanceof TileEntityBlockInventory)
+            InventoryHelper.dropInventoryItems(world, pos, (TileEntityBlockInventory) tileentity);
         world.removeTileEntity(pos);
         super.breakBlock(world, pos, state);
     }
@@ -72,9 +71,9 @@ public class PlacardHRP extends BlockBase implements ITileEntityProvider {
     @Override
     public void onBlockPlacedBy(World worldIn, BlockPos pos, IBlockState state, EntityLivingBase placer, ItemStack stack) {
         TileEntity tile = worldIn.getTileEntity(pos);
-        if (tile instanceof ContainerBlockInventory) {
+        if (tile instanceof TileEntityBlockInventory) {
             if (stack.hasDisplayName()) {
-                ((ContainerBlockInventory) tile).setCustomName(stack.getDisplayName());
+                ((TileEntityBlockInventory) tile).setCustomName(stack.getDisplayName());
             }
         }
     }

@@ -1,5 +1,6 @@
-package fr.archemod.blocks.container;
+package fr.archemod.blocks.tileentity;
 
+import fr.archemod.blocks.container.ContainerBlockSlot;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Container;
@@ -12,15 +13,19 @@ import net.minecraft.network.play.server.SPacketUpdateTileEntity;
 import net.minecraft.tileentity.TileEntityLockableLoot;
 import net.minecraft.util.NonNullList;
 
-public class ContainerFut extends TileEntityLockableLoot {
+public class TileEntityBlockInventory extends TileEntityLockableLoot {
 
     private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(9, ItemStack.EMPTY);
     private String id;
-    private int size = 15;
+    private int size;
+    private int slotInRow;
+    private int invStackLimit;
 
-    public ContainerFut(String id, int size) {
+    public TileEntityBlockInventory(String id, int size, int slotInRow, int invStackLimit) {
         this.id = id;
         this.size = size;
+        this.slotInRow = slotInRow;
+        this.invStackLimit = invStackLimit;
     }
 
     @Override
@@ -48,7 +53,7 @@ public class ContainerFut extends TileEntityLockableLoot {
 
     @Override
     public String getName() {
-        return "Fut";
+        return "Conteneur";
     }
 
     @Override
@@ -89,15 +94,17 @@ public class ContainerFut extends TileEntityLockableLoot {
 
     @Override
     public int getInventoryStackLimit() {
-        return 1;
+        return this.invStackLimit;
     }
 
     @Override
-    public String getGuiID() { return this.id; }
+    public String getGuiID() {
+        return this.id;
+    }
 
     @Override
     public Container createContainer(InventoryPlayer playerInventory, EntityPlayer playerIn) {
-        return new ContainerFutSlot(playerInventory, this);
+        return new ContainerBlockSlot(playerInventory, this);
     }
 
     @Override
@@ -105,7 +112,7 @@ public class ContainerFut extends TileEntityLockableLoot {
         return this.stacks;
     }
 
-    public int getSlotInRow() { return 1; }
+    public int getSlotInRow() { return slotInRow; }
 
-    public Slot getNewSlot(ContainerFut inv, int index, int x, int y) { return new Slot(inv, index, x, y); }
+    public Slot getNewSlot(TileEntityBlockInventory inv, int index, int x, int y) { return new Slot(inv, index, x, y); }
 }

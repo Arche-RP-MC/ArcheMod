@@ -5,6 +5,7 @@ import fr.archemod.init.ModBlocks;
 import fr.archemod.init.ModItems;
 import fr.archemod.util.IHasModel;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockShulkerBox;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;

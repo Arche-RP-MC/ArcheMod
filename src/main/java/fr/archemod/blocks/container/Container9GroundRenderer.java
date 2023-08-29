@@ -1,5 +1,6 @@
 package fr.archemod.blocks.container;
 
+import fr.archemod.blocks.tileentity.TileEntityBlockInventory;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.OpenGlHelper;
@@ -7,9 +8,9 @@ import net.minecraft.client.renderer.block.model.ItemCameraTransforms;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.item.ItemStack;
 
-public class Container9GroundRenderer extends TileEntitySpecialRenderer<ContainerBlockInventory> {
+public class Container9GroundRenderer extends TileEntitySpecialRenderer<TileEntityBlockInventory> {
     @Override
-    public void render(ContainerBlockInventory te, double x, double y, double z, float partialTicks, int destroyStage, float alpha) {
+    public void render(TileEntityBlockInventory te, double x, double y, double z, float partialTicks, int destroyStage, float alpha) {
 
         if(te.isEmpty()) return;
 
