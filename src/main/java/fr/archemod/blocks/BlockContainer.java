@@ -25,19 +25,32 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 import javax.annotation.Nullable;
 
-public class PlacardHRP extends BlockBase implements ITileEntityProvider {
+public class BlockContainer extends BlockBase implements ITileEntityProvider {
+    private AxisAlignedBB BOUNDING_BOX;
+    private String id;
+    private int size;
+    private int slotInRow;
+    private int invStackLimit;
+    private int modGuiId;
+    private boolean visibleInventory;
 
-    protected static final AxisAlignedBB PLACARD_HRP_AABB = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.0D, 1.0D);
-
-    public PlacardHRP(String name, Material material, float hardness, float resistance, SoundType soundType) {
+    public BlockContainer(String name, Material material, float hardness, float resistance, SoundType soundType, String id, int size, int slotInRow, int invStackLimit, AxisAlignedBB boundingBox, int modGuiId, boolean visibleInventory) {
         super(name, material, hardness, resistance, soundType);
+        BOUNDING_BOX = boundingBox;
+        this.id = id;
+        this.size = size;
+        this.slotInRow = slotInRow;
+        this.invStackLimit = invStackLimit;
+        this.modGuiId = modGuiId;
+        this.visibleInventory = visibleInventory;
         this.setLightOpacity(0);
     }
 
 
     @Override
     public TileEntity createNewTileEntity(World worldIn, int meta) {
-        return new TileEntityBlockInventoryVisible("am:placardhrp", 9, 3, 50);
+        if(visibleInventory) return new TileEntityBlockInventoryVisible(id, size, slotInRow, invStackLimit);
+        return new TileEntityBlockInventory(id, size, slotInRow, invStackLimit);
     }
 
     @Override
@@ -46,7 +59,6 @@ public class PlacardHRP extends BlockBase implements ITileEntityProvider {
         TileEntity tileentity = worldIn.getTileEntity(pos);
         return tileentity == null ? false : tileentity.receiveClientEvent(eventID, eventParam);
     }
-
 
     @Override
     public void breakBlock(World world, BlockPos pos, IBlockState state) {
@@ -61,7 +73,7 @@ public class PlacardHRP extends BlockBase implements ITileEntityProvider {
         if (worldIn.isRemote) {
             return true;
         } else {
-            playerIn.openGui(ArcheMod.INSTANCE, 2, worldIn, pos.getX(), pos.getY(), pos.getZ());
+            playerIn.openGui(ArcheMod.INSTANCE, modGuiId, worldIn, pos.getX(), pos.getY(), pos.getZ());
 
             return true;
         }
@@ -104,7 +116,7 @@ public class PlacardHRP extends BlockBase implements ITileEntityProvider {
 
     @Override
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
-        return PLACARD_HRP_AABB;
+        return BOUNDING_BOX;
     }
 
 

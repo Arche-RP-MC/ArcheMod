@@ -26,14 +26,8 @@ public class GuiHandler implements IGuiHandler {
             case 1: //Panier en osier
                 return new ContainerItemSlot(player.inventory, new ContainerItemInventory(player.getHeldItem(EnumHand.MAIN_HAND), 12, "Panier en osier", 10, 6));
             case 2: //Placard HRP
-                return new ContainerBlockSlot(player.inventory, (TileEntityBlockInventory) world.getTileEntity(new BlockPos(x, y, z)));
-            case 3: //Table
-                TileEntity tileTable = world.getTileEntity(new BlockPos(x, y, z));
-                if (tileTable instanceof TileEntityTable) {
-                    return new ContainerTable(player.inventory, (TileEntityTable) tileTable);
-                } else {
-                    return null;
-                }
+            case 3: //Piege à loup
+            case 4: //Porte-Manteau
             case 5: //Ecrin à bijoux
                 return new ContainerBlockSlot(player.inventory, (TileEntityBlockInventory) world.getTileEntity(new BlockPos(x, y, z)));
             case 6:
@@ -65,14 +59,9 @@ public class GuiHandler implements IGuiHandler {
             case 1: //Panier en osier
                 return new ItemContainerGUI(player.inventory, new ContainerItemInventory(player.getHeldItem(EnumHand.MAIN_HAND), 12, "Panier en osier", 10, 6), GUI6);
             case 2: //Placard HRP
+            case 3: //Piege à loup
+            case 4: //Porte-Manteau
                 return new BlockContainerGUI(player.inventory, (TileEntityBlockInventory) world.getTileEntity(new BlockPos(x, y, z)), GUI3);
-            case 3: //Table
-                TileEntity tileTable = world.getTileEntity(new BlockPos(x, y, z));
-                if (tileTable instanceof TileEntityTable) {
-                    return new GuiTable(player.inventory, (TileEntityTable) tileTable);
-                } else {
-                    return null;
-                }
             case 5: //Ecrin à bijoux
                 return new BlockContainerGUI(player.inventory, (TileEntityBlockInventory) world.getTileEntity(new BlockPos(x, y, z)), GUI9);
             case 6:

@@ -80,8 +80,6 @@ public class ArcheMod {
         ArcheNetwork.NETWORK.registerMessage(PacketArcheChat.ClientHandler.class, PacketArcheChat.class, 6, Side.CLIENT);
         //networkDescription.registerMessage(PacketDescription.ServerHandler.class, PacketDescription.class, 4, Side.SERVER);
         //networkDescription.registerMessage(PacketDescription.ClientHandler.class, PacketDescription.class, 5, Side.CLIENT);
-        //GameRegistry.registerTileEntity(TileEntityFourSechoir2.class,"am:TileEntityFourSechoir2");
-
     }
 
     @Mod.EventHandler

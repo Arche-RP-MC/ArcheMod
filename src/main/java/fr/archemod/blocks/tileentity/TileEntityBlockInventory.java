@@ -15,7 +15,7 @@ import net.minecraft.util.NonNullList;
 
 public class TileEntityBlockInventory extends TileEntityLockableLoot {
 
-    private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(9, ItemStack.EMPTY);
+    private NonNullList<ItemStack> stacks;
     private String id;
     private int size;
     private int slotInRow;
@@ -26,6 +26,7 @@ public class TileEntityBlockInventory extends TileEntityLockableLoot {
         this.size = size;
         this.slotInRow = slotInRow;
         this.invStackLimit = invStackLimit;
+        stacks = NonNullList.withSize(size, ItemStack.EMPTY);
     }
 
     @Override
