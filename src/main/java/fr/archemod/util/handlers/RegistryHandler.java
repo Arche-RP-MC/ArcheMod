@@ -67,8 +67,6 @@ public class RegistryHandler {
         GameRegistry.registerTileEntity(TileEntityLightBlock.class, new ResourceLocation(Reference.MOD_ID, "TileEntityLightBlock"));
         //GameRegistry.registerTileEntity(TileEntityLightBlock2.class, new ResourceLocation(Reference.MOD_ID,"TileEntityLightBlock2"));
         GameRegistry.registerTileEntity(TileEntityFishCase.class, new ResourceLocation(Reference.MOD_ID, "TileEntityFishCase"));
-        GameRegistry.registerTileEntity(TileEntityBaril.class, new ResourceLocation(Reference.MOD_ID, "TileEntityBaril"));
-        GameRegistry.registerTileEntity(TileEntityBlockBaril.class, new ResourceLocation(Reference.MOD_ID, "TileEntityBlockBaril"));
         //GameRegistry.registerTileEntity(TileEntityFourSechoir2.class, new ResourceLocation(Reference.MOD_ID, "TileEntityFourSechoir2"));
 
         ModBlocks.init();

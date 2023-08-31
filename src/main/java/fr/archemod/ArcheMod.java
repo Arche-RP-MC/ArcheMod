@@ -1,7 +1,6 @@
 package fr.archemod;
 
 
-import fr.archemod.blocks.tileentity.TileEntityBarril;
 import fr.archemod.chat.GuiChatListener;
 import fr.archemod.chat.capabilities.description.Description;
 import fr.archemod.chat.capabilities.description.DescriptionStorage;

@@ -10,8 +10,8 @@ public class TileEntityFut extends TileEntity {
     private int charge;
 
     public TileEntityFut() {
-        //setContenu("empty");
-        //setCharge(0);
+        setContenu("empty");
+        setCharge(0);
     }
 
     public String getContenu() {
@@ -35,6 +35,7 @@ public class TileEntityFut extends TileEntity {
         super.readFromNBT(compound);
         contenu = compound.getString("contenu");
         charge = compound.getInteger("charge");
+        System.out.println(contenu);
     }
 
     @Override

@@ -2,9 +2,7 @@ package fr.archemod.blocks;
 
 import fr.archemod.ArcheMod;
 import fr.archemod.blocks.tileentity.TileEntityFut;
-import fr.archemod.blocks.tileentity.TileEntityBarril;
 import fr.archemod.init.ModItems;
-import net.minecraft.block.BlockShulkerBox;
 import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -14,7 +12,6 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
@@ -23,10 +20,8 @@ import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
-import net.minecraftforge.fml.common.Mod;
 
 import javax.annotation.Nullable;
-import java.util.Random;
 
 public class BlockFut extends BlockBaseOriented implements ITileEntityProvider {
 
@@ -37,184 +32,326 @@ public class BlockFut extends BlockBaseOriented implements ITileEntityProvider {
     @Override
     public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
         TileEntityFut te = (TileEntityFut) worldIn.getTileEntity(pos);
-
+        System.out.println(te.getContenu());
         if(playerIn.getHeldItem(EnumHand.MAIN_HAND).isEmpty()) {
             playerIn.openGui(ArcheMod.INSTANCE, 20, worldIn, pos.getX(), pos.getY(), pos.getZ());
             return true;
         }
 
         ItemStack itemStack = playerIn.getHeldItem(EnumHand.MAIN_HAND);
+        String name = itemStack.getItem().getRegistryName().toString();
+        String contenu = te.getContenu();
 
-        System.out.println(te.getContenu());
-        System.out.println(te.getCharge());
-        if(itemStack.getItem() == Items.WATER_BUCKET && te.getContenu().equals("empty")) {
-            itemStack.shrink(1);
-            playerIn.setHeldItem(EnumHand.MAIN_HAND, new ItemStack(Items.BUCKET));
-            te.setContenu("water");
+        if((itemStack.getItem() == Items.WATER_BUCKET || itemStack.getItem() == Items.MILK_BUCKET ||
+                itemStack.getItem() == ModItems.SEAU_D_EAU_EN_BOIS || itemStack.getItem() == ModItems.SEAU_DE_LAIT_EN_BOIS ||
+                itemStack.getItem() == ModItems.SEAU_ALCOOL_PUR || itemStack.getItem() == ModItems.SEAU_ALCOOL_PUR_EN_BOIS ||
+                itemStack.getItem() == ModItems.SEAU_DE_BIERRE_BLONDE || itemStack.getItem() == ModItems.SEAU_DE_BIERRE_BLONDE_EN_BOIS ||
+                itemStack.getItem() == ModItems.SEAU_DE_BIERE_BRUNE || itemStack.getItem() == ModItems.SEAU_DE_BIERE_BRUNE_EN_BOIS ||
+                itemStack.getItem() == ModItems.SEAU_DE_BIERE_ROUSSE || itemStack.getItem() == ModItems.SEAU_DE_BIERE_ROUSSE_EN_BOIS ||
+                itemStack.getItem() == ModItems.SEAU_DE_HYDROMEL || itemStack.getItem() == ModItems.SEAU_DE_HYDROMEL_EN_BOIS ||
+                itemStack.getItem() == ModItems.SEAU_HYPOCRAS || itemStack.getItem() == ModItems.SEAU_HYPOCRAS_EN_BOIS ||
+                itemStack.getItem() == ModItems.SEAU_DE_RHUM || itemStack.getItem() == ModItems.SEAU_DE_RHUM_EN_BOIS ||
+                itemStack.getItem() == ModItems.SEAU_DE_VIN_BLANC || itemStack.getItem() == ModItems.SEAU_DE_VIN_BLANC_EN_BOIS ||
+                itemStack.getItem() == ModItems.SEAU_DE_VIN_ROUGE || itemStack.getItem() == ModItems.SEAU_DE_VIN_ROUGE_EN_BOIS ||
+                itemStack.getItem() == ModItems.SEAU_JAGERMEISTER || itemStack.getItem() == ModItems.SEAU_JAGERMEISTER_EN_BOIS ||
+                itemStack.getItem() == ModItems.SEAU_VIPERINE || itemStack.getItem() == ModItems.SEAU_VIPERINE_EN_BOIS ||
+                itemStack.getItem() == ModItems.SEAU_RYE || itemStack.getItem() == ModItems.SEAU_RYE_EN_BOIS ||
+                itemStack.getItem() == ModItems.SEAU_NIGORIZAKE || itemStack.getItem() == ModItems.SEAU_NIGORIZAKE_EN_BOIS ||
+                itemStack.getItem() == ModItems.SEAU_LIQUEUR_FRUIT || itemStack.getItem() == ModItems.SEAU_LIQUEUR_FRUIT_EN_BOIS ||
+                itemStack.getItem() == ModItems.SEAU_JUS_DE_FRUIT_BLANC || itemStack.getItem() == ModItems.SEAU_JUS_DE_FRUIT_BLANC_EN_BOIS ||
+                itemStack.getItem() == ModItems.SEAU_JUS_DE_FRUIT_JAUNE || itemStack.getItem() == ModItems.SEAU_JUS_DE_FRUIT_JAUNE_EN_BOIS ||
+                itemStack.getItem() == ModItems.SEAU_JUS_DE_FRUIT_ORANGE || itemStack.getItem() == ModItems.SEAU_JUS_DE_FRUIT_ORANGE_EN_BOIS ||
+                itemStack.getItem() == ModItems.SEAU_JUS_DE_FRUIT_ROUGE || itemStack.getItem() == ModItems.SEAU_JUS_DE_FRUIT_ROUGE_EN_BOIS ||
+                itemStack.getItem() == ModItems.SEAU_JUS_DE_FRUIT_VERT || itemStack.getItem() == ModItems.SEAU_JUS_DE_FRUIT_VERT_EN_BOIS
+        ) && te.getContenu().equals("empty")) {
+            te.setContenu(name);
             te.setCharge(15);
+            playerIn.setHeldItem(EnumHand.MAIN_HAND, getItemStack(name, contenu));
+            itemStack.shrink(1);
         }
-        if((itemStack.getItem() == ModItems.CHOPPE_EN_VERRE || itemStack.getItem() == ModItems.CHOPPE_EN_ARGILE || itemStack.getItem() == ModItems.VERRE_A_PIED) && te.getCharge() > 0 ) {
+        if((itemStack.getItem() == ModItems.CHOPPE_EN_VERRE || itemStack.getItem() == ModItems.CHOPPE_EN_ARGILE || itemStack.getItem() == ModItems.VERRE_A_PIED) && te.getCharge() > 0 && !te.getContenu().contains("alcool_pur")) {
             te.setCharge(te.getCharge()-1);
             if(te.getCharge() == 0) te.setContenu("empty");
 
-            String name = itemStack.getItem().getTranslationKey();
             itemStack.shrink(1);
-            switch(name) {
-                case "item.choppe_en_verre":
-                    if(playerIn.getHeldItem(EnumHand.MAIN_HAND).isEmpty()) playerIn.setHeldItem(EnumHand.MAIN_HAND, new ItemStack(ModItems.CHOPPE_EN_VERRE_EAU));
-                    else playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.CHOPPE_EN_VERRE_EAU));
-                    break;
-                case "item.choppe_en_argile":
-                    if(playerIn.getHeldItem(EnumHand.MAIN_HAND).isEmpty()) playerIn.setHeldItem(EnumHand.MAIN_HAND, new ItemStack(ModItems.CHOPPE_EN_ARGILE_EAU));
-                    else playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.CHOPPE_EN_ARGILE_EAU));
-                    break;
-                case "item.verre_a_pied":
-                    if(playerIn.getHeldItem(EnumHand.MAIN_HAND).isEmpty()) playerIn.setHeldItem(EnumHand.MAIN_HAND, new ItemStack(ModItems.VERRE_A_PIED_EAU));
-                    else playerIn.inventory.addItemStackToInventory(new ItemStack(ModItems.VERRE_A_PIED_EAU));
-                    break;
-            }
+            if(playerIn.getHeldItem(EnumHand.MAIN_HAND).isEmpty()) playerIn.setHeldItem(EnumHand.MAIN_HAND, getItemStack(name, contenu));
+            else playerIn.inventory.addItemStackToInventory(getItemStack(name, contenu));
         }
-        //itemStack.getItem() == ModItems.BOUTEILLE_VIDE ||
-        /*if (!worldIn.isRemote) {
-            TileEntity tileEntity = worldIn.getTileEntity(pos);
-            if (tileEntity instanceof TileEntityBarril) {
-                TileEntityBarril tileEntityBarril = (TileEntityBarril) tileEntity;
-                ItemStack itemStack = playerIn.getHeldItem(hand);
-                if (itemStack.getItem() == Items.WATER_BUCKET && tileEntityBarril.getCharge() == 0) {
-                    tileEntityBarril.setCharge(15);
-                    tileEntityBarril.setContenu("eau");
-                    itemStack.shrink(1);
-                    playerIn.addItemStackToInventory(new ItemStack(Items.BUCKET));
-                } else if (itemStack.getItem() == Items.MILK_BUCKET && tileEntityBarril.getCharge() == 0) {
-                    tileEntityBarril.setCharge(15);
-                    tileEntityBarril.setContenu("lait");
-                    itemStack.shrink(1);
-                    playerIn.addItemStackToInventory(new ItemStack(Items.BUCKET));
-                } else if (itemStack.getItem() == ModItems.SEAU_DE_BIERE_BRUNE && tileEntityBarril.getCharge() == 0) {
-                    tileEntityBarril.setCharge(15);
-                    tileEntityBarril.setContenu("biere brune");
-                    itemStack.shrink(1);
-                    playerIn.addItemStackToInventory(new ItemStack(Items.BUCKET));
-                } else if (itemStack.getItem() == ModItems.SEAU_DE_BIERE_ROUSSE && tileEntityBarril.getCharge() == 0) {
-                    tileEntityBarril.setCharge(15);
-                    tileEntityBarril.setContenu("biere rousse");
-                    itemStack.shrink(1);
-                    playerIn.addItemStackToInventory(new ItemStack(Items.BUCKET));
-                } else if (itemStack.getItem() == ModItems.SEAU_DE_BIERRE_BLONDE && tileEntityBarril.getCharge() == 0) {
-                    tileEntityBarril.setCharge(15);
-                    tileEntityBarril.setContenu("biere blonde");
-                    itemStack.shrink(1);
-                    playerIn.addItemStackToInventory(new ItemStack(Items.BUCKET));
-                } else if (itemStack.getItem() == ModItems.SEAU_DE_VIN_BLANC && tileEntityBarril.getCharge() == 0) {
-                    tileEntityBarril.setCharge(15);
-                    tileEntityBarril.setContenu("vin blanc");
-                    itemStack.shrink(1);
-                    playerIn.addItemStackToInventory(new ItemStack(Items.BUCKET));
-                } else if (itemStack.getItem() == ModItems.SEAU_DE_VIN_ROUGE && tileEntityBarril.getCharge() == 0) {
-                    tileEntityBarril.setCharge(15);
-                    tileEntityBarril.setContenu("vin rouge");
-                    itemStack.shrink(1);
-                    playerIn.addItemStackToInventory(new ItemStack(Items.BUCKET));
-                } else if (itemStack.getItem() == ModItems.SEAU_DE_RHUM && tileEntityBarril.getCharge() == 0) {
-                    tileEntityBarril.setCharge(15);
-                    tileEntityBarril.setContenu("rhum");
-                    itemStack.shrink(1);
-                    playerIn.addItemStackToInventory(new ItemStack(Items.BUCKET));
-                } else if (itemStack.getItem() == ModItems.SEAU_DE_HYDROMEL && tileEntityBarril.getCharge() == 0) {
-                    tileEntityBarril.setCharge(15);
-                    tileEntityBarril.setContenu("hydromel");
-                    itemStack.shrink(1);
-                    playerIn.addItemStackToInventory(new ItemStack(Items.BUCKET));
+        if(itemStack.getItem() == ModItems.BOUTEILLE_VIDE && te.getCharge() > 4) {
+            te.setCharge(te.getCharge()-5);
+            if(te.getCharge() == 0) te.setContenu("empty");
 
-                } else if (itemStack.getItem() == Items.STICK) {
-                    playerIn.sendMessage(new TextComponentString("Contenu : " + tileEntityBarril.getContenu() + ", charges restantes : " + tileEntityBarril.getCharge()));
-
-                } else if (itemStack.getItem() == ModItems.VERRE_A_PIED) {
-                    if (tileEntityBarril.getCharge() > 0) {
-                        tileEntityBarril.setCharge(tileEntityBarril.getCharge() - 1);
-                        itemStack.shrink(1);
-                        if (tileEntityBarril.getContenu().equals("eau")) {
-                            playerIn.addItemStackToInventory(new ItemStack(ModItems.VERRE_A_PIED_EAU, 1, 0));
-                        } else if (tileEntityBarril.getContenu().equals("lait")) {
-                            playerIn.addItemStackToInventory(new ItemStack(ModItems.VERRE_A_PIED_LAIT));
-                        } else if (tileEntityBarril.getContenu().equals("biere brune")) {
-                            playerIn.addItemStackToInventory(new ItemStack(ModItems.VERRE_A_PIED_BIERE_BRUNE));
-                        } else if (tileEntityBarril.getContenu().equals("biere rousse")) {
-                            playerIn.addItemStackToInventory(new ItemStack(ModItems.VERRE_A_PIED_BIERE_ROUSSE));
-                        } else if (tileEntityBarril.getContenu().equals("biere blonde")) {
-                            playerIn.addItemStackToInventory(new ItemStack(ModItems.VERRE_A_PIED_BIERRE_BLONDE));
-                        } else if (tileEntityBarril.getContenu().equals("vin blanc")) {
-                            playerIn.addItemStackToInventory(new ItemStack(ModItems.VERRE_A_PIED_VIN_BLANC));
-                        } else if (tileEntityBarril.getContenu().equals("vin rouge")) {
-                            playerIn.addItemStackToInventory(new ItemStack(ModItems.VERRE_A_PIED_VIN_ROUGE));
-                        } else if (tileEntityBarril.getContenu().equals("rhum")) {
-                            playerIn.addItemStackToInventory(new ItemStack(ModItems.VERRE_A_PIED_RHUM));
-                        } else if (tileEntityBarril.getContenu().equals("hydromel")) {
-                            playerIn.addItemStackToInventory(new ItemStack(ModItems.VERRE_A_PIED_HYDROMEL));
-                        }
-
-                    } else {
-                        playerIn.sendMessage(new TextComponentString("Le baril est vide"));
-                    }
-                } else if (itemStack.getItem() == ModItems.CHOPPE_EN_VERRE) {
-                    if (tileEntityBarril.getCharge() > 0) {
-                        tileEntityBarril.setCharge(tileEntityBarril.getCharge() - 1);
-                        itemStack.shrink(1);
-                        if (tileEntityBarril.getContenu().equals("eau")) {
-                            playerIn.addItemStackToInventory(new ItemStack(ModItems.CHOPPE_EN_VERRE_EAU, 1, 0));
-                        } else if (tileEntityBarril.getContenu().equals("lait")) {
-                            playerIn.addItemStackToInventory(new ItemStack(ModItems.CHOPPE_EN_VERRE_LAIT));
-                        } else if (tileEntityBarril.getContenu().equals("biere brune")) {
-                            playerIn.addItemStackToInventory(new ItemStack(ModItems.CHOPPE_EN_VERRE_BIERE_BRUNE));
-                        } else if (tileEntityBarril.getContenu().equals("biere rousse")) {
-                            playerIn.addItemStackToInventory(new ItemStack(ModItems.CHOPPE_EN_VERRE_BIERE_ROUSSE));
-                        } else if (tileEntityBarril.getContenu().equals("biere blonde")) {
-                            playerIn.addItemStackToInventory(new ItemStack(ModItems.CHOPPE_EN_VERRE_BIERRE_BLONDE));
-                        } else if (tileEntityBarril.getContenu().equals("vin blanc")) {
-                            playerIn.addItemStackToInventory(new ItemStack(ModItems.CHOPPE_EN_VERRE_VIN_BLANC));
-                        } else if (tileEntityBarril.getContenu().equals("vin rouge")) {
-                            playerIn.addItemStackToInventory(new ItemStack(ModItems.CHOPPE_EN_VERRE_VIN_ROUGE));
-                        } else if (tileEntityBarril.getContenu().equals("rhum")) {
-                            playerIn.addItemStackToInventory(new ItemStack(ModItems.CHOPPE_EN_VERRE_RHUM));
-                        } else if (tileEntityBarril.getContenu().equals("hydromel")) {
-                            playerIn.addItemStackToInventory(new ItemStack(ModItems.CHOPPE_EN_VERRE_HYDROMEL));
-                        }
-                    } else {
-                        playerIn.sendMessage(new TextComponentString("Le baril est vide"));
-                    }
-
-
-                } else if (itemStack.getItem() == ModItems.CHOPPE_EN_ARGILE) {
-                    if (tileEntityBarril.getCharge() > 0) {
-                        tileEntityBarril.setCharge(tileEntityBarril.getCharge() - 1);
-                        itemStack.shrink(1);
-                        if (tileEntityBarril.getContenu().equals("eau")) {
-                            playerIn.addItemStackToInventory(new ItemStack(ModItems.CHOPPE_EN_ARGILE_EAU, 1, 0));
-                        } else if (tileEntityBarril.getContenu().equals("lait")) {
-                            playerIn.addItemStackToInventory(new ItemStack(ModItems.CHOPPE_EN_ARGILE_LAIT));
-                        } else if (tileEntityBarril.getContenu().equals("biere brune")) {
-                            playerIn.addItemStackToInventory(new ItemStack(ModItems.CHOPPE_EN_ARGILE_BIERE_BRUNE));
-                        } else if (tileEntityBarril.getContenu().equals("biere rousse")) {
-                            playerIn.addItemStackToInventory(new ItemStack(ModItems.CHOPPE_EN_ARGILE_BIERE_ROUSSE));
-                        } else if (tileEntityBarril.getContenu().equals("biere blonde")) {
-                            playerIn.addItemStackToInventory(new ItemStack(ModItems.CHOPPE_EN_ARGILE_BIERRE_BLONDE));
-                        } else if (tileEntityBarril.getContenu().equals("vin blanc")) {
-                            playerIn.addItemStackToInventory(new ItemStack(ModItems.CHOPPE_EN_ARGILE_VIN_BLANC));
-                        } else if (tileEntityBarril.getContenu().equals("vin rouge")) {
-                            playerIn.addItemStackToInventory(new ItemStack(ModItems.CHOPPE_EN_ARGILE_VIN_ROUGE));
-                        } else if (tileEntityBarril.getContenu().equals("rhum")) {
-                            playerIn.addItemStackToInventory(new ItemStack(ModItems.CHOPPE_EN_ARGILE_RHUM));
-                        } else if (tileEntityBarril.getContenu().equals("hydromel")) {
-                            playerIn.addItemStackToInventory(new ItemStack(ModItems.CHOPPE_EN_ARGILE_HYDROMEL));
-                        }
-
-                    } else {
-                        playerIn.sendMessage(new TextComponentString("Le baril est vide"));
-                    }
-                }
-            }
-        }*/
+            itemStack.shrink(1);
+            if(playerIn.getHeldItem(EnumHand.MAIN_HAND).isEmpty()) playerIn.setHeldItem(EnumHand.MAIN_HAND, getItemStack(name, contenu));
+            else playerIn.inventory.addItemStackToInventory(getItemStack(name, contenu));
+        }
         return true;
+    }
+
+    private ItemStack getItemStack(String item, String contenu) {
+        switch(item) {
+            //Ajout de volume
+            case "minecraft:water_bucket":
+            case "minecraft:milk_bucket":
+                return new ItemStack(Items.BUCKET);
+            //Retrait de volume
+            case "am:choppe_en_verre":
+                switch(contenu) {
+                    case "minecraft:water_bucket":
+                    case "am:seau_d_eau_en_bois":
+                        return new ItemStack(ModItems.CHOPPE_EN_VERRE_EAU);
+                    case "minecraft:milk_bucket":
+                    case "am:seau_de_lait_en_bois":
+                        return new ItemStack(ModItems.CHOPPE_EN_VERRE_LAIT);
+                    case "am:seau_de_bierre_blonde":
+                    case "am:seau_de_bierre_blonde_en_bois":
+                        return new ItemStack(ModItems.CHOPPE_EN_VERRE_BIERRE_BLONDE);
+                    case "am:seau_de_biere_brune":
+                    case "am:seau_de_biere_brune_en_bois":
+                        return new ItemStack(ModItems.CHOPPE_EN_VERRE_BIERE_BRUNE);
+                    case "am:seau_de_biere_rousse":
+                    case "am:seau_de_biere_rousse_en_bois":
+                        return new ItemStack(ModItems.CHOPPE_EN_VERRE_BIERE_ROUSSE);
+                    case "am:seau_de_hydromel":
+                    case "am:seau_de_hydromel_en_bois":
+                        return new ItemStack(ModItems.CHOPPE_EN_VERRE_HYDROMEL);
+                    case "am:seau_hypocras":
+                    case "am:seau_hypocras_en_bois":
+                        return new ItemStack(ModItems.CHOPPE_EN_VERRE_HYPOCRAS);
+                    case "am:seau_de_rhum":
+                    case "am:seau_de_rhum_en_bois":
+                        return new ItemStack(ModItems.CHOPPE_EN_VERRE_RHUM);
+                    case "am:seau_de_vin_blanc":
+                    case "am:seau_de_vin_blanc_en_bois":
+                        return new ItemStack(ModItems.CHOPPE_EN_VERRE_VIN_BLANC);
+                    case "am:seau_de_vin_rouge":
+                    case "am:seau_de_vin_rouge_en_bois":
+                        return new ItemStack(ModItems.CHOPPE_EN_VERRE_VIN_ROUGE);
+                    case "am:seau_jagermeister":
+                    case "am:seau_jagermeister_en_bois":
+                        return new ItemStack(ModItems.CHOPPE_EN_VERRE_JAGERMEISTER);
+                    case "am:seau_viperine":
+                    case "am:seau_viperine_en_bois":
+                        return new ItemStack(ModItems.CHOPPE_EN_VERRE_VIPERINE);
+                    case "am:seau_rye":
+                    case "am:seau_rye_en_bois":
+                        return new ItemStack(ModItems.CHOPPE_EN_VERRE_RYE);
+                    case "am:seau_nigorizake":
+                    case "am:seau_nigorizake_en_bois":
+                        return new ItemStack(ModItems.CHOPPE_EN_VERRE_NIGORIZAKE);
+                    case "am:seau_liqueur_fruit":
+                    case "am:seau_liqueur_fruit_en_bois":
+                        return new ItemStack(ModItems.CHOPPE_EN_VERRE_LIQUEUR_FRUIT);
+                    case "am:seau_jus_de_fruit_blanc":
+                    case "am:seau_jus_de_fruit_blanc_en_bois":
+                        return new ItemStack(ModItems.CHOPPE_EN_VERRE_JUS_DE_FRUIT_BLANC);
+                    case "am:seau_jus_de_fruit_jaune":
+                    case "am:seau_jus_de_fruit_jaune_en_bois":
+                        return new ItemStack(ModItems.CHOPPE_EN_VERRE_JUS_DE_FRUIT_JAUNE);
+                    case "am:seau_jus_de_fruit_orange":
+                    case "am:seau_jus_de_fruit_orange_en_bois":
+                        return new ItemStack(ModItems.CHOPPE_EN_VERRE_JUS_DE_FRUIT_ORANGE);
+                    case "am:seau_jus_de_fruit_rouge":
+                    case "am:seau_jus_de_fruit_rouge_en_bois":
+                        return new ItemStack(ModItems.CHOPPE_EN_VERRE_JUS_DE_FRUIT_ROUGE);
+                    case "am:seau_jus_de_fruit_vert":
+                    case "am:seau_jus_de_fruit_vert_en_bois":
+                        return new ItemStack(ModItems.CHOPPE_EN_VERRE_JUS_DE_FRUIT_VERT);
+                }
+            case "am:choppe_en_argile":
+                switch(contenu) {
+                    case "minecraft:water_bucket":
+                    case "am:seau_d_eau_en_bois":
+                        return new ItemStack(ModItems.CHOPPE_EN_ARGILE_EAU);
+                    case "minecraft:milk_bucket":
+                    case "am:seau_de_lait_en_bois":
+                        return new ItemStack(ModItems.CHOPPE_EN_ARGILE_LAIT);
+                    case "am:seau_de_bierre_blonde":
+                    case "am:seau_de_bierre_blonde_en_bois":
+                        return new ItemStack(ModItems.CHOPPE_EN_ARGILE_BIERRE_BLONDE);
+                    case "am:seau_de_biere_brune":
+                    case "am:seau_de_biere_brune_en_bois":
+                        return new ItemStack(ModItems.CHOPPE_EN_ARGILE_BIERE_BRUNE);
+                    case "am:seau_de_biere_rousse":
+                    case "am:seau_de_biere_rousse_en_bois":
+                        return new ItemStack(ModItems.CHOPPE_EN_ARGILE_BIERE_ROUSSE);
+                    case "am:seau_de_hydromel":
+                    case "am:seau_de_hydromel_en_bois":
+                        return new ItemStack(ModItems.CHOPPE_EN_ARGILE_HYDROMEL);
+                    case "am:seau_hypocras":
+                    case "am:seau_hypocras_en_bois":
+                        return new ItemStack(ModItems.CHOPPE_EN_ARGILE_HYPOCRAS);
+                    case "am:seau_de_rhum":
+                    case "am:seau_de_rhum_en_bois":
+                        return new ItemStack(ModItems.CHOPPE_EN_ARGILE_RHUM);
+                    case "am:seau_de_vin_blanc":
+                    case "am:seau_de_vin_blanc_en_bois":
+                        return new ItemStack(ModItems.CHOPPE_EN_ARGILE_VIN_BLANC);
+                    case "am:seau_de_vin_rouge":
+                    case "am:seau_de_vin_rouge_en_bois":
+                        return new ItemStack(ModItems.CHOPPE_EN_ARGILE_VIN_ROUGE);
+                    case "am:seau_jagermeister":
+                    case "am:seau_jagermeister_en_bois":
+                        return new ItemStack(ModItems.CHOPPE_EN_ARGILE_JAGERMEISTER);
+                    case "am:seau_viperine":
+                    case "am:seau_viperine_en_bois":
+                        return new ItemStack(ModItems.CHOPPE_EN_ARGILE_VIPERINE);
+                    case "am:seau_rye":
+                    case "am:seau_rye_en_bois":
+                        return new ItemStack(ModItems.CHOPPE_EN_ARGILE_RYE);
+                    case "am:seau_nigorizake":
+                    case "am:seau_nigorizake_en_bois":
+                        return new ItemStack(ModItems.CHOPPE_EN_ARGILE_NIGORIZAKE);
+                    case "am:seau_liqueur_fruit":
+                    case "am:seau_liqueur_fruit_en_bois":
+                        return new ItemStack(ModItems.CHOPPE_EN_ARGILE_LIQUEUR_FRUIT);
+                    case "am:seau_jus_de_fruit_blanc":
+                    case "am:seau_jus_de_fruit_blanc_en_bois":
+                        return new ItemStack(ModItems.CHOPPE_EN_ARGILE_JUS_DE_FRUIT_BLANC);
+                    case "am:seau_jus_de_fruit_jaune":
+                    case "am:seau_jus_de_fruit_jaune_en_bois":
+                        return new ItemStack(ModItems.CHOPPE_EN_ARGILE_JUS_DE_FRUIT_JAUNE);
+                    case "am:seau_jus_de_fruit_orange":
+                    case "am:seau_jus_de_fruit_orange_en_bois":
+                        return new ItemStack(ModItems.CHOPPE_EN_ARGILE_JUS_DE_FRUIT_ORANGE);
+                    case "am:seau_jus_de_fruit_rouge":
+                    case "am:seau_jus_de_fruit_rouge_en_bois":
+                        return new ItemStack(ModItems.CHOPPE_EN_ARGILE_JUS_DE_FRUIT_ROUGE);
+                    case "am:seau_jus_de_fruit_vert":
+                    case "am:seau_jus_de_fruit_vert_en_bois":
+                        return new ItemStack(ModItems.CHOPPE_EN_ARGILE_JUS_DE_FRUIT_VERT);
+                }
+            case "am:verre_a_pied":
+                switch(contenu) {
+                    case "minecraft:water_bucket":
+                    case "am:seau_d_eau_en_bois":
+                        return new ItemStack(ModItems.VERRE_A_PIED_EAU);
+                    case "minecraft:milk_bucket":
+                    case "am:seau_de_lait_en_bois":
+                        return new ItemStack(ModItems.VERRE_A_PIED_LAIT);
+                    case "am:seau_de_bierre_blonde":
+                    case "am:seau_de_bierre_blonde_en_bois":
+                        return new ItemStack(ModItems.VERRE_A_PIED_BIERRE_BLONDE);
+                    case "am:seau_de_biere_brune":
+                    case "am:seau_de_biere_brune_en_bois":
+                        return new ItemStack(ModItems.VERRE_A_PIED_BIERE_BRUNE);
+                    case "am:seau_de_biere_rousse":
+                    case "am:seau_de_biere_rousse_en_bois":
+                        return new ItemStack(ModItems.VERRE_A_PIED_BIERE_ROUSSE);
+                    case "am:seau_de_hydromel":
+                    case "am:seau_de_hydromel_en_bois":
+                        return new ItemStack(ModItems.VERRE_A_PIED_HYDROMEL);
+                    case "am:seau_hypocras":
+                    case "am:seau_hypocras_en_bois":
+                        return new ItemStack(ModItems.VERRE_A_PIED_HYPOCRAS);
+                    case "am:seau_de_rhum":
+                    case "am:seau_de_rhum_en_bois":
+                        return new ItemStack(ModItems.VERRE_A_PIED_RHUM);
+                    case "am:seau_de_vin_blanc":
+                    case "am:seau_de_vin_blanc_en_bois":
+                        return new ItemStack(ModItems.VERRE_A_PIED_VIN_BLANC);
+                    case "am:seau_de_vin_rouge":
+                    case "am:seau_de_vin_rouge_en_bois":
+                        return new ItemStack(ModItems.VERRE_A_PIED_VIN_ROUGE);
+                    case "am:seau_jagermeister":
+                    case "am:seau_jagermeister_en_bois":
+                        return new ItemStack(ModItems.VERRE_A_PIED_JAGERMEISTER);
+                    case "am:seau_viperine":
+                    case "am:seau_viperine_en_bois":
+                        return new ItemStack(ModItems.VERRE_A_PIED_VIPERINE);
+                    case "am:seau_rye":
+                    case "am:seau_rye_en_bois":
+                        return new ItemStack(ModItems.VERRE_A_PIED_RYE);
+                    case "am:seau_nigorizake":
+                    case "am:seau_nigorizake_en_bois":
+                        return new ItemStack(ModItems.VERRE_A_PIED_NIGORIZAKE);
+                    case "am:seau_liqueur_fruit":
+                    case "am:seau_liqueur_fruit_en_bois":
+                        return new ItemStack(ModItems.VERRE_A_PIED_LIQUEUR_FRUIT);
+                    case "am:seau_jus_de_fruit_blanc":
+                    case "am:seau_jus_de_fruit_blanc_en_bois":
+                        return new ItemStack(ModItems.VERRE_A_PIED_JUS_DE_FRUIT_BLANC);
+                    case "am:seau_jus_de_fruit_jaune":
+                    case "am:seau_jus_de_fruit_jaune_en_bois":
+                        return new ItemStack(ModItems.VERRE_A_PIED_JUS_DE_FRUIT_JAUNE);
+                    case "am:seau_jus_de_fruit_orange":
+                    case "am:seau_jus_de_fruit_orange_en_bois":
+                        return new ItemStack(ModItems.VERRE_A_PIED_JUS_DE_FRUIT_ORANGE);
+                    case "am:seau_jus_de_fruit_rouge":
+                    case "am:seau_jus_de_fruit_rouge_en_bois":
+                        return new ItemStack(ModItems.VERRE_A_PIED_JUS_DE_FRUIT_ROUGE);
+                    case "am:seau_jus_de_fruit_vert":
+                    case "am:seau_jus_de_fruit_vert_en_bois":
+                        return new ItemStack(ModItems.VERRE_A_PIED_JUS_DE_FRUIT_VERT);
+                }
+            case "am:bouteille_vide":
+                switch(contenu) {
+                    case "minecraft:water_bucket":
+                    case "am:seau_d_eau_en_bois":
+                        return new ItemStack(ModItems.BOUTEILLE_D_EAU);
+                    case "minecraft:milk_bucket":
+                    case "am:seau_de_lait_en_bois":
+                        return new ItemStack(ModItems.BOUTEILLE_DE_LAIT);
+                    case "am:seau_alcool_pur":
+                    case "am:seau_alcool_pur_en_bois":
+                        return new ItemStack(ModItems.BOUTEILLE_ALCOOL_PUR);
+                    case "am:seau_de_bierre_blonde":
+                    case "am:seau_de_bierre_blonde_en_bois":
+                        return new ItemStack(ModItems.BOUTEILLE_DE_BIERRE_BLONDE);
+                    case "am:seau_de_biere_brune":
+                    case "am:seau_de_biere_brune_en_bois":
+                        return new ItemStack(ModItems.BOUTEILLE_DE_BIERE_BRUNE);
+                    case "am:seau_de_biere_rousse":
+                    case "am:seau_de_biere_rousse_en_bois":
+                        return new ItemStack(ModItems.BOUTEILLE_DE_BIERE_ROUSSE);
+                    case "am:seau_de_hydromel":
+                    case "am:seau_de_hydromel_en_bois":
+                        return new ItemStack(ModItems.BOUTEILLE_DE_HYDROMEL);
+                    case "am:seau_hypocras":
+                    case "am:seau_hypocras_en_bois":
+                        return new ItemStack(ModItems.BOUTEILLE_HYPOCRAS);
+                    case "am:seau_de_rhum":
+                    case "am:seau_de_rhum_en_bois":
+                        return new ItemStack(ModItems.BOUTEILLE_DE_RHUM);
+                    case "am:seau_de_vin_blanc":
+                    case "am:seau_de_vin_blanc_en_bois":
+                        return new ItemStack(ModItems.BOUTEILLE_DE_VIN_BLANC);
+                    case "am:seau_de_vin_rouge":
+                    case "am:seau_de_vin_rouge_en_bois":
+                        return new ItemStack(ModItems.BOUTEILLE_DE_VIN_ROUGE);
+                    case "am:seau_jagermeister":
+                    case "am:seau_jagermeister_en_bois":
+                        return new ItemStack(ModItems.BOUTEILLE_JAGERMEISTER);
+                    case "am:seau_viperine":
+                    case "am:seau_viperine_en_bois":
+                        return new ItemStack(ModItems.BOUTEILLE_VIPERINE);
+                    case "am:seau_rye":
+                    case "am:seau_rye_en_bois":
+                        return new ItemStack(ModItems.BOUTEILLE_RYE);
+                    case "am:seau_nigorizake":
+                    case "am:seau_nigorizake_en_bois":
+                        return new ItemStack(ModItems.BOUTEILLE_NIGORIZAKE);
+                    case "am:seau_liqueur_fruit":
+                    case "am:seau_liqueur_fruit_en_bois":
+                        return new ItemStack(ModItems.BOUTEILLE_LIQUEUR_FRUIT);
+                    case "am:seau_jus_de_fruit_blanc":
+                    case "am:seau_jus_de_fruit_blanc_en_bois":
+                        return new ItemStack(ModItems.BOUTEILLE_DE_JUS_DE_FRUIT_BLANC);
+                    case "am:seau_jus_de_fruit_jaune":
+                    case "am:seau_jus_de_fruit_jaune_en_bois":
+                        return new ItemStack(ModItems.BOUTEILLE_DE_JUS_DE_FRUIT_JAUNE);
+                    case "am:seau_jus_de_fruit_orange":
+                    case "am:seau_jus_de_fruit_orange_en_bois":
+                        return new ItemStack(ModItems.BOUTEILLE_DE_JUS_DE_FRUIT_ORANGE);
+                    case "am:seau_jus_de_fruit_rouge":
+                    case "am:seau_jus_de_fruit_rouge_en_bois":
+                        return new ItemStack(ModItems.BOUTEILLE_DE_JUS_DE_FRUIT_ROUGE);
+                    case "am:seau_jus_de_fruit_vert":
+                    case "am:seau_jus_de_fruit_vert_en_bois":
+                        return new ItemStack(ModItems.BOUTEILLE_DE_JUS_DE_FRUIT_VERT);
+                }
+        }
+        return new ItemStack(Items.AIR);
     }
 
     @Override
@@ -238,10 +375,8 @@ public class BlockFut extends BlockBaseOriented implements ITileEntityProvider {
     public void getDrops(NonNullList<ItemStack> drops, IBlockAccess world, BlockPos pos, IBlockState state, int fortune) {
         ItemStack stack = new ItemStack(Item.getItemFromBlock(this));
         TileEntityFut te = (TileEntityFut) world.getTileEntity(pos);
-        NBTTagCompound compound = new NBTTagCompound();
-        compound.setString("contenu", te.getContenu());
-        compound.setInteger("charge", te.getCharge());
-        stack.setTagCompound(compound);
+        stack.getOrCreateSubCompound("BlockEntityTag").setString("contenu", te.getContenu());
+        stack.getOrCreateSubCompound("BlockEntityTag").setInteger("charge", te.getCharge());
         drops.add(stack);
     }
 
@@ -249,10 +384,8 @@ public class BlockFut extends BlockBaseOriented implements ITileEntityProvider {
     public ItemStack getPickBlock(IBlockState state, net.minecraft.util.math.RayTraceResult target, World world, BlockPos pos, EntityPlayer player) {
         ItemStack stack = super.getPickBlock(state, target, world, pos, player);
         TileEntityFut te = (TileEntityFut) world.getTileEntity(pos);
-        NBTTagCompound compound = new NBTTagCompound();
-        compound.setString("contenu", te.getContenu());
-        compound.setInteger("charge", te.getCharge());
-        stack.setTagCompound(compound);
+        stack.getOrCreateSubCompound("BlockEntityTag").setString("contenu", te.getContenu());
+        stack.getOrCreateSubCompound("BlockEntityTag").setInteger("charge", te.getCharge());
         return stack;
     }
 

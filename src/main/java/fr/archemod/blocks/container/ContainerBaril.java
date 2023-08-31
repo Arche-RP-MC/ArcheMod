@@ -2,7 +2,6 @@ package fr.archemod.blocks.container;
 
 import fr.archemod.blocks.slot.SlotOutput;
 import fr.archemod.blocks.slot.SlotSingleItem;
-import fr.archemod.blocks.tileentity.TileEntityBaril;
 import fr.archemod.init.ModItems;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
