@@ -81,7 +81,6 @@ public class ArcheMod {
         //networkDescription.registerMessage(PacketDescription.ServerHandler.class, PacketDescription.class, 4, Side.SERVER);
         //networkDescription.registerMessage(PacketDescription.ClientHandler.class, PacketDescription.class, 5, Side.CLIENT);
         //GameRegistry.registerTileEntity(TileEntityFourSechoir2.class,"am:TileEntityFourSechoir2");
-        GameRegistry.registerTileEntity(TileEntityBarril.class, "am:TileEntityBarril");
 
     }
 
