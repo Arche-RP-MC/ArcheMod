@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "G  ",
+    "BFL",
+    "BBF"
+  ],
+  "key": {
+    "B": {
+      "item": "am:lot_de_papiers"
+    },
+    "F": {
+      "item": "am:cuir_tanne"
+    },
+    "L": {
+      "item": "am:bobine_de_fil"
+    },
+    "G": {
+      "item": "am:aiguille"
+    }
+  },
+  "result": {
+    "item": "minecraft:book",
+    "count": 1
+  }
+}

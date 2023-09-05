@@ -1,36 +1,27 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "EEA",
     "EEB",
     "  C"
   ],
-
-  "key":
-  {
-    "E":
-    {
+  "key": {
+    "E": {
       "item": "am:etoffe"
     },
-    "A":
-    {
+    "A": {
       "item": "am:aiguille"
     },
-    "B":
-    {
+    "B": {
       "item": "am:bobine_de_fil"
     },
-    "C":
-    {
-      "item": "am:ciseaux_de_couture"
+    "C": {
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
     }
   },
-
-  "result":
-  {
-    "item": "am:serviette",
+  "result": {
+    "item": "am:serviette_blanc",
     "count": 1
   }
 }

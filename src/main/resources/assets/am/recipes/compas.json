@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "K  ",
+    "FF ",
+    "CD "
+  ],
+  "key": {
+    "K": {
+      "item": "am:pinces",
+      "data": 32767
+    },
+    "F": {
+      "item": "am:barre_fer"
+    },
+    "C": {
+      "item": "am:fusain",
+      "data": 32767
+    },
+    "D": {
+      "item": "am:rouage"
+    }
+  },
+  "result": {
+    "item": "am:compas",
+    "count": 1
+  }
+}

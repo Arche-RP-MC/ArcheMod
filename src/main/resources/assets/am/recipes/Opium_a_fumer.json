@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "UB ",
+    "S  ",
+    "  M"
+  ],
+  "key": {
+    "B": {
+      "item": "am:extrait_de_pavot_concentre"
+    },
+    "S": {
+      "item": "am:miel"
+    },
+    "U": {
+      "item": "am:seve"
+    },
+    "M": [
+      {
+        "item": "am:mortier_pilon_en_pierre",
+        "data": 32767
+      },
+      {
+        "item": "am:mortier_pilon_en_bois",
+        "data": 32767
+      }
+    ]
+  },
+  "result": {
+    "item": "am:opium_a_fumer",
+    "count": 1
+  }
+}

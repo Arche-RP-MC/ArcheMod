@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GTM",
+    " V ",
+    " H "
+  ],
+  "key": {
+    "V": {
+      "item": "am:planche"
+    },
+    "H": {
+      "item": "minecraft:stick"
+    },
+    "M": {
+      "item": "am:clous"
+    },
+    "T": {
+      "item": "am:ciseaux_a_bois",
+      "data": 32767
+    },
+    "G": {
+      "item": "am:maillet",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "minecraft:wooden_hoe",
+    "count": 1
+  }
+}

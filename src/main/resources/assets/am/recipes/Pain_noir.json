@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " D ",
+    "CB "
+  ],
+  "key": {
+    "B": {
+      "item": "am:pate_a_pain"
+    },
+    "C": {
+      "item": "am:pelle_a_pain",
+      "data": 32767
+    },
+    "D": {
+      "item": "am:graine_de_pavot"
+    }
+  },
+  "result": {
+    "item": "am:pain_noir_cru",
+    "count": 1
+  }
+}

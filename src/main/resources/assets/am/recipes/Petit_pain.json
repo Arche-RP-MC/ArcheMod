@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "B B",
+    "   "
+  ],
+  "key": {
+    "B": {
+      "item": "am:pate_a_pain"
+    }
+  },
+  "result": {
+    "item": "am:petit_pain_cru",
+    "count": 5
+  }
+}

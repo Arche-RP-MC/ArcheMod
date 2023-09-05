@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "PTT",
+    " TT"
+  ],
+  "key": {
+    "T": {
+      "item": "minecraft:brick"
+    },
+    "P": [
+      {
+        "item": "am:marteau_burin_en_acier",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_burin_en_fer",
+        "data": 32767
+      }
+    ]
+  },
+  "result": {
+    "item": "minecraft:brick_block",
+    "count": 1
+  }
+}

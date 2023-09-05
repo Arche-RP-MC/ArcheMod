@@ -1,0 +1,6 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "am:blocks/etoile_des_glaciers_stage_3"
+  }
+}

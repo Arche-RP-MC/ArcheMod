@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " P ",
+    "   "
+  ],
+  "key": {
+    "P": {
+      "item": "am:myosotis"
+    }
+  },
+  "result": {
+    "item": "am:myosotis2",
+    "count": 1
+  }
+}

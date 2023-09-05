@@ -1,31 +1,24 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "L  ",
     " P ",
     "  V"
   ],
-
-  "key":
-  {
-    "V":
-    {
-      "item": "am:vernis"
+  "key": {
+    "V": {
+      "item": "am:vernis",
+      "data": 32767
     },
-    "P":
-    {
+    "P": {
       "item": "am:planche"
     },
-    "L":
-    {
-      "item": "minecraft:lime_en_fer"
+    "L": {
+      "item": "am:ciseaux_a_bois",
+      "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:pipe",
     "count": 1
   }

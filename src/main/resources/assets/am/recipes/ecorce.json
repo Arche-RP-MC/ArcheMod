@@ -1,0 +1,50 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " P ",
+    " M "
+  ],
+  "key": {
+    "P": [
+      {
+        "item": "minecraft:log",
+        "data": 0
+      },
+      {
+        "item": "minecraft:log",
+        "data": 1
+      },
+      {
+        "item": "minecraft:log",
+        "data": 2
+      },
+      {
+        "item": "minecraft:log",
+        "data": 3
+      },
+      {
+        "item": "minecraft:log2",
+        "data": 0
+      },
+      {
+        "item": "minecraft:log2",
+        "data": 1
+      }
+    ],
+    "M": [
+      {
+        "item": "am:serpe_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:serpe_en_acier",
+        "data": 32767
+      }
+    ]
+  },
+  "result": {
+    "item": "am:ecorce",
+    "count": 3
+  }
+}

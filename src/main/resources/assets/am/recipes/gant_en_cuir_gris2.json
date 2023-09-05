@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "CL ",
+    "   "
+  ],
+  "key": {
+    "C": {
+      "item": "am:gants_en_cuir"
+    },
+    "L": {
+      "item": "minecraft:dye",
+      "data": 8
+    }
+  },
+  "result": {
+    "item": "am:gants_en_cuir_gris",
+    "count": 1
+  }
+}

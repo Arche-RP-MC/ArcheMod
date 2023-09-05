@@ -1,6 +1,7 @@
 {
-    "variants": {
-        "normal": {
-            "model": "am:lavande"}
+  "variants": {
+    "normal": {
+      "model": "am:lavande"
     }
+  }
 }

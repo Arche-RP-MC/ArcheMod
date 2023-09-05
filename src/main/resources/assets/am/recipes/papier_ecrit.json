@@ -1,27 +1,24 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
-    "   ",
-    " PE",
-    "   "
+  "pattern": [
+    "PE"
   ],
-
-  "key":
-  {
-    "E":
-    {
-      "item": "am:encrier_et_plume"
-    },
-    "P":
-    {
+  "key": {
+    "E": [
+      {
+        "item": "am:encrier_et_plume",
+        "data": 32767
+      },
+      {
+        "item": "am:fusain",
+        "data": 32767
+      }
+    ],
+    "P": {
       "item": "minecraft:paper"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:papier_ecrit",
     "count": 1
   }

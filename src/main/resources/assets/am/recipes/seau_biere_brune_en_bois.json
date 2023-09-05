@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "LL ",
+    "LL ",
+    " S "
+  ],
+  "key": {
+    "L": {
+      "item": "am:malt_orge"
+    },
+    "S": {
+      "item": "am:seau_d_eau_en_bois"
+    }
+  },
+  "result": {
+    "item": "am:seau_de_biere_brune_en_bois",
+    "count": 1
+  }
+}

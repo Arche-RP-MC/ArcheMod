@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "am:sureau1"
+    },
+    "age=1": {
+      "model": "am:sureau2"
+    },
+    "age=2": {
+      "model": "am:sureau3"
+    },
+    "age=3": {
+      "model": "am:sureau4"
+    },
+    "age=4": {
+      "model": "am:sureau5"
+    },
+    "age=5": {
+      "model": "am:sureau6"
+    },
+    "age=6": {
+      "model": "am:sureau7"
+    },
+    "age=7": {
+      "model": "am:sureau8"
+    }
+  }
+}

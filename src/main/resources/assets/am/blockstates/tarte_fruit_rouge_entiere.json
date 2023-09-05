@@ -1,0 +1,25 @@
+{
+  "variants": {
+    "bites=0": {
+      "model": "am:tarte_fruit_rouge_entiere"
+    },
+    "bites=1": {
+      "model": "am:tarte_fruit_rouge1"
+    },
+    "bites=2": {
+      "model": "am:tarte_fruit_rouge2"
+    },
+    "bites=3": {
+      "model": "am:tarte_fruit_rouge3"
+    },
+    "bites=4": {
+      "model": "am:tarte_fruit_rouge4"
+    },
+    "bites=5": {
+      "model": "am:tarte_fruit_rouge5"
+    },
+    "bites=6": {
+      "model": "am:tarte_fruit_rouge6"
+    }
+  }
+}

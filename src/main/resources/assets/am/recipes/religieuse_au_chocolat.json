@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "FFP",
+    "AAC",
+    "AAL"
+  ],
+  "key": {
+    "A": {
+      "item": "am:part_de_gateau"
+    },
+    "C": {
+      "item": "am:creme_fraiche"
+    },
+    "P": {
+      "item": "am:beurre",
+      "data": 32767
+    },
+    "F": {
+      "item": "am:chocolat"
+    },
+    "L": {
+      "item": "am:rouleau_a_patisserie",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:religieuse_au_chocolat",
+    "count": 4
+  }
+}

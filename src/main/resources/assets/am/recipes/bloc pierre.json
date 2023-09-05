@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "BBB",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "am:caillou"
+    }
+  },
+  "result": {
+    "item": "minecraft:cobblestone",
+    "count": 1
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "OBO",
+    " M "
+  ],
+  "key": {
+    "B": {
+      "item": "am:brique_de_diorite"
+    },
+    "O": {
+      "item": "am:mortier"
+    },
+    "M": {
+      "item": "am:spatule",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:diorite_polie",
+    "count": 1
+  }
+}

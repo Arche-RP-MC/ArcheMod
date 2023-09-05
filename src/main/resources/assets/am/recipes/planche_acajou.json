@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " FL",
+    "   "
+  ],
+  "key": {
+    "F": {
+      "item": "minecraft:log",
+      "data": 3
+    },
+    "L": [
+      {
+        "item": "am:scie_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:scie_en_acier",
+        "data": 32767
+      }
+    ]
+  },
+  "result": {
+    "item": "am:planche_sciure_acajou",
+    "count": 4
+  }
+}

@@ -1,32 +1,27 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
-    "L G",
-    "PPP"
+    "LG ",
+    "PT "
   ],
-
-  "key":
-  {
-    "G":
-    {
+  "key": {
+    "G": {
       "item": "minecraft:dye",
-      "data": "0"
+      "data": 0
     },
-    "P":
-    {
-      "item": "am:lot_de_papiers"
+    "P": {
+      "item": "minecraft:book"
     },
-    "L":
-    {
-      "item": "am:cuir_tanne"
+    "T": {
+      "item": "am:pinceau",
+      "data": 32767
+    },
+    "L": {
+      "item": "am:fusain"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:carnet_en_cuir_noir",
     "count": 1
   }

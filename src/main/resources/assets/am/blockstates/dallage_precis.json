@@ -1,6 +1,7 @@
 {
-  "variants": { 
-  "normal": {
-    "model": "am:dallage_precis"
+  "variants": {
+    "normal": {
+      "model": "am:dallage_precis"
+    }
   }
-}}
+}

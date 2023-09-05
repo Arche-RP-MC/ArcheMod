@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BC ",
+    " DE",
+    "   "
+  ],
+  "key": {
+    "C": {
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
+    },
+    "E": {
+      "item": "am:laine_brute"
+    },
+    "D": {
+      "item": "am:veste_blanc"
+    },
+    "B": {
+      "item": "am:bobine_de_fil"
+    }
+  },
+  "result": {
+    "item": "am:manteau_court_fourre",
+    "count": 1
+  }
+}

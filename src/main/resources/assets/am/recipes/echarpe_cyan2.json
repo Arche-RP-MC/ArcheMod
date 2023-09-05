@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "CL ",
+    "   "
+  ],
+  "key": {
+    "C": {
+      "item": "am:echarpe_blanc"
+    },
+    "L": {
+      "item": "minecraft:dye",
+      "data": 6
+    }
+  },
+  "result": {
+    "item": "am:echarpe_cyan",
+    "count": 1
+  }
+}

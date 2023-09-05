@@ -1,35 +1,33 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     "JJJ",
     "GHC"
   ],
-
-  "key":
-  {
-    "H":
-    {
-      "item": "am:cristal_de_sel"
+  "key": {
+    "H": {
+      "item": "am:sel"
     },
-    "J":
-    {
+    "J": {
       "item": "am:cuir"
     },
-    "C":
-    {
-      "item": "am:huile_de_tannage"
+    "C": {
+      "item": "am:cadre_tannage",
+      "data": 32767
     },
-    "G":
-    {
-      "item": "am:couteau_en_bronze"
-    }
+    "G": [
+      {
+        "item": "am:couteau_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:couteau_acier",
+        "data": 32767
+      }
+    ]
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:cuir_tanne",
     "count": 3
   }

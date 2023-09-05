@@ -1,35 +1,30 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "BCB",
     "KCS",
     "BCB"
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "minecraft:stick"
     },
-    "K":
-    {
-      "item": "am:couteau"
+    "K": {
+      "item": "am:couteau_en_fer"
     },
-    "S":
-    {
-      "item": "am:seau_d_eau_en_bois"
-    },
-    "C":
-    {
+    "S": [
+      {
+        "item": "am:seau_d_eau_en_bois"
+      },
+      {
+        "item": "minecraft:water_bucket"
+      }
+    ],
+    "C": {
       "item": "am:cuir_tanne"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:parchemin",
     "count": 3
   }

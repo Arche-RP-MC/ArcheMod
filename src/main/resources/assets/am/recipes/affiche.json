@@ -1,31 +1,20 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
-    " B ",
+  "pattern": [
+    "   ",
     "FP ",
-    " B "
+    "   "
   ],
-
-  "key":
-  {
-    "B":
-    {
-      "item": "minecraft:stick"
+  "key": {
+    "F": {
+      "item": "am:fusain",
+      "data": 32767
     },
-    "F":
-    {
-      "item": "am:fusain"
-    },
-    "P":
-    {
+    "P": {
       "item": "am:lot_de_papiers"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:affiche",
     "count": 1
   }

@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " S ",
+    " FE",
+    "MMM"
+  ],
+  "key": {
+    "F": {
+      "item": "am:farine"
+    },
+    "S": {
+      "item": "am:sel"
+    },
+    "M": {
+      "item": "am:mais_cru"
+    },
+    "E": [
+      {
+        "item": "am:seau_d_eau_en_bois"
+      },
+      {
+        "item": "minecraft:water_bucket"
+      }
+    ]
+  },
+  "result": {
+    "item": "am:galette_de_mais_cru",
+    "count": 8
+  }
+}

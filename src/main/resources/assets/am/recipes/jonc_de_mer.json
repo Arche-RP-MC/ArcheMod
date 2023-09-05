@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ABA",
+    "A A",
+    "C  "
+  ],
+  "key": {
+    "A": {
+      "item": "am:fibre_vegetale"
+    },
+    "B": {
+      "item": "am:paille"
+    },
+    "C": {
+      "item": "minecraft:string"
+    }
+  },
+  "result": {
+    "item": "am:jonc_de_mer",
+    "count": 1
+  }
+}

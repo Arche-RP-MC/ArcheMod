@@ -1,32 +1,28 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " S ",
     "FFF",
     "BBB"
   ],
-
-  "key":
-  {
-    "S":
-    {
-      "item": "minecraft:water_bucket"
-    },
-    "F":
-    {
+  "key": {
+    "S": [
+      {
+        "item": "am:seau_d_eau_en_bois"
+      },
+      {
+        "item": "minecraft:water_bucket"
+      }
+    ],
+    "F": {
       "item": "am:farine"
     },
-    "B":
-    {
+    "B": {
       "item": "minecraft:bowl"
     }
   },
-
-  "result":
-  {
-    "item": "am:bol_de_gruau",
+  "result": {
+    "item": "am:bol_de_gruau_cru",
     "count": 3
   }
 }

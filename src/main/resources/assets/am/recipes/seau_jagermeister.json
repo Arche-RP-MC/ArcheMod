@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "SSS",
+    " L "
+  ],
+  "key": {
+    "L": {
+      "item": "am:seau_alcool_pur"
+    },
+    "S": {
+      "item": "am:bouquet_garni"
+    }
+  },
+  "result": {
+    "item": "am:seau_jagermeister",
+    "count": 1
+  }
+}

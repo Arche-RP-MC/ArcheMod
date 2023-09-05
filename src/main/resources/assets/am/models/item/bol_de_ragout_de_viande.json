@@ -1,7 +1,7 @@
 {
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "am:items/bol_de_ragout_de_viande"
-    }
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "am:items/bol_de_ragout_de_viande"
+  }
 }
 

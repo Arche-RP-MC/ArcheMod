@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "am:pavot1"
+    },
+    "age=1": {
+      "model": "am:pavot2"
+    },
+    "age=2": {
+      "model": "am:pavot3"
+    },
+    "age=3": {
+      "model": "am:pavot4"
+    },
+    "age=4": {
+      "model": "am:pavot5"
+    },
+    "age=5": {
+      "model": "am:pavot6"
+    },
+    "age=6": {
+      "model": "am:pavot7"
+    },
+    "age=7": {
+      "model": "am:pavot8"
+    }
+  }
+}

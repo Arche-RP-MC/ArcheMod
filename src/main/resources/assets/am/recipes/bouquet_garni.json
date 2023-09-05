@@ -1,0 +1,108 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "BCD",
+    " EJ"
+  ],
+  "key": {
+    "B": [
+      {
+        "item": "am:laurier"
+      },
+      {
+        "item": "am:estragon"
+      },
+      {
+        "item": "am:basilic"
+      },
+      {
+        "item": "am:persil"
+      },
+      {
+        "item": "am:romarin"
+      },
+      {
+        "item": "am:aneth"
+      },
+      {
+        "item": "am:menthe"
+      },
+      {
+        "item": "am:clou_de_girofle"
+      },
+      {
+        "item": "am:sauge"
+      }
+    ],
+    "C": [
+      {
+        "item": "am:laurier"
+      },
+      {
+        "item": "am:estragon"
+      },
+      {
+        "item": "am:basilic"
+      },
+      {
+        "item": "am:persil"
+      },
+      {
+        "item": "am:romarin"
+      },
+      {
+        "item": "am:aneth"
+      },
+      {
+        "item": "am:menthe"
+      },
+      {
+        "item": "am:clou_de_girofle"
+      },
+      {
+        "item": "am:sauge"
+      }
+    ],
+    "D": [
+      {
+        "item": "am:laurier"
+      },
+      {
+        "item": "am:estragon"
+      },
+      {
+        "item": "am:basilic"
+      },
+      {
+        "item": "am:persil"
+      },
+      {
+        "item": "am:romarin"
+      },
+      {
+        "item": "am:aneth"
+      },
+      {
+        "item": "am:menthe"
+      },
+      {
+        "item": "am:clou_de_girofle"
+      },
+      {
+        "item": "am:sauge"
+      }
+    ],
+    "E": {
+      "item": "minecraft:string"
+    },
+    "J": {
+      "item": "am:petite_cisaille",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:bouquet_garni",
+    "count": 1
+  }
+}

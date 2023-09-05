@@ -1,6 +1,7 @@
 {
-    "variants": {
-        "normal": {
-            "model": "am:poivron_rouge"}
+  "variants": {
+    "normal": {
+      "model": "am:poivron_rouge"
     }
+  }
 }

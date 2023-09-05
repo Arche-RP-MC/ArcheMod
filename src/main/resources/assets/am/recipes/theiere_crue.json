@@ -1,31 +1,28 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "ES ",
     "AAA",
     "AA "
   ],
-
-  "key":
-  {
-    "E":
-    {
-      "item": "am:seau_d_eau_en_bois"
+  "key": {
+    "E": [
+      {
+        "item": "am:seau_d_eau_en_bois"
+      },
+      {
+        "item": "minecraft:water_bucket"
+      }
+    ],
+    "S": {
+      "item": "am:spatule",
+      "data": 32767
     },
-    "S":
-    {
-      "item": "am:spatule"
-    },
-    "A":
-    {
+    "A": {
       "item": "minecraft:clay_ball"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:theiere_crue",
     "count": 1
   }

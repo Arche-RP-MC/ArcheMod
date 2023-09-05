@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " P ",
+    "   "
+  ],
+  "key": {
+    "P": {
+      "item": "am:belle_de_nuit2"
+    }
+  },
+  "result": {
+    "item": "am:belle_de_nuit",
+    "count": 1
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " P ",
+    "   "
+  ],
+  "key": {
+    "P": {
+      "item": "am:buisson_de_fleur_blanches2"
+    }
+  },
+  "result": {
+    "item": "am:buisson_de_fleur_blanches",
+    "count": 1
+  }
+}

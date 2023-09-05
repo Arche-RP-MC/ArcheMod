@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "CK ",
+    "KRK"
+  ],
+  "key": {
+    "C": {
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
+    },
+    "K": {
+      "item": "am:etoffe_bleue"
+    },
+    "R": {
+      "item": "am:laniere_de_cuir"
+    }
+  },
+  "result": {
+    "item": "am:chapeau_en_tissu_bleu",
+    "count": 1
+  }
+}

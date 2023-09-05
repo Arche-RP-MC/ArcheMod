@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " T ",
+    "HFH",
+    " H "
+  ],
+  "key": {
+    "H": {
+      "item": "am:lot_de_papiers"
+    },
+    "F": {
+      "item": "minecraft:dye",
+      "data": 12
+    },
+    "T": {
+      "item": "am:barre_etain"
+    }
+  },
+  "result": {
+    "item": "am:lanterne_papier_bleue",
+    "count": 1
+  }
+}

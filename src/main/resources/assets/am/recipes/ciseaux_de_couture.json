@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "GHH",
+    "BT "
+  ],
+  "key": {
+    "B": {
+      "item": "am:cuir_tanne"
+    },
+    "T": {
+      "item": "am:laniere_de_cuir"
+    },
+    "H": {
+      "item": "am:aiguille"
+    },
+    "G": {
+      "item": "minecraft:shears"
+    }
+  },
+  "result": {
+    "item": "am:ciseaux_de_couture",
+    "count": 1
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "F"
+  ],
+  "key": {
+    "F": {
+      "item": "am:lot_de_papier"
+    }
+  },
+  "result": {
+    "item": "minecraft:paper",
+    "count": 2
+  }
+}

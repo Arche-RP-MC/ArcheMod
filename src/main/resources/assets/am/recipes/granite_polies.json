@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "OBM",
+    "   "
+  ],
+  "key": {
+    "B": {
+      "item": "am:caillou_granite"
+    },
+    "O": {
+      "item": "am:mortier"
+    },
+    "M": [
+      {
+        "item": "am:marteau_burin_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_burin_en_acier",
+        "data": 32767
+      }
+    ]
+  },
+  "result": {
+    "item": "minecraft:stone",
+    "data": 2,
+    "count": 1
+  }
+}

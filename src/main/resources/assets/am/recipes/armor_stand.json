@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GLT",
+    "BBB",
+    " B "
+  ],
+  "key": {
+    "B": {
+      "item": "am:planche"
+    },
+    "L": {
+      "item": "am:vernis",
+      "data": 32767
+    },
+    "T": {
+      "item": "am:ciseaux_a_bois",
+      "data": 32767
+    },
+    "G": {
+      "item": "am:maillet",
+      "data": 32767
+    },
+    "F": {
+      "item": "am:clous"
+    }
+  },
+  "result": {
+    "item": "minecraft:armor_stand",
+    "count": 1
+  }
+}

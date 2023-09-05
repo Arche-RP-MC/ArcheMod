@@ -4,16 +4,14 @@ import fr.archemod.init.ModItems;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 
-public class ArcheCreativeTabs extends CreativeTabs
-{
-    public ArcheCreativeTabs(String label)
-    {
+public class ArcheCreativeTabs extends CreativeTabs {
+    public ArcheCreativeTabs(String label) {
         super(label);
     }
 
     @Override
     public ItemStack createIcon() {
-        return new ItemStack(ModItems.CISEAUX_DE_COUTURE);
+        return new ItemStack(ModItems.PETIT_CHEVAL_EN_BOIS);
     }
 
     @Override

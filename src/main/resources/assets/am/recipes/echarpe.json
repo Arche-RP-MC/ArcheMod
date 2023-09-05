@@ -1,32 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " C ",
     " LL",
     "   "
   ],
-
-  "key":
-  {
-    "C":
-    {
-      "item": "am:ciseaux_de_couture"
+  "key": {
+    "C": {
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
     },
-    "M":
-    {
-      "item": "am:laine_brute"
-    },
-    "L":
-    {
+    "L": {
       "item": "am:etoffe"
     }
   },
-
-  "result":
-  {
-    "item": "am:drap",
+  "result": {
+    "item": "am:echarpe_blanc",
     "count": 1
   }
 }

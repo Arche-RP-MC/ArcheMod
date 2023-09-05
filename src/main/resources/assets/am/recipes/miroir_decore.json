@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " V ",
+    "MJM",
+    "IG "
+  ],
+  "key": {
+    "J": {
+      "item": "am:plaque_d_etain"
+    },
+    "M": {
+      "item": "am:bobine_de_bronze",
+      "data": 32767
+    },
+    "V": {
+      "item": "am:verre_en_fusion"
+    },
+    "G": {
+      "item": "am:clous"
+    },
+    "I": {
+      "item": "am:pinces",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:miroir_decore",
+    "count": 1
+  }
+}

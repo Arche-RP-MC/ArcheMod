@@ -1,35 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
-    " B ",
-    "L E"
+    " P ",
+    "L  "
   ],
-
-  "key":
-  {
-    "P":
-    {
-      "item": "am:plaque_de_fer"
+  "key": {
+    "P": {
+      "item": "minecraft:log",
+      "data": 0
     },
-    "L":
-    {
-      "item": "am:laniere_de_cuir"
-    },
-    "M":
-    {
-      "item": "am:marteau_en_fer"
-    },
-    "C":
-    {
-      "item": "am:clous"
+    "L": {
+      "item": "am:ciseaux_a_bois",
+      "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:statuette_en_bois",
     "count": 1
   }

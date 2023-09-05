@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " A ",
+    "CCC"
+  ],
+  "key": {
+    "A": [
+      {
+        "item": "am:petit_pain"
+      },
+      {
+        "item": "am:pain_noir"
+      }
+    ],
+    "C": {
+      "item": "am:bol_de_potage_cru"
+    }
+  },
+  "result": {
+    "item": "am:bol_de_soupe_avec_croutons_cru",
+    "count": 3
+  }
+}

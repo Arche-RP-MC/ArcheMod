@@ -1,27 +1,20 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " H ",
     " H ",
     "G  "
   ],
-
-  "key":
-  {
-    "H":
-    {
+  "key": {
+    "H": {
       "item": "minecraft:stick"
     },
-    "G":
-    {
-      "item": "archemod:ironchisel"
+    "G": {
+      "item": "am:ciseaux_a_bois",
+      "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:dague_en_bois",
     "count": 1
   }

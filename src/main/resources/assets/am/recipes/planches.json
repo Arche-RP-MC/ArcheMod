@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " B ",
+    "   "
+  ],
+  "key": {
+    "B": [
+      {
+        "item": "am:planche_sapin"
+      },
+      {
+        "item": "am:planche_bouleau"
+      },
+      {
+        "item": "am:planche_chene_noir"
+      },
+      {
+        "item": "am:planche_chene"
+      },
+      {
+        "item": "am:planche_acacia"
+      },
+      {
+        "item": "am:planche_acajou"
+      }
+    ]
+  },
+  "result": {
+    "item": "am:planche",
+    "count": 1
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " F ",
+    "BE ",
+    "CCC"
+  ],
+  "key": {
+    "B": {
+      "item": "am:ail"
+    },
+    "C": {
+      "item": "minecraft:bowl"
+    },
+    "F": {
+      "item": "am:hachoir",
+      "data": 32767
+    },
+    "E": {
+      "item": "am:pomme_de_terre_cru"
+    }
+  },
+  "result": {
+    "item": "am:bol_de_ragout_de_patates_cru",
+    "count": 3
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "FP ",
+    "   "
+  ],
+  "key": {
+    "F": {
+      "item": "am:petite_cisaille",
+      "data": 32767
+    },
+    "P": {
+      "item": "am:plaque_de_cuivre"
+    }
+  },
+  "result": {
+    "item": "am:bouton",
+    "count": 4
+  }
+}

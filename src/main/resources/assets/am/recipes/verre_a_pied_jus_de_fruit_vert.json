@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "F",
+    "L"
+  ],
+  "key": {
+    "F": {
+      "item": "am:bouteille_de_jus_de_fruit_vert",
+      "data": 32767
+    },
+    "L": {
+      "item": "am:verre_a_pied"
+    }
+  },
+  "result": {
+    "item": "am:verre_a_pied_jus_de_fruit_vert",
+    "count": 1
+  }
+}

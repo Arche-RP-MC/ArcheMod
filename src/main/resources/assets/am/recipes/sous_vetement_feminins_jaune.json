@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "E E",
+    "E E",
+    " EC"
+  ],
+  "key": {
+    "E": {
+      "item": "am:etoffe_jaune"
+    },
+    "C": {
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:sous_vetement_feminin_jaune",
+    "count": 1
+  }
+}

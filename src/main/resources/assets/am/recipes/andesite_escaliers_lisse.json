@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BM ",
+    "BBE",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "am:brique_d_andesite"
+    },
+    "E": {
+      "item": "am:mortier"
+    },
+    "M": {
+      "item": "am:spatule",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:stonesmooth2stair",
+    "count": 2
+  }
+}

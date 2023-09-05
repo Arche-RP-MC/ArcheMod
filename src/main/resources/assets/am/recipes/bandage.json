@@ -1,36 +1,27 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "AEC",
     " E ",
     "BEB"
   ],
-
-  "key":
-  {
-    "A":
-    {
+  "key": {
+    "A": {
       "item": "am:aiguille"
     },
-    "E":
-    {
+    "E": {
       "item": "am:etoffe"
     },
-    "C":
-    {
-      "item": "am:ciseaux_de_couture"
+    "C": {
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
     },
-    "B":
-    {
+    "B": {
       "item": "am:bobine_de_fil"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:bandage",
-    "count": 3
+    "count": 4
   }
 }

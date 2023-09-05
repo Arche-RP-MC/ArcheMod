@@ -1,31 +1,28 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "  L",
     "CLF",
     "   "
   ],
-
-  "key":
-  {
-    "F":
-    {
-      "item": "minecraft:water_bucket"
+  "key": {
+    "F": [
+      {
+        "item": "am:seau_d_eau_en_bois"
+      },
+      {
+        "item": "minecraft:water_bucket"
+      }
+    ],
+    "C": {
+      "item": "am:spatule",
+      "data": 32767
     },
-    "C":
-    {
-      "item": "am:spatule"
-    },
-    "L":
-    {
+    "L": {
       "item": "minecraft:clay_ball"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:cheval_en_glaise",
     "count": 1
   }

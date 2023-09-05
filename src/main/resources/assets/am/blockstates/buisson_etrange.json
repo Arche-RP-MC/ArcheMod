@@ -1,6 +1,7 @@
 {
-    "variants": {
-        "normal": {
-            "model": "am:buisson_etrange"}
+  "variants": {
+    "normal": {
+      "model": "am:buisson_etrange"
     }
+  }
 }

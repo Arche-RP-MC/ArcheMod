@@ -1,31 +1,24 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "EBE",
     "EEE",
     "ECE"
   ],
-
-  "key":
-  {
-    "E":
-    {
+  "key": {
+    "E": {
       "item": "am:etoffe"
     },
-    "B":
-    {
+    "B": {
       "item": "am:bobine_de_laine"
-    "C":
-    {
-      "item": "am:ciseaux_de_couture"
+    },
+    "C": {
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
     }
   },
-
-  "result":
-  {
-    "item": "am:pantalon",
+  "result": {
+    "item": "am:pantalon_blanc",
     "count": 1
   }
 }

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " P ",
+    "   "
+  ],
+  "key": {
+    "P": {
+      "item": "am:muguet2"
+    }
+  },
+  "result": {
+    "item": "am:muguet",
+    "count": 1
+  }
+}

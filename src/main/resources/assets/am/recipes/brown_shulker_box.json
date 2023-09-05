@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " GF",
+    "BLB",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "am:planche"
+    },
+    "L": {
+      "item": "am:barre_fer"
+    },
+    "F": {
+      "item": "am:clous"
+    },
+    "G": {
+      "item": "am:maillet",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "minecraft:brown_shulker_box",
+    "count": 1
+  }
+}

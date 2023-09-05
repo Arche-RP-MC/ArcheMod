@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "AB ",
+    "   "
+  ],
+  "key": {
+    "A": {
+      "item": "am:marteau_burin_en_acier",
+      "data": 32767
+    },
+    "B": {
+      "item": "am:diorite_polie"
+    }
+  },
+  "result": {
+    "item": "am:diorite_sculptee",
+    "count": 1
+  }
+}

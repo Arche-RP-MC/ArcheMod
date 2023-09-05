@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "B B",
+    "HL "
+  ],
+  "key": {
+    "H": {
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
+    },
+    "B": {
+      "item": "am:etoffe"
+    },
+    "L": {
+      "item": "am:laniere_de_cuir"
+    }
+  },
+  "result": {
+    "item": "am:grand_sac",
+    "count": 1
+  }
+}

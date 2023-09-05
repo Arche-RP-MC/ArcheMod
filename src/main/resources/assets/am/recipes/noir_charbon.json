@@ -1,0 +1,51 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "UB ",
+    " CO",
+    "GHM"
+  ],
+  "key": {
+    "B": {
+      "item": "am:boite_a_poudre"
+    },
+    "U": {
+      "item": "am:graisse_animale"
+    },
+    "C": {
+      "item": "am:cire"
+    },
+    "O": [
+      {
+        "item": "minecraft:coal",
+        "data": 1
+      },
+      {
+        "item": "minecraft:coal",
+        "data": 0
+      }
+    ],
+    "G": {
+      "item": "am:bouteille_huile_olive",
+      "data": 32767
+    },
+    "H": {
+      "item": "am:huile_essentielle",
+      "data": 32767
+    },
+    "M": [
+      {
+        "item": "am:mortier_pilon_en_pierre",
+        "data": 32767
+      },
+      {
+        "item": "am:mortier_pilon_en_bois",
+        "data": 32767
+      }
+    ]
+  },
+  "result": {
+    "item": "am:noir_charbon",
+    "count": 1
+  }
+}

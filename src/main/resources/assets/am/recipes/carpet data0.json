@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BGB",
+    "BFB",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "am:etoffe"
+    },
+    "G": {
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
+    },
+    "F": {
+      "item": "minecraft:dye",
+      "data": 15
+    }
+  },
+  "result": {
+    "item": "minecraft:carpet",
+    "data": 0,
+    "count": 7
+  }
+}

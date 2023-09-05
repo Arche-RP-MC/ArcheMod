@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "LL ",
+    "LS ",
+    "   "
+  ],
+  "key": {
+    "L": {
+      "item": "am:mout_fruit_blanc"
+    },
+    "S": {
+      "item": "am:seau_d_eau_en_bois"
+    }
+  },
+  "result": {
+    "item": "am:seau_jus_de_fruit_blanc_en_bois",
+    "count": 1
+  }
+}

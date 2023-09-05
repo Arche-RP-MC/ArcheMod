@@ -1,6 +1,7 @@
 {
-    "variants": {
-        "normal": {
-            "model": "am:hortensias"}
+  "variants": {
+    "normal": {
+      "model": "am:hortensias"
     }
+  }
 }

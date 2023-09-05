@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "HHH",
+    "HCH",
+    "HHH"
+  ],
+  "key": {
+    "C": {
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
+    },
+    "H": {
+      "item": "am:etoffe_rouge"
+    }
+  },
+  "result": {
+    "item": "zawa:octopus_plush",
+    "count": 1
+  }
+}

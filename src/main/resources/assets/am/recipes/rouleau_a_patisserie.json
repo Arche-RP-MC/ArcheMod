@@ -1,39 +1,42 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "M H",
     "CPC",
     "H L"
   ],
-
-  "key":
-  {
-    "M":
-    {
-      "item": "am:marteau_en_fer"
-    },
-    "H":
-    {
+  "key": {
+    "M": [
+      {
+        "item": "marteau_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_en_acier",
+        "data": 32767
+      }
+    ],
+    "H": {
       "item": "am:manche"
     },
-    "C":
-    {
+    "C": {
       "item": "am:clous"
     },
-    "P":
-    {
+    "P": {
       "item": "am:planche"
     },
-    "L":
-    {
-      "item": "am:lime_en_fer"
-    }
+    "L": [
+      {
+        "item": "am:lime_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:lime_en_acier",
+        "data": 32767
+      }
+    ]
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:rouleau_a_patisserie",
     "count": 1
   }

@@ -1,28 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " C ",
     "LLL",
     "LLL"
   ],
-
-  "key":
-  {
-    "C":
-    {
-      "item": "am:ciseaux_de_couture"
+  "key": {
+    "C": {
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
     },
-    "L":
-    {
+    "L": {
       "item": "am:etoffe"
     }
   },
-
-  "result":
-  {
-    "item": "am:couverture",
+  "result": {
+    "item": "am:couverture_blanc",
     "count": 1
   }
 }

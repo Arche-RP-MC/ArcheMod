@@ -1,39 +1,36 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "PMP",
     "CTC",
     "PSP"
   ],
-
-  "key":
-  {
-    "P":
-    {
+  "key": {
+    "P": {
       "item": "am:planche"
     },
-    "C":
-    {
+    "C": {
       "item": "am:clous"
     },
-    "S":
-    {
-      "item": "am:scie_en_fer"
+    "S": {
+      "item": "am:scie_en_fer",
+      "data": 32767
     },
-    "T":
-    {
+    "T": {
       "item": "minecraft:crafting_table"
     },
-    "M":
-    {
-      "item": "am:marteau_en_fer"
-    }
+    "M": [
+      {
+        "item": "am:marteau_en_acier",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_en_fer",
+        "data": 32767
+      }
+    ]
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:table",
     "count": 1
   }

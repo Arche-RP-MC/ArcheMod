@@ -1,0 +1,6 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "am:blocks/romarin_stage_6"
+  }
+}

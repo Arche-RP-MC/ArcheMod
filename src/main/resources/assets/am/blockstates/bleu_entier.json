@@ -1,0 +1,25 @@
+{
+  "variants": {
+    "bites=0": {
+      "model": "am:bleu_entier"
+    },
+    "bites=1": {
+      "model": "am:bleu1"
+    },
+    "bites=2": {
+      "model": "am:bleu2"
+    },
+    "bites=3": {
+      "model": "am:bleu3"
+    },
+    "bites=4": {
+      "model": "am:bleu4"
+    },
+    "bites=5": {
+      "model": "am:bleu5"
+    },
+    "bites=6": {
+      "model": "am:bleu6"
+    }
+  }
+}

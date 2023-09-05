@@ -1,31 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
-    " C ",
+  "pattern": [
+    " P ",
     "GN ",
     "G  "
   ],
-
-  "key":
-  {
-    "N":
-    {
-      "item": "am:laniere"
+  "key": {
+    "N": {
+      "item": "am:laniere_de_cuir"
     },
-    "P":
-    {
-      "item": "am:ciseaux_de_couture"
+    "P": {
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
     },
-    "G":
-    {
-      "item": "minecraft:leather"
+    "G": {
+      "item": "am:cuir_tanne"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:carquois",
     "count": 1
   }

@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "EBM",
+    "BEB",
+    "FHE"
+  ],
+  "key": {
+    "B": {
+      "item": "am:morceau_de_poisson_cru"
+    },
+    "E": {
+      "item": "minecraft:stick"
+    },
+    "M": {
+      "item": "am:hachoir",
+      "data": 32767
+    },
+    "H": {
+      "item": "am:bouquet_garni"
+    },
+    "F": {
+      "item": "am:farine"
+    }
+  },
+  "result": {
+    "item": "am:poisson_grille",
+    "count": 3
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "FPD",
+    "   "
+  ],
+  "key": {
+    "F": {
+      "item": "am:vernis",
+      "data": 32767
+    },
+    "D": {
+      "item": "am:ciseaux_a_bois",
+      "data": 32767
+    },
+    "P": {
+      "item": "am:planche"
+    }
+  },
+  "result": {
+    "item": "am:bouton",
+    "count": 3
+  }
+}

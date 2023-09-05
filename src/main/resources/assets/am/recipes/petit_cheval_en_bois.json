@@ -1,47 +1,51 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "LMC",
     " B ",
     "VFP"
   ],
-
-  "key":
-  {
-    "L":
-    {
-      "item": "am:lime_en_fer"
-    },
-    "M":
-    {
-      "item": "am:marteau_en_fer"
-    },
-    "C":
-    {
+  "key": {
+    "L": [
+      {
+        "item": "am:lime_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:lime_en_acier",
+        "data": 32767
+      }
+    ],
+    "M": [
+      {
+        "item": "marteau_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_en_acier",
+        "data": 32767
+      }
+    ],
+    "C": {
       "item": "am:clous"
     },
-    "B":
-    {
-      "item": "minecraft:log"
+    "B": {
+      "item": "minecraft:log",
+      "data": 0
     },
-    "V":
-    {
-      "item": "am:vernis"
+    "V": {
+      "item": "am:vernis",
+      "data": 32767
     },
-    "F":
-    {
+    "F": {
       "item": "am:bobine_de_laine"
     },
-    "P":
-    {
-      "item": "am:pinceau_brosse"
+    "P": {
+      "item": "am:pinceau",
+      "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:petit_cheval_en_bois",
     "count": 1
   }

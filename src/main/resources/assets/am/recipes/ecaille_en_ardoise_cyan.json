@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "TT ",
+    "FFP",
+    "TT "
+  ],
+  "key": {
+    "F": {
+      "item": "am:clous"
+    },
+    "P": [
+      {
+        "item": "marteau_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_en_acier",
+        "data": 32767
+      }
+    ],
+    "T": {
+      "item": "am:tuile_ardoise_cyan"
+    }
+  },
+  "result": {
+    "item": "am:ecaille_en_ardoise_cyan",
+    "count": 1
+  }
+}

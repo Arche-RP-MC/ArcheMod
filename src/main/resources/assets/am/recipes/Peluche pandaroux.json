@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "HGH",
+    "GCG",
+    "HGH"
+  ],
+  "key": {
+    "H": {
+      "item": "am:etoffe_rouge"
+    },
+    "C": {
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
+    },
+    "G": {
+      "item": "am:etoffe"
+    }
+  },
+  "result": {
+    "item": "zawa:red_panda_plush",
+    "count": 1
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "FP ",
+    "   "
+  ],
+  "key": {
+    "F": {
+      "item": "am:plancher_bouleau_cire"
+    },
+    "P": [
+      {
+        "item": "am:marteau_en_acier",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_en_fer",
+        "data": 32767
+      }
+    ]
+  },
+  "result": {
+    "item": "am:plancher_bouleau_craquele",
+    "count": 1
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "variants": {
+    "bites=0": {
+      "model": "am:jambon_entier"
+    },
+    "bites=1": {
+      "model": "am:jambon1"
+    },
+    "bites=2": {
+      "model": "am:jambon2"
+    },
+    "bites=3": {
+      "model": "am:jambon3"
+    },
+    "bites=4": {
+      "model": "am:jambon4"
+    },
+    "bites=5": {
+      "model": "am:jambon5"
+    },
+    "bites=6": {
+      "model": "am:jambon6"
+    }
+  }
+}

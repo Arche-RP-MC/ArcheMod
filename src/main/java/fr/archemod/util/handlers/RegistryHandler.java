@@ -1,6 +1,9 @@
 package fr.archemod.util.handlers;
 
 import fr.archemod.ArcheMod;
+import fr.archemod.blocks.tileentity.TileEntityBlockInventory;
+import fr.archemod.blocks.tileentity.TileEntityBlockInventoryVisible;
+import fr.archemod.blocks.tileentity.TileEntityFut;
 import fr.archemod.blocks.tileentity.*;
 import fr.archemod.chat.capabilities.description.DescriptionCapability;
 import fr.archemod.chat.capabilities.indicator.ArcheChatCapability;
@@ -28,12 +31,12 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 @Mod.EventBusSubscriber
 public class RegistryHandler {
 
-    public static final ResourceLocation CAPABILITY_ARCHE_CHAT_LOCATION = new ResourceLocation(Reference.MOD_ID,"archechat");
-    public static final ResourceLocation CAPABILITY_DESCRIPTION_LOCATION = new ResourceLocation(Reference.MOD_ID,"description");
+    public static final ResourceLocation CAPABILITY_ARCHE_CHAT_LOCATION = new ResourceLocation(Reference.MOD_ID, "archechat");
+    public static final ResourceLocation CAPABILITY_DESCRIPTION_LOCATION = new ResourceLocation(Reference.MOD_ID, "description");
 
     @SubscribeEvent
-    public static void attachCapabilityToPlayer(AttachCapabilitiesEvent<Entity> event){
-        if(event.getObject() instanceof EntityPlayer){
+    public static void attachCapabilityToPlayer(AttachCapabilitiesEvent<Entity> event) {
+        if (event.getObject() instanceof EntityPlayer) {
             event.addCapability(CAPABILITY_ARCHE_CHAT_LOCATION, new ArcheChatCapability());
             event.addCapability(CAPABILITY_DESCRIPTION_LOCATION, new DescriptionCapability());
         }
@@ -50,36 +53,44 @@ public class RegistryHandler {
     /**
      * Listen for the register event for creating custom blocks
      */
+
+
     @SubscribeEvent
     public static void onBlockRegister(RegistryEvent.Register<Block> event) {
         event.getRegistry().registerAll(ModBlocks.BLOCKS.toArray(new Block[0]));
         NetworkRegistry.INSTANCE.registerGuiHandler(ArcheMod.INSTANCE, new GuiHandler());
 
-        GameRegistry.registerTileEntity(TileEntityPlacardHRP.class, new ResourceLocation(Reference.MOD_ID,"TileEntityPlacardHRP"));
-        GameRegistry.registerTileEntity(TileEntityTable.class, new ResourceLocation(Reference.MOD_ID,"TileEntityTable"));
-        GameRegistry.registerTileEntity(TileEntityEcrinABijoux.class, new ResourceLocation(Reference.MOD_ID,"TileEntityEcrinABijoux"));
-        GameRegistry.registerTileEntity(TileEntityLightBlock.class, new ResourceLocation(Reference.MOD_ID,"TileEntityLightBlock"));
+        GameRegistry.registerTileEntity(TileEntityBlockInventoryVisible.class, new ResourceLocation(Reference.MOD_ID, "ContainerVisible"));
+        GameRegistry.registerTileEntity(TileEntityBlockInventory.class, new ResourceLocation(Reference.MOD_ID, "Container"));
+        GameRegistry.registerTileEntity(TileEntityFut.class, new ResourceLocation(Reference.MOD_ID, "Fut"));
+        GameRegistry.registerTileEntity(TileEntityTable.class, new ResourceLocation(Reference.MOD_ID, "TileEntityTable"));
+        GameRegistry.registerTileEntity(TileEntityLightBlock.class, new ResourceLocation(Reference.MOD_ID, "TileEntityLightBlock"));
+        //GameRegistry.registerTileEntity(TileEntityLightBlock2.class, new ResourceLocation(Reference.MOD_ID,"TileEntityLightBlock2"));
         GameRegistry.registerTileEntity(TileEntityFishCase.class, new ResourceLocation(Reference.MOD_ID, "TileEntityFishCase"));
-        GameRegistry.registerTileEntity(TileEntityHrpSign.class, new ResourceLocation(Reference.MOD_ID, "TileEntityHrpSign"));
+        //GameRegistry.registerTileEntity(TileEntityFourSechoir2.class, new ResourceLocation(Reference.MOD_ID, "TileEntityFourSechoir2"));
 
         ModBlocks.init();
         ModBlocks.register();
+
+
     }
+
 
     @SubscribeEvent
     public static void onModelRegister(ModelRegistryEvent event) {
-        for(Item item : ModItems.ITEMS){
-            if(item instanceof IHasModel){
-                ((IHasModel)item).registerModels();
+        for (Item item : ModItems.ITEMS) {
+            if (item instanceof IHasModel) {
+                ((IHasModel) item).registerModels();
             }
         }
 
-        for(Block block : ModBlocks.BLOCKS){
-            if(block instanceof IHasModel){
-                ((IHasModel)block).registerModels();
+        for (Block block : ModBlocks.BLOCKS) {
+            if (block instanceof IHasModel) {
+                ((IHasModel) block).registerModels();
             }
         }
     }
+
 
 }
 

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "CL ",
+    "   "
+  ],
+  "key": {
+    "C": {
+      "item": "am:sac_de_couchage_blanc"
+    },
+    "L": {
+      "item": "minecraft:dye",
+      "data": 10
+    }
+  },
+  "result": {
+    "item": "am:sac_de_couchage_vert_clair",
+    "count": 1
+  }
+}

@@ -1,6 +1,6 @@
 {
-    "parent": "block/cross",
-    "textures": {
-        "cross": "am:blocks/etoile_des_glaciers"
-    }
+  "parent": "block/cross",
+  "textures": {
+    "cross": "am:blocks/etoile_des_glaciers"
+  }
 }

@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "C S",
+    "PPP"
+  ],
+  "key": {
+    "P": [
+      {
+        "item": "am:planche"
+      },
+      {
+        "item": "am:planche_acacia"
+      },
+      {
+        "item": "am:planche_acajou"
+      },
+      {
+        "item": "am:planche_bouleau"
+      },
+      {
+        "item": "am:planche_chene"
+      },
+      {
+        "item": "am:planche_chene_noir"
+      },
+      {
+        "item": "am:planche_sapin"
+      }
+    ],
+    "C": {
+      "item": "am:clous"
+    },
+    "S": {
+      "item": "am:ciseaux_a_bois",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:moule_fromage",
+    "count": 1
+  }
+}

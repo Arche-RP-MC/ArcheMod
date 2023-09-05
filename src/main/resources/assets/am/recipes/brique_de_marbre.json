@@ -1,27 +1,26 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
-    " NN",
-    "FNN",
-    " NN"
+  "pattern": [
+    "   ",
+    "FN ",
+    "   "
   ],
-
-  "key":
-  {
-    "N":
-    {
+  "key": {
+    "N": {
       "item": "minecraft:quartz"
     },
-    "F":
-    {
-      "item": "am:lime_en_bronze"
-    }
+    "F": [
+      {
+        "item": "am:lime_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:lime_en_acier",
+        "data": 32767
+      }
+    ]
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:brique_de_marbre",
     "count": 1
   }

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "AB ",
+    "   "
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:stone",
+      "data": 2
+    },
+    "B": {
+      "item": "am:marteau_burin_en_fer",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:granite_sculptee",
+    "count": 1
+  }
+}

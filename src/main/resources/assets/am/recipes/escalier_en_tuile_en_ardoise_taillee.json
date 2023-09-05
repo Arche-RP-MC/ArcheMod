@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " PT",
+    "   "
+  ],
+  "key": {
+    "T": {
+      "item": "am:tuile_en_ardoise_taillee"
+    },
+    "P": [
+      {
+        "item": "am:marteau_burin_en_acier",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_burin_en_fer",
+        "data": 32767
+      }
+    ]
+  },
+  "result": {
+    "item": "am:escalier_en_tuile_en_ardoise_taillee",
+    "count": 1
+  }
+}

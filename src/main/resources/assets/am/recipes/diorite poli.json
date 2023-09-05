@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP",
+    "PPP",
+    "   "
+  ],
+  "key": {
+    "P": {
+      "item": "am:caillou_diorite"
+    }
+  },
+  "result": {
+    "item": "minecraft:stone",
+    "data": 4,
+    "count": 1
+  }
+}

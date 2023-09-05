@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "LLL",
+    "LLL",
+    " SM"
+  ],
+  "key": {
+    "L": [
+      {
+        "item": "am:mais_cru"
+      },
+      {
+        "item": "am:pomme_de_terre_cru"
+      }
+    ],
+    "M": {
+      "item": "am:malt_orge"
+    },
+    "S": {
+      "item": "minecraft:water_bucket"
+    }
+  },
+  "result": {
+    "item": "am:seau_rye",
+    "count": 1
+  }
+}

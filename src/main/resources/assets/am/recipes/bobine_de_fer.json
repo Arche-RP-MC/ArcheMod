@@ -1,30 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " G ",
     "LP ",
     "   "
   ],
-
-  "key":{
-    "P":
-    {
+  "key": {
+    "P": {
       "item": "am:bobine_en_bois"
     },
-    "G":
-    {
-      "item": "am:pinces"
+    "G": {
+      "item": "am:pinces",
+      "data": 32767
     },
-    "L":
-    {
+    "L": {
       "item": "am:barre_fer"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:bobine_de_fer",
     "count": 1
   }

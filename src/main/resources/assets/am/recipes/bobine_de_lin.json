@@ -1,27 +1,20 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "L L",
     "LPL",
     "   "
   ],
-
-  "key":{
-    "P":
-    {
+  "key": {
+    "P": {
       "item": "am:bobine_en_bois"
     },
-    "L":
-    {
+    "L": {
       "item": "am:lin"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:bobine_de_lin",
-    "count": 1
+    "count": 20
   }
 }

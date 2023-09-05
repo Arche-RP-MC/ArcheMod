@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "am:items/brochette_de_viande_cru"
+  }
+}

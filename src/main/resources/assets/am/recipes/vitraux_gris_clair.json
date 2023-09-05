@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " P ",
+    "HT ",
+    "   "
+  ],
+  "key": {
+    "H": {
+      "item": "minecraft:stained_glass_pane",
+      "data": 8
+    },
+    "T": {
+      "item": "am:barre_plomb"
+    },
+    "P": {
+      "item": "am:pinces",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:vitraux_gris_clair",
+    "count": 1
+  }
+}

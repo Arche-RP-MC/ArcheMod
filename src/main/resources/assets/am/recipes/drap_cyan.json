@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " C ",
+    "LLL",
+    "   "
+  ],
+  "key": {
+    "C": {
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
+    },
+    "L": {
+      "item": "am:etoffe_cyan"
+    }
+  },
+  "result": {
+    "item": "am:drap_cyan",
+    "count": 1
+  }
+}

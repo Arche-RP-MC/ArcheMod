@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SLG",
+    "EE ",
+    "FF "
+  ],
+  "key": {
+    "F": {
+      "item": "am:pate_a_pain"
+    },
+    "E": {
+      "item": "am:oeuf_a_plat_cru"
+    },
+    "G": {
+      "item": "minecraft:sugar"
+    },
+    "S": {
+      "item": "am:rouleau_a_patisserie",
+      "data": 32767
+    },
+    "L": {
+      "item": "minecraft:milk_bucket"
+    }
+  },
+  "result": {
+    "item": "am:crepe_cru",
+    "count": 6
+  }
+}

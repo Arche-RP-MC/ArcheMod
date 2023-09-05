@@ -1,4 +1,3 @@
 {
-    "parent": "am:block/baril_vide"
+  "parent": "am:items/barrel_none_front"
 }
-

@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all" : "am:blocks/bloc_de_pierre_precieuse"
+    "all": "am:blocks/bloc_de_pierre_precieuse"
   }
 }

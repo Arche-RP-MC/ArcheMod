@@ -1,4 +1,4 @@
-package fr.archemod.blocks;
+/*package fr.archemod.blocks;
 
 import fr.archemod.ArcheMod;
 import fr.archemod.init.ModBlocks;
@@ -408,7 +408,7 @@ public class BlockFlowerPot extends BlockContainer implements IHasModel {
     }
 
 
-    /*============================FORGE START=====================================*/
+    ============================FORGE START=====================================
     @Override
     public void getDrops(net.minecraft.util.NonNullList<ItemStack> drops, IBlockAccess world, BlockPos pos, IBlockState state, int fortune)
     {
@@ -429,7 +429,7 @@ public class BlockFlowerPot extends BlockContainer implements IHasModel {
         super.harvestBlock(world, player, pos, state, te, tool);
         world.setBlockToAir(pos);
     }
-    /*===========================FORGE END==========================================*/
+    ===========================FORGE END==========================================
 
     public static enum EnumFlowerType implements IStringSerializable
     {
@@ -475,3 +475,4 @@ public class BlockFlowerPot extends BlockContainer implements IHasModel {
         }
     }
 }
+*/

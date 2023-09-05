@@ -1,0 +1,6 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "am:blocks/jacinthe_des_bois_stage_7"
+  }
+}

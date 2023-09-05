@@ -27,7 +27,7 @@ public class TileEntityFishCase extends TileEntityLockableLoot {
         if (!this.checkLootAndRead(compound))
             ItemStackHelper.loadAllItems(compound, this.stacks);
 
-        if(compound.hasKey("time"))
+        if (compound.hasKey("time"))
             this.time = Long.parseLong(compound.getString("time"));
     }
 
@@ -37,23 +37,16 @@ public class TileEntityFishCase extends TileEntityLockableLoot {
         if (!this.checkLootAndWrite(compound))
             ItemStackHelper.saveAllItems(compound, this.stacks);
 
+        long date = new Date().getTime();
+        if (!compound.hasKey("time")) {
+            ArcheMod.logger.debug("[TILE SERIALIZE....]" + date);
+            compound.setString("time", String.valueOf(date));
+            this.time = Long.parseLong(compound.getString("time"));
+        }
+
         return compound;
     }
 
-    @Override
-    public NBTTagCompound serializeNBT(){
-
-        NBTTagCompound tag = getTileData();
-
-        long date = new Date().getTime();
-        if(!tag.hasKey("time")){
-            ArcheMod.LOGGER.debug("[TILE SERIALIZE....]" + date);
-            tag.setString("time", String.valueOf(date));
-            this.time = Long.parseLong(tag.getString("time"));
-        }
-
-        return tag;
-    }
 
     @Override
     protected NonNullList<ItemStack> getItems() {
@@ -91,8 +84,9 @@ public class TileEntityFishCase extends TileEntityLockableLoot {
 
     @Override
     public Container createContainer(InventoryPlayer playerInventory, EntityPlayer playerIn) {
-        return new ContainerFishCase(playerInventory,this);
+        return new ContainerFishCase(playerInventory, this);
     }
+
     @Override
     public SPacketUpdateTileEntity getUpdatePacket() {
         return new SPacketUpdateTileEntity(this.pos, 0, this.getUpdateTag());
@@ -118,7 +112,6 @@ public class TileEntityFishCase extends TileEntityLockableLoot {
     }
 
 
-
     @Override
     public boolean isItemValidForSlot(int index, ItemStack stack) {
         return true;
@@ -139,22 +132,23 @@ public class TileEntityFishCase extends TileEntityLockableLoot {
         return "Casier à poisson";
     }
 
-    public void setDate(long time){
+    public void setDate(long time) {
         this.time = time;
+        markDirty();
     }
 
-    public long getDate(){
+    public long getDate() {
         return time;
     }
 
-    public void addItem(ItemStack stack, int size){
+    public void addItem(ItemStack stack, int size) {
 
-        for(int i = 0; i < this.stacks.size(); i++){
-            if(this.stacks.get(i).isEmpty()){
+        for (int i = 0; i < this.stacks.size(); i++) {
+            if (this.stacks.get(i).isEmpty()) {
 
                 ItemStack itemStack = this.stacks.get(i);
 
-                if(itemStack == stack){
+                if (itemStack == stack) {
                     itemStack.setCount(itemStack.getCount() + size);
                     this.stacks.set(i, itemStack);
                     this.getUpdateTag();

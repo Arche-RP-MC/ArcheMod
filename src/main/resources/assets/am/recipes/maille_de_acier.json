@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " B ",
+    "GHB",
+    " B "
+  ],
+  "key": {
+    "B": {
+      "item": "am:barre_acier"
+    },
+    "H": {
+      "item": "am:pinces",
+      "data": 32767
+    },
+    "G": [
+      {
+        "item": "am:marteau_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_en_acier",
+        "data": 32767
+      }
+    ]
+  },
+  "result": {
+    "item": "am:maille_d_acier",
+    "count": 1
+  }
+}

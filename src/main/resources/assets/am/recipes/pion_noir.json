@@ -1,48 +1,32 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
-    "SML",
+  "pattern": [
+    "  L",
     " B ",
     "ETV"
   ],
-
-  "key":
-  {
-    "E":
-    {
+  "key": {
+    "E": {
       "item": "am:etoffe"
     },
-    "T":
-    {
-      "item": "minecraft:dye"
+    "T": {
+      "item": "minecraft:dye",
+      "data": 0
     },
-    "V":
-    {
-      "item": "am:vernis"
+    "V": {
+      "item": "am:vernis",
+      "data": 32767
     },
-    "S":
-    {
-      "item": "am:scie_en_fer"
+    "B": {
+      "item": "am:planche"
     },
-    "M":
-    {
-      "item": "am:marteau_en_fer"
-    },
-    "B":
-    {
-      "item": "minecraft:log"
-    },
-    "L":
-    {
-      "item": "minecraft:lime_en_fer"
+    "L": {
+      "item": "am:ciseaux_a_bois",
+      "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:pion_noir",
-    "count": 6
+    "count": 3
   }
 }

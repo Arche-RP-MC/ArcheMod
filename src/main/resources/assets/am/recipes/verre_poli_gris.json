@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " P ",
+    "HTH",
+    " H "
+  ],
+  "key": {
+    "H": {
+      "item": "minecraft:stained_glass_pane",
+      "data": 7
+    },
+    "T": {
+      "item": "am:etoffe"
+    },
+    "P": {
+      "item": "am:pinces",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:verre_poli_gris",
+    "count": 3
+  }
+}

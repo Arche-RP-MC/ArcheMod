@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AA ",
+    "AA ",
+    "   "
+  ],
+  "key": {
+    "A": {
+      "item": "am:ardoise_brute"
+    }
+  },
+  "result": {
+    "item": "am:tuile_en_ardoise",
+    "count": 4
+  }
+}

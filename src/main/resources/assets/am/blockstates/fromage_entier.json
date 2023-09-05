@@ -1,0 +1,25 @@
+{
+  "variants": {
+    "bites=0": {
+      "model": "am:fromage_entier1"
+    },
+    "bites=1": {
+      "model": "am:fromage1"
+    },
+    "bites=2": {
+      "model": "am:fromage2"
+    },
+    "bites=3": {
+      "model": "am:fromage3"
+    },
+    "bites=4": {
+      "model": "am:fromage4"
+    },
+    "bites=5": {
+      "model": "am:fromage5"
+    },
+    "bites=6": {
+      "model": "am:fromage6"
+    }
+  }
+}

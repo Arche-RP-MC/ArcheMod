@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " C ",
+    "FSF",
+    "DBD"
+  ],
+  "key": {
+    "B": {
+      "item": "am:farine"
+    },
+    "C": {
+      "item": "am:rouleau_a_patisserie",
+      "data": 32767
+    },
+    "D": {
+      "item": "minecraft:sugar"
+    },
+    "F": {
+      "item": "am:riz_cru"
+    },
+    "S": [
+      {
+        "item": "am:pot_de_confiture_de_fruits_rouges",
+        "data": 32767
+      },
+      {
+        "item": "am:pot_de_confiture_de_myrtilles",
+        "data": 32767
+      },
+      {
+        "item": "am:pot_de_miel",
+        "data": 32767
+      },
+      {
+        "item": "am:pot_de_confiture_d_agrumes",
+        "data": 32767
+      }
+    ]
+  },
+  "result": {
+    "item": "am:patisserie_cru",
+    "count": 3
+  }
+}

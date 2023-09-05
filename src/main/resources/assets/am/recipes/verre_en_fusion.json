@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CVV",
+    "VPV",
+    "VVV"
+  ],
+  "key": {
+    "P": {
+      "item": "minecraft:coal",
+      "data": 0
+    },
+    "C": {
+      "item": "am:canne_de_verrier",
+      "data": 32767
+    },
+    "V": {
+      "item": "minecraft:sand",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "am:verre_en_fusion",
+    "count": 5
+  }
+}

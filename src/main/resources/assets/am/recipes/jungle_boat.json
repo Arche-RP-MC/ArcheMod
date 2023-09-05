@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "G L",
+    "BFB",
+    "BPB"
+  ],
+  "key": {
+    "B": {
+      "item": "am:planche_acajou"
+    },
+    "L": {
+      "item": "am:vernis",
+      "data": 32767
+    },
+    "G": {
+      "item": "am:maillet",
+      "data": 32767
+    },
+    "P": {
+      "item": "minecraft:log",
+      "data": 3
+    },
+    "F": {
+      "item": "am:clous"
+    }
+  },
+  "result": {
+    "item": "minecraft:jungle_boat",
+    "count": 1
+  }
+}

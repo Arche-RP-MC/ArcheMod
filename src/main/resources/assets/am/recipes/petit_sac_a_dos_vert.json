@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BCB",
+    "TTT",
+    " S"
+  ],
+  "key": {
+    "B": {
+      "item": "am:bobine_de_fil"
+    },
+    "S": {
+      "item": "am:cuir_tanne"
+    },
+    "C": {
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
+    },
+    "T": {
+      "item": "am:etoffe_verte"
+    }
+  },
+  "result": {
+    "item": "am:petit_sac_a_dos_vert",
+    "count": 1
+  }
+}

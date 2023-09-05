@@ -1,7 +1,7 @@
 {
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "am:items/petite_viande_de_gibier_crue"
-    }
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "am:items/petite_viande_de_gibier_crue"
+  }
 }
 

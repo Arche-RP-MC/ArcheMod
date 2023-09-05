@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " B ",
+    " HT",
+    " C "
+  ],
+  "key": {
+    "B": {
+      "item": "am:canne_de_verrier",
+      "data": 32767
+    },
+    "H": {
+      "item": "am:verre_en_fusion"
+    },
+    "C": {
+      "item": "minecraft:dye",
+      "data": 8
+    },
+    "T": {
+      "item": "am:pinces",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:perle_en_verre_gris",
+    "count": 3
+  }
+}

@@ -1,31 +1,30 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     " L ",
     "FNF"
   ],
-
-  "key":
-  {
-    "F":
-    {
+  "key": {
+    "F": {
       "item": "am:pepite_or"
     },
-    "N":
-    {
-      "item": "am:pinces"
+    "N": {
+      "item": "am:pinces",
+      "data": 32767
     },
-    "L":
-    {
-      "item": "am:lime_en_bronze"
-    }
+    "L": [
+      {
+        "item": "am:lime_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:lime_en_acier",
+        "data": 32767
+      }
+    ]
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:boucles_oreilles_en_or",
     "count": 1
   }

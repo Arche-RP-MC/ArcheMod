@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AA ",
+    "AA ",
+    "   "
+  ],
+  "key": {
+    "A": {
+      "item": "am:tuile_simple"
+    }
+  },
+  "result": {
+    "item": "am:tuile",
+    "count": 1
+  }
+}

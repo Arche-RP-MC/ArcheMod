@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " C ",
+    "FLL",
+    " M "
+  ],
+  "key": {
+    "F": [
+      {
+        "item": "am:seau_d_eau_en_bois"
+      },
+      {
+        "item": "minecraft:water_bucket"
+      }
+    ],
+    "L": {
+      "item": "am:farine"
+    },
+    "C": {
+      "item": "am:cepes_cru"
+    },
+    "M": [
+      [
+        {
+          "item": "mortier_pilon_en_pierre",
+          "data": 32767
+        },
+        {
+          "item": "am:mortier_pilon_en_bois",
+          "data": 32767
+        }
+      ],
+      {
+        "item": "am:mortier_pilon_en_pierre",
+        "data": 32767
+      }
+    ]
+  },
+  "result": {
+    "item": "am:levure",
+    "count": 3
+  }
+}

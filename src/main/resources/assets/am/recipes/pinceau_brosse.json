@@ -1,39 +1,32 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "PPP",
     "FIC",
-    " B "
+    "KB "
   ],
-
-  "key":
-  {
-    "P":
-    {
+  "key": {
+    "P": {
       "item": "am:poils"
     },
-    "I":
-    {
+    "I": {
       "item": "am:pepite_fer"
     },
-    "F":
-    {
+    "F": {
       "item": "am:bobine_de_fil"
     },
-    "C":
-    {
+    "C": {
       "item": "am:clous"
     },
-    "B":
-    {
-      "item": "minecraft:stick"
+    "K": {
+      "item": "am:pinces",
+      "data": 32767
+    },
+    "B": {
+      "item": "am:manche"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:pinceau_brosse",
     "count": 1
   }

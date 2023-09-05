@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " P ",
+    "   "
+  ],
+  "key": {
+    "P": {
+      "item": "am:basilic"
+    }
+  },
+  "result": {
+    "item": "am:basilic2",
+    "count": 1
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "APA",
+    " M "
+  ],
+  "key": {
+    "M": [
+      {
+        "item": "mortier_pilon_en_pierre",
+        "data": 32767
+      },
+      {
+        "item": "am:mortier_pilon_en_bois",
+        "data": 32767
+      }
+    ],
+    "P": {
+      "item": "am:poussiere_minerale"
+    },
+    "A": {
+      "item": "minecraft:double_plant",
+      "data": 5
+    }
+  },
+  "result": {
+    "item": "minecraft:dye",
+    "data": 4,
+    "count": 2
+  }
+}

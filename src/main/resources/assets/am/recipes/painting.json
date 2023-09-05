@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GTP",
+    "BV ",
+    "BV "
+  ],
+  "key": {
+    "B": {
+      "item": "am:planche"
+    },
+    "V": {
+      "item": "am:etoffe"
+    },
+    "P": {
+      "item": "am:clous"
+    },
+    "T": {
+      "item": "am:ciseaux_a_bois",
+      "data": 32767
+    },
+    "G": {
+      "item": "am:maillet",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "minecraft:painting",
+    "count": 1
+  }
+}

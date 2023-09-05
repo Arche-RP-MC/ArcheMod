@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "CL ",
+    "   "
+  ],
+  "key": {
+    "C": {
+      "item": "am:jupe_blanc"
+    },
+    "L": {
+      "item": "minecraft:dye",
+      "data": 11
+    }
+  },
+  "result": {
+    "item": "am:jupe_jaune",
+    "count": 1
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "IBI",
+    "IEH"
+  ],
+  "key": {
+    "B": [
+      {
+        "item": "am:fraise"
+      },
+      {
+        "item": "am:cerise"
+      },
+      {
+        "item": "am:framboise"
+      },
+      {
+        "item": "am:framboise"
+      },
+      {
+        "item": "minecraft:melon"
+      }
+    ],
+    "H": {
+      "item": "am:hachoir",
+      "data": 32767
+    },
+    "I": {
+      "item": "minecraft:sugar"
+    },
+    "E": {
+      "item": "am:bocal"
+    }
+  },
+  "result": {
+    "item": "am:pot_de_confiture_de_fruits_rouges",
+    "count": 1
+  }
+}

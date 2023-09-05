@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " B ",
+    " E "
+  ],
+  "key": {
+    "B": {
+      "item": "am:dore_jaune"
+    },
+    "E": {
+      "item": "am:hachoir",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:morceau_de_poisson",
+    "count": 1
+  }
+}

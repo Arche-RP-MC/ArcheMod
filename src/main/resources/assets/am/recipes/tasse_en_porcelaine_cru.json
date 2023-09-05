@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " F ",
+    "APA",
+    "IA "
+  ],
+  "key": {
+    "F": {
+      "item": "am:spatule",
+      "data": 32767
+    },
+    "A": {
+      "item": "minecraft:clay_ball"
+    },
+    "I": {
+      "item": "minecraft:quartz"
+    },
+    "P": [
+      {
+        "item": "am:seau_d_eau_en_bois"
+      },
+      {
+        "item": "minecraft:water_bucket"
+      }
+    ]
+  },
+  "result": {
+    "item": "am:tasse_en_porcelaine_cru",
+    "count": 1
+  }
+}

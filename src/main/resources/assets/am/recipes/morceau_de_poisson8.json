@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " B ",
+    " E "
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:fish",
+      "data": 0
+    },
+    "E": {
+      "item": "am:hachoir",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:morceau_de_poisson",
+    "count": 2
+  }
+}

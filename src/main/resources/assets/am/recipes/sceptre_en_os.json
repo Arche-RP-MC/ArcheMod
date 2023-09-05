@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  H",
+    "LMC",
+    "MB "
+  ],
+  "key": {
+    "H": {
+      "item": "minecraft:bone"
+    },
+    "M": {
+      "item": "am:manche"
+    },
+    "L": {
+      "item": "am:laniere_de_cuir"
+    },
+    "C": {
+      "item": "am:clous"
+    },
+    "B": [
+      {
+        "item": "am:lime_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:lime_en_acier",
+        "data": 32767
+      }
+    ]
+  },
+  "result": {
+    "item": "am:sceptre_en_os",
+    "count": 1
+  }
+}

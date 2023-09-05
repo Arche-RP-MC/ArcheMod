@@ -1,43 +1,45 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "FPC",
     " B ",
     "MBL"
   ],
-
-  "key":
-  {
-    "F":
-    {
+  "key": {
+    "F": {
       "item": "am:bobine_de_laine"
     },
-    "P":
-    {
+    "P": {
       "item": "am:planche"
     },
-    "C":
-    {
+    "C": {
       "item": "am:clous"
     },
-    "B":
-    {
+    "B": {
       "item": "minecraft:stick"
     },
-    "M":
-    {
-      "item": "am:marteau_en_fer"
-    },
-    "L":
-    {
-      "item": "am:lime_en_fer"
-    }
+    "M": [
+      {
+        "item": "marteau_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_en_acier",
+        "data": 32767
+      }
+    ],
+    "L": [
+      {
+        "item": "am:lime_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:lime_en_acier",
+        "data": 32767
+      }
+    ]
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:pelle_a_pain",
     "count": 1
   }

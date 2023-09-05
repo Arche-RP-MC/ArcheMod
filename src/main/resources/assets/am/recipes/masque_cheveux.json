@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " B ",
+    "LOC",
+    " H "
+  ],
+  "key": {
+    "B": {
+      "item": "am:oeuf_a_plat_cru"
+    },
+    "C": {
+      "item": "am:cire"
+    },
+    "L": {
+      "item": "am:miel"
+    },
+    "O": {
+      "item": "am:bouteille_huile_olive",
+      "data": 32767
+    },
+    "H": {
+      "item": "am:boite_a_poudre"
+    }
+  },
+  "result": {
+    "item": "am:masque_cheveux",
+    "count": 1
+  }
+}

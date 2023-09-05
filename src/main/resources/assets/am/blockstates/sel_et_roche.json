@@ -1,6 +1,7 @@
 {
-  "variants": { 
-  "normal": {
-    "model": "am:sel_et_roche"
+  "variants": {
+    "normal": {
+      "model": "am:sel_et_roche"
+    }
   }
-}}
+}

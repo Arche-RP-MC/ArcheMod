@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "G F",
+    " B ",
+    "BB "
+  ],
+  "key": {
+    "B": {
+      "item": "am:planche_chene"
+    },
+    "G": {
+      "item": "am:maillet",
+      "data": 32767
+    },
+    "F": {
+      "item": "am:clous"
+    }
+  },
+  "result": {
+    "item": "minecraft:oak_stairs",
+    "count": 1
+  }
+}

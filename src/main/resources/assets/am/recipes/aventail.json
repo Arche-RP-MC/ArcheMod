@@ -1,36 +1,33 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " G ",
     "BMB",
     " L "
   ],
-
-  "key":
-  {
-    "B":
-    {
-      "item": "am:maille"
+  "key": {
+    "B": {
+      "item": "am:maille_de_fer"
     },
-    "M":
-    {
-      "item": "am:marteau_en_bronze"
+    "M": [
+      {
+        "item": "am:marteau_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_en_acier",
+        "data": 32767
+      }
+    ],
+    "G": {
+      "item": "am:pinces",
+      "data": 32767
     },
-    "G":
-    {
-      "item": "am:pinces"
-    },
-    "L":
-    {
-      "item": "am:laniere"
+    "L": {
+      "item": "am:laniere_de_cuir"
     }
-
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:aventail",
     "count": 1
   }

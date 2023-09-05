@@ -1,39 +1,29 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "MBC",
-    "BPB",
+    " P ",
     " V "
   ],
-
-  "key":
-  {
-    "M":
-    {
-      "item": "am:marteau_en_fer"
+  "key": {
+    "M": {
+      "item": "am:pinces",
+      "data": 32767
     },
-    "B":
-    {
-      "item": "minecraft:stick"
+    "B": {
+      "item": "am:cadre_en_bois"
     },
-    "C":
-    {
+    "C": {
       "item": "am:clous"
     },
-    "P":
-    {
+    "P": {
       "item": "plaque_d_etain"
     },
-    "V":
-    {
-      "item": "am:minecraft:glass_pane"
+    "V": {
+      "item": "am:verre_en_fusion"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:petit_miroir",
     "count": 1
   }

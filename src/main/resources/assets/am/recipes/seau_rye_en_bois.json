@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "LLL",
+    "LLL",
+    " SM"
+  ],
+  "key": {
+    "L": [
+      {
+        "item": "am:mais_cru"
+      },
+      {
+        "item": "am:pomme_de_terre_cru"
+      }
+    ],
+    "M": {
+      "item": "am:malt_orge"
+    },
+    "S": {
+      "item": "am:seau_d_eau_en_bois"
+    }
+  },
+  "result": {
+    "item": "am:seau_rye_en_bois",
+    "count": 1
+  }
+}

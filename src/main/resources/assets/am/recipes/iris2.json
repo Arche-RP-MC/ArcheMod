@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " P ",
+    "   "
+  ],
+  "key": {
+    "P": {
+      "item": "am:iris"
+    }
+  },
+  "result": {
+    "item": "am:iris2",
+    "count": 1
+  }
+}

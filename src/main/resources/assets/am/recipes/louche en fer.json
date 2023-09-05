@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " H ",
+    "G  "
+  ],
+  "key": {
+    "H": {
+      "item": "am:barre_fer"
+    },
+    "G": {
+      "item": "am:pinces",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:louche_en_fer",
+    "count": 1
+  }
+}

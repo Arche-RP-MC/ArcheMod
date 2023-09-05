@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GTP",
+    "BVB",
+    "BVB"
+  ],
+  "key": {
+    "B": {
+      "item": "am:planche_chene_noir"
+    },
+    "V": {
+      "item": "am:barre_fer"
+    },
+    "P": {
+      "item": "am:clous"
+    },
+    "T": {
+      "item": "am:ciseaux_a_bois",
+      "data": 32767
+    },
+    "G": {
+      "item": "am:maillet",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "minecraft:rail",
+    "count": 1
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "RHR",
+    " G "
+  ],
+  "key": {
+    "H": {
+      "item": "am:planche"
+    },
+    "R": {
+      "item": "am:laniere_de_cuir"
+    },
+    "G": {
+      "item": "am:ciseaux_a_bois",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:manche",
+    "count": 2
+  }
+}

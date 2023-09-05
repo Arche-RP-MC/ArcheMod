@@ -1,27 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " F ",
     "FBF",
     " F "
   ],
-
-  "key":
-  {
-    "F":
-    {
+  "key": {
+    "F": {
       "item": "am:fibre_vegetale"
     },
-    "B":
-    {
-      "item": "minecraft:minecraft:wheat"
+    "B": {
+      "item": "minecraft:string"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:paille",
     "count": 4
   }

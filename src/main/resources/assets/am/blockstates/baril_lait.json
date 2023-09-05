@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "size=0": {
+      "model": "am:baril_lait"
+    },
+    "size=1": {
+      "model": "am:baril_lait"
+    },
+    "size=2": {
+      "model": "am:baril_lait"
+    },
+    "size=3": {
+      "model": "am:baril_lait"
+    },
+    "size=4": {
+      "model": "am:baril_lait"
+    },
+    "size=5": {
+      "model": "am:baril_lait"
+    },
+    "size=6": {
+      "model": "am:baril_lait"
+    },
+    "size=7": {
+      "model": "am:baril_lait"
+    },
+    "size=8": {
+      "model": "am:baril_lait"
+    },
+    "size=9": {
+      "model": "am:baril_lait"
+    },
+    "size=10": {
+      "model": "am:baril_lait"
+    },
+    "size=11": {
+      "model": "am:baril_lait"
+    },
+    "size=12": {
+      "model": "am:baril_lait"
+    },
+    "size=13": {
+      "model": "am:baril_lait"
+    },
+    "size=14": {
+      "model": "am:baril_lait"
+    },
+    "size=15": {
+      "model": "am:baril_lait"
+    }
+  }
+}

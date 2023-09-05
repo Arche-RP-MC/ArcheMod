@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PT ",
+    "FFI",
+    "TP "
+  ],
+  "key": {
+    "F": {
+      "item": "am:mortier"
+    },
+    "I": {
+      "item": "am:etoffe"
+    },
+    "P": {
+      "item": "am:caillou_de_gres_rouge"
+    },
+    "T": {
+      "item": "am:caillou_de_gres"
+    }
+  },
+  "result": {
+    "item": "am:pierres_de_gres_naturelles",
+    "count": 1
+  }
+}

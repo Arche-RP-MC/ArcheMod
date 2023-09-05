@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  L",
+    "G F",
+    "P  "
+  ],
+  "key": {
+    "L": {
+      "item": "am:pinces",
+      "data": 32767
+    },
+    "G": {
+      "item": "am:plaque_de_fer"
+    },
+    "P": {
+      "item": "am:manche"
+    },
+    "F": {
+      "item": "am:barre_fer"
+    }
+  },
+  "result": {
+    "item": "am:poele",
+    "count": 1
+  }
+}

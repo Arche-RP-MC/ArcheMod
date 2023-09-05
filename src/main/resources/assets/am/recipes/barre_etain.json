@@ -1,30 +1,30 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " MP",
     "LP ",
     "P  "
   ],
-
-  "key":{
-    "P":
-    {
-      "item": "am:pepite_etain"
+  "key": {
+    "P": {
+      "item": "am:etain_fondu"
     },
-    "M":
-    {
-      "item": "am:marteau_en_bronze"
-    },
-    "L":
-    {
-      "item": "am:pinces"
+    "M": [
+      {
+        "item": "am:marteau_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_en_acier",
+        "data": 32767
+      }
+    ],
+    "L": {
+      "item": "am:pinces",
+      "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:barre_etain",
     "count": 1
   }

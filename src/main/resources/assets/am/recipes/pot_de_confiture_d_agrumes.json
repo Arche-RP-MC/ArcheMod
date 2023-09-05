@@ -1,0 +1,56 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "IBI",
+    "IEH"
+  ],
+  "key": {
+    "B": [
+      {
+        "item": "am:abricot"
+      },
+      {
+        "item": "am:ananas"
+      },
+      {
+        "item": "am:citron"
+      },
+      {
+        "item": "am:clementine"
+      },
+      {
+        "item": "am:groseille_a_macro"
+      },
+      {
+        "item": "am:kiwi"
+      },
+      {
+        "item": "am:orange"
+      },
+      {
+        "item": "am:peche"
+      },
+      {
+        "item": "am:poire"
+      },
+      {
+        "item": "am:raisin_blanc"
+      }
+    ],
+    "H": {
+      "item": "am:hachoir",
+      "data": 32767
+    },
+    "I": {
+      "item": "minecraft:sugar"
+    },
+    "E": {
+      "item": "am:bocal"
+    }
+  },
+  "result": {
+    "item": "am:pot_de_confiture_d_agrumes",
+    "count": 1
+  }
+}

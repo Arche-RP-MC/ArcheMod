@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BC ",
+    " D ",
+    "EEE"
+  ],
+  "key": {
+    "C": {
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
+    },
+    "E": {
+      "item": "am:etoffe_gris_clair"
+    },
+    "D": {
+      "item": "am:veste_blanc"
+    },
+    "B": {
+      "item": "am:bobine_de_fil"
+    }
+  },
+  "result": {
+    "item": "am:manteau_gris_clair",
+    "count": 1
+  }
+}

@@ -1,31 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "L  ",
     "CE ",
     "   "
   ],
-
-  "key":
-  {
-    "C":
-    {
+  "key": {
+    "C": {
       "item": "am:griffe"
     },
-    "E":
-    {
-      "item": "am:ciseaux_de_couture"
+    "E": {
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
     },
-    "L":
-    {
-      "item": "am:laniere"
+    "L": {
+      "item": "am:laniere_de_cuir"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:collier_en_cuir_et_griffe",
     "count": 1
   }

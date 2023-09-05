@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CCC",
+    "CSS",
+    " MJ"
+  ],
+  "key": {
+    "C": {
+      "item": "minecraft:reeds"
+    },
+    "J": {
+      "item": "am:levure"
+    },
+    "S": {
+      "item": "minecraft:sugar"
+    },
+    "M": [
+      {
+        "item": "am:mortier_pilon_en_bois",
+        "data": 32767
+      },
+      {
+        "item": "am:mortier_pilon_en_pierre",
+        "data": 32767
+      }
+    ]
+  },
+  "result": {
+    "item": "am:vesou",
+    "count": 1
+  }
+}

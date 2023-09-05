@@ -1,6 +1,7 @@
 {
-  "variants": { 
-  "normal": {
-    "model": "am:dallage_precis_brique"
+  "variants": {
+    "normal": {
+      "model": "am:dallage_precis_brique"
+    }
   }
-}}
+}

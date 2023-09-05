@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " C ",
+    "L L",
+    " L "
+  ],
+  "key": {
+    "C": {
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
+    },
+    "L": {
+      "item": "am:etoffe_bleue"
+    }
+  },
+  "result": {
+    "item": "am:ceinture_en_tissu_bleu",
+    "count": 1
+  }
+}

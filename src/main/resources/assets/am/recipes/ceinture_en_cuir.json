@@ -1,32 +1,35 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
-    "  N",
-    "L N",
+  "pattern": [
+    "   ",
+    "LNL",
     "P  "
   ],
-
-  "key":
-  {
-    "N":
-    {
-      "item": "am:pepite_etain"
+  "key": {
+    "N": [
+      {
+        "item": "am:boucle_ceinture_etain"
+      },
+      {
+        "item": "am:boucle_ceinture_cuivre"
+      },
+      {
+        "item": "am:boucle_ceinture_fer"
+      },
+      {
+        "item": "am:boucle_ceinture_bronze"
+      }
+    ],
+    "P": {
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
     },
-    "P":
-    {
-      "item": "am:ciseaux_de_couture"
-    },
-    "L":
-    {
-      "item": "am:cuir_tanne"
+    "L": {
+      "item": "am:laniere_de_cuir"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:ceinture_en_cuir",
-    "count": 2
+    "count": 1
   }
 }

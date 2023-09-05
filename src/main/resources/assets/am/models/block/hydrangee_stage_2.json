@@ -1,0 +1,6 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "am:blocks/hydrangee_stage_2"
+  }
+}

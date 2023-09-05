@@ -1,6 +1,7 @@
 {
-  "variants": { 
-  "normal": {
-    "model": "am:bloc_d_argent"
+  "variants": {
+    "normal": {
+      "model": "am:bloc_d_argent"
+    }
   }
-}}
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " P ",
+    "   "
+  ],
+  "key": {
+    "P": {
+      "item": "am:plante_etrange"
+    }
+  },
+  "result": {
+    "item": "am:plante_etrange2",
+    "count": 1
+  }
+}

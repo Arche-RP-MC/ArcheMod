@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "DBD",
+    "PC "
+  ],
+  "key": {
+    "B": {
+      "item": "am:amandes"
+    },
+    "C": {
+      "item": "am:oeuf_a_plat"
+    },
+    "D": {
+      "item": "minecraft:sugar"
+    },
+    "P": {
+      "item": "am:rouleau_a_patisserie",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:patisserie_a_la_pate_d_amande_cru",
+    "count": 2
+  }
+}

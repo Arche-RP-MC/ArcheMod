@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " M ",
+    "  P",
+    " F "
+  ],
+  "key": {
+    "M": [
+      {
+        "item": "marteau_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_en_acier",
+        "data": 32767
+      }
+    ],
+    "P": {
+      "item": "am:pinces",
+      "data": 32767
+    },
+    "F": {
+      "item": "am:plaque_de_fer"
+    }
+  },
+  "result": {
+    "item": "am:tete_hachoir_fer",
+    "count": 1
+  }
+}

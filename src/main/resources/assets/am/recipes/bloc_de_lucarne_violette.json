@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " P ",
+    "HT ",
+    "HT "
+  ],
+  "key": {
+    "H": {
+      "item": "minecraft:stained_glass",
+      "data": 10
+    },
+    "T": {
+      "item": "minecraft:stick"
+    },
+    "P": {
+      "item": "am:pinces",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:bloc_de_lucarne_violette",
+    "count": 1
+  }
+}

@@ -8,19 +8,19 @@ import net.minecraft.item.Item;
 
 import java.util.Random;
 
-public class PierrePrecieuseOre extends BlockBase{
+public class PierrePrecieuseOre extends BlockBase {
 
     public PierrePrecieuseOre(String name, Material material) {
         super(name, material, 3F, 3F, SoundType.STONE);
-        setHarvestLevel("pickaxe",2);
+        setHarvestLevel("pickaxe", 2);
     }
 
     @Override
-    public Item getItemDropped(IBlockState state, Random rand, int fortune){
+    public Item getItemDropped(IBlockState state, Random rand, int fortune) {
         int max = 3;
         int min = 1;
-        int random = rand.nextInt(max)+min;
-        switch (random){
+        int random = rand.nextInt(max) + min;
+        switch (random) {
             case 1:
                 return ModItems.PETITE_GEMME_INCONNUE;
             case 2:
@@ -32,7 +32,7 @@ public class PierrePrecieuseOre extends BlockBase{
     }
 
     @Override
-    public int quantityDropped(Random rand){
+    public int quantityDropped(Random rand) {
         return 1;
     }
 }

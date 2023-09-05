@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "PGT",
+    " TT"
+  ],
+  "key": {
+    "G": {
+      "item": "am:clous"
+    },
+    "P": {
+      "item": "am:maillet",
+      "data": 32767
+    },
+    "T": {
+      "item": "am:planche_chene_noir_vernie"
+    }
+  },
+  "result": {
+    "item": "am:escalier_en_planche_chene_noir_vernie",
+    "count": 1
+  }
+}

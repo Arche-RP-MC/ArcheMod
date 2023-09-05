@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " P ",
+    "   "
+  ],
+  "key": {
+    "P": {
+      "item": "am:glycine2"
+    }
+  },
+  "result": {
+    "item": "am:glycine",
+    "count": 1
+  }
+}

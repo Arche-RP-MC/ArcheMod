@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " O ",
+    " M ",
+    "EEE"
+  ],
+  "key": {
+    "O": [
+      {
+        "item": "am:seau_liqueur_fruit"
+      },
+      {
+        "item": "am:seau_liqueur_fruit_en_bois"
+      }
+    ],
+    "E": {
+      "item": "am:bouteille_vide"
+    },
+    "M": {
+      "item": "am:etoffe"
+    }
+  },
+  "result": {
+    "item": "am:bouteille_liqueur_fruit",
+    "count": 3
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "HAH",
+    "HAH",
+    "HBH"
+  ],
+  "key": {
+    "H": {
+      "item": "am:planche"
+    },
+    "A": {
+      "item": "minecraft:glass_pane"
+    },
+    "B": {
+      "item": "am:ciseaux_a_bois",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:longue_vue",
+    "count": 1
+  }
+}

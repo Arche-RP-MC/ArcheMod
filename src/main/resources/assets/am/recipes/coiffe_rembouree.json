@@ -1,31 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
-    "CLL",
-    " LK"
+    "CRR",
+    " RK"
   ],
-
-  "key":
-  {
-    "C":
-    {
-      "item": "am:ciseaux_de_couture"
+  "key": {
+    "C": {
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
     },
-    "K":
-    {
+    "K": {
       "item": "am:laine_brute"
     },
-    "L":
-    {
-      "item": "am:etoffe"
+    "R": {
+      "item": "am:cuir_tanne"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:coiffe_rembouree",
     "count": 1
   }

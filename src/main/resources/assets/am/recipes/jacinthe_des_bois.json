@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " P ",
+    "   "
+  ],
+  "key": {
+    "P": {
+      "item": "am:jacinthe_des_bois2"
+    }
+  },
+  "result": {
+    "item": "am:jacinthe_des_bois",
+    "count": 1
+  }
+}

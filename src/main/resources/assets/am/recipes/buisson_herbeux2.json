@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " P ",
+    "   "
+  ],
+  "key": {
+    "P": {
+      "item": "am:buisson_herbeux"
+    }
+  },
+  "result": {
+    "item": "am:buisson_herbeux2",
+    "count": 1
+  }
+}

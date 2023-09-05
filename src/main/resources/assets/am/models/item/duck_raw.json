@@ -1,7 +1,7 @@
 {
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "am:items/duck_raw"
-    }
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "am:items/duck_raw"
+  }
 }
 

@@ -1,36 +1,43 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "FFF",
     "BFM",
     " S "
   ],
-
-  "key":
-  {
-    "F":
-    {
-      "item": "am:fibre_vegetale"
-    },
-    "B":
-    {
+  "key": {
+    "F": [
+      {
+        "item": "am:fibre_vegetale"
+      },
+      {
+        "item": "am:sciure"
+      }
+    ],
+    "B": {
       "item": "minecraft:stick"
     },
-    "M":
-    {
-      "item": "am:marteau_en_fer"
-    },
-    "S":
-    {
-      "item": "am:seau_d_eau_en_bois"
-    }
+    "M": [
+      {
+        "item": "marteau_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_en_acier",
+        "data": 32767
+      }
+    ],
+    "S": [
+      {
+        "item": "am:seau_d_eau_en_bois"
+      },
+      {
+        "item": "minecraft:water_bucket"
+      }
+    ]
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:pate_a_papier",
-    "count": 12
+    "count": 6
   }
 }

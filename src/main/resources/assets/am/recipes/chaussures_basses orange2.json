@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "CL ",
+    "   "
+  ],
+  "key": {
+    "C": {
+      "item": "am:chaussures_blanc"
+    },
+    "L": {
+      "item": "minecraft:dye",
+      "data": 14
+    }
+  },
+  "result": {
+    "item": "am:chaussures_orange",
+    "count": 1
+  }
+}

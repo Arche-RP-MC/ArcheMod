@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " VG",
+    "DJ ",
+    "I  "
+  ],
+  "key": {
+    "J": {
+      "item": "am:plaque_d_etain"
+    },
+    "G": {
+      "item": "am:clous"
+    },
+    "D": {
+      "item": "am:barre_etain"
+    },
+    "V": {
+      "item": "am:verre_en_fusion"
+    },
+    "I": {
+      "item": "am:pinces",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:miroir_en_etain",
+    "count": 1
+  }
+}

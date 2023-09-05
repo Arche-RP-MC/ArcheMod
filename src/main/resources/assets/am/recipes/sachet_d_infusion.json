@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP",
+    "PPP",
+    "RMR"
+  ],
+  "key": {
+    "P": {
+      "item": "am:plantes_sechees"
+    },
+    "R": {
+      "item": "am:etoffe"
+    },
+    "M": {
+      "item": "am:petite_cisaille",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:feuilles_sechees",
+    "count": 4
+  }
+}

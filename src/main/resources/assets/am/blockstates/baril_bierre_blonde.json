@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "size=0": {
+      "model": "am:baril_bierre_blonde"
+    },
+    "size=1": {
+      "model": "am:baril_bierre_blonde"
+    },
+    "size=2": {
+      "model": "am:baril_bierre_blonde"
+    },
+    "size=3": {
+      "model": "am:baril_bierre_blonde"
+    },
+    "size=4": {
+      "model": "am:baril_bierre_blonde"
+    },
+    "size=5": {
+      "model": "am:baril_bierre_blonde"
+    },
+    "size=6": {
+      "model": "am:baril_bierre_blonde"
+    },
+    "size=7": {
+      "model": "am:baril_bierre_blonde"
+    },
+    "size=8": {
+      "model": "am:baril_bierre_blonde"
+    },
+    "size=9": {
+      "model": "am:baril_bierre_blonde"
+    },
+    "size=10": {
+      "model": "am:baril_bierre_blonde"
+    },
+    "size=11": {
+      "model": "am:baril_bierre_blonde"
+    },
+    "size=12": {
+      "model": "am:baril_bierre_blonde"
+    },
+    "size=13": {
+      "model": "am:baril_bierre_blonde"
+    },
+    "size=14": {
+      "model": "am:baril_bierre_blonde"
+    },
+    "size=15": {
+      "model": "am:baril_bierre_blonde"
+    }
+  }
+}

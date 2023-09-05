@@ -1,35 +1,34 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "L  ",
     "CEF",
     "   "
   ],
-
-  "key":
-  {
-    "C":
-    {
-      "item": "am:pince"
+  "key": {
+    "C": {
+      "item": "am:pinces",
+      "data": 32767
     },
-    "E":
-    {
-      "item": "am:lime_en_fer"
+    "E": [
+      {
+        "item": "am:lime_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:lime_en_acier",
+        "data": 32767
+      }
+    ],
+    "F": {
+      "item": "am:loupe",
+      "data": 32767
     },
-    "F":
-    {
-      "item": "am:loupe"
-    },
-    "L":
-    {
+    "L": {
       "item": "am:barre_cuivre"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:collier_en_cuivre",
     "count": 1
   }

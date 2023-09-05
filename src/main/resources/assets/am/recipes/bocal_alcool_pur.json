@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "O E",
+    "EEE",
+    "EEE"
+  ],
+  "key": {
+    "O": [
+      {
+        "item": "am:seau_alcool_pur"
+      },
+      {
+        "item": "am:seau_alcool_pur_en_bois"
+      }
+    ],
+    "E": {
+      "item": "am:bocal"
+    }
+  },
+  "result": {
+    "item": "am:bocal_alcool_pur",
+    "count": 7
+  }
+}

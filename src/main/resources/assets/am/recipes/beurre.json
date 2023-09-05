@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " O ",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "am:moule"
+    },
+    "O": [
+      {
+        "item": "am:seau_de_lait_en_bois"
+      },
+      {
+        "item": "minecraft:milk_bucket"
+      }
+    ]
+  },
+  "result": {
+    "item": "am:beurre",
+    "count": 3
+  }
+}

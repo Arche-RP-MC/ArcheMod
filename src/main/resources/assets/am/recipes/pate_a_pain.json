@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "R  ",
+    "BBB",
+    "GEM"
+  ],
+  "key": {
+    "B": {
+      "item": "am:farine"
+    },
+    "R": {
+      "item": "am:levure"
+    },
+    "E": [
+      {
+        "item": "am:seau_d_eau_en_bois"
+      },
+      {
+        "item": "minecraft:water_bucket"
+      }
+    ],
+    "G": {
+      "item": "am:sel"
+    },
+    "M": {
+      "item": "am:rouleau_a_patisserie",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:pate_a_pain",
+    "count": 1
+  }
+}

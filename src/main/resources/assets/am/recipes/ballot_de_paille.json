@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "PLL",
+    " LL"
+  ],
+  "key": {
+    "L": {
+      "item": "am:paille"
+    },
+    "P": {
+      "item": "am:fourche_en_fer",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:ballot_de_paille",
+    "count": 1
+  }
+}

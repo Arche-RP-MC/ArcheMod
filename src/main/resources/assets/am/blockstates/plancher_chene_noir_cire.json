@@ -1,6 +1,7 @@
 {
-  "variants": { 
-  "normal": {
-    "model": "am:plancher_chene_noir_cire"
+  "variants": {
+    "normal": {
+      "model": "am:plancher_chene_noir_cire"
+    }
   }
-}}
+}

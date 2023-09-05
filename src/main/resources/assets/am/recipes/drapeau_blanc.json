@@ -1,32 +1,24 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
-    " LL",
+    "CLL",
     " M "
   ],
-
-  "key":
-  {
-    "C":
-    {
-      "item": "am:ciseaux_de_couture"
+  "key": {
+    "C": {
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
     },
-    "M":
-    {
+    "M": {
       "item": "am:manche"
     },
-    "L":
-    {
+    "L": {
       "item": "am:etoffe"
     }
   },
-
-  "result":
-  {
-    "item": "am:drap",
+  "result": {
+    "item": "am:drapeau_blanc",
     "count": 1
   }
 }

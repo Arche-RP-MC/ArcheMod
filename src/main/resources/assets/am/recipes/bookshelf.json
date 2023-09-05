@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GLT",
+    "BB ",
+    "BB "
+  ],
+  "key": {
+    "B": {
+      "item": "am:planche"
+    },
+    "L": {
+      "item": "am:vernis",
+      "data": 32767
+    },
+    "T": {
+      "item": "am:ciseaux_a_bois",
+      "data": 32767
+    },
+    "G": {
+      "item": "am:maillet",
+      "data": 32767
+    },
+    "F": {
+      "item": "am:clous"
+    }
+  },
+  "result": {
+    "item": "minecraft:bookshelf",
+    "count": 1
+  }
+}

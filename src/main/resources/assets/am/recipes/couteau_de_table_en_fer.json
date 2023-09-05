@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " HG",
+    "   "
+  ],
+  "key": {
+    "H": {
+      "item": "am:barre_fer"
+    },
+    "G": {
+      "item": "am:pinces",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:couteau_de_table_en_fer",
+    "count": 2
+  }
+}

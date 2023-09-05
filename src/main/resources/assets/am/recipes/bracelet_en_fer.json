@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " LF",
+    " N "
+  ],
+  "key": {
+    "N": {
+      "item": "am:barre_fer"
+    },
+    "F": [
+      {
+        "item": "am:lime_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:lime_en_acier",
+        "data": 32767
+      }
+    ],
+    "L": {
+      "item": "am:pinces",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:bracelet_en_fer",
+    "count": 1
+  }
+}

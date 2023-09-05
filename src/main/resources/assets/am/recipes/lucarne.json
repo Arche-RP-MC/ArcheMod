@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " P ",
+    "HT ",
+    "   "
+  ],
+  "key": {
+    "H": {
+      "item": "minecraft:glass_pane"
+    },
+    "T": {
+      "item": "minecraft:stick"
+    },
+    "P": {
+      "item": "am:pinces",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:lucarne",
+    "count": 1
+  }
+}

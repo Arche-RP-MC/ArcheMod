@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "L O",
+    " G ",
+    "P E"
+  ],
+  "key": {
+    "E": {
+      "item": "am:etoffe"
+    },
+    "O": {
+      "item": "am:loupe",
+      "data": 32767
+    },
+    "G": {
+      "item": "am:petite_geode_aigue_marine"
+    },
+    "P": {
+      "item": "am:pinces",
+      "data": 32767
+    },
+    "L": [
+      {
+        "item": "am:lime_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:lime_en_acier",
+        "data": 32767
+      }
+    ]
+  },
+  "result": {
+    "item": "am:aigue_marine_taille_en_rose",
+    "count": 1
+  }
+}

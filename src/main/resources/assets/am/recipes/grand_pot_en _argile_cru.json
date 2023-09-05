@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BHB",
+    "BIB",
+    "BBB"
+  ],
+  "key": {
+    "H": {
+      "item": "am:spatule",
+      "data": 32767
+    },
+    "B": {
+      "item": "minecraft:clay_ball"
+    },
+    "I": [
+      {
+        "item": "am:seau_d_eau_en_bois"
+      },
+      {
+        "item": "minecraft:water_bucket"
+      }
+    ]
+  },
+  "result": {
+    "item": "am:grand_pot_en_argile_crue",
+    "count": 1
+  }
+}

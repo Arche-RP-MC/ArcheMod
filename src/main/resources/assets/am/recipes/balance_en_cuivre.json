@@ -1,35 +1,36 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
-    " LM",
+  "pattern": [
+    "ILM",
     "PBP",
     "   "
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "am:barre_cuivre"
     },
-    "P":
-    {
+    "P": {
       "item": "am:plaque_de_cuivre"
     },
-    "L":
-    {
-      "item": "am:lime_en_fer"
+    "I": {
+      "item": "am:rouage"
     },
-    "M":
-    {
-      "item": "am:loupe"
+    "L": [
+      {
+        "item": "am:trousse_d_ingenieur_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:trousse_d_ingenieur_en_acier",
+        "data": 32767
+      }
+    ],
+    "M": {
+      "item": "am:loupe",
+      "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:balance_en_cuivre",
     "count": 1
   }

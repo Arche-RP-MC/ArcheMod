@@ -1,0 +1,25 @@
+{
+  "layer0": {
+    "frameTime": 10,
+    "rotation": [
+      0,
+      -60,
+      0
+    ],
+    " Translation": [
+      0,
+      -2,
+      0
+    ],
+    "pull": [
+      0,
+      0,
+      -1
+    ],
+    "pulling": [
+      0,
+      0,
+      -3
+    ]
+  }
+}

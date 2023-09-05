@@ -1,35 +1,33 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "TPL",
     "PFP",
     " P "
   ],
-
-  "key":
-  {
-    "T":
-    {
-      "item": "am:trousse_d_ingenieur_en_fer"
-    },
-    "P":
-    {
+  "key": {
+    "T": [
+      {
+        "item": "am:trousse_d_ingenieur_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:trousse_d_ingenieur_en_acier",
+        "data": 32767
+      }
+    ],
+    "P": {
       "item": "am:pepite_bronze"
     },
-    "L":
-    {
-      "item": "am:loupe"
+    "L": {
+      "item": "am:loupe",
+      "data": 32767
     },
-    "F":
-    {
+    "F": {
       "item": "am:plaque_de_fer"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:rouage",
     "count": 1
   }

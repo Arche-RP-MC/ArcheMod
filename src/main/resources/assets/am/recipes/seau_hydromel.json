@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "LLL",
+    "LLL",
+    " SM"
+  ],
+  "key": {
+    "L": {
+      "item": "am:miel"
+    },
+    "M": {
+      "item": "am:levure"
+    },
+    "S": {
+      "item": "minecraft:water_bucket"
+    }
+  },
+  "result": {
+    "item": "am:seau_de_hydromel",
+    "count": 1
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " P ",
+    "   "
+  ],
+  "key": {
+    "P": {
+      "item": "am:etoile_des_glaciers2"
+    }
+  },
+  "result": {
+    "item": "am:etoile_des_glaciers",
+    "count": 1
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "G L",
+    "PFP",
+    "BPB"
+  ],
+  "key": {
+    "B": {
+      "item": "am:planche_acacia"
+    },
+    "L": {
+      "item": "am:vernis",
+      "data": 32767
+    },
+    "G": {
+      "item": "am:maillet",
+      "data": 32767
+    },
+    "P": {
+      "item": "minecraft:log2",
+      "data": 0
+    },
+    "F": {
+      "item": "am:clous"
+    }
+  },
+  "result": {
+    "item": "minecraft:acacia_boat",
+    "count": 1
+  }
+}

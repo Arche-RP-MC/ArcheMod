@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " G ",
+    " MB",
+    "   "
+  ],
+  "key": {
+    "B": {
+      "item": "am:barre_etain"
+    },
+    "M": [
+      {
+        "item": "am:lime_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:lime_en_acier",
+        "data": 32767
+      }
+    ],
+    "G": {
+      "item": "am:pinces",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:bague_en_etain",
+    "count": 1
+  }
+}

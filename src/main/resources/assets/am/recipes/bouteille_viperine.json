@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " O ",
+    "   ",
+    "EEE"
+  ],
+  "key": {
+    "O": [
+      {
+        "item": "am:seau_viperine"
+      },
+      {
+        "item": "am:seau_viperine_en_bois"
+      }
+    ],
+    "E": {
+      "item": "am:bouteille_vide"
+    }
+  },
+  "result": {
+    "item": "am:bouteille_viperine",
+    "count": 3
+  }
+}

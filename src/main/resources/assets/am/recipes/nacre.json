@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " LF",
+    "   "
+  ],
+  "key": {
+    "F": [
+      {
+        "item": "am:nautile"
+      },
+      {
+        "item": "am:ormeaux"
+      }
+    ],
+    "L": [
+      {
+        "item": "am:couteau_en_fer"
+      },
+      {
+        "item": "am:couteau_en_acier"
+      }
+    ]
+  },
+  "result": {
+    "item": "am:nacre",
+    "count": 1
+  }
+}

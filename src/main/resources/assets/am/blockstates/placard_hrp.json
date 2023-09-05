@@ -1,6 +1,6 @@
 {
   "variants": {
-    "normal":  {
+    "normal": {
       "model": "am:placard_hrp"
     }
   }

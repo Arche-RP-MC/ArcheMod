@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " G ",
+    "BBL",
+    "BB "
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:clay_ball"
+    },
+    "L": {
+      "item": "am:spatule",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "minecraft:hardened_clay",
+    "count": 1
+  }
+}

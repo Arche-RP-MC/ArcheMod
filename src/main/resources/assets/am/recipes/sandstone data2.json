@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " TP",
+    " T "
+  ],
+  "key": {
+    "T": {
+      "item": "am:sandstone",
+      "data": 0
+    },
+    "R": {
+      "item": "etoffe"
+    }
+  },
+  "result": {
+    "item": "minecraft:sandstone",
+    "data": 2,
+    "count": 2
+  }
+}

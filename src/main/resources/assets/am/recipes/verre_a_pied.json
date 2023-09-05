@@ -1,36 +1,26 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "PC ",
-    "IVI",
+    " V ",
     "   "
   ],
-
-  "key":
-  {
-    "P":
-    {
-      "item": "am:pinces"
+  "key": {
+    "P": {
+      "item": "am:pinces",
+      "data": 32767
     },
-    "C":
-    {
-      "item": "am:canne_de_verrier"
+    "C": {
+      "item": "am:canne_de_verrier",
+      "data": 32767
     },
-    "I":
-    {
-      "item": "minecraft:paper"
-    },
-    "V":
-    {
+    "V": {
       "item": "am:verre_en_fusion"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:verre_a_pied",
     "count": 1
   }
 }
+

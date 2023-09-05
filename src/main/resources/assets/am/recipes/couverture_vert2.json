@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "CL ",
+    "   "
+  ],
+  "key": {
+    "C": {
+      "item": "am:couverture_blanc"
+    },
+    "L": {
+      "item": "minecraft:dye",
+      "data": 4
+    }
+  },
+  "result": {
+    "item": "am:couverture_vert",
+    "count": 1
+  }
+}

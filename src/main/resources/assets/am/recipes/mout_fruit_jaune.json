@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CJC",
+    "CJC",
+    " M "
+  ],
+  "key": {
+    "C": [
+      {
+        "item": "am:ananas"
+      },
+      {
+        "item": "am:banane"
+      },
+      {
+        "item": "am:citron"
+      },
+      {
+        "item": "am:peche"
+      }
+    ],
+    "J": {
+      "item": "minecraft:sugar"
+    },
+    "M": [
+      {
+        "item": "am:mortier_pilon_en_bois",
+        "data": 32767
+      },
+      {
+        "item": "am:mortier_pilon_en_pierre",
+        "data": 32767
+      }
+    ]
+  },
+  "result": {
+    "item": "am:mout_fruit_jaune",
+    "count": 1
+  }
+}

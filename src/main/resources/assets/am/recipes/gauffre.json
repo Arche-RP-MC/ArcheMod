@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BF ",
+    "EFE",
+    "M  "
+  ],
+  "key": {
+    "F": {
+      "item": "am:pate_a_pain"
+    },
+    "M": {
+      "item": "minecraft:milk_bucket"
+    },
+    "E": {
+      "item": "am:oeuf_a_plat_cru"
+    },
+    "B": {
+      "item": "am:rouleau_a_patisserie",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:gauffre_cru",
+    "count": 6
+  }
+}

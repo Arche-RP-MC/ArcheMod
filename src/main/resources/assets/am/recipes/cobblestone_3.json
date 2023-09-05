@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " L ",
+    "BB ",
+    "BB "
+  ],
+  "key": {
+    "L": [
+      {
+        "item": "am:marteau_burin_en_acier",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_burin_en_fer",
+        "data": 32767
+      }
+    ],
+    "I": {
+      "item": "am:caillou"
+    }
+  },
+  "result": {
+    "item": "minecraft:cobblestone",
+    "count": 1
+  }
+}

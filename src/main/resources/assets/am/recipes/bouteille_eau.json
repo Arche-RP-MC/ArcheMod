@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " O ",
+    "   ",
+    "EEE"
+  ],
+  "key": {
+    "O": [
+      {
+        "item": "minecraft:water_bucket"
+      },
+      {
+        "item": "am:seau_d_eau_en_bois"
+      }
+    ],
+    "E": {
+      "item": "am:bouteille_vide"
+    }
+  },
+  "result": {
+    "item": "am:bouteille_d_eau",
+    "count": 3
+  }
+}

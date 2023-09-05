@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "G F",
+    "BBL",
+    "BBL"
+  ],
+  "key": {
+    "B": {
+      "item": "am:planche_acajou"
+    },
+    "L": {
+      "item": "am:barre_bronze"
+    },
+    "G": {
+      "item": "am:maillet",
+      "data": 32767
+    },
+    "F": {
+      "item": "am:clous"
+    }
+  },
+  "result": {
+    "item": "minecraft:jungle_door",
+    "count": 1
+  }
+}

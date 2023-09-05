@@ -1,36 +1,33 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     "HC ",
     "DG "
   ],
-
-  "key":
-  {
-    "H":
-    {
-      "item": "am:barre_etain"
+  "key": {
+    "H": [
+      {
+        "item": "am:barre_etain"
+      },
+      {
+        "item": "am:barre_fer"
+      }
+    ],
+    "C": {
+      "item": "am:pinces",
+      "data": 32767
     },
-    "C":
-    {
-      "item": "am:pince"
-    },
-    "D":
-    {
+    "D": {
       "item": "am:clous"
     },
-    "G":
-    {
-      "item": "am:marteau_en_acier"
+    "G": {
+      "item": "am:marteau_en_acier",
+      "data": 32767
     }
   },
-
-  "result":
-  {
-    "item": "am:crochet",
+  "result": {
+    "item": "minecraft:item_frame",
     "count": 3
   }
 }

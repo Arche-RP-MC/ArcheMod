@@ -1,26 +1,26 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     "LPP",
     "   "
   ],
-
-  "key":{
-    "P":
-    {
+  "key": {
+    "P": {
       "item": "am:planche"
     },
-    "L":
-    {
-      "item": "am:lime_en_bronze"
-    }
+    "L": [
+      {
+        "item": "am:lime_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:lime_en_acier",
+        "data": 32767
+      }
+    ]
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:bobine_en_bois",
     "count": 6
   }

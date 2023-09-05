@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  G",
+    " H ",
+    "   "
+  ],
+  "key": {
+    "H": {
+      "item": "am:barre_argent"
+    },
+    "G": {
+      "item": "am:pinces",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:fourchette_en_argent",
+    "count": 2
+  }
+}

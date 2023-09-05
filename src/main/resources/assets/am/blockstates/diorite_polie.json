@@ -1,6 +1,7 @@
 {
-  "variants": { 
-  "normal": {
-    "model": "am:diorite_polie"
+  "variants": {
+    "normal": {
+      "model": "am:diorite_polie"
+    }
   }
-}}
+}

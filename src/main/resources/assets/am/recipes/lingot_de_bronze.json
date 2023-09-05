@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "TTT",
+    "TTT",
+    "HB "
+  ],
+  "key": {
+    "B": {
+      "item": "am:moule"
+    },
+    "T": {
+      "item": "am:bronze_fondu"
+    },
+    "H": {
+      "item": "am:pinces",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:lingot_de_bronze",
+    "count": 1
+  }
+}

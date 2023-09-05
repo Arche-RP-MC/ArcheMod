@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "LL ",
+    "BB ",
+    " S "
+  ],
+  "key": {
+    "L": {
+      "item": "am:malt_ble"
+    },
+    "B": {
+      "item": "am:malt_orge"
+    },
+    "S": {
+      "item": "minecraft:water_bucket"
+    }
+  },
+  "result": {
+    "item": "am:seau_de_biere_rousse",
+    "count": 1
+  }
+}

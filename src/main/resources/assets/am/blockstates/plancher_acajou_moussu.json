@@ -1,6 +1,7 @@
 {
-  "variants": { 
-  "normal": {
-    "model": "am:plancher_acajou_moussu"
+  "variants": {
+    "normal": {
+      "model": "am:plancher_acajou_moussu"
+    }
   }
-}}
+}

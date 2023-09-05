@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BB ",
+    "B D",
+    "B C"
+  ],
+  "key": {
+    "B": {
+      "item": "am:beignet_cru"
+    },
+    "D": {
+      "item": "am:hachoir",
+      "data": 32767
+    },
+    "C": {
+      "item": "am:crabe"
+    }
+  },
+  "result": {
+    "item": "am:beignet_de_crabe_cru",
+    "count": 4
+  }
+}

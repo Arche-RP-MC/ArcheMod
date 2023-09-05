@@ -1,31 +1,33 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     " HJ",
     " G "
   ],
-
-  "key":
-  {
-    "H":
-    {
-      "item": "archemod:plume"
-    },
-    "J":
-    {
+  "key": {
+    "H": [
+      {
+        "item": "am:plume_d_ecriture_en_argent"
+      },
+      {
+        "item": "am:plume_d_ecriture_en_fer"
+      },
+      {
+        "item": "am:plume_d_ecriture_en_or"
+      },
+      {
+        "item": "am:plume_d_ecriture_en_bronze"
+      }
+    ],
+    "J": {
       "item": "am:poche_d_encre"
     },
-    "G":
-    {
+    "G": {
       "item": "am:encrier_en_verre"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:encrier_et_plume",
     "count": 1
   }

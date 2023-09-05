@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " HG",
+    "   "
+  ],
+  "key": {
+    "H": {
+      "item": "minecraft:stick"
+    },
+    "G": {
+      "item": "am:ciseaux_a_bois",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:couteau_de_table_en_bois",
+    "count": 2
+  }
+}

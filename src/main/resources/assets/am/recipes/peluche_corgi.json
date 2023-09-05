@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ABA",
+    "CDC",
+    "ECE"
+  ],
+  "key": {
+    "A": {
+      "item": "am:bobine_de_fil"
+    },
+    "B": {
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
+    },
+    "C": {
+      "item": "am:etoffe_orange"
+    },
+    "D": {
+      "item": "am:laine_brute"
+    }
+    "E": {
+      "item": "am:etoffe"
+    }
+  },
+  "result": {
+    "item": "am:corgi_peluche",
+    "count": 1
+  }
+}

@@ -1,6 +1,7 @@
 {
-    "variants": {
-        "normal": {
-            "model": "am:lys"}
+  "variants": {
+    "normal": {
+      "model": "am:lys"
     }
+  }
 }

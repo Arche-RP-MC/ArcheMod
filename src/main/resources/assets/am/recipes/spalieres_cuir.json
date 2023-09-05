@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "P P",
+    "L L",
+    "CMC"
+  ],
+  "key": {
+    "P": {
+      "item": "am:cuir_tanne"
+    },
+    "L": {
+      "item": "am:laniere_de_cuir"
+    },
+    "M": {
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
+    },
+    "C": {
+      "item": "am:clous"
+    }
+  },
+  "result": {
+    "item": "am:spalieres_cuir",
+    "count": 1
+  }
+}

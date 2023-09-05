@@ -1,6 +1,7 @@
 {
-  "variants": { 
-  "normal": {
-    "model": "am:laine_verte_croisee"
+  "variants": {
+    "normal": {
+      "model": "am:laine_verte_croisee"
+    }
   }
-}}
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "am:items/sous_vetement_feminin_bleu_clair"
+  }
+}

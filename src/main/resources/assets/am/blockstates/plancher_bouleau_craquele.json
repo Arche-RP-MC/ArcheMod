@@ -1,6 +1,7 @@
 {
-  "variants": { 
-  "normal": {
-    "model": "am:plancher_bouleau_craquele"
+  "variants": {
+    "normal": {
+      "model": "am:plancher_bouleau_craquele"
+    }
   }
-}}
+}

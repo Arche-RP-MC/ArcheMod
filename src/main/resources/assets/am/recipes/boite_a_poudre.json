@@ -1,27 +1,53 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
-    " P ",
+    "VPE",
     "FP "
   ],
-
-  "key":
-  {
-    "F":
-    {
-      "item": "am:lime_en_bronze"
+  "key": {
+    "F": [
+      {
+        "item": "am:lime_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:lime_en_acier",
+        "data": 32767
+      }
+    ],
+    "E": {
+      "item": "am:eponge"
     },
-    "P":
-    {
-      "item": "am:planche"
-    }
+    "V": {
+      "item": "am:vernis",
+      "data": 32767
+    },
+    "P": [
+      {
+        "item": "am:planche"
+      },
+      {
+        "item": "am:planche_acacia"
+      },
+      {
+        "item": "am:planche_acajou"
+      },
+      {
+        "item": "am:planche_bouleau"
+      },
+      {
+        "item": "am:planche_chene"
+      },
+      {
+        "item": "am:planche_chene_noir"
+      },
+      {
+        "item": "am:planche_sapin"
+      }
+    ]
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:boite_a_poudre",
     "count": 1
   }

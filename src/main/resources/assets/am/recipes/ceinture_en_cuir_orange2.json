@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "CL ",
+    "   "
+  ],
+  "key": {
+    "C": {
+      "item": "am:ceinture_en_cuir"
+    },
+    "L": {
+      "item": "minecraft:dye",
+      "data": 14
+    }
+  },
+  "result": {
+    "item": "am:ceinture_en_cuir_orange",
+    "count": 1
+  }
+}

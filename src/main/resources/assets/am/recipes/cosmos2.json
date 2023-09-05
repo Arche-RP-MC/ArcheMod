@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " P ",
+    "   "
+  ],
+  "key": {
+    "P": {
+      "item": "am:cosmos"
+    }
+  },
+  "result": {
+    "item": "am:cosmos2",
+    "count": 1
+  }
+}

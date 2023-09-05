@@ -1,31 +1,30 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " G ",
     " MB",
     "   "
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "am:barre_cuivre"
     },
-    "M":
-    {
-      "item": "am:lime_en_bronze"
-    },
-    "G":
-    {
-      "item": "am:pinces"
+    "M": [
+      {
+        "item": "am:lime_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:lime_en_acier",
+        "data": 32767
+      }
+    ],
+    "G": {
+      "item": "am:pinces",
+      "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:bague_en_cuivre",
     "count": 1
   }

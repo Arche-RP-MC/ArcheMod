@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " T ",
+    " JY",
+    " P "
+  ],
+  "key": {
+    "J": [
+      {
+        "item": "am:seau_de_lait_en_bois"
+      },
+      {
+        "item": "minecraft:milk_bucket"
+      }
+    ],
+    "P": {
+      "item": "am:moule_fromage"
+    },
+    "Y": {
+      "item": "am:levure"
+    },
+    "T": {
+      "item": "am:spatule",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:fromage",
+    "count": 1
+  }
+}

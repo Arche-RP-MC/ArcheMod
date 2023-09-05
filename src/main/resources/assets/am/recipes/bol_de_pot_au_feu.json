@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "BBB",
+    " EF"
+  ],
+  "key": {
+    "A": {
+      "item": "am:lambeau_de_viande_crue"
+    },
+    "B": {
+      "item": "am:bol_de_potage_cru"
+    },
+    "F": {
+      "item": "am:hachoir",
+      "data": 32767
+    },
+    "E": {
+      "item": "am:bouquet_garni"
+    }
+  },
+  "result": {
+    "item": "am:bol_de_pot_au_feu_cru",
+    "count": 3
+  }
+}

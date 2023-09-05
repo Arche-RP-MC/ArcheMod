@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "PPP",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "minecraft:paper"
+    }
+  },
+  "result": {
+    "item": "am:lot_de_papiers",
+    "count": 2
+  }
+}

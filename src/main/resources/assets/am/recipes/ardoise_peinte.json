@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "ABC",
+    "   "
+  ],
+  "key": {
+    "A": {
+      "item": "am:ardoise_brute"
+    },
+    "B": {
+      "item": "minecraft:dye",
+      "data": 0
+    },
+    "C": {
+      "item": "am:pinceau",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:ardoise_peinte",
+    "count": 1
+  }
+}

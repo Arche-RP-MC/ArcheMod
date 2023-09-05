@@ -1,7 +1,7 @@
 {
-    "variants": {
-        "normal": {
-            "model": "am:basilic"
-        }
+  "variants": {
+    "normal": {
+      "model": "am:basilic"
     }
+  }
 }

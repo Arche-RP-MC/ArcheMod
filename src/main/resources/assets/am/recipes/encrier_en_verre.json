@@ -1,31 +1,24 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     "CLL",
     "F  "
   ],
-
-  "key":
-  {
-    "F":
-    {
-      "item": "am:pince"
+  "key": {
+    "F": {
+      "item": "am:pinces",
+      "data": 32767
     },
-    "C":
-    {
-      "item": "am:canne_de_verrier"
+    "C": {
+      "item": "am:canne_de_verrier",
+      "data": 32767
     },
-    "L":
-    {
+    "L": {
       "item": "am:verre_en_fusion"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:encrier_en_verre",
     "count": 1
   }

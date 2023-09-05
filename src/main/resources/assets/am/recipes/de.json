@@ -1,32 +1,34 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
-    " HJ",
+    "IHJ",
     "G  "
   ],
-
-  "key":
-  {
-    "H":
-    {
-      "item": "am:planche"
+  "key": {
+    "H": {
+      "item": "am:balle_en_bois"
     },
-    "J":
-    {
+    "J": {
       "item": "am:gouache_noire"
     },
-    "G":
-    {
-      "item": "archemod:ironchisel"
+    "G": [
+      {
+        "item": "am:lime_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:lime_en_acier",
+        "data": 32767
+      }
+    ],
+    "I": {
+      "item": "am:pinceau",
+      "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:de",
-    "count": 4
+    "count": 1
   }
 }

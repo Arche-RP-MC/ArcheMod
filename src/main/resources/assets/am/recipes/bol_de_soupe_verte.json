@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " M ",
+    "BAD",
+    "CCC"
+  ],
+  "key": {
+    "D": {
+      "item": "am:poireau_cru"
+    },
+    "A": {
+      "item": "am:fenouil_cru"
+    },
+    "B": {
+      "item": "am:artichaut_cru"
+    },
+    "C": {
+      "item": "minecraft:bowl"
+    },
+    "M": {
+      "item": "am:hachoir",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:bol_de_soupe_verte_cru",
+    "count": 3
+  }
+}

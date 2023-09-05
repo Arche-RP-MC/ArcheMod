@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " T ",
+    " Y ",
+    "   "
+  ],
+  "key": {
+    "Y": {
+      "item": "am:bleu"
+    },
+    "T": {
+      "item": "am:hachoir",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:tranche_de_bleu",
+    "count": 4
+  }
+}

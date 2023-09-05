@@ -7,8 +7,8 @@ import net.minecraft.item.ItemFood;
 
 public class FoodBase extends ItemFood implements IHasModel {
 
-    public FoodBase(String name, int amount, float saturation, boolean isAnimalFood){
-        super(amount,saturation,isAnimalFood);
+    public FoodBase(String name, int amount, float saturation, boolean isAnimalFood) {
+        super(amount, saturation, isAnimalFood);
         setTranslationKey(name);
         setRegistryName(name);
         setCreativeTab(ArcheMod.archeCreativeTabs);
@@ -18,6 +18,6 @@ public class FoodBase extends ItemFood implements IHasModel {
 
     @Override
     public void registerModels() {
-        ArcheMod.proxy.registerItemRenderer(this,0,"inventory");
+        ArcheMod.proxy.registerItemRenderer(this, 0, "inventory");
     }
 }

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "LLL",
+    "LLL",
+    "DSM"
+  ],
+  "key": {
+    "L": {
+      "item": "minecraft:sugar"
+    },
+    "M": {
+      "item": "am:levure"
+    },
+    "D": {
+      "item": "am:alambic",
+      "data": 32767
+    },
+    "S": {
+      "item": "am:seau_d_eau_en_bois"
+    }
+  },
+  "result": {
+    "item": "am:seau_alcool_pur_en_bois",
+    "count": 1
+  }
+}

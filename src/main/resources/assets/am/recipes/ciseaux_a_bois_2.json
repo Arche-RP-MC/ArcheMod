@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "GBT",
+    " H "
+  ],
+  "key": {
+    "B": {
+      "item": "am:tete_couteau_fer"
+    },
+    "T": {
+      "item": "am:clous"
+    },
+    "H": {
+      "item": "am:manche"
+    },
+    "G": [
+      {
+        "item": "am:marteau_en_acier",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_en_fer",
+        "data": 32767
+      }
+    ]
+  },
+  "result": {
+    "item": "am:ciseaux_a_bois",
+    "count": 1
+  }
+}

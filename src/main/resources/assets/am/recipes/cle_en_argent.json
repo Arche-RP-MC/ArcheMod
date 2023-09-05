@@ -1,35 +1,34 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     "CL ",
     "F K"
   ],
-
-  "key":
-  {
-    "F":
-    {
-      "item": "am:pince"
+  "key": {
+    "F": {
+      "item": "am:pinces",
+      "data": 32767
     },
-    "C":
-    {
+    "C": {
       "item": "am:barre_argent"
     },
-    "K":
-    {
-      "item": "am:lime_en_bronze"
-    },
-    "L":
-    {
-      "item": "am:loupe"
+    "K": [
+      {
+        "item": "am:lime_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:lime_en_acier",
+        "data": 32767
+      }
+    ],
+    "L": {
+      "item": "am:loupe",
+      "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:cle_en_argent",
     "count": 1
   }

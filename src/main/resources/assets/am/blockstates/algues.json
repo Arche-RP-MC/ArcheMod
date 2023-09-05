@@ -1,6 +1,7 @@
 {
-    "variants": {
-        "normal": {
-            "model": "am:algues" }
+  "variants": {
+    "normal": {
+      "model": "am:algues"
     }
+  }
 }

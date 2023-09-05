@@ -1,0 +1,53 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBC",
+    "AAL",
+    "AA "
+  ],
+  "key": {
+    "A": {
+      "item": "am:part_de_tarte"
+    },
+    "C": [
+      {
+        "item": "am:pot_de_confiture_de_fruits_rouges",
+        "data": 32767
+      },
+      {
+        "item": "am:pot_de_confiture_de_myrtilles",
+        "data": 32767
+      },
+      {
+        "item": "am:pot_de_miel",
+        "data": 32767
+      },
+      {
+        "item": "am:pot_de_confiture_d_agrumes",
+        "data": 32767
+      }
+    ],
+    "B": [
+      {
+        "item": "am:fraise"
+      },
+      {
+        "item": "am:cerise"
+      },
+      {
+        "item": "am:framboise"
+      },
+      {
+        "item": "minecraft:melon"
+      }
+    ],
+    "L": {
+      "item": "am:rouleau_a_patisserie",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:part_de_tarte_aux_fruits_rouges",
+    "count": 4
+  }
+}

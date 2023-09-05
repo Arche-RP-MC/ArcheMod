@@ -1,6 +1,7 @@
 {
-    "variants": {
-        "normal": {
-            "model": "am:salicorne"}
+  "variants": {
+    "normal": {
+      "model": "am:salicorne"
     }
+  }
 }

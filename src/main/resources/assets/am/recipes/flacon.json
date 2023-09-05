@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PL ",
+    "FF ",
+    "   "
+  ],
+  "key": {
+    "P": {
+      "item": "am:pinces",
+      "data": 32767
+    },
+    "F": {
+      "item": "am:verre_en_fusion"
+    },
+    "L": {
+      "item": "am:canne_de_verrier",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:flacon",
+    "count": 2
+  }
+}

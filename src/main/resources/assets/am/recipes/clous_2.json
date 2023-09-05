@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GJ ",
+    " I ",
+    "   "
+  ],
+  "key": {
+    "J": {
+      "item": "am:barre_bronze"
+    },
+    "I": {
+      "item": "am:pinces",
+      "data": 32767
+    },
+    "G": {
+      "item": "am:marteau_en_acier",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:clous",
+    "count": 20
+  }
+}

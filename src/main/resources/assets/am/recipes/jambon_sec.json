@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " ET",
+    "EBE",
+    "EEE"
+  ],
+  "key": {
+    "B": [
+      {
+        "item": "am:grosse_viande_crue"
+      },
+      {
+        "item": "am:viande_de_gibier_crue"
+      }
+    ],
+    "T": {
+      "item": "am:bouquet_garni"
+    },
+    "E": {
+      "item": "am:sciure"
+    }
+  },
+  "result": {
+    "item": "am:jambon_sec",
+    "count": 1
+  }
+}

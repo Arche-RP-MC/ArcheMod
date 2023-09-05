@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " PT",
+    "   "
+  ],
+  "key": {
+    "T": {
+      "item": "am:carrelage_damier_poli_gris"
+    },
+    "P": [
+      {
+        "item": "am:marteau_burin_en_acier",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_burin_en_fer",
+        "data": 32767
+      }
+    ]
+  },
+  "result": {
+    "item": "am:dalle_en_carrelage_damier_poli_gris",
+    "count": 2
+  }
+}

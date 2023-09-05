@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CEE",
+    "BEE",
+    " EE"
+  ],
+  "key": {
+    "C": {
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
+    },
+    "E": {
+      "item": "am:etoffe_rose"
+    },
+    "B": {
+      "item": "am:bobine_de_fil"
+    }
+  },
+  "result": {
+    "item": "am:tunique_rose",
+    "count": 1
+  }
+}

@@ -1,6 +1,7 @@
 {
-  "variants": { 
-  "normal": {
-    "model": "am:brique_granite"
+  "variants": {
+    "normal": {
+      "model": "am:brique_granite"
+    }
   }
-}}
+}

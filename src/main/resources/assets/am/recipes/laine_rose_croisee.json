@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BA ",
+    "AB ",
+    "   "
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:wool",
+      "data": 0
+    },
+    "B": {
+      "item": "minecraft:wool",
+      "data": 6
+    }
+  },
+  "result": {
+    "item": "am:laine_rose_croisee",
+    "count": 4
+  }
+}

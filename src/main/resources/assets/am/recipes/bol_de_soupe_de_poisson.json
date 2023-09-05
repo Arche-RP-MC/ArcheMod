@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BAD",
+    " AM",
+    "CCC"
+  ],
+  "key": {
+    "A": {
+      "item": "am:morceau_de_poisson_cru"
+    },
+    "B": [
+      {
+        "item": "am:oignon"
+      },
+      {
+        "item": "am:ail"
+      },
+      {
+        "item": "am:pomme_de_terre_cru"
+      }
+    ],
+    "C": {
+      "item": "minecraft:bowl"
+    },
+    "D": {
+      "item": "am:bouquet_garni"
+    },
+    "M": {
+      "item": "am:hachoir",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:bol_de_soupe_de_poisson_cru",
+    "count": 3
+  }
+}

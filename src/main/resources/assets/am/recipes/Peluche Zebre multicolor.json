@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "HGM",
+    "ICL",
+    "JGK"
+  ],
+  "key": {
+    "H": {
+      "item": "am:etoffe_rouge"
+    },
+    "I": {
+      "item": "am:etoffe_orange"
+    },
+    "J": {
+      "item": "am:etoffe_jaune"
+    },
+    "K": {
+      "item": "am:etoffe_violette"
+    },
+    "L": {
+      "item": "am:etoffe_bleue"
+    },
+    "M": {
+      "item": "am:etoffe_verte"
+    },
+    "C": {
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
+    },
+    "G": {
+      "item": "am:etoffe"
+    }
+  },
+  "result": {
+    "item": "zawa:zebra_rainbow_plush",
+    "count": 1
+  }
+}

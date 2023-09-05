@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "BH ",
+    "   "
+  ],
+  "key": {
+    "H": {
+      "item": "am:planche"
+    },
+    "B": {
+      "item": "am:ciseaux_a_bois",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:peigne_en_chene",
+    "count": 1
+  }
+}

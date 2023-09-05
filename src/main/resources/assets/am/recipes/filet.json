@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " CT",
+    " TT",
+    "TTT"
+  ],
+  "key": {
+    "C": {
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
+    },
+    "T": {
+      "item": "am:bobine_de_chanvre"
+    }
+  },
+  "result": {
+    "item": "am:filet",
+    "count": 1
+  }
+}

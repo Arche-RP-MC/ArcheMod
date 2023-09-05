@@ -1,22 +1,6 @@
 {
-	"__comment": "https://cubik.studio",
-	"textures": {
-		"particle": "am:blocks/sign_hrp",
-		"texture": "am:blocks/sign_hrp"
-	},
-	"elements": [ 	 
-		{
-			"__comment": "Box1",
-			"from": [ 0, 3.5, 15 ],
-			"to": [ 16, 12.5, 16 ],
-			"faces": {
-				"down": { "uv": [ 1, 0, 13, 1 ], "texture": "#texture" },
-				"up": { "uv": [ 1, 0, 13, 1 ], "texture": "#texture" },
-				"north": { "uv": [ 1, 1, 13, 7 ], "texture": "#texture" },
-				"south": { "uv": [ 1, 1, 13, 7 ], "texture": "#texture" },
-				"west": { "uv": [ 0, 1, 1, 7 ], "texture": "#texture" },
-				"east": { "uv": [ 0, 1, 1, 7 ], "texture": "#texture" }
-			}
-		}
-	]
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "am:items/sign_hrp"
+  }
 }

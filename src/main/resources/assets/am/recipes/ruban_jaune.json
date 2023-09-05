@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "FNG",
+    "   "
+  ],
+  "key": {
+    "N": {
+      "item": "am:etoffe_jaune"
+    },
+    "G": {
+      "item": "am:bobine_de_laine"
+    },
+    "F": {
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:ruban_jaune",
+    "count": 3
+  }
+}

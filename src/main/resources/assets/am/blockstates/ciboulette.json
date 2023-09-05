@@ -1,6 +1,7 @@
 {
-    "variants": {
-        "normal": {
-            "model": "am:ciboulette"}
+  "variants": {
+    "normal": {
+      "model": "am:ciboulette"
     }
+  }
 }

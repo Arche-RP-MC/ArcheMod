@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " P ",
+    "L  "
+  ],
+  "key": {
+    "P": {
+      "item": "am:brique_de_marbre"
+    },
+    "L": [
+      {
+        "item": "am:marteau_burin_en_acier",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_burin_en_fer",
+        "data": 32767
+      }
+    ]
+  },
+  "result": {
+    "item": "am:statuette_marbre",
+    "count": 1
+  }
+}

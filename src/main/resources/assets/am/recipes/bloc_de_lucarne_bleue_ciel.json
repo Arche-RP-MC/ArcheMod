@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " P ",
+    "HT ",
+    "HT "
+  ],
+  "key": {
+    "H": {
+      "item": "minecraft:stained_glass",
+      "data": 3
+    },
+    "T": {
+      "item": "minecraft:stick"
+    },
+    "P": {
+      "item": "am:pinces",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:bloc_de_lucarne_bleue_ciel",
+    "count": 1
+  }
+}

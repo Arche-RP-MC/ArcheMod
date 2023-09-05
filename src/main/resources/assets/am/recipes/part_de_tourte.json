@@ -1,0 +1,113 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "B R",
+    "LVL",
+    "AVA"
+  ],
+  "key": {
+    "A": {
+      "item": "am:pate_a_pain"
+    },
+    "V": {
+      "item": "am:lambeau_de_viande_crue"
+    },
+    "B": {
+      "item": "am:bouquet_garni"
+    },
+    "R": {
+      "item": "am:rouleau_a_patisserie",
+      "data": 32767
+    },
+    "L": [
+      {
+        "item": "am:oignon"
+      },
+      {
+        "item": "am:poireau_cru"
+      },
+      {
+        "item": "am:radis"
+      },
+      {
+        "item": "am:salade"
+      },
+      {
+        "item": "am:artichaut_cru"
+      },
+      {
+        "item": "am:asperge_cru"
+      },
+      {
+        "item": "am:aubergine_cru"
+      },
+      {
+        "item": "am:brocoli_cru"
+      },
+      {
+        "item": "am:celeri_branche_cru"
+      },
+      {
+        "item": "am:cepes_cru"
+      },
+      {
+        "item": "am:chou_fleur_cru"
+      },
+      {
+        "item": "am:chou_vert_cru"
+      },
+      {
+        "item": "am:courgette_cru"
+      },
+      {
+        "item": "am:courge_cru"
+      },
+      {
+        "item": "am:navet_cru"
+      },
+      {
+        "item": "am:haricot_vert_cru"
+      },
+      {
+        "item": "am:haricot_rouge_cru"
+      },
+      {
+        "item": "am:haricot_blanc_cru"
+      },
+      {
+        "item": "am:fenouil_cru"
+      },
+      {
+        "item": "am:epinard_cru"
+      },
+      {
+        "item": "am:endive_cru"
+      },
+      {
+        "item": "am:petits_pois_cru"
+      },
+      {
+        "item": "am:poivron_jaune_m_cru"
+      },
+      {
+        "item": "am:poivron_rouge_m_cru"
+      },
+      {
+        "item": "am:poivron_vert_m_cru"
+      },
+      {
+        "item": "am:pomme_de_terre_cru"
+      },
+      {
+        "item": "am:salsifi_cru"
+      },
+      {
+        "item": "am:tomate_cru"
+      }
+    ]
+  },
+  "result": {
+    "item": "am:part_de_tourte",
+    "count": 4
+  }
+}

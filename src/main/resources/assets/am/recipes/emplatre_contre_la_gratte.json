@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PBP",
+    "OSO",
+    "CEM"
+  ],
+  "key": {
+    "B": {
+      "item": "am:emplatre"
+    },
+    "P": {
+      "item": "am:pivoine"
+    },
+    "C": {
+      "item": "am:geranium"
+    },
+    "S": {
+      "item": "am:camomille"
+    },
+    "O": {
+      "item": "am:ronces"
+    },
+    "E": {
+      "item": "am:huile_de_lin",
+      "data": 32767
+    },
+    "M": [
+      {
+        "item": "am:mortier_pilon_en_pierre",
+        "data": 32767
+      },
+      {
+        "item": "am:mortier_pilon_en_bois",
+        "data": 32767
+      }
+    ]
+  },
+  "result": {
+    "item": "am:emplatre_contre_la_gratte",
+    "count": 1
+  }
+}

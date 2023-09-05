@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " L ",
+    "CLF",
+    "P  "
+  ],
+  "key": {
+    "P": {
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
+    },
+    "F": {
+      "item": "minecraft:string"
+    },
+    "C": {
+      "item": "am:cuir_tanne"
+    },
+    "L": {
+      "item": "am:etoffe"
+    }
+  },
+  "result": {
+    "item": "am:chaussures_blanc",
+    "count": 1
+  }
+}

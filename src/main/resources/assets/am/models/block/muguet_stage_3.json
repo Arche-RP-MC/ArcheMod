@@ -1,0 +1,6 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "am:blocks/muguet_stage_3"
+  }
+}

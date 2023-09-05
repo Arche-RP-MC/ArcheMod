@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    " C ",
+    "LGM"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:double_plant",
+      "data": 0
+    },
+    "L": {
+      "item": "am:etoffe"
+    },
+    "C": [
+      {
+        "item": "am:seau_d_eau_en_bois"
+      },
+      {
+        "item": "minecraft:water_bucket"
+      }
+    ],
+    "G": {
+      "item": "am:grosse_bouteille_vide"
+    },
+    "M": [
+      {
+        "item": "am:mortier_pilon_en_pierre",
+        "data": 32767
+      },
+      {
+        "item": "am:mortier_pilon_en_bois",
+        "data": 32767
+      }
+    ]
+  },
+  "result": {
+    "item": "am:bouteille_huile_tournesol",
+    "count": 1
+  }
+}

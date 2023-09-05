@@ -1,6 +1,6 @@
 {
-    "parent": "block/crop",
-    "textures": {
-        "crop": "am:blocks/agriculture/lin_stage1"
-    }
+  "parent": "block/crop",
+  "textures": {
+    "crop": "am:blocks/agriculture/lin_stage1"
+  }
 }

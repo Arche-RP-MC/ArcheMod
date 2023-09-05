@@ -1,27 +1,31 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "HHH",
     "HHH",
     "GHH"
   ],
-
-  "key":
-  {
-    "H":
-    {
-      "item": "am:bobine_de_laine"
-    },
-    "G":
-    {
-      "item": "am:ciseaux_de_couture"
+  "key": {
+    "H": [
+      {
+        "item": "am:bobine_de_laine"
+      },
+      {
+        "item": "am:bobine_de_chanvre"
+      },
+      {
+        "item": "am:bobine_de_soie"
+      },
+      {
+        "item": "am:bobine_de_lin"
+      }
+    ],
+    "G": {
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:etoffe",
     "count": 4
   }

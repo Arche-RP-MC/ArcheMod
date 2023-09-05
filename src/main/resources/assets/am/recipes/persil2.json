@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " P ",
+    "   "
+  ],
+  "key": {
+    "P": {
+      "item": "am:persil"
+    }
+  },
+  "result": {
+    "item": "am:persil2",
+    "count": 1
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "inventory": { "model": "am:fut_vide" },
+    "facing=north": { "model": "am:fut_vide" },
+    "facing=south": { "model": "am:fut_vide", "y": 180 },
+    "facing=west":  { "model": "am:fut_vide", "y": 270 },
+    "facing=east":  { "model": "am:fut_vide", "y": 90 }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " M ",
+    "BAB",
+    "CCC"
+  ],
+  "key": {
+    "A": {
+      "item": "am:ail"
+    },
+    "B": {
+      "item": "am:tomate_cru"
+    },
+    "C": {
+      "item": "minecraft:bowl"
+    },
+    "M": {
+      "item": "am:hachoir",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:bol_de_soupe_de_tomates_cru",
+    "count": 3
+  }
+}

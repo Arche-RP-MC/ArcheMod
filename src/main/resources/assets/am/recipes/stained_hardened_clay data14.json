@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "BBL",
+    "BBI"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:hardened_clay"
+    },
+    "L": {
+      "item": "am:spatule",
+      "data": 32767
+    },
+    "I": {
+      "item": "minecraft:dye",
+      "data": 1
+    }
+  },
+  "result": {
+    "item": "minecraft:stained_hardened_clay",
+    "data": 14,
+    "count": 4
+  }
+}

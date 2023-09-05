@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GT ",
+    "PBB",
+    " BB"
+  ],
+  "key": {
+    "B": {
+      "item": "am:planche"
+    },
+    "P": [
+      {
+        "item": "am:pepite_bronze"
+      },
+      {
+        "item": "am:pepite_fer"
+      }
+    ],
+    "T": {
+      "item": "am:ciseaux_a_bois",
+      "data": 32767
+    },
+    "G": {
+      "item": "am:maillet",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "minecraft:chest",
+    "count": 1
+  }
+}

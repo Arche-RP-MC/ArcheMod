@@ -1,39 +1,35 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     " F ",
     "HLK",
     " C "
   ],
-
-  "key":
-  {
-    "C":
-    {
-      "item": "minecraft:water_bucket"
-    },
-     "K":
-    {
+  "key": {
+    "C": [
+      {
+        "item": "am:seau_d_eau_en_bois"
+      },
+      {
+        "item": "minecraft:water_bucket"
+      }
+    ],
+    "K": {
       "item": "am:plantes_sechees"
     },
-    "F":
-    {
+    "F": {
       "item": "am:cire"
     },
-    "H":
-    {
-      "item": "am:huile_essentielle"
+    "H": {
+      "item": "am:huile_essentielle",
+      "data": 32767
     },
-    "L":
-    {
-      "item": "minecraft:coal"
+    "L": {
+      "item": "minecraft:coal",
+      "data": 0
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:encens",
     "count": 2
   }

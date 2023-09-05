@@ -1,0 +1,25 @@
+{
+  "variants": {
+    "bites=0": {
+      "model": "am:tarte_myrtille_entiere"
+    },
+    "bites=1": {
+      "model": "am:tarte_myrtille1"
+    },
+    "bites=2": {
+      "model": "am:tarte_myrtille2"
+    },
+    "bites=3": {
+      "model": "am:tarte_myrtille3"
+    },
+    "bites=4": {
+      "model": "am:tarte_myrtille4"
+    },
+    "bites=5": {
+      "model": "am:tarte_myrtille5"
+    },
+    "bites=6": {
+      "model": "am:tarte_myrtille6"
+    }
+  }
+}

@@ -1,6 +1,7 @@
 {
-  "variants": { 
-  "normal": {
-    "model": "am:bloc_etain"
+  "variants": {
+    "normal": {
+      "model": "am:bloc_etain"
+    }
   }
-}}
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " P ",
+    "   "
+  ],
+  "key": {
+    "P": {
+      "item": "am:geranium"
+    }
+  },
+  "result": {
+    "item": "am:geranium2",
+    "count": 1
+  }
+}

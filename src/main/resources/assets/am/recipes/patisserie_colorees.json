@@ -1,0 +1,106 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "FGH",
+    "CDC",
+    "EAB"
+  ],
+  "key": {
+    "A": {
+      "item": "am:pate_a_pain"
+    },
+    "B": {
+      "item": "am:oeuf"
+    },
+    "C": [
+      {
+        "item": "am:cassis"
+      },
+      {
+        "item": "am:dattes"
+      },
+      {
+        "item": "am:groseille"
+      },
+      {
+        "item": "am:mures"
+      },
+      {
+        "item": "am:myrtilles"
+      },
+      {
+        "item": "am:pruneau"
+      },
+      {
+        "item": "am:raisin_noir"
+      },
+      {
+        "item": "am:abricot"
+      },
+      {
+        "item": "am:ananas"
+      },
+      {
+        "item": "am:citron"
+      },
+      {
+        "item": "am:clementine"
+      },
+      {
+        "item": "am:groseille_a_macro"
+      },
+      {
+        "item": "am:kiwi"
+      },
+      {
+        "item": "am:orange"
+      },
+      {
+        "item": "am:peche"
+      },
+      {
+        "item": "am:poire"
+      },
+      {
+        "item": "am:raisin_blanc"
+      },
+      {
+        "item": "am:fraise"
+      },
+      {
+        "item": "am:figue"
+      },
+      {
+        "item": "am:cerise"
+      },
+      {
+        "item": "am:framboise"
+      },
+      {
+        "item": "minecraft:melon"
+      }
+    ],
+    "E": {
+      "item": "rouleau_a_patisserie",
+      "data": 32767
+    },
+    "D": {
+      "item": "minecraft:sugar"
+    },
+    "F": {
+      "item": "am:beurre",
+      "data": 32767
+    },
+    "G": {
+      "item": "am:patisserie_a_la_pate_d_amande_cru"
+    },
+    "H": {
+      "item": "am:bouteille_de_lait",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:patisseries_colorees_cru",
+    "count": 3
+  }
+}

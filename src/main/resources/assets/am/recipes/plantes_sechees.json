@@ -1,0 +1,110 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " P ",
+    "GPG",
+    " GM"
+  ],
+  "key": {
+    "M": {
+      "item": "am:petite_cisaille",
+      "data": 32767
+    },
+    "G": {
+      "item": "am:sciure"
+    },
+    "P": [
+      {
+        "item": "am:belle_de_nuit"
+      },
+      {
+        "item": "am:bleuets"
+      },
+      {
+        "item": "am:camomille"
+      },
+      {
+        "item": "am:chardon"
+      },
+      {
+        "item": "am:clochettes"
+      },
+      {
+        "item": "am:cosmos"
+      },
+      {
+        "item": "am:etoile_des_glaciers"
+      },
+      {
+        "item": "am:geranium"
+      },
+      {
+        "item": "am:glycine"
+      },
+      {
+        "item": "am:gui"
+      },
+      {
+        "item": "am:guzmanias"
+      },
+      {
+        "item": "am:hibiscus"
+      },
+      {
+        "item": "am:hortensias"
+      },
+      {
+        "item": "am:hydrangee"
+      },
+      {
+        "item": "am:iris"
+      },
+      {
+        "item": "am:jacinthe_des_bois"
+      },
+      {
+        "item": "am:jasmin"
+      },
+      {
+        "item": "am:jonquille"
+      },
+      {
+        "item": "am:lavande"
+      },
+      {
+        "item": "am:lys"
+      },
+      {
+        "item": "am:muguet"
+      },
+      {
+        "item": "am:myosotis"
+      },
+      {
+        "item": "am:narcisses"
+      },
+      {
+        "item": "am:oeillets"
+      },
+      {
+        "item": "am:orchidee_rose"
+      },
+      {
+        "item": "am:pensees"
+      },
+      {
+        "item": "am:pivoine"
+      },
+      {
+        "item": "am:verge_d_or"
+      },
+      {
+        "item": "am:violettes"
+      }
+    ]
+  },
+  "result": {
+    "item": "am:plantes_sechees",
+    "count": 1
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " P ",
+    "   "
+  ],
+  "key": {
+    "P": {
+      "item": "am:plante_grasse_coloree"
+    }
+  },
+  "result": {
+    "item": "am:plante_grasse_coloree2",
+    "count": 1
+  }
+}

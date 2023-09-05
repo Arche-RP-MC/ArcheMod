@@ -1,6 +1,7 @@
 {
-  "variants": { 
-  "normal": {
-    "model": "am:diorite_sculptee"
+  "variants": {
+    "normal": {
+      "model": "am:diorite_sculptee"
+    }
   }
-}}
+}

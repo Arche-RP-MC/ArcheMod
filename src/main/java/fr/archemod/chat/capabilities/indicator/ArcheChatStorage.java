@@ -8,7 +8,7 @@ import net.minecraftforge.common.capabilities.CapabilityInject;
 
 import javax.annotation.Nullable;
 
-public class ArcheChatStorage implements Capability.IStorage<IArcheChat>{
+public class ArcheChatStorage implements Capability.IStorage<IArcheChat> {
 
     @CapabilityInject(IArcheChat.class)
     public static final Capability<IArcheChat> I_ARCHE_CHAT_CAPABILITY = null;
@@ -21,8 +21,8 @@ public class ArcheChatStorage implements Capability.IStorage<IArcheChat>{
 
     @Override
     public void readNBT(Capability<IArcheChat> capability, IArcheChat instance, EnumFacing side, NBTBase nbt) {
-        if(!(instance instanceof ArcheChat))
+        if (!(instance instanceof ArcheChat))
             throw new IllegalArgumentException("Can not deserialize to an instance that isn't the default implementation");
-        instance.setIndicator(((NBTTagInt)nbt).getInt());
+        instance.setIndicator(((NBTTagInt) nbt).getInt());
     }
 }

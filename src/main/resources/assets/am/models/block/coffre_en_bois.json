@@ -1,0 +1,89 @@
+{
+  "credit": "Made with Blockbench",
+  "texture_size": [
+    32,
+    32
+  ],
+  "textures": {
+    "5": "am:blocks/coffre_en_bois"
+  },
+  "elements": [
+    {
+      "from": [
+        1,
+        0,
+        2
+      ],
+      "to": [
+        15,
+        12,
+        16
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          9,
+          8,
+          10
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            8,
+            8
+          ],
+          "texture": "#5"
+        },
+        "east": {
+          "uv": [
+            8,
+            8,
+            16,
+            16
+          ],
+          "texture": "#5"
+        },
+        "south": {
+          "uv": [
+            8,
+            8,
+            16,
+            16
+          ],
+          "texture": "#5"
+        },
+        "west": {
+          "uv": [
+            8,
+            8,
+            16,
+            16
+          ],
+          "texture": "#5"
+        },
+        "up": {
+          "uv": [
+            8,
+            0,
+            16,
+            8
+          ],
+          "texture": "#5"
+        },
+        "down": {
+          "uv": [
+            0,
+            8,
+            8,
+            16
+          ],
+          "texture": "#5"
+        }
+      }
+    }
+  ]
+}

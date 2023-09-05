@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " B ",
+    "EEE",
+    "A C"
+  ],
+  "key": {
+    "B": {
+      "item": "am:bobine_de_fil"
+    },
+    "E": {
+      "item": "am:etoffe_orange"
+    },
+    "A": {
+      "item": "am:aiguille"
+    },
+    "C": {
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:petite_serviette_orange",
+    "count": 1
+  }
+}

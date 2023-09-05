@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " A ",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "am:bocal"
+    },
+    "A": [
+      {
+        "item": "am:seau_de_lait_en_bois"
+      },
+      {
+        "item": "minecraft:milk_bucket"
+      }
+    ]
+  },
+  "result": {
+    "item": "am:creme_fraiche",
+    "count": 3
+  }
+}

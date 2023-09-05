@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " B ",
+    "SCO",
+    "GHM"
+  ],
+  "key": {
+    "B": {
+      "item": "am:boite_a_poudre"
+    },
+    "S": {
+      "item": "am:pepite_plomb"
+    },
+    "C": {
+      "item": "am:farine"
+    },
+    "O": {
+      "item": "am:larve"
+    },
+    "G": {
+      "item": "am:graisse_animale"
+    },
+    "H": {
+      "item": "am:huile_essentielle",
+      "data": 32767
+    },
+    "M": [
+      {
+        "item": "am:mortier_pilon_en_pierre",
+        "data": 32767
+      },
+      {
+        "item": "am:mortier_pilon_en_bois",
+        "data": 32767
+      }
+    ]
+  },
+  "result": {
+    "item": "am:fard_a_joue",
+    "count": 1
+  }
+}

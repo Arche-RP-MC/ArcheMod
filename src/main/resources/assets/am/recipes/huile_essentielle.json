@@ -1,0 +1,133 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "BBB",
+    "OEM"
+  ],
+  "key": {
+    "B": [
+      {
+        "item": "am:narcisses"
+      },
+      {
+        "item": "am:citron"
+      },
+      {
+        "item": "am:gingembre"
+      },
+      {
+        "item": "am:anis"
+      },
+      {
+        "item": "am:jonquille"
+      },
+      {
+        "item": "am:iris"
+      },
+      {
+        "item": "am:jasmin"
+      },
+      {
+        "item": "am:jacinthe_des_bois"
+      },
+      {
+        "item": "am:hydrangee"
+      },
+      {
+        "item": "am:hortensias"
+      },
+      {
+        "item": "am:feuille_de_verveine"
+      },
+      {
+        "item": "am:laurier"
+      },
+      {
+        "item": "am:menthe"
+      },
+      {
+        "item": "am:violettes"
+      },
+      {
+        "item": "am:pensees"
+      },
+      {
+        "item": "am:bleuets"
+      },
+      {
+        "item": "am:romarin"
+      },
+      {
+        "item": "am:camomille"
+      },
+      {
+        "item": "am:lavande"
+      },
+      {
+        "item": "am:lys"
+      },
+      {
+        "item": "am:glycine"
+      },
+      {
+        "item": "am:hibiscus"
+      },
+      {
+        "item": "am:belle_de_nuit"
+      },
+      {
+        "item": "am:cosmos"
+      },
+      {
+        "item": "am:aneth"
+      },
+      {
+        "item": "am:orchidee_rose"
+      },
+      {
+        "item": "am:verge_d_or"
+      },
+      {
+        "item": "am:clochettes"
+      },
+      {
+        "item": "am:muguet"
+      },
+      {
+        "item": "am:myosotis"
+      },
+      {
+        "item": "am:pivoine"
+      },
+      {
+        "item": "am:oeillets"
+      }
+    ],
+    "O": {
+      "item": "am:once_d_herboriste"
+    },
+    "E": [
+      {
+        "item": "am:seau_d_eau_en_bois"
+      },
+      {
+        "item": "minecraft:water_bucket"
+      }
+    ],
+    "M": [
+      {
+        "item": "am:mortier_pilon_en_pierre",
+        "data": 32767
+      },
+      {
+        "item": "am:mortier_pilon_en_bois",
+        "data": 32767
+      }
+    ]
+  },
+  "result": {
+    "item": "am:huile_essentielle",
+    "count": 1
+  }
+}

@@ -1,35 +1,33 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "LL ",
     "GNP",
     "   "
   ],
-
-  "key":
-  {
-    "N":
-    {
+  "key": {
+    "N": {
       "item": "am:plaque_de_fer"
     },
-    "P":
-    {
-      "item": "am:marteau_en_bronze"
-    },
-    "L":
-    {
+    "P": [
+      {
+        "item": "am:marteau_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_en_acier",
+        "data": 32767
+      }
+    ],
+    "L": {
       "item": "minecraft:feather"
     },
-    "G":
-    {
-      "item": "am:pince"
+    "G": {
+      "item": "am:pinces",
+      "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:casque_coiffe",
     "count": 1
   }

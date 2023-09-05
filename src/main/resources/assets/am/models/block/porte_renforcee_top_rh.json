@@ -1,7 +1,7 @@
 {
-    "parent": "am:block/door_top_rh",
-    "textures": {
-        "bottom": "am:blocks/porte_renforcee_lower",
-        "top": "am:blocks/porte_renforcee_upper"
-    }
+  "parent": "am:block/door_top_rh",
+  "textures": {
+    "bottom": "am:blocks/porte_renforcee_lower",
+    "top": "am:blocks/porte_renforcee_upper"
+  }
 }

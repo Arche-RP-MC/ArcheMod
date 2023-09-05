@@ -12,7 +12,7 @@ public class ContainerFishCase extends Container {
     private final IInventory inventoryFishCase;
     private final int numRows;
 
-    public ContainerFishCase(IInventory playerInventory, TileEntityFishCase fishCase){
+    public ContainerFishCase(IInventory playerInventory, TileEntityFishCase fishCase) {
         this.inventoryFishCase = fishCase;
         this.numRows = inventoryFishCase.getSizeInventory() / 9;
         int j;
@@ -24,16 +24,13 @@ public class ContainerFishCase extends Container {
             }
         }
 
-        for (int l = 0; l < 3; ++l)
-        {
-            for (int j1 = 0; j1 < 9; ++j1)
-            {
+        for (int l = 0; l < 3; ++l) {
+            for (int j1 = 0; j1 < 9; ++j1) {
                 this.addSlotToContainer(new Slot(playerInventory, j1 + l * 9 + 9, 8 + j1 * 18, 103 + l * 18 + i));
             }
         }
 
-        for (int i1 = 0; i1 < 9; ++i1)
-        {
+        for (int i1 = 0; i1 < 9; ++i1) {
             this.addSlotToContainer(new Slot(playerInventory, i1, 8 + i1 * 18, 161 + i));
         }
 
@@ -82,7 +79,8 @@ public class ContainerFishCase extends Container {
         return itemstack;
     }
 
-    @Override /**
+    @Override
+    /**
      * Merges provided ItemStack with the first avaliable one in the
      * container/player inventor between minIndex (included) and maxIndex
      * (excluded). Args : stack, minIndex, maxIndex, negativDirection. /!\ the
@@ -165,8 +163,7 @@ public class ContainerFishCase extends Container {
         return flag;
     }
 
-    public void onContainerClosed(EntityPlayer playerIn)
-    {
+    public void onContainerClosed(EntityPlayer playerIn) {
         super.onContainerClosed(playerIn);
         this.inventoryFishCase.closeInventory(playerIn);
     }

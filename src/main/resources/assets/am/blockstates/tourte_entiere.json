@@ -1,0 +1,25 @@
+{
+  "variants": {
+    "bites=0": {
+      "model": "am:tourte_entiere"
+    },
+    "bites=1": {
+      "model": "am:tourte1"
+    },
+    "bites=2": {
+      "model": "am:tourte2"
+    },
+    "bites=3": {
+      "model": "am:tourte3"
+    },
+    "bites=4": {
+      "model": "am:tourte4"
+    },
+    "bites=5": {
+      "model": "am:tourte5"
+    },
+    "bites=6": {
+      "model": "am:tourte6"
+    }
+  }
+}

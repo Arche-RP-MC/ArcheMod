@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " P ",
+    "   "
+  ],
+  "key": {
+    "P": {
+      "item": "am:joli_buisson2"
+    }
+  },
+  "result": {
+    "item": "am:joli_buisson",
+    "count": 1
+  }
+}

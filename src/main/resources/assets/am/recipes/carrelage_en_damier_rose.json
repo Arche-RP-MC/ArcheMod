@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PT ",
+    "FF ",
+    "TP "
+  ],
+  "key": {
+    "F": {
+      "item": "am:mortier"
+    },
+    "P": {
+      "item": "am:brique_de_granite"
+    },
+    "T": {
+      "item": "am:brique_de_gres"
+    }
+  },
+  "result": {
+    "item": "am:carrelage_damier_rose",
+    "count": 1
+  }
+}

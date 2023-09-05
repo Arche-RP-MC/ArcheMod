@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "PUT",
+    " TT"
+  ],
+  "key": {
+    "P": {
+      "item": "minecraft:string"
+    },
+    "U": {
+      "item": "am:paille"
+    },
+    "T": {
+      "item": "am:fibre_vegetale"
+    }
+  },
+  "result": {
+    "item": "am:escalier_en_jonc_de_mer",
+    "count": 1
+  }
+}

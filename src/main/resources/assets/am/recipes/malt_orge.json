@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CCC",
+    "CLC",
+    " MJ"
+  ],
+  "key": {
+    "C": {
+      "item": "am:graine_orge"
+    },
+    "L": [
+      {
+        "item": "am:seau_d_eau_en_bois"
+      },
+      {
+        "item": "minecraft:water_bucket"
+      }
+    ],
+    "J": {
+      "item": "am:levure"
+    },
+    "M": [
+      {
+        "item": "am:mortier_pilon_en_bois",
+        "data": 32767
+      },
+      {
+        "item": "am:mortier_pilon_en_pierre",
+        "data": 32767
+      }
+    ]
+  },
+  "result": {
+    "item": "am:malt_orge",
+    "count": 1
+  }
+}

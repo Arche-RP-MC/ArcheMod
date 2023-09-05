@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " P ",
+    "   "
+  ],
+  "key": {
+    "P": {
+      "item": "am:guzmanias2"
+    }
+  },
+  "result": {
+    "item": "am:guzmanias",
+    "count": 1
+  }
+}

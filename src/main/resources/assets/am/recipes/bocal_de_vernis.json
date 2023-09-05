@@ -1,36 +1,31 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
     "FPS",
     " B "
   ],
-
-  "key":
-  {
-    "B":
-    {
+  "key": {
+    "B": {
       "item": "am:bocal"
     },
-    "F":
-    {
+    "F": {
       "item": "am:colle"
     },
-    "S":
-    {
-      "item": "minecraft:water_bucket"
-    },
-    "P":
-    {
+    "S": [
+      {
+        "item": "am:seau_d_eau_en_bois"
+      },
+      {
+        "item": "minecraft:water_bucket"
+      }
+    ],
+    "P": {
       "item": "am:seve"
     }
   },
-
-  "result":
-  {
-    "item": "am:bocal_de_vernis",
+  "result": {
+    "item": "am:vernis",
     "count": 1
   }
 }

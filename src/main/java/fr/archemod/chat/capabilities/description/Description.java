@@ -1,14 +1,14 @@
 package fr.archemod.chat.capabilities.description;
 
-import fr.archemod.ArcheMod;
 import fr.archemod.chat.network.description.PacketDescription;
+import fr.archemod.network.ArcheNetwork;
 import net.minecraft.entity.player.EntityPlayer;
 
 public class Description implements IDescription {
 
     private String description = "";
 
-    public Description(){
+    public Description() {
         description = "";
     }
 
@@ -22,16 +22,14 @@ public class Description implements IDescription {
         this.description = description;
     }
 
-    public String toString(){
-        return "Description : "+description;
+    public String toString() {
+        return "Description : " + description;
     }
 
-    public void sync(EntityPlayer player)
-    {
+    public void sync(EntityPlayer player) {
         PacketDescription packet = new PacketDescription(this);
-        if(player.world.isRemote)
-        {
-            ArcheMod.networkArcheMod.sendToServer(packet);
+        if (player.world.isRemote) {
+            ArcheNetwork.NETWORK.sendToServer(packet);
         }
     }
 }

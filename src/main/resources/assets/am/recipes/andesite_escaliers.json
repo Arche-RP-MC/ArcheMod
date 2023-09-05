@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BM ",
+    "BBE",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "am:caillou_d_andesite"
+    },
+    "E": {
+      "item": "am:mortier"
+    },
+    "M": [
+      {
+        "item": "am:marteau_burin_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_burin_en_acier",
+        "data": 32767
+      }
+    ]
+  },
+  "result": {
+    "item": "minecraft:stone_stairs",
+    "count": 2
+  }
+}

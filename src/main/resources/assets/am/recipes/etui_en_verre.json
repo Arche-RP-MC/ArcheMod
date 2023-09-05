@@ -1,35 +1,27 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "   ",
-    "CLL",
+    "CKL",
     "F  "
   ],
-
-  "key":
-  {
-    "F":
-    {
-      "item": "am:pince"
+  "key": {
+    "F": {
+      "item": "am:pinces",
+      "data": 32767
     },
-    "C":
-    {
-      "item": "am:canne_de_verrier"
+    "C": {
+      "item": "am:canne_de_verrier",
+      "data": 32767
     },
-    "K":
-    {
+    "K": {
       "item": "am:flacon"
     },
-    "L":
-    {
+    "L": {
       "item": "am:verre_en_fusion"
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:etui_en_verre",
     "count": 1
   }

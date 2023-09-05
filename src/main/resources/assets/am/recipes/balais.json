@@ -1,28 +1,28 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
-    "   ",
-    "MBB",
-    "   "
+  "pattern": [
+    "A  ",
+    "CB ",
+    " M "
   ],
-
-  "key":
-  {
-    "B":
-    {
-      "item": "am:planche"
+  "key": {
+    "B": {
+      "item": "minecraft:stick"
     },
-    "M":
-    {
-      "item": "minecraft:wheat"
+    "A": {
+      "item": "am:ciseaux_a_bois",
+      "data": 32767
+    },
+    "C": {
+      "item": "am:vernis",
+      "data": 32767
+    },
+    "M": {
+      "item": "am:fibre_vegetale"
     }
   },
-
-  "result":
-  {
-    "item": "am:balais",
+  "result": {
+    "item": "am:balai",
     "count": 1
   }
 }

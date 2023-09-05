@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "TTT",
+    "LCL",
+    "TPT"
+  ],
+  "key": {
+    "T": {
+      "item": "am:cuir_tanne"
+    },
+    "L": {
+      "item": "am:laniere_de_cuir"
+    },
+    "P": {
+      "item": "minecraft:dye",
+      "data": 9
+    },
+    "C": {
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:sacoche_en_cuir_rose",
+    "count": 1
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " T ",
+    "PJP",
+    " M "
+  ],
+  "key": {
+    "J": {
+      "item": "minecraft:string"
+    },
+    "P": {
+      "item": "am:cire"
+    },
+    "T": {
+      "item": "am:spatule",
+      "data": 32767
+    },
+    "M": {
+      "item": "am:moule"
+    }
+  },
+  "result": {
+    "item": "am:candle",
+    "count": 8
+  }
+}

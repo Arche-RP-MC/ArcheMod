@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " O ",
+    "EEE"
+  ],
+  "key": {
+    "O": [
+      {
+        "item": "am:seau_de_hydromel"
+      },
+      {
+        "item": "am:seau_de_hydromel_en_bois"
+      }
+    ],
+    "E": {
+      "item": "am:bouteille_vide"
+    }
+  },
+  "result": {
+    "item": "am:bouteille_de_hydromel",
+    "count": 3
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " E ",
+    "AAA",
+    "CBD"
+  ],
+  "key": {
+    "A": [
+      {
+        "item": "am:artichaut_cru"
+      },
+      {
+        "item": "am:chou_fleur_cru"
+      },
+      {
+        "item": "am:chou_vert_cru"
+      },
+      {
+        "item": "am:courgette_cru"
+      },
+      {
+        "item": "am:poivron_vert_m_cru"
+      }
+    ],
+    "B": {
+      "item": "am:lambeau_de_viande_crue"
+    },
+    "C": {
+      "item": "am:oeuf_a_plat_cru"
+    },
+    "D": {
+      "item": "am:hachoir",
+      "data": 32767
+    },
+    "E": {
+      "item": "am:bouquet_garni"
+    }
+  },
+  "result": {
+    "item": "am:poivron_vert_farci_cru",
+    "count": 3
+  }
+}

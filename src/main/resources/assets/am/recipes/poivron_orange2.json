@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " P ",
+    "   "
+  ],
+  "key": {
+    "P": {
+      "item": "am:poivron_orange"
+    }
+  },
+  "result": {
+    "item": "am:poivron_orange2",
+    "count": 1
+  }
+}

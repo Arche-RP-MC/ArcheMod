@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " D ",
+    "EEE",
+    "ABC"
+  ],
+  "key": {
+    "A": {
+      "item": "am:chou_vert_cru"
+    },
+    "B": {
+      "item": "am:lambeau_de_viande_crue"
+    },
+    "C": {
+      "item": "am:bouquet_garni"
+    },
+    "D": {
+      "item": "am:hachoir",
+      "data": 32767
+    },
+    "E": {
+      "item": "am:petit_pain"
+    }
+  },
+  "result": {
+    "item": "am:pain_au_choux_cru",
+    "count": 3
+  }
+}

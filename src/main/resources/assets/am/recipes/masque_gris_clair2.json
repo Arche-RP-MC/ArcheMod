@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "CL ",
+    "   "
+  ],
+  "key": {
+    "C": {
+      "item": "am:masque_blanc"
+    },
+    "L": {
+      "item": "minecraft:dye",
+      "data": 7
+    }
+  },
+  "result": {
+    "item": "am:masque_gris_clair",
+    "count": 1
+  }
+}

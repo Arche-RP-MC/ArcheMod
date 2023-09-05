@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " M ",
+    " M "
+  ],
+  "key": {
+    "M": {
+      "item": "am:miel"
+    }
+  },
+  "result": {
+    "item": "minecraft:sugar",
+    "count": 1
+  }
+}

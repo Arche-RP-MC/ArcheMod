@@ -1,31 +1,30 @@
 {
   "type": "minecraft:crafting_shaped",
-
-  "pattern":
-  [
+  "pattern": [
     "L V",
     " P ",
     "   "
   ],
-
-  "key":
-  {
-    "P":
-    {
+  "key": {
+    "P": {
       "item": "am:pion_blanc"
     },
-    "L":
-    {
-      "item": "am:lime_en_fer"
-    },
-    "V":
-    {
-      "item": "am:vernis"
+    "L": [
+      {
+        "item": "am:lime_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:lime_en_acier",
+        "data": 32767
+      }
+    ],
+    "V": {
+      "item": "am:vernis",
+      "data": 32767
     }
   },
-
-  "result":
-  {
+  "result": {
     "item": "am:tour_blanche",
     "count": 1
   }

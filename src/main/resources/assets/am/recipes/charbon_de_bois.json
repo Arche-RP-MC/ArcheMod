@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " J ",
+    "JJJ",
+    " M "
+  ],
+  "key": {
+    "J": [
+      {
+        "item": "minecraft:log",
+        "data": 0
+      },
+      {
+        "item": "minecraft:log",
+        "data": 1
+      },
+      {
+        "item": "minecraft:log",
+        "data": 2
+      },
+      {
+        "item": "minecraft:log",
+        "data": 3
+      },
+      {
+        "item": "minecraft:log2",
+        "data": 0
+      },
+      {
+        "item": "minecraft:log2",
+        "data": 1
+      }
+    ],
+    "M": {
+      "item": "minecraft:torch"
+    }
+  },
+  "result": {
+    "item": "minecraft:coal",
+    "data": 1,
+    "count": 12
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GHG",
+    "GCG",
+    "GAG"
+  ],
+  "key": {
+    "H": {
+      "item": "am:etoffe"
+    },
+    "G": {
+      "item": "am:etoffe_grise"
+    },
+    "C": {
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
+    },
+    "A": {
+      "item": "am:etoffe_noire"
+    }
+  },
+  "result": {
+    "item": "zawa:rhino_plush",
+    "count": 1
+  }
+}

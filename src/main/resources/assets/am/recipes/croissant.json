@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "SBL",
+    "FAF"
+  ],
+  "key": {
+    "A": {
+      "item": "am:oeuf_a_plat_cru"
+    },
+    "F": {
+      "item": "am:pate_a_pain"
+    },
+    "S": {
+      "item": "minecraft:sugar"
+    },
+    "B": {
+      "item": "am:beurre",
+      "data": 32767
+    },
+    "L": {
+      "item": "am:rouleau_a_patisserie",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:croissant_cru",
+    "count": 6
+  }
+}

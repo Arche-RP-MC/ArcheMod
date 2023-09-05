@@ -1,7 +1,7 @@
 {
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "am:items/fish_trout_cooked"
-    }
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "am:items/fish_trout_cooked"
+  }
 }
 

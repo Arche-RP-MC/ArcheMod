@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " P ",
+    "   "
+  ],
+  "key": {
+    "P": {
+      "item": "am:bleuets"
+    }
+  },
+  "result": {
+    "item": "am:bleuets2",
+    "count": 1
+  }
+}

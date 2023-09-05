@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " P ",
+    "   "
+  ],
+  "key": {
+    "P": {
+      "item": "am:hortensia2"
+    }
+  },
+  "result": {
+    "item": "am:hortensia",
+    "count": 1
+  }
+}

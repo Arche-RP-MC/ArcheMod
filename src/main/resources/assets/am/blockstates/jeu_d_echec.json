@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "normal": {
+      "model": "am:jeu_d_echec"
+    }
+  }
+}

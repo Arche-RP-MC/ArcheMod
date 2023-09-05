@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " S ",
+    " P ",
+    " L "
+  ],
+  "key": {
+    "L": {
+      "item": "am:seau_alcool_pur_en_bois"
+    },
+    "S": [
+      {
+        "item": "am:mout_fruit_blanc"
+      },
+      {
+        "item": "am:mout_fruit_rouge"
+      },
+      {
+        "item": "am:mout_fruit_orange"
+      },
+      {
+        "item": "am:mout_fruit_vert"
+      },
+      {
+        "item": "am:mout_fruit_jaune"
+      }
+    ],
+    "P": {
+      "item": "minecraft:fish",
+      "data": 3
+    }
+  },
+  "result": {
+    "item": "am:seau_viperine_en_bois",
+    "count": 1
+  }
+}

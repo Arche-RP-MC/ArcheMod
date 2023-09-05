@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NNN",
+    "MNP",
+    "   "
+  ],
+  "key": {
+    "M": [
+      {
+        "item": "marteau_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_en_acier",
+        "data": 32767
+      }
+    ],
+    "N": {
+      "item": "am:barre_fer"
+    },
+    "P": {
+      "item": "am:clous"
+    }
+  },
+  "result": {
+    "item": "am:tete_fourche_fer",
+    "count": 1
+  }
+}

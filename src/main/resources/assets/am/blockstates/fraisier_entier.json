@@ -1,0 +1,25 @@
+{
+  "variants": {
+    "bites=0": {
+      "model": "am:fraisier_entier"
+    },
+    "bites=1": {
+      "model": "am:fraisier1"
+    },
+    "bites=2": {
+      "model": "am:fraisier2"
+    },
+    "bites=3": {
+      "model": "am:fraisier3"
+    },
+    "bites=4": {
+      "model": "am:fraisier4"
+    },
+    "bites=5": {
+      "model": "am:fraisier5"
+    },
+    "bites=6": {
+      "model": "am:fraisier6"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBG",
+    "BBF",
+    " L "
+  ],
+  "key": {
+    "B": {
+      "item": "am:planche"
+    },
+    "L": {
+      "item": "am:vernis",
+      "data": 32767
+    },
+    "G": {
+      "item": "am:maillet",
+      "data": 32767
+    },
+    "F": {
+      "item": "am:clous"
+    }
+  },
+  "result": {
+    "item": "am:cadre_en_bois",
+    "count": 1
+  }
+}

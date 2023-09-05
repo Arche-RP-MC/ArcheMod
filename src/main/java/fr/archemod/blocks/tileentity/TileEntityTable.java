@@ -15,6 +15,7 @@ import net.minecraft.util.NonNullList;
 public class TileEntityTable extends TileEntityLockableLoot {
 
     private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(9, ItemStack.EMPTY);
+
     @Override
     public int getSizeInventory() {
         return 9;
@@ -91,7 +92,7 @@ public class TileEntityTable extends TileEntityLockableLoot {
 
     @Override
     public Container createContainer(InventoryPlayer playerInventory, EntityPlayer playerIn) {
-        return new ContainerTable(playerInventory,this);
+        return new ContainerTable(playerInventory, this);
     }
 
     @Override
