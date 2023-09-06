@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAC",
+    "AAB",
+    " D "
+  ],
+  "key": {
+    "B": {
+      "item": "am:brique_de_marbre"
+    },
+    "D": [
+      {
+        "item": "am:mortier_pilon_en_pierre",
+        "data": 32767
+      },
+      {
+        "item": "am:mortier_pilon_en_bois",
+        "data": 32767
+      }
+    ],
+    "A": {
+      "item": "minecraft:clay_ball"
+    },
+    "C": {
+      "item": "am:mortier"
+    }
+  },
+  "result": {
+    "item": "am:porcelaine",
+    "count": 6
+  }
+}

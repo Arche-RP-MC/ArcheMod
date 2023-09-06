@@ -163,7 +163,8 @@ public class ModItems {
     public static final Item COUTEAU_ACIER = new OutilsEnAcier("couteau_acier");
     public static final Item COUTEAU_EN_FER = new OutilsEnFer("couteau_en_fer");
     public static final Item EPUISETTE = new TestEpuisette3("epuisette");
-    public static final Item FILET = new OutilsEnFer("filet");
+    public static final Item FILET_INSECTE = new TestEpuisette3("filet_insecte");
+    public static final Item FILET = new ItemBase("filet");
     public static final Item FOURCHE_EN_FER = new OutilsEnFer("fourche_en_fer");
     public static final Item HACHOIR = new OutilsEnFer("hachoir");
     public static final Item LIME_EN_ACIER = new OutilsEnAcier("lime_en_acier");
@@ -1802,6 +1803,7 @@ public class ModItems {
     public static final Item PANTALON_APICULTEUR = new ItemBase("pantalon_apiculteur");
     public static final Item PELUCHE_POULPE = new ItemBase("peluche_poulpe");
     public static final Item PELUCHE_SOURIS = new ItemBase("peluche_souris");
+    public static final Item PELUCHE_OISEAU_FEU = new ItemBase("peluche_oiseau_feu");
     public static final Item POUPEE = new ItemBase("poupee");
     public static final Item ROBE = new ItemBase("robe");
     public static final Item SAC_DE_COUCHAGE = new ItemBase("sac_de_couchage");
@@ -2300,6 +2302,7 @@ public class ModItems {
     public static final Item VERNIS = new ItemIngrediant("vernis", 7);
 
     // Porcelaine
+    public static final Item PORCELAINE = new ItemBase("porcelaine");
     public static final Item TASSE_EN_PORCELAINE = new ItemBase("tasse_en_porcelaine");
     public static final Item TASSE_EN_PORCELAINE_CRU = new ItemBase("tasse_en_porcelaine_cru");
     public static final Item TASSE_EN_PORCELAINE_BLEU = new ItemBase("tasse_en_porcelaine_bleu");
@@ -2307,7 +2310,9 @@ public class ModItems {
     public static final Item TASSE_EN_PORCELAINE_VERTE = new ItemBase("tasse_en_porcelaine_verte");
     public static final Item TASSE_EN_PORCELAINE_VIOLETTE = new ItemBase("tasse_en_porcelaine_violette");
     public static final Item ASSIETTE_EN_PORCELAINE = new ItemBase("assiette_en_porcelaine");
+    public static final Item ASSIETTE_EN_PORCELAINE_CRUE = new ItemBase("assiette_en_porcelaine_crue");
     public static final Item SALADIER_EN_PORCELAINE = new ItemBase("saladier_en_porcelaine");
+    public static final Item SALADIER_EN_PORCELAINE_CRU = new ItemBase("saladier_en_porcelaine_cru");
 
     // verrerie
 

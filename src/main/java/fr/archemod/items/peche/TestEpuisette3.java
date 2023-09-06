@@ -31,6 +31,9 @@ public class TestEpuisette3 extends ItemBase {
             Block block = state.getBlock();
             if (block == Blocks.WATER) {
                 if (!worldIn.isRemote && handIn == EnumHand.MAIN_HAND) {
+                    if (playerIn.getHeldItem(handIn).getItemDamage() >= playerIn.getHeldItem(handIn).getMaxDamage()) {
+                        playerIn.setHeldItem(handIn, ItemStack.EMPTY);
+                    }
                     ItemStack itemStack = playerIn.getHeldItem(handIn);
                     itemStack.setItemDamage(itemStack.getItemDamage() + 1);
                     int rnd = (int) (Math.random() * 6);

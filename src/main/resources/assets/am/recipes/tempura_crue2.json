@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " B ",
+    "BAB",
+    " BC"
+  ],
+  "key": {
+    "B": {
+      "item": "am:beignet_cru"
+    },
+    "A": [
+      {
+        "item": "am:homard"
+      },
+      {
+        "item": "am:anguille"
+      },
+      {
+        "item": "am:calamar_mort"
+      }
+    ],
+    "C": {
+      "item": "am:hachoir",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:tempura_cru",
+    "count": 4
+  }
+}

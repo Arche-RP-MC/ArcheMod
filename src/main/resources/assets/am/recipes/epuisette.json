@@ -7,7 +7,7 @@
   ],
   "key": {
     "H": {
-      "item": "am:long_baton"
+      "item": "am:manche"
     },
     "T": {
       "item": "am:filet"
@@ -19,6 +19,6 @@
   },
   "result": {
     "item": "am:epuisette",
-    "count": 8
+    "count": 1
   }
 }

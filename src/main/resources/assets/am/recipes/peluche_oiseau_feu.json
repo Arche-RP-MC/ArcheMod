@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "EBE",
+    "AEA",
+    "CCC"
+  ],
+  "key": {
+    "A": {
+      "item": "am:etoffe_jaune"
+    },
+    "B": {
+      "item": "am:ciseaux_de_couture",
+      "data": 32767
+    },
+    "C": {
+      "item": "am:etoffe_rouge"
+    },
+    "E": {
+      "item": "minecraft:feather"
+    }
+  },
+  "result": {
+    "item": "am:peluche_oiseau_feu",
+    "count": 1
+  }
+}

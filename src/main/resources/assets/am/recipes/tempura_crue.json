@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " AB",
+    "  C"
+  ],
+  "key": {
+    "B": {
+      "item": "am:beignet_cru"
+    },
+    "A": [
+      {
+        "item": "am:crevette_grise"
+      },
+      {
+        "item": "am:crevette_rose"
+      },
+      {
+        "item": "am:ecrevisse"
+      },
+      {
+        "item": "am:ecrevisse_orange"
+      },
+      {
+        "item": "am:morceau_de_poulpe_cru"
+      }
+    ],
+    "C": {
+      "item": "am:hachoir",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:tempura_cru",
+    "count": 1
+  }
+}

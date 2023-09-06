@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " A ",
+    " A ",
+    "CBD"
+  ],
+  "key": {
+    "A": {
+      "item": "am:barre_fer"
+    },
+    "B": {
+      "item": "minecraft:iron_block"
+    },
+    "D": [
+      {
+        "item": "am:marteau_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:marteau_en_acier",
+        "data": 32767
+      }
+    ],
+    "C": {
+      "item": "am:pinces",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:ancre_marine",
+    "count": 1
+  }
+}

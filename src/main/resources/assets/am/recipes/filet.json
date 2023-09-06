@@ -10,9 +10,14 @@
       "item": "am:ciseaux_de_couture",
       "data": 32767
     },
-    "T": {
-      "item": "am:bobine_de_chanvre"
-    }
+    "T": [
+      {
+        "item": "am:bobine_de_chanvre"
+      },
+      {
+        "item": "am:bobine_de_lin"
+      }
+    ]
   },
   "result": {
     "item": "am:filet",

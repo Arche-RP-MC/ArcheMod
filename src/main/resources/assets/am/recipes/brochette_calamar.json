@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " D ",
+    "ABA",
+    "ACA"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:stick"
+    },
+    "B": {
+      "item": "am:calamar_mort"
+    },
+    "C": {
+      "item": "am:bouquet_garni"
+    },
+    "D": {
+      "item": "am:hachoir",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:brochette_calamar",
+    "count": 4
+  }
+}

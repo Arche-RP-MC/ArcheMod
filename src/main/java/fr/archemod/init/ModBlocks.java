@@ -608,7 +608,7 @@ public class ModBlocks {
     //FLOWER POT \!/ Venir ajouter les plantes ici pour pouvoir les planter dans ces nouveaux pots ! (ctrl+f BASILIC dans le fichier BlockFlowerPot ;) ) + BlockStates et model à ajuster
     // public static final Block FLOWER_POT = new BlockFlowerPot("flower_pot_am");
 
-    //BARIL \!/ Ajouter les interactions avec d'autres objets et liquides dans la classe directement en suivant l'exemple de l'eau
+    //BARIL
     public static final Block FUT_VIDE = new BlockFut("fut_vide", Material.WOOD, 1.5F, 1.5f, SoundType.WOOD);
 
     //CONTENEUR \!/ Il faut recréer Block, TileEntity, Container, Inventory, GUI, Registry dans util.handlers.RegistryHandler et gérer le GUIid du Block (onBlockActivated) dans le switch case du GUIHandler

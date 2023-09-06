@@ -1,0 +1,59 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "EBD",
+    "ACA",
+    " B "
+  ],
+  "key": {
+    "A": [
+      {
+        "item": "am:planche"
+      },
+      {
+        "item": "am:planche_acacia"
+      },
+      {
+        "item": "am:planche_acajou"
+      },
+      {
+        "item": "am:planche_bouleau"
+      },
+      {
+        "item": "am:planche_chene"
+      },
+      {
+        "item": "am:planche_chene_noir"
+      },
+      {
+        "item": "am:planche_sapin"
+      }
+    ],
+    "B": [
+      {
+        "item": "am:barre_fer"
+      },
+      {
+        "item": "am:barre_bronze"
+      },
+      {
+        "item": "am:barre_acier"
+      }
+    ],
+    "C": {
+      "item": "minecraft:planks",
+      "data": 32767
+    },
+    "D": {
+      "item": "am:clous"
+    },
+    "E": {
+      "item": "am:ciseaux_a_bois",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:fut_vide",
+    "count": 1
+  }
+}

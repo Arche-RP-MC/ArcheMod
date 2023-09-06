@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ABC",
+    " D ",
+    "   "
+  ],
+  "key": {
+    "D": [
+      {
+        "item": "am:plaque_de_fer"
+      },
+      {
+        "item": "am:plaque_d_acier"
+      }
+    ],
+    "C": [
+      {
+        "item": "am:trousse_d_ingenieur_en_fer",
+        "data": 32767
+      },
+      {
+        "item": "am:trousse_d_ingenieur_en_acier",
+        "data": 32767
+      }
+    ],
+    "B": [
+      {
+        "item": "am:barre_fer"
+      },
+      {
+        "item": "am:barre_acier"
+      }
+    ],
+    "A": {
+      "item": "am:rouage"
+    }
+  },
+  "result": {
+    "item": "am:piege_a_loup",
+    "count": 1
+  }
+}

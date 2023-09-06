@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     " F ",
-    " B ",
+    "ABA",
     "AAA"
   ],
   "key": {
@@ -18,7 +18,7 @@
     }
   },
   "result": {
-    "item": "am:assiette_en_porcelaine_crue",
+    "item": "am:saladier_en_porcelaine_cru",
     "count": 1
   }
 }

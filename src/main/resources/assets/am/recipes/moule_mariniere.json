@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " A ",
+    "ABA",
+    " A "
+  ],
+  "key": {
+    "A": {
+      "item": "am:moule_crustace"
+    },
+    "B": [
+      {
+        "item": "am:bouquet_garni"
+      },
+      {
+        "item": "am:bouteille_de_vin_rouge",
+        "data": 32767
+      },
+      {
+        "item": "am:bouteille_de_vin_blanc",
+        "data": 32767
+      }
+    ]
+  },
+  "result": {
+    "item": "am:moule_mariniere",
+    "count": 4
+  }
+}

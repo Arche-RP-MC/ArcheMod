@@ -116,6 +116,8 @@ public class ModRecipes {
         GameRegistry.addSmelting(ModItems.SALSIFI_CRU, new ItemStack(ModItems.SALSIFI, 1), 0);
         GameRegistry.addSmelting(ModItems.SAUCISSE_CRU, new ItemStack(ModItems.SAUCISSE, 1), 0);
         GameRegistry.addSmelting(ModItems.TASSE_EN_PORCELAINE_CRU, new ItemStack(ModItems.TASSE_EN_PORCELAINE, 1), 0);
+        GameRegistry.addSmelting(ModItems.ASSIETTE_EN_PORCELAINE_CRUE, new ItemStack(ModItems.ASSIETTE_EN_PORCELAINE, 1), 0);
+        GameRegistry.addSmelting(ModItems.SALADIER_EN_PORCELAINE_CRU, new ItemStack(ModItems.SALADIER_EN_PORCELAINE, 1), 0);
         GameRegistry.addSmelting(ModItems.TEMPURA_CRU, new ItemStack(ModItems.TEMPURA_CUIT, 1), 0);
         GameRegistry.addSmelting(ModItems.THEIERE_CRUE, new ItemStack(ModItems.THEIERE, 1), 0);
         GameRegistry.addSmelting(ModItems.TOMATE_CRU, new ItemStack(ModItems.TOMATE, 1), 0);

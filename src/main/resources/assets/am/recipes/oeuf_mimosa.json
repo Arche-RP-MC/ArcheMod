@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BCD",
+    "AAA",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "am:oeuf_dur"
+    },
+    "B": [
+      {
+        "item": "am:bouteille_huile_olive",
+        "data": 32767
+      },
+      {
+        "item": "am:bouteille_huile_tournesol",
+        "data": 32767
+      },
+      {
+        "item": "am:bouteille_huile_noix",
+        "data": 32767
+      }
+    ],
+    "C": {
+      "item": "am:bouquet_garni"
+    },
+    "D": {
+      "item": "am:hachoir",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "am:oeuf_mimosa",
+    "count": 6
+  }
+}
