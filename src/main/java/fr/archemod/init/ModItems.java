@@ -2450,4 +2450,28 @@ public class ModItems {
     public static final Item CADENAS_ACIER = new Cadenas("cadenas_acier");
     public static final Item CLEF = new Clef("clef");
     public static final Item PORTE_CLEF = new PorteClef("porte_clef");
+
+    //Insectes - ITEMS
+    public static final Item INSECTE_ABEILLE = new ItemBase("insecte_abeille");
+    public static final Item INSECTE_ARAIGNEE = new ItemBase("insecte_araignee");
+    public static final Item INSECTE_ASTICOT = new ItemBase("insecte_asticot");
+    public static final Item INSECTE_CHENILLE = new ItemBase("insecte_chenille");
+    public static final Item INSECTE_COCCINELLE = new ItemBase("insecte_coccinelle");
+    public static final Item INSECTE_COCHENILLE = new ItemBase("insecte_cochenille");
+    public static final Item INSECTE_ESCARGOT = new ItemBase("insecte_escargot");
+    public static final Item INSECTE_FOURMI = new ItemBase("insecte_fourmi");
+    public static final Item INSECTE_GALLE = new ItemBase("insecte_galle");
+    public static final Item INSECTE_GUEPE = new ItemBase("insecte_guepe");
+    public static final Item INSECTE_LARVE = new ItemBase("insecte_larve");
+    public static final Item INSECTE_MITE = new ItemBase("insecte_mite");
+    public static final Item INSECTE_MORPION = new ItemBase("insecte_morpion");
+    public static final Item INSECTE_MOUCHE = new ItemBase("insecte_mouche");
+    public static final Item INSECTE_PAPILLON_COMMUN = new ItemBase("insecte_papillon_commun");
+    public static final Item INSECTE_PAPILLON_RARE = new ItemBase("insecte_papillon_rare");
+    public static final Item INSECTE_PUCERON = new ItemBase("insecte_puceron");
+    public static final Item INSECTE_SCARABEE = new ItemBase("insecte_scarabee");
+    public static final Item INSECTE_SCORPION = new ItemBase("insecte_scorpion");
+    public static final Item INSECTE_TIQUE = new ItemBase("insecte_tique");
+    public static final Item INSECTE_VER_DE_FARINE = new ItemBase("insecte_ver_de_farine");
+    public static final Item INSECTE_VER_DE_TERRE = new ItemBase("insecte_ver_de_terre");
 }
