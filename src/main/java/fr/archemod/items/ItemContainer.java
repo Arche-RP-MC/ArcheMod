@@ -19,7 +19,7 @@ public class ItemContainer extends ItemBase {
 
     @Override
     public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) {
-        playerIn.openGui(ArcheMod.INSTANCE, modGuild, worldIn, (int) playerIn.posX, (int) playerIn.posY, (int) playerIn.posZ);
+        if(handIn == EnumHand.MAIN_HAND) playerIn.openGui(ArcheMod.INSTANCE, modGuild, worldIn, (int) playerIn.posX, (int) playerIn.posY, (int) playerIn.posZ);
         return new ActionResult<>(EnumActionResult.SUCCESS, playerIn.getHeldItem(handIn));
     }
 }

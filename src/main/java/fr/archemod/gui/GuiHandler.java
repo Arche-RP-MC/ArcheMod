@@ -60,8 +60,9 @@ public class GuiHandler implements IGuiHandler {
                 return new ItemContainerGUI(player.inventory, new ContainerItemInventory(player.getHeldItem(EnumHand.MAIN_HAND), 12, "Panier en osier", 10, 6), GUI6);
             case 2: //Placard HRP
             case 3: //Piege à loup
-            case 4: //Porte-Manteau
                 return new BlockContainerGUI(player.inventory, (TileEntityBlockInventory) world.getTileEntity(new BlockPos(x, y, z)), GUI3);
+            case 4: //Porte-Manteau
+                return new BlockContainerGUI(player.inventory, (TileEntityBlockInventory) world.getTileEntity(new BlockPos(x, y, z)), GUI6);
             case 5: //Ecrin à bijoux
                 return new BlockContainerGUI(player.inventory, (TileEntityBlockInventory) world.getTileEntity(new BlockPos(x, y, z)), GUI9);
             case 6:

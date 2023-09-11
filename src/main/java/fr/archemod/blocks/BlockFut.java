@@ -32,7 +32,6 @@ public class BlockFut extends BlockBaseOriented implements ITileEntityProvider {
     @Override
     public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
         TileEntityFut te = (TileEntityFut) worldIn.getTileEntity(pos);
-        System.out.println(te.getContenu());
         if(playerIn.getHeldItem(EnumHand.MAIN_HAND).isEmpty()) {
             playerIn.openGui(ArcheMod.INSTANCE, 20, worldIn, pos.getX(), pos.getY(), pos.getZ());
             return true;

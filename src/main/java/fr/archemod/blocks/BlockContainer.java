@@ -25,7 +25,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 import javax.annotation.Nullable;
 
-public class BlockContainer extends BlockBase implements ITileEntityProvider {
+public abstract class BlockContainer extends BlockBase implements ITileEntityProvider {
     private AxisAlignedBB BOUNDING_BOX;
     private String id;
     private int size;
@@ -46,15 +46,9 @@ public class BlockContainer extends BlockBase implements ITileEntityProvider {
         this.setLightOpacity(0);
     }
 
-
-    @Override
-    public TileEntity createNewTileEntity(World worldIn, int meta) {
-        if(visibleInventory) return new TileEntityBlockInventoryVisible(id, size, slotInRow, invStackLimit);
-        return new TileEntityBlockInventory(id, size, slotInRow, invStackLimit);
-    }
-
     @Override
     public boolean eventReceived(IBlockState state, World worldIn, BlockPos pos, int eventID, int eventParam) {
+        System.out.println("Ici");
         super.eventReceived(state, worldIn, pos, eventID, eventParam);
         TileEntity tileentity = worldIn.getTileEntity(pos);
         return tileentity == null ? false : tileentity.receiveClientEvent(eventID, eventParam);

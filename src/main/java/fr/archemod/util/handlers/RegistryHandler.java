@@ -60,9 +60,13 @@ public class RegistryHandler {
         event.getRegistry().registerAll(ModBlocks.BLOCKS.toArray(new Block[0]));
         NetworkRegistry.INSTANCE.registerGuiHandler(ArcheMod.INSTANCE, new GuiHandler());
 
-        GameRegistry.registerTileEntity(TileEntityBlockInventoryVisible.class, new ResourceLocation(Reference.MOD_ID, "ContainerVisible"));
-        GameRegistry.registerTileEntity(TileEntityBlockInventory.class, new ResourceLocation(Reference.MOD_ID, "Container"));
+        GameRegistry.registerTileEntity(TileEntityBlockPorteManteau.class, new ResourceLocation(Reference.MOD_ID, "porte_manteau"));
+        GameRegistry.registerTileEntity(TileEntityBlockPlacardHRP.class, new ResourceLocation(Reference.MOD_ID, "placard_hrp"));
+        GameRegistry.registerTileEntity(TileEntityBlockPiegeLoup.class, new ResourceLocation(Reference.MOD_ID, "piege_loup"));
+        GameRegistry.registerTileEntity(TileEntityBlockEcrinBijou.class, new ResourceLocation(Reference.MOD_ID, "ecrin_bijou"));
+
         GameRegistry.registerTileEntity(TileEntityFut.class, new ResourceLocation(Reference.MOD_ID, "Fut"));
+
         GameRegistry.registerTileEntity(TileEntityTable.class, new ResourceLocation(Reference.MOD_ID, "TileEntityTable"));
         GameRegistry.registerTileEntity(TileEntityLightBlock.class, new ResourceLocation(Reference.MOD_ID, "TileEntityLightBlock"));
         //GameRegistry.registerTileEntity(TileEntityLightBlock2.class, new ResourceLocation(Reference.MOD_ID,"TileEntityLightBlock2"));
@@ -71,8 +75,6 @@ public class RegistryHandler {
 
         ModBlocks.init();
         ModBlocks.register();
-
-
     }
 
 
