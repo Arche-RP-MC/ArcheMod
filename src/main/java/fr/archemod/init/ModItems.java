@@ -41,7 +41,7 @@ public class ModItems {
     public static final Item FOURRURE_ROUSSE = new ItemBase("fourrure_rousse");
     public static final Item GRAISSE_ANIMALE = new ItemBase("graisse_animale");
     public static final Item GRIFFE = new ItemBase("griffe");
-    public static final Item INSECTE_EN_BOCAL = new ItemBase("insecte_en_bocal");
+    public static final Item INSECTE_EN_BOCAL = new ItemContainer("insecte_en_bocal",15);
     public static final Item LAINE_BRUTE = new ItemBase("laine_brute");
     public static final Item LARVE = new ItemBase("larve");
     public static final Item PATTE = new ItemBase("patte");

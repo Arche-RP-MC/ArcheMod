@@ -1480,7 +1480,7 @@ item.hydrangee2.name=Hydrangée
 item.ice.name=Ice
 item.ice_packed.name=Ice packed
 item.img.name=Img
-item.insecte_en_bocal.name=Insecte en bocal
+item.insecte_en_bocal.name=Bocal à insecte
 item.iris.name=Iris
 item.iris2.name=Iris
 item.iron_bar.name=Iron bar
@@ -3378,14 +3378,25 @@ item.brochette_calamar.name=Brochette de calamar
 item.brochette_calamar_cuite.name=Brochette de calamar cuite
 item.anguille_cuite.name=Anguille cuite
 
-
-
-
-
-
-
-
-
-
-
-
+item.insecte_abeille.name=Abeille
+item.insecte_araignee.name=Araignée
+item.insecte_asticot.name=Asticot
+item.insecte_chenille.name=Chenille
+item.insecte_coccinelle.name=Coccinelle
+item.insecte_cochenille.name=Cochenille
+item.insecte_escargot.name=Escargot
+item.insecte_fourmi.name=Fourmi
+item.insecte_galle.name=Galle
+item.insecte_guepe.name=Guêpe
+item.insecte_larve.name=Larve
+item.insecte_mite.name=Mite
+item.insecte_morpion.name=Morpion
+item.insecte_mouche.name=Mouche
+item.insecte_papillon_commun.name=Papillon commun
+item.insecte_papillon_rare.name=Papillon rare
+item.insecte_puceron.name=Puceron
+item.insecte_scarabee.name=Scarabée
+item.insecte_scorpion.name=Scorpion
+item.insecte_tique.name=Tique
+item.insecte_ver_de_farine.name=Ver de farine
+item.insecte_ver_de_terre.name=Ver de terre
