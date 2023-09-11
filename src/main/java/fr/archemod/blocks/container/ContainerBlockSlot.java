@@ -6,9 +6,10 @@ import net.minecraft.inventory.Container;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
+import net.minecraft.tileentity.TileEntity;
 
 public class ContainerBlockSlot extends Container {
-    private final IInventory inventory;
+    private final TileEntityBlockInventory inventory;
     private final int numRows;
     private int offset;
 

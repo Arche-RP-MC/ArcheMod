@@ -35,7 +35,6 @@ public class TileEntityFut extends TileEntity {
         super.readFromNBT(compound);
         contenu = compound.getString("contenu");
         charge = compound.getInteger("charge");
-        System.out.println(contenu);
     }
 
     @Override
