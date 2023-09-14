@@ -1,44 +1,47 @@
 package fr.archemod.blocks.container;
 
+import fr.archemod.blocks.slot.SlotOutput;
+import fr.archemod.blocks.slot.SlotSingleItem;
 import fr.archemod.blocks.tileentity.TileEntityCasierPoisson;
+import fr.archemod.init.ModItems;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.inventory.ClickType;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.Slot;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.fml.common.Mod;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ContainerCasierPoisson extends Container {
 
-    private final IInventory inventoryFishCase;
-    private final int numRows;
+    private final IInventory inv;
 
     public ContainerCasierPoisson(IInventory playerInventory, TileEntityCasierPoisson fishCase) {
-        this.inventoryFishCase = fishCase;
-        this.numRows = inventoryFishCase.getSizeInventory() / 9;
-        int j;
-        int i = (this.numRows - 4) * 18;
+        this.inv = fishCase;
 
-        for (j = 0; j < this.numRows; ++j) {
-            for (int k = 0; k < 9; ++k) {
-                if(k==1 || k==2) continue;
-                this.addSlotToContainer(new Slot(inventoryFishCase, k + j * 9, 8 + k * 18, 18 + j * 18));
-            }
+        this.addSlotToContainer(new SlotSingleItem(inv, 0, 8, 7, getList()));
+        for (int k = 1; k < 7; ++k) {
+            this.addSlotToContainer(new SlotOutput(inv, k, 8 + (k+2) * 18, 7));
         }
 
         for (int l = 0; l < 3; ++l) {
             for (int j1 = 0; j1 < 9; ++j1) {
-                this.addSlotToContainer(new Slot(playerInventory, j1 + l * 9 + 9, 8 + j1 * 18, 103 + l * 18 + i));
+                this.addSlotToContainer(new Slot(playerInventory, j1 + l * 9 + 9, 8 + j1 * 18, 39 + l * 18));
             }
         }
 
         for (int i1 = 0; i1 < 9; ++i1) {
-            this.addSlotToContainer(new Slot(playerInventory, i1, 8 + i1 * 18, 161 + i));
+            this.addSlotToContainer(new Slot(playerInventory, i1, 8 + i1 * 18, 97));
         }
     }
 
     @Override
     public boolean canInteractWith(EntityPlayer playerIn) {
-        return this.inventoryFishCase.isUsableByPlayer(playerIn);
+        return this.inv.isUsableByPlayer(playerIn);
     }
 
     @Override
@@ -164,6 +167,15 @@ public class ContainerCasierPoisson extends Container {
 
     public void onContainerClosed(EntityPlayer playerIn) {
         super.onContainerClosed(playerIn);
-        this.inventoryFishCase.closeInventory(playerIn);
+        this.inv.closeInventory(playerIn);
+    }
+
+    public List<Item> getList() {
+        ArrayList list = new ArrayList<Item>();
+        list.add(ModItems.INSECTE_LARVE);
+        list.add(ModItems.INSECTE_VER_DE_TERRE);
+        list.add(ModItems.INSECTE_VER_DE_FARINE);
+        list.add(ModItems.INSECTE_ASTICOT);
+        return list;
     }
 }

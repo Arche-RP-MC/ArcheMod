@@ -22,7 +22,7 @@ public class CasierPoissonGUI extends GuiContainer {
         this.inv = inv;
         this.allowUserInput = false;
         // Calculate the number of rows
-        this.rows = inv.getSizeInventory() / 9;
+        this.rows = 1;
         // Height of the GUI using the number of rows
         this.ySize = 114 + this.rows * 18;
     }
@@ -36,9 +36,6 @@ public class CasierPoissonGUI extends GuiContainer {
         int k = (this.width - this.xSize) / 2;
         int l = (this.height - this.ySize) / 2;
 
-        // Drawing the first part of the GUI (slots of the backpack)
-        this.drawTexturedModalRect(k, l+11, 0, 101, this.xSize, this.rows * 18 + 17);
-        // And after the slots from the player's inventory
-        this.drawTexturedModalRect(k, l + this.rows * 18 + 17, 0, 126, this.xSize, 96);
+        this.drawTexturedModalRect(k, l, 0, 101, this.xSize, 116);
     }
 }

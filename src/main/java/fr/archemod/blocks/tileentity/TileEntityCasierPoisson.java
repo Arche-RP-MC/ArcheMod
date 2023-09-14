@@ -2,6 +2,7 @@ package fr.archemod.blocks.tileentity;
 
 import fr.archemod.ArcheMod;
 import fr.archemod.blocks.container.ContainerCasierPoisson;
+import fr.archemod.init.ModItems;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Container;
@@ -55,7 +56,7 @@ public class TileEntityCasierPoisson extends TileEntityLockableLoot {
 
     @Override
     public int getSizeInventory() {
-        return 9;
+        return 7;
     }
 
     @Override
@@ -111,12 +112,6 @@ public class TileEntityCasierPoisson extends TileEntityLockableLoot {
         }
     }
 
-
-    @Override
-    public boolean isItemValidForSlot(int index, ItemStack stack) {
-        return true;
-    }
-
     @Override
     public ItemStack getStackInSlot(int slot) {
         return stacks.get(slot);
@@ -136,31 +131,4 @@ public class TileEntityCasierPoisson extends TileEntityLockableLoot {
         this.time = time;
         markDirty();
     }
-
-    public long getDate() {
-        return time;
-    }
-
-    public void addItem(ItemStack stack, int size) {
-
-        for (int i = 0; i < this.stacks.size(); i++) {
-            if (this.stacks.get(i).isEmpty()) {
-
-                ItemStack itemStack = this.stacks.get(i);
-
-                if (itemStack == stack) {
-                    itemStack.setCount(itemStack.getCount() + size);
-                    this.stacks.set(i, itemStack);
-                    this.getUpdateTag();
-                    break;
-                }
-
-                stack.setCount(size);
-                this.stacks.set(i, stack);
-                this.getUpdateTag();
-                break;
-            }
-        }
-    }
-
 }

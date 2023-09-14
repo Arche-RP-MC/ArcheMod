@@ -42,8 +42,8 @@ public class GuiHandler implements IGuiHandler {
                 return new ContainerItemSlot(player.inventory, new ContainerItemInventory(player.getHeldItem(EnumHand.MAIN_HAND), 3, "Enveloppe", 1, 3));
             case 15: //Bocal à insecte
                 return new ContainerItemSlot(player.inventory, new ContainerItemInventory(player.getHeldItem(EnumHand.MAIN_HAND), 3, "Bocal à insectes", 1, 3));
-            //case 21:
-            //    return new ContainerCasierPoisson(player.inventory, (TileEntityCasierPoisson) world.getTileEntity(new BlockPos(x, y, z)));
+            case 21:
+                return new ContainerCasierPoisson(player.inventory, (TileEntityCasierPoisson) world.getTileEntity(new BlockPos(x, y, z)));
         }
         return null;
     }
