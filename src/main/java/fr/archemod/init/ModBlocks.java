@@ -26,7 +26,7 @@ public class ModBlocks {
 
     //BLOCKS
 
-    public static final Block FISH_CASE = new BlockFishCase("casier_a_poisson", Material.WOOD, 0.5F, 0.5F, SoundType.WOOD);
+    public static final Block FISH_CASE = new BlockCasierPoisson("casier_a_poisson", Material.WOOD, 0.5F, 0.5F, SoundType.WOOD);
 
     public static final Block BLOC_DE_PIERRE_PRECIEUSE = new PierrePrecieuseOre("bloc_de_pierre_precieuse", Material.IRON);
     public static final Block PLACARD_HRP = new BlockContainerPlacardHRP("placard_hrp", Material.WOOD, 0.5F, 0.5F, SoundType.WOOD, "am:placardhrp", 9, 3, 50, new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.0D, 1.0D), 2, true);

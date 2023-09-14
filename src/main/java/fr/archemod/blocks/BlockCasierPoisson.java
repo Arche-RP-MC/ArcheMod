@@ -1,7 +1,7 @@
 package fr.archemod.blocks;
 
 import fr.archemod.ArcheMod;
-import fr.archemod.blocks.tileentity.TileEntityFishCase;
+import fr.archemod.blocks.tileentity.TileEntityCasierPoisson;
 import fr.archemod.init.ModBlocks;
 import fr.archemod.init.ModItems;
 import net.minecraft.block.ITileEntityProvider;
@@ -28,17 +28,17 @@ import java.util.Date;
 import java.util.Objects;
 import java.util.Random;
 
-public class BlockFishCase extends BlockBase implements ITileEntityProvider {
+public class BlockCasierPoisson extends BlockBase implements ITileEntityProvider {
 
 
-    public BlockFishCase(String name, Material material, float hardness, float resistance, SoundType soundType) {
+    public BlockCasierPoisson(String name, Material material, float hardness, float resistance, SoundType soundType) {
         super(name, material, hardness, resistance, soundType);
         setLightLevel(0F);
     }
 
     @Override
     public TileEntity createNewTileEntity(World worldIn, int meta) {
-        return new TileEntityFishCase();
+        return new TileEntityCasierPoisson();
     }
 
     @Override
@@ -52,15 +52,16 @@ public class BlockFishCase extends BlockBase implements ITileEntityProvider {
     @Override
     public void breakBlock(World world, BlockPos pos, IBlockState state) {
         TileEntity tileentity = world.getTileEntity(pos);
-        if (tileentity instanceof TileEntityFishCase)
-            InventoryHelper.dropInventoryItems(world, pos, (TileEntityFishCase) tileentity);
+        if (tileentity instanceof TileEntityCasierPoisson)
+            InventoryHelper.dropInventoryItems(world, pos, (TileEntityCasierPoisson) tileentity);
         world.removeTileEntity(pos);
         super.breakBlock(world, pos, state);
     }
 
     public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
-
-        if (worldIn.isRemote) {
+        playerIn.openGui(ArcheMod.INSTANCE, 21, worldIn, pos.getX(), pos.getY(), pos.getZ());
+        return true;
+        /*if (worldIn.isRemote) {
             return true;
         } else {
             playerIn.openGui(ArcheMod.INSTANCE, 6, worldIn, pos.getX(), pos.getY(), pos.getZ());
@@ -75,11 +76,11 @@ public class BlockFishCase extends BlockBase implements ITileEntityProvider {
             if (dateAfter == (date + 10 * 3600000L)) {
 
                 int nombreAleatoire = 1 + (int) (Math.random() * (ItemList.values().length - 1));
-                ((TileEntityFishCase) tile).setDate(new Date().getTime());
+                ((TileEntityCasierPoisson) tile).setDate(new Date().getTime());
 
                 ItemList itemList = ItemList.values()[nombreAleatoire];
 
-                ((TileEntityFishCase) tile).addItem(
+                ((TileEntityCasierPoisson) tile).addItem(
                         new ItemStack(
                                 Objects.requireNonNull(itemList.getItem())),
                         itemList.getStackSize());
@@ -87,20 +88,20 @@ public class BlockFishCase extends BlockBase implements ITileEntityProvider {
 
 
             return true;
-        }
+        }*/
     }
 
 
     @Override
     public void onBlockPlacedBy(World worldIn, BlockPos pos, IBlockState state, EntityLivingBase placer, ItemStack stack) {
         TileEntity tile = worldIn.getTileEntity(pos);
-        if (tile instanceof TileEntityFishCase) {
+        if (tile instanceof TileEntityCasierPoisson) {
 
-            ((TileEntityFishCase) tile).setDate(new Date().getTime());
+            ((TileEntityCasierPoisson) tile).setDate(new Date().getTime());
 
             //ArcheMod.LOGGER.info(tile.getTileData().getString("time"));
             if (stack.hasDisplayName()) {
-                ((TileEntityFishCase) tile).setCustomName(stack.getDisplayName());
+                ((TileEntityCasierPoisson) tile).setCustomName(stack.getDisplayName());
 
             }
         }
@@ -131,6 +132,10 @@ public class BlockFishCase extends BlockBase implements ITileEntityProvider {
         return true;
     }
 
+    @Override
+    public boolean isOpaqueCube(IBlockState state) {
+        return false;
+    }
 
     @Override
     public Item getItemDropped(IBlockState state, Random rand, int fortune) {

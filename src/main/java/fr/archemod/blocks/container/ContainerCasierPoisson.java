@@ -1,18 +1,18 @@
 package fr.archemod.blocks.container;
 
-import fr.archemod.blocks.tileentity.TileEntityFishCase;
+import fr.archemod.blocks.tileentity.TileEntityCasierPoisson;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
 
-public class ContainerFishCase extends Container {
+public class ContainerCasierPoisson extends Container {
 
     private final IInventory inventoryFishCase;
     private final int numRows;
 
-    public ContainerFishCase(IInventory playerInventory, TileEntityFishCase fishCase) {
+    public ContainerCasierPoisson(IInventory playerInventory, TileEntityCasierPoisson fishCase) {
         this.inventoryFishCase = fishCase;
         this.numRows = inventoryFishCase.getSizeInventory() / 9;
         int j;
@@ -20,6 +20,7 @@ public class ContainerFishCase extends Container {
 
         for (j = 0; j < this.numRows; ++j) {
             for (int k = 0; k < 9; ++k) {
+                if(k==1 || k==2) continue;
                 this.addSlotToContainer(new Slot(inventoryFishCase, k + j * 9, 8 + k * 18, 18 + j * 18));
             }
         }
@@ -33,8 +34,6 @@ public class ContainerFishCase extends Container {
         for (int i1 = 0; i1 < 9; ++i1) {
             this.addSlotToContainer(new Slot(playerInventory, i1, 8 + i1 * 18, 161 + i));
         }
-
-
     }
 
     @Override

@@ -1,7 +1,7 @@
 package fr.archemod.blocks.tileentity;
 
 import fr.archemod.ArcheMod;
-import fr.archemod.blocks.container.ContainerFishCase;
+import fr.archemod.blocks.container.ContainerCasierPoisson;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Container;
@@ -15,9 +15,9 @@ import net.minecraft.util.NonNullList;
 
 import java.util.Date;
 
-public class TileEntityFishCase extends TileEntityLockableLoot {
+public class TileEntityCasierPoisson extends TileEntityLockableLoot {
 
-    private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(9, ItemStack.EMPTY);
+    private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(7, ItemStack.EMPTY);
     private long time = 0;
 
     @Override
@@ -84,7 +84,7 @@ public class TileEntityFishCase extends TileEntityLockableLoot {
 
     @Override
     public Container createContainer(InventoryPlayer playerInventory, EntityPlayer playerIn) {
-        return new ContainerFishCase(playerInventory, this);
+        return new ContainerCasierPoisson(playerInventory, this);
     }
 
     @Override
