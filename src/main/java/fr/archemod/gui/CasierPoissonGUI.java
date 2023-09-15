@@ -38,4 +38,10 @@ public class CasierPoissonGUI extends GuiContainer {
 
         this.drawTexturedModalRect(k, l, 0, 101, this.xSize, 116);
     }
+
+    public void drawScreen(int mouseX, int mouseY, float partialTicks) {
+        this.drawDefaultBackground();
+        super.drawScreen(mouseX, mouseY, partialTicks);
+        this.renderHoveredToolTip(mouseX, mouseY);
+    }
 }

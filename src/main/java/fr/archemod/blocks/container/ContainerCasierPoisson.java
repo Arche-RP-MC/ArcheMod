@@ -37,6 +37,7 @@ public class ContainerCasierPoisson extends Container {
         for (int i1 = 0; i1 < 9; ++i1) {
             this.addSlotToContainer(new Slot(playerInventory, i1, 8 + i1 * 18, 97));
         }
+        onContainerOpen(null);
     }
 
     @Override
@@ -165,6 +166,11 @@ public class ContainerCasierPoisson extends Container {
         return flag;
     }
 
+    public void onContainerOpen(EntityPlayer player) {
+        this.inv.openInventory(player);
+    }
+
+    @Override
     public void onContainerClosed(EntityPlayer playerIn) {
         super.onContainerClosed(playerIn);
         this.inv.closeInventory(playerIn);

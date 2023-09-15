@@ -93,19 +93,7 @@ public class BlockCasierPoisson extends BlockBase implements ITileEntityProvider
 
 
     @Override
-    public void onBlockPlacedBy(World worldIn, BlockPos pos, IBlockState state, EntityLivingBase placer, ItemStack stack) {
-        TileEntity tile = worldIn.getTileEntity(pos);
-        if (tile instanceof TileEntityCasierPoisson) {
-
-            ((TileEntityCasierPoisson) tile).setDate(new Date().getTime());
-
-            //ArcheMod.LOGGER.info(tile.getTileData().getString("time"));
-            if (stack.hasDisplayName()) {
-                ((TileEntityCasierPoisson) tile).setCustomName(stack.getDisplayName());
-
-            }
-        }
-    }
+    public void onBlockPlacedBy(World worldIn, BlockPos pos, IBlockState state, EntityLivingBase placer, ItemStack stack) {}
 
 
     public void harvestBlock(World worldIn, EntityPlayer player, BlockPos pos, IBlockState state, @Nullable TileEntity te, @Nullable ItemStack stack) {

@@ -7,4 +7,6 @@ public class Reference {
     public static final String ACCEPTED_VERSIONS = "[1.12.2]";
     public static final String CLIENT_PROXY_CLASS = "fr.archemod.proxy.ClientProxy";
     public static final String COMMON_PROXY_CLASS = "fr.archemod.proxy.CommonProxy";
+
+    public static final long DELAI_RECOLTE_PECHE = 5*1000;
 }
