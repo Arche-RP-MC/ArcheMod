@@ -135,7 +135,7 @@ public class BlockFlowerPot extends BlockContainer implements IHasModel {
         if (block != Blocks.YELLOW_FLOWER && block != Blocks.RED_FLOWER && block != Blocks.CACTUS && block != Blocks.BROWN_MUSHROOM && block != Blocks.RED_MUSHROOM && block != Blocks.SAPLING && block != Blocks.DEADBUSH)
         {
             int i = stack.getMetadata();
-            return ((block == Blocks.TALLGRASS && i == BlockTallGrass.EnumType.FERN.getMeta()) || block instanceof BlockPlante);
+            return ((block == Blocks.TALLGRASS && i == BlockTallGrass.EnumType.FERN.getMeta()) || block instanceof BlockPlanteDeco);
         }
         else
         {
@@ -292,7 +292,7 @@ public class BlockFlowerPot extends BlockContainer implements IHasModel {
             if (item instanceof ItemBlock) {
                 int i = tileentityflowerpot.getFlowerPotData();
                 Block block = Block.getBlockFromItem(item);
-                if(block instanceof BlockPlante){
+                if(block instanceof BlockPlanteDeco){
                     if(block == ModBlocks.BASILIC){
                         blockflowerpot$enumflowertype = EnumFlowerType.BASILIC;
                     }

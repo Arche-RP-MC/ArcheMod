@@ -10,9 +10,9 @@ import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 
-public class BlockPlante extends BlockBush implements IHasModel {
+public class BlockPlanteDeco extends BlockBush implements IHasModel {
 
-    public BlockPlante(String name) {
+    public BlockPlanteDeco(String name) {
         super(Material.PLANTS);
         setSoundType(SoundType.PLANT);
         setTranslationKey(name);
