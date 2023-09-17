@@ -555,7 +555,7 @@ public class ModBlocks {
     public static final Block PLAN_RIZ = new BlocPlantesBotaniste("plan_riz", ModItems.GRAINE_RIZ, ModItems.RIZ_CRU, 2, 2, 2);
     public static final Block PLAN_CHANVRE = new BlocPlantesBotaniste("plan_chanvre", ModItems.GRAINE_CHANVRE, ModItems.CHANVRE, 2, 2, 2);
     public static final Block PLAN_BLE = new BlocPlantesAgriculture("plan_ble", ModItems.GRAINE_BLE, ModItems.BLE);
-    public static final Block PLAN_THYM = new BlocPlantesBotaniste("plan_thym", ModItems.GRAINE_THYM, ModItems.THYM, 2, 2, 2);
+    public static final Block PLAN_THYM = new BlocPlantesBotaniste("plan_thym", ModItems.GRAINE_THYM, ModItems.PLANTE_THYM, 2, 2, 2);
 
     //public static final Block PLAN_TEST = new BlockMushroom("plan_test" );
 
