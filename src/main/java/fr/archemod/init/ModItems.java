@@ -425,12 +425,14 @@ public class ModItems {
     public static final Item PETITE_VIANDE_DE_GIBIER_CRUE = new ItemBase("petite_viande_de_gibier_crue");
     public static final Item PETITS_POIS_CRU = new ItemBase("petits_pois_cru");
     public static final Item POIREAU_CRU = new ItemBase("poireau_cru");
+
+    public static final Item POIVRON_ORANGE_CRU =  new ItemBase("poivron_orange_cru");
     public static final Item POIVRON_JAUNE_FARCI_CRU = new ItemBase("poivron_jaune_farci_cru");
-    public static final Item POIVRON_JAUNE_M_CRU = new ItemBase("poivron_jaune_m_cru");
+    public static final Item POIVRON_JAUNE_CRU = new ItemBase("poivron_jaune_m_cru");
     public static final Item POIVRON_ROUGE_FARCI_CRU = new ItemBase("poivron_rouge_farci_cru");
-    public static final Item POIVRON_ROUGE_M_CRU = new ItemBase("poivron_rouge_m_cru");
+    public static final Item POIVRON_ROUGE_CRU = new ItemBase("poivron_rouge_m_cru");
     public static final Item POIVRON_VERT_FARCI_CRU = new ItemBase("poivron_vert_farci_cru");
-    public static final Item POIVRON_VERT_M_CRU = new ItemBase("poivron_vert_m_cru");
+    public static final Item POIVRON_VERT_CRU = new ItemBase("poivron_vert_m_cru");
     public static final Item POMME_DE_TERRE_CRU = new ItemBase("pomme_de_terre_cru");
     public static final Item POMME_DE_TERRE_FARCIE_CRU = new ItemBase("pomme_de_terre_farcie_cru");
     public static final Item POULET_CRU = new ItemBase("poulet_cru");
@@ -490,6 +492,7 @@ public class ModItems {
     public static final Item STYLET_EN_BRONZE = new ItemIngrediant("stylet_en_bronze", 7);
     public static final Item STYLET_EN_OR = new ItemIngrediant("stylet_en_or", 7);
     public static final ItemAxe HACHE_D_ARMES_EN_ACIER = new ToolAxe("hache_d_armes_en_acier", Item.ToolMaterial.IRON);
+
 
     // Graines Plantes botaniste
 
@@ -2409,7 +2412,7 @@ public class ModItems {
 
     //plantes
 
-    public static final Item PLANTE_GRASSE = new ItemBase("plante_grasse");
+    public static final Item PLANTE_PLANTE_GRASSE = new ItemBase("plante_plante_grasse");
     public static final Item PLANTE_BUIS = new ItemBase("plante_buis");
     public static final Item PLANTE_LIERRE_TERRESTRE = new ItemBase("plante_lierre_terrestre");
     public static final Item PLANTE_COQUELICOT = new ItemBase("plante_coquelicot");
@@ -2418,8 +2421,8 @@ public class ModItems {
     public static final Item PLANTE_TULIPE_ORANGE = new ItemBase("plante_tulipe_orange");
     public static final Item PLANTE_TULIPE_ROSE = new ItemBase("plante_tulipe_rose");
     public static final Item PLANTE_TULIPE_BLANCHE = new ItemBase("plante_tulipe_blanche");
-    //Ail - déjà existant
-    //Oignon - déjà existant
+    public static final Item PLANTE_OIGNON = new ItemBase("plante_oignon");
+    public static final Item PLANTE_AIL = new ItemBase("plante_ail");
     public static final Item PLANTE_ORCHIDEE_BLEUE = new ItemBase("plante_orchidee_bleue");
     public static final Item PLANTE_ROSIER = new ItemBase("plante_rosier");
     public static final Item PLANTE_LIERRE_FLEURI = new ItemBase("plante_lierre_fleuri");
@@ -2433,70 +2436,73 @@ public class ModItems {
 
     // /\Ajouts/\
 
-    public static final Item ANETH =  new ItemBase("aneth");
-    public static final Item ANIS =  new ItemBase("anis");
-    public static final Item BASILIC =  new ItemBase("basilic");
-    public static final Item BELLE_DE_NUIT =  new ItemBase("belle_de_nuit");
-    public static final Item BLEUETS =  new ItemBase("bleuets");
-    public static final Item BUISSON =  new ItemBase("buisson");
-    public static final Item BUISSON_DE_FLEURS_BLANCHES =  new ItemBase("buisson_de_fleurs_blanches");
-    public static final Item BUISSON_ETRANGE =  new ItemBase("buisson_etrange");
-    public static final Item BUISSON_HERBEUX =  new ItemBase("buisson_herbeux");
-    public static final Item CAMOMILLE =  new ItemBase("camomille");
-    public static final Item CHARDON =  new ItemBase("chardon");
-    public static final Item CIBOULETTE =  new ItemBase("ciboulette");
-    public static final Item CLOCHETTES =  new ItemBase("clochettes");
-    public static final Item COSMOS =  new ItemBase("cosmos");
-    public static final Item ETOILE_DES_GLACIERS =  new ItemBase("etoile_des_glaciers");
-    public static final Item FLEUR_DE_PAVOT = new ItemBase("fleur_de_pavot");
-    public static final Item GERANIUM =  new ItemBase("geranium");
-    public static final Item GLYCINE =  new ItemBase("glycine");
-    public static final Item GUI =  new ItemBase("gui");
-    public static final Item GUZMANIAS =  new ItemBase("guzmanias");
-    public static final Item HIBISCUS =  new ItemBase("hibiscus");
-    public static final Item HORTENSIAS =  new ItemBase("hortensias");
-    public static final Item HOUX =  new ItemBase("houx");
-    public static final Item HYDRANGEE =  new ItemBase("hydrangee");
-    public static final Item IRIS =  new ItemBase("iris");
-    public static final Item JACINTHE_DES_BOIS =  new ItemBase("jacinthe_des_bois");
-    public static final Item JASMIN =  new ItemBase("jasmin");
-    public static final Item JOLI_BUISSON =  new ItemBase("joli_buisson");
-    public static final Item JONQUILLE =  new ItemBase("jonquille");
-    public static final Item LAURIER =  new ItemBase("laurier");
-    public static final Item LAVANDE =  new ItemBase("lavande");
-    public static final Item LYS =  new ItemBase("lys");
-    public static final Item MANDRAGORE =  new ItemBase("mandragore");
-    public static final Item MENTHE =  new ItemBase("menthe");
-    public static final Item MUGUET =  new ItemBase("muguet");
-    public static final Item MYOSOTIS =  new ItemBase("myosotis");
-    public static final Item NARCISSES =  new ItemBase("narcisses");
-    public static final Item OEILLETS =  new ItemBase("oeillets");
-    public static final Item ORCHIDEE_ROSE =  new ItemBase("orchidee_rose");
-    public static final Item PENSEES =  new ItemBase("pensees");
-    public static final Item PERSIL =  new ItemBase("persil");
-    public static final Item PIVOINE =  new ItemBase("pivoine");
-    public static final Item PLANTE_ETRANGE =  new ItemBase("plante_etrange");
-    public static final Item PLANTE_GRASSE_COLOREE =  new ItemBase("plante_grasse_coloree");
-    public static final Item POIVRON_ORANGE =  new ItemBase("poivron_orange");
-    public static final Item ROMARIN =  new ItemBase("romarin");
-    public static final Item RONCES =  new ItemBase("ronces");
-    public static final Item SALICORNE =  new ItemBase("salicorne");
-    public static final Item VERGE_D_OR =  new ItemBase("verge_d_or");
-    public static final Item VERVEINE =  new ItemBase("verveine");
-    public static final Item VIOLETTES =  new ItemBase("violettes");
+    public static final Item PLANTE_ANETH =  new ItemBase("plante_aneth");
+    public static final Item PLANTE_ANIS =  new ItemBase("plante_anis");
+    public static final Item PLANTE_BASILIC =  new ItemBase("plante_basilic");
+    public static final Item PLANTE_BELLE_DE_NUIT =  new ItemBase("plante_belle_de_nuit");
+    public static final Item PLANTE_BLEUETS =  new ItemBase("plante_bleuets");
+    public static final Item PLANTE_BUISSON =  new ItemBase("plante_buisson");
+    public static final Item PLANTE_BUISSON_DE_FLEURS_BLANCHES =  new ItemBase("plante_buisson_de_fleurs_blanches");
+    public static final Item PLANTE_BUISSON_ETRANGE =  new ItemBase("plante_buisson_etrange");
+    public static final Item PLANTE_BUISSON_HERBEUX =  new ItemBase("plante_buisson_herbeux");
+    public static final Item PLANTE_CAMOMILLE =  new ItemBase("plante_camomille");
+    public static final Item PLANTE_CHARDON =  new ItemBase("plante_chardon");
+    public static final Item PLANTE_CIBOULETTE =  new ItemBase("plante_ciboulette");
+    public static final Item PLANTE_CLOCHETTES =  new ItemBase("plante_clochettes");
+    public static final Item PLANTE_CLOU_DE_GIROFLE = new ItemBase("plante_clou_de_girofle");
+    public static final Item PLANTE_COSMOS =  new ItemBase("plante_cosmos");
+    public static final Item PLANTE_ESTRAGON = new ItemBase("plante_estragon");
+    public static final Item PLANTE_ETOILE_DES_GLACIERS =  new ItemBase("plante_etoile_des_glaciers");
+    public static final Item PLANTE_FLEUR_DE_PAVOT = new ItemBase("plante_fleur_de_pavot");
+    public static final Item PLANTE_GERANIUM =  new ItemBase("plante_geranium");
+    public static final Item PLANTE_GLYCINE =  new ItemBase("plante_glycine");
+    public static final Item PLANTE_GUI =  new ItemBase("plante_gui");
+    public static final Item PLANTE_GUZMANIAS =  new ItemBase("plante_guzmanias");
+    public static final Item PLANTE_HIBISCUS =  new ItemBase("plante_hibiscus");
+    public static final Item PLANTE_HORTENSIAS =  new ItemBase("plante_hortensias");
+    public static final Item PLANTE_HOUX =  new ItemBase("plante_houx");
+    public static final Item PLANTE_HYDRANGEE =  new ItemBase("plante_hydrangee");
+    public static final Item PLANTE_IRIS =  new ItemBase("plante_iris");
+    public static final Item PLANTE_JACINTHE_DES_BOIS =  new ItemBase("plante_jacinthe_des_bois");
+    public static final Item PLANTE_JASMIN =  new ItemBase("plante_jasmin");
+    public static final Item PLANTE_JOLI_BUISSON =  new ItemBase("plante_joli_buisson");
+    public static final Item PLANTE_JONQUILLE =  new ItemBase("plante_jonquille");
+    public static final Item PLANTE_LAURIER =  new ItemBase("plante_laurier");
+    public static final Item PLANTE_LAVANDE =  new ItemBase("plante_lavande");
+    public static final Item PLANTE_LYS =  new ItemBase("plante_lys");
+    public static final Item PLANTE_MANDRAGORE =  new ItemBase("plante_mandragore");
+    public static final Item PLANTE_MENTHE =  new ItemBase("plante_menthe");
+    public static final Item PLANTE_MUGUET =  new ItemBase("plante_muguet");
+    public static final Item PLANTE_MYOSOTIS =  new ItemBase("plante_myosotis");
+    public static final Item PLANTE_NARCISSES =  new ItemBase("plante_narcisses");
+    public static final Item PLANTE_OEILLETS =  new ItemBase("plante_oeillets");
+    public static final Item PLANTE_ORCHIDEE_ROSE =  new ItemBase("plante_orchidee_rose");
+    public static final Item PLANTE_PENSEES =  new ItemBase("plante_pensees");
+    public static final Item PLANTE_PERSIL =  new ItemBase("plante_persil");
+    public static final Item PLANTE_PIVOINE =  new ItemBase("plante_pivoine");
+    public static final Item PLANTE_PLANTE_ETRANGE =  new ItemBase("plante_plante_etrange");
+    public static final Item PLANTE_PLANTE_GRASSE_COLOREE =  new ItemBase("plante_plante_grasse_coloree");
+    public static final Item PLANTE_RHUBARBE = new ItemBase("plante_rhubarbe");
+    public static final Item PLANTE_ROMARIN =  new ItemBase("plante_romarin");
+    public static final Item PLANTE_RONCES =  new ItemBase("plante_ronces");
+    public static final Item PLANTE_SALICORNE =  new ItemBase("plante_salicorne");
+    public static final Item PLANTE_SAUGE = new ItemBase("plante_sauge");
+    public static final Item PLANTE_SUREAU = new ItemBase("plante_sureau");
+    public static final Item PLANTE_THYM = new ItemBase("plante_thym");
+    public static final Item PLANTE_VERGE_D_OR =  new ItemBase("plante_verge_d_or");
+    public static final Item PLANTE_VERVEINE =  new ItemBase("plante_verveine");
+    public static final Item PLANTE_VIOLETTES =  new ItemBase("plante_violettes");
+    //TODO : MAJ DES VISUELS ET SUPPR LES AUTRES
 
     public static final Item BLE = new GraineBle("ble");
     public static final Item CANNELLE = new ItemBase("cannelle");
     public static final Item CHANVRE = new ItemBase("chanvre");
     public static final Item CHOU_VERT = new ItemBase("chou_vert");
-    public static final Item CLOU_DE_GIROFLE = new ItemBase("clou_de_girofle");
+
     public static final Item GINGEMBRE = new ItemBase("gingembre");
     public static final Item LIN = new ItemBase("lin");
     public static final Item ORGE = new GraineOrge("orge");
     public static final Item RACINE_DE_GARANCE = new ItemBase("racine_de_garance");
-    public static final Item SAUGE = new ItemBase("sauge");
-    public static final Item SUREAU = new ItemBase("sureau");
-    public static final Item THYM = new ItemBase("thym");
 
 
     // Divers - Plantes
@@ -2517,8 +2523,6 @@ public class ModItems {
     public static final Item POMME_DE_PIN = new ItemBase("pomme_de_pin");
     public static final Item POMME_DE_TERRE_GERMEE = new ItemBase("pomme_de_terre_germee");
     public static final Item SEVE = new ItemBase("seve");
-    public static final Item ESTRAGON = new ItemBase("estragon");
-    public static final Item RHUBARBE = new ItemBase("rhubarbe");
 
     // Cadenas
     public static final Item CADENAS_BRONZE = new Cadenas("cadenas_bronze");

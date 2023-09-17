@@ -103,11 +103,11 @@ public class ModRecipes {
         GameRegistry.addSmelting(ModItems.PETITS_POIS_CRU, new ItemStack(ModItems.PETITS_POIS, 1), 0);
         GameRegistry.addSmelting(ModItems.POIREAU_CRU, new ItemStack(ModItems.POIREAU, 1), 0);
         GameRegistry.addSmelting(ModItems.POIVRON_JAUNE_FARCI_CRU, new ItemStack(ModItems.POIVRON_JAUNE_FARCI, 1), 0);
-        GameRegistry.addSmelting(ModItems.POIVRON_JAUNE_M_CRU, new ItemStack(ModItems.POIVRON_JAUNE_M, 1), 0);
+        GameRegistry.addSmelting(ModItems.POIVRON_JAUNE_CRU, new ItemStack(ModItems.POIVRON_JAUNE_M, 1), 0);
         GameRegistry.addSmelting(ModItems.POIVRON_ROUGE_FARCI_CRU, new ItemStack(ModItems.POIVRON_ROUGE_FARCI, 1), 0);
-        GameRegistry.addSmelting(ModItems.POIVRON_ROUGE_M_CRU, new ItemStack(ModItems.POIVRON_ROUGE_M, 1), 0);
+        GameRegistry.addSmelting(ModItems.POIVRON_ROUGE_CRU, new ItemStack(ModItems.POIVRON_ROUGE_M, 1), 0);
         GameRegistry.addSmelting(ModItems.POIVRON_VERT_FARCI_CRU, new ItemStack(ModItems.POIVRON_VERT_FARCI, 1), 0);
-        GameRegistry.addSmelting(ModItems.POIVRON_VERT_M_CRU, new ItemStack(ModItems.POIVRON_VERT_M, 1), 0);
+        GameRegistry.addSmelting(ModItems.POIVRON_VERT_CRU, new ItemStack(ModItems.POIVRON_VERT_M, 1), 0);
         GameRegistry.addSmelting(ModItems.POMME_DE_TERRE_CRU, new ItemStack(ModItems.POMME_DE_TERRE, 1), 0);
         GameRegistry.addSmelting(ModItems.POMME_DE_TERRE_FARCIE_CRU, new ItemStack(ModItems.POMME_DE_TERRE_FARCIE, 1), 0);
         GameRegistry.addSmelting(ModItems.POT_DE_FLEUR_CRU, new ItemStack(Blocks.FLOWER_POT, 1), 0);
