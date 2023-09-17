@@ -1,11 +1,14 @@
 package fr.archemod.blocks.tileentity;
 
 import fr.archemod.ArcheMod;
-import fr.archemod.blocks.container.ContainerFishCase;
+import fr.archemod.blocks.container.ContainerCasierPoisson;
+import fr.archemod.init.ModItems;
+import fr.archemod.util.Reference;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.ItemStackHelper;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.network.NetworkManager;
@@ -14,10 +17,13 @@ import net.minecraft.tileentity.TileEntityLockableLoot;
 import net.minecraft.util.NonNullList;
 
 import java.util.Date;
+import java.util.Objects;
 
-public class TileEntityFishCase extends TileEntityLockableLoot {
+public class TileEntityCasierPoisson extends TileEntityLockableLoot {
 
-    private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(9, ItemStack.EMPTY);
+    private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(7, ItemStack.EMPTY);
+    private boolean enCours = false;
+    private Item appat = null;
     private long time = 0;
 
     @Override
@@ -27,8 +33,25 @@ public class TileEntityFishCase extends TileEntityLockableLoot {
         if (!this.checkLootAndRead(compound))
             ItemStackHelper.loadAllItems(compound, this.stacks);
 
-        if (compound.hasKey("time"))
-            this.time = Long.parseLong(compound.getString("time"));
+        time = compound.getLong("time");
+        enCours = compound.getBoolean("enCours");
+        String tempo = compound.getString("appat");
+        switch(tempo) {
+            case "insecte_ver_de_terre":
+                appat = ModItems.INSECTE_VER_DE_TERRE;
+                break;
+            case "insecte_asticot":
+                appat = ModItems.INSECTE_ASTICOT;
+                break;
+            case "insecte_larve":
+                appat = ModItems.INSECTE_LARVE;
+                break;
+            case "insecte_ver_de_farine":
+                appat = ModItems.INSECTE_VER_DE_FARINE;
+                break;
+            default:
+                appat = null;
+        }
     }
 
     @Override
@@ -37,16 +60,30 @@ public class TileEntityFishCase extends TileEntityLockableLoot {
         if (!this.checkLootAndWrite(compound))
             ItemStackHelper.saveAllItems(compound, this.stacks);
 
-        long date = new Date().getTime();
-        if (!compound.hasKey("time")) {
-            ArcheMod.logger.debug("[TILE SERIALIZE....]" + date);
-            compound.setString("time", String.valueOf(date));
-            this.time = Long.parseLong(compound.getString("time"));
-        }
+        compound.setLong("time", time);
+        compound.setBoolean("enCours", enCours);
+        if(appat != null) compound.setString("appat", appat.getRegistryName().getPath());
+        else compound.setString("appat", "null");
 
         return compound;
     }
 
+    @Override
+    public void openInventory(EntityPlayer player) {
+        if(enCours) {
+            Date date = new Date();
+            long ecart = date.getTime() - time;
+            while(ecart > Reference.DELAI_RECOLTE_PECHE && appat != null && enCours) {
+                ecart = ecart - Reference.DELAI_RECOLTE_PECHE;
+                getRecolte();
+            }
+        }
+    }
+
+    @Override
+    public void closeInventory(EntityPlayer player) {
+        reloadAppat();
+    }
 
     @Override
     protected NonNullList<ItemStack> getItems() {
@@ -55,7 +92,7 @@ public class TileEntityFishCase extends TileEntityLockableLoot {
 
     @Override
     public int getSizeInventory() {
-        return 9;
+        return 7;
     }
 
     @Override
@@ -84,7 +121,7 @@ public class TileEntityFishCase extends TileEntityLockableLoot {
 
     @Override
     public Container createContainer(InventoryPlayer playerInventory, EntityPlayer playerIn) {
-        return new ContainerFishCase(playerInventory, this);
+        return new ContainerCasierPoisson(playerInventory, this);
     }
 
     @Override
@@ -111,12 +148,6 @@ public class TileEntityFishCase extends TileEntityLockableLoot {
         }
     }
 
-
-    @Override
-    public boolean isItemValidForSlot(int index, ItemStack stack) {
-        return true;
-    }
-
     @Override
     public ItemStack getStackInSlot(int slot) {
         return stacks.get(slot);
@@ -132,35 +163,34 @@ public class TileEntityFishCase extends TileEntityLockableLoot {
         return "Casier à poisson";
     }
 
-    public void setDate(long time) {
-        this.time = time;
-        markDirty();
-    }
-
-    public long getDate() {
-        return time;
-    }
-
-    public void addItem(ItemStack stack, int size) {
-
-        for (int i = 0; i < this.stacks.size(); i++) {
-            if (this.stacks.get(i).isEmpty()) {
-
-                ItemStack itemStack = this.stacks.get(i);
-
-                if (itemStack == stack) {
-                    itemStack.setCount(itemStack.getCount() + size);
-                    this.stacks.set(i, itemStack);
-                    this.getUpdateTag();
-                    break;
-                }
-
-                stack.setCount(size);
-                this.stacks.set(i, stack);
-                this.getUpdateTag();
+    private void getRecolte() {
+        for(int i=1; i<getSizeInventory(); i++) {
+            Item item = findLoot();
+            if(getStackInSlot(i) == ItemStack.EMPTY ) {
+                stacks.set(i, new ItemStack(item));
+                break;
+            }
+            if(Objects.equals(getStackInSlot(i).getItem(), item)) {
+                stacks.get(i).shrink(-1);
                 break;
             }
         }
+        enCours = false;
+        reloadAppat();
     }
 
+    private void reloadAppat() {
+        if(enCours) return;
+        if(!getStackInSlot(0).equals(ItemStack.EMPTY)) {
+            appat = stacks.get(0).getItem();
+            time = new Date().getTime();
+            enCours = true;
+            if(getStackInSlot(0).getCount() < 2) stacks.set(0, ItemStack.EMPTY);
+            else stacks.get(0).shrink(1);
+        }
+    }
+
+    private Item findLoot() {
+        return ModItems.POISSON_CHAT;
+    }
 }

@@ -1,8 +1,6 @@
 package fr.archemod.util.handlers;
 
 import fr.archemod.ArcheMod;
-import fr.archemod.blocks.tileentity.TileEntityBlockInventory;
-import fr.archemod.blocks.tileentity.TileEntityBlockInventoryVisible;
 import fr.archemod.blocks.tileentity.TileEntityFut;
 import fr.archemod.blocks.tileentity.*;
 import fr.archemod.chat.capabilities.description.DescriptionCapability;
@@ -70,7 +68,7 @@ public class RegistryHandler {
         GameRegistry.registerTileEntity(TileEntityTable.class, new ResourceLocation(Reference.MOD_ID, "TileEntityTable"));
         GameRegistry.registerTileEntity(TileEntityLightBlock.class, new ResourceLocation(Reference.MOD_ID, "TileEntityLightBlock"));
         //GameRegistry.registerTileEntity(TileEntityLightBlock2.class, new ResourceLocation(Reference.MOD_ID,"TileEntityLightBlock2"));
-        GameRegistry.registerTileEntity(TileEntityFishCase.class, new ResourceLocation(Reference.MOD_ID, "TileEntityFishCase"));
+        GameRegistry.registerTileEntity(TileEntityCasierPoisson.class, new ResourceLocation(Reference.MOD_ID, "TileEntityFishCase"));
         //GameRegistry.registerTileEntity(TileEntityFourSechoir2.class, new ResourceLocation(Reference.MOD_ID, "TileEntityFourSechoir2"));
 
         ModBlocks.init();
