@@ -376,6 +376,29 @@ public class ModBlocks {
 
 
     //PLANTES
+    public static final Block PLANTE_GRASSE = new BlockPlante("plante_grasse");
+    public static final Block PLANTE_BUIS = new BlockPlante("plante_buis");
+    public static final Block PLANTE_LIERRE_TERRESTRE = new BlockPlante("plante_lierre_terrestre");
+    public static final Block PLANTE_COQUELICOT = new BlockPlante("plante_coquelicot");
+    public static final Block PLANTE_BOUTON_D_OR = new BlockPlante("plante_bouton_d_or");
+    public static final Block PLANTE_TULIPE_ROUGE = new BlockPlante("plante_tulipe_rouge");
+    public static final Block PLANTE_TULIPE_ORANGE = new BlockPlante("plante_tulipe_orange");
+    public static final Block PLANTE_TULIPE_ROSE = new BlockPlante("plante_tulipe_rose");
+    public static final Block PLANTE_TULIPE_BLANCHE = new BlockPlante("plante_tulipe_blanche");
+    public static final Block PLANTE_AIL = new BlockPlante("plante_ail");
+    public static final Block PLANTE_OIGNON = new BlockPlante("plante_oignon");
+    public static final Block PLANTE_ORCHIDEE_BLEUE = new BlockPlante("plante_orchidee_bleue");
+    public static final Block PLANTE_ROSIER = new BlockPlante("plante_rosier");
+    public static final Block PLANTE_LIERRE_FLEURI = new BlockPlante("plante_lierre_fleuri");
+    public static final Block PLANTE_HAIE = new BlockPlante("plante_haie");
+    //public static final Block PLANTE_BUISSON_VER_A_SOIE = new BlockPlante("plante_buisson_ver_a_soie");
+    public static final Block PLANTE_PISSENLIT = new BlockPlante("plante_pissenlit");
+    public static final Block PLANTE_LILAS = new BlockPlante("plante_lilas");
+    public static final Block PLANTE_TOURNESOL = new BlockPlante("plante_tournesol");
+    public static final Block PLANTE_ALLIUM = new BlockPlante("plante_allium");
+    public static final Block PLANTE_HOUSTONIE_BLEUE = new BlockPlante("plante_houstonie_bleue");
+
+    // /\Ajouts/\
     public static final Block BASILIC = new BlockPlante("basilic");
     public static final Block ALGUES = new BlockPlante("algues");
     public static final Block ANETH = new BlockPlante("aneth");
@@ -421,7 +444,6 @@ public class ModBlocks {
     public static final Block PERSIL = new BlockPlante("persil");
     public static final Block PIVOINE = new BlockPlante("pivoine");
     public static final Block PLANTE_ETRANGE = new BlockPlante("plante_etrange");
-    public static final Block PLANTE_GRASSE = new BlockPlante("plante_grasse");
     public static final Block PLANTE_GRASSE_COLOREE = new BlockPlante("plante_grasse_coloree");
     public static final Block POIVRON_JAUNE = new BlockPlante("poivron_jaune");
     public static final Block POIVRON_ORANGE = new BlockPlante("poivron_orange");
@@ -537,59 +559,83 @@ public class ModBlocks {
 
     //public static final Block PLAN_TEST = new BlockMushroom("plan_test" );
 
-    public static final Block PLAN_BASILIC = new BlocPlantesBotaniste("plan_basilic", ModItems.GRAINE_BASILIC, ModItems.BASILIC2, 2, 2, 2);
-    public static final Block PLAN_ANETH = new BlocPlantesBotaniste("plan_aneth", ModItems.GRAINE_ANETH, ModItems.ANETH2, 2, 2, 2);
-    public static final Block PLAN_ANIS = new BlocPlantesBotaniste("plan_anis", ModItems.GRAINE_ANIS, ModItems.ANIS2, 2, 2, 2);
-    public static final Block PLAN_BELLE_DE_NUIT = new BlocPlantesBotaniste("plan_belle_de_nuit", ModItems.GRAINE_BELLE_DE_NUIT, ModItems.BELLE_DE_NUIT2, 2, 2, 2);
-    public static final Block PLAN_BLEUETS = new BlocPlantesBotaniste("plan_bleuets", ModItems.GRAINE_BLEUETS, ModItems.BLEUETS2, 2, 2, 2);
-    public static final Block PLAN_BUISSON = new BlocPlantesBotaniste("plan_buisson", ModItems.GRAINE_BUISSON, ModItems.BUISSON2, 2, 2, 2);
-    public static final Block PLAN_BUISSON_DE_FLEURS_BLANCHES = new BlocPlantesBotaniste("plan_buisson_de_fleurs_blanches", ModItems.GRAINE_BUISSON_DE_FLEURS_BLANCHES, ModItems.BUISSON_DE_FLEURS_BLANCHES2, 2, 2, 2);
-    public static final Block PLAN_BUISSON_ETRANGE = new BlocPlantesBotaniste("plan_buisson_etrange", ModItems.GRAINE_BUISSON_ETRANGE, ModItems.BUISSON_ETRANGE2, 2, 2, 2);
-    public static final Block PLAN_BUISSON_HERBEUX = new BlocPlantesBotaniste("plan_buisson_herbeux", ModItems.GRAINE_BUISSON_HERBEUX, ModItems.BUISSON_HERBEUX2, 2, 2, 2);
-    public static final Block PLAN_CAMOMILLE = new BlocPlantesBotaniste("plan_camomille", ModItems.GRAINE_CAMOMILLE, ModItems.CAMOMILLE2, 2, 2, 2);
-    public static final Block PLAN_CHARDON = new BlocPlantesBotaniste("plan_chardon", ModItems.GRAINE_CHARDON, ModItems.CHARDON2, 2, 2, 2);
-    public static final Block PLAN_CIBOULETTE = new BlocPlantesBotaniste("plan_ciboulette", ModItems.GRAINE_CIBOULETTE, ModItems.CIBOULETTE2, 2, 2, 2);
-    public static final Block PLAN_CLOCHETTES = new BlocPlantesBotaniste("plan_clochettes", ModItems.GRAINE_CLOCHETTES, ModItems.CLOCHETTES2, 2, 2, 2);
-    public static final Block PLAN_COSMOS = new BlocPlantesBotaniste("plan_cosmos", ModItems.GRAINE_COSMOS, ModItems.COSMOS2, 2, 2, 2);
-    public static final Block PLAN_ETOILE_DES_GLACIERS = new BlocPlantesBotaniste("plan_etoile_des_glaciers", ModItems.GRAINE_ETOILE_DES_GLACIERS, ModItems.ETOILE_DES_GLACIERS2, 2, 2, 2);
-    public static final Block PLAN_GERANIUM = new BlocPlantesBotaniste("plan_geranium", ModItems.GRAINE_GERANIUM, ModItems.GERANIUM2, 2, 2, 2);
-    public static final Block PLAN_GLYCINE = new BlocPlantesBotaniste("plan_glycine", ModItems.GRAINE_GLYCINE, ModItems.GLYCINE2, 2, 2, 2);
-    public static final Block PLAN_GUI = new BlocPlantesBotaniste("plan_gui", ModItems.GRAINE_GUI, ModItems.GUI2, 2, 2, 2);
-    public static final Block PLAN_GUZMANIAS = new BlocPlantesBotaniste("plan_guzmanias", ModItems.GRAINE_GUZMANIAS, ModItems.GUZMANIAS2, 2, 2, 2);
-    public static final Block PLAN_HIBISCUS = new BlocPlantesBotaniste("plan_hibiscus", ModItems.GRAINE_HIBISCUS, ModItems.HIBISCUS2, 2, 2, 2);
-    public static final Block PLAN_HORTENSIAS = new BlocPlantesBotaniste("plan_hortensias", ModItems.GRAINE_HORTENSIAS, ModItems.HORTENSIAS2, 2, 2, 2);
-    public static final Block PLAN_HOUX = new BlocPlantesBotaniste("plan_houx", ModItems.GRAINE_HOUX, ModItems.HOUX2, 2, 2, 2);
-    public static final Block PLAN_HYDRANGEE = new BlocPlantesBotaniste("plan_hydrangee", ModItems.GRAINE_HYDRANGEE, ModItems.HYDRANGEE2, 2, 2, 2);
-    public static final Block PLAN_IRIS = new BlocPlantesBotaniste("plan_iris", ModItems.GRAINE_IRIS, ModItems.IRIS2, 2, 2, 2);
-    public static final Block PLAN_JACINTHE_DES_BOIS = new BlocPlantesBotaniste("plan_jacinthe_des_bois", ModItems.GRAINE_JACINTHE_DES_BOIS, ModItems.JACINTHE_DES_BOIS2, 2, 2, 2);
-    public static final Block PLAN_JASMIN = new BlocPlantesBotaniste("plan_jasmin", ModItems.GRAINE_JASMIN, ModItems.JASMIN2, 2, 2, 2);
-    public static final Block PLAN_JOLI_BUISSON = new BlocPlantesBotaniste("plan_joli_buisson", ModItems.GRAINE_JOLI_BUISSON, ModItems.JOLI_BUISSON2, 2, 2, 2);
-    public static final Block PLAN_JONQUILLE = new BlocPlantesBotaniste("plan_jonquille", ModItems.GRAINE_JONQUILLE, ModItems.JONQUILLE2, 2, 2, 2);
-    public static final Block PLAN_LAURIER = new BlocPlantesBotaniste("plan_laurier", ModItems.GRAINE_LAURIER, ModItems.LAURIER2, 2, 2, 2);
-    public static final Block PLAN_LAVANDE = new BlocPlantesBotaniste("plan_lavande", ModItems.GRAINE_LAVANDE, ModItems.LAVANDE2, 2, 2, 2);
-    public static final Block PLAN_LYS = new BlocPlantesBotaniste("plan_lys", ModItems.GRAINE_LYS, ModItems.LYS2, 2, 2, 2);
-    public static final Block PLAN_MANDRAGORE = new BlocPlantesBotaniste("plan_mandragore", ModItems.GRAINE_MANDRAGORE, ModItems.MANDRAGORE2, 2, 2, 2);
-    public static final Block PLAN_MENTHE = new BlocPlantesBotaniste("plan_menthe", ModItems.GRAINE_MENTHE, ModItems.MENTHE2, 2, 2, 2);
-    public static final Block PLAN_MUGUET = new BlocPlantesBotaniste("plan_muguet", ModItems.GRAINE_MUGUET, ModItems.MUGUET2, 2, 2, 2);
-    public static final Block PLAN_MYOSOTIS = new BlocPlantesBotaniste("plan_myosotis", ModItems.GRAINE_MYOSOTIS, ModItems.MYOSOTIS2, 2, 2, 2);
-    public static final Block PLAN_NARCISSES = new BlocPlantesBotaniste("plan_narcisses", ModItems.GRAINE_NARCISSES, ModItems.NARCISSES2, 2, 2, 2);
-    public static final Block PLAN_RONCES = new BlocPlantesBotaniste("plan_ronces", ModItems.GRAINE_RONCES, ModItems.RONCES2, 2, 2, 2);
-    public static final Block PLAN_OEILLETS = new BlocPlantesBotaniste("plan_oeillets", ModItems.GRAINE_OEILLETS, ModItems.OEILLETS2, 2, 2, 2);
-    public static final Block PLAN_ORCHIDEE_ROSE = new BlocPlantesBotaniste("plan_orchidee_rose", ModItems.GRAINE_ORCHIDEE_ROSE, ModItems.ORCHIDEE_ROSE2, 2, 2, 2);
-    public static final Block PLAN_PENSEES = new BlocPlantesBotaniste("plan_pensees", ModItems.GRAINE_PENSEES, ModItems.PENSEES2, 2, 2, 2);
-    public static final Block PLAN_PERSIL = new BlocPlantesBotaniste("plan_persil", ModItems.GRAINE_PERSIL, ModItems.PERSIL2, 2, 2, 2);
-    public static final Block PLAN_PIVOINE = new BlocPlantesBotaniste("plan_pivoine", ModItems.GRAINE_PIVOINE, ModItems.PIVOINE2, 2, 2, 2);
-    public static final Block PLAN_PLANTE_ETRANGE = new BlocPlantesBotaniste("plan_plante_etrange", ModItems.GRAINE_PLANTE_ETRANGE, ModItems.PLANTE_ETRANGE2, 2, 2, 2);
-    public static final Block PLAN_PLANTE_GRASSE_COLOREE = new BlocPlantesBotaniste("plan_plante_grasse_coloree", ModItems.GRAINE_PLANTE_GRASSE_COLOREE, ModItems.PLANTE_GRASSE_COLOREE2, 2, 2, 2);
+    public static final Block PLAN_PLANTE_GRASSE = new BlocPlantesBotaniste("plan_plante_grasse", ModItems.GRAINE_PLANTE_GRASSE, ModItems.PLANTE_GRASSE, 2, 2, 2);
+    public static final Block PLAN_BUIS = new BlocPlantesBotaniste("plan_buis", ModItems.GRAINE_BUIS, ModItems.PLANTE_BUIS, 2, 2, 2);
+    public static final Block PLAN_LIERRE_TERRESTRE = new BlocPlantesBotaniste("plan_lierre_terrestre", ModItems.GRAINE_LIERRE_TERRESTRE, ModItems.PLANTE_LIERRE_TERRESTRE, 2, 2, 2);
+    public static final Block PLAN_COQUELICOT = new BlocPlantesBotaniste("plan_coquelicot", ModItems.GRAINE_COQUELICOT, ModItems.PLANTE_COQUELICOT, 2, 2, 2);
+    public static final Block PLAN_BOUTON_D_OR = new BlocPlantesBotaniste("plan_bouton_d_or", ModItems.GRAINE_BOUTON_D_OR, ModItems.PLANTE_BOUTON_D_OR, 2, 2, 2);
+    public static final Block PLAN_TULIPE_ROUGE = new BlocPlantesBotaniste("plan_tulipe_rouge", ModItems.GRAINE_TULIPE_ROUGE, ModItems.PLANTE_TULIPE_ROUGE, 2, 2, 2);
+    public static final Block PLAN_TULIPE_ORANGE = new BlocPlantesBotaniste("plan_tulipe_orange", ModItems.GRAINE_TULIPE_ORANGE, ModItems.PLANTE_TULIPE_ORANGE, 2, 2, 2);
+    public static final Block PLAN_TULIPE_ROSE = new BlocPlantesBotaniste("plan_tulipe_rose", ModItems.GRAINE_TULIPE_ROSE, ModItems.PLANTE_TULIPE_ROSE, 2, 2, 2);
+    public static final Block PLAN_TULIPE_BLANCHE = new BlocPlantesBotaniste("plan_tulipe_blanche", ModItems.GRAINE_TULIPE_BLANCHE, ModItems.PLANTE_TULIPE_BLANCHE, 2, 2, 2);
+    public static final Block PLAN_AIL = new BlocPlantesBotaniste("plan_ail", ModItems.GRAINE_AIL, ModItems.AIL, 2, 2, 2);
+    public static final Block PLAN_OIGNON = new BlocPlantesBotaniste("plan_oignon", ModItems.GRAINE_OIGNON, ModItems.OIGNON, 2, 2, 2);
+    public static final Block PLAN_ORCHIDEE_BLEUE = new BlocPlantesBotaniste("plan_orchidee_bleue", ModItems.GRAINE_ORCHIDEE_BLEUE, ModItems.PLANTE_ORCHIDEE_BLEUE, 2, 2, 2);
+    public static final Block PLAN_ROSIER = new BlocPlantesBotaniste("plan_rosier", ModItems.GRAINE_ROSIER, ModItems.PLANTE_ROSIER, 2, 2, 2);
+    public static final Block PLAN_LIERRE_FLEURI = new BlocPlantesBotaniste("plan_lierre_fleuri", ModItems.GRAINE_LIERRE_FLEURI, ModItems.PLANTE_LIERRE_FLEURI, 2, 2, 2);
+    public static final Block PLAN_HAIE = new BlocPlantesBotaniste("plan_haie", ModItems.GRAINE_HAIE, ModItems.PLANTE_HAIE, 2, 2, 2);
+    //public static final Block PLAN_BUISSON_VER_A_SOIE = new BlocPlantesBotaniste("plan_buisson_ver_a_soie", ModItems.GRAINE_BUISSON_VER_A_SOIE, ModItems.PLANTE_BUISSON_VER_A_SOIE, 2, 2, 2);
+    public static final Block PLAN_PISSENLIT = new BlocPlantesBotaniste("plan_pissenlit", ModItems.GRAINE_PISSENLIT, ModItems.PLANTE_PISSENLIT, 2, 2, 2);
+    public static final Block PLAN_LILAS = new BlocPlantesBotaniste("plan_lilas", ModItems.GRAINE_LILAS, ModItems.PLANTE_LILAS, 2, 2, 2);
+    public static final Block PLAN_TOURNESOL = new BlocPlantesBotaniste("plan_tournesol", ModItems.GRAINE_TOURNESOL, ModItems.PLANTE_TOURNESOL, 2, 2, 2);
+    public static final Block PLAN_ALLIUM = new BlocPlantesBotaniste("plan_allium", ModItems.GRAINE_ALLIUM, ModItems.PLANTE_ALLIUM, 2, 2, 2);
+    public static final Block PLAN_HOUSTONIE_BLEUE = new BlocPlantesBotaniste("plan_houstonie_bleue", ModItems.GRAINE_HOUSTONIE_BLEUE, ModItems.PLANTE_HOUSTONIE_BLEUE, 2, 2, 2);
+
+
+    // /\Ajouts/\
+    public static final Block PLAN_BASILIC = new BlocPlantesBotaniste("plan_basilic", ModItems.GRAINE_BASILIC, ModItems.BASILIC, 2, 2, 2);
+    public static final Block PLAN_ANETH = new BlocPlantesBotaniste("plan_aneth", ModItems.GRAINE_ANETH, ModItems.ANETH, 2, 2, 2);
+    public static final Block PLAN_ANIS = new BlocPlantesBotaniste("plan_anis", ModItems.GRAINE_ANIS, ModItems.ANIS, 2, 2, 2);
+    public static final Block PLAN_BELLE_DE_NUIT = new BlocPlantesBotaniste("plan_belle_de_nuit", ModItems.GRAINE_BELLE_DE_NUIT, ModItems.BELLE_DE_NUIT, 2, 2, 2);
+    public static final Block PLAN_BLEUETS = new BlocPlantesBotaniste("plan_bleuets", ModItems.GRAINE_BLEUETS, ModItems.BLEUETS, 2, 2, 2);
+    public static final Block PLAN_BUISSON = new BlocPlantesBotaniste("plan_buisson", ModItems.GRAINE_BUISSON, ModItems.BUISSON, 2, 2, 2);
+    public static final Block PLAN_BUISSON_DE_FLEURS_BLANCHES = new BlocPlantesBotaniste("plan_buisson_de_fleurs_blanches", ModItems.GRAINE_BUISSON_DE_FLEURS_BLANCHES, ModItems.BUISSON_DE_FLEURS_BLANCHES, 2, 2, 2);
+    public static final Block PLAN_BUISSON_ETRANGE = new BlocPlantesBotaniste("plan_buisson_etrange", ModItems.GRAINE_BUISSON_ETRANGE, ModItems.BUISSON_ETRANGE, 2, 2, 2);
+    public static final Block PLAN_BUISSON_HERBEUX = new BlocPlantesBotaniste("plan_buisson_herbeux", ModItems.GRAINE_BUISSON_HERBEUX, ModItems.BUISSON_HERBEUX, 2, 2, 2);
+    public static final Block PLAN_CAMOMILLE = new BlocPlantesBotaniste("plan_camomille", ModItems.GRAINE_CAMOMILLE, ModItems.CAMOMILLE, 2, 2, 2);
+    public static final Block PLAN_CHARDON = new BlocPlantesBotaniste("plan_chardon", ModItems.GRAINE_CHARDON, ModItems.CHARDON, 2, 2, 2);
+    public static final Block PLAN_CIBOULETTE = new BlocPlantesBotaniste("plan_ciboulette", ModItems.GRAINE_CIBOULETTE, ModItems.CIBOULETTE, 2, 2, 2);
+    public static final Block PLAN_CLOCHETTES = new BlocPlantesBotaniste("plan_clochettes", ModItems.GRAINE_CLOCHETTES, ModItems.CLOCHETTES, 2, 2, 2);
+    public static final Block PLAN_COSMOS = new BlocPlantesBotaniste("plan_cosmos", ModItems.GRAINE_COSMOS, ModItems.COSMOS, 2, 2, 2);
+    public static final Block PLAN_ETOILE_DES_GLACIERS = new BlocPlantesBotaniste("plan_etoile_des_glaciers", ModItems.GRAINE_ETOILE_DES_GLACIERS, ModItems.ETOILE_DES_GLACIERS, 2, 2, 2);
+    public static final Block PLAN_GERANIUM = new BlocPlantesBotaniste("plan_geranium", ModItems.GRAINE_GERANIUM, ModItems.GERANIUM, 2, 2, 2);
+    public static final Block PLAN_GLYCINE = new BlocPlantesBotaniste("plan_glycine", ModItems.GRAINE_GLYCINE, ModItems.GLYCINE, 2, 2, 2);
+    public static final Block PLAN_GUI = new BlocPlantesBotaniste("plan_gui", ModItems.GRAINE_GUI, ModItems.GUI, 2, 2, 2);
+    public static final Block PLAN_GUZMANIAS = new BlocPlantesBotaniste("plan_guzmanias", ModItems.GRAINE_GUZMANIAS, ModItems.GUZMANIAS, 2, 2, 2);
+    public static final Block PLAN_HIBISCUS = new BlocPlantesBotaniste("plan_hibiscus", ModItems.GRAINE_HIBISCUS, ModItems.HIBISCUS, 2, 2, 2);
+    public static final Block PLAN_HORTENSIAS = new BlocPlantesBotaniste("plan_hortensias", ModItems.GRAINE_HORTENSIAS, ModItems.HORTENSIAS, 2, 2, 2);
+    public static final Block PLAN_HOUX = new BlocPlantesBotaniste("plan_houx", ModItems.GRAINE_HOUX, ModItems.HOUX, 2, 2, 2);
+    public static final Block PLAN_HYDRANGEE = new BlocPlantesBotaniste("plan_hydrangee", ModItems.GRAINE_HYDRANGEE, ModItems.HYDRANGEE, 2, 2, 2);
+    public static final Block PLAN_IRIS = new BlocPlantesBotaniste("plan_iris", ModItems.GRAINE_IRIS, ModItems.IRIS, 2, 2, 2);
+    public static final Block PLAN_JACINTHE_DES_BOIS = new BlocPlantesBotaniste("plan_jacinthe_des_bois", ModItems.GRAINE_JACINTHE_DES_BOIS, ModItems.JACINTHE_DES_BOIS, 2, 2, 2);
+    public static final Block PLAN_JASMIN = new BlocPlantesBotaniste("plan_jasmin", ModItems.GRAINE_JASMIN, ModItems.JASMIN, 2, 2, 2);
+    public static final Block PLAN_JOLI_BUISSON = new BlocPlantesBotaniste("plan_joli_buisson", ModItems.GRAINE_JOLI_BUISSON, ModItems.JOLI_BUISSON, 2, 2, 2);
+    public static final Block PLAN_JONQUILLE = new BlocPlantesBotaniste("plan_jonquille", ModItems.GRAINE_JONQUILLE, ModItems.JONQUILLE, 2, 2, 2);
+    public static final Block PLAN_LAURIER = new BlocPlantesBotaniste("plan_laurier", ModItems.GRAINE_LAURIER, ModItems.LAURIER, 2, 2, 2);
+    public static final Block PLAN_LAVANDE = new BlocPlantesBotaniste("plan_lavande", ModItems.GRAINE_LAVANDE, ModItems.LAVANDE, 2, 2, 2);
+    public static final Block PLAN_LYS = new BlocPlantesBotaniste("plan_lys", ModItems.GRAINE_LYS, ModItems.LYS, 2, 2, 2);
+    public static final Block PLAN_MANDRAGORE = new BlocPlantesBotaniste("plan_mandragore", ModItems.GRAINE_MANDRAGORE, ModItems.MANDRAGORE, 2, 2, 2);
+    public static final Block PLAN_MENTHE = new BlocPlantesBotaniste("plan_menthe", ModItems.GRAINE_MENTHE, ModItems.MENTHE, 2, 2, 2);
+    public static final Block PLAN_MUGUET = new BlocPlantesBotaniste("plan_muguet", ModItems.GRAINE_MUGUET, ModItems.MUGUET, 2, 2, 2);
+    public static final Block PLAN_MYOSOTIS = new BlocPlantesBotaniste("plan_myosotis", ModItems.GRAINE_MYOSOTIS, ModItems.MYOSOTIS, 2, 2, 2);
+    public static final Block PLAN_NARCISSES = new BlocPlantesBotaniste("plan_narcisses", ModItems.GRAINE_NARCISSES, ModItems.NARCISSES, 2, 2, 2);
+    public static final Block PLAN_RONCES = new BlocPlantesBotaniste("plan_ronces", ModItems.GRAINE_RONCES, ModItems.RONCES, 2, 2, 2);
+    public static final Block PLAN_OEILLETS = new BlocPlantesBotaniste("plan_oeillets", ModItems.GRAINE_OEILLETS, ModItems.OEILLETS, 2, 2, 2);
+    public static final Block PLAN_ORCHIDEE_ROSE = new BlocPlantesBotaniste("plan_orchidee_rose", ModItems.GRAINE_ORCHIDEE_ROSE, ModItems.ORCHIDEE_ROSE, 2, 2, 2);
+    public static final Block PLAN_PENSEES = new BlocPlantesBotaniste("plan_pensees", ModItems.GRAINE_PENSEES, ModItems.PENSEES, 2, 2, 2);
+    public static final Block PLAN_PERSIL = new BlocPlantesBotaniste("plan_persil", ModItems.GRAINE_PERSIL, ModItems.PERSIL, 2, 2, 2);
+    public static final Block PLAN_PIVOINE = new BlocPlantesBotaniste("plan_pivoine", ModItems.GRAINE_PIVOINE, ModItems.PIVOINE, 2, 2, 2);
+    public static final Block PLAN_PLANTE_ETRANGE = new BlocPlantesBotaniste("plan_plante_etrange", ModItems.GRAINE_PLANTE_ETRANGE, ModItems.PLANTE_ETRANGE, 2, 2, 2);
+    public static final Block PLAN_PLANTE_GRASSE_COLOREE = new BlocPlantesBotaniste("plan_plante_grasse_coloree", ModItems.GRAINE_PLANTE_GRASSE_COLOREE, ModItems.PLANTE_GRASSE_COLOREE, 2, 2, 2);
     public static final Block PLAN_POIVRON_JAUNE = new BlocPlantesBotaniste("plan_poivron_jaune", ModItems.GRAINE_POIVRON_JAUNE, ModItems.POIVRON_JAUNE_M_CRU, 2, 2, 2);
-    public static final Block PLAN_POIVRON_ORANGE = new BlocPlantesBotaniste("plan_poivron_orange", ModItems.GRAINE_POIVRON_ORANGE, ModItems.POIVRON_ORANGE2, 2, 2, 2);
+    public static final Block PLAN_POIVRON_ORANGE = new BlocPlantesBotaniste("plan_poivron_orange", ModItems.GRAINE_POIVRON_ORANGE, ModItems.POIVRON_ORANGE, 2, 2, 2);
     public static final Block PLAN_POIVRON_ROUGE = new BlocPlantesBotaniste("plan_poivron_rouge", ModItems.GRAINE_POIVRON_ROUGE, ModItems.POIVRON_ROUGE_M_CRU, 2, 2, 2);
     public static final Block PLAN_POIVRON_VERT = new BlocPlantesBotaniste("plan_poivron_vert", ModItems.GRAINE_POIVRON_VERT, ModItems.POIVRON_VERT_M_CRU, 2, 2, 2);
-    public static final Block PLAN_ROMARIN = new BlocPlantesBotaniste("plan_romarin", ModItems.GRAINE_ROMARIN, ModItems.ROMARIN2, 2, 2, 2);
-    public static final Block PLAN_SALICORNE = new BlocPlantesBotaniste("plan_salicorne", ModItems.GRAINE_SALICORNE, ModItems.SALICORNE2, 2, 2, 2);
-    public static final Block PLAN_VERGE_D_OR = new BlocPlantesBotaniste("plan_verge_d_or", ModItems.GRAINE_VERGE_D_OR, ModItems.VERGE_D_OR2, 2, 2, 2);
-    public static final Block PLAN_VERVEINE = new BlocPlantesBotaniste("plan_verveine", ModItems.GRAINE_VERVEINE, ModItems.VERVEINE2, 2, 2, 2);
-    public static final Block PLAN_VIOLETTES = new BlocPlantesBotaniste("plan_violettes", ModItems.GRAINE_VIOLETTES, ModItems.VIOLETTES2, 2, 2, 2);
+    public static final Block PLAN_ROMARIN = new BlocPlantesBotaniste("plan_romarin", ModItems.GRAINE_ROMARIN, ModItems.ROMARIN, 2, 2, 2);
+    public static final Block PLAN_SALICORNE = new BlocPlantesBotaniste("plan_salicorne", ModItems.GRAINE_SALICORNE, ModItems.SALICORNE, 2, 2, 2);
+    public static final Block PLAN_VERGE_D_OR = new BlocPlantesBotaniste("plan_verge_d_or", ModItems.GRAINE_VERGE_D_OR, ModItems.VERGE_D_OR, 2, 2, 2);
+    public static final Block PLAN_VERVEINE = new BlocPlantesBotaniste("plan_verveine", ModItems.GRAINE_VERVEINE, ModItems.VERVEINE, 2, 2, 2);
+    public static final Block PLAN_VIOLETTES = new BlocPlantesBotaniste("plan_violettes", ModItems.GRAINE_VIOLETTES, ModItems.VIOLETTES, 2, 2, 2);
     public static final Block PLAN_ESTRAGON = new BlocPlantesBotaniste("plan_estragon", ModItems.GRAINE_ESTRAGON, ModItems.ESTRAGON, 2, 2, 2);
     public static final Block PLAN_PAVOT = new BlocPlantesBotaniste("plan_pavot", ModItems.GRAINE_PAVOT, ModItems.FLEUR_DE_PAVOT, 2, 2, 2);
     public static final Block PLAN_GIROFLIER = new BlocPlantesBotaniste("plan_giroflier", ModItems.GRAINE_GIROFLIER, ModItems.CLOU_DE_GIROFLE, 2, 2, 2);
@@ -819,6 +865,29 @@ public class ModBlocks {
         ModItems.GRAINE_SUREAU = new ItemGraine("graine_sureau", ModBlocks.PLAN_SUREAU, Blocks.FARMLAND);
         ModItems.GRAINE_THYM = new ItemGraine("graine_thym", ModBlocks.PLAN_THYM, Blocks.FARMLAND);
         ModItems.GRAINE_MANDRAGORE = new ItemGraine("graine_mandragore", ModBlocks.PLAN_MANDRAGORE, Blocks.FARMLAND);
+        //Ajouts \/
+        ModItems.GRAINE_PLANTE_GRASSE = new ItemGraine("graine_plante_grasse", ModBlocks.PLAN_PLANTE_GRASSE, Blocks.FARMLAND);
+        ModItems.GRAINE_BUIS = new ItemGraine("graine_buis", ModBlocks.PLAN_BUIS, Blocks.FARMLAND);
+        ModItems.GRAINE_LIERRE_TERRESTRE = new ItemGraine("graine_lierre_terrestre", ModBlocks.PLAN_LIERRE_TERRESTRE, Blocks.FARMLAND);
+        ModItems.GRAINE_COQUELICOT = new ItemGraine("graine_coquelicot", ModBlocks.PLAN_COQUELICOT, Blocks.FARMLAND);
+        ModItems.GRAINE_BOUTON_D_OR = new ItemGraine("graine_bouton_d_or", ModBlocks.PLAN_BOUTON_D_OR, Blocks.FARMLAND);
+        ModItems.GRAINE_TULIPE_ROUGE = new ItemGraine("graine_tulipe_rouge", ModBlocks.PLAN_TULIPE_ROUGE, Blocks.FARMLAND);
+        ModItems.GRAINE_TULIPE_ORANGE = new ItemGraine("graine_tulipe_orange", ModBlocks.PLAN_TULIPE_ORANGE, Blocks.FARMLAND);
+        ModItems.GRAINE_TULIPE_ROSE = new ItemGraine("graine_tulipe_rose", ModBlocks.PLAN_TULIPE_ROSE, Blocks.FARMLAND);
+        ModItems.GRAINE_TULIPE_BLANCHE = new ItemGraine("graine_tulipe_blanche", ModBlocks.PLAN_TULIPE_BLANCHE, Blocks.FARMLAND);
+        ModItems.GRAINE_AIL = new ItemGraine("graine_ail", ModBlocks.PLAN_AIL, Blocks.FARMLAND);
+        ModItems.GRAINE_OIGNON = new ItemGraine("graine_oignon", ModBlocks.PLAN_OIGNON, Blocks.FARMLAND);
+        ModItems.GRAINE_ORCHIDEE_BLEUE = new ItemGraine("graine_orchidee_bleue", ModBlocks.PLAN_ORCHIDEE_BLEUE, Blocks.FARMLAND);
+        ModItems.GRAINE_ROSIER = new ItemGraine("graine_rosier", ModBlocks.PLAN_ROSIER, Blocks.FARMLAND);
+        ModItems.GRAINE_LIERRE_FLEURI = new ItemGraine("graine_lierre_fleuri", ModBlocks.PLAN_LIERRE_FLEURI, Blocks.FARMLAND);
+        ModItems.GRAINE_HAIE = new ItemGraine("graine_haie", ModBlocks.PLAN_HAIE, Blocks.FARMLAND);
+        //ModItems.GRAINE_BUISSON_VER_A_SOIE = new ItemGraine("graine_buisson_ver_a_soie", ModBlocks.PLAN_BUISSON_VER_A_SOIE, Blocks.FARMLAND);
+        ModItems.GRAINE_PISSENLIT = new ItemGraine("graine_pissenlit", ModBlocks.PLAN_PISSENLIT, Blocks.FARMLAND);
+        ModItems.GRAINE_LILAS = new ItemGraine("graine_lilas", ModBlocks.PLAN_LILAS, Blocks.FARMLAND);
+        ModItems.GRAINE_TOURNESOL = new ItemGraine("graine_tournesol", ModBlocks.PLAN_TOURNESOL, Blocks.FARMLAND);
+        ModItems.GRAINE_ALLIUM = new ItemGraine("graine_allium", ModBlocks.PLAN_ALLIUM, Blocks.FARMLAND);
+        ModItems.GRAINE_HOUSTONIE_BLEUE = new ItemGraine("graine_houstonie_bleue", ModBlocks.PLAN_HOUSTONIE_BLEUE, Blocks.FARMLAND);
+
 
     }
 
@@ -929,6 +998,29 @@ public class ModBlocks {
         registerItem(ModItems.GRAINE_SUREAU);
         registerItem(ModItems.GRAINE_THYM);
         registerItem(ModItems.GRAINE_MANDRAGORE);
+
+        //ajouts \/
+        registerItem(ModItems.GRAINE_PLANTE_GRASSE);
+        registerItem(ModItems.GRAINE_BUIS);
+        registerItem(ModItems.GRAINE_LIERRE_TERRESTRE);
+        registerItem(ModItems.GRAINE_COQUELICOT);
+        registerItem(ModItems.GRAINE_BOUTON_D_OR);
+        registerItem(ModItems.GRAINE_TULIPE_ROUGE);
+        registerItem(ModItems.GRAINE_TULIPE_ORANGE);
+        registerItem(ModItems.GRAINE_TULIPE_ROSE);
+        registerItem(ModItems.GRAINE_TULIPE_BLANCHE);
+        registerItem(ModItems.GRAINE_AIL);
+        registerItem(ModItems.GRAINE_OIGNON);
+        registerItem(ModItems.GRAINE_ORCHIDEE_BLEUE);
+        registerItem(ModItems.GRAINE_ROSIER);
+        registerItem(ModItems.GRAINE_LIERRE_FLEURI);
+        registerItem(ModItems.GRAINE_HAIE);
+        //registerItem(ModItems.GRAINE_BUISSON_VER_A_SOIE);
+        registerItem(ModItems.GRAINE_PISSENLIT);
+        registerItem(ModItems.GRAINE_LILAS);
+        registerItem(ModItems.GRAINE_TOURNESOL);
+        registerItem(ModItems.GRAINE_ALLIUM);
+        registerItem(ModItems.GRAINE_HOUSTONIE_BLEUE);
 
 
     }

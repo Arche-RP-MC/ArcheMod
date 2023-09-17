@@ -1,0 +1,6 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "am:blocks/plante_lierre_terrestre_stage_4"
+  }
+}

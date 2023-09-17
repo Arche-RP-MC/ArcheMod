@@ -1,0 +1,6 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "am:blocks/plante_tulipe_rouge_stage_6"
+  }
+}
