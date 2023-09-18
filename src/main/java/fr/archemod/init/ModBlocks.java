@@ -397,6 +397,13 @@ public class ModBlocks {
     public static final Block TOURNESOL = new BlockPlanteDeco("tournesol");
     public static final Block ALLIUM = new BlockPlanteDeco("allium");
     public static final Block HOUSTONIE_BLEUE = new BlockPlanteDeco("houstonie_bleue");
+    public static final Block CLOU_DE_GIROFLE = new BlockPlanteDeco("clou_de_girofle");
+    public static final Block RHUBARBE = new BlockPlanteDeco("rhubarbe");
+    public static final Block FLEUR_DE_PAVOT = new BlockPlanteDeco("fleur_de_pavot");
+    public static final Block SUREAU = new BlockPlanteDeco("sureau");
+    public static final Block SAUGE = new BlockPlanteDeco("sauge");
+    public static final Block THYM= new BlockPlanteDeco("thym");
+    public static final Block ESTRAGON = new BlockPlanteDeco("estragon");
 
     // /\Ajouts/\
     public static final Block BASILIC = new BlockPlanteDeco("basilic");
