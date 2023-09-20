@@ -2,25 +2,23 @@ package fr.archemod.blocks.container;
 
 import fr.archemod.blocks.slot.SlotOutput;
 import fr.archemod.blocks.slot.SlotSingleItem;
-import fr.archemod.blocks.tileentity.TileEntityCasierPoisson;
+import fr.archemod.blocks.tileentity.TileEntityNasse;
 import fr.archemod.init.ModItems;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.inventory.ClickType;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraftforge.fml.common.Mod;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class ContainerCasierPoisson extends Container {
+public class ContainerNasse extends Container {
 
     private final IInventory inv;
 
-    public ContainerCasierPoisson(IInventory playerInventory, TileEntityCasierPoisson fishCase) {
+    public ContainerNasse(IInventory playerInventory, TileEntityNasse fishCase) {
         this.inv = fishCase;
 
         this.addSlotToContainer(new SlotSingleItem(inv, 0, 8, 7, getList()));

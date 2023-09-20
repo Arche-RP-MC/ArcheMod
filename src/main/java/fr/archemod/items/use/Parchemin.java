@@ -1,6 +1,7 @@
-package fr.archemod.items;
+package fr.archemod.items.use;
 
 import fr.archemod.init.ModItems;
+import fr.archemod.items.ItemBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ActionResult;
@@ -16,14 +17,12 @@ public class Parchemin extends ItemBase {
 
     @Override
     public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) {
-
         if (!worldIn.isRemote && handIn == EnumHand.MAIN_HAND) {
             playerIn.getHeldItem(handIn).shrink(1);
             int rnd = (int) (Math.random() * 1);
             if (rnd == 0) {
                 playerIn.dropItem(ModItems.PARCHEMIN_DESCELLE, 1);
             }
-
         }
         return new ActionResult<>(EnumActionResult.SUCCESS, playerIn.getHeldItem(handIn));
     }

@@ -1,4 +1,4 @@
-package fr.archemod.items.peche;
+package fr.archemod.items.use;
 
 import fr.archemod.init.ModItems;
 import fr.archemod.items.ItemBase;
@@ -9,9 +9,9 @@ import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.EnumHand;
 import net.minecraft.world.World;
 
-public class Calamar extends ItemBase {
+public class Poulpe extends ItemBase {
 
-    public Calamar(String name) {
+    public Poulpe(String name) {
         super(name);
     }
 
@@ -24,7 +24,7 @@ public class Calamar extends ItemBase {
             if (rnd == 0) {
                 playerIn.dropItem(ModItems.POCHE_D_ENCRE, 2);
             }
-            playerIn.dropItem(ModItems.CALAMAR_MORT, 1);
+            playerIn.dropItem(ModItems.POULPE_MORT, 1);
         }
         return new ActionResult<>(EnumActionResult.SUCCESS, playerIn.getHeldItem(handIn));
     }

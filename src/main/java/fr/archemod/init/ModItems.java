@@ -9,6 +9,7 @@ import fr.archemod.items.sciure.*;
 import fr.archemod.items.tools.SeauBois;
 import fr.archemod.items.tools.ToolAxe;
 import fr.archemod.items.tools.ToolSword;
+import fr.archemod.items.use.*;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemAxe;
@@ -68,9 +69,9 @@ public class ModItems {
     public static final Item PEPITE_OR = new ItemBase("pepite_or");
     public static final Item PEPITE_PLOMB = new ItemBase("pepite_plomb");
 
-    public static final Item GEMME_INCONNUE = new GemmeInconnue("gemme_inconnue");
-    public static final Item GROSSE_GEMME_INCONNUE = new GrosseGemmeInconnue("grosse_gemme_inconnue");
-    public static final Item PETITE_GEMME_INCONNUE = new PetiteGemmeInconnue("petite_gemme_inconnue");
+    public static final Item GEMME_INCONNUE = new Gemme("gemme_inconnue");
+    public static final Item GROSSE_GEMME_INCONNUE = new GemmeGrosse("grosse_gemme_inconnue");
+    public static final Item PETITE_GEMME_INCONNUE = new GemmePetite("petite_gemme_inconnue");
     public static final Item POUSSIERE_MINERALE = new ItemBase("poussiere_minerale");
 
     public static final Item CAILLOU = new ItemBase("caillou");

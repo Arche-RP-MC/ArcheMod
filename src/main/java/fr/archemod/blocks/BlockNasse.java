@@ -1,7 +1,7 @@
 package fr.archemod.blocks;
 
 import fr.archemod.ArcheMod;
-import fr.archemod.blocks.tileentity.TileEntityCasierPoisson;
+import fr.archemod.blocks.tileentity.TileEntityNasse;
 import fr.archemod.init.ModBlocks;
 import fr.archemod.init.ModItems;
 import net.minecraft.block.ITileEntityProvider;
@@ -11,6 +11,7 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.InventoryHelper;
+import net.minecraft.inventory.ItemStackHelper;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
@@ -24,21 +25,19 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 import javax.annotation.Nullable;
-import java.util.Date;
-import java.util.Objects;
 import java.util.Random;
 
-public class BlockCasierPoisson extends BlockBase implements ITileEntityProvider {
+public class BlockNasse extends BlockBase implements ITileEntityProvider {
 
 
-    public BlockCasierPoisson(String name, Material material, float hardness, float resistance, SoundType soundType) {
+    public BlockNasse(String name, Material material, float hardness, float resistance, SoundType soundType) {
         super(name, material, hardness, resistance, soundType);
         setLightLevel(0F);
     }
 
     @Override
     public TileEntity createNewTileEntity(World worldIn, int meta) {
-        return new TileEntityCasierPoisson();
+        return new TileEntityNasse();
     }
 
     @Override
@@ -52,8 +51,8 @@ public class BlockCasierPoisson extends BlockBase implements ITileEntityProvider
     @Override
     public void breakBlock(World world, BlockPos pos, IBlockState state) {
         TileEntity tileentity = world.getTileEntity(pos);
-        if (tileentity instanceof TileEntityCasierPoisson)
-            InventoryHelper.dropInventoryItems(world, pos, (TileEntityCasierPoisson) tileentity);
+        if (tileentity instanceof TileEntityNasse)
+            InventoryHelper.dropInventoryItems(world, pos, (TileEntityNasse) tileentity);
         world.removeTileEntity(pos);
         super.breakBlock(world, pos, state);
     }
@@ -127,49 +126,11 @@ public class BlockCasierPoisson extends BlockBase implements ITileEntityProvider
 
     @Override
     public Item getItemDropped(IBlockState state, Random rand, int fortune) {
-        return Item.getItemFromBlock(ModBlocks.FISH_CASE);
+        return ItemStack.EMPTY.getItem();
     }
 
     @Override
     public int quantityDropped(Random random) {
         return 1;
     }
-}
-
-enum ItemList {
-    COQUILLE_SAINT_JACQUES(4, ModItems.COQUILLE_SAINT_JACQUES),
-    CRABE(1, ModItems.CRABE),
-    HOMARD(1, ModItems.HOMARD),
-    HUITRE(3, ModItems.HUITRE),
-    NAUTILE(2, ModItems.NAUTILE),
-    ORMEAUX(2, ModItems.ORMEAUX),
-    PALOURDE(4, ModItems.PALOURDE),
-    CARPE(1, ModItems.CARPE),
-    DORADE(1, ModItems.DORADE),
-    DORE_JAUNE(1, ModItems.DORE_JAUNE),
-    GOURAMI_MIEL(1, ModItems.GOURAMI_MIEL),
-    MEROU(1, ModItems.MEROU),
-    NAPOLEON(1, ModItems.NAPOLEON),
-    POISSON_CHAT(1, ModItems.POISSON_CHAT),
-    POISSON_PERROQUET(1, ModItems.POISSON_PERROQUET),
-    ROUGET(1, ModItems.ROUGET),
-    SARDINE(2, ModItems.SARDINE),
-    THON(1, ModItems.THON);
-
-    int stackSize;
-    Item item;
-
-    ItemList(int stackSize, Item item) {
-        this.stackSize = stackSize;
-        this.item = item;
-    }
-
-    public int getStackSize() {
-        return stackSize;
-    }
-
-    public Item getItem() {
-        return item;
-    }
-
 }

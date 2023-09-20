@@ -1,4 +1,4 @@
-package fr.archemod.items.peche;
+package fr.archemod.items.use;
 
 import fr.archemod.init.ModItems;
 import fr.archemod.items.ItemBase;
@@ -9,9 +9,9 @@ import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.EnumHand;
 import net.minecraft.world.World;
 
-public class Poulpe extends ItemBase {
+public class Huitre extends ItemBase {
 
-    public Poulpe(String name) {
+    public Huitre(String name) {
         super(name);
     }
 
@@ -20,11 +20,13 @@ public class Poulpe extends ItemBase {
 
         if (!worldIn.isRemote && handIn == EnumHand.MAIN_HAND) {
             playerIn.getHeldItem(handIn).shrink(1);
-            int rnd = (int) (Math.random() * 1);
-            if (rnd == 0) {
-                playerIn.dropItem(ModItems.POCHE_D_ENCRE, 2);
+            int rnd = (int) (Math.random() * 5);
+            switch (rnd) {
+                case 0:
+                    playerIn.dropItem(ModItems.PERLE_NATURELLE, 1);
+                default:
+                    playerIn.dropItem(ModItems.HUITRE_OUVERTE, 1);
             }
-            playerIn.dropItem(ModItems.POULPE_MORT, 1);
         }
         return new ActionResult<>(EnumActionResult.SUCCESS, playerIn.getHeldItem(handIn));
     }

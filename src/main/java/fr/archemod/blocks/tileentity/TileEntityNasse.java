@@ -1,7 +1,7 @@
 package fr.archemod.blocks.tileentity;
 
-import fr.archemod.ArcheMod;
-import fr.archemod.blocks.container.ContainerCasierPoisson;
+import fr.archemod.blocks.container.ContainerNasse;
+import fr.archemod.init.ModBlocks;
 import fr.archemod.init.ModItems;
 import fr.archemod.util.Reference;
 import net.minecraft.entity.player.EntityPlayer;
@@ -15,11 +15,13 @@ import net.minecraft.network.NetworkManager;
 import net.minecraft.network.play.server.SPacketUpdateTileEntity;
 import net.minecraft.tileentity.TileEntityLockableLoot;
 import net.minecraft.util.NonNullList;
+import net.minecraftforge.fml.common.Mod;
 
 import java.util.Date;
 import java.util.Objects;
+import java.util.Random;
 
-public class TileEntityCasierPoisson extends TileEntityLockableLoot {
+public class TileEntityNasse extends TileEntityLockableLoot {
 
     private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(7, ItemStack.EMPTY);
     private boolean enCours = false;
@@ -121,7 +123,7 @@ public class TileEntityCasierPoisson extends TileEntityLockableLoot {
 
     @Override
     public Container createContainer(InventoryPlayer playerInventory, EntityPlayer playerIn) {
-        return new ContainerCasierPoisson(playerInventory, this);
+        return new ContainerNasse(playerInventory, this);
     }
 
     @Override
@@ -164,9 +166,9 @@ public class TileEntityCasierPoisson extends TileEntityLockableLoot {
     }
 
     private void getRecolte() {
+        Item item = findLoot();
         for(int i=1; i<getSizeInventory(); i++) {
-            Item item = findLoot();
-            if(getStackInSlot(i) == ItemStack.EMPTY ) {
+            if(getStackInSlot(i).isEmpty()) {
                 stacks.set(i, new ItemStack(item));
                 break;
             }
@@ -181,16 +183,34 @@ public class TileEntityCasierPoisson extends TileEntityLockableLoot {
 
     private void reloadAppat() {
         if(enCours) return;
-        if(!getStackInSlot(0).equals(ItemStack.EMPTY)) {
+        if(!getStackInSlot(0).isEmpty()) {
             appat = stacks.get(0).getItem();
             time = new Date().getTime();
             enCours = true;
             if(getStackInSlot(0).getCount() < 2) stacks.set(0, ItemStack.EMPTY);
             else stacks.get(0).shrink(1);
-        }
+        } else appat = null;
     }
 
     private Item findLoot() {
-        return ModItems.POISSON_CHAT;
+        int rand = (int)(Math.random() * 100);
+        if(appat !=null) {
+            if (Objects.equals(appat, ModItems.INSECTE_VER_DE_TERRE) || Objects.equals(appat, ModItems.INSECTE_LARVE) || Objects.equals(appat, ModItems.INSECTE_ASTICOT) || Objects.equals(appat, ModItems.INSECTE_VER_DE_FARINE)) {
+                if(rand < 15) return Item.getItemFromBlock(ModBlocks.ALGUES);
+                if(rand < 30) return ModItems.CARCASSE_DE_POISSON;
+                if(rand < 40) return ModItems.CRABE;
+                if(rand < 50) return ModItems.CALAMAR;
+                if(rand < 60) return ModItems.POULPE;
+                if(rand < 65) return ModItems.HOMARD;
+                if(rand < 68) return ModItems.NAUTILE;
+                if(rand < 75) return ModItems.SARDINE;
+                if(rand < 78) return ModItems.COQUILLE_SAINT_JACQUES;
+                if(rand < 85) return ModItems.ROUGET;
+                if(rand < 88) return ModItems.HUITRE;
+                if(rand < 91) return ModItems.MOULE_CRUSTACE;
+                if(rand < 94) return ModItems.ORMEAUX;
+            }
+        }
+        return ItemStack.EMPTY.getItem();
     }
 }

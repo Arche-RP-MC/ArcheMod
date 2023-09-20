@@ -1,10 +1,9 @@
 package fr.archemod.gui;
 
-import fr.archemod.blocks.container.ContainerCasierPoisson;
-import fr.archemod.blocks.tileentity.TileEntityCasierPoisson;
+import fr.archemod.blocks.container.ContainerNasse;
+import fr.archemod.blocks.tileentity.TileEntityNasse;
 import fr.archemod.util.Reference;
 import net.minecraft.client.gui.inventory.GuiContainer;
-import net.minecraft.client.resources.I18n;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.util.ResourceLocation;
 import org.lwjgl.opengl.GL11;
@@ -12,12 +11,12 @@ import org.lwjgl.opengl.GL11;
 public class CasierPoissonGUI extends GuiContainer {
 
     public static final ResourceLocation texture = new ResourceLocation(Reference.MOD_ID,"textures/gui/container/casier_poisson.png");
-    protected TileEntityCasierPoisson inv;
+    protected TileEntityNasse inv;
     protected InventoryPlayer playerInv;
     public int rows;
 
-    public CasierPoissonGUI(InventoryPlayer playerInv, TileEntityCasierPoisson inv) {
-        super(new ContainerCasierPoisson(playerInv, inv));
+    public CasierPoissonGUI(InventoryPlayer playerInv, TileEntityNasse inv) {
+        super(new ContainerNasse(playerInv, inv));
         this.playerInv = playerInv;
         this.inv = inv;
         this.allowUserInput = false;
