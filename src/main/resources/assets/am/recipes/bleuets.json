@@ -1,17 +1,12 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "   ",
-    " P ",
-    "   "
-  ],
-  "key": {
-    "P": {
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
       "item": "am:bleuets2"
     }
-  },
+  ],
   "result": {
-    "item": "am:bleuets",
+    "item": "am:plante_bleuets",
     "count": 1
   }
 }

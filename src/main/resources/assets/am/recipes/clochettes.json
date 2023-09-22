@@ -1,17 +1,12 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "   ",
-    " P ",
-    "   "
-  ],
-  "key": {
-    "P": {
-      "item": "am:clochettes"
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "am:clochettes2"
     }
-  },
+  ],
   "result": {
-    "item": "am:clochettes2",
+    "item": "am:plante_clochettes",
     "count": 1
   }
 }

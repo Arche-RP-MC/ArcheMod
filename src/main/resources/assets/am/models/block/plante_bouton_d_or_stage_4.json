@@ -1,6 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "am:blocks/plante_bouton_d_or_stage_4"
-  }
-}

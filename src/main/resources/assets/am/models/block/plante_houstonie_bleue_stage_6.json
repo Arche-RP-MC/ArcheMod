@@ -1,6 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "am:blocks/plante_houstonie_bleue_stage_6"
-  }
-}

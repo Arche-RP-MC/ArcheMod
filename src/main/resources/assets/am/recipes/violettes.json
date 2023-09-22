@@ -1,17 +1,12 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "   ",
-    " P ",
-    "   "
-  ],
-  "key": {
-    "P": {
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
       "item": "am:violettes2"
     }
-  },
+  ],
   "result": {
-    "item": "am:violettes",
+    "item": "am:plante_violettes",
     "count": 1
   }
 }

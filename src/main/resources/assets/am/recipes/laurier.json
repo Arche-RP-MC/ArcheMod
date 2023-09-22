@@ -1,17 +1,12 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "   ",
-    " P ",
-    "   "
-  ],
-  "key": {
-    "P": {
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
       "item": "am:laurier2"
     }
-  },
+  ],
   "result": {
-    "item": "am:laurier",
+    "item": "am:plante_laurier",
     "count": 1
   }
 }

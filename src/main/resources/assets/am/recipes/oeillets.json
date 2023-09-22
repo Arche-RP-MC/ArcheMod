@@ -1,17 +1,12 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "   ",
-    " P ",
-    "   "
-  ],
-  "key": {
-    "P": {
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
       "item": "am:oeillets2"
     }
-  },
+  ],
   "result": {
-    "item": "am:oeillets",
+    "item": "am:plante_oeillets",
     "count": 1
   }
 }

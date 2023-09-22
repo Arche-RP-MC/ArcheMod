@@ -1,17 +1,12 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "   ",
-    " P ",
-    "   "
-  ],
-  "key": {
-    "P": {
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
       "item": "am:glycine2"
     }
-  },
+  ],
   "result": {
-    "item": "am:glycine",
+    "item": "am:plante_glycine",
     "count": 1
   }
 }

@@ -1,6 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "am:blocks/plante_allium_stage_0"
-  }
-}

@@ -519,6 +519,8 @@ public class ModItems {
     public static Item GRAINE_ALLIUM;
     public static Item GRAINE_HOUSTONIE_BLEUE;
 
+    public static Item GRAINE_CAPRE;
+
     // /\Ajouts/\
     public static Item GRAINE_ANETH;
     public static Item GRAINE_ANIS;
@@ -2422,8 +2424,8 @@ public class ModItems {
     public static final Item PLANTE_TULIPE_ORANGE = new ItemBase("plante_tulipe_orange");
     public static final Item PLANTE_TULIPE_ROSE = new ItemBase("plante_tulipe_rose");
     public static final Item PLANTE_TULIPE_BLANCHE = new ItemBase("plante_tulipe_blanche");
-    public static final Item PLANTE_OIGNON = new ItemBase("plante_oignon");
-    public static final Item PLANTE_AIL = new ItemBase("plante_ail");
+    //public static final Item PLANTE_OIGNON = new ItemBase("plante_oignon");
+    //public static final Item PLANTE_AIL = new ItemBase("plante_ail");
     public static final Item PLANTE_ORCHIDEE_BLEUE = new ItemBase("plante_orchidee_bleue");
     public static final Item PLANTE_ROSIER = new ItemBase("plante_rosier");
     public static final Item PLANTE_LIERRE_FLEURI = new ItemBase("plante_lierre_fleuri");
@@ -2493,7 +2495,6 @@ public class ModItems {
     public static final Item PLANTE_VERGE_D_OR =  new ItemBase("plante_verge_d_or");
     public static final Item PLANTE_VERVEINE =  new ItemBase("plante_verveine");
     public static final Item PLANTE_VIOLETTES =  new ItemBase("plante_violettes");
-    //TODO : MAJ DES VISUELS ET SUPPR LES AUTRES
 
     public static final Item BLE = new GraineBle("ble");
     public static final Item CANNELLE = new ItemBase("cannelle");

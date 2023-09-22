@@ -13,10 +13,10 @@
       "item": "am:once_d_herboriste"
     },
     "U": {
-      "item": "am:gui"
+      "item": "am:plante_gui"
     },
     "C": {
-      "item": "am:buisson_etrange"
+      "item": "am:plante_buisson_etrange"
     },
     "O": {
       "item": "am:pomme_de_terre_cru"

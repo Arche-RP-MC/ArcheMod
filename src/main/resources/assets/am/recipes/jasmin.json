@@ -1,17 +1,12 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "   ",
-    " P ",
-    "   "
-  ],
-  "key": {
-    "P": {
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
       "item": "am:jasmin2"
     }
-  },
+  ],
   "result": {
-    "item": "am:jasmin",
+    "item": "am:plante_jasmin",
     "count": 1
   }
 }

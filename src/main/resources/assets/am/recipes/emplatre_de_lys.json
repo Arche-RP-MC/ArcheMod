@@ -10,13 +10,13 @@
       "item": "am:emplatre"
     },
     "C": {
-      "item": "am:lys"
+      "item": "am:plante_lys"
     },
     "S": {
-      "item": "am:sauge"
+      "item": "am:plante_sauge"
     },
     "E": {
-      "item": "am:buisson_de_fleurs_blanches"
+      "item": "am:plante_buisson_de_fleurs_blanches"
     },
     "M": [
       {

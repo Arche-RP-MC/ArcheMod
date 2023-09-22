@@ -1,17 +1,12 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "   ",
-    " P ",
-    "   "
-  ],
-  "key": {
-    "P": {
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
       "item": "am:aneth2"
     }
-  },
+  ],
   "result": {
-    "item": "am:aneth",
+    "item": "am:plante_aneth",
     "count": 1
   }
 }

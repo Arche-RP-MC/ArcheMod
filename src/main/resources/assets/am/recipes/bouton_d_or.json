@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "am:bouton_d_or2"
+    }
+  ],
+  "result": {
+    "item": "am:plante_bouton_d_or",
+    "count": 1
+  }
+}

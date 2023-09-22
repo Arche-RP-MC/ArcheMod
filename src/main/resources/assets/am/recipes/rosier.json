@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "am:rosier2"
+    }
+  ],
+  "result": {
+    "item": "am:plante_rosier",
+    "count": 1
+  }
+}

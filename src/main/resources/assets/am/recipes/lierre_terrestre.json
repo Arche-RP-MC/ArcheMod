@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "am:lierre_terrestre2"
+    }
+  ],
+  "result": {
+    "item": "am:plante_lierre_terrestre",
+    "count": 1
+  }
+}

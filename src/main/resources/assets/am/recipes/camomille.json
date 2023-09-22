@@ -1,17 +1,12 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "   ",
-    " P ",
-    "   "
-  ],
-  "key": {
-    "P": {
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
       "item": "am:camomille2"
     }
-  },
+  ],
   "result": {
-    "item": "am:camomille",
+    "item": "am:plante_camomille",
     "count": 1
   }
 }

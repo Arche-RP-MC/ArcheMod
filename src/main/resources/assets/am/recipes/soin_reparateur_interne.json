@@ -7,16 +7,16 @@
   ],
   "key": {
     "B": {
-      "item": "am:narcisses"
+      "item": "am:plante_narcisses"
     },
     "P": {
-      "item": "am:chardon"
+      "item": "am:plante_chardon"
     },
     "C": {
-      "item": "am:glycine"
+      "item": "am:plante_glycine"
     },
     "S": {
-      "item": "am:ronces"
+      "item": "am:plante_ronces"
     },
     "G": {
       "item": "am:bocal"

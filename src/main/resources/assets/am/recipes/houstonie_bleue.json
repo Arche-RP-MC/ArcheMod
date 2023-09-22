@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "am:houstonie_bleue2"
+    }
+  ],
+  "result": {
+    "item": "am:plante_houstonie_bleue",
+    "count": 1
+  }
+}

@@ -1,17 +1,12 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "   ",
-    " P ",
-    "   "
-  ],
-  "key": {
-    "P": {
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
       "item": "am:basilic2"
     }
-  },
+  ],
   "result": {
-    "item": "am:basilic",
+    "item": "am:plante_basilic",
     "count": 1
   }
 }

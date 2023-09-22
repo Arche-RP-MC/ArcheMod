@@ -1,17 +1,12 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "   ",
-    " P ",
-    "   "
-  ],
-  "key": {
-    "P": {
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
       "item": "am:joli_buisson2"
     }
-  },
+  ],
   "result": {
-    "item": "am:joli_buisson",
+    "item": "am:plante_joli_buisson",
     "count": 1
   }
 }

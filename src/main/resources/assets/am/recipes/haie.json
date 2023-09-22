@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "am:haie2"
+    }
+  ],
+  "result": {
+    "item": "am:plante_haie",
+    "count": 1
+  }
+}

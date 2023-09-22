@@ -10,10 +10,10 @@
       "item": "am:ail"
     },
     "P": {
-      "item": "am:sauge"
+      "item": "am:plante_sauge"
     },
     "C": {
-      "item": "am:pivoine"
+      "item": "am:plante_pivoine"
     },
     "G": {
       "item": "am:bocal"
