@@ -980,7 +980,7 @@ public class ModItems {
     public static final Item PINCEAU_BROSSE = new OutilsEnFer("pinceau_brosse");
     public static final Item TICKET = new ItemBase("ticket");
     public static final Item JEU_DE_CARTES = new ItemBase("jeu_de_cartes");
-
+    public static final Item EVENTAIL = new ItemBase("eventail");
 
     //Métaux fondus - lingots - barres - plaques - clous
 
