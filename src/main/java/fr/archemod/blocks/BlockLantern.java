@@ -38,6 +38,12 @@ public class BlockLantern extends BlockBase implements ITileEntityProvider {
 
     public final boolean burning;
 
+    @Override
+    public void breakBlock(World world, BlockPos pos, IBlockState state) {
+        TileEntity tileentity = world.getTileEntity(pos);
+        world.removeTileEntity(pos);
+        super.breakBlock(world, pos, state);
+    }
 
     public BlockLantern(String name, boolean burning, Material material, float hardness, float resistance, SoundType soundType) {
         super(name + (!burning ? "_off" : ""), material, hardness, resistance, soundType);
