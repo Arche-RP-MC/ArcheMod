@@ -7,15 +7,13 @@
       "model": "am:jaune_ground_lantern"
     },
     "orientation=1,position=bottom": {
-      "model": "am:jaune_ground_lantern",
-      "y": 90
+      "model": "am:jaune_ground_lantern"
     },
     "orientation=2,position=bottom": {
-      "model": "am:jaune_ground_lantern_1",
-      "y": 90
+      "model": "am:jaune_ground_lantern"
     },
     "orientation=3,position=bottom": {
-      "model": "am:jaune_ground_lantern_1"
+      "model": "am:jaune_ground_lantern"
     },
     "orientation=0,position=wall": {
       "model": "am:jaune_wall_lantern",
@@ -36,15 +34,13 @@
       "model": "am:jaune_lantern"
     },
     "orientation=1,position=top": {
-      "model": "am:jaune_lantern",
-      "y": 90
+      "model": "am:jaune_lantern"
     },
     "orientation=2,position=top": {
-      "model": "am:jaune_lantern_1",
-      "y": 90
+      "model": "am:jaune_lantern"
     },
     "orientation=3,position=top": {
-      "model": "am:jaune_lantern_1"
+      "model": "am:jaune_lantern"
     }
   }
 }

@@ -82,6 +82,7 @@ public class TileEntityLightBlock extends TileEntity implements ITickable {
             ticks++;
 
             IBlockState state = world.getBlockState(this.getPos());
+            if(!(state.getBlock() instanceof BlockLantern)) return;
             BlockLantern block = (BlockLantern) state.getBlock();
             if (ticks == 20) {
 
