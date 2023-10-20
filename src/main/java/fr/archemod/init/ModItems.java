@@ -152,11 +152,12 @@ public class ModItems {
 
     //OUTILS
 
-    public static final Item RASOIR = new ItemConsomable("rasoir", 7);
+    public static final Item FAUX = new OutilsEnFer("faux");
+    public static final Item RASOIR = new ItemConsommable("rasoir", 7);
     public static final Item AIGUILLE = new ItemBase("aiguille");
     public static final Item ARROSOIR = new ItemBase("arrosoir");
-    public static final Item BALAI = new ItemConsomable("balai", 50);
-    public static final Item PLUMEAU = new ItemConsomable("plumeau", 50);
+    public static final Item BALAI = new ItemConsommable("balai", 50);
+    public static final Item PLUMEAU = new ItemConsommable("plumeau", 50);
     public static final Item CANNE_A_PECHE_TEST = new CustomFishingRod("canne_a_peche_test");
     public static final Item CANNE_DE_VERRIER = new OutilsEnFer("canne_de_verrier");
     public static final Item CISEAUX_A_BOIS = new OutilsEnFer("ciseaux_a_bois");
@@ -2080,22 +2081,22 @@ public class ModItems {
     public static final Item PANTALON_VIOLET = new ItemBase("pantalon_violet");
     public static final Item PANTALON_VERT_CLAIR = new ItemBase("pantalon_vert_clair");
 
-    public static final Item PETITE_SERVIETTE = new ItemConsomable("petite_serviette", 30);
-    public static final Item PETITE_SERVIETTE_NOIR = new ItemConsomable("petite_serviette_noir", 30);
-    public static final Item PETITE_SERVIETTE_BLEU = new ItemConsomable("petite_serviette_bleu", 30);
-    public static final Item PETITE_SERVIETTE_MARRON = new ItemConsomable("petite_serviette_marron", 30);
-    public static final Item PETITE_SERVIETTE_CYAN = new ItemConsomable("petite_serviette_cyan", 30);
-    public static final Item PETITE_SERVIETTE_GRIS = new ItemConsomable("petite_serviette_gris", 30);
-    public static final Item PETITE_SERVIETTE_BLEU_CLAIR = new ItemConsomable("petite_serviette_bleu_clair", 30);
-    public static final Item PETITE_SERVIETTE_VERT = new ItemConsomable("petite_serviette_vert", 30);
-    public static final Item PETITE_SERVIETTE_MAGENTA = new ItemConsomable("petite_serviette_magenta", 30);
-    public static final Item PETITE_SERVIETTE_ORANGE = new ItemConsomable("petite_serviette_orange", 30);
-    public static final Item PETITE_SERVIETTE_ROSE = new ItemConsomable("petite_serviette_rose", 30);
-    public static final Item PETITE_SERVIETTE_ROUGE = new ItemConsomable("petite_serviette_rouge", 30);
-    public static final Item PETITE_SERVIETTE_JAUNE = new ItemConsomable("petite_serviette_jaune", 30);
-    public static final Item PETITE_SERVIETTE_GRIS_CLAIR = new ItemConsomable("petite_serviette_gris_clair", 30);
-    public static final Item PETITE_SERVIETTE_VIOLET = new ItemConsomable("petite_serviette_violet", 30);
-    public static final Item PETITE_SERVIETTE_VERT_CLAIR = new ItemConsomable("petite_serviette_vert_clair", 30);
+    public static final Item PETITE_SERVIETTE = new ItemConsommable("petite_serviette", 30);
+    public static final Item PETITE_SERVIETTE_NOIR = new ItemConsommable("petite_serviette_noir", 30);
+    public static final Item PETITE_SERVIETTE_BLEU = new ItemConsommable("petite_serviette_bleu", 30);
+    public static final Item PETITE_SERVIETTE_MARRON = new ItemConsommable("petite_serviette_marron", 30);
+    public static final Item PETITE_SERVIETTE_CYAN = new ItemConsommable("petite_serviette_cyan", 30);
+    public static final Item PETITE_SERVIETTE_GRIS = new ItemConsommable("petite_serviette_gris", 30);
+    public static final Item PETITE_SERVIETTE_BLEU_CLAIR = new ItemConsommable("petite_serviette_bleu_clair", 30);
+    public static final Item PETITE_SERVIETTE_VERT = new ItemConsommable("petite_serviette_vert", 30);
+    public static final Item PETITE_SERVIETTE_MAGENTA = new ItemConsommable("petite_serviette_magenta", 30);
+    public static final Item PETITE_SERVIETTE_ORANGE = new ItemConsommable("petite_serviette_orange", 30);
+    public static final Item PETITE_SERVIETTE_ROSE = new ItemConsommable("petite_serviette_rose", 30);
+    public static final Item PETITE_SERVIETTE_ROUGE = new ItemConsommable("petite_serviette_rouge", 30);
+    public static final Item PETITE_SERVIETTE_JAUNE = new ItemConsommable("petite_serviette_jaune", 30);
+    public static final Item PETITE_SERVIETTE_GRIS_CLAIR = new ItemConsommable("petite_serviette_gris_clair", 30);
+    public static final Item PETITE_SERVIETTE_VIOLET = new ItemConsommable("petite_serviette_violet", 30);
+    public static final Item PETITE_SERVIETTE_VERT_CLAIR = new ItemConsommable("petite_serviette_vert_clair", 30);
 
     public static final Item ROBE_NOIR = new ItemBase("robe_noir");
     public static final Item ROBE_BLEU = new ItemBase("robe_bleu");
@@ -2149,23 +2150,23 @@ public class ModItems {
     public static final Item JUPE_VIOLET = new ItemBase("jupe_violet");
     public static final Item JUPE_VERT_CLAIR = new ItemBase("jupe_vert_clair");
 
-    public static final Item SERVIETTE = new ItemConsomable("serviette", 50);
-    public static final Item SERVIETTE_NOIR = new ItemConsomable("serviette_noir", 50);
-    public static final Item SERVIETTE_BLEU = new ItemConsomable("serviette_bleu", 50);
-    public static final Item SERVIETTE_MARRON = new ItemConsomable("serviette_marron", 50);
-    public static final Item SERVIETTE_CYAN = new ItemConsomable("serviette_cyan", 50);
-    public static final Item SERVIETTE_GRIS = new ItemConsomable("serviette_gris", 50);
-    public static final Item SERVIETTE_BLEU_CLAIR = new ItemConsomable("serviette_bleu_clair", 50);
-    public static final Item SERVIETTE_VERT = new ItemConsomable("serviette_vert", 50);
-    public static final Item SERVIETTE_MAGENTA = new ItemConsomable("serviette_magenta", 50);
-    public static final Item SERVIETTE_ORANGE = new ItemConsomable("serviette_orange", 50);
-    public static final Item SERVIETTE_ROSE = new ItemConsomable("serviette_rose", 50);
-    public static final Item SERVIETTE_ROUGE = new ItemConsomable("serviette_rouge", 50);
-    public static final Item SERVIETTE_BLANC = new ItemConsomable("serviette_blanc", 50);
-    public static final Item SERVIETTE_JAUNE = new ItemConsomable("serviette_jaune", 50);
-    public static final Item SERVIETTE_GRIS_CLAIR = new ItemConsomable("serviette_gris_clair", 50);
-    public static final Item SERVIETTE_VIOLET = new ItemConsomable("serviette_violet", 50);
-    public static final Item SERVIETTE_VERT_CLAIR = new ItemConsomable("serviette_vert_clair", 50);
+    public static final Item SERVIETTE = new ItemConsommable("serviette", 50);
+    public static final Item SERVIETTE_NOIR = new ItemConsommable("serviette_noir", 50);
+    public static final Item SERVIETTE_BLEU = new ItemConsommable("serviette_bleu", 50);
+    public static final Item SERVIETTE_MARRON = new ItemConsommable("serviette_marron", 50);
+    public static final Item SERVIETTE_CYAN = new ItemConsommable("serviette_cyan", 50);
+    public static final Item SERVIETTE_GRIS = new ItemConsommable("serviette_gris", 50);
+    public static final Item SERVIETTE_BLEU_CLAIR = new ItemConsommable("serviette_bleu_clair", 50);
+    public static final Item SERVIETTE_VERT = new ItemConsommable("serviette_vert", 50);
+    public static final Item SERVIETTE_MAGENTA = new ItemConsommable("serviette_magenta", 50);
+    public static final Item SERVIETTE_ORANGE = new ItemConsommable("serviette_orange", 50);
+    public static final Item SERVIETTE_ROSE = new ItemConsommable("serviette_rose", 50);
+    public static final Item SERVIETTE_ROUGE = new ItemConsommable("serviette_rouge", 50);
+    public static final Item SERVIETTE_BLANC = new ItemConsommable("serviette_blanc", 50);
+    public static final Item SERVIETTE_JAUNE = new ItemConsommable("serviette_jaune", 50);
+    public static final Item SERVIETTE_GRIS_CLAIR = new ItemConsommable("serviette_gris_clair", 50);
+    public static final Item SERVIETTE_VIOLET = new ItemConsommable("serviette_violet", 50);
+    public static final Item SERVIETTE_VERT_CLAIR = new ItemConsommable("serviette_vert_clair", 50);
 
     public static final Item SOUS_VETEMENT_FEMININ_NOIR = new ItemBase("sous_vetement_feminin_noir");
     public static final Item SOUS_VETEMENT_FEMININ_BLEU = new ItemBase("sous_vetement_feminin_bleu");
@@ -2274,11 +2275,11 @@ public class ModItems {
 
     public static final Item BANDAGE = new ItemBase("bandage");
     public static final Item BANDAGE_ENSANGLANTE = new ItemBase("bandage_ensanglante");
-    public static final Item BAUME_A_LA_CAMOMILLE = new ItemConsomable("baume_a_la_camomille", 7);
-    public static final Item BAUME_EXFOLIANT = new ItemConsomable("baume_exfoliant", 7);
+    public static final Item BAUME_A_LA_CAMOMILLE = new ItemConsommable("baume_a_la_camomille", 7);
+    public static final Item BAUME_EXFOLIANT = new ItemConsommable("baume_exfoliant", 7);
     public static final Item BOUGIE = new ItemBase("candle");
     public static final Item BOUTEILLE_ALCOOL_PUR = new BouteilleDeVin("bouteille_alcool_pur", 0, 0.2F, false);
-    public static final Item BOUTEILLE_DE_PARFUM = new ItemConsomable("bouteille_de_parfum", 7);
+    public static final Item BOUTEILLE_DE_PARFUM = new ItemConsommable("bouteille_de_parfum", 7);
     public static final Item CANNE_BEQUILLE = new ItemBase("canne_bequille");
     public static final Item COLLE = new ItemBase("colle");
     public static final Item EMPLATRE = new ItemBase("emplatre");
@@ -2287,24 +2288,24 @@ public class ModItems {
     public static final Item EMPLATRE_DE_LYS = new ItemBase("emplatre_de_lys");
     public static final Item ENCENS = new ItemIngrediant("encens", 7);
     public static final Item EXTRAIT_DE_PAVOT_CONCENTRE = new ItemBase("extrait_de_pavot_concentre");
-    public static final Item FARD_A_JOUE = new ItemConsomable("fard_a_joue", 7);
+    public static final Item FARD_A_JOUE = new ItemConsommable("fard_a_joue", 7);
     public static final Item HUILE_ESSENTIELLE = new ItemIngrediant("huile_essentielle", 7);
     public static final Item LEVURE = new ItemBase("levure");
-    public static final Item MASQUE_ARGILE = new ItemConsomable("masque_argile", 7);
-    public static final Item MASQUE_CHEVEUX = new ItemConsomable("masque_cheveux", 7);
-    public static final Item NOIR_CHARBON = new ItemConsomable("noir_charbon", 7);
+    public static final Item MASQUE_ARGILE = new ItemConsommable("masque_argile", 7);
+    public static final Item MASQUE_CHEVEUX = new ItemConsommable("masque_cheveux", 7);
+    public static final Item NOIR_CHARBON = new ItemConsommable("noir_charbon", 7);
     public static final Item ONCE_DE_POISON_LEGER = new ItemBase("once_de_poison_leger");
     public static final Item ONCE_D_HERBORISTE = new ItemBase("once_d_herboriste");
-    public static final Item OPIUM_A_FUMER = new ItemConsomable("opium_a_fumer", 7);
-    public static final Item PATE_A_DENT = new ItemConsomable("pate_a_dent", 7);
+    public static final Item OPIUM_A_FUMER = new ItemConsommable("opium_a_fumer", 7);
+    public static final Item PATE_A_DENT = new ItemConsommable("pate_a_dent", 7);
     public static final Item PATE_DIVERSE = new ItemBase("pate_diverse");
-    public static final Item POUDRE_DE_TEINT = new ItemConsomable("poudre_de_teint", 7);
-    public static final Item POUDRE_QUELCONQUE = new ItemConsomable("poudre_quelconque", 7);
-    public static final Item ROUGE_A_LEVRES = new ItemConsomable("rouge_a_levres", 7);
-    public static final Item SAVON = new ItemConsomable("savon", 7);
+    public static final Item POUDRE_DE_TEINT = new ItemConsommable("poudre_de_teint", 7);
+    public static final Item POUDRE_QUELCONQUE = new ItemConsommable("poudre_quelconque", 7);
+    public static final Item ROUGE_A_LEVRES = new ItemConsommable("rouge_a_levres", 7);
+    public static final Item SAVON = new ItemConsommable("savon", 7);
     public static final Item SEAU_DE_COLLE = new ItemBase("seau_de_colle");
     public static final Item SOUDE = new ItemBase("soude");
-    public static final Item TABAC = new ItemConsomable("tabac", 7);
+    public static final Item TABAC = new ItemConsommable("tabac", 7);
     public static final Item VERNIS = new ItemIngrediant("vernis", 7);
 
     // Porcelaine
@@ -2556,4 +2557,5 @@ public class ModItems {
     public static final Item INSECTE_TIQUE = new ItemBase("insecte_tique");
     public static final Item INSECTE_VER_DE_FARINE = new ItemBase("insecte_ver_de_farine");
     public static final Item INSECTE_VER_DE_TERRE = new ItemBase("insecte_ver_de_terre");
+
 }

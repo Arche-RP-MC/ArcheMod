@@ -7,8 +7,8 @@ import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.EnumHand;
 import net.minecraft.world.World;
 
-public class ItemConsomable extends ItemBase {
-    public ItemConsomable(String name, int durability) {
+public class ItemConsommable extends ItemBase {
+    public ItemConsommable(String name, int durability) {
         super(name);
         setNoRepair();
         setMaxStackSize(1);

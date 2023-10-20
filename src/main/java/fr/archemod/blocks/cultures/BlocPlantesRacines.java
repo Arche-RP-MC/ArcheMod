@@ -1,4 +1,4 @@
-package fr.archemod.blocks.agriculture;
+package fr.archemod.blocks.cultures;
 
 import fr.archemod.ArcheMod;
 import fr.archemod.init.ModBlocks;
@@ -6,6 +6,7 @@ import fr.archemod.init.ModItems;
 import net.minecraft.block.BlockCrops;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumFacing;
@@ -15,8 +16,8 @@ import net.minecraft.world.World;
 
 import java.util.Random;
 
-
-public class BlocPlantesBotaniste extends BlockCrops {
+//Pour plantes racines récoltées à la fourche ou à la bêche
+public class BlocPlantesRacines extends BlockCrops {
 
     private final Item seed;
     private final Item crop;
@@ -24,7 +25,8 @@ public class BlocPlantesBotaniste extends BlockCrops {
     private final int dropsWhenRightClicked;
     private final int dropsWhenBroken;
 
-    public BlocPlantesBotaniste(String name, Item seed, Item crop, int dropsWhenMature, int dropsWhenRightClicked, int dropsWhenBroken) {
+
+    public BlocPlantesRacines(String name, Item seed, Item crop, int dropsWhenMature, int dropsWhenRightClicked, int dropsWhenBroken) {
         setTranslationKey(name);
         setRegistryName(name);
         setCreativeTab(ArcheMod.archeCreativeTabs);
@@ -55,19 +57,19 @@ public class BlocPlantesBotaniste extends BlockCrops {
         Random rand = world instanceof World ? ((World) world).rand : new Random();
 
         if (age >= getMaxAge()) {
-            drops.add(new ItemStack(seed, dropsWhenMature + rand.nextInt(dropsWhenBroken + 1), 0));
-            drops.add(new ItemStack(crop, dropsWhenMature + rand.nextInt(dropsWhenBroken + 1), 0));
+            drops.add(new ItemStack(seed, dropsWhenMature/*+ rand.nextInt(dropsWhenRightClicked + 1)*/, 0));
+            drops.add(new ItemStack(crop, dropsWhenMature/*+ rand.nextInt(dropsWhenRightClicked + 1)*/, 0));
         }
     }
 
     public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer player, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
         ItemStack heldItem = player.getHeldItem(hand);
 
-        if (heldItem.getItem() == ModItems.SERPE_EN_FER || heldItem.getItem() == ModItems.SERPE_EN_ACIER) {
+        if (heldItem.getItem() == ModItems.FOURCHE_EN_FER || heldItem.getItem() == Items.IRON_HOE || heldItem.getItem() == Items.IRON_SHOVEL) {
             if (!worldIn.isRemote) {
                 int age = getAge(state);
                 if (age >= getMaxAge()) {
-                    worldIn.setBlockState(pos, withAge(0));
+                    worldIn.setBlockToAir(pos);
                     spawnAsEntity(worldIn, pos, new ItemStack(crop, dropsWhenRightClicked));
                     heldItem.damageItem(1, player);
                 }
@@ -76,7 +78,6 @@ public class BlocPlantesBotaniste extends BlockCrops {
         }
 
         return super.onBlockActivated(worldIn, pos, state, player, hand, facing, hitX, hitY, hitZ);
+
     }
-
-
 }
