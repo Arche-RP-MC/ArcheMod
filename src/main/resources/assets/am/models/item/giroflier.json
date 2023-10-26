@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "am:items/clou_de_girofle"
+    "layer0": "am:blocks/giroflier8"
   }
 }

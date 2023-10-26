@@ -399,7 +399,7 @@ public class ModBlocks {
     public static final Block TOURNESOL = new BlockPlanteDeco("tournesol");
     public static final Block ALLIUM = new BlockPlanteDeco("allium");
     public static final Block HOUSTONIE_BLEUE = new BlockPlanteDeco("houstonie_bleue");
-    public static final Block CLOU_DE_GIROFLE = new BlockPlanteDeco("clou_de_girofle");
+    public static final Block GIROFLIER = new BlockPlanteDeco("giroflier");
     public static final Block RHUBARBE = new BlockPlanteDeco("rhubarbe");
     public static final Block FLEUR_DE_PAVOT = new BlockPlanteDeco("fleur_de_pavot");
     public static final Block SUREAU = new BlockPlanteDeco("sureau");
@@ -597,7 +597,7 @@ public class ModBlocks {
     public static final Block PLAN_ESTRAGON = new BlocPlantesBotaniste("plan_estragon", ModItems.GRAINE_ESTRAGON, ModItems.PLANTE_ESTRAGON, 2, 2, 2);
     public static final Block PLAN_ETOILE_DES_GLACIERS = new BlocPlantesBotaniste("plan_etoile_des_glaciers", ModItems.GRAINE_ETOILE_DES_GLACIERS, ModItems.PLANTE_ETOILE_DES_GLACIERS, 0, 0, 0);
     public static final Block PLAN_GERANIUM = new BlocPlantesBotaniste("plan_geranium", ModItems.GRAINE_GERANIUM, ModItems.PLANTE_GERANIUM, 2, 2, 2);
-    public static final Block PLAN_GIROFLIER = new BlocPlantesBotaniste("plan_giroflier", ModItems.GRAINE_GIROFLIER, ModItems.PLANTE_CLOU_DE_GIROFLE, 2, 2, 2);
+    public static final Block PLAN_GIROFLIER = new BlocPlantesBotaniste("plan_giroflier", ModItems.GRAINE_GIROFLIER, ModItems.CLOU_DE_GIROFLE, 2, 2, 2);
     public static final Block PLAN_GLYCINE = new BlocPlantesBotaniste("plan_glycine", ModItems.GRAINE_GLYCINE, ModItems.PLANTE_GLYCINE, 2, 2, 2);
     public static final Block PLAN_GUI = new BlocPlantesBotaniste("plan_gui", ModItems.GRAINE_GUI, ModItems.PLANTE_GUI, 2, 2, 2);
     public static final Block PLAN_GUZMANIAS = new BlocPlantesBotaniste("plan_guzmanias", ModItems.GRAINE_GUZMANIAS, ModItems.PLANTE_GUZMANIAS, 2, 2, 2);

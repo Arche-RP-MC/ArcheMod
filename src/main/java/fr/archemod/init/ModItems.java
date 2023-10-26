@@ -2453,7 +2453,7 @@ public class ModItems {
     public static final Item PLANTE_CHARDON =  new ItemBase("plante_chardon");
     public static final Item PLANTE_CIBOULETTE =  new ItemBase("plante_ciboulette");
     public static final Item PLANTE_CLOCHETTES =  new ItemBase("plante_clochettes");
-    public static final Item PLANTE_CLOU_DE_GIROFLE = new ItemBase("plante_clou_de_girofle");
+    public static final Item CLOU_DE_GIROFLE = new ItemBase("clou_de_girofle");
     public static final Item PLANTE_COSMOS =  new ItemBase("plante_cosmos");
     public static final Item PLANTE_ESTRAGON = new ItemBase("plante_estragon");
     public static final Item PLANTE_ETOILE_DES_GLACIERS =  new ItemBase("plante_etoile_des_glaciers");
