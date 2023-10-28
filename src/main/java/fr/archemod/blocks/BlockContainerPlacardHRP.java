@@ -1,9 +1,11 @@
 package fr.archemod.blocks;
 
 import fr.archemod.blocks.tileentity.TileEntityBlockPlacardHRP;
+import net.minecraft.block.BlockHorizontal;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.world.World;
 

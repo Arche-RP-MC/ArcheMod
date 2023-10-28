@@ -30,7 +30,6 @@ import java.util.Random;
 
 public class BlockNasse extends BlockBase implements ITileEntityProvider {
 
-
     public BlockNasse(String name, Material material, float hardness, float resistance, SoundType soundType) {
         super(name, material, hardness, resistance, soundType);
         setLightLevel(0F);
@@ -47,7 +46,6 @@ public class BlockNasse extends BlockBase implements ITileEntityProvider {
         TileEntity tileentity = worldIn.getTileEntity(pos);
         return tileentity == null ? false : tileentity.receiveClientEvent(eventID, eventParam);
     }
-
 
     @Override
     public void breakBlock(World world, BlockPos pos, IBlockState state) {
@@ -68,10 +66,8 @@ public class BlockNasse extends BlockBase implements ITileEntityProvider {
         return true;
     }
 
-
     @Override
     public void onBlockPlacedBy(World worldIn, BlockPos pos, IBlockState state, EntityLivingBase placer, ItemStack stack) {}
-
 
     public void harvestBlock(World worldIn, EntityPlayer player, BlockPos pos, IBlockState state, @Nullable TileEntity te, @Nullable ItemStack stack) {
         super.harvestBlock(worldIn, player, pos, state, te, stack);
@@ -90,7 +86,6 @@ public class BlockNasse extends BlockBase implements ITileEntityProvider {
     public BlockRenderLayer getRenderLayer() {
         return BlockRenderLayer.CUTOUT;
     }
-
 
     @Override
     public boolean isTranslucent(IBlockState state) {
