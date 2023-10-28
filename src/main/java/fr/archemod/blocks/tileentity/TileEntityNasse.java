@@ -21,7 +21,7 @@ import java.util.Date;
 import java.util.Objects;
 import java.util.Random;
 
-public class TileEntityNasse extends TileEntityLockableLoot {
+public class TileEntityNasse extends TileEntityBlockInventory {
 
     private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(7, ItemStack.EMPTY);
     private boolean enCours = false;
@@ -85,6 +85,11 @@ public class TileEntityNasse extends TileEntityLockableLoot {
     @Override
     public void closeInventory(EntityPlayer player) {
         reloadAppat();
+    }
+
+    @Override
+    public int getSlotInRow() {
+        return 1;
     }
 
     @Override
