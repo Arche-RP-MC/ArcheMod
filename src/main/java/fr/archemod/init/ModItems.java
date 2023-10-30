@@ -5,7 +5,6 @@ import fr.archemod.items.agriculture.GraineBle;
 import fr.archemod.items.agriculture.GraineOrge;
 import fr.archemod.items.food.*;
 import fr.archemod.items.peche.*;
-import fr.archemod.items.sciure.*;
 import fr.archemod.items.tools.SeauBois;
 import fr.archemod.items.tools.ToolAxe;
 import fr.archemod.items.tools.ToolSword;
@@ -974,8 +973,8 @@ public class ModItems {
     public static final Item PAPIER_A_PLAN = new ItemBase("papier_a_plan");
     public static final Item PAPIER_ECRIT = new ItemBase("papier_ecrit");
     public static final Item PAPIER_HUMIDE = new ItemBase("papier_humide");
-    public static final Item PARCHEMIN = new Parchemin("parchemin");
     public static final Item PARCHEMIN_DESCELLE = new ItemBase("parchemin_descelle");
+    public static final Item PARCHEMIN = new ItemTransformable("parchemin", new ArrayList() {{ add(ModItems.PARCHEMIN_DESCELLE); }});
     public static final Item PATE_A_PAPIER = new ItemBase("pate_a_papier");
     public static final Item PINCEAU = new ItemIngrediant("pinceau", 7);
     public static final Item PINCEAU_BROSSE = new OutilsEnFer("pinceau_brosse");
@@ -1149,18 +1148,18 @@ public class ModItems {
     public static final Item BATON_SAPIN = new ItemBase("baton_sapin");
 
     public static final Item SCIURE = new ItemBase("sciure");
-    public static final Item PLANCHE_SCIURE_ACACIA = new Sciure_Acacia("planche_sciure_acacia");
     public static final Item PLANCHE_ACACIA = new ItemBase("planche_acacia");
-    public static final Item PLANCHE_SCIURE_ACAJOU = new Sciure_Acajou("planche_sciure_acajou");
+    public static final Item PLANCHE_SCIURE_ACACIA = new ItemTransformable("planche_sciure_acacia", new ArrayList() {{ add(ModItems.PLANCHE_ACACIA); add(ModItems.SCIURE); }});
     public static final Item PLANCHE_ACAJOU = new ItemBase("planche_acajou");
-    public static final Item PLANCHE_SCIURE_BOULEAU = new Sciure_Bouleau("planche_sciure_bouleau");
+    public static final Item PLANCHE_SCIURE_ACAJOU = new ItemTransformable("planche_sciure_acajou", new ArrayList() {{ add(ModItems.PLANCHE_ACAJOU); add(ModItems.SCIURE); }});
     public static final Item PLANCHE_BOULEAU = new ItemBase("planche_bouleau");
-    public static final Item PLANCHE_SCIURE_CHENE = new Sciure_Chene("planche_sciure_chene");
+    public static final Item PLANCHE_SCIURE_BOULEAU = new ItemTransformable("planche_sciure_bouleau", new ArrayList() {{ add(ModItems.PLANCHE_BOULEAU); add(ModItems.SCIURE); }});
     public static final Item PLANCHE_CHENE = new ItemBase("planche_chene");
-    public static final Item PLANCHE_SCIURE_CHENE_NOIR = new Sciure_Chene_Noir("planche_sciure_chene_noir");
+    public static final Item PLANCHE_SCIURE_CHENE = new ItemTransformable("planche_sciure_chene", new ArrayList() {{ add(ModItems.PLANCHE_CHENE); add(ModItems.SCIURE); }});
     public static final Item PLANCHE_CHENE_NOIR = new ItemBase("planche_chene_noir");
-    public static final Item PLANCHE_SCIURE_SAPIN = new Sciure_Sapin("planche_sciure_sapin");
+    public static final Item PLANCHE_SCIURE_CHENE_NOIR = new ItemTransformable("planche_sciure_chene_noir", new ArrayList() {{ add(ModItems.PLANCHE_CHENE_NOIR); add(ModItems.SCIURE); }});
     public static final Item PLANCHE_SAPIN = new ItemBase("planche_sapin");
+    public static final Item PLANCHE_SCIURE_SAPIN = new ItemTransformable("planche_sciure_sapin", new ArrayList() {{ add(ModItems.PLANCHE_SAPIN); add(ModItems.SCIURE); }});
 
     public static final Item PIPE = new ItemBase("pipe");
     public static final Item PIPE_DROITE = new ItemBase("pipe_droite");
@@ -1286,8 +1285,8 @@ public class ModItems {
     public static final Item POISSON_CLOWN_NOIR = new ItemBase("poisson_clown_noir");
     public static final Item POISSON_LUNE = new ItemBase("poisson_lune");
     public static final Item POISSON_PERROQUET = new ItemBase("poisson_perroquet");
-    public static final Item POULPE = new Poulpe("poulpe");
     public static final Item POULPE_MORT = new ItemBase("poulpe_mort");
+    public static final Item POULPE = new ItemTransformable("poulpe", new ArrayList() {{ add(ModItems.POULPE_MORT); add(ModItems.POCHE_D_ENCRE); add(ModItems.POCHE_D_ENCRE); }});
     public static final Item ROUGET = new Poisson("rouget");
     public static final Item SARDINE = new Poisson("sardine");
     public static final Item SEL = new ItemBase("sel");
