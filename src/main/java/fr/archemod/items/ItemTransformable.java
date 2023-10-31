@@ -18,6 +18,10 @@ public class ItemTransformable extends ItemBase {
         drops = itemDrops;
     }
 
+    public ArrayList<Item> getDrops() {
+        return drops;
+    }
+
     @Override
     public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) {
         if (!worldIn.isRemote && handIn == EnumHand.MAIN_HAND) {

@@ -8,7 +8,6 @@ import fr.archemod.items.peche.*;
 import fr.archemod.items.tools.SeauBois;
 import fr.archemod.items.tools.ToolAxe;
 import fr.archemod.items.tools.ToolSword;
-import fr.archemod.items.use.*;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemAxe;
@@ -67,12 +66,6 @@ public class ModItems {
     public static final Item PEPITE_FER = new ItemBase("pepite_fer");
     public static final Item PEPITE_OR = new ItemBase("pepite_or");
     public static final Item PEPITE_PLOMB = new ItemBase("pepite_plomb");
-
-    public static final Item GEMME_INCONNUE = new Gemme("gemme_inconnue");
-    public static final Item GROSSE_GEMME_INCONNUE = new GemmeGrosse("grosse_gemme_inconnue");
-    public static final Item PETITE_GEMME_INCONNUE = new GemmePetite("petite_gemme_inconnue");
-    public static final Item POUSSIERE_MINERALE = new ItemBase("poussiere_minerale");
-
     public static final Item CAILLOU = new ItemBase("caillou");
     public static final Item CAILLOU_DE_GRES = new ItemBase("caillou_de_gres");
     public static final Item CAILLOU_DE_GRES_ROUGE = new ItemBase("caillou_de_gres_rouge");
@@ -633,6 +626,7 @@ public class ModItems {
     public static final Item MONOCLE = new ItemBase("monocle");
 
     // Pierres taillées - Géodes
+    public static final Item POUSSIERE_MINERALE = new ItemBase("poussiere_minerale");
 
     public static final Item GEODE_AIGUE_MARINE = new ItemBase("geode_aigue_marine");
     public static final Item GEODE_AMETHYSTE = new ItemBase("geode_amethyste");
@@ -650,6 +644,23 @@ public class ModItems {
     public static final Item GEODE_SPINELLE = new ItemBase("geode_spinelle");
     public static final Item GEODE_TURQUOISE = new ItemBase("geode_turquoise");
 
+    public static final Item GEMME_INCONNUE = new ItemTransformableProbability("gemme_inconnue", new ArrayList() {{ add(POUSSIERE_MINERALE); }} , new ArrayList() {{
+        add(GEODE_AMETHYSTE);
+        add(GEODE_CORNALINE);
+        add(GEODE_EMERAUDE);
+        add(GEODE_FLUORINE);
+        add(GEODE_HEMATITE);
+        add(GEODE_JADE);
+        add(GEODE_OPALE);
+        add(GEODE_SPINELLE);
+        add(GEODE_TURQUOISE);
+        add(GEODE_AIGUE_MARINE);
+        add(GEODE_OEIL_DE_TIGRE);
+        add(GEODE_DIAMANT);
+        add(GEODE_ONYX);
+        add(GEODE_SAPHIR);
+        add(GEODE_RUBIS); }});
+
     public static final Item GROSSE_GEODE_AIGUE_MARINE = new ItemBase("grosse_geode_aigue_marine");
     public static final Item GROSSE_GEODE_AMETHYSTE = new ItemBase("grosse_geode_amethyste");
     public static final Item GROSSE_GEODE_CORNALINE = new ItemBase("grosse_geode_cornaline");
@@ -666,6 +677,23 @@ public class ModItems {
     public static final Item GROSSE_GEODE_SPINELLE = new ItemBase("grosse_geode_spinelle");
     public static final Item GROSSE_GEODE_TURQUOISE = new ItemBase("grosse_geode_turquoise");
 
+    public static final Item GROSSE_GEMME_INCONNUE = new ItemTransformableProbability("grosse_gemme_inconnue", new ArrayList() {{ add(POUSSIERE_MINERALE); }} , new ArrayList() {{
+        add(GROSSE_GEODE_AMETHYSTE);
+        add(GROSSE_GEODE_CORNALINE);
+        add(GROSSE_GEODE_EMERAUDE);
+        add(GROSSE_GEODE_FLUORINE);
+        add(GROSSE_GEODE_HEMATITE);
+        add(GROSSE_GEODE_JADE);
+        add(GROSSE_GEODE_OPALE);
+        add(GROSSE_GEODE_SPINELLE);
+        add(GROSSE_GEODE_TURQUOISE);
+        add(GROSSE_GEODE_AIGUE_MARINE);
+        add(GROSSE_GEODE_OEIL_DE_TIGRE);
+        add(GROSSE_GEODE_DIAMANT);
+        add(GROSSE_GEODE_ONYX);
+        add(GROSSE_GEODE_SAPHIR);
+        add(GROSSE_GEODE_RUBIS); }});
+
     public static final Item PETITE_GEODE_AIGUE_MARINE = new ItemBase("petite_geode_aigue_marine");
     public static final Item PETITE_GEODE_AMETHYSTE = new ItemBase("petite_geode_amethyste");
     public static final Item PETITE_GEODE_CORNALINE = new ItemBase("petite_geode_cornaline");
@@ -681,6 +709,23 @@ public class ModItems {
     public static final Item PETITE_GEODE_SAPHIR = new ItemBase("petite_geode_saphir");
     public static final Item PETITE_GEODE_SPINELLE = new ItemBase("petite_geode_spinelle");
     public static final Item PETITE_GEODE_TURQUOISE = new ItemBase("petite_geode_turquoise");
+
+    public static final Item PETITE_GEMME_INCONNUE = new ItemTransformableProbability("petite_gemme_inconnue", new ArrayList() {{ add(POUSSIERE_MINERALE); }} , new ArrayList() {{
+        add(PETITE_GEODE_AMETHYSTE);
+        add(PETITE_GEODE_CORNALINE);
+        add(PETITE_GEODE_EMERAUDE);
+        add(PETITE_GEODE_FLUORINE);
+        add(PETITE_GEODE_HEMATITE);
+        add(PETITE_GEODE_JADE);
+        add(PETITE_GEODE_OPALE);
+        add(PETITE_GEODE_SPINELLE);
+        add(PETITE_GEODE_TURQUOISE);
+        add(PETITE_GEODE_AIGUE_MARINE);
+        add(PETITE_GEODE_OEIL_DE_TIGRE);
+        add(PETITE_GEODE_DIAMANT);
+        add(PETITE_GEODE_ONYX);
+        add(PETITE_GEODE_SAPHIR);
+        add(PETITE_GEODE_RUBIS); }});
 
     public static final Item AIGUE_MARINE_TAILLE_ASSCHER = new ItemBase("aigue_marine_taille_asscher");
     public static final Item AIGUE_MARINE_TAILLE_BAGUETTE = new ItemBase("aigue_marine_taille_baguette");
@@ -974,7 +1019,7 @@ public class ModItems {
     public static final Item PAPIER_ECRIT = new ItemBase("papier_ecrit");
     public static final Item PAPIER_HUMIDE = new ItemBase("papier_humide");
     public static final Item PARCHEMIN_DESCELLE = new ItemBase("parchemin_descelle");
-    public static final Item PARCHEMIN = new ItemTransformable("parchemin", new ArrayList() {{ add(ModItems.PARCHEMIN_DESCELLE); }});
+    public static final Item PARCHEMIN = new ItemTransformable("parchemin", new ArrayList() {{ add(PARCHEMIN_DESCELLE); }});
     public static final Item PATE_A_PAPIER = new ItemBase("pate_a_papier");
     public static final Item PINCEAU = new ItemIngrediant("pinceau", 7);
     public static final Item PINCEAU_BROSSE = new OutilsEnFer("pinceau_brosse");
@@ -1149,17 +1194,17 @@ public class ModItems {
 
     public static final Item SCIURE = new ItemBase("sciure");
     public static final Item PLANCHE_ACACIA = new ItemBase("planche_acacia");
-    public static final Item PLANCHE_SCIURE_ACACIA = new ItemTransformable("planche_sciure_acacia", new ArrayList() {{ add(ModItems.PLANCHE_ACACIA); add(ModItems.SCIURE); }});
+    public static final Item PLANCHE_SCIURE_ACACIA = new ItemTransformable("planche_sciure_acacia", new ArrayList() {{ add(PLANCHE_ACACIA); add(SCIURE); }});
     public static final Item PLANCHE_ACAJOU = new ItemBase("planche_acajou");
-    public static final Item PLANCHE_SCIURE_ACAJOU = new ItemTransformable("planche_sciure_acajou", new ArrayList() {{ add(ModItems.PLANCHE_ACAJOU); add(ModItems.SCIURE); }});
+    public static final Item PLANCHE_SCIURE_ACAJOU = new ItemTransformable("planche_sciure_acajou", new ArrayList() {{ add(PLANCHE_ACAJOU); add(SCIURE); }});
     public static final Item PLANCHE_BOULEAU = new ItemBase("planche_bouleau");
-    public static final Item PLANCHE_SCIURE_BOULEAU = new ItemTransformable("planche_sciure_bouleau", new ArrayList() {{ add(ModItems.PLANCHE_BOULEAU); add(ModItems.SCIURE); }});
+    public static final Item PLANCHE_SCIURE_BOULEAU = new ItemTransformable("planche_sciure_bouleau", new ArrayList() {{ add(PLANCHE_BOULEAU); add(SCIURE); }});
     public static final Item PLANCHE_CHENE = new ItemBase("planche_chene");
-    public static final Item PLANCHE_SCIURE_CHENE = new ItemTransformable("planche_sciure_chene", new ArrayList() {{ add(ModItems.PLANCHE_CHENE); add(ModItems.SCIURE); }});
+    public static final Item PLANCHE_SCIURE_CHENE = new ItemTransformable("planche_sciure_chene", new ArrayList() {{ add(PLANCHE_CHENE); add(SCIURE); }});
     public static final Item PLANCHE_CHENE_NOIR = new ItemBase("planche_chene_noir");
-    public static final Item PLANCHE_SCIURE_CHENE_NOIR = new ItemTransformable("planche_sciure_chene_noir", new ArrayList() {{ add(ModItems.PLANCHE_CHENE_NOIR); add(ModItems.SCIURE); }});
+    public static final Item PLANCHE_SCIURE_CHENE_NOIR = new ItemTransformable("planche_sciure_chene_noir", new ArrayList() {{ add(PLANCHE_CHENE_NOIR); add(SCIURE); }});
     public static final Item PLANCHE_SAPIN = new ItemBase("planche_sapin");
-    public static final Item PLANCHE_SCIURE_SAPIN = new ItemTransformable("planche_sciure_sapin", new ArrayList() {{ add(ModItems.PLANCHE_SAPIN); add(ModItems.SCIURE); }});
+    public static final Item PLANCHE_SCIURE_SAPIN = new ItemTransformable("planche_sciure_sapin", new ArrayList() {{ add(PLANCHE_SAPIN); add(SCIURE); }});
 
     public static final Item PIPE = new ItemBase("pipe");
     public static final Item PIPE_DROITE = new ItemBase("pipe_droite");
@@ -1240,8 +1285,9 @@ public class ModItems {
     // public static final Item filet_de_poisson = new FoodBase("filet_de_poisson", 1, 1.0F, true);
     public static final Item ANGUILLE = new ItemBase("anguille");
     public static final Item ANGE_ROYAL = new ItemBase("ange_royal");
-    public static final Item CALAMAR = new Calamar("calamar");
+    public static final Item POCHE_D_ENCRE = new ItemBase("poche_d_encre");
     public static final Item CALAMAR_MORT = new ItemBase("calamar_mort");
+    public static final Item CALAMAR = new ItemTransformable("calamar", new ArrayList() {{ add(CALAMAR_MORT); add(POCHE_D_ENCRE); add(POCHE_D_ENCRE); }});
     public static final Item CARCASSE_DE_POISSON = new ItemBase("carcasse_de_poisson");
     public static final Item CARPE = new Poisson("carpe");
     public static final Item CARPE_KOI = new ItemBase("carpe_koi");
@@ -1271,22 +1317,21 @@ public class ModItems {
     public static final Item GUPPY = new ItemBase("guppy");
     public static final Item HIPPOCAMPE = new ItemBase("hippocampe");
     public static final Item HOMARD = new ItemBase("homard");
-    public static final Item HUITRE = new Huitre("huitre");
+    public static final Item PERLE_NATURELLE = new ItemBase("perle_naturelle");
+    public static final Item HUITRE = new ItemTransformableProbability("huitre", new ArrayList() {{ add(HUITRE_OUVERTE); }}, new ArrayList() {{ add(PERLE_NATURELLE); }}, 5);
     public static final Item LABIDO_JAUNE = new ItemBase("labido_jaune");
     public static final Item MEROU = new Poisson("merou");
     public static final Item NAPOLEON = new ItemBase("napoleon");
     public static final Item NAUTILE = new ItemBase("nautile");
     public static final Item ORMEAUX = new ItemBase("ormeaux");
     public static final Item PALOURDE = new ItemBase("palourde");
-    public static final Item PERLE_NATURELLE = new ItemBase("perle_naturelle");
-    public static final Item POCHE_D_ENCRE = new ItemBase("poche_d_encre");
     public static final Item POISSON_CHAT = new ItemBase("poisson_chat");
     public static final Item POISSON_CHIRURGIEN = new ItemBase("poisson_chirurgien");
     public static final Item POISSON_CLOWN_NOIR = new ItemBase("poisson_clown_noir");
     public static final Item POISSON_LUNE = new ItemBase("poisson_lune");
     public static final Item POISSON_PERROQUET = new ItemBase("poisson_perroquet");
     public static final Item POULPE_MORT = new ItemBase("poulpe_mort");
-    public static final Item POULPE = new ItemTransformable("poulpe", new ArrayList() {{ add(ModItems.POULPE_MORT); add(ModItems.POCHE_D_ENCRE); add(ModItems.POCHE_D_ENCRE); }});
+    public static final Item POULPE = new ItemTransformable("poulpe", new ArrayList() {{ add(POULPE_MORT); add(POCHE_D_ENCRE); add(POCHE_D_ENCRE); }});
     public static final Item ROUGET = new Poisson("rouget");
     public static final Item SARDINE = new Poisson("sardine");
     public static final Item SEL = new ItemBase("sel");
