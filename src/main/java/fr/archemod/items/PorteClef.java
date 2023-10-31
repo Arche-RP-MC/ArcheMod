@@ -1,16 +1,12 @@
 package fr.archemod.items;
 
-import fr.archemod.ArcheMod;
-import fr.archemod.init.ModSounds;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ActionResult;
-import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.EnumHand;
-import net.minecraft.util.SoundCategory;
 import net.minecraft.world.World;
 
-public class PorteClef extends ItemContainer {
+public class PorteClef extends ItemInventory {
     public PorteClef(String name) {
         super(name, 13);
     }

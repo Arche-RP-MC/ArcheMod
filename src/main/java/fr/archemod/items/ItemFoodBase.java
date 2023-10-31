@@ -1,18 +1,20 @@
-package fr.archemod.items.tools;
+package fr.archemod.items;
 
 import fr.archemod.ArcheMod;
 import fr.archemod.init.ModItems;
 import fr.archemod.util.IHasModel;
-import net.minecraft.item.ItemPickaxe;
+import net.minecraft.item.ItemFood;
 
-public class Toolpickaxe extends ItemPickaxe implements IHasModel {
+public class ItemFoodBase extends ItemFood implements IHasModel {
 
-    public Toolpickaxe(String name, ToolMaterial material) {
-        super(material);
+    public ItemFoodBase(String name, int amount, float saturation, boolean isAnimalFood) {
+        super(amount, saturation, isAnimalFood);
+        setMaxStackSize(50);
         setTranslationKey(name);
         setRegistryName(name);
         setCreativeTab(ArcheMod.archeCreativeTabs);
-        attackDamage = 6.0F;
+
+        setAlwaysEdible();
         ModItems.ITEMS.add(this);
     }
 

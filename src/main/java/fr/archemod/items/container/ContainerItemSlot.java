@@ -1,5 +1,6 @@
 package fr.archemod.items.container;
 
+import fr.archemod.items.ItemInventory;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.ClickType;
@@ -72,7 +73,7 @@ public class ContainerItemSlot extends Container {
 
             // Prevents backpack-ception (backpack inside backpack) with
             // shift-click
-            if (itemstack.getItem() instanceof fr.archemod.items.ItemContainer) return ItemStack.EMPTY;
+            if (itemstack.getItem() instanceof ItemInventory) return ItemStack.EMPTY;
 
             if (index < this.inv.getSizeInventory()) {
                 if (!this.mergeItemStack(itemstack1, this.inv.getSizeInventory(), this.inventorySlots.size(), true))

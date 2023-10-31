@@ -9,4 +9,8 @@ public class Reference {
     public static final String COMMON_PROXY_CLASS = "fr.archemod.proxy.CommonProxy";
 
     public static final long DELAI_RECOLTE_PECHE = 5*1000;
+
+    public static final int DURABILITE_BRONZE = 80;
+    public static final int DURABILITE_FER = 386;
+    public static final int DURABILITE_ACIER = 419;
 }
