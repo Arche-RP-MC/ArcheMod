@@ -12,6 +12,7 @@ import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.util.math.AxisAlignedBB;
+import net.minecraftforge.common.EnumPlantType;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
 
 import java.util.ArrayList;
@@ -932,22 +933,22 @@ public class ModBlocks {
         ModItems.GRAINE_HOUSTONIE_BLEUE = new ItemGraine("graine_houstonie_bleue", ModBlocks.PLAN_HOUSTONIE_BLEUE, Blocks.FARMLAND);
 
         //Champignons
-        ModItems.GRAINE_AMANITE = new ItemGraine("graine_amanite",ModBlocks.PLAN_AMANITE,Blocks.MYCELIUM);
-        ModItems.GRAINE_BOLET_SATAN = new ItemGraine("graine_bolet_satan", ModBlocks.PLAN_BOLET_SATAN, Blocks.MYCELIUM);
-        ModItems.GRAINE_CEPE = new ItemGraine("graine_cepe", ModBlocks.PLAN_CEPE, Blocks.MYCELIUM);
-        ModItems.GRAINE_CORTINAIRE = new ItemGraine("graine_cortinaire", ModBlocks.PLAN_CORTINAIRE, Blocks.MYCELIUM);
-        ModItems.GRAINE_GIROLLE = new ItemGraine("graine_girolle", ModBlocks.PLAN_GIROLLE, Blocks.MYCELIUM);
-        ModItems.GRAINE_HELVELLE = new ItemGraine("graine_helvelle", ModBlocks.PLAN_HELVELLE, Blocks.MYCELIUM);
-        ModItems.GRAINE_LEPIOTE = new ItemGraine("graine_lepiote", ModBlocks.PLAN_LEPIOTE, Blocks.MYCELIUM);
-        ModItems.GRAINE_MORILLE = new ItemGraine("graine_morille", ModBlocks.PLAN_MORILLE, Blocks.MYCELIUM);
-        ModItems.GRAINE_PLEUROTE = new ItemGraine("graine_pleurote", ModBlocks.PLAN_PLEUROTE, Blocks.MYCELIUM);
-        ModItems.GRAINE_REISHI = new ItemGraine("graine_reishi", ModBlocks.PLAN_REISHI, Blocks.MYCELIUM);
-        ModItems.GRAINE_SHITAKE = new ItemGraine("graine_shitake", ModBlocks.PLAN_SHITAKE, Blocks.MYCELIUM);
-        ModItems.GRAINE_TROMPETTE_MORT = new ItemGraine("graine_trompette_mort", ModBlocks.PLAN_TROMPETTE_MORT, Blocks.MYCELIUM);
-        ModItems.GRAINE_TRUFFE = new ItemGraine("graine_truffe", ModBlocks.PLAN_TRUFFE, Blocks.MYCELIUM);
-        ModItems.GRAINE_VESSE_LOUP = new ItemGraine("graine_vesse_loup", ModBlocks.PLAN_VESSE_LOUP, Blocks.MYCELIUM);
-        ModItems.GRAINE_CHAMPIGNON_BRUN = new ItemGraine("graine_champignon_brun", ModBlocks.PLAN_CHAMPIGNON_BRUN, Blocks.MYCELIUM);
-        ModItems.GRAINE_AGARIC_CHAMPETRE = new ItemGraine("graine_agaric_champetre", ModBlocks.PLAN_AGARIC_CHAMPETRE, Blocks.MYCELIUM);
+        ModItems.GRAINE_AMANITE = new ItemGraine("graine_amanite", ModBlocks.PLAN_AMANITE, Blocks.DIRT, EnumPlantType.Cave);
+        ModItems.GRAINE_BOLET_SATAN = new ItemGraine("graine_bolet_satan", ModBlocks.PLAN_BOLET_SATAN, Blocks.DIRT, EnumPlantType.Cave);
+        ModItems.GRAINE_CEPE = new ItemGraine("graine_cepe", ModBlocks.PLAN_CEPE, Blocks.DIRT, EnumPlantType.Cave);
+        ModItems.GRAINE_CORTINAIRE = new ItemGraine("graine_cortinaire", ModBlocks.PLAN_CORTINAIRE, Blocks.DIRT, EnumPlantType.Cave);
+        ModItems.GRAINE_GIROLLE = new ItemGraine("graine_girolle", ModBlocks.PLAN_GIROLLE, Blocks.DIRT, EnumPlantType.Cave);
+        ModItems.GRAINE_HELVELLE = new ItemGraine("graine_helvelle", ModBlocks.PLAN_HELVELLE, Blocks.DIRT, EnumPlantType.Cave);
+        ModItems.GRAINE_LEPIOTE = new ItemGraine("graine_lepiote", ModBlocks.PLAN_LEPIOTE, Blocks.DIRT, EnumPlantType.Cave);
+        ModItems.GRAINE_MORILLE = new ItemGraine("graine_morille", ModBlocks.PLAN_MORILLE, Blocks.DIRT, EnumPlantType.Cave);
+        ModItems.GRAINE_PLEUROTE = new ItemGraine("graine_pleurote", ModBlocks.PLAN_PLEUROTE, Blocks.DIRT, EnumPlantType.Cave);
+        ModItems.GRAINE_REISHI = new ItemGraine("graine_reishi", ModBlocks.PLAN_REISHI, Blocks.DIRT, EnumPlantType.Cave);
+        ModItems.GRAINE_SHITAKE = new ItemGraine("graine_shitake", ModBlocks.PLAN_SHITAKE, Blocks.DIRT, EnumPlantType.Cave);
+        ModItems.GRAINE_TROMPETTE_MORT = new ItemGraine("graine_trompette_mort", ModBlocks.PLAN_TROMPETTE_MORT, Blocks.DIRT, EnumPlantType.Cave);
+        ModItems.GRAINE_TRUFFE = new ItemGraine("graine_truffe", ModBlocks.PLAN_TRUFFE, Blocks.DIRT, EnumPlantType.Cave);
+        ModItems.GRAINE_VESSE_LOUP = new ItemGraine("graine_vesse_loup", ModBlocks.PLAN_VESSE_LOUP, Blocks.DIRT, EnumPlantType.Cave);
+        ModItems.GRAINE_CHAMPIGNON_BRUN = new ItemGraine("graine_champignon_brun", ModBlocks.PLAN_CHAMPIGNON_BRUN, Blocks.DIRT, EnumPlantType.Cave);
+        ModItems.GRAINE_AGARIC_CHAMPETRE = new ItemGraine("graine_agaric_champetre", ModBlocks.PLAN_AGARIC_CHAMPETRE, Blocks.DIRT, EnumPlantType.Cave);
     }
 
     /**
