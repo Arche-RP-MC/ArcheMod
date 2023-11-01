@@ -461,8 +461,9 @@ public class ModItems {
     public static final Item TROMPETTE_MORT = new ItemBase("trompette_mort");
     public static final Item TRUFFE = new ItemBase("truffe");
     public static final Item VESSE_LOUP = new ItemBase("vesse_loup");
+    public static final Item CHAMPIGNON_BRUN = new ItemBase("champignon_brun");
+    public static final Item AGARIC_CHAMPETRE = new ItemBase("agaric_champetre");
 
-    
     //Armes - TOOLS
     //public static final Item BATON_DE_MARCHE = new ToolSword("baton_de_marche",Item.ToolMaterial.IRON);
     public static final Item ARAKH_EN_ACIER = new ToolSword("arakh_en_acier", Item.ToolMaterial.IRON);
@@ -640,7 +641,8 @@ public class ModItems {
     public static Item GRAINE_TROMPETTE_MORT;
     public static Item GRAINE_TRUFFE;
     public static Item GRAINE_VESSE_LOUP;
-
+    public static Item GRAINE_CHAMPIGNON_BRUN;
+    public static Item GRAINE_AGARIC_CHAMPETRE;
 
     // Ingé - rouages - serrures - mécanique
 
@@ -2632,6 +2634,7 @@ public class ModItems {
     public static final Item INSECTE_TIQUE = new ItemBase("insecte_tique");
     public static final Item INSECTE_VER_DE_FARINE = new ItemBase("insecte_ver_de_farine");
     public static final Item INSECTE_VER_DE_TERRE = new ItemBase("insecte_ver_de_terre");
+
 
 
 }

@@ -478,7 +478,9 @@ public class ModBlocks {
     public static final Block DECO_TROMPETTE_MORT = new BlockPlanteDeco("deco_trompette_mort");
     public static final Block DECO_TRUFFE = new BlockPlanteDeco("deco_truffe");
     public static final Block DECO_VESSE_LOUP = new BlockPlanteDeco("deco_vesse_loup");
-
+    public static final Block DECO_CHAMPIGNON_BRUN = new BlockPlanteDeco("deco_champignon_brun");
+    public static final Block DECO_AGARIC_CHAMPETRE = new BlockPlanteDeco("deco_agaric_champetre");
+    
     //PORTE
     public static final Block PORTE_RENFORCEE = new BlockPorte("porte_renforcee", Material.WOOD, SoundType.WOOD, 4F);
     public static final Block PORTE_DELABREE = new BlockPorte("porte_delabree", Material.WOOD, SoundType.WOOD, 4F);
@@ -677,7 +679,10 @@ public class ModBlocks {
     private static final Block PLAN_TROMPETTE_MORT = new BlocCulture("plan_trompette_mort", ModItems.GRAINE_TROMPETTE_MORT, ModItems.TROMPETTE_MORT, main, 2, 2, 2);
     private static final Block PLAN_TRUFFE = new BlocCulture("plan_truffe", ModItems.GRAINE_TRUFFE, ModItems.TRUFFE, main, 2, 2, 2);
     private static final Block PLAN_VESSE_LOUP = new BlocCulture("plan_vesse_loup", ModItems.GRAINE_VESSE_LOUP, ModItems.VESSE_LOUP, main, 2, 2, 2);
+    private static final Block PLAN_CHAMPIGNON_BRUN = new BlocCulture("plan_champignon_brun", ModItems.GRAINE_CHAMPIGNON_BRUN, ModItems.CHAMPIGNON_BRUN, main, 2, 2, 2);
+    private static final Block PLAN_AGARIC_CHAMPETRE = new BlocCulture("plan_agaric_champetre", ModItems.GRAINE_AGARIC_CHAMPETRE, ModItems.AGARIC_CHAMPETRE, main, 2, 2, 2);
 
+    
     //LUMINEUX
     public static final Block LANTERNE_JAUNE_ETEINTE = new BlockLantern("lanterne_jaune", false, Material.GLASS, 0.5F, 3F, SoundType.GLASS);
     public static final Block LANTERNE_JAUNE_ALLUMEE = new BlockLantern("lanterne_jaune", true, Material.GLASS, 0.5F, 3F, SoundType.GLASS);
@@ -764,6 +769,7 @@ public class ModBlocks {
     public static final Block TARTE_FRUIT_ROUGE_ENTIERE = new TarteFruitRouge("tarte_fruit_rouge_entiere", 5F, 5F, SoundType.SLIME);
     public static final Block TARTE_MYRTILLE_ENTIERE = new TarteMyrtille("tarte_myrtille_entiere", 5F, 5F, SoundType.SLIME);
     public static final Block TOURTE_ENTIERE = new Tourte("tourte_entiere", 5F, 5F, SoundType.SLIME);
+
 
 
 //fours
@@ -940,7 +946,8 @@ public class ModBlocks {
         ModItems.GRAINE_TROMPETTE_MORT = new ItemGraine("graine_trompette_mort", ModBlocks.PLAN_TROMPETTE_MORT, Blocks.MYCELIUM);
         ModItems.GRAINE_TRUFFE = new ItemGraine("graine_truffe", ModBlocks.PLAN_TRUFFE, Blocks.MYCELIUM);
         ModItems.GRAINE_VESSE_LOUP = new ItemGraine("graine_vesse_loup", ModBlocks.PLAN_VESSE_LOUP, Blocks.MYCELIUM);
-
+        ModItems.GRAINE_CHAMPIGNON_BRUN = new ItemGraine("graine_champignon_brun", ModBlocks.PLAN_CHAMPIGNON_BRUN, Blocks.MYCELIUM);
+        ModItems.GRAINE_AGARIC_CHAMPETRE = new ItemGraine("graine_agaric_champetre", ModBlocks.PLAN_AGARIC_CHAMPETRE, Blocks.MYCELIUM);
     }
 
     /**
@@ -1090,8 +1097,8 @@ public class ModBlocks {
         registerItem(ModItems.GRAINE_TROMPETTE_MORT);
         registerItem(ModItems.GRAINE_TRUFFE);
         registerItem(ModItems.GRAINE_VESSE_LOUP);
-
-
+        registerItem(ModItems.GRAINE_CHAMPIGNON_BRUN);
+        registerItem(ModItems.GRAINE_AGARIC_CHAMPETRE);
     }
 
     public static void registerBlock(Block block) {

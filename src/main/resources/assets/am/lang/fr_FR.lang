@@ -2,9 +2,11 @@
 
 
 
+
 item.abricot.name=Abricot
 item.acier_fondu.name=Acier fondu
 item.affiche.name=Affiche
+item.agaric_champetre.name=Agaric champêtre
 item.aigue_marine_taille_asscher.name=Aigue marine taille asscher
 item.aigue_marine_taille_baguette.name=Aigue marine taille baguette
 item.aigue_marine_taille_brillant.name=Aigue marine taille brillant
@@ -489,6 +491,7 @@ item.chain_command_block_conditional.name=Chain command block conditional
 item.chain_command_block_front.name=Chain command block front
 item.chain_command_block_side.name=Chain command block side
 item.chaise_en_chene.name=Chaise en chêne
+item.champignon_brun.name=Champignon Brun
 item.chanvre.name=Chanvre
 item.chapeau_apiculteur.name=Chapeau d'apiculteur
 item.chapeau_en_cuir.name=Chapeau en cuir
@@ -1279,6 +1282,7 @@ item.gourami_miel.name=Gourami miel
 item.gourdin_en_bois.name=Gourdin en bois
 item.gouvernail.name=Gouvernail
 item.graine poireau.name=Graine de poireau
+item.graine_agaric_champetre.name=Graine d'Agaric champêtre
 item.graine_ail.name=Graines ail
 item.graine_allium.name=Graines allium
 item.graine_amanite.name=Graine d'Amanite
@@ -1303,6 +1307,7 @@ item.graine_camomille.name=Graines camomille
 item.graine_capre.name=Graines câpres
 item.graine_celeri.name=Graine de celeri
 item.graine_cepe.name=Graine de Cèpe
+item.graine_champignon_brun.name=Graine de Champignon Brun
 item.graine_chanvre.name=Graine de chanvre
 item.graine_chardon.name=Graine de chardon
 item.graine_chou.name=Graine de chou
@@ -3276,10 +3281,12 @@ tile.coquelicot.name=Buisson décoratif : coquelicot
 tile.cosmos.name=Buisson décoratif : Cosmos
 tile.dallage_precis.name=Dallage precis
 tile.dallage_precis_brique.name=Dallage precis brique
+tile.deco_agaric_champetre.name=Buisson décoratif : Agaric champêtre
 tile.deco_ail.name=Buisson décoratif : Ail
 tile.deco_amanite.name=Buisson décoratif : Amanite
 tile.deco_bolet_satan.name=Buisson décoratif : Bolet Satan
 tile.deco_cepe.name=Buisson décoratif : Cèpe
+tile.deco_champignon_brun.name=Buisson décoratif : Champignon Brun
 tile.deco_cortinaire.name=Buisson décoratif : Cortinaire
 tile.deco_girolle.name=Buisson décoratif : Girolle
 tile.deco_helvelle.name=Buisson décoratif : Helvelle

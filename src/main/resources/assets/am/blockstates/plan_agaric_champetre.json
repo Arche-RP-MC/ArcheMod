@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "am:agaric_champetre1"
+    },
+    "age=1": {
+      "model": "am:agaric_champetre1"
+    },
+    "age=2": {
+      "model": "am:agaric_champetre1"
+    },
+    "age=3": {
+      "model": "am:agaric_champetre1"
+    },
+    "age=4": {
+      "model": "am:agaric_champetre2"
+    },
+    "age=5": {
+      "model": "am:agaric_champetre2"
+    },
+    "age=6": {
+      "model": "am:agaric_champetre2"
+    },
+    "age=7": {
+      "model": "am:agaric_champetre"
+    }
+  }
+}
