@@ -1,7 +1,6 @@
-package fr.archemod.items.use;
+package fr.archemod.items;
 
-import fr.archemod.init.ModItems;
-import fr.archemod.items.ItemBase;
+import fr.archemod.ArcheMod;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ActionResult;
@@ -9,21 +8,18 @@ import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.EnumHand;
 import net.minecraft.world.World;
 
-public class Parchemin extends ItemBase {
+public class ItemInventory extends ItemBase {
+    private int modGuild;
 
-    public Parchemin(String name) {
+    public ItemInventory(String name, int guiNumberForGuiHandlerCase) {
         super(name);
+        setMaxStackSize(1);
+        this.modGuild = guiNumberForGuiHandlerCase;
     }
 
     @Override
     public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) {
-        if (!worldIn.isRemote && handIn == EnumHand.MAIN_HAND) {
-            playerIn.getHeldItem(handIn).shrink(1);
-            int rnd = (int) (Math.random() * 1);
-            if (rnd == 0) {
-                playerIn.dropItem(ModItems.PARCHEMIN_DESCELLE, 1);
-            }
-        }
+        if(handIn == EnumHand.MAIN_HAND) playerIn.openGui(ArcheMod.INSTANCE, modGuild, worldIn, (int) playerIn.posX, (int) playerIn.posY, (int) playerIn.posZ);
         return new ActionResult<>(EnumActionResult.SUCCESS, playerIn.getHeldItem(handIn));
     }
 }

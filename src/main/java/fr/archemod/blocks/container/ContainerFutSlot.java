@@ -25,10 +25,9 @@ public class  ContainerFutSlot extends Container {
         for (int i1 = 0; i1 < 9; ++i1) {
             this.addSlotToContainer(new Slot(playerInventory, i1, 8 + i1 * 18, 137 + i));
         }
-
     }
 
-    public boolean canInteractWith(EntityPlayer playerIn) { return true; }
+    public boolean canInteractWith(EntityPlayer playerIn) { return false; }
 
     @Override
     public ItemStack transferStackInSlot(EntityPlayer playerIn, int index) {

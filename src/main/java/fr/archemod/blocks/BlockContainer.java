@@ -48,7 +48,6 @@ public abstract class BlockContainer extends BlockBase implements ITileEntityPro
 
     @Override
     public boolean eventReceived(IBlockState state, World worldIn, BlockPos pos, int eventID, int eventParam) {
-        System.out.println("Ici");
         super.eventReceived(state, worldIn, pos, eventID, eventParam);
         TileEntity tileentity = worldIn.getTileEntity(pos);
         return tileentity == null ? false : tileentity.receiveClientEvent(eventID, eventParam);
