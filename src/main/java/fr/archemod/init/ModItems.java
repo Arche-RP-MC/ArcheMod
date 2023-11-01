@@ -389,7 +389,6 @@ public class ModItems {
     public static final Item BROCHETTE_DE_VIANDE_CRU = new ItemBase("brochette_de_viande_cru");
     public static final Item BROCOLI_CRU = new ItemBase("brocoli_cru");
     public static final Item CELERI_BRANCHE_CRU = new ItemBase("celeri_branche_cru");
-    public static final Item CEPES_CRU = new ItemBase("cepes_cru");
     public static final Item CHATAIGNE_CRU = new ItemBase("chataigne_cru");
     public static final Item CHOU_FLEUR_CRU = new ItemBase("chou_fleur_cru");
     public static final Item CHOU_VERT_CRU = new ItemBase("chou_vert_cru");
@@ -452,6 +451,22 @@ public class ModItems {
     public static final Item MOULE_MARINIERE = new ItemBase("moule_mariniere");
     public static final Item BROCHETTE_CALAMAR = new ItemBase("brochette_calamar");
 
+    //Champignons
+    public static final Item CEPES_CRU = new ItemBase("cepes_cru");
+    public static final Item AMANITE = new ItemBase("amanite");
+    public static final Item BOLET_SATAN = new ItemBase("bolet_satan");
+    public static final Item CORTINAIRE = new ItemBase("cortinaire");
+    public static final Item GIROLLE = new ItemBase("girolle");
+    public static final Item HELVELLE = new ItemBase("helvelle");
+    public static final Item LEPIOTE = new ItemBase("lepiote");
+    public static final Item MORILLE = new ItemBase("morille");
+    public static final Item PLEUROTE = new ItemBase("pleurote");
+    public static final Item REISHI = new ItemBase("reishi");
+    public static final Item SHITAKE = new ItemBase("shitake");
+    public static final Item TROMPETTE_MORT = new ItemBase("trompette_mort");
+    public static final Item TRUFFE = new ItemBase("truffe");
+    public static final Item VESSE_LOUP = new ItemBase("vesse_loup");
+
     
     //Armes - TOOLS
     //public static final Item BATON_DE_MARCHE = new ToolSword("baton_de_marche",Item.ToolMaterial.IRON);
@@ -495,8 +510,7 @@ public class ModItems {
     public static final Item STYLET_EN_OR = new ItemIngrediant("stylet_en_or", 7);
     public static final ItemAxe HACHE_D_ARMES_EN_ACIER = new ToolAxe("hache_d_armes_en_acier", Item.ToolMaterial.IRON);
 
-
-    // Graines Plantes botaniste
+    // Graines Plantes
 
     public static Item GRAINE_PLANTE_GRASSE;
     public static Item GRAINE_BUIS;
@@ -615,6 +629,22 @@ public class ModItems {
     public static Item GRAINE_TOMATE;
     public static Item GRAINE_VIGNE_BLANCHE;
     public static Item GRAINE_VIGNE_NOIRE;
+
+    //champignons
+    public static Item GRAINE_AMANITE;
+    public static Item GRAINE_BOLET_SATAN;
+    public static Item GRAINE_CEPE;
+    public static Item GRAINE_CORTINAIRE;
+    public static Item GRAINE_GIROLLE;
+    public static Item GRAINE_HELVELLE;
+    public static Item GRAINE_LEPIOTE;
+    public static Item GRAINE_MORILLE;
+    public static Item GRAINE_PLEUROTE;
+    public static Item GRAINE_REISHI;
+    public static Item GRAINE_SHITAKE;
+    public static Item GRAINE_TROMPETTE_MORT;
+    public static Item GRAINE_TRUFFE;
+    public static Item GRAINE_VESSE_LOUP;
 
 
     // Ingé - rouages - serrures - mécanique
@@ -2557,5 +2587,6 @@ public class ModItems {
     public static final Item INSECTE_TIQUE = new ItemBase("insecte_tique");
     public static final Item INSECTE_VER_DE_FARINE = new ItemBase("insecte_ver_de_farine");
     public static final Item INSECTE_VER_DE_TERRE = new ItemBase("insecte_ver_de_terre");
+
 
 }

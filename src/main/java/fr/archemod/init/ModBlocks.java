@@ -385,8 +385,6 @@ public class ModBlocks {
     public static final Block TULIPE_ORANGE = new BlockPlanteDeco("tulipe_orange");
     public static final Block TULIPE_ROSE = new BlockPlanteDeco("tulipe_rose");
     public static final Block TULIPE_BLANCHE = new BlockPlanteDeco("tulipe_blanche");
-    /*public static final Block AIL = new BlockPlanteDeco("ail");
-    public static final Block OIGNON = new BlockPlanteDeco("oignon");*/
     public static final Block ORCHIDEE_BLEUE = new BlockPlanteDeco("orchidee_bleue");
     public static final Block ROSIER = new BlockPlanteDeco("rosier");
     public static final Block LIERRE_FLEURI = new BlockPlanteDeco("lierre_fleuri");
@@ -406,8 +404,6 @@ public class ModBlocks {
     public static final Block ESTRAGON = new BlockPlanteDeco("estragon");
     public static final Block DECO_AIL = new BlockPlanteDeco("deco_ail");
     public static final Block DECO_OIGNON = new BlockPlanteDeco("deco_oignon");
-
-    // /\Ajouts/\
     public static final Block BASILIC = new BlockPlanteDeco("basilic");
     public static final Block ALGUES = new BlockPlanteDeco("algues");
     public static final Block ANETH = new BlockPlanteDeco("aneth");
@@ -467,6 +463,21 @@ public class ModBlocks {
     public static final Block VIOLETTES = new BlockPlanteDeco("violettes");
     public static final Block CAPRE = new BlockPlanteDeco("capre");
 
+    //Champignon
+    public static final Block DECO_AMANITE = new BlockPlanteDeco("deco_amanite");
+    public static final Block DECO_BOLET_SATAN = new BlockPlanteDeco("deco_bolet_satan");
+    public static final Block DECO_CEPE = new BlockPlanteDeco("deco_cepe");
+    public static final Block DECO_CORTINAIRE = new BlockPlanteDeco("deco_cortinaire");
+    public static final Block DECO_GIROLLE = new BlockPlanteDeco("deco_girolle");
+    public static final Block DECO_HELVELLE = new BlockPlanteDeco("deco_helvelle");
+    public static final Block DECO_LEPIOTE = new BlockPlanteDeco("deco_lepiote");
+    public static final Block DECO_MORILLE = new BlockPlanteDeco("deco_morille");
+    public static final Block DECO_PLEUROTE = new BlockPlanteDeco("deco_pleurote");
+    public static final Block DECO_REISHI = new BlockPlanteDeco("deco_reishi");
+    public static final Block DECO_SHITAKE = new BlockPlanteDeco("deco_shitake");
+    public static final Block DECO_TROMPETTE_MORT = new BlockPlanteDeco("deco_trompette_mort");
+    public static final Block DECO_TRUFFE = new BlockPlanteDeco("deco_truffe");
+    public static final Block DECO_VESSE_LOUP = new BlockPlanteDeco("deco_vesse_loup");
 
     //PORTE
     public static final Block PORTE_RENFORCEE = new BlockPorte("porte_renforcee", Material.WOOD, SoundType.WOOD, 4F);
@@ -650,6 +661,22 @@ public class ModBlocks {
     public static final Block PLAN_VIGNE_NOIRE = new BlocCulture("plan_vigne_noire", ModItems.GRAINE_VIGNE_NOIRE, ModItems.RAISIN_NOIR, main, 2, 2, 2);
     public static final Block PLAN_VIOLETTES = new BlocCulture("plan_violettes", ModItems.GRAINE_VIOLETTES, ModItems.PLANTE_VIOLETTES, serpes, 2, 2, 2);
 
+
+    //Champignons
+    private static final Block PLAN_AMANITE = new BlocCulture("plan_amanite", ModItems.GRAINE_AMANITE, ModItems.AMANITE, main, 2, 2, 2);
+    private static final Block PLAN_BOLET_SATAN = new BlocCulture("plan_bolet_satan", ModItems.GRAINE_BOLET_SATAN, ModItems.BOLET_SATAN, main, 2, 2, 2);
+    private static final Block PLAN_CEPE = new BlocCulture("plan_cepe", ModItems.GRAINE_CEPE, ModItems.CEPES_CRU, main, 2, 2, 2);
+    private static final Block PLAN_CORTINAIRE = new BlocCulture("plan_cortinaire", ModItems.GRAINE_CORTINAIRE, ModItems.CORTINAIRE, main, 2, 2, 2);
+    private static final Block PLAN_GIROLLE = new BlocCulture("plan_girolle", ModItems.GRAINE_GIROLLE, ModItems.GIROLLE, main, 2, 2, 2);
+    private static final Block PLAN_HELVELLE = new BlocCulture("plan_helvelle", ModItems.GRAINE_HELVELLE, ModItems.HELVELLE, main, 2, 2, 2);
+    private static final Block PLAN_LEPIOTE = new BlocCulture("plan_lepiote", ModItems.GRAINE_LEPIOTE, ModItems.LEPIOTE, main, 2, 2, 2);
+    private static final Block PLAN_MORILLE = new BlocCulture("plan_morille", ModItems.GRAINE_MORILLE, ModItems.MORILLE, main, 2, 2, 2);
+    private static final Block PLAN_PLEUROTE = new BlocCulture("plan_pleurote", ModItems.GRAINE_PLEUROTE, ModItems.PLEUROTE, main, 2, 2, 2);
+    private static final Block PLAN_REISHI = new BlocCulture("plan_reishi", ModItems.GRAINE_REISHI, ModItems.REISHI, main, 2, 2, 2);
+    private static final Block PLAN_SHITAKE = new BlocCulture("plan_shitake", ModItems.GRAINE_SHITAKE, ModItems.SHITAKE, main, 2, 2, 2);
+    private static final Block PLAN_TROMPETTE_MORT = new BlocCulture("plan_trompette_mort", ModItems.GRAINE_TROMPETTE_MORT, ModItems.TROMPETTE_MORT, main, 2, 2, 2);
+    private static final Block PLAN_TRUFFE = new BlocCulture("plan_truffe", ModItems.GRAINE_TRUFFE, ModItems.TRUFFE, main, 2, 2, 2);
+    private static final Block PLAN_VESSE_LOUP = new BlocCulture("plan_vesse_loup", ModItems.GRAINE_VESSE_LOUP, ModItems.VESSE_LOUP, main, 2, 2, 2);
 
     //LUMINEUX
     public static final Block LANTERNE_JAUNE_ETEINTE = new BlockLantern("lanterne_jaune", false, Material.GLASS, 0.5F, 3F, SoundType.GLASS);
@@ -898,6 +925,21 @@ public class ModBlocks {
         ModItems.GRAINE_ALLIUM = new ItemGraine("graine_allium", ModBlocks.PLAN_ALLIUM, Blocks.FARMLAND);
         ModItems.GRAINE_HOUSTONIE_BLEUE = new ItemGraine("graine_houstonie_bleue", ModBlocks.PLAN_HOUSTONIE_BLEUE, Blocks.FARMLAND);
 
+        //Champignons
+        ModItems.GRAINE_AMANITE = new ItemGraine("graine_amanite",ModBlocks.PLAN_AMANITE,Blocks.MYCELIUM);
+        ModItems.GRAINE_BOLET_SATAN = new ItemGraine("graine_bolet_satan", ModBlocks.PLAN_BOLET_SATAN, Blocks.MYCELIUM);
+        ModItems.GRAINE_CEPE = new ItemGraine("graine_cepe", ModBlocks.PLAN_CEPE, Blocks.MYCELIUM);
+        ModItems.GRAINE_CORTINAIRE = new ItemGraine("graine_cortinaire", ModBlocks.PLAN_CORTINAIRE, Blocks.MYCELIUM);
+        ModItems.GRAINE_GIROLLE = new ItemGraine("graine_girolle", ModBlocks.PLAN_GIROLLE, Blocks.MYCELIUM);
+        ModItems.GRAINE_HELVELLE = new ItemGraine("graine_helvelle", ModBlocks.PLAN_HELVELLE, Blocks.MYCELIUM);
+        ModItems.GRAINE_LEPIOTE = new ItemGraine("graine_lepiote", ModBlocks.PLAN_LEPIOTE, Blocks.MYCELIUM);
+        ModItems.GRAINE_MORILLE = new ItemGraine("graine_morille", ModBlocks.PLAN_MORILLE, Blocks.MYCELIUM);
+        ModItems.GRAINE_PLEUROTE = new ItemGraine("graine_pleurote", ModBlocks.PLAN_PLEUROTE, Blocks.MYCELIUM);
+        ModItems.GRAINE_REISHI = new ItemGraine("graine_reishi", ModBlocks.PLAN_REISHI, Blocks.MYCELIUM);
+        ModItems.GRAINE_SHITAKE = new ItemGraine("graine_shitake", ModBlocks.PLAN_SHITAKE, Blocks.MYCELIUM);
+        ModItems.GRAINE_TROMPETTE_MORT = new ItemGraine("graine_trompette_mort", ModBlocks.PLAN_TROMPETTE_MORT, Blocks.MYCELIUM);
+        ModItems.GRAINE_TRUFFE = new ItemGraine("graine_truffe", ModBlocks.PLAN_TRUFFE, Blocks.MYCELIUM);
+        ModItems.GRAINE_VESSE_LOUP = new ItemGraine("graine_vesse_loup", ModBlocks.PLAN_VESSE_LOUP, Blocks.MYCELIUM);
 
     }
 
@@ -1032,6 +1074,23 @@ public class ModBlocks {
         registerItem(ModItems.GRAINE_ALLIUM);
         registerItem(ModItems.GRAINE_HOUSTONIE_BLEUE);
         registerItem(ModItems.GRAINE_CAPRE);
+
+        //Champignon
+        registerItem(ModItems.GRAINE_AMANITE);
+        registerItem(ModItems.GRAINE_BOLET_SATAN);
+        registerItem(ModItems.GRAINE_CEPE);
+        registerItem(ModItems.GRAINE_CORTINAIRE);
+        registerItem(ModItems.GRAINE_GIROLLE);
+        registerItem(ModItems.GRAINE_HELVELLE);
+        registerItem(ModItems.GRAINE_LEPIOTE);
+        registerItem(ModItems.GRAINE_MORILLE);
+        registerItem(ModItems.GRAINE_PLEUROTE);
+        registerItem(ModItems.GRAINE_REISHI);
+        registerItem(ModItems.GRAINE_SHITAKE);
+        registerItem(ModItems.GRAINE_TROMPETTE_MORT);
+        registerItem(ModItems.GRAINE_TRUFFE);
+        registerItem(ModItems.GRAINE_VESSE_LOUP);
+
 
     }
 

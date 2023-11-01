@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "am:helvelle1"
+    },
+    "age=1": {
+      "model": "am:helvelle1"
+    },
+    "age=2": {
+      "model": "am:helvelle1"
+    },
+    "age=3": {
+      "model": "am:helvelle1"
+    },
+    "age=4": {
+      "model": "am:helvelle2"
+    },
+    "age=5": {
+      "model": "am:helvelle2"
+    },
+    "age=6": {
+      "model": "am:helvelle2"
+    },
+    "age=7": {
+      "model": "am:helvelle"
+    }
+  }
+}
