@@ -6,7 +6,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraftforge.common.EnumPlantType;
 
 public class ItemGraine extends ItemSeeds {
-    private EnumPlantType sol = EnumPlantType.Crop;
+    private EnumPlantType sol = EnumPlantType.Plains;
 
     public ItemGraine(String name, Block crops, Block soil) {
         super(crops, soil);

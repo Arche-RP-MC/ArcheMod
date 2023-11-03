@@ -422,7 +422,6 @@ public class ModItems {
     public static final Item PETITS_POIS_CRU = new ItemBase("petits_pois_cru");
     public static final Item POIREAU_CRU = new ItemBase("poireau_cru");
 
-    public static final Item POIVRON_ORANGE_CRU =  new ItemBase("poivron_orange_cru");
     public static final Item POIVRON_JAUNE_FARCI_CRU = new ItemBase("poivron_jaune_farci_cru");
     public static final Item POIVRON_JAUNE_CRU = new ItemBase("poivron_jaune_m_cru");
     public static final Item POIVRON_ROUGE_FARCI_CRU = new ItemBase("poivron_rouge_farci_cru");
@@ -615,7 +614,6 @@ public class ModItems {
     public static Item GRAINE_ORGE;
     public static Item GRAINE_POIREAU;
     public static Item GRAINE_POIVRON_JAUNE;
-    public static Item GRAINE_POIVRON_ORANGE;
     public static Item GRAINE_POIVRON_ROUGE;
     public static Item GRAINE_POIVRON_VERT;
     public static Item GRAINE_RADIS;
@@ -2483,7 +2481,6 @@ public class ModItems {
     public static final Item PLANTE_ETRANGE2 =  new ItemBase("plante_etrange2");
     public static final Item PLANTE_GRASSE2 =  new ItemBase("plante_grasse2");
     public static final Item PLANTE_GRASSE_COLOREE2 =  new ItemBase("plante_grasse_coloree2");
-    public static final Item POIVRON_ORANGE2 =  new ItemBase("poivron_orange2");
     public static final Item ROMARIN2 =  new ItemBase("romarin2");
     public static final Item RONCES2 =  new ItemBase("ronces2");
     public static final Item SALICORNE2 =  new ItemBase("salicorne2");

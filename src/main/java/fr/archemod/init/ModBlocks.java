@@ -452,7 +452,6 @@ public class ModBlocks {
     public static final Block PLANTE_ETRANGE = new BlockPlanteDeco("plante_etrange");
     public static final Block PLANTE_GRASSE_COLOREE = new BlockPlanteDeco("plante_grasse_coloree");
     public static final Block POIVRON_JAUNE = new BlockPlanteDeco("poivron_jaune");
-    public static final Block POIVRON_ORANGE = new BlockPlanteDeco("poivron_orange");
     public static final Block POIVRON_ROUGE = new BlockPlanteDeco("poivron_rouge");
     public static final Block POIVRON_VERT = new BlockPlanteDeco("poivron_vert");
     public static final Block ROMARIN = new BlockPlanteDeco("romarin");
@@ -568,7 +567,7 @@ public class ModBlocks {
     public static final Block PLAN_BLE = new BlocCulture("plan_ble", ModItems.GRAINE_BLE, ModItems.BLE, faux, 2, 2, 2);
     public static final Block PLAN_BLEUETS = new BlocCulture("plan_bleuets", ModItems.GRAINE_BLEUETS, ModItems.PLANTE_BLEUETS, serpes, 2, 2, 2);
     public static final Block PLAN_BOUTON_D_OR = new BlocCulture("plan_bouton_d_or", ModItems.GRAINE_BOUTON_D_OR, ModItems.PLANTE_BOUTON_D_OR, serpes, 2, 2, 2);
-    public static final Block PLAN_BROCOLIS = new BlocCulture("plan_brocolis", ModItems.GRAINE_BROCOLIS, ModItems.BROCOLI_CRU, cisailles, 2, 2, 2);
+    public static final Block PLAN_BROCOLIS = new BlocCulture("plan_brocolis", ModItems.GRAINE_BROCOLIS, ModItems.BROCOLI_CRU, main, 2, 2, 2);
     public static final Block PLAN_BUIS = new BlocCulture("plan_buis", ModItems.GRAINE_BUIS, ModItems.PLANTE_BUIS, serpes, 2, 2, 2);
     public static final Block PLAN_BUISSON = new BlocCulture("plan_buisson", ModItems.GRAINE_BUISSON, ModItems.PLANTE_BUISSON, serpes, 2, 2, 2);
     public static final Block PLAN_BUISSON_DE_FLEURS_BLANCHES = new BlocCulture("plan_buisson_de_fleurs_blanches", ModItems.GRAINE_BUISSON_DE_FLEURS_BLANCHES, ModItems.PLANTE_BUISSON_DE_FLEURS_BLANCHES, serpes, 2, 2, 2);
@@ -578,7 +577,7 @@ public class ModBlocks {
     public static final Block PLAN_CELERI = new BlocCulture("plan_celeri", ModItems.GRAINE_CELERI, ModItems.CELERI_BRANCHE_CRU, main, 2, 2, 2);
     public static final Block PLAN_CHANVRE = new BlocCulture("plan_chanvre", ModItems.GRAINE_CHANVRE, ModItems.CHANVRE, faux, 2, 2, 2);
     public static final Block PLAN_CHARDON = new BlocCulture("plan_chardon", ModItems.GRAINE_CHARDON, ModItems.PLANTE_CHARDON, serpes, 2, 2, 2);
-    public static final Block PLAN_CHOU = new BlocCulture("plan_chou", ModItems.GRAINE_CHOU, ModItems.CHOU_VERT_CRU, cisailles, 2, 2, 2);
+    public static final Block PLAN_CHOU = new BlocCulture("plan_chou", ModItems.GRAINE_CHOU, ModItems.CHOU_VERT_CRU, main, 2, 2, 2);
     public static final Block PLAN_CIBOULETTE = new BlocCulture("plan_ciboulette", ModItems.GRAINE_CIBOULETTE, ModItems.PLANTE_CIBOULETTE, serpes, 2, 2, 2);
     public static final Block PLAN_CLOCHETTES = new BlocCulture("plan_clochettes", ModItems.GRAINE_CLOCHETTES, ModItems.PLANTE_CLOCHETTES, serpes, 2, 2, 2);
     public static final Block PLAN_COQUELICOT = new BlocCulture("plan_coquelicot", ModItems.GRAINE_COQUELICOT, ModItems.PLANTE_COQUELICOT, serpes, 2, 2, 2);
@@ -589,8 +588,8 @@ public class ModBlocks {
     public static final Block PLAN_ESTRAGON = new BlocCulture("plan_estragon", ModItems.GRAINE_ESTRAGON, ModItems.PLANTE_ESTRAGON, serpes, 2, 2, 2);
     public static final Block PLAN_ETOILE_DES_GLACIERS = new BlocCulture("plan_etoile_des_glaciers", ModItems.GRAINE_ETOILE_DES_GLACIERS, ModItems.PLANTE_ETOILE_DES_GLACIERS, serpes, 0, 0, 0);
     public static final Block PLAN_FENOUIL = new BlocCulture("plan_fenouil", ModItems.GRAINE_FENOUIL, ModItems.FENOUIL_CRU, main, 2, 2, 2);
-    public static final Block PLAN_FRAISE = new BlocCulture("plan_fraise", ModItems.GRAINE_FRAISE, ModItems.FRAISE, main, 2, 2, 2);
-    public static final Block PLAN_FRAMBOISE = new BlocCulture("plan_framboise", ModItems.GRAINE_FRAMBOISE, ModItems.FRAMBOISE, main, 2, 2, 2);
+    public static final Block PLAN_FRAISE = new BlocCulture("plan_fraise", ModItems.GRAINE_FRAISE, ModItems.FRAISE, cisailles, 2, 2, 2);
+    public static final Block PLAN_FRAMBOISE = new BlocCulture("plan_framboise", ModItems.GRAINE_FRAMBOISE, ModItems.FRAMBOISE, cisailles, 2, 2, 2);
     public static final Block PLAN_GERANIUM = new BlocCulture("plan_geranium", ModItems.GRAINE_GERANIUM, ModItems.PLANTE_GERANIUM, serpes, 2, 2, 2);
     public static final Block PLAN_GIROFLIER = new BlocCulture("plan_giroflier", ModItems.GRAINE_GIROFLIER, ModItems.CLOU_DE_GIROFLE, serpes, 2, 2, 2);
     public static final Block PLAN_GLYCINE = new BlocCulture("plan_glycine", ModItems.GRAINE_GLYCINE, ModItems.PLANTE_GLYCINE, serpes, 2, 2, 2);
@@ -614,7 +613,7 @@ public class ModBlocks {
     public static final Block PLAN_LILAS = new BlocCulture("plan_lilas", ModItems.GRAINE_LILAS, ModItems.PLANTE_LILAS, serpes, 2, 2, 2);
     public static final Block PLAN_LYS = new BlocCulture("plan_lys", ModItems.GRAINE_LYS, ModItems.PLANTE_LYS, serpes, 2, 2, 2);
     public static final Block PLAN_MAIS = new BlocCulture("plan_mais", ModItems.GRAINE_MAIS, ModItems.MAIS_CRU, faux, 2, 2, 2);
-    public static final Block PLAN_MANDRAGORE = new BlocCulture("plan_mandragore", ModItems.GRAINE_MANDRAGORE, ModItems.PLANTE_MANDRAGORE, cisailles, 0, 0, 0);
+    public static final Block PLAN_MANDRAGORE = new BlocCulture("plan_mandragore", ModItems.GRAINE_MANDRAGORE, ModItems.PLANTE_MANDRAGORE, main, 0, 0, 0);
     public static final Block PLAN_MENTHE = new BlocCulture("plan_menthe", ModItems.GRAINE_MENTHE, ModItems.PLANTE_MENTHE, serpes, 2, 2, 2);
     public static final Block PLAN_MUGUET = new BlocCulture("plan_muguet", ModItems.GRAINE_MUGUET, ModItems.PLANTE_MUGUET, serpes, 2, 2, 2);
     public static final Block PLAN_MYOSOTIS = new BlocCulture("plan_myosotis", ModItems.GRAINE_MYOSOTIS, ModItems.PLANTE_MYOSOTIS, serpes, 2, 2, 2);
@@ -635,24 +634,23 @@ public class ModBlocks {
     public static final Block PLAN_PLANTE_GRASSE = new BlocCulture("plan_plante_grasse", ModItems.GRAINE_PLANTE_GRASSE, ModItems.PLANTE_PLANTE_GRASSE, serpes, 0, 0, 0);
     public static final Block PLAN_PLANTE_GRASSE_COLOREE = new BlocCulture("plan_plante_grasse_coloree", ModItems.GRAINE_PLANTE_GRASSE_COLOREE, ModItems.PLANTE_PLANTE_GRASSE_COLOREE, serpes, 2, 2, 2);
     public static final Block PLAN_POIREAU = new BlocCulture("plan_poireau", ModItems.GRAINE_POIREAU, ModItems.POIREAU_CRU, fourche, 2, 2, 2);
-    public static final Block PLAN_POIVRON_JAUNE = new BlocCulture("plan_poivron_jaune", ModItems.GRAINE_POIVRON_JAUNE, ModItems.POIVRON_JAUNE_CRU, main, 2, 2, 2);
-    public static final Block PLAN_POIVRON_ORANGE = new BlocCulture("plan_poivron_orange", ModItems.GRAINE_POIVRON_ORANGE, ModItems.POIVRON_ORANGE_CRU, main, 2, 2, 2);
-    public static final Block PLAN_POIVRON_ROUGE = new BlocCulture("plan_poivron_rouge", ModItems.GRAINE_POIVRON_ROUGE, ModItems.POIVRON_ROUGE_CRU, main, 2, 2, 2);
-    public static final Block PLAN_POIVRON_VERT = new BlocCulture("plan_poivron_vert", ModItems.GRAINE_POIVRON_VERT, ModItems.POIVRON_VERT_CRU, main, 2, 2, 2);
+    public static final Block PLAN_POIVRON_JAUNE = new BlocCulture("plan_poivron_jaune", ModItems.GRAINE_POIVRON_JAUNE, ModItems.POIVRON_JAUNE_CRU, cisailles, 2, 2, 2);
+    public static final Block PLAN_POIVRON_ROUGE = new BlocCulture("plan_poivron_rouge", ModItems.GRAINE_POIVRON_ROUGE, ModItems.POIVRON_ROUGE_CRU, cisailles, 2, 2, 2);
+    public static final Block PLAN_POIVRON_VERT = new BlocCulture("plan_poivron_vert", ModItems.GRAINE_POIVRON_VERT, ModItems.POIVRON_VERT_CRU, cisailles, 2, 2, 2);
     public static final Block PLAN_RADIS = new BlocCulture("plan_radis", ModItems.GRAINE_RADIS, ModItems.RADIS, fourche, 2, 2, 2);
     public static final Block PLAN_RHUBARBE = new BlocCulture("plan_rhubarbe", ModItems.GRAINE_RHUBARBE, ModItems.PLANTE_RHUBARBE, cisailles, 2, 2, 2);
     public static final Block PLAN_RIZ = new BlocCulture("plan_riz", ModItems.GRAINE_RIZ, ModItems.RIZ_CRU, faux, 2, 2, 2);
     public static final Block PLAN_ROMARIN = new BlocCulture("plan_romarin", ModItems.GRAINE_ROMARIN, ModItems.PLANTE_ROMARIN, serpes, 2, 2, 2);
     public static final Block PLAN_RONCES = new BlocCulture("plan_ronces", ModItems.GRAINE_RONCES, ModItems.PLANTE_RONCES, cisailles, 2, 2, 2);
     public static final Block PLAN_ROSIER = new BlocCulture("plan_rosier", ModItems.GRAINE_ROSIER, ModItems.PLANTE_ROSIER, serpes, 2, 2, 2);
-    public static final Block PLAN_SALADE = new BlocCulture("plan_salade", ModItems.GRAINE_SALADE, ModItems.SALADE, cisailles, 2, 2, 2);
+    public static final Block PLAN_SALADE = new BlocCulture("plan_salade", ModItems.GRAINE_SALADE, ModItems.SALADE, main, 2, 2, 2);
     public static final Block PLAN_SALICORNE = new BlocCulture("plan_salicorne", ModItems.GRAINE_SALICORNE, ModItems.PLANTE_SALICORNE, main, 2, 2, 2);
     public static final Block PLAN_SALSIFI = new BlocCulture("plan_salsifi", ModItems.GRAINE_SALSIFI, ModItems.SALSIFI_CRU, fourche, 2, 2, 2);
     public static final Block PLAN_SAUGE = new BlocCulture("plan_sauge", ModItems.GRAINE_SAUGE, ModItems.PLANTE_SAUGE, serpes, 2, 2, 2);
     public static final Block PLAN_SUREAU = new BlocCulture("plan_sureau", ModItems.GRAINE_SUREAU, ModItems.PLANTE_SUREAU, serpes, 2, 2, 2);
     public static final Block PLAN_THE = new BlocCulture("plan_the", ModItems.GRAINE_DE_THE, ModItems.FEUILLE_DE_THE, serpes, 0, 0, 0);
     public static final Block PLAN_THYM = new BlocCulture("plan_thym", ModItems.GRAINE_THYM, ModItems.PLANTE_THYM, serpes, 2, 2, 2);
-    public static final Block PLAN_TOMATE = new BlocCulture("plan_tomate", ModItems.GRAINE_TOMATE, ModItems.TOMATE_CRU, main, 2, 2, 2);
+    public static final Block PLAN_TOMATE = new BlocCulture("plan_tomate", ModItems.GRAINE_TOMATE, ModItems.TOMATE_CRU, cisailles, 2, 2, 2);
     public static final Block PLAN_TOURNESOL = new BlocCulture("plan_tournesol", ModItems.GRAINE_TOURNESOL, ModItems.PLANTE_TOURNESOL, faux, 2, 2, 2);
     public static final Block PLAN_TULIPE_BLANCHE = new BlocCulture("plan_tulipe_blanche", ModItems.GRAINE_TULIPE_BLANCHE, ModItems.PLANTE_TULIPE_BLANCHE, serpes, 2, 2, 2);
     public static final Block PLAN_TULIPE_ORANGE = new BlocCulture("plan_tulipe_orange", ModItems.GRAINE_TULIPE_ORANGE, ModItems.PLANTE_TULIPE_ORANGE, serpes, 2, 2, 2);
@@ -660,8 +658,8 @@ public class ModBlocks {
     public static final Block PLAN_TULIPE_ROUGE = new BlocCulture("plan_tulipe_rouge", ModItems.GRAINE_TULIPE_ROUGE, ModItems.PLANTE_TULIPE_ROUGE, serpes, 2, 2, 2);
     public static final Block PLAN_VERGE_D_OR = new BlocCulture("plan_verge_d_or", ModItems.GRAINE_VERGE_D_OR, ModItems.PLANTE_VERGE_D_OR, serpes, 2, 2, 2);
     public static final Block PLAN_VERVEINE = new BlocCulture("plan_verveine", ModItems.GRAINE_VERVEINE, ModItems.PLANTE_VERVEINE, serpes, 2, 2, 2);
-    public static final Block PLAN_VIGNE_BLANCHE = new BlocCulture("plan_vigne_blanche", ModItems.GRAINE_VIGNE_BLANCHE, ModItems.RAISIN_BLANC, main, 2, 2, 2);
-    public static final Block PLAN_VIGNE_NOIRE = new BlocCulture("plan_vigne_noire", ModItems.GRAINE_VIGNE_NOIRE, ModItems.RAISIN_NOIR, main, 2, 2, 2);
+    public static final Block PLAN_VIGNE_BLANCHE = new BlocCulture("plan_vigne_blanche", ModItems.GRAINE_VIGNE_BLANCHE, ModItems.RAISIN_BLANC, cisailles, 2, 2, 2);
+    public static final Block PLAN_VIGNE_NOIRE = new BlocCulture("plan_vigne_noire", ModItems.GRAINE_VIGNE_NOIRE, ModItems.RAISIN_NOIR, cisailles, 2, 2, 2);
     public static final Block PLAN_VIOLETTES = new BlocCulture("plan_violettes", ModItems.GRAINE_VIOLETTES, ModItems.PLANTE_VIOLETTES, serpes, 2, 2, 2);
 
 
@@ -890,7 +888,6 @@ public class ModBlocks {
         ModItems.GRAINE_PLANTE_ETRANGE = new ItemGraine("graine_plante_etrange", ModBlocks.PLAN_PLANTE_ETRANGE, Blocks.FARMLAND);
         ModItems.GRAINE_PLANTE_GRASSE_COLOREE = new ItemGraine("graine_plante_grasse_coloree", ModBlocks.PLAN_PLANTE_GRASSE_COLOREE, Blocks.FARMLAND);
         ModItems.GRAINE_POIVRON_JAUNE = new ItemGraine("graine_poivron_jaune", ModBlocks.PLAN_POIVRON_JAUNE, Blocks.FARMLAND);
-        ModItems.GRAINE_POIVRON_ORANGE = new ItemGraine("graine_poivron_orange", ModBlocks.PLAN_POIVRON_ORANGE, Blocks.FARMLAND);
         ModItems.GRAINE_POIVRON_ROUGE = new ItemGraine("graine_poivron_rouge", ModBlocks.PLAN_POIVRON_ROUGE, Blocks.FARMLAND);
         ModItems.GRAINE_POIVRON_VERT = new ItemGraine("graine_poivron_vert", ModBlocks.PLAN_POIVRON_VERT, Blocks.FARMLAND);
         ModItems.GRAINE_ROMARIN = new ItemGraine("graine_romarin", ModBlocks.PLAN_ROMARIN, Blocks.FARMLAND);
@@ -1041,7 +1038,6 @@ public class ModBlocks {
         registerItem(ModItems.GRAINE_PLANTE_ETRANGE);
         registerItem(ModItems.GRAINE_PLANTE_GRASSE_COLOREE);
         registerItem(ModItems.GRAINE_POIVRON_JAUNE);
-        registerItem(ModItems.GRAINE_POIVRON_ORANGE);
         registerItem(ModItems.GRAINE_POIVRON_ROUGE);
         registerItem(ModItems.GRAINE_POIVRON_VERT);
         registerItem(ModItems.GRAINE_ROMARIN);
