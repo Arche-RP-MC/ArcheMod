@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "am:items/graine_amanite"
+    "layer0": "am:items/graine_champignon"
   }
 }
