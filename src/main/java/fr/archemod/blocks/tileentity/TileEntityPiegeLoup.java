@@ -1,6 +1,6 @@
 package fr.archemod.blocks.tileentity;
 
-import fr.archemod.blocks.container.ContainerNasse;
+import fr.archemod.blocks.container.ContainerPiegeLoup;
 import fr.archemod.init.ModBlocks;
 import fr.archemod.init.ModItems;
 import fr.archemod.util.Reference;
@@ -18,7 +18,18 @@ import net.minecraft.util.NonNullList;
 import java.util.Date;
 import java.util.Objects;
 
-public class TileEntityNasse extends TileEntityBlockInventory {
+public class TileEntityPiegeLoup extends TileEntityBlockInventory {
+    public TileEntityPiegeLoup() { super(); }
+
+    @Override
+    public String getGuiID() {
+        return Reference.MOD_ID + ":piege_loup";
+    }
+
+    @Override
+    public String getName() {
+        return "Piège à Loup";
+    }
 
     private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(7, ItemStack.EMPTY);
     private boolean enCours = false;
@@ -36,20 +47,11 @@ public class TileEntityNasse extends TileEntityBlockInventory {
         enCours = compound.getBoolean("enCours");
         String tempo = compound.getString("appat");
         switch(tempo) {
-            case "insecte_ver_de_terre":
-                appat = ModItems.INSECTE_VER_DE_TERRE;
+            case "appat_chasse_carnivore":
+                appat = ModItems.APPAT_CHASSE_CARNIVORE;
                 break;
-            case "insecte_asticot":
-                appat = ModItems.INSECTE_ASTICOT;
-                break;
-            case "insecte_larve":
-                appat = ModItems.INSECTE_LARVE;
-                break;
-            case "insecte_ver_de_farine":
-                appat = ModItems.INSECTE_VER_DE_FARINE;
-                break;
-            case "appat_peche":
-                appat = ModItems.APPAT_PECHE;
+            case "appat_chasse_herbivore":
+                appat = ModItems.APPAT_CHASSE_HERBIVORE;
                 break;
             default:
                 appat = null;
@@ -75,8 +77,8 @@ public class TileEntityNasse extends TileEntityBlockInventory {
         if(enCours) {
             Date date = new Date();
             long ecart = date.getTime() - time;
-            while(ecart > Reference.DELAI_RECOLTE_PECHE && appat != null && enCours) {
-                ecart = ecart - Reference.DELAI_RECOLTE_PECHE;
+            while(ecart > Reference.DELAI_RECOLTE_CHASSE && appat != null && enCours) {
+                ecart = ecart - Reference.DELAI_RECOLTE_CHASSE;
                 getRecolte();
             }
         }
@@ -88,6 +90,11 @@ public class TileEntityNasse extends TileEntityBlockInventory {
     }
 
     @Override
+    public int getSizeInventory() {
+        return 7;
+    }
+
+    @Override
     public int getSlotInRow() {
         return 1;
     }
@@ -95,11 +102,6 @@ public class TileEntityNasse extends TileEntityBlockInventory {
     @Override
     protected NonNullList<ItemStack> getItems() {
         return null;
-    }
-
-    @Override
-    public int getSizeInventory() {
-        return 7;
     }
 
     @Override
@@ -128,7 +130,7 @@ public class TileEntityNasse extends TileEntityBlockInventory {
 
     @Override
     public Container createContainer(InventoryPlayer playerInventory, EntityPlayer playerIn) {
-        return new ContainerNasse(playerInventory, this);
+        return new ContainerPiegeLoup(playerInventory, this);
     }
 
     @Override
@@ -158,16 +160,6 @@ public class TileEntityNasse extends TileEntityBlockInventory {
     @Override
     public ItemStack getStackInSlot(int slot) {
         return stacks.get(slot);
-    }
-
-    @Override
-    public String getGuiID() {
-        return "am:nasse";
-    }
-
-    @Override
-    public String getName() {
-        return "Nasse";
     }
 
     private void getRecolte() {

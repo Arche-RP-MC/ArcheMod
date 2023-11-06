@@ -1,6 +1,5 @@
 package fr.archemod.items;
 
-import fr.archemod.init.ModItems;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ActionResult;
@@ -8,8 +7,8 @@ import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.EnumHand;
 import net.minecraft.world.World;
 
-public class ItemConsommable extends ItemBase {
-    public ItemConsommable(String name, int durability) {
+public class Savon extends ItemBase {
+    public Savon(String name, int durability) {
         super(name);
         setMaxStackSize(1);
         setMaxDamage(durability);
@@ -24,5 +23,20 @@ public class ItemConsommable extends ItemBase {
             playerIn.getHeldItem(handIn).damageItem(1, playerIn);
         }
         return new ActionResult<>(EnumActionResult.SUCCESS, playerIn.getHeldItem(handIn));
+    }
+
+    @Override
+    public boolean hasContainerItem(ItemStack itemStack) {
+        return true;
+    }
+
+    @Override
+    public ItemStack getContainerItem(ItemStack itemStack) {
+        if (itemStack.getItemDamage() == itemStack.getMaxDamage()) {
+            return ItemStack.EMPTY;
+        }
+        ItemStack itemCopy = itemStack.copy();
+        itemCopy.setItemDamage(itemCopy.getItemDamage() + 1);
+        return itemCopy;
     }
 }

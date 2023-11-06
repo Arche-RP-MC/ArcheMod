@@ -13,17 +13,25 @@ import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemAxe;
 import net.minecraft.item.ItemStack;
+import scala.xml.PrettyPrinter;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class ModItems {
-
     public static final List<Item> ITEMS = new ArrayList<Item>();
 
-
     //Animal
+    public static final Item APPAT_CHASSE_CARNIVORE = new ItemBase("appat_chasse_carnivore");
+    public static final Item APPAT_CHASSE_HERBIVORE = new ItemBase("appat_chasse_herbivore");
+    public static final Item APPAT_PECHE = new ItemBase("appat_peche");
     public static final Item CARAPACE_DE_TORTUE = new ItemBase("carapace_de_tortue");
+    public static final Item CARCASSE_RONGEUR = new ItemBase("carcasse_rongeur");
+    public static final Item CARCASSE_VOLAILLE = new ItemBase("carcasse_volaille");
+    public static final Item CARCASSE_BOVIDE = new ItemBase("carcasse_bovide");
+    public static final Item CARCASSE_CERVIDE = new ItemBase("carcasse_cervide");
+    public static final Item CARCASSE_URSIDE = new ItemBase("carcasse_urside");
+    public static final Item CARCASSE_CANIDE = new ItemBase("carcasse_canide");
     public static final Item CERVEAU = new ItemBase("cerveau");
     public static final Item CIRE = new ItemBase("cire");
     public static final Item COEUR = new ItemBase("coeur");
@@ -205,22 +213,22 @@ public class ModItems {
     public static final Item BISCUIT = new ItemFoodBase("biscuit", 1, 0.2F, false);
     public static final Item BISCUIT_AU_CHOCOLAT = new ItemFoodBase("biscuit_au_chocolat", 1, 0.2F, false);
     public static final Item BLEU = new ItemFoodBase("bleu", 4, 0.2F, false);
-    public static final Item BOL_DE_GRUAU = new ItemContainer("bol_de_gruau", 8, 0.2F, false, Items.BOWL, 0, true);
-    public static final Item BOL_DE_POTAGE = new ItemContainer("bol_de_potage", 8, 0.2F, false, Items.BOWL, 0, true);
-    public static final Item BOL_DE_POT_AU_FEU = new ItemContainer("bol_de_pot_au_feu", 12, 0.2F, false, Items.BOWL, 0, true);
-    public static final Item BOL_DE_RAGOUT = new ItemContainer("bol_de_ragout", 12, 0.2F, false, Items.BOWL, 0, true);
-    public static final Item BOL_DE_RAGOUT_DE_CRUSTACES = new ItemContainer("bol_de_ragout_de_crustaces", 12, 0.2F, false, Items.BOWL, 0, true);
-    public static final Item BOL_DE_RAGOUT_DE_PATATES = new ItemContainer("bol_de_ragout_de_patates", 8, 0.2F, false, Items.BOWL, 0, true);
-    public static final Item BOL_DE_RAGOUT_DE_VIANDE = new ItemContainer("bol_de_ragout_de_viande", 12, 0.2F, false, Items.BOWL, 0, true);
-    public static final Item BOL_DE_RIZ = new ItemContainer("bol_de_riz", 8, 0.2F, false, Items.BOWL, 0, true);
-    public static final Item BOL_DE_SALADE_DE_FRUITS = new ItemContainer("bol_de_salade_de_fruits", 6, 0.2F, false, Items.BOWL, 0, true);
-    public static final Item BOL_DE_SOUPE_AVEC_CROUTONS = new ItemContainer("bol_de_soupe_avec_croutons", 12, 0.2F, false, Items.BOWL, 0, true);
-    public static final Item BOL_DE_SOUPE_DE_CHOUX = new ItemContainer("bol_de_soupe_de_choux", 8, 0.2F, false, Items.BOWL, 0, true);
-    public static final Item BOL_DE_SOUPE_DE_CITROUILLE = new ItemContainer("bol_de_soupe_de_citrouille", 8, 0.2F, false, Items.BOWL, 0, true);
-    public static final Item BOL_DE_SOUPE_DE_POIS = new ItemContainer("bol_de_soupe_de_pois", 8, 0.2F, false, Items.BOWL, 0, true);
-    public static final Item BOL_DE_SOUPE_DE_POISSON = new ItemContainer("bol_de_soupe_de_poisson", 8, 0.2F, false, Items.BOWL, 0, true);
-    public static final Item BOL_DE_SOUPE_DE_TOMATES = new ItemContainer("bol_de_soupe_de_tomates", 8, 0.2F, false, Items.BOWL, 0, true);
-    public static final Item BOL_DE_SOUPE_VERTE = new ItemContainer("bol_de_soupe_verte", 8, 0.2F, false, Items.BOWL, 0, true);
+    public static final Item BOL_DE_GRUAU = new ItemContainer("bol_de_gruau", 8, 0.2F, false, ModItems.BOL_SALE, 0, true);
+    public static final Item BOL_DE_POTAGE = new ItemContainer("bol_de_potage", 8, 0.2F, false, ModItems.BOL_SALE, 0, true);
+    public static final Item BOL_DE_POT_AU_FEU = new ItemContainer("bol_de_pot_au_feu", 12, 0.2F, false, ModItems.BOL_SALE, 0, true);
+    public static final Item BOL_DE_RAGOUT = new ItemContainer("bol_de_ragout", 12, 0.2F, false, ModItems.BOL_SALE, 0, true);
+    public static final Item BOL_DE_RAGOUT_DE_CRUSTACES = new ItemContainer("bol_de_ragout_de_crustaces", 12, 0.2F, false, ModItems.BOL_SALE, 0, true);
+    public static final Item BOL_DE_RAGOUT_DE_PATATES = new ItemContainer("bol_de_ragout_de_patates", 8, 0.2F, false, ModItems.BOL_SALE, 0, true);
+    public static final Item BOL_DE_RAGOUT_DE_VIANDE = new ItemContainer("bol_de_ragout_de_viande", 12, 0.2F, false, ModItems.BOL_SALE, 0, true);
+    public static final Item BOL_DE_RIZ = new ItemContainer("bol_de_riz", 8, 0.2F, false, ModItems.BOL_SALE, 0, true);
+    public static final Item BOL_DE_SALADE_DE_FRUITS = new ItemContainer("bol_de_salade_de_fruits", 6, 0.2F, false, ModItems.BOL_SALE, 0, true);
+    public static final Item BOL_DE_SOUPE_AVEC_CROUTONS = new ItemContainer("bol_de_soupe_avec_croutons", 12, 0.2F, false, ModItems.BOL_SALE, 0, true);
+    public static final Item BOL_DE_SOUPE_DE_CHOUX = new ItemContainer("bol_de_soupe_de_choux", 8, 0.2F, false, ModItems.BOL_SALE, 0, true);
+    public static final Item BOL_DE_SOUPE_DE_CITROUILLE = new ItemContainer("bol_de_soupe_de_citrouille", 8, 0.2F, false, ModItems.BOL_SALE, 0, true);
+    public static final Item BOL_DE_SOUPE_DE_POIS = new ItemContainer("bol_de_soupe_de_pois", 8, 0.2F, false, ModItems.BOL_SALE, 0, true);
+    public static final Item BOL_DE_SOUPE_DE_POISSON = new ItemContainer("bol_de_soupe_de_poisson", 8, 0.2F, false, ModItems.BOL_SALE, 0, true);
+    public static final Item BOL_DE_SOUPE_DE_TOMATES = new ItemContainer("bol_de_soupe_de_tomates", 8, 0.2F, false, ModItems.BOL_SALE, 0, true);
+    public static final Item BOL_DE_SOUPE_VERTE = new ItemContainer("bol_de_soupe_verte", 8, 0.2F, false, ModItems.BOL_SALE, 0, true);
     public static final Item BOUDIN = new ItemFoodBase("boudin", 4, 0.2F, false);
     public static final Item BRETZEL = new ItemFoodBase("bretzel", 4, 0.2F, false);
     public static final Item BRIOCHE = new ItemFoodBase("brioche", 4, 0.2F, false);
@@ -1617,76 +1625,77 @@ public class ModItems {
 
     public static final Item BOCAL = new ItemBase("bocal");
     public static final Item BOUTEILLE_VIDE = new ItemBase("bouteille_vide");
+    public static final Item BOUTEILLE_SALE = new ItemBase("bouteille_sale");
     public static final Item CHOPPE_EN_VERRE = new ItemBase("choppe_en_verre");
     public static final Item VERRE_A_PIED = new ItemBase("verre_a_pied");
 
     public static final Item VERRE_A_PIED_EAU = new ItemContainer("verre_a_pied_eau", 0, 0.2F, false, VERRE_A_PIED, 0);
-    public static final Item CHOPPE_EN_VERRE_EAU = new ItemContainer("choppe_en_verre_eau", 0, 0.2F, false, CHOPPE_EN_VERRE, 0);
-    public static final Item CHOPPE_EN_ARGILE_EAU = new ItemContainer("choppe_en_argile_eau", 0, 0.2F, false, CHOPPE_EN_ARGILE, 0);
-    public static final Item BOUTEILLE_D_EAU = new ItemContainer("bouteille_d_eau", 0, 0.2F, false, BOUTEILLE_VIDE, 4);
+    public static final Item CHOPPE_EN_VERRE_EAU = new ItemContainer("choppe_en_verre_eau", 0, 0.2F, false, CHOPPE_EN_VERRE_SALE, 0);
+    public static final Item CHOPPE_EN_ARGILE_EAU = new ItemContainer("choppe_en_argile_eau", 0, 0.2F, false, CHOPPE_EN_ARGILE_SALE, 0);
+    public static final Item BOUTEILLE_D_EAU = new ItemContainer("bouteille_d_eau", 0, 0.2F, false, BOUTEILLE_SALE, 4);
     public static final Item BOCAL_D_EAU = new ItemContainer("bocal_d_eau", 0, 0.2F, false, ItemStack.EMPTY.getItem(), 1);
 
     public static final Item SEAU_DE_LAIT_EN_BOIS = new ItemBase("seau_de_lait_en_bois");
     public static final Item VERRE_A_PIED_LAIT = new ItemContainer("verre_a_pied_lait", 0, 0.2F, false, VERRE_A_PIED, 0);
-    public static final Item CHOPPE_EN_VERRE_LAIT = new ItemContainer("choppe_en_verre_lait", 0, 0.2F, false, CHOPPE_EN_VERRE, 0);
-    public static final Item CHOPPE_EN_ARGILE_LAIT = new ItemContainer("choppe_en_argile_lait", 0, 0.2F, false, CHOPPE_EN_ARGILE, 0);
-    public static final Item BOUTEILLE_DE_LAIT = new ItemContainer("bouteille_de_lait", 0, 0.2F, false, BOUTEILLE_VIDE, 4);
+    public static final Item CHOPPE_EN_VERRE_LAIT = new ItemContainer("choppe_en_verre_lait", 0, 0.2F, false, CHOPPE_EN_VERRE_SALE, 0);
+    public static final Item CHOPPE_EN_ARGILE_LAIT = new ItemContainer("choppe_en_argile_lait", 0, 0.2F, false, CHOPPE_EN_ARGILE_SALE, 0);
+    public static final Item BOUTEILLE_DE_LAIT = new ItemContainer("bouteille_de_lait", 0, 0.2F, false, BOUTEILLE_SALE, 4);
     public static final Item BOCAL_DE_LAIT = new ItemContainer("bocal_de_lait", 0, 0.2F, false, ItemStack.EMPTY.getItem(), 1);
 
     public static final Item SEAU_DE_BIERRE_BLONDE = new ItemBase("seau_de_bierre_blonde");
     public static final Item SEAU_DE_BIERRE_BLONDE_EN_BOIS = new ItemBase("seau_de_bierre_blonde_en_bois");
     public static final Item VERRE_A_PIED_BIERRE_BLONDE = new ItemContainer("verre_a_pied_bierre_blonde", 0, 0.2F, false, VERRE_A_PIED, 0);
-    public static final Item CHOPPE_EN_VERRE_BIERRE_BLONDE = new ItemContainer("choppe_en_verre_bierre_blonde", 0, 0.2F, false, CHOPPE_EN_VERRE, 0);
-    public static final Item CHOPPE_EN_ARGILE_BIERRE_BLONDE = new ItemContainer("choppe_en_argile_bierre_blonde", 0, 0.2F, false, CHOPPE_EN_ARGILE, 0);
-    public static final Item BOUTEILLE_DE_BIERRE_BLONDE = new ItemContainer("bouteille_de_bierre_blonde", 0, 0.2F, false, BOUTEILLE_VIDE, 4);
+    public static final Item CHOPPE_EN_VERRE_BIERRE_BLONDE = new ItemContainer("choppe_en_verre_bierre_blonde", 0, 0.2F, false, CHOPPE_EN_VERRE_SALE, 0);
+    public static final Item CHOPPE_EN_ARGILE_BIERRE_BLONDE = new ItemContainer("choppe_en_argile_bierre_blonde", 0, 0.2F, false, CHOPPE_EN_ARGILE_SALE, 0);
+    public static final Item BOUTEILLE_DE_BIERRE_BLONDE = new ItemContainer("bouteille_de_bierre_blonde", 0, 0.2F, false, BOUTEILLE_SALE, 4);
     public static final Item BOCAL_DE_BIERRE_BLONDE = new ItemContainer("bocal_de_bierre_blonde", 0, 0.2F, false, ItemStack.EMPTY.getItem(), 1);
 
     public static final Item SEAU_DE_BIERE_BRUNE = new ItemBase("seau_de_biere_brune");
     public static final Item SEAU_DE_BIERE_BRUNE_EN_BOIS = new ItemBase("seau_de_biere_brune_en_bois");
     public static final Item VERRE_A_PIED_BIERE_BRUNE = new ItemContainer("verre_a_pied_biere_brune", 0, 0.2F, false, VERRE_A_PIED, 0);
-    public static final Item CHOPPE_EN_VERRE_BIERE_BRUNE = new ItemContainer("choppe_en_verre_biere_brune", 0, 0.2F, false, CHOPPE_EN_VERRE, 0);
-    public static final Item CHOPPE_EN_ARGILE_BIERE_BRUNE = new ItemContainer("choppe_en_argile_biere_brune", 0, 0.2F, false, CHOPPE_EN_ARGILE, 0);
-    public static final Item BOUTEILLE_DE_BIERE_BRUNE = new ItemContainer("bouteille_de_biere_brune", 0, 0.2F, false, BOUTEILLE_VIDE, 4);
+    public static final Item CHOPPE_EN_VERRE_BIERE_BRUNE = new ItemContainer("choppe_en_verre_biere_brune", 0, 0.2F, false, CHOPPE_EN_VERRE_SALE, 0);
+    public static final Item CHOPPE_EN_ARGILE_BIERE_BRUNE = new ItemContainer("choppe_en_argile_biere_brune", 0, 0.2F, false, CHOPPE_EN_ARGILE_SALE, 0);
+    public static final Item BOUTEILLE_DE_BIERE_BRUNE = new ItemContainer("bouteille_de_biere_brune", 0, 0.2F, false, BOUTEILLE_SALE, 4);
     public static final Item BOCAL_DE_BIERE_BRUNE = new ItemContainer("bocal_de_biere_brune", 0, 0.2F, false, ItemStack.EMPTY.getItem(), 1);
 
     public static final Item SEAU_DE_BIERE_ROUSSE = new ItemBase("seau_de_biere_rousse");
     public static final Item SEAU_DE_BIERE_ROUSSE_EN_BOIS = new ItemBase("seau_de_biere_rousse_en_bois");
     public static final Item VERRE_A_PIED_BIERE_ROUSSE = new ItemContainer("verre_a_pied_biere_rousse", 0, 0.2F, false, VERRE_A_PIED, 0);
-    public static final Item CHOPPE_EN_VERRE_BIERE_ROUSSE = new ItemContainer("choppe_en_verre_biere_rousse", 0, 0.2F, false, CHOPPE_EN_VERRE, 0);
-    public static final Item CHOPPE_EN_ARGILE_BIERE_ROUSSE = new ItemContainer("choppe_en_argile_biere_rousse", 0, 0.2F, false, CHOPPE_EN_ARGILE, 0);
-    public static final Item BOUTEILLE_DE_BIERE_ROUSSE = new ItemContainer("bouteille_de_biere_rousse", 0, 0.2F, false, BOUTEILLE_VIDE, 4);
+    public static final Item CHOPPE_EN_VERRE_BIERE_ROUSSE = new ItemContainer("choppe_en_verre_biere_rousse", 0, 0.2F, false, CHOPPE_EN_VERRE_SALE, 0);
+    public static final Item CHOPPE_EN_ARGILE_BIERE_ROUSSE = new ItemContainer("choppe_en_argile_biere_rousse", 0, 0.2F, false, CHOPPE_EN_ARGILE_SALE, 0);
+    public static final Item BOUTEILLE_DE_BIERE_ROUSSE = new ItemContainer("bouteille_de_biere_rousse", 0, 0.2F, false, BOUTEILLE_SALE, 4);
     public static final Item BOCAL_DE_BIERE_ROUSSE = new ItemContainer("bocal_de_biere_rousse", 0, 0.2F, false, ItemStack.EMPTY.getItem(), 1);
 
     public static final Item SEAU_DE_VIN_BLANC = new ItemBase("seau_de_vin_blanc");
     public static final Item SEAU_DE_VIN_BLANC_EN_BOIS = new ItemBase("seau_de_vin_blanc_en_bois");
     public static final Item VERRE_A_PIED_VIN_BLANC = new ItemContainer("verre_a_pied_vin_blanc", 0, 0.2F, false, VERRE_A_PIED, 0);
-    public static final Item CHOPPE_EN_VERRE_VIN_BLANC = new ItemContainer("choppe_en_verre_vin_blanc", 0, 0.2F, false, CHOPPE_EN_VERRE, 0);
-    public static final Item CHOPPE_EN_ARGILE_VIN_BLANC = new ItemContainer("choppe_en_argile_vin_blanc", 0, 0.2F, false, CHOPPE_EN_ARGILE, 0);
-    public static final Item BOUTEILLE_DE_VIN_BLANC = new ItemContainer("bouteille_de_vin_blanc", 0, 0.2F, false, BOUTEILLE_VIDE, 4);
+    public static final Item CHOPPE_EN_VERRE_VIN_BLANC = new ItemContainer("choppe_en_verre_vin_blanc", 0, 0.2F, false, CHOPPE_EN_VERRE_SALE, 0);
+    public static final Item CHOPPE_EN_ARGILE_VIN_BLANC = new ItemContainer("choppe_en_argile_vin_blanc", 0, 0.2F, false, CHOPPE_EN_ARGILE_SALE, 0);
+    public static final Item BOUTEILLE_DE_VIN_BLANC = new ItemContainer("bouteille_de_vin_blanc", 0, 0.2F, false, BOUTEILLE_SALE, 4);
     public static final Item BOCAL_DE_VIN_BLANC = new ItemContainer("bocal_de_vin_blanc", 0, 0.2F, false, ItemStack.EMPTY.getItem(), 1);
 
     public static final Item SEAU_DE_VIN_ROUGE = new ItemBase("seau_de_vin_rouge");
     public static final Item SEAU_DE_VIN_ROUGE_EN_BOIS = new ItemBase("seau_de_vin_rouge_en_bois");
     public static final Item VERRE_A_PIED_VIN_ROUGE = new ItemContainer("verre_a_pied_vin_rouge", 0, 0.2F, false, VERRE_A_PIED, 0);
-    public static final Item CHOPPE_EN_VERRE_VIN_ROUGE = new ItemContainer("choppe_en_verre_vin_rouge", 0, 0.2F, false, CHOPPE_EN_VERRE, 0);
-    public static final Item CHOPPE_EN_ARGILE_VIN_ROUGE = new ItemContainer("choppe_en_argile_vin_rouge", 0, 0.2F, false, CHOPPE_EN_ARGILE, 0);
-    public static final Item BOUTEILLE_DE_VIN_ROUGE = new ItemContainer("bouteille_de_vin_rouge", 0, 0.2F, false, BOUTEILLE_VIDE, 4);
+    public static final Item CHOPPE_EN_VERRE_VIN_ROUGE = new ItemContainer("choppe_en_verre_vin_rouge", 0, 0.2F, false, CHOPPE_EN_VERRE_SALE, 0);
+    public static final Item CHOPPE_EN_ARGILE_VIN_ROUGE = new ItemContainer("choppe_en_argile_vin_rouge", 0, 0.2F, false, CHOPPE_EN_ARGILE_SALE, 0);
+    public static final Item BOUTEILLE_DE_VIN_ROUGE = new ItemContainer("bouteille_de_vin_rouge", 0, 0.2F, false, BOUTEILLE_SALE, 4);
     public static final Item BOCAL_DE_VIN_ROUGE = new ItemContainer("bocal_de_vin_rouge", 0, 0.2F, false, ItemStack.EMPTY.getItem(), 1);
 
     public static final Item SEAU_DE_RHUM = new ItemBase("seau_de_rhum");
     public static final Item SEAU_DE_RHUM_EN_BOIS = new ItemBase("seau_de_rhum_en_bois");
     public static final Item VERRE_A_PIED_RHUM = new ItemContainer("verre_a_pied_rhum", 0, 0.2F, false, VERRE_A_PIED, 0);
-    public static final Item CHOPPE_EN_VERRE_RHUM = new ItemContainer("choppe_en_verre_rhum", 0, 0.2F, false, CHOPPE_EN_VERRE, 0);
-    public static final Item CHOPPE_EN_ARGILE_RHUM = new ItemContainer("choppe_en_argile_rhum", 0, 0.2F, false, CHOPPE_EN_ARGILE, 0);
-    public static final Item BOUTEILLE_DE_RHUM = new ItemContainer("bouteille_de_rhum", 0, 0.2F, false, BOUTEILLE_VIDE, 4);
+    public static final Item CHOPPE_EN_VERRE_RHUM = new ItemContainer("choppe_en_verre_rhum", 0, 0.2F, false, CHOPPE_EN_VERRE_SALE, 0);
+    public static final Item CHOPPE_EN_ARGILE_RHUM = new ItemContainer("choppe_en_argile_rhum", 0, 0.2F, false, CHOPPE_EN_ARGILE_SALE, 0);
+    public static final Item BOUTEILLE_DE_RHUM = new ItemContainer("bouteille_de_rhum", 0, 0.2F, false, BOUTEILLE_SALE, 4);
     public static final Item BOCAL_DE_RHUM = new ItemContainer("bocal_de_rhum", 0, 0.2F, false, ItemStack.EMPTY.getItem(), 1);
 
     public static final Item SEAU_DE_HYDROMEL = new ItemBase("seau_de_hydromel");
     public static final Item SEAU_DE_HYDROMEL_EN_BOIS = new ItemBase("seau_de_hydromel_en_bois");
     public static final Item VERRE_A_PIED_HYDROMEL = new ItemContainer("verre_a_pied_hydromel", 0, 0.2F, false, VERRE_A_PIED, 0);
-    public static final Item CHOPPE_EN_VERRE_HYDROMEL = new ItemContainer("choppe_en_verre_hydromel", 0, 0.2F, false, CHOPPE_EN_VERRE, 0);
-    public static final Item CHOPPE_EN_ARGILE_HYDROMEL = new ItemContainer("choppe_en_argile_hydromel", 0, 0.2F, false, CHOPPE_EN_ARGILE, 0);
-    public static final Item BOUTEILLE_DE_HYDROMEL = new ItemContainer("bouteille_de_hydromel", 0, 0.2F, false, BOUTEILLE_VIDE, 4);
+    public static final Item CHOPPE_EN_VERRE_HYDROMEL = new ItemContainer("choppe_en_verre_hydromel", 0, 0.2F, false, CHOPPE_EN_VERRE_SALE, 0);
+    public static final Item CHOPPE_EN_ARGILE_HYDROMEL = new ItemContainer("choppe_en_argile_hydromel", 0, 0.2F, false, CHOPPE_EN_ARGILE_SALE, 0);
+    public static final Item BOUTEILLE_DE_HYDROMEL = new ItemContainer("bouteille_de_hydromel", 0, 0.2F, false, BOUTEILLE_SALE, 4);
     public static final Item BOCAL_DE_HYDROMEL = new ItemContainer("bocal_de_hydromel", 0, 0.2F, false, ItemStack.EMPTY.getItem(), 1);
 
     public static final Item GROSSE_BOUTEILLE_VIDE = new ItemBase("grosse_bouteille_vide");
@@ -1695,11 +1704,11 @@ public class ModItems {
     public static final Item BOUTEILLE_HUILE_NOIX = new ItemContainer("bouteille_huile_noix", 0, 0.2F, false, GROSSE_BOUTEILLE_VIDE, 6);
     public static final Item BOUTEILLE_VINAIGRE = new ItemContainer("bouteille_vinaigre", 0, 0.2F, false, GROSSE_BOUTEILLE_VIDE, 6);
 
-    public static final Item BOUTEILLE_DE_JUS_DE_FRUIT_VERT = new ItemContainer("bouteille_de_jus_de_fruit_vert", 0, 0.2F, false, BOUTEILLE_VIDE, 4);
-    public static final Item BOUTEILLE_DE_JUS_DE_FRUIT_ROUGE = new ItemContainer("bouteille_de_jus_de_fruit_rouge", 0, 0.2F, false, BOUTEILLE_VIDE, 4);
-    public static final Item BOUTEILLE_DE_JUS_DE_FRUIT_BLANC = new ItemContainer("bouteille_de_jus_de_fruit_blanc", 0, 0.2F, false, BOUTEILLE_VIDE, 4);
-    public static final Item BOUTEILLE_DE_JUS_DE_FRUIT_ORANGE = new ItemContainer("bouteille_de_jus_de_fruit_orange", 0, 0.2F, false, BOUTEILLE_VIDE, 4);
-    public static final Item BOUTEILLE_DE_JUS_DE_FRUIT_JAUNE = new ItemContainer("bouteille_de_jus_de_fruit_jaune", 0, 0.2F, false, BOUTEILLE_VIDE, 4);
+    public static final Item BOUTEILLE_DE_JUS_DE_FRUIT_VERT = new ItemContainer("bouteille_de_jus_de_fruit_vert", 0, 0.2F, false, BOUTEILLE_SALE, 4);
+    public static final Item BOUTEILLE_DE_JUS_DE_FRUIT_ROUGE = new ItemContainer("bouteille_de_jus_de_fruit_rouge", 0, 0.2F, false, BOUTEILLE_SALE, 4);
+    public static final Item BOUTEILLE_DE_JUS_DE_FRUIT_BLANC = new ItemContainer("bouteille_de_jus_de_fruit_blanc", 0, 0.2F, false, BOUTEILLE_SALE, 4);
+    public static final Item BOUTEILLE_DE_JUS_DE_FRUIT_ORANGE = new ItemContainer("bouteille_de_jus_de_fruit_orange", 0, 0.2F, false, BOUTEILLE_SALE, 4);
+    public static final Item BOUTEILLE_DE_JUS_DE_FRUIT_JAUNE = new ItemContainer("bouteille_de_jus_de_fruit_jaune", 0, 0.2F, false, BOUTEILLE_SALE, 4);
 
     // AJOUT BRASSEURS juillet 23
     public static final Item ALAMBIC = new ItemIngrediant("alambic", Reference.DURABILITE_BRONZE);
@@ -1712,79 +1721,79 @@ public class ModItems {
     public static final Item MOUT_RAISIN_BLANC = new ItemBase("mout_raisin_blanc");
     public static final Item MOUT_RAISIN_NOIR = new ItemBase("mout_raisin_noir");
 
-    public static final Item CHOPPE_EN_ARGILE_JUS_DE_FRUIT_VERT = new ItemContainer("choppe_en_argile_jus_de_fruit_vert", 0, 0.2F, false, CHOPPE_EN_ARGILE, 0);
-    public static final Item CHOPPE_EN_VERRE_JUS_DE_FRUIT_VERT = new ItemContainer("choppe_en_verre_jus_de_fruit_vert", 0, 0.2F, false, CHOPPE_EN_VERRE, 0);
+    public static final Item CHOPPE_EN_ARGILE_JUS_DE_FRUIT_VERT = new ItemContainer("choppe_en_argile_jus_de_fruit_vert", 0, 0.2F, false, CHOPPE_EN_ARGILE_SALE, 0);
+    public static final Item CHOPPE_EN_VERRE_JUS_DE_FRUIT_VERT = new ItemContainer("choppe_en_verre_jus_de_fruit_vert", 0, 0.2F, false, CHOPPE_EN_VERRE_SALE, 0);
     public static final Item MOUT_FRUIT_VERT = new ItemBase("mout_fruit_vert");
     public static final Item SEAU_JUS_DE_FRUIT_VERT = new ItemBase("seau_jus_de_fruit_vert");
     public static final Item SEAU_JUS_DE_FRUIT_VERT_EN_BOIS = new ItemBase("seau_jus_de_fruit_vert_en_bois");
     public static final Item VERRE_A_PIED_JUS_DE_FRUIT_VERT = new ItemContainer("verre_a_pied_jus_de_fruit_vert", 0, 0.2F, false, VERRE_A_PIED, 0);
 
-    public static final Item CHOPPE_EN_ARGILE_JUS_DE_FRUIT_ROUGE = new ItemContainer("choppe_en_argile_jus_de_fruit_rouge", 0, 0.2F, false, CHOPPE_EN_ARGILE, 0);
-    public static final Item CHOPPE_EN_VERRE_JUS_DE_FRUIT_ROUGE = new ItemContainer("choppe_en_verre_jus_de_fruit_rouge", 0, 0.2F, false, CHOPPE_EN_VERRE, 0);
+    public static final Item CHOPPE_EN_ARGILE_JUS_DE_FRUIT_ROUGE = new ItemContainer("choppe_en_argile_jus_de_fruit_rouge", 0, 0.2F, false, CHOPPE_EN_ARGILE_SALE, 0);
+    public static final Item CHOPPE_EN_VERRE_JUS_DE_FRUIT_ROUGE = new ItemContainer("choppe_en_verre_jus_de_fruit_rouge", 0, 0.2F, false, CHOPPE_EN_VERRE_SALE, 0);
     public static final Item MOUT_FRUIT_ROUGE = new ItemBase("mout_fruit_rouge");
     public static final Item SEAU_JUS_DE_FRUIT_ROUGE = new ItemBase("seau_jus_de_fruit_rouge");
     public static final Item SEAU_JUS_DE_FRUIT_ROUGE_EN_BOIS = new ItemBase("seau_jus_de_fruit_rouge_en_bois");
     public static final Item VERRE_A_PIED_JUS_DE_FRUIT_ROUGE = new ItemContainer("verre_a_pied_jus_de_fruit_rouge", 0, 0.2F, false, VERRE_A_PIED, 0);
 
-    public static final Item CHOPPE_EN_ARGILE_JUS_DE_FRUIT_BLANC = new ItemContainer("choppe_en_argile_jus_de_fruit_blanc", 0, 0.2F, false, CHOPPE_EN_ARGILE, 0);
-    public static final Item CHOPPE_EN_VERRE_JUS_DE_FRUIT_BLANC = new ItemContainer("choppe_en_verre_jus_de_fruit_blanc", 0, 0.2F, false, CHOPPE_EN_VERRE, 0);
+    public static final Item CHOPPE_EN_ARGILE_JUS_DE_FRUIT_BLANC = new ItemContainer("choppe_en_argile_jus_de_fruit_blanc", 0, 0.2F, false, CHOPPE_EN_ARGILE_SALE, 0);
+    public static final Item CHOPPE_EN_VERRE_JUS_DE_FRUIT_BLANC = new ItemContainer("choppe_en_verre_jus_de_fruit_blanc", 0, 0.2F, false, CHOPPE_EN_VERRE_SALE, 0);
     public static final Item MOUT_FRUIT_BLANC = new ItemBase("mout_fruit_blanc");
     public static final Item SEAU_JUS_DE_FRUIT_BLANC = new ItemBase("seau_jus_de_fruit_blanc");
     public static final Item SEAU_JUS_DE_FRUIT_BLANC_EN_BOIS = new ItemBase("seau_jus_de_fruit_blanc_en_bois");
     public static final Item VERRE_A_PIED_JUS_DE_FRUIT_BLANC = new ItemContainer("verre_a_pied_jus_de_fruit_blanc", 0, 0.2F, false, VERRE_A_PIED, 0);
 
-    public static final Item CHOPPE_EN_ARGILE_JUS_DE_FRUIT_ORANGE = new ItemContainer("choppe_en_argile_jus_de_fruit_orange", 0, 0.2F, false, CHOPPE_EN_ARGILE, 0);
-    public static final Item CHOPPE_EN_VERRE_JUS_DE_FRUIT_ORANGE = new ItemContainer("choppe_en_verre_jus_de_fruit_orange", 0, 0.2F, false, CHOPPE_EN_VERRE, 0);
+    public static final Item CHOPPE_EN_ARGILE_JUS_DE_FRUIT_ORANGE = new ItemContainer("choppe_en_argile_jus_de_fruit_orange", 0, 0.2F, false, CHOPPE_EN_ARGILE_SALE, 0);
+    public static final Item CHOPPE_EN_VERRE_JUS_DE_FRUIT_ORANGE = new ItemContainer("choppe_en_verre_jus_de_fruit_orange", 0, 0.2F, false, CHOPPE_EN_VERRE_SALE, 0);
     public static final Item MOUT_FRUIT_ORANGE = new ItemBase("mout_fruit_orange");
     public static final Item SEAU_JUS_DE_FRUIT_ORANGE = new ItemBase("seau_jus_de_fruit_orange");
     public static final Item SEAU_JUS_DE_FRUIT_ORANGE_EN_BOIS = new ItemBase("seau_jus_de_fruit_orange_en_bois");
     public static final Item VERRE_A_PIED_JUS_DE_FRUIT_ORANGE = new ItemContainer("verre_a_pied_jus_de_fruit_orange", 0, 0.2F, false, VERRE_A_PIED, 0);
 
-    public static final Item CHOPPE_EN_ARGILE_JUS_DE_FRUIT_JAUNE = new ItemContainer("choppe_en_argile_jus_de_fruit_jaune", 0, 0.2F, false, CHOPPE_EN_ARGILE, 0);
-    public static final Item CHOPPE_EN_VERRE_JUS_DE_FRUIT_JAUNE = new ItemContainer("choppe_en_verre_jus_de_fruit_jaune", 0, 0.2F, false, CHOPPE_EN_VERRE, 0);
+    public static final Item CHOPPE_EN_ARGILE_JUS_DE_FRUIT_JAUNE = new ItemContainer("choppe_en_argile_jus_de_fruit_jaune", 0, 0.2F, false, CHOPPE_EN_ARGILE_SALE, 0);
+    public static final Item CHOPPE_EN_VERRE_JUS_DE_FRUIT_JAUNE = new ItemContainer("choppe_en_verre_jus_de_fruit_jaune", 0, 0.2F, false, CHOPPE_EN_VERRE_SALE, 0);
     public static final Item MOUT_FRUIT_JAUNE = new ItemBase("mout_fruit_jaune");
     public static final Item SEAU_JUS_DE_FRUIT_JAUNE = new ItemBase("seau_jus_de_fruit_jaune");
     public static final Item SEAU_JUS_DE_FRUIT_JAUNE_EN_BOIS = new ItemBase("seau_jus_de_fruit_jaune_en_bois");
     public static final Item VERRE_A_PIED_JUS_DE_FRUIT_JAUNE = new ItemContainer("verre_a_pied_jus_de_fruit_jaune", 0, 0.2F, false, VERRE_A_PIED, 0);
 
-    public static final Item BOUTEILLE_HYPOCRAS = new ItemContainer("bouteille_hypocras", 0, 0.2F, false, BOUTEILLE_VIDE, 4);
-    public static final Item CHOPPE_EN_ARGILE_HYPOCRAS = new ItemContainer("choppe_en_argile_hypocras", 0, 0.2F, false, CHOPPE_EN_ARGILE, 0);
-    public static final Item CHOPPE_EN_VERRE_HYPOCRAS = new ItemContainer("choppe_en_verre_hypocras", 0, 0.2F, false, CHOPPE_EN_VERRE, 0);
+    public static final Item BOUTEILLE_HYPOCRAS = new ItemContainer("bouteille_hypocras", 0, 0.2F, false, BOUTEILLE_SALE, 4);
+    public static final Item CHOPPE_EN_ARGILE_HYPOCRAS = new ItemContainer("choppe_en_argile_hypocras", 0, 0.2F, false, CHOPPE_EN_ARGILE_SALE, 0);
+    public static final Item CHOPPE_EN_VERRE_HYPOCRAS = new ItemContainer("choppe_en_verre_hypocras", 0, 0.2F, false, CHOPPE_EN_VERRE_SALE, 0);
     public static final Item SEAU_HYPOCRAS = new ItemBase("seau_hypocras");
     public static final Item SEAU_HYPOCRAS_EN_BOIS = new ItemBase("seau_hypocras_en_bois");
     public static final Item VERRE_A_PIED_HYPOCRAS = new ItemContainer("verre_a_pied_hypocras", 0, 0.2F, false, VERRE_A_PIED, 0);
 
-    public static final Item BOUTEILLE_LIQUEUR_FRUIT = new ItemContainer("bouteille_liqueur_fruit", 0, 0.2F, false, BOUTEILLE_VIDE, 4);
-    public static final Item CHOPPE_EN_ARGILE_LIQUEUR_FRUIT = new ItemContainer("choppe_en_argile_liqueur_fruit", 0, 0.2F, false, CHOPPE_EN_ARGILE, 0);
-    public static final Item CHOPPE_EN_VERRE_LIQUEUR_FRUIT = new ItemContainer("choppe_en_verre_liqueur_fruit", 0, 0.2F, false, CHOPPE_EN_VERRE, 0);
+    public static final Item BOUTEILLE_LIQUEUR_FRUIT = new ItemContainer("bouteille_liqueur_fruit", 0, 0.2F, false, BOUTEILLE_SALE, 4);
+    public static final Item CHOPPE_EN_ARGILE_LIQUEUR_FRUIT = new ItemContainer("choppe_en_argile_liqueur_fruit", 0, 0.2F, false, CHOPPE_EN_ARGILE_SALE, 0);
+    public static final Item CHOPPE_EN_VERRE_LIQUEUR_FRUIT = new ItemContainer("choppe_en_verre_liqueur_fruit", 0, 0.2F, false, CHOPPE_EN_VERRE_SALE, 0);
     public static final Item SEAU_LIQUEUR_FRUIT = new ItemBase("seau_liqueur_fruit");
     public static final Item SEAU_LIQUEUR_FRUIT_EN_BOIS = new ItemBase("seau_liqueur_fruit_en_bois");
     public static final Item VERRE_A_PIED_LIQUEUR_FRUIT = new ItemContainer("verre_a_pied_liqueur_fruit", 0, 0.2F, false, VERRE_A_PIED, 0);
 
-    public static final Item BOUTEILLE_JAGERMEISTER = new ItemContainer("bouteille_jagermeister", 0, 0.2F, false, BOUTEILLE_VIDE, 4);
-    public static final Item CHOPPE_EN_ARGILE_JAGERMEISTER = new ItemContainer("choppe_en_argile_jagermeister", 0, 0.2F, false, CHOPPE_EN_ARGILE, 0);
-    public static final Item CHOPPE_EN_VERRE_JAGERMEISTER = new ItemContainer("choppe_en_verre_jagermeister", 0, 0.2F, false, CHOPPE_EN_VERRE, 0);
+    public static final Item BOUTEILLE_JAGERMEISTER = new ItemContainer("bouteille_jagermeister", 0, 0.2F, false, BOUTEILLE_SALE, 4);
+    public static final Item CHOPPE_EN_ARGILE_JAGERMEISTER = new ItemContainer("choppe_en_argile_jagermeister", 0, 0.2F, false, CHOPPE_EN_ARGILE_SALE, 0);
+    public static final Item CHOPPE_EN_VERRE_JAGERMEISTER = new ItemContainer("choppe_en_verre_jagermeister", 0, 0.2F, false, CHOPPE_EN_VERRE_SALE, 0);
     public static final Item SEAU_JAGERMEISTER = new ItemBase("seau_jagermeister");
     public static final Item SEAU_JAGERMEISTER_EN_BOIS = new ItemBase("seau_jagermeister_en_bois");
     public static final Item VERRE_A_PIED_JAGERMEISTER = new ItemContainer("verre_a_pied_jagermeister", 0, 0.2F, false, VERRE_A_PIED, 0);
 
-    public static final Item BOUTEILLE_VIPERINE = new ItemContainer("bouteille_viperine", 0, 0.2F, false, BOUTEILLE_VIDE, 4);
-    public static final Item CHOPPE_EN_ARGILE_VIPERINE = new ItemContainer("choppe_en_argile_viperine", 0, 0.2F, false, CHOPPE_EN_ARGILE, 0);
-    public static final Item CHOPPE_EN_VERRE_VIPERINE = new ItemContainer("choppe_en_verre_viperine", 0, 0.2F, false, CHOPPE_EN_VERRE, 0);
+    public static final Item BOUTEILLE_VIPERINE = new ItemContainer("bouteille_viperine", 0, 0.2F, false, BOUTEILLE_SALE, 4);
+    public static final Item CHOPPE_EN_ARGILE_VIPERINE = new ItemContainer("choppe_en_argile_viperine", 0, 0.2F, false, CHOPPE_EN_ARGILE_SALE, 0);
+    public static final Item CHOPPE_EN_VERRE_VIPERINE = new ItemContainer("choppe_en_verre_viperine", 0, 0.2F, false, CHOPPE_EN_VERRE_SALE, 0);
     public static final Item SEAU_VIPERINE = new ItemBase("seau_viperine");
     public static final Item SEAU_VIPERINE_EN_BOIS = new ItemBase("seau_viperine_en_bois");
     public static final Item VERRE_A_PIED_VIPERINE = new ItemContainer("verre_a_pied_viperine", 0, 0.2F, false, VERRE_A_PIED, 0);
 
-    public static final Item BOUTEILLE_NIGORIZAKE = new ItemContainer("bouteille_nigorizake", 0, 0.2F, false, BOUTEILLE_VIDE, 4);
-    public static final Item CHOPPE_EN_ARGILE_NIGORIZAKE = new ItemContainer("choppe_en_argile_nigorizake", 0, 0.2F, false, CHOPPE_EN_ARGILE, 0);
-    public static final Item CHOPPE_EN_VERRE_NIGORIZAKE = new ItemContainer("choppe_en_verre_nigorizake", 0, 0.2F, false, CHOPPE_EN_VERRE, 0);
+    public static final Item BOUTEILLE_NIGORIZAKE = new ItemContainer("bouteille_nigorizake", 0, 0.2F, false, BOUTEILLE_SALE, 4);
+    public static final Item CHOPPE_EN_ARGILE_NIGORIZAKE = new ItemContainer("choppe_en_argile_nigorizake", 0, 0.2F, false, CHOPPE_EN_ARGILE_SALE, 0);
+    public static final Item CHOPPE_EN_VERRE_NIGORIZAKE = new ItemContainer("choppe_en_verre_nigorizake", 0, 0.2F, false, CHOPPE_EN_VERRE_SALE, 0);
     public static final Item SEAU_NIGORIZAKE = new ItemBase("seau_nigorizake");
     public static final Item SEAU_NIGORIZAKE_EN_BOIS = new ItemBase("seau_nigorizake_en_bois");
     public static final Item VERRE_A_PIED_NIGORIZAKE = new ItemContainer("verre_a_pied_nigorizake", 0, 0.2F, false, VERRE_A_PIED, 0);
 
-    public static final Item BOUTEILLE_RYE = new ItemContainer("bouteille_rye", 0, 0.2F, false, BOUTEILLE_VIDE, 4);
-    public static final Item CHOPPE_EN_ARGILE_RYE = new ItemContainer("choppe_en_argile_rye", 0, 0.2F, false, CHOPPE_EN_ARGILE, 0);
-    public static final Item CHOPPE_EN_VERRE_RYE = new ItemContainer("choppe_en_verre_rye", 0, 0.2F, false, CHOPPE_EN_VERRE, 0);
+    public static final Item BOUTEILLE_RYE = new ItemContainer("bouteille_rye", 0, 0.2F, false, BOUTEILLE_SALE, 4);
+    public static final Item CHOPPE_EN_ARGILE_RYE = new ItemContainer("choppe_en_argile_rye", 0, 0.2F, false, CHOPPE_EN_ARGILE_SALE, 0);
+    public static final Item CHOPPE_EN_VERRE_RYE = new ItemContainer("choppe_en_verre_rye", 0, 0.2F, false, CHOPPE_EN_VERRE_SALE, 0);
     public static final Item SEAU_RYE = new ItemBase("seau_rye");
     public static final Item SEAU_RYE_EN_BOIS = new ItemBase("seau_rye_en_bois");
     public static final Item VERRE_A_PIED_RYE = new ItemContainer("verre_a_pied_rye", 0, 0.2F, false, VERRE_A_PIED, 0);
@@ -2360,7 +2369,7 @@ public class ModItems {
     public static final Item BAUME_A_LA_CAMOMILLE = new ItemConsommable("baume_a_la_camomille", 7);
     public static final Item BAUME_EXFOLIANT = new ItemConsommable("baume_exfoliant", 7);
     public static final Item BOUGIE = new ItemBase("candle");
-    public static final Item BOUTEILLE_ALCOOL_PUR = new ItemContainer("bouteille_alcool_pur", 0, 0.2F, false, BOUTEILLE_VIDE, 4);
+    public static final Item BOUTEILLE_ALCOOL_PUR = new ItemContainer("bouteille_alcool_pur", 0, 0.2F, false, BOUTEILLE_SALE, 4);
     public static final Item BOUTEILLE_DE_PARFUM = new ItemConsommable("bouteille_de_parfum", 7);
     public static final Item CANNE_BEQUILLE = new ItemBase("canne_bequille");
     public static final Item COLLE = new ItemBase("colle");
@@ -2384,7 +2393,7 @@ public class ModItems {
     public static final Item POUDRE_DE_TEINT = new ItemConsommable("poudre_de_teint", 7);
     public static final Item POUDRE_QUELCONQUE = new ItemConsommable("poudre_quelconque", 7);
     public static final Item ROUGE_A_LEVRES = new ItemConsommable("rouge_a_levres", 7);
-    public static final Item SAVON = new ItemConsommable("savon", 7);
+    public static final Item SAVON = new Savon("savon", 7);
     public static final Item SEAU_DE_COLLE = new ItemBase("seau_de_colle");
     public static final Item SOUDE = new ItemBase("soude");
     public static final Item TABAC = new ItemConsommable("tabac", 7);

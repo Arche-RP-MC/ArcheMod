@@ -60,7 +60,7 @@ public class RegistryHandler {
 
         GameRegistry.registerTileEntity(TileEntityBlockPorteManteau.class, new ResourceLocation(Reference.MOD_ID, "porte_manteau"));
         GameRegistry.registerTileEntity(TileEntityBlockPlacardHRP.class, new ResourceLocation(Reference.MOD_ID, "placard_hrp"));
-        GameRegistry.registerTileEntity(TileEntityBlockPiegeLoup.class, new ResourceLocation(Reference.MOD_ID, "piege_loup"));
+        GameRegistry.registerTileEntity(TileEntityPiegeLoup.class, new ResourceLocation(Reference.MOD_ID, "piege_loup"));
         GameRegistry.registerTileEntity(TileEntityBlockEcrinBijou.class, new ResourceLocation(Reference.MOD_ID, "ecrin_bijou"));
 
         GameRegistry.registerTileEntity(TileEntityFut.class, new ResourceLocation(Reference.MOD_ID, "Fut"));

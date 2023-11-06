@@ -27,7 +27,7 @@ public class ModBlocks {
 
     //BLOCKS
 
-    public static final Block FISH_CASE = new BlockNasse("casier_a_poisson", Material.WOOD, 0.5F, 0.5F, SoundType.WOOD);
+    public static final Block NASSE = new BlockNasse("nasse", Material.WOOD, 0.5F, 0.5F, SoundType.WOOD);
 
     public static final Block BLOC_DE_PIERRE_PRECIEUSE = new PierrePrecieuseOre("bloc_de_pierre_precieuse", Material.IRON);
     public static final Block PLACARD_HRP = new BlockContainerPlacardHRP("placard_hrp", Material.WOOD, 0.5F, 0.5F, SoundType.WOOD, "am:placardhrp", 9, 3, 50, new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.0D, 1.0D), 2, true);
@@ -724,7 +724,7 @@ public class ModBlocks {
 
     // bloc 3d simple
 
-    public static final Block PIEGE_A_LOUP = new BlockContainerPiegeLoup("piege_a_loup", Material.ROCK, 5F, 5F, SoundType.STONE, "am:piege_a_loup", 3, 3, 20, new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.15D, 1.0D), 3, false);
+    public static final Block PIEGE_A_LOUP = new BlockPiegeLoup("piege_a_loup", Material.ROCK, 5F, 5F, SoundType.STONE, new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.15D, 1.0D));
     public static final Block PORTE_MANTEAUX = new BlockContainerPorteManteau("porte_manteaux", Material.WOOD, 0.5F, 0.55F, SoundType.WOOD, "am:porte_manteaux", 12, 6, 1, new AxisAlignedBB(0.25D, 0.0D, 0.25D, 0.75D, 2.0D, 0.75D), 4, false);
     // public static final Block AMPHORE = new BlockBase2("amphore", Material.ROCK, 5F, 5F, SoundType.STONE);
     //public static final Block ARMOIRE = new BlockBase2("armoire", Material.WOOD, 5F, 5F, SoundType.WOOD);

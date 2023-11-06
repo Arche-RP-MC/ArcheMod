@@ -3,8 +3,10 @@ package fr.archemod.blocks.container;
 import fr.archemod.blocks.slot.SlotOutput;
 import fr.archemod.blocks.slot.SlotSingleItem;
 import fr.archemod.blocks.tileentity.TileEntityNasse;
+import fr.archemod.blocks.tileentity.TileEntityPiegeLoup;
 import fr.archemod.init.ModItems;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.Slot;
@@ -14,12 +16,12 @@ import net.minecraft.item.ItemStack;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ContainerNasse extends Container {
+public class ContainerPiegeLoup extends Container {
 
     private final IInventory inv;
 
-    public ContainerNasse(IInventory playerInventory, TileEntityNasse fishCase) {
-        this.inv = fishCase;
+    public ContainerPiegeLoup(IInventory playerInventory, TileEntityPiegeLoup piegeInv) {
+        this.inv = piegeInv;
 
         this.addSlotToContainer(new SlotSingleItem(inv, 0, 8, 7, getList()));
         for (int k = 1; k < 7; ++k) {
@@ -176,11 +178,8 @@ public class ContainerNasse extends Container {
 
     public List<Item> getList() {
         ArrayList list = new ArrayList<Item>();
-        list.add(ModItems.INSECTE_LARVE);
-        list.add(ModItems.INSECTE_VER_DE_TERRE);
-        list.add(ModItems.INSECTE_VER_DE_FARINE);
-        list.add(ModItems.INSECTE_ASTICOT);
-        list.add(ModItems.APPAT_PECHE);
+        list.add(ModItems.APPAT_CHASSE_CARNIVORE);
+        list.add(ModItems.APPAT_CHASSE_HERBIVORE);
         return list;
     }
 }

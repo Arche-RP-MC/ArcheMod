@@ -8,14 +8,14 @@ import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.util.ResourceLocation;
 import org.lwjgl.opengl.GL11;
 
-public class CasierPoissonGUI extends GuiContainer {
+public class NasseGUI extends GuiContainer {
 
-    public static final ResourceLocation texture = new ResourceLocation(Reference.MOD_ID,"textures/gui/container/casier_poisson.png");
+    public static final ResourceLocation texture = new ResourceLocation(Reference.MOD_ID,"textures/gui/container/recolte.png");
     protected TileEntityNasse inv;
     protected InventoryPlayer playerInv;
     public int rows;
 
-    public CasierPoissonGUI(InventoryPlayer playerInv, TileEntityNasse inv) {
+    public NasseGUI(InventoryPlayer playerInv, TileEntityNasse inv) {
         super(new ContainerNasse(playerInv, inv));
         this.playerInv = playerInv;
         this.inv = inv;

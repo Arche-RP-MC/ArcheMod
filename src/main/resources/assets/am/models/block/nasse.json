@@ -5,9 +5,9 @@
     32
   ],
   "textures": {
-    "0": "am:blocks/casier_a_poisson",
-    "1": "am:blocks/casier_a_poisson_back",
-    "particle": "am:blocks/casier_a_poisson"
+    "0": "am:blocks/nasse",
+    "1": "am:blocks/nasse_back",
+    "particle": "am:blocks/nasse"
   },
   "elements": [
     {
