@@ -3,6 +3,7 @@ package fr.archemod.init;
 import fr.archemod.items.*;
 import fr.archemod.items.agriculture.GraineBle;
 import fr.archemod.items.agriculture.GraineOrge;
+import fr.archemod.items.agriculture.ItemGraine;
 import fr.archemod.items.peche.*;
 import fr.archemod.items.tools.SeauBois;
 import fr.archemod.items.tools.ToolAxe;
@@ -59,7 +60,6 @@ public class ModItems {
     public static final Item POILS = new ItemBase("poils");
     public static final Item SERRE = new ItemBase("serre");
     public static final Item TRIPES = new ItemBase("tripes");
-    public static final Item VER_A_SOIE = new ItemBase("ver_a_soie");
     public static final Item POCHE_DE_VENIN = new ItemBase("poche_de_venin");
     public static final Item OEUF_A_PLAT_CRU = new ItemBase("oeuf_a_plat_cru");
     public static final Item OEUF = new ItemTransformable("oeuf", new ArrayList(){{ add(COQUILLE_D_OEUF); add(OEUF_A_PLAT_CRU); }});
@@ -430,7 +430,6 @@ public class ModItems {
     public static final Item PETITS_POIS_CRU = new ItemBase("petits_pois_cru");
     public static final Item POIREAU_CRU = new ItemBase("poireau_cru");
 
-    public static final Item POIVRON_ORANGE_CRU =  new ItemBase("poivron_orange_cru");
     public static final Item POIVRON_JAUNE_FARCI_CRU = new ItemBase("poivron_jaune_farci_cru");
     public static final Item POIVRON_JAUNE_CRU = new ItemBase("poivron_jaune_m_cru");
     public static final Item POIVRON_ROUGE_FARCI_CRU = new ItemBase("poivron_rouge_farci_cru");
@@ -623,7 +622,6 @@ public class ModItems {
     public static Item GRAINE_ORGE;
     public static Item GRAINE_POIREAU;
     public static Item GRAINE_POIVRON_JAUNE;
-    public static Item GRAINE_POIVRON_ORANGE;
     public static Item GRAINE_POIVRON_ROUGE;
     public static Item GRAINE_POIVRON_VERT;
     public static Item GRAINE_RADIS;
@@ -2492,7 +2490,6 @@ public class ModItems {
     public static final Item PLANTE_ETRANGE2 =  new ItemBase("plante_etrange2");
     public static final Item PLANTE_GRASSE2 =  new ItemBase("plante_grasse2");
     public static final Item PLANTE_GRASSE_COLOREE2 =  new ItemBase("plante_grasse_coloree2");
-    public static final Item POIVRON_ORANGE2 =  new ItemBase("poivron_orange2");
     public static final Item ROMARIN2 =  new ItemBase("romarin2");
     public static final Item RONCES2 =  new ItemBase("ronces2");
     public static final Item SALICORNE2 =  new ItemBase("salicorne2");
@@ -2620,7 +2617,7 @@ public class ModItems {
     public static final Item CLEF = new Clef("clef");
     public static final Item PORTE_CLEF = new PorteClef("porte_clef");
 
-    //Insectes - ITEMS
+    //Insectes - ITEMS - cultures
     public static final Item INSECTE_ABEILLE = new ItemBase("insecte_abeille");
     public static final Item INSECTE_ARAIGNEE = new ItemBase("insecte_araignee");
     public static final Item INSECTE_ASTICOT = new ItemBase("insecte_asticot");
@@ -2643,7 +2640,29 @@ public class ModItems {
     public static final Item INSECTE_TIQUE = new ItemBase("insecte_tique");
     public static final Item INSECTE_VER_DE_FARINE = new ItemBase("insecte_ver_de_farine");
     public static final Item INSECTE_VER_DE_TERRE = new ItemBase("insecte_ver_de_terre");
+    public static final Item VER_A_SOIE = new ItemBase("ver_a_soie");
 
-
-
+    public static ItemGraine GRAINE_ABEILLE;
+    public static ItemGraine GRAINE_ARAIGNEE;
+    public static ItemGraine GRAINE_ASTICOT;
+    public static ItemGraine GRAINE_CHENILLE;
+    public static ItemGraine GRAINE_COCCINELLE;
+    public static ItemGraine GRAINE_COCHENILLE;
+    public static ItemGraine GRAINE_ESCARGOT;
+    public static ItemGraine GRAINE_FOURMI;
+    public static ItemGraine GRAINE_GALLE;
+    public static ItemGraine GRAINE_GUEPE;
+    public static ItemGraine GRAINE_LARVE;
+    public static ItemGraine GRAINE_MITE;
+    public static ItemGraine GRAINE_MORPION;
+    public static ItemGraine GRAINE_MOUCHE;
+    public static ItemGraine GRAINE_PAPILLON_COMMUN;
+    public static ItemGraine GRAINE_PAPILLON_RARE;
+    public static ItemGraine GRAINE_PUCERON;
+    public static ItemGraine GRAINE_SCARABEE;
+    public static ItemGraine GRAINE_SCORPION;
+    public static ItemGraine GRAINE_TIQUE;
+    public static ItemGraine GRAINE_VER_DE_FARINE;
+    public static ItemGraine GRAINE_VER_DE_TERRE;
+    public static ItemGraine GRAINE_VER_A_SOIE;
 }
