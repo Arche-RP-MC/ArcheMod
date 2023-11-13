@@ -177,10 +177,6 @@ public class TileEntityNasse extends TileEntityBlockInventory {
                 stacks.set(i, loot);
                 break;
             }
-            if(Objects.equals(getStackInSlot(i).getItem(), loot)) {
-                stacks.get(i).shrink(loot.getCount());
-                break;
-            }
         }
         enCours = false;
         reloadAppat();
@@ -192,22 +188,13 @@ public class TileEntityNasse extends TileEntityBlockInventory {
             appat = stacks.get(0).getItem();
             time = new Date().getTime();
             enCours = true;
-            if(Objects.equals(stacks.get(0).getItem(), ModItems.APPAT_PECHE) && getStackInSlot(0).getCount() > 2) {
-                if(getStackInSlot(0).getCount() < 4) stacks.set(0, ItemStack.EMPTY);
-                else stacks.get(0).shrink(3);
-            }
-            else {
-                if(getStackInSlot(0).getCount() < 2) stacks.set(0, ItemStack.EMPTY);
-                else stacks.get(0).shrink(1);
-            }
+            if(getStackInSlot(0).getCount() < 2) stacks.set(0, ItemStack.EMPTY);
+            else stacks.get(0).shrink(1);
         } else appat = null;
     }
 
     private boolean canReload() {
         if(stacks.get(0).isEmpty()) return false;
-        if(stacks.get(0).getItem().equals(ModItems.APPAT_PECHE) && stacks.get(0).getCount() < 3) {
-            return false;
-        }
         return true;
     }
 
@@ -215,34 +202,35 @@ public class TileEntityNasse extends TileEntityBlockInventory {
         int rand = (int)(Math.random() * 100);
         if(appat != null) {
             if (Objects.equals(appat, ModItems.INSECTE_VER_DE_TERRE) || Objects.equals(appat, ModItems.INSECTE_LARVE) || Objects.equals(appat, ModItems.INSECTE_ASTICOT) || Objects.equals(appat, ModItems.INSECTE_VER_DE_FARINE)) {
-                if(rand < 15) return new ItemStack(Item.getItemFromBlock(ModBlocks.ALGUES), 5);
-                if(rand < 30) return new ItemStack(ModItems.CARCASSE_DE_POISSON, 1);
-                if(rand < 35) return new ItemStack(ModItems.HOMARD, 1);
-                if(rand < 45) return new ItemStack(ModItems.CRABE, 1);
-                if(rand < 55) return new ItemStack(ModItems.CALAMAR, 1);
-                if(rand < 65) return new ItemStack(ModItems.POULPE, 1);
-                if(rand < 68) return new ItemStack(ModItems.NAUTILE, 2);
-                if(rand < 71) return new ItemStack(ModItems.COQUILLE_SAINT_JACQUES, 3);
-                if(rand < 74) return new ItemStack(ModItems.HUITRE, 2);
-                if(rand < 77) return new ItemStack(ModItems.MOULE_CRUSTACE, 4);
-                if(rand < 80) return new ItemStack(ModItems.ORMEAUX, 2);
-                if(rand < 87) return new ItemStack(ModItems.SARDINE, 2);
-                if(rand < 94) return new ItemStack(ModItems.ROUGET, 1);
+                if(rand < 7) return new ItemStack(ModItems.CARCASSE_DE_POISSON, 1);
+                if(rand < 14) return new ItemStack(Item.getItemFromBlock(ModBlocks.ALGUES), 5);
+                if(rand < 19) return new ItemStack(ModItems.EPONGE, 2);
+                if(rand < 24) return new ItemStack(ModItems.CRABE, 1);
+                if(rand < 28) return new ItemStack(ModItems.SARDINE, 3);
+                if(rand < 32) return new ItemStack(ModItems.ROUGET, 2);
+                if(rand < 36) return new ItemStack(ModItems.MOULE_CRUSTACE, 4);
+                if(rand < 39) return new ItemStack(ModItems.CALAMAR, 1);
+                if(rand < 42) return new ItemStack(ModItems.POULPE, 1);
+                if(rand < 45) return new ItemStack(ModItems.COQUILLE_SAINT_JACQUES, 4);
+                if(rand < 48) return new ItemStack(ModItems.HUITRE, 4);
+                if(rand < 51) return new ItemStack(ModItems.HOMARD, 1);
+                if(rand < 53) return new ItemStack(ModItems.ORMEAUX, 2);
             }
             if (Objects.equals(appat, ModItems.APPAT_PECHE)) {
-                if(rand < 2) return new ItemStack(Item.getItemFromBlock(ModBlocks.ALGUES), 5);
-                if(rand < 4) return new ItemStack(ModItems.CARCASSE_DE_POISSON, 1);
-                if(rand < 12) return new ItemStack(ModItems.HOMARD, 1);
-                if(rand < 26) return new ItemStack(ModItems.CRABE, 1);
-                if(rand < 40) return new ItemStack(ModItems.CALAMAR, 1);
-                if(rand < 54) return new ItemStack(ModItems.POULPE, 1);
-                if(rand < 59) return new ItemStack(ModItems.NAUTILE, 2);
-                if(rand < 64) return new ItemStack(ModItems.COQUILLE_SAINT_JACQUES, 3);
-                if(rand < 69) return new ItemStack(ModItems.HUITRE, 2);
-                if(rand < 74) return new ItemStack(ModItems.MOULE_CRUSTACE, 4);
-                if(rand < 79) return new ItemStack(ModItems.ORMEAUX, 2);
-                if(rand < 89) return new ItemStack(ModItems.SARDINE, 2);
-                if(rand < 99) return new ItemStack(ModItems.ROUGET, 1);
+                if(rand < 15) return new ItemStack(ModItems.CARCASSE_DE_POISSON, 1);
+                if(rand < 30) return new ItemStack(Item.getItemFromBlock(ModBlocks.ALGUES), 5);
+                if(rand < 40) return new ItemStack(ModItems.EPONGE, 2);
+                if(rand < 50) return new ItemStack(ModItems.CRABE, 1);
+                if(rand < 57) return new ItemStack(ModItems.SARDINE, 3);
+                if(rand < 64) return new ItemStack(ModItems.ROUGET, 2);
+                if(rand < 71) return new ItemStack(ModItems.MOULE_CRUSTACE, 4);
+                if(rand < 76) return new ItemStack(ModItems.CALAMAR, 1);
+                if(rand < 81) return new ItemStack(ModItems.POULPE, 1);
+                if(rand < 85) return new ItemStack(ModItems.COQUILLE_SAINT_JACQUES, 4);
+                if(rand < 91) return new ItemStack(ModItems.HUITRE, 4);
+                if(rand < 96) return new ItemStack(ModItems.HOMARD, 1);
+                if(rand < 99) return new ItemStack(ModItems.ORMEAUX, 2);
+                if(rand < 100) return new ItemStack(ModItems.NAUTILE, 1);
             }
         }
         return ItemStack.EMPTY;
