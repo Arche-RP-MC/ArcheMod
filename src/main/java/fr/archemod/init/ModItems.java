@@ -3,26 +3,36 @@ package fr.archemod.init;
 import fr.archemod.items.*;
 import fr.archemod.items.agriculture.GraineBle;
 import fr.archemod.items.agriculture.GraineOrge;
-import fr.archemod.items.food.*;
+import fr.archemod.items.agriculture.ItemGraine;
 import fr.archemod.items.peche.*;
-import fr.archemod.items.sciure.*;
 import fr.archemod.items.tools.SeauBois;
 import fr.archemod.items.tools.ToolAxe;
 import fr.archemod.items.tools.ToolSword;
+import fr.archemod.util.Reference;
 import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemAxe;
+import net.minecraft.item.ItemStack;
+import scala.xml.PrettyPrinter;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class ModItems {
-
     public static final List<Item> ITEMS = new ArrayList<Item>();
 
-
     //Animal
+    public static final Item APPAT_CHASSE_CARNIVORE = new ItemBase("appat_chasse_carnivore");
+    public static final Item APPAT_CHASSE_HERBIVORE = new ItemBase("appat_chasse_herbivore");
+    public static final Item APPAT_PECHE = new ItemBase("appat_peche");
     public static final Item CARAPACE_DE_TORTUE = new ItemBase("carapace_de_tortue");
+    public static final Item CARCASSE_RONGEUR = new ItemBase("carcasse_rongeur");
+    public static final Item CARCASSE_VOLAILLE = new ItemBase("carcasse_volaille");
+    public static final Item CARCASSE_BOVIDE = new ItemBase("carcasse_bovide");
+    public static final Item CARCASSE_CERVIDE = new ItemBase("carcasse_cervide");
+    public static final Item CARCASSE_URSIDE = new ItemBase("carcasse_urside");
+    public static final Item CARCASSE_CANIDE = new ItemBase("carcasse_canide");
     public static final Item CERVEAU = new ItemBase("cerveau");
     public static final Item CIRE = new ItemBase("cire");
     public static final Item COEUR = new ItemBase("coeur");
@@ -41,7 +51,7 @@ public class ModItems {
     public static final Item FOURRURE_ROUSSE = new ItemBase("fourrure_rousse");
     public static final Item GRAISSE_ANIMALE = new ItemBase("graisse_animale");
     public static final Item GRIFFE = new ItemBase("griffe");
-    public static final Item INSECTE_EN_BOCAL = new ItemBase("insecte_en_bocal");
+    public static final Item INSECTE_EN_BOCAL = new ItemInventory("insecte_en_bocal",15);
     public static final Item LAINE_BRUTE = new ItemBase("laine_brute");
     public static final Item LARVE = new ItemBase("larve");
     public static final Item PATTE = new ItemBase("patte");
@@ -50,9 +60,9 @@ public class ModItems {
     public static final Item POILS = new ItemBase("poils");
     public static final Item SERRE = new ItemBase("serre");
     public static final Item TRIPES = new ItemBase("tripes");
-    public static final Item VER_A_SOIE = new ItemBase("ver_a_soie");
     public static final Item POCHE_DE_VENIN = new ItemBase("poche_de_venin");
-    public static final Item OEUF = new Oeuf("oeuf");
+    public static final Item OEUF_A_PLAT_CRU = new ItemBase("oeuf_a_plat_cru");
+    public static final Item OEUF = new ItemTransformable("oeuf", new ArrayList(){{ add(COQUILLE_D_OEUF); add(OEUF_A_PLAT_CRU); }});
     public static final Item MEDUSE = new ItemBase("meduse");
     public static final Item CARCASSE_OISEAU = new ItemBase("carcasse_oiseau");
     public static final Item AILE_MEMBRANEUSE = new ItemBase("aile_membraneuse");
@@ -67,12 +77,6 @@ public class ModItems {
     public static final Item PEPITE_FER = new ItemBase("pepite_fer");
     public static final Item PEPITE_OR = new ItemBase("pepite_or");
     public static final Item PEPITE_PLOMB = new ItemBase("pepite_plomb");
-
-    public static final Item GEMME_INCONNUE = new GemmeInconnue("gemme_inconnue");
-    public static final Item GROSSE_GEMME_INCONNUE = new GrosseGemmeInconnue("grosse_gemme_inconnue");
-    public static final Item PETITE_GEMME_INCONNUE = new PetiteGemmeInconnue("petite_gemme_inconnue");
-    public static final Item POUSSIERE_MINERALE = new ItemBase("poussiere_minerale");
-
     public static final Item CAILLOU = new ItemBase("caillou");
     public static final Item CAILLOU_DE_GRES = new ItemBase("caillou_de_gres");
     public static final Item CAILLOU_DE_GRES_ROUGE = new ItemBase("caillou_de_gres_rouge");
@@ -123,10 +127,10 @@ public class ModItems {
     //Couverts fourchette couteau cuilliere louche casseroles
 
     public static final Item COUTEAU_DE_TABLE_EN_FER = new ItemBase("couteau_de_table_en_fer");
-    public static final Item COUTEAU_EN_ARGENT = new OutilsEnFer("couteau_en_argent");
+    public static final Item COUTEAU_EN_ARGENT = new ItemBase("couteau_en_argent");
     public static final Item COUTEAU_EN_BOIS = new ItemBase("couteau_en_bois");
-    public static final Item COUTEAU_EN_ETAIN = new OutilsEnFer("couteau_en_etain");
-    public static final Item COUTEAU_EN_OR = new OutilsEnFer("couteau_en_or");
+    public static final Item COUTEAU_EN_ETAIN = new ItemBase("couteau_en_etain");
+    public static final Item COUTEAU_EN_OR = new ItemBase("couteau_en_or");
 
     public static final Item CUILLERE_EN_ARGENT = new ItemBase("cuillere_en_argent");
     public static final Item CUILLERE_EN_BOIS = new ItemBase("cuilliere_en_bois");
@@ -151,210 +155,211 @@ public class ModItems {
 
     //OUTILS
 
-    public static final Item RASOIR = new ItemConsomable("rasoir", 7);
+    public static final Item FAUX = new ItemBase("faux");
+    public static final Item RASOIR = new ItemConsommable("rasoir", 7);
     public static final Item AIGUILLE = new ItemBase("aiguille");
     public static final Item ARROSOIR = new ItemBase("arrosoir");
-    public static final Item BALAI = new ItemConsomable("balai", 50);
-    public static final Item PLUMEAU = new ItemConsomable("plumeau", 50);
+    public static final Item BALAI = new ItemConsommable("balai", 50);
+    public static final Item PLUMEAU = new ItemConsommable("plumeau", 50);
     public static final Item CANNE_A_PECHE_TEST = new CustomFishingRod("canne_a_peche_test");
-    public static final Item CANNE_DE_VERRIER = new OutilsEnFer("canne_de_verrier");
-    public static final Item CISEAUX_A_BOIS = new OutilsEnFer("ciseaux_a_bois");
-    public static final Item CISEAUX_DE_COUTURE = new OutilsEnFer("ciseaux_de_couture");
-    public static final Item COUTEAU_ACIER = new OutilsEnAcier("couteau_acier");
-    public static final Item COUTEAU_EN_FER = new OutilsEnFer("couteau_en_fer");
+    public static final Item CANNE_DE_VERRIER = new ItemIngrediant("canne_de_verrier", Reference.DURABILITE_FER);
+    public static final Item CISEAUX_A_BOIS = new ItemIngrediant("ciseaux_a_bois", Reference.DURABILITE_FER);
+    public static final Item CISEAUX_DE_COUTURE = new ItemIngrediant("ciseaux_de_couture", Reference.DURABILITE_FER);
+    public static final Item COUTEAU_ACIER = new ItemIngrediant("couteau_acier", Reference.DURABILITE_ACIER);
+    public static final Item COUTEAU_EN_FER = new ItemIngrediant("couteau_en_fer", Reference.DURABILITE_FER);
     public static final Item EPUISETTE = new TestEpuisette3("epuisette");
     public static final Item FILET_INSECTE = new TestEpuisette3("filet_insecte");
     public static final Item FILET = new ItemBase("filet");
-    public static final Item FOURCHE_EN_FER = new OutilsEnFer("fourche_en_fer");
-    public static final Item HACHOIR = new OutilsEnFer("hachoir");
-    public static final Item LIME_EN_ACIER = new OutilsEnAcier("lime_en_acier");
-    public static final Item LIME_EN_FER = new OutilsEnFer("lime_en_fer");
-    public static final Item LOUPE = new OutilsEnFer("loupe");
-    public static final Item MAILLET = new OutilsEnFer("maillet");
-    public static final Item MARTEAU_BURIN_EN_ACIER = new OutilsEnAcier("marteau_burin_en_acier");
-    public static final Item MARTEAU_BURIN_EN_FER = new OutilsEnFer("marteau_burin_en_fer");
-    public static final Item MARTEAU_EN_ACIER = new OutilsEnAcier("marteau_en_acier");
-    public static final Item MARTEAU_EN_FER = new OutilsEnFer("marteau_en_fer");
-    public static final Item MORTIER_PILON_EN_BOIS = new OutilsEnBronze("mortier_pilon_en_bois");
-    public static final Item MORTIER_PILON_EN_PIERRE = new OutilsEnFer("mortier_pilon_en_pierre");
-    public static final Item PELLE_A_PAIN = new OutilsEnFer("pelle_a_pain");
-    public static final Item PINCES = new OutilsEnFer("pinces");
-    public static final Item PIOLET = new OutilsEnFer("piolet");
-    public static final Item SCIE_EN_ACIER = new OutilsEnAcier("scie_en_acier");
-    public static final Item SCIE_EN_FER = new OutilsEnFer("scie_en_fer");
-    public static final Item PETITE_CISAILLE = new OutilsEnBronze("petite_cisaille");
-    public static final Item SERPE_EN_ACIER = new OutilsEnAcier("serpe_en_acier");
-    public static final Item SERPE_EN_FER = new OutilsEnFer("serpe_en_fer");
-    public static final Item SPATULE = new OutilsEnFer("spatule");
-    public static final Item TROUSSE_D_INGENIEUR_EN_ACIER = new OutilsEnAcier("trousse_d_ingenieur_en_acier");
-    public static final Item TROUSSE_D_INGENIEUR_EN_FER = new OutilsEnFer("trousse_d_ingenieur_en_fer");
-    public static final Item COMPAS = new OutilsEnBronze("compas");
-    public static final Item CADRE_TANNAGE = new OutilsEnBronze("cadre_tannage");
+    public static final Item FOURCHE_EN_FER = new ItemIngrediant("fourche_en_fer", Reference.DURABILITE_FER);
+    public static final Item HACHOIR = new ItemIngrediant("hachoir", Reference.DURABILITE_FER);
+    public static final Item LIME_EN_ACIER = new ItemIngrediant("lime_en_acier", Reference.DURABILITE_ACIER);
+    public static final Item LIME_EN_FER = new ItemIngrediant("lime_en_fer", Reference.DURABILITE_FER);
+    public static final Item LOUPE = new ItemBase("loupe");
+    public static final Item MAILLET = new ItemIngrediant("maillet", Reference.DURABILITE_FER);
+    public static final Item MARTEAU_BURIN_EN_ACIER = new ItemIngrediant("marteau_burin_en_acier", Reference.DURABILITE_ACIER);
+    public static final Item MARTEAU_BURIN_EN_FER = new ItemIngrediant("marteau_burin_en_fer", Reference.DURABILITE_FER);
+    public static final Item MARTEAU_EN_ACIER = new ItemIngrediant("marteau_en_acier", Reference.DURABILITE_ACIER);
+    public static final Item MARTEAU_EN_FER = new ItemIngrediant("marteau_en_fer", Reference.DURABILITE_FER);
+    public static final Item MORTIER_PILON_EN_BOIS = new ItemIngrediant("mortier_pilon_en_bois", Reference.DURABILITE_BRONZE);
+    public static final Item MORTIER_PILON_EN_PIERRE = new ItemIngrediant("mortier_pilon_en_pierre", Reference.DURABILITE_FER);
+    public static final Item PELLE_A_PAIN = new ItemIngrediant("pelle_a_pain", Reference.DURABILITE_FER);
+    public static final Item PINCES = new ItemIngrediant("pinces", Reference.DURABILITE_FER);
+    public static final Item PIOLET = new ItemBase("piolet");
+    public static final Item SCIE_EN_ACIER = new ItemIngrediant("scie_en_acier", Reference.DURABILITE_ACIER);
+    public static final Item SCIE_EN_FER = new ItemIngrediant("scie_en_fer", Reference.DURABILITE_FER);
+    public static final Item PETITE_CISAILLE = new ItemIngrediant("petite_cisaille", Reference.DURABILITE_BRONZE);
+    public static final Item SERPE_EN_ACIER = new ItemIngrediant("serpe_en_acier", Reference.DURABILITE_ACIER);
+    public static final Item SERPE_EN_FER = new ItemIngrediant("serpe_en_fer", Reference.DURABILITE_FER);
+    public static final Item SPATULE = new ItemIngrediant("spatule", Reference.DURABILITE_FER);
+    public static final Item TROUSSE_D_INGENIEUR_EN_ACIER = new ItemIngrediant("trousse_d_ingenieur_en_acier", Reference.DURABILITE_ACIER);
+    public static final Item TROUSSE_D_INGENIEUR_EN_FER = new ItemIngrediant("trousse_d_ingenieur_en_fer", Reference.DURABILITE_FER);
+    public static final Item COMPAS = new ItemBase("compas");
+    public static final Item CADRE_TANNAGE = new ItemIngrediant("cadre_tannage", Reference.DURABILITE_BRONZE);
 
     //FOODS
 
-    public static final Item ABRICOT = new FoodBase("abricot", 1, 0.2F, false);
-    public static final Item AIL = new FoodBase("ail", 0, 0.2F, false);
-    public static final Item AMANDES = new FoodBase("amandes", 1, 0.2F, false);
-    public static final Item ANANAS = new FoodBase("ananas", 1, 0.2F, false);
-    public static final Item ARTICHAUT = new FoodBase("artichaut", 1, 0.2F, false);
-    public static final Item ASPERGE = new FoodBase("asperge", 1, 0.2F, false);
-    public static final Item AUBERGINE = new FoodBase("aubergine", 1, 0.2F, false);
-    public static final Item AVOCAT = new FoodBase("avocat", 1, 0.2F, false);
-    public static final Item BANANE = new FoodBase("banane", 1, 0.2F, false);
-    public static final Item BEIGNET = new FoodBase("beignet", 2, 0.2F, false);
-    public static final Item BEIGNET_DE_CRABE = new FoodBase("beignet_de_crabe", 2, 0.2F, false);
+    public static final Item ABRICOT = new ItemFoodBase("abricot", 1, 0.2F, false);
+    public static final Item AIL = new ItemFoodBase("ail", 0, 0.2F, false);
+    public static final Item AMANDES = new ItemFoodBase("amandes", 1, 0.2F, false);
+    public static final Item ANANAS = new ItemFoodBase("ananas", 1, 0.2F, false);
+    public static final Item ARTICHAUT = new ItemFoodBase("artichaut", 1, 0.2F, false);
+    public static final Item ASPERGE = new ItemFoodBase("asperge", 1, 0.2F, false);
+    public static final Item AUBERGINE = new ItemFoodBase("aubergine", 1, 0.2F, false);
+    public static final Item AVOCAT = new ItemFoodBase("avocat", 1, 0.2F, false);
+    public static final Item BANANE = new ItemFoodBase("banane", 1, 0.2F, false);
+    public static final Item BEIGNET = new ItemFoodBase("beignet", 2, 0.2F, false);
+    public static final Item BEIGNET_DE_CRABE = new ItemFoodBase("beignet_de_crabe", 2, 0.2F, false);
     public static final Item BEURRE = new ItemBase("beurre");
-    public static final Item BISCUIT = new FoodBase("biscuit", 1, 0.2F, false);
-    public static final Item BISCUIT_AU_CHOCOLAT = new FoodBase("biscuit_au_chocolat", 1, 0.2F, false);
-    public static final Item BLEU = new FoodBase("bleu", 4, 0.2F, false);
-    public static final Item BOL_DE_GRUAU = new Bol("bol_de_gruau", 8, 0.2F, false);
-    public static final Item BOL_DE_POTAGE = new Bol("bol_de_potage", 8, 0.2F, false);
-    public static final Item BOL_DE_POT_AU_FEU = new Bol("bol_de_pot_au_feu", 12, 0.2F, false);
-    public static final Item BOL_DE_RAGOUT = new Bol("bol_de_ragout", 12, 0.2F, false);
-    public static final Item BOL_DE_RAGOUT_DE_CRUSTACES = new Bol("bol_de_ragout_de_crustaces", 12, 0.2F, false);
-    public static final Item BOL_DE_RAGOUT_DE_PATATES = new Bol("bol_de_ragout_de_patates", 8, 0.2F, false);
-    public static final Item BOL_DE_RAGOUT_DE_VIANDE = new Bol("bol_de_ragout_de_viande", 12, 0.2F, false);
-    public static final Item BOL_DE_RIZ = new Bol("bol_de_riz", 8, 0.2F, false);
-    public static final Item BOL_DE_SALADE_DE_FRUITS = new Bol("bol_de_salade_de_fruits", 6, 0.2F, false);
-    public static final Item BOL_DE_SOUPE_AVEC_CROUTONS = new Bol("bol_de_soupe_avec_croutons", 12, 0.2F, false);
-    public static final Item BOL_DE_SOUPE_DE_CHOUX = new Bol("bol_de_soupe_de_choux", 8, 0.2F, false);
-    public static final Item BOL_DE_SOUPE_DE_CITROUILLE = new Bol("bol_de_soupe_de_citrouille", 8, 0.2F, false);
-    public static final Item BOL_DE_SOUPE_DE_POIS = new Bol("bol_de_soupe_de_pois", 8, 0.2F, false);
-    public static final Item BOL_DE_SOUPE_DE_POISSON = new Bol("bol_de_soupe_de_poisson", 8, 0.2F, false);
-    public static final Item BOL_DE_SOUPE_DE_TOMATES = new Bol("bol_de_soupe_de_tomates", 8, 0.2F, false);
-    public static final Item BOL_DE_SOUPE_VERTE = new Bol("bol_de_soupe_verte", 8, 0.2F, false);
-    public static final Item BOUDIN = new FoodBase("boudin", 4, 0.2F, false);
-    public static final Item BRETZEL = new FoodBase("bretzel", 4, 0.2F, false);
-    public static final Item BRIOCHE = new FoodBase("brioche", 4, 0.2F, false);
-    public static final Item BROCHETTE_DE_VIANDE = new FoodBase("brochette_de_viande", 6, 0.2F, false);
-    public static final Item BROCOLI = new FoodBase("brocoli", 1, 0.2F, false);
-    public static final Item CAPRES = new FoodBase("capres", 0, 0.2F, false);
-    public static final Item CASSIS = new FoodBase("cassis", 1, 0.2F, false);
-    public static final Item CELERI_BRANCHE = new FoodBase("celeri_branche", 1, 0.2F, false);
-    public static final Item CEPES = new FoodBase("cepes", 1, 0.2F, false);
-    public static final Item CERISE = new FoodBase("cerise", 1, 0.2F, false);
-    public static final Item CHATAIGNE = new FoodBase("chataigne", 1, 0.2F, false);
-    public static final Item CHOCOLAT = new FoodBase("chocolat", 1, 0.2F, false);
-    public static final Item CHOU_A_LA_CREME = new FoodBase("chou_a_la_creme", 2, 0.2F, false);
-    public static final Item CHOU_FLEUR = new FoodBase("chou_fleur", 1, 0.2F, false);
-    public static final Item CITRON = new FoodBase("citron", 1, 0.2F, false);
-    public static final Item CLEMENTINE = new FoodBase("clementine", 1, 0.2F, false);
-    public static final Item CONCOMBRE = new FoodBase("concombre", 1, 0.2F, false);
-    public static final Item CORNICHON = new FoodBase("cornichon", 1, 0.2F, false);
-    public static final Item COURGE = new FoodBase("courge", 1, 0.2F, false);
-    public static final Item COURGETTE = new FoodBase("courgette", 1, 0.2F, false);
+    public static final Item BISCUIT = new ItemFoodBase("biscuit", 1, 0.2F, false);
+    public static final Item BISCUIT_AU_CHOCOLAT = new ItemFoodBase("biscuit_au_chocolat", 1, 0.2F, false);
+    public static final Item BLEU = new ItemFoodBase("bleu", 4, 0.2F, false);
+    public static final Item BOL_DE_GRUAU = new ItemContainer("bol_de_gruau", 8, 0.2F, false, ModItems.BOL_SALE, 0, true);
+    public static final Item BOL_DE_POTAGE = new ItemContainer("bol_de_potage", 8, 0.2F, false, ModItems.BOL_SALE, 0, true);
+    public static final Item BOL_DE_POT_AU_FEU = new ItemContainer("bol_de_pot_au_feu", 12, 0.2F, false, ModItems.BOL_SALE, 0, true);
+    public static final Item BOL_DE_RAGOUT = new ItemContainer("bol_de_ragout", 12, 0.2F, false, ModItems.BOL_SALE, 0, true);
+    public static final Item BOL_DE_RAGOUT_DE_CRUSTACES = new ItemContainer("bol_de_ragout_de_crustaces", 12, 0.2F, false, ModItems.BOL_SALE, 0, true);
+    public static final Item BOL_DE_RAGOUT_DE_PATATES = new ItemContainer("bol_de_ragout_de_patates", 8, 0.2F, false, ModItems.BOL_SALE, 0, true);
+    public static final Item BOL_DE_RAGOUT_DE_VIANDE = new ItemContainer("bol_de_ragout_de_viande", 12, 0.2F, false, ModItems.BOL_SALE, 0, true);
+    public static final Item BOL_DE_RIZ = new ItemContainer("bol_de_riz", 8, 0.2F, false, ModItems.BOL_SALE, 0, true);
+    public static final Item BOL_DE_SALADE_DE_FRUITS = new ItemContainer("bol_de_salade_de_fruits", 6, 0.2F, false, ModItems.BOL_SALE, 0, true);
+    public static final Item BOL_DE_SOUPE_AVEC_CROUTONS = new ItemContainer("bol_de_soupe_avec_croutons", 12, 0.2F, false, ModItems.BOL_SALE, 0, true);
+    public static final Item BOL_DE_SOUPE_DE_CHOUX = new ItemContainer("bol_de_soupe_de_choux", 8, 0.2F, false, ModItems.BOL_SALE, 0, true);
+    public static final Item BOL_DE_SOUPE_DE_CITROUILLE = new ItemContainer("bol_de_soupe_de_citrouille", 8, 0.2F, false, ModItems.BOL_SALE, 0, true);
+    public static final Item BOL_DE_SOUPE_DE_POIS = new ItemContainer("bol_de_soupe_de_pois", 8, 0.2F, false, ModItems.BOL_SALE, 0, true);
+    public static final Item BOL_DE_SOUPE_DE_POISSON = new ItemContainer("bol_de_soupe_de_poisson", 8, 0.2F, false, ModItems.BOL_SALE, 0, true);
+    public static final Item BOL_DE_SOUPE_DE_TOMATES = new ItemContainer("bol_de_soupe_de_tomates", 8, 0.2F, false, ModItems.BOL_SALE, 0, true);
+    public static final Item BOL_DE_SOUPE_VERTE = new ItemContainer("bol_de_soupe_verte", 8, 0.2F, false, ModItems.BOL_SALE, 0, true);
+    public static final Item BOUDIN = new ItemFoodBase("boudin", 4, 0.2F, false);
+    public static final Item BRETZEL = new ItemFoodBase("bretzel", 4, 0.2F, false);
+    public static final Item BRIOCHE = new ItemFoodBase("brioche", 4, 0.2F, false);
+    public static final Item BROCHETTE_DE_VIANDE = new ItemFoodBase("brochette_de_viande", 6, 0.2F, false);
+    public static final Item BROCOLI = new ItemFoodBase("brocoli", 1, 0.2F, false);
+    public static final Item CAPRES = new ItemFoodBase("capres", 0, 0.2F, false);
+    public static final Item CASSIS = new ItemFoodBase("cassis", 1, 0.2F, false);
+    public static final Item CELERI_BRANCHE = new ItemFoodBase("celeri_branche", 1, 0.2F, false);
+    public static final Item CEPES = new ItemFoodBase("cepes", 1, 0.2F, false);
+    public static final Item CERISE = new ItemFoodBase("cerise", 1, 0.2F, false);
+    public static final Item CHATAIGNE = new ItemFoodBase("chataigne", 1, 0.2F, false);
+    public static final Item CHOCOLAT = new ItemFoodBase("chocolat", 1, 0.2F, false);
+    public static final Item CHOU_A_LA_CREME = new ItemFoodBase("chou_a_la_creme", 2, 0.2F, false);
+    public static final Item CHOU_FLEUR = new ItemFoodBase("chou_fleur", 1, 0.2F, false);
+    public static final Item CITRON = new ItemFoodBase("citron", 1, 0.2F, false);
+    public static final Item CLEMENTINE = new ItemFoodBase("clementine", 1, 0.2F, false);
+    public static final Item CONCOMBRE = new ItemFoodBase("concombre", 1, 0.2F, false);
+    public static final Item CORNICHON = new ItemFoodBase("cornichon", 1, 0.2F, false);
+    public static final Item COURGE = new ItemFoodBase("courge", 1, 0.2F, false);
+    public static final Item COURGETTE = new ItemFoodBase("courgette", 1, 0.2F, false);
     public static final Item CREME_FRAICHE = new ItemBase("creme_fraiche");
-    public static final Item CREPE = new FoodBase("crepe", 2, 0.2F, false);
-    public static final Item CROISSANT = new FoodBase("croissant", 2, 0.2F, false);
-    public static final Item CUISSE_DE_GRENOUILLE_CUITE = new FoodBase("cuisse_de_grenouille_cuite", 2, 0.2F, false);
-    public static final Item DATTES = new FoodBase("dattes", 1, 0.2F, false);
-    public static final Item ENDIVE = new FoodBase("endive", 1, 0.2F, false);
-    public static final Item EPINARD = new FoodBase("epinard", 1, 0.2F, false);
-    public static final Item FENOUIL = new FoodBase("fenouil", 1, 0.2F, false);
-    public static final Item FIGUE = new FoodBase("figue", 1, 0.2F, false);
-    public static final Item FRAISE = new FoodBase("fraise", 1, 0.2F, false);
-    public static final Item FRAISIER = new FoodBase("fraisier", 2, 0.2F, false);
-    public static final Item FRAMBOISE = new FoodBase("framboise", 1, 0.2F, false);
-    public static final Item FROMAGE = new FoodBase("fromage", 4, 0.2F, false);
-    public static final Item GALETTE_DE_MAIS = new FoodBase("galette_de_mais", 2, 0.2F, false);
-    public static final Item GAUFFRE = new FoodBase("gauffre", 2, 0.2F, false);
-    public static final Item GROSEILLE = new FoodBase("groseille", 1, 0.2F, false);
-    public static final Item GROSEILLE_A_MACRO = new FoodBase("groseille_a_macro", 1, 0.2F, false);
-    public static final Item GROSSE_VIANDE_CUITE = new FoodBase("grosse_viande_cuite", 6, 0.2F, false);
-    public static final Item GROS_RAVIOLI = new FoodBase("gros_ravioli", 6, 0.2F, false);
-    public static final Item HARICOT_BLANC = new FoodBase("haricot_blanc", 1, 0.2F, false);
-    public static final Item HARICOT_ROUGE = new FoodBase("haricot_rouge", 1, 0.2F, false);
-    public static final Item HARICOT_VERT = new FoodBase("haricot_vert", 1, 0.2F, false);
-    public static final Item HUITRE_OUVERTE = new FoodBase("huitre_ouverte", 2, 0.2F, false);
-    public static final Item JAMBON_SEC = new FoodBase("jambon_sec", 8, 0.2F, false);
-    public static final Item KIWI = new FoodBase("kiwi", 1, 0.2F, false);
-    public static final Item LAMBEAU_DE_VIANDE_SECHEE = new FoodBase("lambeau_de_viande_sechee", 4, 0.2F, false);
-    public static final Item MAIS = new FoodBase("mais", 1, 0.2F, false);
-    public static final Item MIEL = new FoodBase("miel", 1, 0.2F, false);
-    public static final Item MORCEAU_DE_POISSON_CUIT = new FoodBase("morceau_de_poisson_cuit", 4, 0.2F, false);
-    public static final Item MORCEAU_DE_POULPE = new FoodBase("morceau_de_poulpe", 4, 0.2F, false);
-    public static final Item MURES = new FoodBase("mures", 1, 0.2F, false);
-    public static final Item MYRTILLES = new FoodBase("myrtilles", 1, 0.2F, false);
-    public static final Item NAVET = new FoodBase("navet", 1, 0.2F, false);
-    public static final Item NOIX = new FoodBase("noix", 1, 0.2F, false);
-    public static final Item NOIX_DE_COCO = new FoodBase("noix_de_coco", 1, 0.2F, false);
-    public static final Item OEUF_A_LA_COQUE = new FoodBase("oeuf_a_la_coque", 4, 0.2F, false);
-    public static final Item OEUF_A_PLAT = new FoodBase("oeuf_a_plat", 4, 0.2F, false);
-    public static final Item OEUF_DUR = new FoodBase("oeuf_dur", 4, 0.2F, false);
-    public static final Item OIGNON = new FoodBase("oignon", 0, 0.2F, false);
-    public static final Item OLIVES = new FoodBase("olives", 1, 0.2F, false);
-    public static final Item ORANGE = new FoodBase("orange", 1, 0.2F, false);
-    public static final Item PAIN_AU_CHOUX = new FoodBase("pain_au_choux", 8, 0.2F, false);
-    public static final Item PAIN_NOIR = new FoodBase("pain_noir", 4, 0.2F, false);
-    public static final Item PART_DE_GATEAU = new FoodBase("part_de_gateau", 2, 0.2F, false);
-    public static final Item PART_DE_TARTE = new FoodBase("part_de_tarte", 2, 0.2F, false);
-    public static final Item PART_DE_TARTE_AUX_FRUITS_ROUGES = new FoodBase("part_de_tarte_aux_fruits_rouges", 2, 0.2F, false);
-    public static final Item PART_DE_TARTE_AUX_MYRTILLES = new FoodBase("part_de_tarte_aux_myrtilles", 2, 0.2F, false);
-    public static final Item PART_DE_TARTE_AU_CITRON = new FoodBase("part_de_tarte_au_citron", 2, 0.2F, false);
-    public static final Item PART_DE_TOURTE = new FoodBase("part_de_tourte", 2, 0.2F, false);
-    public static final Item PATISSERIE = new FoodBase("patisserie", 2, 0.2F, false);
-    public static final Item PATISSERIES_COLOREES = new FoodBase("patisseries_colorees", 2, 0.2F, false);
-    public static final Item PATISSERIE_A_LA_PATE_D_AMANDE = new FoodBase("patisserie_a_la_pate_d_amande", 2, 0.2F, false);
-    public static final Item PECHE = new FoodBase("peche", 1, 0.2F, false);
-    public static final Item PETITE_VIANDE_CUITE = new FoodBase("petite_viande_cuite", 4, 0.2F, false);
-    public static final Item PETITE_VIANDE_DE_GIBIER_CUITE = new FoodBase("petite_viande_de_gibier_cuite", 4, 0.2F, false);
-    public static final Item PETITS_POIS = new FoodBase("petits_pois", 1, 0.2F, false);
-    public static final Item PETIT_PAIN = new FoodBase("petit_pain", 4, 0.2F, false);
-    public static final Item PIMENT = new FoodBase("piment", 0, 0.2F, false);
-    public static final Item POIRE = new FoodBase("poire", 1, 0.2F, false);
-    public static final Item POIREAU = new FoodBase("poireau", 1, 0.2F, false);
-    public static final Item POISSON_GRILLE = new FoodBase("poisson_grille", 6, 0.2F, false);
-    public static final Item POIVRON_JAUNE_FARCI = new FoodBase("poivron_jaune_farci", 12, 0.2F, false);
-    public static final Item POIVRON_JAUNE_M = new FoodBase("poivron_jaune_m", 1, 0.2F, false);
-    public static final Item POIVRON_ROUGE_FARCI = new FoodBase("poivron_rouge_farci", 12, 0.2F, false);
-    public static final Item POIVRON_ROUGE_M = new FoodBase("poivron_rouge_m", 1, 0.2F, false);
-    public static final Item POIVRON_VERT_FARCI = new FoodBase("poivron_vert_farci", 12, 0.2F, false);
-    public static final Item POIVRON_VERT_M = new FoodBase("poivron_vert_m", 1, 0.2F, false);
-    public static final Item POMME_DE_TERRE = new FoodBase("pomme_de_terre", 1, 0.2F, false);
-    public static final Item POMME_DE_TERRE_FARCIE = new FoodBase("pomme_de_terre_farcie", 12, 0.2F, false);
+    public static final Item CREPE = new ItemFoodBase("crepe", 2, 0.2F, false);
+    public static final Item CROISSANT = new ItemFoodBase("croissant", 2, 0.2F, false);
+    public static final Item CUISSE_DE_GRENOUILLE_CUITE = new ItemFoodBase("cuisse_de_grenouille_cuite", 2, 0.2F, false);
+    public static final Item DATTES = new ItemFoodBase("dattes", 1, 0.2F, false);
+    public static final Item ENDIVE = new ItemFoodBase("endive", 1, 0.2F, false);
+    public static final Item EPINARD = new ItemFoodBase("epinard", 1, 0.2F, false);
+    public static final Item FENOUIL = new ItemFoodBase("fenouil", 1, 0.2F, false);
+    public static final Item FIGUE = new ItemFoodBase("figue", 1, 0.2F, false);
+    public static final Item FRAISE = new ItemFoodBase("fraise", 1, 0.2F, false);
+    public static final Item FRAISIER = new ItemFoodBase("fraisier", 2, 0.2F, false);
+    public static final Item FRAMBOISE = new ItemFoodBase("framboise", 1, 0.2F, false);
+    public static final Item FROMAGE = new ItemFoodBase("fromage", 4, 0.2F, false);
+    public static final Item GALETTE_DE_MAIS = new ItemFoodBase("galette_de_mais", 2, 0.2F, false);
+    public static final Item GAUFFRE = new ItemFoodBase("gauffre", 2, 0.2F, false);
+    public static final Item GROSEILLE = new ItemFoodBase("groseille", 1, 0.2F, false);
+    public static final Item GROSEILLE_A_MACRO = new ItemFoodBase("groseille_a_macro", 1, 0.2F, false);
+    public static final Item GROSSE_VIANDE_CUITE = new ItemFoodBase("grosse_viande_cuite", 6, 0.2F, false);
+    public static final Item GROS_RAVIOLI = new ItemFoodBase("gros_ravioli", 6, 0.2F, false);
+    public static final Item HARICOT_BLANC = new ItemFoodBase("haricot_blanc", 1, 0.2F, false);
+    public static final Item HARICOT_ROUGE = new ItemFoodBase("haricot_rouge", 1, 0.2F, false);
+    public static final Item HARICOT_VERT = new ItemFoodBase("haricot_vert", 1, 0.2F, false);
+    public static final Item HUITRE_OUVERTE = new ItemFoodBase("huitre_ouverte", 2, 0.2F, false);
+    public static final Item JAMBON_SEC = new ItemFoodBase("jambon_sec", 8, 0.2F, false);
+    public static final Item KIWI = new ItemFoodBase("kiwi", 1, 0.2F, false);
+    public static final Item LAMBEAU_DE_VIANDE_SECHEE = new ItemFoodBase("lambeau_de_viande_sechee", 4, 0.2F, false);
+    public static final Item MAIS = new ItemFoodBase("mais", 1, 0.2F, false);
+    public static final Item MIEL = new ItemFoodBase("miel", 1, 0.2F, false);
+    public static final Item MORCEAU_DE_POISSON_CUIT = new ItemFoodBase("morceau_de_poisson_cuit", 4, 0.2F, false);
+    public static final Item MORCEAU_DE_POULPE = new ItemFoodBase("morceau_de_poulpe", 4, 0.2F, false);
+    public static final Item MURES = new ItemFoodBase("mures", 1, 0.2F, false);
+    public static final Item MYRTILLES = new ItemFoodBase("myrtilles", 1, 0.2F, false);
+    public static final Item NAVET = new ItemFoodBase("navet", 1, 0.2F, false);
+    public static final Item NOIX = new ItemFoodBase("noix", 1, 0.2F, false);
+    public static final Item NOIX_DE_COCO = new ItemFoodBase("noix_de_coco", 1, 0.2F, false);
+    public static final Item OEUF_A_LA_COQUE = new ItemFoodBase("oeuf_a_la_coque", 4, 0.2F, false);
+    public static final Item OEUF_A_PLAT = new ItemFoodBase("oeuf_a_plat", 4, 0.2F, false);
+    public static final Item OEUF_DUR = new ItemFoodBase("oeuf_dur", 4, 0.2F, false);
+    public static final Item OIGNON = new ItemFoodBase("oignon", 0, 0.2F, false);
+    public static final Item OLIVES = new ItemFoodBase("olives", 1, 0.2F, false);
+    public static final Item ORANGE = new ItemFoodBase("orange", 1, 0.2F, false);
+    public static final Item PAIN_AU_CHOUX = new ItemFoodBase("pain_au_choux", 8, 0.2F, false);
+    public static final Item PAIN_NOIR = new ItemFoodBase("pain_noir", 4, 0.2F, false);
+    public static final Item PART_DE_GATEAU = new ItemFoodBase("part_de_gateau", 2, 0.2F, false);
+    public static final Item PART_DE_TARTE = new ItemFoodBase("part_de_tarte", 2, 0.2F, false);
+    public static final Item PART_DE_TARTE_AUX_FRUITS_ROUGES = new ItemFoodBase("part_de_tarte_aux_fruits_rouges", 2, 0.2F, false);
+    public static final Item PART_DE_TARTE_AUX_MYRTILLES = new ItemFoodBase("part_de_tarte_aux_myrtilles", 2, 0.2F, false);
+    public static final Item PART_DE_TARTE_AU_CITRON = new ItemFoodBase("part_de_tarte_au_citron", 2, 0.2F, false);
+    public static final Item PART_DE_TOURTE = new ItemFoodBase("part_de_tourte", 2, 0.2F, false);
+    public static final Item PATISSERIE = new ItemFoodBase("patisserie", 2, 0.2F, false);
+    public static final Item PATISSERIES_COLOREES = new ItemFoodBase("patisseries_colorees", 2, 0.2F, false);
+    public static final Item PATISSERIE_A_LA_PATE_D_AMANDE = new ItemFoodBase("patisserie_a_la_pate_d_amande", 2, 0.2F, false);
+    public static final Item PECHE = new ItemFoodBase("peche", 1, 0.2F, false);
+    public static final Item PETITE_VIANDE_CUITE = new ItemFoodBase("petite_viande_cuite", 4, 0.2F, false);
+    public static final Item PETITE_VIANDE_DE_GIBIER_CUITE = new ItemFoodBase("petite_viande_de_gibier_cuite", 4, 0.2F, false);
+    public static final Item PETITS_POIS = new ItemFoodBase("petits_pois", 1, 0.2F, false);
+    public static final Item PETIT_PAIN = new ItemFoodBase("petit_pain", 4, 0.2F, false);
+    public static final Item PIMENT = new ItemFoodBase("piment", 0, 0.2F, false);
+    public static final Item POIRE = new ItemFoodBase("poire", 1, 0.2F, false);
+    public static final Item POIREAU = new ItemFoodBase("poireau", 1, 0.2F, false);
+    public static final Item POISSON_GRILLE = new ItemFoodBase("poisson_grille", 6, 0.2F, false);
+    public static final Item POIVRON_JAUNE_FARCI = new ItemFoodBase("poivron_jaune_farci", 12, 0.2F, false);
+    public static final Item POIVRON_JAUNE_M = new ItemFoodBase("poivron_jaune_m", 1, 0.2F, false);
+    public static final Item POIVRON_ROUGE_FARCI = new ItemFoodBase("poivron_rouge_farci", 12, 0.2F, false);
+    public static final Item POIVRON_ROUGE_M = new ItemFoodBase("poivron_rouge_m", 1, 0.2F, false);
+    public static final Item POIVRON_VERT_FARCI = new ItemFoodBase("poivron_vert_farci", 12, 0.2F, false);
+    public static final Item POIVRON_VERT_M = new ItemFoodBase("poivron_vert_m", 1, 0.2F, false);
+    public static final Item POMME_DE_TERRE = new ItemFoodBase("pomme_de_terre", 1, 0.2F, false);
+    public static final Item POMME_DE_TERRE_FARCIE = new ItemFoodBase("pomme_de_terre_farcie", 12, 0.2F, false);
 
 
     public static final Item POT_DE_CONFITURE_DE_FRUITS_ROUGES = new ItemIngrediant("pot_de_confiture_de_fruits_rouges", 7);
     public static final Item POT_DE_CONFITURE_DE_MYRTILLES = new ItemIngrediant("pot_de_confiture_de_myrtilles", 7);
     public static final Item POT_DE_CONFITURE_D_AGRUMES = new ItemIngrediant("pot_de_confiture_d_agrumes", 7);
     public static final Item POT_DE_MIEL = new ItemIngrediant("pot_de_miel", 7);
-    public static final Item POULET_ROTI = new FoodBase("poulet_roti", 8, 0.2F, false);
-    public static final Item PRUNEAU = new FoodBase("pruneau", 1, 0.2F, false);
-    public static final Item RADIS = new FoodBase("radis", 1, 0.2F, false);
-    public static final Item RAISIN_BLANC = new FoodBase("raisin_blanc", 1, 0.2F, false);
-    public static final Item RAISIN_NOIR = new FoodBase("raisin_noir", 1, 0.2F, false);
-    public static final Item RELIGIEUSE_AU_CHOCOLAT = new FoodBase("religieuse_au_chocolat", 2, 0.2F, false);
-    public static final Item RIZ = new FoodBase("riz", 1, 0.2F, false);
-    public static final Item SALADE = new FoodBase("salade", 1, 0.2F, false);
-    public static final Item SALSIFI = new FoodBase("salsifi", 1, 0.2F, false);
-    public static final Item SAUCISSE = new FoodBase("saucisse", 4, 0.2F, false);
-    public static final Item TARTINE_DE_CONFITURE = new FoodBase("tartine_de_confiture", 2, 0.2F, false);
-    public static final Item TOMATE = new FoodBase("tomate", 1, 0.2F, false);
-    public static final Item TRANCHE_DE_BLEU = new FoodBase("tranche_de_bleu", 2, 0.2F, false);
-    public static final Item TRANCHE_DE_BRIOCHE = new FoodBase("tranche_de_brioche", 4, 0.2F, false);
-    public static final Item TRANCHE_DE_FROMAGE = new FoodBase("tranche_de_fromage", 4, 0.2F, false);
-    public static final Item TRANCHE_DE_MELON = new FoodBase("tranche_de_melon", 1, 0.2F, false);
-    public static final Item TRANCHE_DE_PASTEQUE = new FoodBase("tranche_de_pasteque", 1, 0.2F, false);
-    public static final Item VIANDE_CUITE = new FoodBase("viande_cuite", 4, 0.2F, false);
-    public static final Item VIANDE_DE_CETACE = new FoodBase("viande_de_cetace", 4, 0.2F, false);
-    public static final Item VIANDE_DE_GIBIER_CUITE = new FoodBase("viande_de_gibier_cuite", 4, 0.2F, false);
-    public static final Item VIANDE_DE_RAT_CUITE = new FoodBase("viande_de_rat_cuite", 4, 0.2F, false);
-    public static final Item VIANDE_DE_VOLAILLE_CUITE = new FoodBase("viande_de_volaille_cuite", 4, 0.2F, false);
-    public static final Item CREVETTE_GRISE_CUITE = new FoodBase("crevette_grise_cuite", 2, 0.2F, false);
-    public static final Item CREVETTE_ROSE_CUITE = new FoodBase("crevette_rose_cuite", 2, 0.2F, false);
-    public static final Item ECREVISSE_CUITE = new FoodBase("ecrevisse_cuite", 2, 0.2F, false);
-    public static final Item ECREVISSE_ORANGE_CUITE = new FoodBase("ecrevisse_orange_cuite", 2, 0.2F, false);
-    public static final Item COQUILLE_SAINT_JACQUES_CUITE = new FoodBase("coquille_saint_jacques_cuite", 2, 0.2F, false);
-    public static final Item CRABE_CUIT = new FoodBase("crabe_cuit", 6, 0.2F, false);
-    public static final Item HOMARD_CUIT = new FoodBase("homard_cuit", 6, 0.2F, false);
-    public static final Item PALOURDE_CUITE = new FoodBase("palourde_cuite", 2, 0.2F, false);
+    public static final Item POULET_ROTI = new ItemFoodBase("poulet_roti", 8, 0.2F, false);
+    public static final Item PRUNEAU = new ItemFoodBase("pruneau", 1, 0.2F, false);
+    public static final Item RADIS = new ItemFoodBase("radis", 1, 0.2F, false);
+    public static final Item RAISIN_BLANC = new ItemFoodBase("raisin_blanc", 1, 0.2F, false);
+    public static final Item RAISIN_NOIR = new ItemFoodBase("raisin_noir", 1, 0.2F, false);
+    public static final Item RELIGIEUSE_AU_CHOCOLAT = new ItemFoodBase("religieuse_au_chocolat", 2, 0.2F, false);
+    public static final Item RIZ = new ItemFoodBase("riz", 1, 0.2F, false);
+    public static final Item SALADE = new ItemFoodBase("salade", 1, 0.2F, false);
+    public static final Item SALSIFI = new ItemFoodBase("salsifi", 1, 0.2F, false);
+    public static final Item SAUCISSE = new ItemFoodBase("saucisse", 4, 0.2F, false);
+    public static final Item TARTINE_DE_CONFITURE = new ItemFoodBase("tartine_de_confiture", 2, 0.2F, false);
+    public static final Item TOMATE = new ItemFoodBase("tomate", 1, 0.2F, false);
+    public static final Item TRANCHE_DE_BLEU = new ItemFoodBase("tranche_de_bleu", 2, 0.2F, false);
+    public static final Item TRANCHE_DE_BRIOCHE = new ItemFoodBase("tranche_de_brioche", 4, 0.2F, false);
+    public static final Item TRANCHE_DE_FROMAGE = new ItemFoodBase("tranche_de_fromage", 4, 0.2F, false);
+    public static final Item TRANCHE_DE_MELON = new ItemFoodBase("tranche_de_melon", 1, 0.2F, false);
+    public static final Item TRANCHE_DE_PASTEQUE = new ItemFoodBase("tranche_de_pasteque", 1, 0.2F, false);
+    public static final Item VIANDE_CUITE = new ItemFoodBase("viande_cuite", 4, 0.2F, false);
+    public static final Item VIANDE_DE_CETACE = new ItemFoodBase("viande_de_cetace", 4, 0.2F, false);
+    public static final Item VIANDE_DE_GIBIER_CUITE = new ItemFoodBase("viande_de_gibier_cuite", 4, 0.2F, false);
+    public static final Item VIANDE_DE_RAT_CUITE = new ItemFoodBase("viande_de_rat_cuite", 4, 0.2F, false);
+    public static final Item VIANDE_DE_VOLAILLE_CUITE = new ItemFoodBase("viande_de_volaille_cuite", 4, 0.2F, false);
+    public static final Item CREVETTE_GRISE_CUITE = new ItemFoodBase("crevette_grise_cuite", 2, 0.2F, false);
+    public static final Item CREVETTE_ROSE_CUITE = new ItemFoodBase("crevette_rose_cuite", 2, 0.2F, false);
+    public static final Item ECREVISSE_CUITE = new ItemFoodBase("ecrevisse_cuite", 2, 0.2F, false);
+    public static final Item ECREVISSE_ORANGE_CUITE = new ItemFoodBase("ecrevisse_orange_cuite", 2, 0.2F, false);
+    public static final Item COQUILLE_SAINT_JACQUES_CUITE = new ItemFoodBase("coquille_saint_jacques_cuite", 2, 0.2F, false);
+    public static final Item CRABE_CUIT = new ItemFoodBase("crabe_cuit", 6, 0.2F, false);
+    public static final Item HOMARD_CUIT = new ItemFoodBase("homard_cuit", 6, 0.2F, false);
+    public static final Item PALOURDE_CUITE = new ItemFoodBase("palourde_cuite", 2, 0.2F, false);
 
-    public static final Item ANGUILLE_CUITE = new FoodBase("anguille_cuite", 4, 0.2F, false);
-    public static final Item BROCHETTE_CALAMAR_CUITE = new FoodBase("brochette_calamar_cuite", 6, 0.2F, false);
-    public static final Item MOULE_MARINIERE_CUITE = new FoodBase("moule_mariniere_cuite", 12, 0.2F, false);
-    public static final Item OEUF_MIMOSA = new FoodBase("oeuf_mimosa", 4, 0.2F, false);
-    public static final Item TEMPURA_CUIT = new FoodBase("tempura_cuit", 2, 0.2F, false);
+    public static final Item ANGUILLE_CUITE = new ItemFoodBase("anguille_cuite", 4, 0.2F, false);
+    public static final Item BROCHETTE_CALAMAR_CUITE = new ItemFoodBase("brochette_calamar_cuite", 6, 0.2F, false);
+    public static final Item MOULE_MARINIERE_CUITE = new ItemFoodBase("moule_mariniere_cuite", 12, 0.2F, false);
+    public static final Item OEUF_MIMOSA = new ItemFoodBase("oeuf_mimosa", 4, 0.2F, false);
+    public static final Item TEMPURA_CUIT = new ItemFoodBase("tempura_cuit", 2, 0.2F, false);
 
     //FOODS CRU
     //public static final Item PART_DE_TOURTE_CRU = new ItemBase("part_de_tourte_cru");
@@ -387,7 +392,6 @@ public class ModItems {
     public static final Item BROCHETTE_DE_VIANDE_CRU = new ItemBase("brochette_de_viande_cru");
     public static final Item BROCOLI_CRU = new ItemBase("brocoli_cru");
     public static final Item CELERI_BRANCHE_CRU = new ItemBase("celeri_branche_cru");
-    public static final Item CEPES_CRU = new ItemBase("cepes_cru");
     public static final Item CHATAIGNE_CRU = new ItemBase("chataigne_cru");
     public static final Item CHOU_FLEUR_CRU = new ItemBase("chou_fleur_cru");
     public static final Item CHOU_VERT_CRU = new ItemBase("chou_vert_cru");
@@ -408,12 +412,12 @@ public class ModItems {
     public static final Item HARICOT_VERT_CRU = new ItemBase("haricot_vert_cru");
     public static final Item LAMBEAU_DE_VIANDE_CRUE = new ItemBase("lambeau_de_viande_crue");
     public static final Item MAIS_CRU = new ItemBase("mais_cru");
-    public static final Item MORCEAU_DE_POISSON = new Poisson("morceau_de_poisson");
     public static final Item MORCEAU_DE_POISSON_CRU = new ItemBase("morceau_de_poisson_cru");
+    public static final Item CARCASSE_DE_POISSON = new ItemBase("carcasse_de_poisson");
+    public static final Item MORCEAU_DE_POISSON = new ItemTransformable("morceau_de_poisson", new ArrayList() {{ add(CARCASSE_DE_POISSON); add(MORCEAU_DE_POISSON_CRU); }});
     public static final Item MORCEAU_DE_POULPE_CRU = new ItemBase("morceau_de_poulpe_cru");
     public static final Item NAVET_CRU = new ItemBase("navet_cru");
     public static final Item OEUF_A_LA_COQUE_CRU = new ItemBase("oeuf_a_la_coque_cru");
-    public static final Item OEUF_A_PLAT_CRU = new ItemBase("oeuf_a_plat_cru");
     public static final Item OEUF_DUR_CRU = new ItemBase("oeuf_dur_cru");
     public static final Item PAIN_AU_CHOUX_CRU = new ItemBase("pain_au_choux_cru");
     public static final Item PAIN_NOIR_CRU = new ItemBase("pain_noir_cru");
@@ -425,12 +429,13 @@ public class ModItems {
     public static final Item PETITE_VIANDE_DE_GIBIER_CRUE = new ItemBase("petite_viande_de_gibier_crue");
     public static final Item PETITS_POIS_CRU = new ItemBase("petits_pois_cru");
     public static final Item POIREAU_CRU = new ItemBase("poireau_cru");
+
     public static final Item POIVRON_JAUNE_FARCI_CRU = new ItemBase("poivron_jaune_farci_cru");
-    public static final Item POIVRON_JAUNE_M_CRU = new ItemBase("poivron_jaune_m_cru");
+    public static final Item POIVRON_JAUNE_CRU = new ItemBase("poivron_jaune_m_cru");
     public static final Item POIVRON_ROUGE_FARCI_CRU = new ItemBase("poivron_rouge_farci_cru");
-    public static final Item POIVRON_ROUGE_M_CRU = new ItemBase("poivron_rouge_m_cru");
+    public static final Item POIVRON_ROUGE_CRU = new ItemBase("poivron_rouge_m_cru");
     public static final Item POIVRON_VERT_FARCI_CRU = new ItemBase("poivron_vert_farci_cru");
-    public static final Item POIVRON_VERT_M_CRU = new ItemBase("poivron_vert_m_cru");
+    public static final Item POIVRON_VERT_CRU = new ItemBase("poivron_vert_m_cru");
     public static final Item POMME_DE_TERRE_CRU = new ItemBase("pomme_de_terre_cru");
     public static final Item POMME_DE_TERRE_FARCIE_CRU = new ItemBase("pomme_de_terre_farcie_cru");
     public static final Item POULET_CRU = new ItemBase("poulet_cru");
@@ -448,7 +453,24 @@ public class ModItems {
     public static final Item MOULE_MARINIERE = new ItemBase("moule_mariniere");
     public static final Item BROCHETTE_CALAMAR = new ItemBase("brochette_calamar");
 
-    
+    //Champignons
+    public static final Item CEPES_CRU = new ItemBase("cepes_cru");
+    public static final Item AMANITE = new ItemBase("amanite");
+    public static final Item BOLET_SATAN = new ItemBase("bolet_satan");
+    public static final Item CORTINAIRE = new ItemBase("cortinaire");
+    public static final Item GIROLLE = new ItemBase("girolle");
+    public static final Item HELVELLE = new ItemBase("helvelle");
+    public static final Item LEPIOTE = new ItemBase("lepiote");
+    public static final Item MORILLE = new ItemBase("morille");
+    public static final Item PLEUROTE = new ItemBase("pleurote");
+    public static final Item REISHI = new ItemBase("reishi");
+    public static final Item SHITAKE = new ItemBase("shitake");
+    public static final Item TROMPETTE_MORT = new ItemBase("trompette_mort");
+    public static final Item TRUFFE = new ItemBase("truffe");
+    public static final Item VESSE_LOUP = new ItemBase("vesse_loup");
+    public static final Item CHAMPIGNON_BRUN = new ItemBase("champignon_brun");
+    public static final Item AGARIC_CHAMPETRE = new ItemBase("agaric_champetre");
+
     //Armes - TOOLS
     //public static final Item BATON_DE_MARCHE = new ToolSword("baton_de_marche",Item.ToolMaterial.IRON);
     public static final Item ARAKH_EN_ACIER = new ToolSword("arakh_en_acier", Item.ToolMaterial.IRON);
@@ -491,7 +513,7 @@ public class ModItems {
     public static final Item STYLET_EN_OR = new ItemIngrediant("stylet_en_or", 7);
     public static final ItemAxe HACHE_D_ARMES_EN_ACIER = new ToolAxe("hache_d_armes_en_acier", Item.ToolMaterial.IRON);
 
-    // Graines Plantes botaniste
+    // Graines Plantes
 
     public static Item GRAINE_PLANTE_GRASSE;
     public static Item GRAINE_BUIS;
@@ -508,12 +530,14 @@ public class ModItems {
     public static Item GRAINE_ROSIER;
     public static Item GRAINE_LIERRE_FLEURI;
     public static Item GRAINE_HAIE;
-    public static Item GRAINE_BUISSON_VER_A_SOIE;
+    //public static Item BUISSON_VER_A_SOIE;
     public static Item GRAINE_PISSENLIT;
     public static Item GRAINE_LILAS;
     public static Item GRAINE_TOURNESOL;
     public static Item GRAINE_ALLIUM;
     public static Item GRAINE_HOUSTONIE_BLEUE;
+
+    public static Item GRAINE_CAPRE;
 
     // /\Ajouts/\
     public static Item GRAINE_ANETH;
@@ -598,7 +622,6 @@ public class ModItems {
     public static Item GRAINE_ORGE;
     public static Item GRAINE_POIREAU;
     public static Item GRAINE_POIVRON_JAUNE;
-    public static Item GRAINE_POIVRON_ORANGE;
     public static Item GRAINE_POIVRON_ROUGE;
     public static Item GRAINE_POIVRON_VERT;
     public static Item GRAINE_RADIS;
@@ -609,6 +632,23 @@ public class ModItems {
     public static Item GRAINE_VIGNE_BLANCHE;
     public static Item GRAINE_VIGNE_NOIRE;
 
+    //champignons
+    public static Item GRAINE_AMANITE;
+    public static Item GRAINE_BOLET_SATAN;
+    public static Item GRAINE_CEPE;
+    public static Item GRAINE_CORTINAIRE;
+    public static Item GRAINE_GIROLLE;
+    public static Item GRAINE_HELVELLE;
+    public static Item GRAINE_LEPIOTE;
+    public static Item GRAINE_MORILLE;
+    public static Item GRAINE_PLEUROTE;
+    public static Item GRAINE_REISHI;
+    public static Item GRAINE_SHITAKE;
+    public static Item GRAINE_TROMPETTE_MORT;
+    public static Item GRAINE_TRUFFE;
+    public static Item GRAINE_VESSE_LOUP;
+    public static Item GRAINE_CHAMPIGNON_BRUN;
+    public static Item GRAINE_AGARIC_CHAMPETRE;
 
     // Ingé - rouages - serrures - mécanique
 
@@ -627,6 +667,7 @@ public class ModItems {
     public static final Item MONOCLE = new ItemBase("monocle");
 
     // Pierres taillées - Géodes
+    public static final Item POUSSIERE_MINERALE = new ItemBase("poussiere_minerale");
 
     public static final Item GEODE_AIGUE_MARINE = new ItemBase("geode_aigue_marine");
     public static final Item GEODE_AMETHYSTE = new ItemBase("geode_amethyste");
@@ -644,6 +685,23 @@ public class ModItems {
     public static final Item GEODE_SPINELLE = new ItemBase("geode_spinelle");
     public static final Item GEODE_TURQUOISE = new ItemBase("geode_turquoise");
 
+    public static final Item GEMME_INCONNUE = new ItemTransformableProbability("gemme_inconnue", new ArrayList() {{ add(POUSSIERE_MINERALE); }} , new ArrayList() {{
+        add(GEODE_AMETHYSTE);
+        add(GEODE_CORNALINE);
+        add(GEODE_EMERAUDE);
+        add(GEODE_FLUORINE);
+        add(GEODE_HEMATITE);
+        add(GEODE_JADE);
+        add(GEODE_OPALE);
+        add(GEODE_SPINELLE);
+        add(GEODE_TURQUOISE);
+        add(GEODE_AIGUE_MARINE);
+        add(GEODE_OEIL_DE_TIGRE);
+        add(GEODE_DIAMANT);
+        add(GEODE_ONYX);
+        add(GEODE_SAPHIR);
+        add(GEODE_RUBIS); }});
+
     public static final Item GROSSE_GEODE_AIGUE_MARINE = new ItemBase("grosse_geode_aigue_marine");
     public static final Item GROSSE_GEODE_AMETHYSTE = new ItemBase("grosse_geode_amethyste");
     public static final Item GROSSE_GEODE_CORNALINE = new ItemBase("grosse_geode_cornaline");
@@ -660,6 +718,23 @@ public class ModItems {
     public static final Item GROSSE_GEODE_SPINELLE = new ItemBase("grosse_geode_spinelle");
     public static final Item GROSSE_GEODE_TURQUOISE = new ItemBase("grosse_geode_turquoise");
 
+    public static final Item GROSSE_GEMME_INCONNUE = new ItemTransformableProbability("grosse_gemme_inconnue", new ArrayList() {{ add(POUSSIERE_MINERALE); }} , new ArrayList() {{
+        add(GROSSE_GEODE_AMETHYSTE);
+        add(GROSSE_GEODE_CORNALINE);
+        add(GROSSE_GEODE_EMERAUDE);
+        add(GROSSE_GEODE_FLUORINE);
+        add(GROSSE_GEODE_HEMATITE);
+        add(GROSSE_GEODE_JADE);
+        add(GROSSE_GEODE_OPALE);
+        add(GROSSE_GEODE_SPINELLE);
+        add(GROSSE_GEODE_TURQUOISE);
+        add(GROSSE_GEODE_AIGUE_MARINE);
+        add(GROSSE_GEODE_OEIL_DE_TIGRE);
+        add(GROSSE_GEODE_DIAMANT);
+        add(GROSSE_GEODE_ONYX);
+        add(GROSSE_GEODE_SAPHIR);
+        add(GROSSE_GEODE_RUBIS); }});
+
     public static final Item PETITE_GEODE_AIGUE_MARINE = new ItemBase("petite_geode_aigue_marine");
     public static final Item PETITE_GEODE_AMETHYSTE = new ItemBase("petite_geode_amethyste");
     public static final Item PETITE_GEODE_CORNALINE = new ItemBase("petite_geode_cornaline");
@@ -675,6 +750,23 @@ public class ModItems {
     public static final Item PETITE_GEODE_SAPHIR = new ItemBase("petite_geode_saphir");
     public static final Item PETITE_GEODE_SPINELLE = new ItemBase("petite_geode_spinelle");
     public static final Item PETITE_GEODE_TURQUOISE = new ItemBase("petite_geode_turquoise");
+
+    public static final Item PETITE_GEMME_INCONNUE = new ItemTransformableProbability("petite_gemme_inconnue", new ArrayList() {{ add(POUSSIERE_MINERALE); }} , new ArrayList() {{
+        add(PETITE_GEODE_AMETHYSTE);
+        add(PETITE_GEODE_CORNALINE);
+        add(PETITE_GEODE_EMERAUDE);
+        add(PETITE_GEODE_FLUORINE);
+        add(PETITE_GEODE_HEMATITE);
+        add(PETITE_GEODE_JADE);
+        add(PETITE_GEODE_OPALE);
+        add(PETITE_GEODE_SPINELLE);
+        add(PETITE_GEODE_TURQUOISE);
+        add(PETITE_GEODE_AIGUE_MARINE);
+        add(PETITE_GEODE_OEIL_DE_TIGRE);
+        add(PETITE_GEODE_DIAMANT);
+        add(PETITE_GEODE_ONYX);
+        add(PETITE_GEODE_SAPHIR);
+        add(PETITE_GEODE_RUBIS); }});
 
     public static final Item AIGUE_MARINE_TAILLE_ASSCHER = new ItemBase("aigue_marine_taille_asscher");
     public static final Item AIGUE_MARINE_TAILLE_BAGUETTE = new ItemBase("aigue_marine_taille_baguette");
@@ -960,21 +1052,21 @@ public class ModItems {
     public static final Item PLUME_D_ECRITURE_EN_FER = new ItemBase("plume_d_ecriture_en_fer");
     public static final Item PLUME_D_ECRITURE_EN_OR = new ItemBase("plume_d_ecriture_en_or");
 
-    public static final Item ENVELOPPE = new ItemContainer("enveloppe", 14);
+    public static final Item ENVELOPPE = new ItemInventory("enveloppe", 14);
     public static final Item GRIMOIRE = new ItemBase("grimoire");
     public static final Item LOT_DE_PAPIERS = new ItemBase("lot_de_papiers");
     public static final Item PALETTE_DE_PEINTURE = new ItemIngrediant("palette_de_peinture", 7);
     public static final Item PAPIER_A_PLAN = new ItemBase("papier_a_plan");
     public static final Item PAPIER_ECRIT = new ItemBase("papier_ecrit");
     public static final Item PAPIER_HUMIDE = new ItemBase("papier_humide");
-    public static final Item PARCHEMIN = new Parchemin("parchemin");
     public static final Item PARCHEMIN_DESCELLE = new ItemBase("parchemin_descelle");
+    public static final Item PARCHEMIN = new ItemTransformable("parchemin", new ArrayList() {{ add(PARCHEMIN_DESCELLE); }});
     public static final Item PATE_A_PAPIER = new ItemBase("pate_a_papier");
     public static final Item PINCEAU = new ItemIngrediant("pinceau", 7);
-    public static final Item PINCEAU_BROSSE = new OutilsEnFer("pinceau_brosse");
+    public static final Item PINCEAU_BROSSE = new ItemBase("pinceau_brosse");
     public static final Item TICKET = new ItemBase("ticket");
     public static final Item JEU_DE_CARTES = new ItemBase("jeu_de_cartes");
-
+    public static final Item EVENTAIL = new ItemBase("eventail");
 
     //Métaux fondus - lingots - barres - plaques - clous
 
@@ -1142,18 +1234,18 @@ public class ModItems {
     public static final Item BATON_SAPIN = new ItemBase("baton_sapin");
 
     public static final Item SCIURE = new ItemBase("sciure");
-    public static final Item PLANCHE_SCIURE_ACACIA = new Sciure_Acacia("planche_sciure_acacia");
     public static final Item PLANCHE_ACACIA = new ItemBase("planche_acacia");
-    public static final Item PLANCHE_SCIURE_ACAJOU = new Sciure_Acajou("planche_sciure_acajou");
+    public static final Item PLANCHE_SCIURE_ACACIA = new ItemTransformable("planche_sciure_acacia", new ArrayList() {{ add(PLANCHE_ACACIA); add(SCIURE); }});
     public static final Item PLANCHE_ACAJOU = new ItemBase("planche_acajou");
-    public static final Item PLANCHE_SCIURE_BOULEAU = new Sciure_Bouleau("planche_sciure_bouleau");
+    public static final Item PLANCHE_SCIURE_ACAJOU = new ItemTransformable("planche_sciure_acajou", new ArrayList() {{ add(PLANCHE_ACAJOU); add(SCIURE); }});
     public static final Item PLANCHE_BOULEAU = new ItemBase("planche_bouleau");
-    public static final Item PLANCHE_SCIURE_CHENE = new Sciure_Chene("planche_sciure_chene");
+    public static final Item PLANCHE_SCIURE_BOULEAU = new ItemTransformable("planche_sciure_bouleau", new ArrayList() {{ add(PLANCHE_BOULEAU); add(SCIURE); }});
     public static final Item PLANCHE_CHENE = new ItemBase("planche_chene");
-    public static final Item PLANCHE_SCIURE_CHENE_NOIR = new Sciure_Chene_Noir("planche_sciure_chene_noir");
+    public static final Item PLANCHE_SCIURE_CHENE = new ItemTransformable("planche_sciure_chene", new ArrayList() {{ add(PLANCHE_CHENE); add(SCIURE); }});
     public static final Item PLANCHE_CHENE_NOIR = new ItemBase("planche_chene_noir");
-    public static final Item PLANCHE_SCIURE_SAPIN = new Sciure_Sapin("planche_sciure_sapin");
+    public static final Item PLANCHE_SCIURE_CHENE_NOIR = new ItemTransformable("planche_sciure_chene_noir", new ArrayList() {{ add(PLANCHE_CHENE_NOIR); add(SCIURE); }});
     public static final Item PLANCHE_SAPIN = new ItemBase("planche_sapin");
+    public static final Item PLANCHE_SCIURE_SAPIN = new ItemTransformable("planche_sciure_sapin", new ArrayList() {{ add(PLANCHE_SAPIN); add(SCIURE); }});
 
     public static final Item PIPE = new ItemBase("pipe");
     public static final Item PIPE_DROITE = new ItemBase("pipe_droite");
@@ -1170,7 +1262,7 @@ public class ModItems {
     public static final Item FLECHE_POINTE_LONGUE = new ItemBase("fleche_pointe_longue");
     public static final Item PETIT_CHEVAL_EN_BOIS = new ItemBase("petit_cheval_en_bois");
     public static final Item RAME = new ItemBase("rame");
-    public static final Item ROULEAU_A_PATISSERIE = new OutilsEnBronze("rouleau_a_patisserie");
+    public static final Item ROULEAU_A_PATISSERIE = new ItemIngrediant("rouleau_a_patisserie", Reference.DURABILITE_BRONZE);
     public static final Item STATUETTE_EN_BOIS = new ItemBase("statuette_en_bois");
     public static final Item PEIGNE_EN_BOULEAU = new ItemBase("peigne_en_bouleau");
     public static final Item PEIGNE_EN_BOULEAU_LONG = new ItemBase("peigne_en_bouleau_long");
@@ -1234,10 +1326,10 @@ public class ModItems {
     // public static final Item filet_de_poisson = new FoodBase("filet_de_poisson", 1, 1.0F, true);
     public static final Item ANGUILLE = new ItemBase("anguille");
     public static final Item ANGE_ROYAL = new ItemBase("ange_royal");
-    public static final Item CALAMAR = new Calamar("calamar");
+    public static final Item POCHE_D_ENCRE = new ItemBase("poche_d_encre");
     public static final Item CALAMAR_MORT = new ItemBase("calamar_mort");
-    public static final Item CARCASSE_DE_POISSON = new ItemBase("carcasse_de_poisson");
-    public static final Item CARPE = new Poisson("carpe");
+    public static final Item CALAMAR = new ItemTransformable("calamar", new ArrayList() {{ add(CALAMAR_MORT); add(POCHE_D_ENCRE); add(POCHE_D_ENCRE); }});
+    public static final Item CARPE = new ItemBase("carpe");
     public static final Item CARPE_KOI = new ItemBase("carpe_koi");
     public static final Item CHIRURGIEN_BLEU = new ItemBase("chirurgien_bleu");
     public static final Item CHIRURGIEN_NOIR = new ItemBase("chirurgien_noir");
@@ -1256,8 +1348,8 @@ public class ModItems {
     public static final Item CROISSANT_A_QUEUE_JAUNE = new ItemBase("croissant_a_queue_jaune");
     public static final Item CHROMIS_VIRIDIS = new ItemBase("chromis_viridis");
     public static final Item DEMOISELLE_RAYEE = new ItemBase("demoiselle_rayee");
-    public static final Item DORADE = new Poisson("dorade");
-    public static final Item DORE_JAUNE = new Poisson("dore_jaune");
+    public static final Item DORADE = new ItemBase("dorade");
+    public static final Item DORE_JAUNE = new ItemBase("dore_jaune");
     public static final Item ECREVISSE = new ItemBase("ecrevisse");
     public static final Item ECREVISSE_ORANGE = new ItemBase("ecrevisse_orange");
     public static final Item GOURAMI_MIEL = new ItemBase("gourami_miel");
@@ -1265,26 +1357,25 @@ public class ModItems {
     public static final Item GUPPY = new ItemBase("guppy");
     public static final Item HIPPOCAMPE = new ItemBase("hippocampe");
     public static final Item HOMARD = new ItemBase("homard");
-    public static final Item HUITRE = new Huitre("huitre");
+    public static final Item PERLE_NATURELLE = new ItemBase("perle_naturelle");
+    public static final Item HUITRE = new ItemTransformableProbability("huitre", new ArrayList() {{ add(HUITRE_OUVERTE); }}, new ArrayList() {{ add(PERLE_NATURELLE); }}, 5);
     public static final Item LABIDO_JAUNE = new ItemBase("labido_jaune");
-    public static final Item MEROU = new Poisson("merou");
+    public static final Item MEROU = new ItemBase("merou");
     public static final Item NAPOLEON = new ItemBase("napoleon");
     public static final Item NAUTILE = new ItemBase("nautile");
     public static final Item ORMEAUX = new ItemBase("ormeaux");
     public static final Item PALOURDE = new ItemBase("palourde");
-    public static final Item PERLE_NATURELLE = new ItemBase("perle_naturelle");
-    public static final Item POCHE_D_ENCRE = new ItemBase("poche_d_encre");
     public static final Item POISSON_CHAT = new ItemBase("poisson_chat");
     public static final Item POISSON_CHIRURGIEN = new ItemBase("poisson_chirurgien");
     public static final Item POISSON_CLOWN_NOIR = new ItemBase("poisson_clown_noir");
     public static final Item POISSON_LUNE = new ItemBase("poisson_lune");
     public static final Item POISSON_PERROQUET = new ItemBase("poisson_perroquet");
-    public static final Item POULPE = new Poulpe("poulpe");
     public static final Item POULPE_MORT = new ItemBase("poulpe_mort");
-    public static final Item ROUGET = new Poisson("rouget");
-    public static final Item SARDINE = new Poisson("sardine");
+    public static final Item POULPE = new ItemTransformable("poulpe", new ArrayList() {{ add(POULPE_MORT); add(POCHE_D_ENCRE); add(POCHE_D_ENCRE); }});
+    public static final Item ROUGET = new ItemBase("rouget");
+    public static final Item SARDINE = new ItemBase("sardine");
     public static final Item SEL = new ItemBase("sel");
-    public static final Item THON = new Poisson("thon");
+    public static final Item THON = new ItemBase("thon");
     public static final Item ZANCLUS_CORNUTUS = new ItemBase("zanclus_cornutus");
 
 
@@ -1410,7 +1501,7 @@ public class ModItems {
     // Bijoux SERTIS
 
     //Torque ajouté pour test
-    public static final Item TORQUE_OR_SERTIE = new ItemContainer("torque_or_sertie", 12);
+    public static final Item TORQUE_OR_SERTIE = new ItemInventory("torque_or_sertie", 12);
     /*
     public static final Item TORQUE_ARGENT_SERTIE=new BijouSerti("torque_argent_sertie");
     public static final Item TORQUE_ACIER_SERTIE=new BijouSerti("torque_acier_sertie");
@@ -1530,212 +1621,218 @@ public class ModItems {
     public static final Item SEAU_D_EAU_EN_BOIS = new SeauBois(Blocks.FLOWING_WATER, "seau_d_eau_en_bois");
     public static final Item SEAU_EN_BOIS = new SeauBois(Blocks.AIR, "seau_en_bois");
 
+    public static final Item BOCAL = new ItemBase("bocal");
+    public static final Item BOUTEILLE_VIDE = new ItemBase("bouteille_vide");
+    public static final Item BOUTEILLE_SALE = new ItemBase("bouteille_sale");
+    public static final Item CHOPPE_EN_VERRE = new ItemBase("choppe_en_verre");
+    public static final Item VERRE_A_PIED = new ItemBase("verre_a_pied");
 
-    public static final Item VERRE_A_PIED_EAU = new VerrePlein("verre_a_pied_eau", 0, 0.2F, false);
-    public static final Item CHOPPE_EN_VERRE_EAU = new ChoppePleine("choppe_en_verre_eau", 0, 0.2F, false);
-    public static final Item CHOPPE_EN_ARGILE_EAU = new ChoppeArPleine("choppe_en_argile_eau", 0, 0.2F, false);
-    public static final Item BOUTEILLE_D_EAU = new BouteilleDeVin("bouteille_d_eau", 0, 0.2F, false);
-    public static final Item BOCAL_D_EAU = new BocalPlein("bocal_d_eau", 0, 0.2F, false);
+    public static final Item VERRE_A_PIED_EAU = new ItemContainer("verre_a_pied_eau", 0, 0.2F, false, VERRE_A_PIED, 0);
+    public static final Item CHOPPE_EN_VERRE_EAU = new ItemContainer("choppe_en_verre_eau", 0, 0.2F, false, CHOPPE_EN_VERRE_SALE, 0);
+    public static final Item CHOPPE_EN_ARGILE_EAU = new ItemContainer("choppe_en_argile_eau", 0, 0.2F, false, CHOPPE_EN_ARGILE_SALE, 0);
+    public static final Item BOUTEILLE_D_EAU = new ItemContainer("bouteille_d_eau", 0, 0.2F, false, BOUTEILLE_SALE, 4);
+    public static final Item BOCAL_D_EAU = new ItemContainer("bocal_d_eau", 0, 0.2F, false, ItemStack.EMPTY.getItem(), 1);
 
     public static final Item SEAU_DE_LAIT_EN_BOIS = new ItemBase("seau_de_lait_en_bois");
-    public static final Item VERRE_A_PIED_LAIT = new VerrePlein("verre_a_pied_lait", 0, 0.2F, false);
-    public static final Item CHOPPE_EN_VERRE_LAIT = new ChoppePleine("choppe_en_verre_lait", 0, 0.2F, false);
-    public static final Item CHOPPE_EN_ARGILE_LAIT = new ChoppeArPleine("choppe_en_argile_lait", 0, 0.2F, false);
-    public static final Item BOUTEILLE_DE_LAIT = new BouteilleDeVin("bouteille_de_lait", 0, 0.2F, false);
-    public static final Item BOCAL_DE_LAIT = new BocalPlein("bocal_de_lait", 0, 0.2F, false);
+    public static final Item VERRE_A_PIED_LAIT = new ItemContainer("verre_a_pied_lait", 0, 0.2F, false, VERRE_A_PIED, 0);
+    public static final Item CHOPPE_EN_VERRE_LAIT = new ItemContainer("choppe_en_verre_lait", 0, 0.2F, false, CHOPPE_EN_VERRE_SALE, 0);
+    public static final Item CHOPPE_EN_ARGILE_LAIT = new ItemContainer("choppe_en_argile_lait", 0, 0.2F, false, CHOPPE_EN_ARGILE_SALE, 0);
+    public static final Item BOUTEILLE_DE_LAIT = new ItemContainer("bouteille_de_lait", 0, 0.2F, false, BOUTEILLE_SALE, 4);
+    public static final Item BOCAL_DE_LAIT = new ItemContainer("bocal_de_lait", 0, 0.2F, false, ItemStack.EMPTY.getItem(), 1);
 
     public static final Item SEAU_DE_BIERRE_BLONDE = new ItemBase("seau_de_bierre_blonde");
     public static final Item SEAU_DE_BIERRE_BLONDE_EN_BOIS = new ItemBase("seau_de_bierre_blonde_en_bois");
-    public static final Item VERRE_A_PIED_BIERRE_BLONDE = new VerrePlein("verre_a_pied_bierre_blonde", 0, 0.2F, false);
-    public static final Item CHOPPE_EN_VERRE_BIERRE_BLONDE = new ChoppePleine("choppe_en_verre_bierre_blonde", 0, 0.2F, false);
-    public static final Item CHOPPE_EN_ARGILE_BIERRE_BLONDE = new ChoppeArPleine("choppe_en_argile_bierre_blonde", 0, 0.2F, false);
-    public static final Item BOUTEILLE_DE_BIERRE_BLONDE = new BouteilleDeVin("bouteille_de_bierre_blonde", 0, 0.2F, false);
-    public static final Item BOCAL_DE_BIERRE_BLONDE = new BocalPlein("bocal_de_bierre_blonde", 0, 0.2F, false);
+    public static final Item VERRE_A_PIED_BIERRE_BLONDE = new ItemContainer("verre_a_pied_bierre_blonde", 0, 0.2F, false, VERRE_A_PIED, 0);
+    public static final Item CHOPPE_EN_VERRE_BIERRE_BLONDE = new ItemContainer("choppe_en_verre_bierre_blonde", 0, 0.2F, false, CHOPPE_EN_VERRE_SALE, 0);
+    public static final Item CHOPPE_EN_ARGILE_BIERRE_BLONDE = new ItemContainer("choppe_en_argile_bierre_blonde", 0, 0.2F, false, CHOPPE_EN_ARGILE_SALE, 0);
+    public static final Item BOUTEILLE_DE_BIERRE_BLONDE = new ItemContainer("bouteille_de_bierre_blonde", 0, 0.2F, false, BOUTEILLE_SALE, 4);
+    public static final Item BOCAL_DE_BIERRE_BLONDE = new ItemContainer("bocal_de_bierre_blonde", 0, 0.2F, false, ItemStack.EMPTY.getItem(), 1);
 
     public static final Item SEAU_DE_BIERE_BRUNE = new ItemBase("seau_de_biere_brune");
     public static final Item SEAU_DE_BIERE_BRUNE_EN_BOIS = new ItemBase("seau_de_biere_brune_en_bois");
-    public static final Item VERRE_A_PIED_BIERE_BRUNE = new VerrePlein("verre_a_pied_biere_brune", 0, 0.2F, false);
-    public static final Item CHOPPE_EN_VERRE_BIERE_BRUNE = new ChoppePleine("choppe_en_verre_biere_brune", 0, 0.2F, false);
-    public static final Item CHOPPE_EN_ARGILE_BIERE_BRUNE = new ChoppeArPleine("choppe_en_argile_biere_brune", 0, 0.2F, false);
-    public static final Item BOUTEILLE_DE_BIERE_BRUNE = new BouteilleDeVin("bouteille_de_biere_brune", 0, 0.2F, false);
-    public static final Item BOCAL_DE_BIERE_BRUNE = new BocalPlein("bocal_de_biere_brune", 0, 0.2F, false);
+    public static final Item VERRE_A_PIED_BIERE_BRUNE = new ItemContainer("verre_a_pied_biere_brune", 0, 0.2F, false, VERRE_A_PIED, 0);
+    public static final Item CHOPPE_EN_VERRE_BIERE_BRUNE = new ItemContainer("choppe_en_verre_biere_brune", 0, 0.2F, false, CHOPPE_EN_VERRE_SALE, 0);
+    public static final Item CHOPPE_EN_ARGILE_BIERE_BRUNE = new ItemContainer("choppe_en_argile_biere_brune", 0, 0.2F, false, CHOPPE_EN_ARGILE_SALE, 0);
+    public static final Item BOUTEILLE_DE_BIERE_BRUNE = new ItemContainer("bouteille_de_biere_brune", 0, 0.2F, false, BOUTEILLE_SALE, 4);
+    public static final Item BOCAL_DE_BIERE_BRUNE = new ItemContainer("bocal_de_biere_brune", 0, 0.2F, false, ItemStack.EMPTY.getItem(), 1);
 
     public static final Item SEAU_DE_BIERE_ROUSSE = new ItemBase("seau_de_biere_rousse");
     public static final Item SEAU_DE_BIERE_ROUSSE_EN_BOIS = new ItemBase("seau_de_biere_rousse_en_bois");
-    public static final Item VERRE_A_PIED_BIERE_ROUSSE = new VerrePlein("verre_a_pied_biere_rousse", 0, 0.2F, false);
-    public static final Item CHOPPE_EN_VERRE_BIERE_ROUSSE = new ChoppePleine("choppe_en_verre_biere_rousse", 0, 0.2F, false);
-    public static final Item CHOPPE_EN_ARGILE_BIERE_ROUSSE = new ChoppeArPleine("choppe_en_argile_biere_rousse", 0, 0.2F, false);
-    public static final Item BOUTEILLE_DE_BIERE_ROUSSE = new BouteilleDeVin("bouteille_de_biere_rousse", 0, 0.2F, false);
-    public static final Item BOCAL_DE_BIERE_ROUSSE = new BocalPlein("bocal_de_biere_rousse", 0, 0.2F, false);
+    public static final Item VERRE_A_PIED_BIERE_ROUSSE = new ItemContainer("verre_a_pied_biere_rousse", 0, 0.2F, false, VERRE_A_PIED, 0);
+    public static final Item CHOPPE_EN_VERRE_BIERE_ROUSSE = new ItemContainer("choppe_en_verre_biere_rousse", 0, 0.2F, false, CHOPPE_EN_VERRE_SALE, 0);
+    public static final Item CHOPPE_EN_ARGILE_BIERE_ROUSSE = new ItemContainer("choppe_en_argile_biere_rousse", 0, 0.2F, false, CHOPPE_EN_ARGILE_SALE, 0);
+    public static final Item BOUTEILLE_DE_BIERE_ROUSSE = new ItemContainer("bouteille_de_biere_rousse", 0, 0.2F, false, BOUTEILLE_SALE, 4);
+    public static final Item BOCAL_DE_BIERE_ROUSSE = new ItemContainer("bocal_de_biere_rousse", 0, 0.2F, false, ItemStack.EMPTY.getItem(), 1);
 
     public static final Item SEAU_DE_VIN_BLANC = new ItemBase("seau_de_vin_blanc");
     public static final Item SEAU_DE_VIN_BLANC_EN_BOIS = new ItemBase("seau_de_vin_blanc_en_bois");
-    public static final Item VERRE_A_PIED_VIN_BLANC = new VerrePlein("verre_a_pied_vin_blanc", 0, 0.2F, false);
-    public static final Item CHOPPE_EN_VERRE_VIN_BLANC = new ChoppePleine("choppe_en_verre_vin_blanc", 0, 0.2F, false);
-    public static final Item CHOPPE_EN_ARGILE_VIN_BLANC = new ChoppeArPleine("choppe_en_argile_vin_blanc", 0, 0.2F, false);
-    public static final Item BOUTEILLE_DE_VIN_BLANC = new BouteilleDeVin("bouteille_de_vin_blanc", 0, 0.2F, false);
-    public static final Item BOCAL_DE_VIN_BLANC = new BocalPlein("bocal_de_vin_blanc", 0, 0.2F, false);
+    public static final Item VERRE_A_PIED_VIN_BLANC = new ItemContainer("verre_a_pied_vin_blanc", 0, 0.2F, false, VERRE_A_PIED, 0);
+    public static final Item CHOPPE_EN_VERRE_VIN_BLANC = new ItemContainer("choppe_en_verre_vin_blanc", 0, 0.2F, false, CHOPPE_EN_VERRE_SALE, 0);
+    public static final Item CHOPPE_EN_ARGILE_VIN_BLANC = new ItemContainer("choppe_en_argile_vin_blanc", 0, 0.2F, false, CHOPPE_EN_ARGILE_SALE, 0);
+    public static final Item BOUTEILLE_DE_VIN_BLANC = new ItemContainer("bouteille_de_vin_blanc", 0, 0.2F, false, BOUTEILLE_SALE, 4);
+    public static final Item BOCAL_DE_VIN_BLANC = new ItemContainer("bocal_de_vin_blanc", 0, 0.2F, false, ItemStack.EMPTY.getItem(), 1);
 
     public static final Item SEAU_DE_VIN_ROUGE = new ItemBase("seau_de_vin_rouge");
     public static final Item SEAU_DE_VIN_ROUGE_EN_BOIS = new ItemBase("seau_de_vin_rouge_en_bois");
-    public static final Item VERRE_A_PIED_VIN_ROUGE = new VerrePlein("verre_a_pied_vin_rouge", 0, 0.2F, false);
-    public static final Item CHOPPE_EN_VERRE_VIN_ROUGE = new ChoppePleine("choppe_en_verre_vin_rouge", 0, 0.2F, false);
-    public static final Item CHOPPE_EN_ARGILE_VIN_ROUGE = new ChoppeArPleine("choppe_en_argile_vin_rouge", 0, 0.2F, false);
-    public static final Item BOUTEILLE_DE_VIN_ROUGE = new BouteilleDeVin("bouteille_de_vin_rouge", 0, 0.2F, false);
-    public static final Item BOCAL_DE_VIN_ROUGE = new BocalPlein("bocal_de_vin_rouge", 0, 0.2F, false);
+    public static final Item VERRE_A_PIED_VIN_ROUGE = new ItemContainer("verre_a_pied_vin_rouge", 0, 0.2F, false, VERRE_A_PIED, 0);
+    public static final Item CHOPPE_EN_VERRE_VIN_ROUGE = new ItemContainer("choppe_en_verre_vin_rouge", 0, 0.2F, false, CHOPPE_EN_VERRE_SALE, 0);
+    public static final Item CHOPPE_EN_ARGILE_VIN_ROUGE = new ItemContainer("choppe_en_argile_vin_rouge", 0, 0.2F, false, CHOPPE_EN_ARGILE_SALE, 0);
+    public static final Item BOUTEILLE_DE_VIN_ROUGE = new ItemContainer("bouteille_de_vin_rouge", 0, 0.2F, false, BOUTEILLE_SALE, 4);
+    public static final Item BOCAL_DE_VIN_ROUGE = new ItemContainer("bocal_de_vin_rouge", 0, 0.2F, false, ItemStack.EMPTY.getItem(), 1);
 
     public static final Item SEAU_DE_RHUM = new ItemBase("seau_de_rhum");
     public static final Item SEAU_DE_RHUM_EN_BOIS = new ItemBase("seau_de_rhum_en_bois");
-    public static final Item VERRE_A_PIED_RHUM = new VerrePlein("verre_a_pied_rhum", 0, 0.2F, false);
-    public static final Item CHOPPE_EN_VERRE_RHUM = new ChoppePleine("choppe_en_verre_rhum", 0, 0.2F, false);
-    public static final Item CHOPPE_EN_ARGILE_RHUM = new ChoppeArPleine("choppe_en_argile_rhum", 0, 0.2F, false);
-    public static final Item BOUTEILLE_DE_RHUM = new BouteilleDeVin("bouteille_de_rhum", 0, 0.2F, false);
-    public static final Item BOCAL_DE_RHUM = new BocalPlein("bocal_de_rhum", 0, 0.2F, false);
+    public static final Item VERRE_A_PIED_RHUM = new ItemContainer("verre_a_pied_rhum", 0, 0.2F, false, VERRE_A_PIED, 0);
+    public static final Item CHOPPE_EN_VERRE_RHUM = new ItemContainer("choppe_en_verre_rhum", 0, 0.2F, false, CHOPPE_EN_VERRE_SALE, 0);
+    public static final Item CHOPPE_EN_ARGILE_RHUM = new ItemContainer("choppe_en_argile_rhum", 0, 0.2F, false, CHOPPE_EN_ARGILE_SALE, 0);
+    public static final Item BOUTEILLE_DE_RHUM = new ItemContainer("bouteille_de_rhum", 0, 0.2F, false, BOUTEILLE_SALE, 4);
+    public static final Item BOCAL_DE_RHUM = new ItemContainer("bocal_de_rhum", 0, 0.2F, false, ItemStack.EMPTY.getItem(), 1);
 
     public static final Item SEAU_DE_HYDROMEL = new ItemBase("seau_de_hydromel");
     public static final Item SEAU_DE_HYDROMEL_EN_BOIS = new ItemBase("seau_de_hydromel_en_bois");
-    public static final Item VERRE_A_PIED_HYDROMEL = new VerrePlein("verre_a_pied_hydromel", 0, 0.2F, false);
-    public static final Item CHOPPE_EN_VERRE_HYDROMEL = new ChoppePleine("choppe_en_verre_hydromel", 0, 0.2F, false);
-    public static final Item CHOPPE_EN_ARGILE_HYDROMEL = new ChoppeArPleine("choppe_en_argile_hydromel", 0, 0.2F, false);
-    public static final Item BOUTEILLE_DE_HYDROMEL = new BouteilleDeVin("bouteille_de_hydromel", 0, 0.2F, false);
-    public static final Item BOCAL_DE_HYDROMEL = new BocalPlein("bocal_de_hydromel", 0, 0.2F, false);
+    public static final Item VERRE_A_PIED_HYDROMEL = new ItemContainer("verre_a_pied_hydromel", 0, 0.2F, false, VERRE_A_PIED, 0);
+    public static final Item CHOPPE_EN_VERRE_HYDROMEL = new ItemContainer("choppe_en_verre_hydromel", 0, 0.2F, false, CHOPPE_EN_VERRE_SALE, 0);
+    public static final Item CHOPPE_EN_ARGILE_HYDROMEL = new ItemContainer("choppe_en_argile_hydromel", 0, 0.2F, false, CHOPPE_EN_ARGILE_SALE, 0);
+    public static final Item BOUTEILLE_DE_HYDROMEL = new ItemContainer("bouteille_de_hydromel", 0, 0.2F, false, BOUTEILLE_SALE, 4);
+    public static final Item BOCAL_DE_HYDROMEL = new ItemContainer("bocal_de_hydromel", 0, 0.2F, false, ItemStack.EMPTY.getItem(), 1);
 
-    public static final Item BOUTEILLE_HUILE_OLIVE = new GrosseBouteille("bouteille_huile_olive", 0, 0.2F, false);
-    public static final Item BOUTEILLE_HUILE_TOURNESOL = new GrosseBouteille("bouteille_huile_tournesol", 0, 0.2F, false);
-    public static final Item BOUTEILLE_HUILE_NOIX = new GrosseBouteille("bouteille_huile_noix", 0, 0.2F, false);
-    public static final Item BOUTEILLE_VINAIGRE = new GrosseBouteille("bouteille_vinaigre", 0, 0.2F, false);
+    public static final Item GROSSE_BOUTEILLE_VIDE = new ItemBase("grosse_bouteille_vide");
+    public static final Item BOUTEILLE_HUILE_OLIVE = new ItemContainer("bouteille_huile_olive", 0, 0.2F, false, GROSSE_BOUTEILLE_VIDE, 6);
+    public static final Item BOUTEILLE_HUILE_TOURNESOL = new ItemContainer("bouteille_huile_tournesol", 0, 0.2F, false, GROSSE_BOUTEILLE_VIDE, 6);
+    public static final Item BOUTEILLE_HUILE_NOIX = new ItemContainer("bouteille_huile_noix", 0, 0.2F, false, GROSSE_BOUTEILLE_VIDE, 6);
+    public static final Item BOUTEILLE_VINAIGRE = new ItemContainer("bouteille_vinaigre", 0, 0.2F, false, GROSSE_BOUTEILLE_VIDE, 6);
 
-    public static final Item BOUTEILLE_DE_JUS_DE_FRUIT_VERT = new BouteilleDeVin("bouteille_de_jus_de_fruit_vert", 0, 0.2F, false);
-    public static final Item BOUTEILLE_DE_JUS_DE_FRUIT_ROUGE = new BouteilleDeVin("bouteille_de_jus_de_fruit_rouge", 0, 0.2F, false);
-    public static final Item BOUTEILLE_DE_JUS_DE_FRUIT_BLANC = new BouteilleDeVin("bouteille_de_jus_de_fruit_blanc", 0, 0.2F, false);
-    public static final Item BOUTEILLE_DE_JUS_DE_FRUIT_ORANGE = new BouteilleDeVin("bouteille_de_jus_de_fruit_orange", 0, 0.2F, false);
-    public static final Item BOUTEILLE_DE_JUS_DE_FRUIT_JAUNE = new BouteilleDeVin("bouteille_de_jus_de_fruit_jaune", 0, 0.2F, false);
+    public static final Item BOUTEILLE_DE_JUS_DE_FRUIT_VERT = new ItemContainer("bouteille_de_jus_de_fruit_vert", 0, 0.2F, false, BOUTEILLE_SALE, 4);
+    public static final Item BOUTEILLE_DE_JUS_DE_FRUIT_ROUGE = new ItemContainer("bouteille_de_jus_de_fruit_rouge", 0, 0.2F, false, BOUTEILLE_SALE, 4);
+    public static final Item BOUTEILLE_DE_JUS_DE_FRUIT_BLANC = new ItemContainer("bouteille_de_jus_de_fruit_blanc", 0, 0.2F, false, BOUTEILLE_SALE, 4);
+    public static final Item BOUTEILLE_DE_JUS_DE_FRUIT_ORANGE = new ItemContainer("bouteille_de_jus_de_fruit_orange", 0, 0.2F, false, BOUTEILLE_SALE, 4);
+    public static final Item BOUTEILLE_DE_JUS_DE_FRUIT_JAUNE = new ItemContainer("bouteille_de_jus_de_fruit_jaune", 0, 0.2F, false, BOUTEILLE_SALE, 4);
 
     // AJOUT BRASSEURS juillet 23
-    public static final Item ALAMBIC = new OutilsEnBronze("alambic");
+    public static final Item ALAMBIC = new ItemIngrediant("alambic", Reference.DURABILITE_BRONZE);
 
     public static final Item SEAU_ALCOOL_PUR = new ItemBase("seau_alcool_pur");
     public static final Item SEAU_ALCOOL_PUR_EN_BOIS = new ItemBase("seau_alcool_pur_en_bois");
-    public static final Item BOCAL_ALCOOL_PUR = new BocalPlein("bocal_alcool_pur",0,0.2F,false);
+    public static final Item BOCAL_ALCOOL_PUR = new ItemContainer("bocal_alcool_pur",0,0.2F,false, BOCAL, 2);
 
     public static final Item VESOU = new ItemBase("vesou");
     public static final Item MOUT_RAISIN_BLANC = new ItemBase("mout_raisin_blanc");
     public static final Item MOUT_RAISIN_NOIR = new ItemBase("mout_raisin_noir");
 
-    public static final Item CHOPPE_EN_ARGILE_JUS_DE_FRUIT_VERT = new ChoppeArPleine("choppe_en_argile_jus_de_fruit_vert", 0, 0.2F, false);
-    public static final Item CHOPPE_EN_VERRE_JUS_DE_FRUIT_VERT = new ChoppePleine("choppe_en_verre_jus_de_fruit_vert", 0, 0.2F, false);
+    public static final Item CHOPPE_EN_ARGILE_JUS_DE_FRUIT_VERT = new ItemContainer("choppe_en_argile_jus_de_fruit_vert", 0, 0.2F, false, CHOPPE_EN_ARGILE_SALE, 0);
+    public static final Item CHOPPE_EN_VERRE_JUS_DE_FRUIT_VERT = new ItemContainer("choppe_en_verre_jus_de_fruit_vert", 0, 0.2F, false, CHOPPE_EN_VERRE_SALE, 0);
     public static final Item MOUT_FRUIT_VERT = new ItemBase("mout_fruit_vert");
     public static final Item SEAU_JUS_DE_FRUIT_VERT = new ItemBase("seau_jus_de_fruit_vert");
     public static final Item SEAU_JUS_DE_FRUIT_VERT_EN_BOIS = new ItemBase("seau_jus_de_fruit_vert_en_bois");
-    public static final Item VERRE_A_PIED_JUS_DE_FRUIT_VERT = new VerrePlein("verre_a_pied_jus_de_fruit_vert", 0, 0.2F, false);
+    public static final Item VERRE_A_PIED_JUS_DE_FRUIT_VERT = new ItemContainer("verre_a_pied_jus_de_fruit_vert", 0, 0.2F, false, VERRE_A_PIED, 0);
 
-    public static final Item CHOPPE_EN_ARGILE_JUS_DE_FRUIT_ROUGE = new ChoppeArPleine("choppe_en_argile_jus_de_fruit_rouge", 0, 0.2F, false);
-    public static final Item CHOPPE_EN_VERRE_JUS_DE_FRUIT_ROUGE = new ChoppePleine("choppe_en_verre_jus_de_fruit_rouge", 0, 0.2F, false);
+    public static final Item CHOPPE_EN_ARGILE_JUS_DE_FRUIT_ROUGE = new ItemContainer("choppe_en_argile_jus_de_fruit_rouge", 0, 0.2F, false, CHOPPE_EN_ARGILE_SALE, 0);
+    public static final Item CHOPPE_EN_VERRE_JUS_DE_FRUIT_ROUGE = new ItemContainer("choppe_en_verre_jus_de_fruit_rouge", 0, 0.2F, false, CHOPPE_EN_VERRE_SALE, 0);
     public static final Item MOUT_FRUIT_ROUGE = new ItemBase("mout_fruit_rouge");
     public static final Item SEAU_JUS_DE_FRUIT_ROUGE = new ItemBase("seau_jus_de_fruit_rouge");
     public static final Item SEAU_JUS_DE_FRUIT_ROUGE_EN_BOIS = new ItemBase("seau_jus_de_fruit_rouge_en_bois");
-    public static final Item VERRE_A_PIED_JUS_DE_FRUIT_ROUGE = new VerrePlein("verre_a_pied_jus_de_fruit_rouge", 0, 0.2F, false);
+    public static final Item VERRE_A_PIED_JUS_DE_FRUIT_ROUGE = new ItemContainer("verre_a_pied_jus_de_fruit_rouge", 0, 0.2F, false, VERRE_A_PIED, 0);
 
-    public static final Item CHOPPE_EN_ARGILE_JUS_DE_FRUIT_BLANC = new ChoppeArPleine("choppe_en_argile_jus_de_fruit_blanc", 0, 0.2F, false);
-    public static final Item CHOPPE_EN_VERRE_JUS_DE_FRUIT_BLANC = new ChoppePleine("choppe_en_verre_jus_de_fruit_blanc", 0, 0.2F, false);
+    public static final Item CHOPPE_EN_ARGILE_JUS_DE_FRUIT_BLANC = new ItemContainer("choppe_en_argile_jus_de_fruit_blanc", 0, 0.2F, false, CHOPPE_EN_ARGILE_SALE, 0);
+    public static final Item CHOPPE_EN_VERRE_JUS_DE_FRUIT_BLANC = new ItemContainer("choppe_en_verre_jus_de_fruit_blanc", 0, 0.2F, false, CHOPPE_EN_VERRE_SALE, 0);
     public static final Item MOUT_FRUIT_BLANC = new ItemBase("mout_fruit_blanc");
     public static final Item SEAU_JUS_DE_FRUIT_BLANC = new ItemBase("seau_jus_de_fruit_blanc");
     public static final Item SEAU_JUS_DE_FRUIT_BLANC_EN_BOIS = new ItemBase("seau_jus_de_fruit_blanc_en_bois");
-    public static final Item VERRE_A_PIED_JUS_DE_FRUIT_BLANC = new VerrePlein("verre_a_pied_jus_de_fruit_blanc", 0, 0.2F, false);
+    public static final Item VERRE_A_PIED_JUS_DE_FRUIT_BLANC = new ItemContainer("verre_a_pied_jus_de_fruit_blanc", 0, 0.2F, false, VERRE_A_PIED, 0);
 
-    public static final Item CHOPPE_EN_ARGILE_JUS_DE_FRUIT_ORANGE = new ChoppeArPleine("choppe_en_argile_jus_de_fruit_orange", 0, 0.2F, false);
-    public static final Item CHOPPE_EN_VERRE_JUS_DE_FRUIT_ORANGE = new ChoppePleine("choppe_en_verre_jus_de_fruit_orange", 0, 0.2F, false);
+    public static final Item CHOPPE_EN_ARGILE_JUS_DE_FRUIT_ORANGE = new ItemContainer("choppe_en_argile_jus_de_fruit_orange", 0, 0.2F, false, CHOPPE_EN_ARGILE_SALE, 0);
+    public static final Item CHOPPE_EN_VERRE_JUS_DE_FRUIT_ORANGE = new ItemContainer("choppe_en_verre_jus_de_fruit_orange", 0, 0.2F, false, CHOPPE_EN_VERRE_SALE, 0);
     public static final Item MOUT_FRUIT_ORANGE = new ItemBase("mout_fruit_orange");
     public static final Item SEAU_JUS_DE_FRUIT_ORANGE = new ItemBase("seau_jus_de_fruit_orange");
     public static final Item SEAU_JUS_DE_FRUIT_ORANGE_EN_BOIS = new ItemBase("seau_jus_de_fruit_orange_en_bois");
-    public static final Item VERRE_A_PIED_JUS_DE_FRUIT_ORANGE = new VerrePlein("verre_a_pied_jus_de_fruit_orange", 0, 0.2F, false);
+    public static final Item VERRE_A_PIED_JUS_DE_FRUIT_ORANGE = new ItemContainer("verre_a_pied_jus_de_fruit_orange", 0, 0.2F, false, VERRE_A_PIED, 0);
 
-    public static final Item CHOPPE_EN_ARGILE_JUS_DE_FRUIT_JAUNE = new ChoppeArPleine("choppe_en_argile_jus_de_fruit_jaune", 0, 0.2F, false);
-    public static final Item CHOPPE_EN_VERRE_JUS_DE_FRUIT_JAUNE = new ChoppePleine("choppe_en_verre_jus_de_fruit_jaune", 0, 0.2F, false);
+    public static final Item CHOPPE_EN_ARGILE_JUS_DE_FRUIT_JAUNE = new ItemContainer("choppe_en_argile_jus_de_fruit_jaune", 0, 0.2F, false, CHOPPE_EN_ARGILE_SALE, 0);
+    public static final Item CHOPPE_EN_VERRE_JUS_DE_FRUIT_JAUNE = new ItemContainer("choppe_en_verre_jus_de_fruit_jaune", 0, 0.2F, false, CHOPPE_EN_VERRE_SALE, 0);
     public static final Item MOUT_FRUIT_JAUNE = new ItemBase("mout_fruit_jaune");
     public static final Item SEAU_JUS_DE_FRUIT_JAUNE = new ItemBase("seau_jus_de_fruit_jaune");
     public static final Item SEAU_JUS_DE_FRUIT_JAUNE_EN_BOIS = new ItemBase("seau_jus_de_fruit_jaune_en_bois");
-    public static final Item VERRE_A_PIED_JUS_DE_FRUIT_JAUNE = new VerrePlein("verre_a_pied_jus_de_fruit_jaune", 0, 0.2F, false);
+    public static final Item VERRE_A_PIED_JUS_DE_FRUIT_JAUNE = new ItemContainer("verre_a_pied_jus_de_fruit_jaune", 0, 0.2F, false, VERRE_A_PIED, 0);
 
-    public static final Item BOUTEILLE_HYPOCRAS = new BouteilleDeVin("bouteille_hypocras", 0, 0.2F, false);
-    public static final Item CHOPPE_EN_ARGILE_HYPOCRAS = new ChoppeArPleine("choppe_en_argile_hypocras", 0, 0.2F, false);
-    public static final Item CHOPPE_EN_VERRE_HYPOCRAS = new ChoppePleine("choppe_en_verre_hypocras", 0, 0.2F, false);
+    public static final Item BOUTEILLE_HYPOCRAS = new ItemContainer("bouteille_hypocras", 0, 0.2F, false, BOUTEILLE_SALE, 4);
+    public static final Item CHOPPE_EN_ARGILE_HYPOCRAS = new ItemContainer("choppe_en_argile_hypocras", 0, 0.2F, false, CHOPPE_EN_ARGILE_SALE, 0);
+    public static final Item CHOPPE_EN_VERRE_HYPOCRAS = new ItemContainer("choppe_en_verre_hypocras", 0, 0.2F, false, CHOPPE_EN_VERRE_SALE, 0);
     public static final Item SEAU_HYPOCRAS = new ItemBase("seau_hypocras");
     public static final Item SEAU_HYPOCRAS_EN_BOIS = new ItemBase("seau_hypocras_en_bois");
-    public static final Item VERRE_A_PIED_HYPOCRAS = new VerrePlein("verre_a_pied_hypocras", 0, 0.2F, false);
+    public static final Item VERRE_A_PIED_HYPOCRAS = new ItemContainer("verre_a_pied_hypocras", 0, 0.2F, false, VERRE_A_PIED, 0);
 
-    public static final Item BOUTEILLE_LIQUEUR_FRUIT = new BouteilleDeVin("bouteille_liqueur_fruit", 0, 0.2F, false);
-    public static final Item CHOPPE_EN_ARGILE_LIQUEUR_FRUIT = new ChoppeArPleine("choppe_en_argile_liqueur_fruit", 0, 0.2F, false);
-    public static final Item CHOPPE_EN_VERRE_LIQUEUR_FRUIT = new ChoppePleine("choppe_en_verre_liqueur_fruit", 0, 0.2F, false);
+    public static final Item BOUTEILLE_LIQUEUR_FRUIT = new ItemContainer("bouteille_liqueur_fruit", 0, 0.2F, false, BOUTEILLE_SALE, 4);
+    public static final Item CHOPPE_EN_ARGILE_LIQUEUR_FRUIT = new ItemContainer("choppe_en_argile_liqueur_fruit", 0, 0.2F, false, CHOPPE_EN_ARGILE_SALE, 0);
+    public static final Item CHOPPE_EN_VERRE_LIQUEUR_FRUIT = new ItemContainer("choppe_en_verre_liqueur_fruit", 0, 0.2F, false, CHOPPE_EN_VERRE_SALE, 0);
     public static final Item SEAU_LIQUEUR_FRUIT = new ItemBase("seau_liqueur_fruit");
     public static final Item SEAU_LIQUEUR_FRUIT_EN_BOIS = new ItemBase("seau_liqueur_fruit_en_bois");
-    public static final Item VERRE_A_PIED_LIQUEUR_FRUIT = new VerrePlein("verre_a_pied_liqueur_fruit", 0, 0.2F, false);
+    public static final Item VERRE_A_PIED_LIQUEUR_FRUIT = new ItemContainer("verre_a_pied_liqueur_fruit", 0, 0.2F, false, VERRE_A_PIED, 0);
 
-    public static final Item BOUTEILLE_JAGERMEISTER = new BouteilleDeVin("bouteille_jagermeister", 0, 0.2F, false);
-    public static final Item CHOPPE_EN_ARGILE_JAGERMEISTER = new ChoppeArPleine("choppe_en_argile_jagermeister", 0, 0.2F, false);
-    public static final Item CHOPPE_EN_VERRE_JAGERMEISTER = new ChoppePleine("choppe_en_verre_jagermeister", 0, 0.2F, false);
+    public static final Item BOUTEILLE_JAGERMEISTER = new ItemContainer("bouteille_jagermeister", 0, 0.2F, false, BOUTEILLE_SALE, 4);
+    public static final Item CHOPPE_EN_ARGILE_JAGERMEISTER = new ItemContainer("choppe_en_argile_jagermeister", 0, 0.2F, false, CHOPPE_EN_ARGILE_SALE, 0);
+    public static final Item CHOPPE_EN_VERRE_JAGERMEISTER = new ItemContainer("choppe_en_verre_jagermeister", 0, 0.2F, false, CHOPPE_EN_VERRE_SALE, 0);
     public static final Item SEAU_JAGERMEISTER = new ItemBase("seau_jagermeister");
     public static final Item SEAU_JAGERMEISTER_EN_BOIS = new ItemBase("seau_jagermeister_en_bois");
-    public static final Item VERRE_A_PIED_JAGERMEISTER = new VerrePlein("verre_a_pied_jagermeister", 0, 0.2F, false);
+    public static final Item VERRE_A_PIED_JAGERMEISTER = new ItemContainer("verre_a_pied_jagermeister", 0, 0.2F, false, VERRE_A_PIED, 0);
 
-    public static final Item BOUTEILLE_VIPERINE = new BouteilleDeVin("bouteille_viperine", 0, 0.2F, false);
-    public static final Item CHOPPE_EN_ARGILE_VIPERINE = new ChoppeArPleine("choppe_en_argile_viperine", 0, 0.2F, false);
-    public static final Item CHOPPE_EN_VERRE_VIPERINE = new ChoppePleine("choppe_en_verre_viperine", 0, 0.2F, false);
+    public static final Item BOUTEILLE_VIPERINE = new ItemContainer("bouteille_viperine", 0, 0.2F, false, BOUTEILLE_SALE, 4);
+    public static final Item CHOPPE_EN_ARGILE_VIPERINE = new ItemContainer("choppe_en_argile_viperine", 0, 0.2F, false, CHOPPE_EN_ARGILE_SALE, 0);
+    public static final Item CHOPPE_EN_VERRE_VIPERINE = new ItemContainer("choppe_en_verre_viperine", 0, 0.2F, false, CHOPPE_EN_VERRE_SALE, 0);
     public static final Item SEAU_VIPERINE = new ItemBase("seau_viperine");
     public static final Item SEAU_VIPERINE_EN_BOIS = new ItemBase("seau_viperine_en_bois");
-    public static final Item VERRE_A_PIED_VIPERINE = new VerrePlein("verre_a_pied_viperine", 0, 0.2F, false);
+    public static final Item VERRE_A_PIED_VIPERINE = new ItemContainer("verre_a_pied_viperine", 0, 0.2F, false, VERRE_A_PIED, 0);
 
-    public static final Item BOUTEILLE_NIGORIZAKE = new BouteilleDeVin("bouteille_nigorizake", 0, 0.2F, false);
-    public static final Item CHOPPE_EN_ARGILE_NIGORIZAKE = new ChoppeArPleine("choppe_en_argile_nigorizake", 0, 0.2F, false);
-    public static final Item CHOPPE_EN_VERRE_NIGORIZAKE = new ChoppePleine("choppe_en_verre_nigorizake", 0, 0.2F, false);
+    public static final Item BOUTEILLE_NIGORIZAKE = new ItemContainer("bouteille_nigorizake", 0, 0.2F, false, BOUTEILLE_SALE, 4);
+    public static final Item CHOPPE_EN_ARGILE_NIGORIZAKE = new ItemContainer("choppe_en_argile_nigorizake", 0, 0.2F, false, CHOPPE_EN_ARGILE_SALE, 0);
+    public static final Item CHOPPE_EN_VERRE_NIGORIZAKE = new ItemContainer("choppe_en_verre_nigorizake", 0, 0.2F, false, CHOPPE_EN_VERRE_SALE, 0);
     public static final Item SEAU_NIGORIZAKE = new ItemBase("seau_nigorizake");
     public static final Item SEAU_NIGORIZAKE_EN_BOIS = new ItemBase("seau_nigorizake_en_bois");
-    public static final Item VERRE_A_PIED_NIGORIZAKE = new VerrePlein("verre_a_pied_nigorizake", 0, 0.2F, false);
+    public static final Item VERRE_A_PIED_NIGORIZAKE = new ItemContainer("verre_a_pied_nigorizake", 0, 0.2F, false, VERRE_A_PIED, 0);
 
-    public static final Item BOUTEILLE_RYE = new BouteilleDeVin("bouteille_rye", 0, 0.2F, false);
-    public static final Item CHOPPE_EN_ARGILE_RYE = new ChoppeArPleine("choppe_en_argile_rye", 0, 0.2F, false);
-    public static final Item CHOPPE_EN_VERRE_RYE = new ChoppePleine("choppe_en_verre_rye", 0, 0.2F, false);
+    public static final Item BOUTEILLE_RYE = new ItemContainer("bouteille_rye", 0, 0.2F, false, BOUTEILLE_SALE, 4);
+    public static final Item CHOPPE_EN_ARGILE_RYE = new ItemContainer("choppe_en_argile_rye", 0, 0.2F, false, CHOPPE_EN_ARGILE_SALE, 0);
+    public static final Item CHOPPE_EN_VERRE_RYE = new ItemContainer("choppe_en_verre_rye", 0, 0.2F, false, CHOPPE_EN_VERRE_SALE, 0);
     public static final Item SEAU_RYE = new ItemBase("seau_rye");
     public static final Item SEAU_RYE_EN_BOIS = new ItemBase("seau_rye_en_bois");
-    public static final Item VERRE_A_PIED_RYE = new VerrePlein("verre_a_pied_rye", 0, 0.2F, false);
+    public static final Item VERRE_A_PIED_RYE = new ItemContainer("verre_a_pied_rye", 0, 0.2F, false, VERRE_A_PIED, 0);
 
 
     //Contenants : sacs, bourses, saccoches, panier
 
-    public static final Item PANIER_EN_OSIER = new ItemContainer("panier_en_osier", 1);
+    public static final Item PANIER_EN_OSIER = new ItemInventory("panier_en_osier", 1);
 
-    public static final Item Grand_Sac = new ItemContainer("grand_sac", 9);
+    public static final Item Grand_Sac = new ItemInventory("grand_sac", 9);
 
-    public static final Item BOURSE_EN_CUIR = new ItemContainer("bourse_en_cuir", 0);
-    public static final Item BOURSE_NOIRE = new ItemContainer("bourse_noire", 0);
-    public static final Item BOURSE_MARRON = new ItemContainer("bourse_marron", 0);
-    public static final Item BOURSE_CYAN = new ItemContainer("bourse_cyan", 0);
-    public static final Item BOURSE_GRISE = new ItemContainer("bourse_grise", 0);
-    public static final Item BOURSE_BLEU_CLAIR = new ItemContainer("bourse_bleu_clair", 0);
-    public static final Item BOURSE_VERTE = new ItemContainer("bourse_verte", 0);
-    public static final Item BOURSE_ROSE = new ItemContainer("bourse_rose", 0);
-    public static final Item BOURSE_MAGENTA = new ItemContainer("bourse_magenta", 0);
-    public static final Item BOURSE_ORANGE = new ItemContainer("bourse_orange", 0);
-    public static final Item BOURSE_VIOLETTE = new ItemContainer("bourse_violette", 0);
-    public static final Item BOURSE_ROUGE = new ItemContainer("bourse_rouge", 0);
-    public static final Item BOURSE_BLANCHE = new ItemContainer("bourse_blanche", 0);
-    public static final Item BOURSE_GRISE_CLAIR = new ItemContainer("bourse_grise_clair", 0);
+    public static final Item BOURSE_EN_CUIR = new ItemInventory("bourse_en_cuir", 0);
+    public static final Item BOURSE_NOIRE = new ItemInventory("bourse_noire", 0);
+    public static final Item BOURSE_MARRON = new ItemInventory("bourse_marron", 0);
+    public static final Item BOURSE_CYAN = new ItemInventory("bourse_cyan", 0);
+    public static final Item BOURSE_GRISE = new ItemInventory("bourse_grise", 0);
+    public static final Item BOURSE_BLEU_CLAIR = new ItemInventory("bourse_bleu_clair", 0);
+    public static final Item BOURSE_VERTE = new ItemInventory("bourse_verte", 0);
+    public static final Item BOURSE_ROSE = new ItemInventory("bourse_rose", 0);
+    public static final Item BOURSE_MAGENTA = new ItemInventory("bourse_magenta", 0);
+    public static final Item BOURSE_ORANGE = new ItemInventory("bourse_orange", 0);
+    public static final Item BOURSE_VIOLETTE = new ItemInventory("bourse_violette", 0);
+    public static final Item BOURSE_ROUGE = new ItemInventory("bourse_rouge", 0);
+    public static final Item BOURSE_BLANCHE = new ItemInventory("bourse_blanche", 0);
+    public static final Item BOURSE_GRISE_CLAIR = new ItemInventory("bourse_grise_clair", 0);
 
-    public static final Item SACOCHE_EN_CUIR = new ItemContainer("sacoche_en_cuir", 8);
-    public static final Item SACOCHE_EN_CUIR_NOIR = new ItemContainer("sacoche_en_cuir_noir", 8);
-    public static final Item SACOCHE_EN_CUIR_BLEU = new ItemContainer("sacoche_en_cuir_bleu", 8);
-    public static final Item SACOCHE_EN_CUIR_MARRON = new ItemContainer("sacoche_en_cuir_marron", 8);
-    public static final Item SACOCHE_EN_CUIR_CYAN = new ItemContainer("sacoche_en_cuir_cyan", 8);
-    public static final Item SACOCHE_EN_CUIR_GRISE = new ItemContainer("sacoche_en_cuir_grise", 8);
-    public static final Item SACOCHE_EN_CUIR_BLEU_CLAIR = new ItemContainer("sacoche_en_cuir_bleu_clair", 8);
-    public static final Item SACOCHE_EN_CUIR_VERTE = new ItemContainer("sacoche_en_cuir_verte", 8);
-    public static final Item SACOCHE_EN_CUIR_MAGENTA = new ItemContainer("sacoche_en_cuir_magenta", 8);
-    public static final Item SACOCHE_EN_CUIR_ORANGE = new ItemContainer("sacoche_en_cuir_orange", 8);
-    public static final Item SACOCHE_EN_CUIR_ROSE = new ItemContainer("sacoche_en_cuir_rose", 8);
-    public static final Item SACOCHE_EN_CUIR_ROUGE = new ItemContainer("sacoche_en_cuir_rouge", 8);
-    public static final Item SACOCHE_EN_CUIR_BLANCHE = new ItemContainer("sacoche_en_cuir_blanche", 8);
-    public static final Item SACOCHE_EN_CUIR_JAUNE = new ItemContainer("sacoche_en_cuir_jaune", 8);
-    public static final Item SACOCHE_EN_CUIR_GRISE_CLAIR = new ItemContainer("sacoche_en_cuir_gris_clair", 8);
+    public static final Item SACOCHE_EN_CUIR = new ItemInventory("sacoche_en_cuir", 8);
+    public static final Item SACOCHE_EN_CUIR_NOIR = new ItemInventory("sacoche_en_cuir_noir", 8);
+    public static final Item SACOCHE_EN_CUIR_BLEU = new ItemInventory("sacoche_en_cuir_bleu", 8);
+    public static final Item SACOCHE_EN_CUIR_MARRON = new ItemInventory("sacoche_en_cuir_marron", 8);
+    public static final Item SACOCHE_EN_CUIR_CYAN = new ItemInventory("sacoche_en_cuir_cyan", 8);
+    public static final Item SACOCHE_EN_CUIR_GRISE = new ItemInventory("sacoche_en_cuir_grise", 8);
+    public static final Item SACOCHE_EN_CUIR_BLEU_CLAIR = new ItemInventory("sacoche_en_cuir_bleu_clair", 8);
+    public static final Item SACOCHE_EN_CUIR_VERTE = new ItemInventory("sacoche_en_cuir_verte", 8);
+    public static final Item SACOCHE_EN_CUIR_MAGENTA = new ItemInventory("sacoche_en_cuir_magenta", 8);
+    public static final Item SACOCHE_EN_CUIR_ORANGE = new ItemInventory("sacoche_en_cuir_orange", 8);
+    public static final Item SACOCHE_EN_CUIR_ROSE = new ItemInventory("sacoche_en_cuir_rose", 8);
+    public static final Item SACOCHE_EN_CUIR_ROUGE = new ItemInventory("sacoche_en_cuir_rouge", 8);
+    public static final Item SACOCHE_EN_CUIR_BLANCHE = new ItemInventory("sacoche_en_cuir_blanche", 8);
+    public static final Item SACOCHE_EN_CUIR_JAUNE = new ItemInventory("sacoche_en_cuir_jaune", 8);
+    public static final Item SACOCHE_EN_CUIR_GRISE_CLAIR = new ItemInventory("sacoche_en_cuir_gris_clair", 8);
 
     //Couturier
 
@@ -2074,22 +2171,22 @@ public class ModItems {
     public static final Item PANTALON_VIOLET = new ItemBase("pantalon_violet");
     public static final Item PANTALON_VERT_CLAIR = new ItemBase("pantalon_vert_clair");
 
-    public static final Item PETITE_SERVIETTE = new ItemConsomable("petite_serviette", 30);
-    public static final Item PETITE_SERVIETTE_NOIR = new ItemConsomable("petite_serviette_noir", 30);
-    public static final Item PETITE_SERVIETTE_BLEU = new ItemConsomable("petite_serviette_bleu", 30);
-    public static final Item PETITE_SERVIETTE_MARRON = new ItemConsomable("petite_serviette_marron", 30);
-    public static final Item PETITE_SERVIETTE_CYAN = new ItemConsomable("petite_serviette_cyan", 30);
-    public static final Item PETITE_SERVIETTE_GRIS = new ItemConsomable("petite_serviette_gris", 30);
-    public static final Item PETITE_SERVIETTE_BLEU_CLAIR = new ItemConsomable("petite_serviette_bleu_clair", 30);
-    public static final Item PETITE_SERVIETTE_VERT = new ItemConsomable("petite_serviette_vert", 30);
-    public static final Item PETITE_SERVIETTE_MAGENTA = new ItemConsomable("petite_serviette_magenta", 30);
-    public static final Item PETITE_SERVIETTE_ORANGE = new ItemConsomable("petite_serviette_orange", 30);
-    public static final Item PETITE_SERVIETTE_ROSE = new ItemConsomable("petite_serviette_rose", 30);
-    public static final Item PETITE_SERVIETTE_ROUGE = new ItemConsomable("petite_serviette_rouge", 30);
-    public static final Item PETITE_SERVIETTE_JAUNE = new ItemConsomable("petite_serviette_jaune", 30);
-    public static final Item PETITE_SERVIETTE_GRIS_CLAIR = new ItemConsomable("petite_serviette_gris_clair", 30);
-    public static final Item PETITE_SERVIETTE_VIOLET = new ItemConsomable("petite_serviette_violet", 30);
-    public static final Item PETITE_SERVIETTE_VERT_CLAIR = new ItemConsomable("petite_serviette_vert_clair", 30);
+    public static final Item PETITE_SERVIETTE = new ItemConsommable("petite_serviette", 30);
+    public static final Item PETITE_SERVIETTE_NOIR = new ItemConsommable("petite_serviette_noir", 30);
+    public static final Item PETITE_SERVIETTE_BLEU = new ItemConsommable("petite_serviette_bleu", 30);
+    public static final Item PETITE_SERVIETTE_MARRON = new ItemConsommable("petite_serviette_marron", 30);
+    public static final Item PETITE_SERVIETTE_CYAN = new ItemConsommable("petite_serviette_cyan", 30);
+    public static final Item PETITE_SERVIETTE_GRIS = new ItemConsommable("petite_serviette_gris", 30);
+    public static final Item PETITE_SERVIETTE_BLEU_CLAIR = new ItemConsommable("petite_serviette_bleu_clair", 30);
+    public static final Item PETITE_SERVIETTE_VERT = new ItemConsommable("petite_serviette_vert", 30);
+    public static final Item PETITE_SERVIETTE_MAGENTA = new ItemConsommable("petite_serviette_magenta", 30);
+    public static final Item PETITE_SERVIETTE_ORANGE = new ItemConsommable("petite_serviette_orange", 30);
+    public static final Item PETITE_SERVIETTE_ROSE = new ItemConsommable("petite_serviette_rose", 30);
+    public static final Item PETITE_SERVIETTE_ROUGE = new ItemConsommable("petite_serviette_rouge", 30);
+    public static final Item PETITE_SERVIETTE_JAUNE = new ItemConsommable("petite_serviette_jaune", 30);
+    public static final Item PETITE_SERVIETTE_GRIS_CLAIR = new ItemConsommable("petite_serviette_gris_clair", 30);
+    public static final Item PETITE_SERVIETTE_VIOLET = new ItemConsommable("petite_serviette_violet", 30);
+    public static final Item PETITE_SERVIETTE_VERT_CLAIR = new ItemConsommable("petite_serviette_vert_clair", 30);
 
     public static final Item ROBE_NOIR = new ItemBase("robe_noir");
     public static final Item ROBE_BLEU = new ItemBase("robe_bleu");
@@ -2143,23 +2240,23 @@ public class ModItems {
     public static final Item JUPE_VIOLET = new ItemBase("jupe_violet");
     public static final Item JUPE_VERT_CLAIR = new ItemBase("jupe_vert_clair");
 
-    public static final Item SERVIETTE = new ItemConsomable("serviette", 50);
-    public static final Item SERVIETTE_NOIR = new ItemConsomable("serviette_noir", 50);
-    public static final Item SERVIETTE_BLEU = new ItemConsomable("serviette_bleu", 50);
-    public static final Item SERVIETTE_MARRON = new ItemConsomable("serviette_marron", 50);
-    public static final Item SERVIETTE_CYAN = new ItemConsomable("serviette_cyan", 50);
-    public static final Item SERVIETTE_GRIS = new ItemConsomable("serviette_gris", 50);
-    public static final Item SERVIETTE_BLEU_CLAIR = new ItemConsomable("serviette_bleu_clair", 50);
-    public static final Item SERVIETTE_VERT = new ItemConsomable("serviette_vert", 50);
-    public static final Item SERVIETTE_MAGENTA = new ItemConsomable("serviette_magenta", 50);
-    public static final Item SERVIETTE_ORANGE = new ItemConsomable("serviette_orange", 50);
-    public static final Item SERVIETTE_ROSE = new ItemConsomable("serviette_rose", 50);
-    public static final Item SERVIETTE_ROUGE = new ItemConsomable("serviette_rouge", 50);
-    public static final Item SERVIETTE_BLANC = new ItemConsomable("serviette_blanc", 50);
-    public static final Item SERVIETTE_JAUNE = new ItemConsomable("serviette_jaune", 50);
-    public static final Item SERVIETTE_GRIS_CLAIR = new ItemConsomable("serviette_gris_clair", 50);
-    public static final Item SERVIETTE_VIOLET = new ItemConsomable("serviette_violet", 50);
-    public static final Item SERVIETTE_VERT_CLAIR = new ItemConsomable("serviette_vert_clair", 50);
+    public static final Item SERVIETTE = new ItemConsommable("serviette", 50);
+    public static final Item SERVIETTE_NOIR = new ItemConsommable("serviette_noir", 50);
+    public static final Item SERVIETTE_BLEU = new ItemConsommable("serviette_bleu", 50);
+    public static final Item SERVIETTE_MARRON = new ItemConsommable("serviette_marron", 50);
+    public static final Item SERVIETTE_CYAN = new ItemConsommable("serviette_cyan", 50);
+    public static final Item SERVIETTE_GRIS = new ItemConsommable("serviette_gris", 50);
+    public static final Item SERVIETTE_BLEU_CLAIR = new ItemConsommable("serviette_bleu_clair", 50);
+    public static final Item SERVIETTE_VERT = new ItemConsommable("serviette_vert", 50);
+    public static final Item SERVIETTE_MAGENTA = new ItemConsommable("serviette_magenta", 50);
+    public static final Item SERVIETTE_ORANGE = new ItemConsommable("serviette_orange", 50);
+    public static final Item SERVIETTE_ROSE = new ItemConsommable("serviette_rose", 50);
+    public static final Item SERVIETTE_ROUGE = new ItemConsommable("serviette_rouge", 50);
+    public static final Item SERVIETTE_BLANC = new ItemConsommable("serviette_blanc", 50);
+    public static final Item SERVIETTE_JAUNE = new ItemConsommable("serviette_jaune", 50);
+    public static final Item SERVIETTE_GRIS_CLAIR = new ItemConsommable("serviette_gris_clair", 50);
+    public static final Item SERVIETTE_VIOLET = new ItemConsommable("serviette_violet", 50);
+    public static final Item SERVIETTE_VERT_CLAIR = new ItemConsommable("serviette_vert_clair", 50);
 
     public static final Item SOUS_VETEMENT_FEMININ_NOIR = new ItemBase("sous_vetement_feminin_noir");
     public static final Item SOUS_VETEMENT_FEMININ_BLEU = new ItemBase("sous_vetement_feminin_bleu");
@@ -2252,27 +2349,26 @@ public class ModItems {
     public static final Item CORSAGE = new ItemBase("corsage");
 
     // BOCAUX Dispensaire
-
-    public static final Item ANTIPARASITAIRE = new SolutionBuvable("antiparasitaire", 0, 0.2F, false);
-    public static final Item CATAPLASME_FEBRIFUGE = new SolutionBuvable("cataplasme_febrifuge", 0, 0.2F, false);
-    public static final Item CONTREPOISON_LEGER = new SolutionBuvable("contrepoison_leger", 0, 0.2F, false);
-    public static final Item FILTRAT_CONTRE_LES_MAUX_ESTOMAC = new SolutionBuvable("filtrat_contre_les_maux_estomac", 0, 0.2F, false);
-    public static final Item HUILE_DE_LIN = new SolutionBuvable("huile_de_lin", 0, 0.2F, false);
-    public static final Item LAIT_DE_PAVOT = new SolutionBuvable("lait_de_pavot", 0, 0.2F, false);
-    public static final Item SIROP_POUR_LA_TOUX = new SolutionBuvable("sirop_pour_la_toux", 0, 0.2F, false);
-    public static final Item SOIN_DES_MUQUEUSES = new SolutionBuvable("soin_des_muqueuses", 0, 0.2F, false);
-    public static final Item SOIN_REPARATEUR_INTERNE = new SolutionBuvable("soin_reparateur_interne", 0, 0.2F, false);
-    public static final Item TEINTURE_MERE_DE_PAVOT = new SolutionBuvable("teinture_mere_de_pavot", 0, 0.2F, false);
+    public static final Item ANTIPARASITAIRE = new ItemContainer("antiparasitaire", 0, 0.2F, false, BOCAL, 2);
+    public static final Item CATAPLASME_FEBRIFUGE = new ItemContainer("cataplasme_febrifuge", 0, 0.2F, false, BOCAL, 2);
+    public static final Item CONTREPOISON_LEGER = new ItemContainer("contrepoison_leger", 0, 0.2F, false, BOCAL, 2);
+    public static final Item FILTRAT_CONTRE_LES_MAUX_ESTOMAC = new ItemContainer("filtrat_contre_les_maux_estomac", 0, 0.2F, false, BOCAL, 2);
+    public static final Item HUILE_DE_LIN = new ItemContainer("huile_de_lin", 0, 0.2F, false, BOCAL, 2);
+    public static final Item LAIT_DE_PAVOT = new ItemContainer("lait_de_pavot", 0, 0.2F, false, BOCAL, 2);
+    public static final Item SIROP_POUR_LA_TOUX = new ItemContainer("sirop_pour_la_toux", 0, 0.2F, false, BOCAL, 2);
+    public static final Item SOIN_DES_MUQUEUSES = new ItemContainer("soin_des_muqueuses", 0, 0.2F, false, BOCAL, 2);
+    public static final Item SOIN_REPARATEUR_INTERNE = new ItemContainer("soin_reparateur_interne", 0, 0.2F, false, BOCAL, 2);
+    public static final Item TEINTURE_MERE_DE_PAVOT = new ItemContainer("teinture_mere_de_pavot", 0, 0.2F, false, BOCAL, 2);
 
     // Apothicaire - médecin - beauté
 
     public static final Item BANDAGE = new ItemBase("bandage");
     public static final Item BANDAGE_ENSANGLANTE = new ItemBase("bandage_ensanglante");
-    public static final Item BAUME_A_LA_CAMOMILLE = new ItemConsomable("baume_a_la_camomille", 7);
-    public static final Item BAUME_EXFOLIANT = new ItemConsomable("baume_exfoliant", 7);
+    public static final Item BAUME_A_LA_CAMOMILLE = new ItemConsommable("baume_a_la_camomille", 7);
+    public static final Item BAUME_EXFOLIANT = new ItemConsommable("baume_exfoliant", 7);
     public static final Item BOUGIE = new ItemBase("candle");
-    public static final Item BOUTEILLE_ALCOOL_PUR = new BouteilleDeVin("bouteille_alcool_pur", 0, 0.2F, false);
-    public static final Item BOUTEILLE_DE_PARFUM = new ItemConsomable("bouteille_de_parfum", 7);
+    public static final Item BOUTEILLE_ALCOOL_PUR = new ItemContainer("bouteille_alcool_pur", 0, 0.2F, false, BOUTEILLE_SALE, 4);
+    public static final Item BOUTEILLE_DE_PARFUM = new ItemConsommable("bouteille_de_parfum", 7);
     public static final Item CANNE_BEQUILLE = new ItemBase("canne_bequille");
     public static final Item COLLE = new ItemBase("colle");
     public static final Item EMPLATRE = new ItemBase("emplatre");
@@ -2281,24 +2377,24 @@ public class ModItems {
     public static final Item EMPLATRE_DE_LYS = new ItemBase("emplatre_de_lys");
     public static final Item ENCENS = new ItemIngrediant("encens", 7);
     public static final Item EXTRAIT_DE_PAVOT_CONCENTRE = new ItemBase("extrait_de_pavot_concentre");
-    public static final Item FARD_A_JOUE = new ItemConsomable("fard_a_joue", 7);
+    public static final Item FARD_A_JOUE = new ItemConsommable("fard_a_joue", 7);
     public static final Item HUILE_ESSENTIELLE = new ItemIngrediant("huile_essentielle", 7);
     public static final Item LEVURE = new ItemBase("levure");
-    public static final Item MASQUE_ARGILE = new ItemConsomable("masque_argile", 7);
-    public static final Item MASQUE_CHEVEUX = new ItemConsomable("masque_cheveux", 7);
-    public static final Item NOIR_CHARBON = new ItemConsomable("noir_charbon", 7);
+    public static final Item MASQUE_ARGILE = new ItemConsommable("masque_argile", 7);
+    public static final Item MASQUE_CHEVEUX = new ItemConsommable("masque_cheveux", 7);
+    public static final Item NOIR_CHARBON = new ItemConsommable("noir_charbon", 7);
     public static final Item ONCE_DE_POISON_LEGER = new ItemBase("once_de_poison_leger");
     public static final Item ONCE_D_HERBORISTE = new ItemBase("once_d_herboriste");
-    public static final Item OPIUM_A_FUMER = new ItemConsomable("opium_a_fumer", 7);
-    public static final Item PATE_A_DENT = new ItemConsomable("pate_a_dent", 7);
+    public static final Item OPIUM_A_FUMER = new ItemConsommable("opium_a_fumer", 7);
+    public static final Item PATE_A_DENT = new ItemConsommable("pate_a_dent", 7);
     public static final Item PATE_DIVERSE = new ItemBase("pate_diverse");
-    public static final Item POUDRE_DE_TEINT = new ItemConsomable("poudre_de_teint", 7);
-    public static final Item POUDRE_QUELCONQUE = new ItemConsomable("poudre_quelconque", 7);
-    public static final Item ROUGE_A_LEVRES = new ItemConsomable("rouge_a_levres", 7);
-    public static final Item SAVON = new ItemConsomable("savon", 7);
+    public static final Item POUDRE_DE_TEINT = new ItemConsommable("poudre_de_teint", 7);
+    public static final Item POUDRE_QUELCONQUE = new ItemConsommable("poudre_quelconque", 7);
+    public static final Item ROUGE_A_LEVRES = new ItemConsommable("rouge_a_levres", 7);
+    public static final Item SAVON = new Savon("savon", 7);
     public static final Item SEAU_DE_COLLE = new ItemBase("seau_de_colle");
     public static final Item SOUDE = new ItemBase("soude");
-    public static final Item TABAC = new ItemConsomable("tabac", 7);
+    public static final Item TABAC = new ItemConsommable("tabac", 7);
     public static final Item VERNIS = new ItemIngrediant("vernis", 7);
 
     // Porcelaine
@@ -2319,12 +2415,8 @@ public class ModItems {
     //public static final Item MOLTEN_GLASS = new ItemBase("molten_glass");
     public static final Item VERRE_EN_FUSION = new ItemBase("verre_en_fusion");
 
-    public static final Item BOCAL = new ItemBase("bocal");
     public static final Item BOUTEILLE_A_MESSAGE = new ItemBase("bouteille_a_message");
     public static final Item BOUTEILLE_DE_PARFUM_VIDE = new ItemBase("bouteille_de_parfum_vide");
-    public static final Item BOUTEILLE_VIDE = new ItemBase("bouteille_vide");
-    public static final Item GROSSE_BOUTEILLE_VIDE = new ItemBase("grosse_bouteille_vide");
-    public static final Item CHOPPE_EN_VERRE = new ItemBase("choppe_en_verre");
     public static final Item ENCRIER_EN_VERRE = new ItemBase("encrier_en_verre");
     public static final Item ETUI_EN_VERRE = new ItemBase("etui_en_verre");
     public static final Item FLACON = new ItemBase("flacon");
@@ -2333,7 +2425,6 @@ public class ModItems {
     public static final Item MIROIR_DECORE = new ItemBase("miroir_decore");
     public static final Item MIROIR_EN_ETAIN = new ItemBase("miroir_en_etain");
     public static final Item PETIT_MIROIR = new ItemBase("petit_miroir");
-    public static final Item VERRE_A_PIED = new ItemBase("verre_a_pied");
 
     public static final Item PERLE_EN_VERRE_BLANC = new ItemBase("perle_en_verre_blanc");
     public static final Item PERLE_EN_VERRE_BLEU = new ItemBase("perle_en_verre_bleu");
@@ -2353,78 +2444,155 @@ public class ModItems {
     public static final Item PERLE_EN_VERRE_VIOLET = new ItemBase("perle_en_verre_violet");
     // public static final Item PERLE_EN_VERRE = new ItemBase("perle_en_verre");
 
+    //plantes2
+    public static final Item ANETH2 =  new ItemBase("aneth2");
+    public static final Item ANIS2 =  new ItemBase("anis2");
+    public static final Item BASILIC2 =  new ItemBase("basilic2");
+    public static final Item BELLE_DE_NUIT2 =  new ItemBase("belle_de_nuit2");
+    public static final Item BLEUETS2 =  new ItemBase("bleuets2");
+    public static final Item BUISSON2 =  new ItemBase("buisson2");
+    public static final Item BUISSON_DE_FLEURS_BLANCHES2 =  new ItemBase("buisson_de_fleurs_blanches2");
+    public static final Item BUISSON_ETRANGE2 =  new ItemBase("buisson_etrange2");
+    public static final Item BUISSON_HERBEUX2 =  new ItemBase("buisson_herbeux2");
+    public static final Item CAMOMILLE2 =  new ItemBase("camomille2");
+    public static final Item CHARDON2 =  new ItemBase("chardon2");
+    public static final Item CIBOULETTE2 =  new ItemBase("ciboulette2");
+    public static final Item CLOCHETTES2 =  new ItemBase("clochettes2");
+    public static final Item COSMOS2 =  new ItemBase("cosmos2");
+    public static final Item ETOILE_DES_GLACIERS2 =  new ItemBase("etoile_des_glaciers2");
+    public static final Item FLEUR_DE_PAVOT2 = new ItemBase("fleur_de_pavot2");
+    public static final Item GERANIUM2 =  new ItemBase("geranium2");
+    public static final Item GLYCINE2 =  new ItemBase("glycine2");
+    public static final Item GUI2 =  new ItemBase("gui2");
+    public static final Item GUZMANIAS2 =  new ItemBase("guzmanias2");
+    public static final Item HIBISCUS2 =  new ItemBase("hibiscus2");
+    public static final Item HORTENSIAS2 =  new ItemBase("hortensias2");
+    public static final Item HOUX2 =  new ItemBase("houx2");
+    public static final Item HYDRANGEE2 =  new ItemBase("hydrangee2");
+    public static final Item IRIS2 =  new ItemBase("iris2");
+    public static final Item JACINTHE_DES_BOIS2 =  new ItemBase("jacinthe_des_bois2");
+    public static final Item JASMIN2 =  new ItemBase("jasmin2");
+    public static final Item JOLI_BUISSON2 =  new ItemBase("joli_buisson2");
+    public static final Item JONQUILLE2 =  new ItemBase("jonquille2");
+    public static final Item LAURIER2 =  new ItemBase("laurier2");
+    public static final Item LAVANDE2 =  new ItemBase("lavande2");
+    public static final Item LYS2 =  new ItemBase("lys2");
+    public static final Item MANDRAGORE2 =  new ItemBase("mandragore2");
+    public static final Item MENTHE2 =  new ItemBase("menthe2");
+    public static final Item MUGUET2 =  new ItemBase("muguet2");
+    public static final Item MYOSOTIS2 =  new ItemBase("myosotis2");
+    public static final Item NARCISSES2 =  new ItemBase("narcisses2");
+    public static final Item OEILLETS2 =  new ItemBase("oeillets2");
+    public static final Item ORCHIDEE_ROSE2 =  new ItemBase("orchidee_rose2");
+    public static final Item PENSEES2 =  new ItemBase("pensees2");
+    public static final Item PERSIL2 =  new ItemBase("persil2");
+    public static final Item PIVOINE2 =  new ItemBase("pivoine2");
+    public static final Item PLANTE_ETRANGE2 =  new ItemBase("plante_etrange2");
+    public static final Item PLANTE_GRASSE2 =  new ItemBase("plante_grasse2");
+    public static final Item PLANTE_GRASSE_COLOREE2 =  new ItemBase("plante_grasse_coloree2");
+    public static final Item ROMARIN2 =  new ItemBase("romarin2");
+    public static final Item RONCES2 =  new ItemBase("ronces2");
+    public static final Item SALICORNE2 =  new ItemBase("salicorne2");
+    public static final Item VERGE_D_OR2 =  new ItemBase("verge_d_or2");
+    public static final Item VERVEINE2 =  new ItemBase("verveine2");
+    public static final Item VIOLETTES2 =  new ItemBase("violettes2");
+
     //plantes
 
+    public static final Item PLANTE_PLANTE_GRASSE = new ItemBase("plante_plante_grasse");
+    public static final Item PLANTE_BUIS = new ItemBase("plante_buis");
+    public static final Item PLANTE_LIERRE_TERRESTRE = new ItemBase("plante_lierre_terrestre");
+    public static final Item PLANTE_COQUELICOT = new ItemBase("plante_coquelicot");
+    public static final Item PLANTE_BOUTON_D_OR = new ItemBase("plante_bouton_d_or");
+    public static final Item PLANTE_TULIPE_ROUGE = new ItemBase("plante_tulipe_rouge");
+    public static final Item PLANTE_TULIPE_ORANGE = new ItemBase("plante_tulipe_orange");
+    public static final Item PLANTE_TULIPE_ROSE = new ItemBase("plante_tulipe_rose");
+    public static final Item PLANTE_TULIPE_BLANCHE = new ItemBase("plante_tulipe_blanche");
+    //public static final Item PLANTE_OIGNON = new ItemBase("plante_oignon");
+    //public static final Item PLANTE_AIL = new ItemBase("plante_ail");
+    public static final Item PLANTE_ORCHIDEE_BLEUE = new ItemBase("plante_orchidee_bleue");
+    public static final Item PLANTE_ROSIER = new ItemBase("plante_rosier");
+    public static final Item PLANTE_LIERRE_FLEURI = new ItemBase("plante_lierre_fleuri");
+    public static final Item PLANTE_HAIE = new ItemBase("plante_haie");
+    //public static final Item PLANTE_BUISSON_VER_A_SOIE = new ItemBase("plante_buisson_ver_a_soie");
+    public static final Item PLANTE_PISSENLIT = new ItemBase("plante_pissenlit");
+    public static final Item PLANTE_LILAS = new ItemBase("plante_lilas");
+    public static final Item PLANTE_TOURNESOL = new ItemBase("plante_tournesol");
+    public static final Item PLANTE_ALLIUM = new ItemBase("plante_allium");
+    public static final Item PLANTE_HOUSTONIE_BLEUE = new ItemBase("plante_houstonie_bleue");
 
-    public static final Item ANETH2 = new ItemBase("aneth2");
-    public static final Item ANIS2 = new ItemBase("anis2");
-    public static final Item BASILIC2 = new ItemBase("basilic2");
-    public static final Item BELLE_DE_NUIT2 = new ItemBase("belle_de_nuit2");
-    public static final Item BLEUETS2 = new ItemBase("bleuets2");
-    public static final Item BUISSON2 = new ItemBase("buisson2");
-    public static final Item BUISSON_DE_FLEURS_BLANCHES2 = new ItemBase("buisson_de_fleurs_blanches2");
-    public static final Item BUISSON_ETRANGE2 = new ItemBase("buisson_etrange2");
-    public static final Item BUISSON_HERBEUX2 = new ItemBase("buisson_herbeux2");
-    public static final Item CAMOMILLE2 = new ItemBase("camomille2");
-    public static final Item CHARDON2 = new ItemBase("chardon2");
-    public static final Item CIBOULETTE2 = new ItemBase("ciboulette2");
-    public static final Item CLOCHETTES2 = new ItemBase("clochettes2");
-    public static final Item COSMOS2 = new ItemBase("cosmos2");
-    public static final Item ETOILE_DES_GLACIERS2 = new ItemBase("etoile_des_glaciers2");
-    public static final Item FLEUR_DE_PAVOT = new ItemBase("fleur_de_pavot");
-    public static final Item GERANIUM2 = new ItemBase("geranium2");
-    public static final Item GLYCINE2 = new ItemBase("glycine2");
-    public static final Item GUI2 = new ItemBase("gui2");
-    public static final Item GUZMANIAS2 = new ItemBase("guzmanias2");
-    public static final Item HIBISCUS2 = new ItemBase("hibiscus2");
-    public static final Item HORTENSIAS2 = new ItemBase("hortensias2");
-    public static final Item HOUX2 = new ItemBase("houx2");
-    public static final Item HYDRANGEE2 = new ItemBase("hydrangee2");
-    public static final Item IRIS2 = new ItemBase("iris2");
-    public static final Item JACINTHE_DES_BOIS2 = new ItemBase("jacinthe_des_bois2");
-    public static final Item JASMIN2 = new ItemBase("jasmin2");
-    public static final Item JOLI_BUISSON2 = new ItemBase("joli_buisson2");
-    public static final Item JONQUILLE2 = new ItemBase("jonquille2");
-    public static final Item LAURIER2 = new ItemBase("laurier2");
-    public static final Item LAVANDE2 = new ItemBase("lavande2");
-    public static final Item LYS2 = new ItemBase("lys2");
-    public static final Item MANDRAGORE2 = new ItemBase("mandragore2");
-    public static final Item MENTHE2 = new ItemBase("menthe2");
-    public static final Item MUGUET2 = new ItemBase("muguet2");
-    public static final Item MYOSOTIS2 = new ItemBase("myosotis2");
-    public static final Item NARCISSES2 = new ItemBase("narcisses2");
-    public static final Item OEILLETS2 = new ItemBase("oeillets2");
-    public static final Item ORCHIDEE_ROSE2 = new ItemBase("orchidee_rose2");
-    public static final Item PENSEES2 = new ItemBase("pensees2");
-    public static final Item PERSIL2 = new ItemBase("persil2");
-    public static final Item PIVOINE2 = new ItemBase("pivoine2");
-    public static final Item PLANTE_ETRANGE2 = new ItemBase("plante_etrange2");
-    public static final Item PLANTE_GRASSE2 = new ItemBase("plante_grasse2");
-    public static final Item PLANTE_GRASSE_COLOREE2 = new ItemBase("plante_grasse_coloree2");
-    public static final Item POIVRON_ORANGE2 = new ItemBase("poivron_orange2");
-    public static final Item ROMARIN2 = new ItemBase("romarin2");
-    public static final Item RONCES2 = new ItemBase("ronces2");
-    public static final Item SALICORNE2 = new ItemBase("salicorne2");
-    public static final Item VERGE_D_OR2 = new ItemBase("verge_d_or2");
-    public static final Item VERVEINE2 = new ItemBase("verveine2");
-    public static final Item VIOLETTES2 = new ItemBase("violettes2");
+    // /\Ajouts/\
+
+    public static final Item PLANTE_ANETH =  new ItemBase("plante_aneth");
+    public static final Item PLANTE_ANIS =  new ItemBase("plante_anis");
+    public static final Item PLANTE_BASILIC =  new ItemBase("plante_basilic");
+    public static final Item PLANTE_BELLE_DE_NUIT =  new ItemBase("plante_belle_de_nuit");
+    public static final Item PLANTE_BLEUETS =  new ItemBase("plante_bleuets");
+    public static final Item PLANTE_BUISSON =  new ItemBase("plante_buisson");
+    public static final Item PLANTE_BUISSON_DE_FLEURS_BLANCHES =  new ItemBase("plante_buisson_de_fleurs_blanches");
+    public static final Item PLANTE_BUISSON_ETRANGE =  new ItemBase("plante_buisson_etrange");
+    public static final Item PLANTE_BUISSON_HERBEUX =  new ItemBase("plante_buisson_herbeux");
+    public static final Item PLANTE_CAMOMILLE =  new ItemBase("plante_camomille");
+    public static final Item PLANTE_CHARDON =  new ItemBase("plante_chardon");
+    public static final Item PLANTE_CIBOULETTE =  new ItemBase("plante_ciboulette");
+    public static final Item PLANTE_CLOCHETTES =  new ItemBase("plante_clochettes");
+    public static final Item CLOU_DE_GIROFLE = new ItemBase("clou_de_girofle");
+    public static final Item PLANTE_COSMOS =  new ItemBase("plante_cosmos");
+    public static final Item PLANTE_ESTRAGON = new ItemBase("plante_estragon");
+    public static final Item PLANTE_ETOILE_DES_GLACIERS =  new ItemBase("plante_etoile_des_glaciers");
+    public static final Item PLANTE_FLEUR_DE_PAVOT = new ItemBase("plante_fleur_de_pavot");
+    public static final Item PLANTE_GERANIUM =  new ItemBase("plante_geranium");
+    public static final Item PLANTE_GLYCINE =  new ItemBase("plante_glycine");
+    public static final Item PLANTE_GUI =  new ItemBase("plante_gui");
+    public static final Item PLANTE_GUZMANIAS =  new ItemBase("plante_guzmanias");
+    public static final Item PLANTE_HIBISCUS =  new ItemBase("plante_hibiscus");
+    public static final Item PLANTE_HORTENSIAS =  new ItemBase("plante_hortensias");
+    public static final Item PLANTE_HOUX =  new ItemBase("plante_houx");
+    public static final Item PLANTE_HYDRANGEE =  new ItemBase("plante_hydrangee");
+    public static final Item PLANTE_IRIS =  new ItemBase("plante_iris");
+    public static final Item PLANTE_JACINTHE_DES_BOIS =  new ItemBase("plante_jacinthe_des_bois");
+    public static final Item PLANTE_JASMIN =  new ItemBase("plante_jasmin");
+    public static final Item PLANTE_JOLI_BUISSON =  new ItemBase("plante_joli_buisson");
+    public static final Item PLANTE_JONQUILLE =  new ItemBase("plante_jonquille");
+    public static final Item PLANTE_LAURIER =  new ItemBase("plante_laurier");
+    public static final Item PLANTE_LAVANDE =  new ItemBase("plante_lavande");
+    public static final Item PLANTE_LYS =  new ItemBase("plante_lys");
+    public static final Item PLANTE_MANDRAGORE =  new ItemBase("plante_mandragore");
+    public static final Item PLANTE_MENTHE =  new ItemBase("plante_menthe");
+    public static final Item PLANTE_MUGUET =  new ItemBase("plante_muguet");
+    public static final Item PLANTE_MYOSOTIS =  new ItemBase("plante_myosotis");
+    public static final Item PLANTE_NARCISSES =  new ItemBase("plante_narcisses");
+    public static final Item PLANTE_OEILLETS =  new ItemBase("plante_oeillets");
+    public static final Item PLANTE_ORCHIDEE_ROSE =  new ItemBase("plante_orchidee_rose");
+    public static final Item PLANTE_PENSEES =  new ItemBase("plante_pensees");
+    public static final Item PLANTE_PERSIL =  new ItemBase("plante_persil");
+    public static final Item PLANTE_PIVOINE =  new ItemBase("plante_pivoine");
+    public static final Item PLANTE_PLANTE_ETRANGE =  new ItemBase("plante_plante_etrange");
+    public static final Item PLANTE_PLANTE_GRASSE_COLOREE =  new ItemBase("plante_plante_grasse_coloree");
+    public static final Item PLANTE_RHUBARBE = new ItemBase("plante_rhubarbe");
+    public static final Item PLANTE_ROMARIN =  new ItemBase("plante_romarin");
+    public static final Item PLANTE_RONCES =  new ItemBase("plante_ronces");
+    public static final Item PLANTE_SALICORNE =  new ItemBase("plante_salicorne");
+    public static final Item PLANTE_SAUGE = new ItemBase("plante_sauge");
+    public static final Item PLANTE_SUREAU = new ItemBase("plante_sureau");
+    public static final Item PLANTE_THYM = new ItemBase("plante_thym");
+    public static final Item PLANTE_VERGE_D_OR =  new ItemBase("plante_verge_d_or");
+    public static final Item PLANTE_VERVEINE =  new ItemBase("plante_verveine");
+    public static final Item PLANTE_VIOLETTES =  new ItemBase("plante_violettes");
 
     public static final Item BLE = new GraineBle("ble");
     public static final Item CANNELLE = new ItemBase("cannelle");
     public static final Item CHANVRE = new ItemBase("chanvre");
     public static final Item CHOU_VERT = new ItemBase("chou_vert");
-    public static final Item CLOU_DE_GIROFLE = new ItemBase("clou_de_girofle");
+
     public static final Item GINGEMBRE = new ItemBase("gingembre");
     public static final Item LIN = new ItemBase("lin");
     public static final Item ORGE = new GraineOrge("orge");
     public static final Item RACINE_DE_GARANCE = new ItemBase("racine_de_garance");
-    public static final Item SAUGE = new ItemBase("sauge");
-    public static final Item SUREAU = new ItemBase("sureau");
-    public static final Item THYM = new ItemBase("thym");
 
 
     // Divers - Plantes
-    public static final Item BOUQUET_DE_FLEURS = new ItemContainer("bouquet_de_fleurs", 0);
+    public static final Item BOUQUET_DE_FLEURS = new ItemInventory("bouquet_de_fleurs", 0);
     public static final Item BOUQUET_GARNI = new ItemBase("bouquet_garni");
     public static final Item ECORCE = new ItemBase("ecorce");
     public static final Item FARINE = new ItemBase("farine");
@@ -2441,8 +2609,6 @@ public class ModItems {
     public static final Item POMME_DE_PIN = new ItemBase("pomme_de_pin");
     public static final Item POMME_DE_TERRE_GERMEE = new ItemBase("pomme_de_terre_germee");
     public static final Item SEVE = new ItemBase("seve");
-    public static final Item ESTRAGON = new ItemBase("estragon");
-    public static final Item RHUBARBE = new ItemBase("rhubarbe");
 
     // Cadenas
     public static final Item CADENAS_BRONZE = new Cadenas("cadenas_bronze");
@@ -2450,4 +2616,53 @@ public class ModItems {
     public static final Item CADENAS_ACIER = new Cadenas("cadenas_acier");
     public static final Item CLEF = new Clef("clef");
     public static final Item PORTE_CLEF = new PorteClef("porte_clef");
+
+    //Insectes - ITEMS - cultures
+    public static final Item INSECTE_ABEILLE = new ItemBase("insecte_abeille");
+    public static final Item INSECTE_ARAIGNEE = new ItemBase("insecte_araignee");
+    public static final Item INSECTE_ASTICOT = new ItemBase("insecte_asticot");
+    public static final Item INSECTE_CHENILLE = new ItemBase("insecte_chenille");
+    public static final Item INSECTE_COCCINELLE = new ItemBase("insecte_coccinelle");
+    public static final Item INSECTE_COCHENILLE = new ItemBase("insecte_cochenille");
+    public static final Item INSECTE_ESCARGOT = new ItemBase("insecte_escargot");
+    public static final Item INSECTE_FOURMI = new ItemBase("insecte_fourmi");
+    public static final Item INSECTE_GALLE = new ItemBase("insecte_galle");
+    public static final Item INSECTE_GUEPE = new ItemBase("insecte_guepe");
+    public static final Item INSECTE_LARVE = new ItemBase("insecte_larve");
+    public static final Item INSECTE_MITE = new ItemBase("insecte_mite");
+    public static final Item INSECTE_MORPION = new ItemBase("insecte_morpion");
+    public static final Item INSECTE_MOUCHE = new ItemBase("insecte_mouche");
+    public static final Item INSECTE_PAPILLON_COMMUN = new ItemBase("insecte_papillon_commun");
+    public static final Item INSECTE_PAPILLON_RARE = new ItemBase("insecte_papillon_rare");
+    public static final Item INSECTE_PUCERON = new ItemBase("insecte_puceron");
+    public static final Item INSECTE_SCARABEE = new ItemBase("insecte_scarabee");
+    public static final Item INSECTE_SCORPION = new ItemBase("insecte_scorpion");
+    public static final Item INSECTE_TIQUE = new ItemBase("insecte_tique");
+    public static final Item INSECTE_VER_DE_FARINE = new ItemBase("insecte_ver_de_farine");
+    public static final Item INSECTE_VER_DE_TERRE = new ItemBase("insecte_ver_de_terre");
+    public static final Item VER_A_SOIE = new ItemBase("ver_a_soie");
+
+    public static ItemGraine GRAINE_ABEILLE;
+    public static ItemGraine GRAINE_ARAIGNEE;
+    public static ItemGraine GRAINE_ASTICOT;
+    public static ItemGraine GRAINE_CHENILLE;
+    public static ItemGraine GRAINE_COCCINELLE;
+    public static ItemGraine GRAINE_COCHENILLE;
+    public static ItemGraine GRAINE_ESCARGOT;
+    public static ItemGraine GRAINE_FOURMI;
+    public static ItemGraine GRAINE_GALLE;
+    public static ItemGraine GRAINE_GUEPE;
+    public static ItemGraine GRAINE_LARVE;
+    public static ItemGraine GRAINE_MITE;
+    public static ItemGraine GRAINE_MORPION;
+    public static ItemGraine GRAINE_MOUCHE;
+    public static ItemGraine GRAINE_PAPILLON_COMMUN;
+    public static ItemGraine GRAINE_PAPILLON_RARE;
+    public static ItemGraine GRAINE_PUCERON;
+    public static ItemGraine GRAINE_SCARABEE;
+    public static ItemGraine GRAINE_SCORPION;
+    public static ItemGraine GRAINE_TIQUE;
+    public static ItemGraine GRAINE_VER_DE_FARINE;
+    public static ItemGraine GRAINE_VER_DE_TERRE;
+    public static ItemGraine GRAINE_VER_A_SOIE;
 }

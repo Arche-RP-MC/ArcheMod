@@ -10,7 +10,8 @@
       "item": "minecraft:stick"
     },
     "K": {
-      "item": "am:couteau_en_fer"
+      "item": "am:couteau_en_fer",
+      "data": 32767
     },
     "S": [
       {

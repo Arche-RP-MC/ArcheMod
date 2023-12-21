@@ -25,13 +25,13 @@
       }
     ],
     "P": {
-      "item": "am:camomille"
+      "item": "am:plante_camomille"
     },
     "C": {
       "item": "am:miel"
     },
     "S": {
-      "item": "am:lavande"
+      "item": "am:plante_lavande"
     },
     "G": {
       "item": "am:bocal"

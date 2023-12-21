@@ -25,7 +25,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 import javax.annotation.Nullable;
 
-public class BlockContainer extends BlockBase implements ITileEntityProvider {
+public abstract class BlockContainer extends BlockBase implements ITileEntityProvider {
     private AxisAlignedBB BOUNDING_BOX;
     private String id;
     private int size;
@@ -44,13 +44,6 @@ public class BlockContainer extends BlockBase implements ITileEntityProvider {
         this.modGuiId = modGuiId;
         this.visibleInventory = visibleInventory;
         this.setLightOpacity(0);
-    }
-
-
-    @Override
-    public TileEntity createNewTileEntity(World worldIn, int meta) {
-        if(visibleInventory) return new TileEntityBlockInventoryVisible(id, size, slotInRow, invStackLimit);
-        return new TileEntityBlockInventory(id, size, slotInRow, invStackLimit);
     }
 
     @Override

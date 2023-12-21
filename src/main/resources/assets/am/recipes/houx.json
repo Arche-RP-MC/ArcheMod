@@ -1,17 +1,12 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "   ",
-    " P ",
-    "   "
-  ],
-  "key": {
-    "P": {
-      "item": "am:houx"
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "am:houx2"
     }
-  },
+  ],
   "result": {
-    "item": "am:houx2",
+    "item": "am:plante_houx",
     "count": 1
   }
 }

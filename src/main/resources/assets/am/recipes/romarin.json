@@ -1,17 +1,12 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "   ",
-    " P ",
-    "   "
-  ],
-  "key": {
-    "P": {
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
       "item": "am:romarin2"
     }
-  },
+  ],
   "result": {
-    "item": "am:romarin",
+    "item": "am:plante_romarin",
     "count": 1
   }
 }

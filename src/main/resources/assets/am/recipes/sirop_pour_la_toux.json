@@ -7,7 +7,7 @@
   ],
   "key": {
     "B": {
-      "item": "am:sauge"
+      "item": "am:plante_sauge"
     },
     "P": {
       "item": "am:miel"
@@ -16,7 +16,7 @@
       "item": "am:extrait_de_pavot_concentre"
     },
     "C": {
-      "item": "am:ronces"
+      "item": "am:plante_ronces"
     },
     "G": {
       "item": "am:bocal"

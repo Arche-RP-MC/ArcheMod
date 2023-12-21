@@ -1,5 +1,6 @@
 package fr.archemod.blocks.tileentity;
 
+import net.minecraft.block.state.IBlockState;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.network.NetworkManager;
 import net.minecraft.network.play.server.SPacketUpdateTileEntity;
@@ -10,8 +11,8 @@ public class TileEntityFut extends TileEntity {
     private int charge;
 
     public TileEntityFut() {
-        setContenu("empty");
-        setCharge(0);
+        contenu = "empty";
+        charge = 0;
     }
 
     public String getContenu() {
@@ -20,6 +21,7 @@ public class TileEntityFut extends TileEntity {
 
     public void setContenu(String contenu) {
         this.contenu = contenu;
+        sendUpdates();
     }
 
     public int getCharge() {
@@ -28,6 +30,7 @@ public class TileEntityFut extends TileEntity {
 
     public void setCharge(int charge) {
         this.charge = charge;
+        sendUpdates();
     }
 
     @Override
@@ -35,7 +38,6 @@ public class TileEntityFut extends TileEntity {
         super.readFromNBT(compound);
         contenu = compound.getString("contenu");
         charge = compound.getInteger("charge");
-        System.out.println(contenu);
     }
 
     @Override
@@ -64,5 +66,16 @@ public class TileEntityFut extends TileEntity {
     @Override
     public void handleUpdateTag(NBTTagCompound tag) {
         this.readFromNBT(tag);
+    }
+
+    private void sendUpdates() {
+        world.markBlockRangeForRenderUpdate(pos, pos);
+        world.notifyBlockUpdate(pos, getState(), getState(), 3);
+        world.scheduleBlockUpdate(pos,this.getBlockType(),0,0);
+        markDirty();
+    }
+
+    private IBlockState getState() {
+        return world.getBlockState(pos);
     }
 }

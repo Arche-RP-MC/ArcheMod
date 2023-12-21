@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "am:coquelicot2"
+    }
+  ],
+  "result": {
+    "item": "am:plante_coquelicot",
+    "count": 1
+  }
+}

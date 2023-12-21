@@ -1,17 +1,12 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "   ",
-    " P ",
-    "   "
-  ],
-  "key": {
-    "P": {
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
       "item": "am:belle_de_nuit2"
     }
-  },
+  ],
   "result": {
-    "item": "am:belle_de_nuit",
+    "item": "am:plante_belle_de_nuit",
     "count": 1
   }
 }

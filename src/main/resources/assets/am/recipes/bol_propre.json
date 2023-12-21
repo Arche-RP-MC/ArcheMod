@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "OOO",
+    "OAO",
+    "OOO"
+  ],
+  "key": {
+    "A": {
+      "item": "am:savon",
+      "data": 32767
+    },
+    "O": {
+      "item": "am:bol_sale"
+    }
+  },
+  "result": {
+    "item": "minecraft:bowl",
+    "count": 8
+  }
+}

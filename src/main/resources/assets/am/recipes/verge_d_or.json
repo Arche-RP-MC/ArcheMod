@@ -1,17 +1,12 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "   ",
-    " P ",
-    "   "
-  ],
-  "key": {
-    "P": {
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
       "item": "am:verge_d_or2"
     }
-  },
+  ],
   "result": {
-    "item": "am:verge_d_or",
+    "item": "am:plante_verge_d_or",
     "count": 1
   }
 }

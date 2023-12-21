@@ -5,7 +5,6 @@ import net.minecraft.item.ItemStack;
 public class ItemIngrediant extends ItemBase {
     public ItemIngrediant(String name, int durability) {
         super(name);
-        setNoRepair();
         setMaxStackSize(1);
         setMaxDamage(durability);
     }

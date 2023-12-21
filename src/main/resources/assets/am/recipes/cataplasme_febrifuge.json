@@ -19,10 +19,10 @@
       "item": "am:miel"
     },
     "T": {
-      "item": "am:thym"
+      "item": "am:plante_thym"
     },
     "R": {
-      "item": "am:romarin"
+      "item": "am:plante_romarin"
     },
     "G": {
       "item": "am:bocal"

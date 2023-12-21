@@ -1,17 +1,12 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "   ",
-    " P ",
-    "   "
-  ],
-  "key": {
-    "P": {
-      "item": "am:hortensia2"
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "am:hortensias2"
     }
-  },
+  ],
   "result": {
-    "item": "am:hortensia",
+    "item": "am:plante_hortensias",
     "count": 1
   }
 }

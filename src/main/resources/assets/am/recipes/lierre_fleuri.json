@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "am:lierre_fleuri2"
+    }
+  ],
+  "result": {
+    "item": "am:plante_lierre_fleuri",
+    "count": 1
+  }
+}

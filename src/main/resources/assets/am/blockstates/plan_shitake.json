@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "am:shitake1"
+    },
+    "age=1": {
+      "model": "am:shitake1"
+    },
+    "age=2": {
+      "model": "am:shitake1"
+    },
+    "age=3": {
+      "model": "am:shitake1"
+    },
+    "age=4": {
+      "model": "am:shitake2"
+    },
+    "age=5": {
+      "model": "am:shitake2"
+    },
+    "age=6": {
+      "model": "am:shitake2"
+    },
+    "age=7": {
+      "model": "am:shitake"
+    }
+  }
+}

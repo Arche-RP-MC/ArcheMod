@@ -1,17 +1,12 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "   ",
-    " P ",
-    "   "
-  ],
-  "key": {
-    "P": {
-      "item": "am:pensee2"
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "am:pensees2"
     }
-  },
+  ],
   "result": {
-    "item": "am:pensee",
+    "item": "am:plante_pensees",
     "count": 1
   }
 }

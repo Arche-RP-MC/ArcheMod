@@ -1,6 +1,7 @@
 package fr.archemod.blocks;
 
 import fr.archemod.ArcheMod;
+import fr.archemod.blocks.tileentity.TileEntityBlockEcrinBijou;
 import fr.archemod.blocks.tileentity.TileEntityBlockInventory;
 import fr.archemod.blocks.tileentity.TileEntityTable;
 import net.minecraft.block.ITileEntityProvider;
@@ -30,7 +31,7 @@ public class BlockEcrinABijoux extends BlockBaseOriented implements ITileEntityP
 
     @Override
     public TileEntity createNewTileEntity(World worldIn, int meta) {
-        return new TileEntityBlockInventory("am:ecrin_a_bijoux", 9, 9, 1);
+        return new TileEntityBlockEcrinBijou();
     }
 
     @Override

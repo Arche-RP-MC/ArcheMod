@@ -7,13 +7,13 @@
   ],
   "key": {
     "B": {
-      "item": "am:lavande"
+      "item": "am:plante_lavande"
     },
     "P": {
-      "item": "am:pivoine"
+      "item": "am:plante_pivoine"
     },
     "C": {
-      "item": "am:glycine"
+      "item": "am:plante_glycine"
     },
     "S": {
       "item": "am:cassis"

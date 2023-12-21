@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "am:rhubarbe2"
+    }
+  ],
+  "result": {
+    "item": "am:plante_rhubarbe",
+    "count": 1
+  }
+}

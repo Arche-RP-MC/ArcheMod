@@ -2,11 +2,11 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "   ",
-    " P ",
+    " q ",
     "   "
   ],
   "key": {
-    "P": {
+    "q": {
       "item": "am:peaudelapin"
     }
   },

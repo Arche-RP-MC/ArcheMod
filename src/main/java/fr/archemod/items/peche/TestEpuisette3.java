@@ -39,26 +39,24 @@ public class TestEpuisette3 extends ItemBase {
                     int rnd = (int) (Math.random() * 6);
                     switch (rnd) {
                         case 0:
-                            playerIn.addItemStackToInventory(new ItemStack(ModItems.CREVETTE_GRISE, 1));
+                            playerIn.dropItem(ModItems.CREVETTE_GRISE, 1);
                             break;
                         case 1:
-                            playerIn.addItemStackToInventory(new ItemStack(ModItems.CREVETTE_ROSE, 1));
+                            playerIn.dropItem(ModItems.CREVETTE_ROSE, 1);
                             break;
                         case 2:
-                            playerIn.addItemStackToInventory(new ItemStack(ModItems.HIPPOCAMPE, 1));
+                            playerIn.dropItem(ModItems.HIPPOCAMPE, 1);
                             break;
                         case 3:
-                            playerIn.addItemStackToInventory(new ItemStack(ModItems.ECREVISSE, 1));
+                            playerIn.dropItem(ModItems.ECREVISSE, 1);
                             break;
                         case 4:
-                            playerIn.addItemStackToInventory(new ItemStack(ModItems.ECREVISSE_ORANGE, 1));
+                            playerIn.dropItem(ModItems.ECREVISSE_ORANGE, 1);
                             break;
                         case 5:
-                            playerIn.addItemStackToInventory(new ItemStack(ModItems.POULPE, 1));
+                            playerIn.dropItem(ModItems.POULPE, 1);
                             break;
                     }
-
-
                 }
                 return new ActionResult<>(EnumActionResult.SUCCESS, playerIn.getHeldItem(handIn));
             }

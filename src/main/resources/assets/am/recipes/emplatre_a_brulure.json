@@ -10,13 +10,13 @@
       "item": "am:emplatre"
     },
     "C": {
-      "item": "am:geranium"
+      "item": "am:plante_geranium"
     },
     "S": {
-      "item": "am:camomille"
+      "item": "am:plante_camomille"
     },
     "E": {
-      "item": "am:lavande"
+      "item": "am:plante_lavande"
     },
     "M": [
       {

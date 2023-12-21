@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " PG",
+    " F ",
+    "   "
+  ],
+  "key": {
+    "F": {
+      "item": "am:bocal"
+    },
+    "G": {
+      "item": "minecraft:string"
+    },
+    "P": {
+      "item": "am:etoffe"
+    }
+  },
+  "result": {
+    "item": "am:insecte_en_bocal",
+    "count": 1
+  }
+}

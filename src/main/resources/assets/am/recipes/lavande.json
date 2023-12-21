@@ -1,17 +1,12 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "   ",
-    " P ",
-    "   "
-  ],
-  "key": {
-    "P": {
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
       "item": "am:lavande2"
     }
-  },
+  ],
   "result": {
-    "item": "am:lavande",
+    "item": "am:plante_lavande",
     "count": 1
   }
 }

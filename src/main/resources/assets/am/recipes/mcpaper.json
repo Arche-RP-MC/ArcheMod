@@ -2,11 +2,11 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "   ",
-    " P ",
+    " Q ",
     "   "
   ],
   "key": {
-    "P": {
+    "Q": {
       "item": "am:lot_de_papiers"
     }
   },

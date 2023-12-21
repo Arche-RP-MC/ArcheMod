@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "am:lilas2"
+    }
+  ],
+  "result": {
+    "item": "am:plante_lilas",
+    "count": 1
+  }
+}

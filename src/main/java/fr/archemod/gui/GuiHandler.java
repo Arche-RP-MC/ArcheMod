@@ -26,17 +26,9 @@ public class GuiHandler implements IGuiHandler {
             case 1: //Panier en osier
                 return new ContainerItemSlot(player.inventory, new ContainerItemInventory(player.getHeldItem(EnumHand.MAIN_HAND), 12, "Panier en osier", 10, 6));
             case 2: //Placard HRP
-            case 3: //Piege à loup
             case 4: //Porte-Manteau
             case 5: //Ecrin à bijoux
                 return new ContainerBlockSlot(player.inventory, (TileEntityBlockInventory) world.getTileEntity(new BlockPos(x, y, z)));
-            case 6:
-                TileEntity fishCase = world.getTileEntity(new BlockPos(x, y, z));
-                if (fishCase instanceof TileEntityFishCase) {
-                    return new ContainerFishCase(player.inventory, (TileEntityFishCase) fishCase);
-                } else {
-                    return null;
-                }
             case 8: //Sacoche
                 return new ContainerItemSlot(player.inventory, new ContainerItemInventory(player.getHeldItem(EnumHand.MAIN_HAND), 6, "Sacoche", 25, 6));
             case 9: //Grand sac
@@ -47,6 +39,12 @@ public class GuiHandler implements IGuiHandler {
                 return new ContainerItemSlot(player.inventory, new ContainerItemInventory(player.getHeldItem(EnumHand.MAIN_HAND), 12, "Porte-clef", 1, 6));
             case 14: //Enveloppe
                 return new ContainerItemSlot(player.inventory, new ContainerItemInventory(player.getHeldItem(EnumHand.MAIN_HAND), 3, "Enveloppe", 1, 3));
+            case 15: //Bocal à insecte
+                return new ContainerItemSlot(player.inventory, new ContainerItemInventory(player.getHeldItem(EnumHand.MAIN_HAND), 3, "Bocal à insectes", 1, 3));
+            case 21: //Nasse à poisson
+                return new ContainerNasse(player.inventory, (TileEntityNasse) world.getTileEntity(new BlockPos(x, y, z)));
+            case 22: //Piege à Loup
+                return new ContainerPiegeLoup(player.inventory, (TileEntityPiegeLoup) world.getTileEntity(new BlockPos(x, y, z)));
         }
         return null;
     }
@@ -59,15 +57,15 @@ public class GuiHandler implements IGuiHandler {
             case 1: //Panier en osier
                 return new ItemContainerGUI(player.inventory, new ContainerItemInventory(player.getHeldItem(EnumHand.MAIN_HAND), 12, "Panier en osier", 10, 6), GUI6);
             case 2: //Placard HRP
-            case 3: //Piege à loup
-            case 4: //Porte-Manteau
                 return new BlockContainerGUI(player.inventory, (TileEntityBlockInventory) world.getTileEntity(new BlockPos(x, y, z)), GUI3);
+            case 4: //Porte-Manteau
+                return new BlockContainerGUI(player.inventory, (TileEntityBlockInventory) world.getTileEntity(new BlockPos(x, y, z)), GUI6);
             case 5: //Ecrin à bijoux
                 return new BlockContainerGUI(player.inventory, (TileEntityBlockInventory) world.getTileEntity(new BlockPos(x, y, z)), GUI9);
             case 6:
                 TileEntity fishCase = world.getTileEntity(new BlockPos(x, y, z));
-                if (fishCase instanceof TileEntityFishCase) {
-                    return new GuiFishCase(player.inventory, (TileEntityFishCase) fishCase);
+                if (fishCase instanceof TileEntityNasse) {
+                    return new NasseGUI(player.inventory, (TileEntityNasse) fishCase);
                 } else {
                     return null;
                 }
@@ -81,8 +79,14 @@ public class GuiHandler implements IGuiHandler {
                 return new ItemContainerGUI(player.inventory, new ContainerItemInventory(player.getHeldItem(EnumHand.MAIN_HAND), 12, "Porte-clef", 1, 6), GUI6);
             case 14: //Enveloppe
                 return new ItemContainerGUI(player.inventory, new ContainerItemInventory(player.getHeldItem(EnumHand.MAIN_HAND), 3, "Enveloppe", 1, 3), GUI3);
+            case 15: //Bocal à insecte
+                return new ItemContainerGUI(player.inventory, new ContainerItemInventory(player.getHeldItem(EnumHand.MAIN_HAND), 3, "Bocal à insectes", 1, 3),GUI3);
             case 20: //Fut
                 return new FutGUI(player.inventory, (TileEntityFut) world.getTileEntity(new BlockPos(x, y, z)));
+            case 21: //Casier à poisson
+                return new NasseGUI(player.inventory, (TileEntityNasse) world.getTileEntity(new BlockPos(x, y, z)));
+            case 22: //Piège à Loup
+                return new PiegeLoupGUI(player.inventory, (TileEntityPiegeLoup) world.getTileEntity(new BlockPos(x, y, z)));
         }
         return null;
     }

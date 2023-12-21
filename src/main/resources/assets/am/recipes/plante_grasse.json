@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "am:plante_grasse2"
+    }
+  ],
+  "result": {
+    "item": "am:plante_plante_grasse",
+    "count": 1
+  }
+}

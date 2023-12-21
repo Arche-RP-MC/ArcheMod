@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "am:pissenlit2"
+    }
+  ],
+  "result": {
+    "item": "am:plante_pissenlit",
+    "count": 1
+  }
+}

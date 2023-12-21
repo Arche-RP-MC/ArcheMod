@@ -1,17 +1,12 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "   ",
-    " P ",
-    "   "
-  ],
-  "key": {
-    "P": {
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
       "item": "am:iris2"
     }
-  },
+  ],
   "result": {
-    "item": "am:iris",
+    "item": "am:plante_iris",
     "count": 1
   }
 }

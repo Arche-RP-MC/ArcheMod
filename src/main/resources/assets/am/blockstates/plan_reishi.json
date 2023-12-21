@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "am:reishi1"
+    },
+    "age=1": {
+      "model": "am:reishi1"
+    },
+    "age=2": {
+      "model": "am:reishi1"
+    },
+    "age=3": {
+      "model": "am:reishi1"
+    },
+    "age=4": {
+      "model": "am:reishi2"
+    },
+    "age=5": {
+      "model": "am:reishi2"
+    },
+    "age=6": {
+      "model": "am:reishi2"
+    },
+    "age=7": {
+      "model": "am:reishi"
+    }
+  }
+}

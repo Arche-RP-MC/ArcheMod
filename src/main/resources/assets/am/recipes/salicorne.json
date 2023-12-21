@@ -1,17 +1,12 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "   ",
-    " P ",
-    "   "
-  ],
-  "key": {
-    "P": {
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
       "item": "am:salicorne2"
     }
-  },
+  ],
   "result": {
-    "item": "am:salicorne",
+    "item": "am:plante_salicorne",
     "count": 1
   }
 }

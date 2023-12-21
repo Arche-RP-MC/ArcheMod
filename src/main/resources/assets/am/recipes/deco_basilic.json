@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  R",
+    "PPP",
+    " D "
+  ],
+  "key": {
+    "R": {
+      "item": "am:petite_cisaille",
+      "data": 32767
+    },
+    "P": {
+      "item": "am:graine_basilic"
+    },
+    "D": {
+      "item": "minecraft:dirt",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "am:basilic",
+    "count": 3
+  }
+}

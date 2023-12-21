@@ -10,16 +10,16 @@
       "item": "am:emplatre"
     },
     "P": {
-      "item": "am:pivoine"
+      "item": "am:plante_pivoine"
     },
     "C": {
-      "item": "am:geranium"
+      "item": "am:plante_geranium"
     },
     "S": {
-      "item": "am:camomille"
+      "item": "am:plante_camomille"
     },
     "O": {
-      "item": "am:ronces"
+      "item": "am:plante_ronces"
     },
     "E": {
       "item": "am:huile_de_lin",

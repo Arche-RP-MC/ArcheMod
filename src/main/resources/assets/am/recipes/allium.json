@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "am:allium2"
+    }
+  ],
+  "result": {
+    "item": "am:plante_allium",
+    "count": 1
+  }
+}

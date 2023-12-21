@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "am:tulipe_orange2"
+    }
+  ],
+  "result": {
+    "item": "am:plante_tulipe_orange",
+    "count": 1
+  }
+}

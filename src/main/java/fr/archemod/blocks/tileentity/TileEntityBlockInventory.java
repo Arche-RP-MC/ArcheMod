@@ -8,30 +8,24 @@ import net.minecraft.inventory.ItemStackHelper;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.nbt.NBTTagList;
 import net.minecraft.network.NetworkManager;
 import net.minecraft.network.play.server.SPacketUpdateTileEntity;
 import net.minecraft.tileentity.TileEntityLockableLoot;
 import net.minecraft.util.NonNullList;
+import net.minecraftforge.common.util.Constants;
+import net.minecraftforge.items.ItemStackHandler;
 
-public class TileEntityBlockInventory extends TileEntityLockableLoot {
+import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
+import javax.swing.plaf.basic.BasicComboBoxUI;
+
+public abstract class TileEntityBlockInventory extends TileEntityLockableLoot {
 
     private NonNullList<ItemStack> stacks;
-    private String id;
-    private int size;
-    private int slotInRow;
-    private int invStackLimit;
 
-    public TileEntityBlockInventory(String id, int size, int slotInRow, int invStackLimit) {
-        this.id = id;
-        this.size = size;
-        this.slotInRow = slotInRow;
-        this.invStackLimit = invStackLimit;
-        stacks = NonNullList.withSize(size, ItemStack.EMPTY);
-    }
-
-    @Override
-    public int getSizeInventory() {
-        return this.size;
+    public TileEntityBlockInventory() {
+        stacks = NonNullList.<ItemStack>withSize(this.getSizeInventory(), ItemStack.EMPTY);
     }
 
     @Override
@@ -43,18 +37,8 @@ public class TileEntityBlockInventory extends TileEntityLockableLoot {
     }
 
     @Override
-    public boolean isItemValidForSlot(int index, ItemStack stack) {
-        return true;
-    }
-
-    @Override
     public ItemStack getStackInSlot(int slot) {
         return stacks.get(slot);
-    }
-
-    @Override
-    public String getName() {
-        return "Conteneur";
     }
 
     @Override
@@ -94,16 +78,6 @@ public class TileEntityBlockInventory extends TileEntityLockableLoot {
     }
 
     @Override
-    public int getInventoryStackLimit() {
-        return this.invStackLimit;
-    }
-
-    @Override
-    public String getGuiID() {
-        return this.id;
-    }
-
-    @Override
     public Container createContainer(InventoryPlayer playerInventory, EntityPlayer playerIn) {
         return new ContainerBlockSlot(playerInventory, this);
     }
@@ -113,7 +87,12 @@ public class TileEntityBlockInventory extends TileEntityLockableLoot {
         return this.stacks;
     }
 
-    public int getSlotInRow() { return slotInRow; }
+    @Override
+    public void closeInventory(EntityPlayer player) {
+        super.closeInventory(player);
+    }
 
     public Slot getNewSlot(TileEntityBlockInventory inv, int index, int x, int y) { return new Slot(inv, index, x, y); }
+
+    public abstract int getSlotInRow();
 }

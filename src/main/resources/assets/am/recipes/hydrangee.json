@@ -1,17 +1,12 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "   ",
-    " P ",
-    "   "
-  ],
-  "key": {
-    "P": {
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
       "item": "am:hydrangee2"
     }
-  },
+  ],
   "result": {
-    "item": "am:hydrangee",
+    "item": "am:plante_hydrangee",
     "count": 1
   }
 }
