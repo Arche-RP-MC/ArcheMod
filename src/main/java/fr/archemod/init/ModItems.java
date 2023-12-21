@@ -155,7 +155,7 @@ public class ModItems {
 
     //OUTILS
 
-    public static final Item FAUX = new ItemBase("faux");
+    public static final Item FAUX = new ItemConsommable("faux", 300);
     public static final Item RASOIR = new ItemConsommable("rasoir", 7);
     public static final Item AIGUILLE = new ItemBase("aiguille");
     public static final Item ARROSOIR = new ItemBase("arrosoir");
